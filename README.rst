@@ -20,7 +20,18 @@ To compile all of the BEL files, run:
 
 .. code-block:: sh
 
-    $ heme_map compile
+    $ hememap compile
+    
+Usage
+-----
+To get the BEL graph, use the following code:
+
+.. code-block:: python
+
+    import hememap
+    graph = hememap.get_graph()
+    graph.summarize()
+
 
 Annotations
 ~~~~~~~~~~~
