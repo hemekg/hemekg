@@ -1,0 +1,223 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_29694434.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "PLoS One. 2018 Apr 25;13(4):e0196455. doi: 10.1371/journal.pone.0196455. eCollection 2018.", "29694434"} 
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative
+stress, inflammation and thrombosis."
+
+path(MESH:Hemolysis) pos p(HGNC:HBB)
+path(MESH:Hemolysis) pos a(CHEBI:heme)
+p(HGNC:HBB) pos bp(MESH:"Oxidative Stress")
+a(CHEBI:heme) pos bp(MESH:"Oxidative Stress")
+p(HGNC:HBB) pos path(MESH:Inflammation)
+a(CHEBI:heme) pos path(MESH:Inflammation)
+p(HGNC:HBB) pos path(MESH:Thrombosis)
+a(CHEBI:heme) pos path(MESH:Thrombosis)
+
+SET Evidence = "The released heme can activate the innate immune pattern recognition receptor toll-like
+receptor 4 (TLR4) on inflammatory cells, platelets and endothelium, promoting a pro-inflammatory
+and pro-coagulant phenotype, ultimately leading to vaso-occlusion, ischemia-reperfusion
+physiology, tissue injury, and pain in murine models of SCD [5, 7±10]."
+
+SET MeSHDisease = "Anemia, Sickle Cell"
+SET MeSHAnatomy = "Blood Platelets"|"Endothelium"
+a(CHEBI:heme) pos act(p(HGNC:TLR4))
+act(p(HGNC:TLR4)) pos bp(GO:"inflammatory response")
+a(CHEBI:heme) pos path(MESH:"Reperfusion Injury")
+a(CHEBI:heme) pos path(MESH:Pain)
+a(CHEBI:heme) pos path(HM:"vaso-occlusive crisis")
+
+SET Evidence = "Plasma haptoglobin and hemopexin levels are often depleted in SCD patients and mice due
+to chronic intravascular hemolysis [21±24]."
+
+SET MeSHDisease = "Anemia, Sickle Cell"
+path(MESH:Hemolysis) neg p(HGNC:HP)
+path(MESH:Hemolysis) neg p(HGNC:HPX)
+
+SET TextLocation = "Results"
+
+SET Species = "Mus musculus"
+
+SET Evidence = "Thus a single infusion of Hp or Hpx inhibited stasis for 48h."
+
+SET TimePoint = "48 hours"
+p(MGI:Hp) neg path(HM:"vaso-occlusive crisis")
+p(MGI:Hpx) neg path(HM:"vaso-occlusive crisis")
+
+SET Evidence = "Infusion of exogenous hemoglobin into SS-mice can markedly increase stasis compared to
+the amount of spontaneous stasis [5]."
+
+p(HGNC:HBB) pos path(HM:"vaso-occlusive crisis")
+
+SET Evidence = "Sickle
+mice co-infused with Hb + Hp, Hb + Hpx or Hb + Hp + Hpx had less stasis 1h after infusion
+than mice infused with Hb + albumin or Hb (Fig 1B)."
+
+SET TimePoint = "60 min"
+p(MGI:Hp) neg path(HM:"vaso-occlusive crisis")
+p(MGI:Hpx) neg path(HM:"vaso-occlusive crisis")
+
+SET Evidence = "Compared to Hb alone or Hb + albumin
+infused animals, sickle mice co-infused with Hb + Hp, Hb + Hpx, or Hb + Hp + Hpx had
+markedly diminished hepatic NF-κB activation 4h after infusion as evidenced by nuclear NF-
+κB phospho-p65 levels (Fig 2A)."
+
+SET MeSHAnatomy = "Liver"
+SET TimePoint = "4 hours"
+p(MGI:Hp) neg act(p(MGI:Nfkb1))
+p(MGI:Hpx) neg act(p(MGI:Nfkb1))
+
+SET Evidence = "Immunofluorescence staining
+of VCAM-1 and ICAM-1 was decreased in the dorsal skin of SS-mice 4h after infusion of
+Hb+Hp and Hb+Hpx compared to SS-mice infused with vehicle or Hb (Fig 2B and 2C)."
+
+SET TimePoint = "4 hours"
+p(MGI:Hp) neg p(MGI:Vcam1)
+p(MGI:Hpx) neg p(MGI:Vcam1)
+p(MGI:Hp) neg p(MGI:Icam1)
+p(MGI:Hpx) neg p(MGI:Icam1)
+
+SET Evidence = "Pro-inflammatory cytokine RANTES (chemokine ligand 5 or CCL5), which recruits leukocytes
+to pro-inflammatory sites, was lower in the plasma of SS-mice 24 hours after infusion of
+Hp or Hpx compared to vehicle-treated SS-mice (Fig 2F)."
+
+SET TimePoint = "24 hours"
+p(MGI:Hp) neg act(p(MGI:Ccl5))
+p(MGI:Hpx) neg act(p(MGI:Ccl5))
+
+SET Evidence = "Hepatic 4-hydroxynonenol
+(4-HNE), a marker of oxidative stress, was significantly lower in the liver microsomes of SSmice
+24 hours after infusion of Hp or Hpx compared to vehicle-treated SS-mice (Fig 2G)."
+
+SET MeSHAnatomy = "Liver"
+SET TimePoint = "24 hours"
+bp(MESH:"Oxidative Stress") pos a(CHEBI:"4-hydroxynon-2-enal")
+p(MGI:Hp) neg a(CHEBI:"4-hydroxynon-2-enal")
+p(MGI:Hpx) neg a(CHEBI:"4-hydroxynon-2-enal")
+
+SET Evidence = "We have previously shown that induction of HO-1 expression or liver-directed HO-1 gene
+therapy inhibits stasis in sickle mice exposed to H/R [38, 45]."
+
+SET MeSHDisease = "Anemia, Sickle Cell"
+p(MGI:Hmox1) neg path(HM:"vaso-occlusive crisis")
+
+SET Evidence = "CO also inhibited stasis in mice
+treated with SnPP + Hb without Hp or Hpx."
+
+a(CHEBI:"carbon monoxide") neg path(HM:"vaso-occlusive crisis")
+
+SET Evidence = "SnPP and CO had similar inhibitory
+effects on NF-kB activation in the liver (data not shown)."
+
+SET MeSHAnatomy = "Liver"
+a(CHEBI:"carbon monoxide") neg act(p(MGI:Nfkb1))
+complex(a(CHEBI:protoporphyrin), a(CHEBI:"tin atom")) neg act(p(MGI:Nfkb1))
+
+SET Evidence = "Hp and
+Hpx significantly inhibited stasis in response H/R or LPS (Fig 5)."
+
+path(MESH:Hypoxia) pos path(HM:"vaso-occlusive crisis")
+p(MGI:Hp) neg path(HM:"vaso-occlusive crisis")
+p(MGI:Hpx) neg path(HM:"vaso-occlusive crisis")
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "The beneficial effects of Hp and Hpx were lost by inhibition of HO
+with SnPP, but could be restored by CO administration."
+
+complex(a(CHEBI:protoporphyrin), a(CHEBI:"tin atom")) neg act(p(MGI:Hp))
+complex(a(CHEBI:protoporphyrin), a(CHEBI:"tin atom")) neg act(p(MGI:Hpx))
+a(CHEBI:"carbon monoxide") pos act(p(MGI:Hp))
+a(CHEBI:"carbon monoxide") pos act(p(MGI:Hpx))
+
+SET Evidence = "In contrast, albumin did not induce HO-1 or inhibit stasis and NF-
+κB."
+
+p(MGI:Alb) causesNoChange p(MGI:Hmox1)
+p(MGI:Alb) causesNoChange act(p(MGI:Nfkb1))
+
+UNSET TextLocation
+##############

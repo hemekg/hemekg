@@ -1,0 +1,247 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_29544683.bel"
+SET DOCUMENT Version     = "1.0.2"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "J Pharmacol Sci. 2018 Mar;136(3):97-106. doi: 10.1016/j.jphs.2017.11.003. Epub 2017 Nov 24.", "29544683"}
+
+SET TextLocation = "Introduction"
+
+SET Evidence= "Eryptosis is the apoptotic-like suicidal process of erythrocytes,
+and is characterized by cell shrinkage and phosphatidylserine (PS)
+expression on the outer membrane."
+
+SET MeSHAnatomy = "Erythrocyte Membrane"
+a(CHEBI:"phosphatidyl-L-serine") pos bp(MESH:Eryptosis)
+
+SET Evidence = "In
+2007, Kempe10 et al. reported that erythrocytes showed an
+apoptotic tendency in septic patients."
+
+path(MESH:Sepsis) pos bp(MESH:Eryptosis)
+
+SET Evidence = "Although neutrophils, platelets and
+vascular endothelial cells are the main effector cells involved in
+immunothrombosis, abnormal aggregation of erythrocytes under
+septic conditions may also contribute to immunothrombosis in
+sepsis."
+
+SET MeSHDisease = "Sepsis"
+bp(MESH:"Erythrocyte Aggregation") pos a(HM:Immunothrombosis)
+
+SET TextLocation = "Results"
+
+SET Evidence = "Stimulation with 20 mM Zn2þ resulted in aggregation of washed
+human erythrocytes 1 h after incubation."
+
+a(CHEBI:"zinc(2+)") -> bp(MESH:"Erythrocyte Aggregation")
+
+SET Evidence = "TPEN
+(20 mM), a chelator for Zn2þ, Fe2þ and Mn2þ, abolished the effects of
+Zn2þ (Fig. 1A)."
+
+a(CHEBI:"N,N,N',N'-tetrakis(2-pyridylmethyl)ethylenediamine") -| act(a(CHEBI:"zinc(2+)"))
+
+SET Evidence = "HRG strongly inhibited the aggregation at a concentration
+of 1 mg/mL, whereas the same concentration of HSA
+showed no effect (Fig. 1B)."
+
+SET Concentration = "1 mg/mL"
+p(HGNC:HRG) -| bp(MESH:"Erythrocyte Aggregation")
+p(HGNC:ALB) causesNoChange bp(MESH:"Erythrocyte Aggregation")
+
+SET Evidence = "HRG and HSA both strongly inhibited
+aggregation when the concentration was increased to 100 mg/mL
+(Supplementary Fig. 1)."
+
+SET Concentration = "100 mg/mL"
+p(HGNC:HRG) -| bp(MESH:"Erythrocyte Aggregation")
+p(HGNC:ALB) -| bp(MESH:"Erythrocyte Aggregation")
+
+SET Evidence = "To determine the role of
+PS in the Zn2þ-induced aggregation of erythrocytes, we used
+Annexin V to block PS expression on the erythrocyte membrane."
+
+SET MeSHAnatomy = "Erythrocyte Membrane"
+p(HGNC:ANXA5) -| a(CHEBI:"phosphatidyl-L-serine")
+
+SET Evidence = "Annexin V (100 nM) completely inhibited the Zn2þ-induced aggregation
+(Fig. 1E)."
+
+p(HGNC:ANXA5) -| bp(MESH:"Erythrocyte Aggregation")
+
+SET Evidence = "The Zn2þ (20 mM)-induced expression of PS on erythrocytes,
+which was inhibited by TPEN, was not observed by other divalent
+cations, including Mg2þ and Ca2þ (Fig. 2A)."
+
+SET MeSHAnatomy = "Erythrocyte Membrane"
+a(CHEBI:"zinc(2+)") -> a(CHEBI:"phosphatidyl-L-serine")
+a(CHEBI:"N,N,N',N'-tetrakis(2-pyridylmethyl)ethylenediamine") -| act(a(CHEBI:"zinc(2+)"))
+a(CHEBI:"N,N,N',N'-tetrakis(2-pyridylmethyl)ethylenediamine") -| a(CHEBI:"phosphatidyl-L-serine")
+
+SET Evidence = "HRG and HSA both inhibited PS expression
+when their concentrations were increased to 10 and 100 mg/mL
+(Fig. 2B)."
+
+SET MeSHAnatomy = "Erythrocyte Membrane"
+p(HGNC:HRG) -| a(CHEBI:"phosphatidyl-L-serine")
+p(HGNC:ALB) -| a(CHEBI:"phosphatidyl-L-serine")
+
+SET Evidence = "Surprisingly, HRG at high concentration (100 mg/mL)
+significantly decreased PS expression on erythrocytes."
+
+SET MeSHAnatomy = "Erythrocyte Membrane"
+p(HGNC:HRG) -| a(CHEBI:"phosphatidyl-L-serine")
+
+SET Evidence = "We found that a considerable number of erythrocytes were
+attached to the EA.hy926 cells after Zn2þ-stimulation (Fig. 4A)."
+
+a(CHEBI:"zinc(2+)") -> a(HM:"erythrocyte-endothelium adhesion")
+
+SET Evidence = "HRG
+treatment significantly inhibited the attachment of erythrocytes to
+the vascular endothelial cell monolayer in a concentration dependent
+manner (Fig. 4A and B), while HSA did not affect the
+adhesion."
+
+p(HGNC:HRG) -| a(HM:"erythrocyte-endothelium adhesion")
+p(HGNC:ALB) causesNoChange a(HM:"erythrocyte-endothelium adhesion")
+
+SET Evidence = "TPEN also inhibited erythrocyte adhesion, but the effect
+at 20 mM was weaker compared to that in the HRG (100 mg/mL)-
+treatment group."
+
+a(CHEBI:"N,N,N',N'-tetrakis(2-pyridylmethyl)ethylenediamine") -| a(HM:"erythrocyte-endothelium adhesion")
+
+SET Evidence = "Although a significant difference in PS expressionwas not observed
+among the CLP groups treated with PBS, HSA or HRG, incubation of
+erythrocytes for 4 h enabled the observation of beneficial effects of
+HRG on PS expression on erythrocytes (Fig. 5B)."
+
+p(MGI:Hrg) -| a(CHEBI:"phosphatidyl-L-serine")
+
+SET Evidence = "Hemin-induced hemolysis was also inhibited by HRG and HRGderived
+peptide (amino acid sequence in the Histidine-rich domain
+of HRG: HHPHGHHPHG) (Fig. 6A and B)."
+
+p(MGI:Hrg) -| path(MESH:Hemolysis)
+
+SET Evidence = "The cascade of immunothrombosis includes
+platelet activation and secretion, which may result in a local increase
+in Zn2þ concentration because of the presence of Zn2þ in
+platelet dense granules."
+
+SET MeSHDisease = "Sepsis"
+a(HM:Immunothrombosis) pos bp(MESH:"Platelet Activation")
+bp(MESH:"Platelet Activation") -> a(CHEBI:"zinc(2+)")
+
+SET Evidence = "Thus focusing on Zn2þ-stimulated erythrocytes
+might be an important new approach that could ultimately
+reveal the mechanism of immunothrombus formation in sepsis."
+
+a(CHEBI:"zinc(2+)") -> bp(MESH:"Erythrocyte Aggregation")
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "In addition, we observed that Zn2þ
+induced the adhesion of erythrocytes to endothelial cells, and this
+effect was not inhibited by 100 mg/mL of HSA (Fig. 4), suggesting a
+specific interaction between erythrocytes and HRG."
+
+a(CHEBI:"zinc(2+)") -> a(HM:"erythrocyte-endothelium adhesion")
+
+SET Evidence = "The
+decrease was due to the reduction in HRG gene expression, deposition
+of HRG on immunothrombi and degradation of HRG by thrombin."
+
+p(HGNC:F2) pos deg(p(HGNC:HRG))
+
+SET Evidence = "Supplementary treatment of septic mice with purified
+HRG from human plasma remarkably suppressed immunothrombosis
+in the lungs as well as the associated inflammation."
+
+SET MeSHAnatomy = "Lung"
+p(MGI:Hrg) -| a(HM:Immunothrombosis)
+p(MGI:Hrg) -| path(MESH:Inflammation)
+
+UNSET TextLocation
+############

@@ -1,0 +1,356 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_27515135.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Circulation. 2016 Sep 27;134(13):945-60. doi: 10.1161/CIRCULATIONAHA.115.019955. Epub 2016 Aug 11.", "27515135"} 
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "Plasma hemoglobin scavenges nitric oxide and 
+causes vasoconstriction, platelet aggregation and inflammation9,22–24."
+
+p(HGNC:HBB) neg a(CHEBI:"nitric oxide")
+p(HGNC:HBB) pos path(MESH:"Platelet Aggregation")
+p(HGNC:HBB) pos bp(GO:vasoconstriction)
+p(HGNC:HBB) pos path(MESH:Inflammation)
+
+SET Evidence = "Toxicity of free hemoglobin is also caused by the release of 
+cell-free heme, which produces lipid peroxidation and mitochondrial damage
+and increases the production of reactive oxygen species."
+
+p(HGNC:HBB) -> a(CHEBI:heme)
+a(CHEBI:heme) pos bp(MESH:"Lipid Peroxidation")
+a(CHEBI:heme) pos a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "Cell-free heme selectively triggers pro-inflammatory 
+receptors such as TLR-4 and BACH-1, and activates proteasomes25."
+
+a(CHEBI:heme) pos p(HGNC:TLR4)
+a(CHEBI:heme) pos p(HGNC:BACH1)
+a(CHEBI:heme) pos act(p(PFAM:Proteasome))
+
+SET TextLocation = "Results"
+SET Species = "Mus musculus"
+SET MeSHDisease = "Hemorrhage"
+
+SET Evidence = "After resuscitation with SRBCs, only 58% of mice 
+survived for 48 hours (SRBC vs. FRBC, P<0.05)."
+
+SET TimePoint = "48 hours"
+a(MESH:"Blood Transfusion") pos a(MESH:Mortality)
+
+SET Evidence = "In mice resuscitated with SRBCs, 
+plasma hemoglobin levels were greater than in 
+mice resuscitated with FRBCs or in sham-treated 
+mice at two, four, and 24 hours after transfusion 
+(Figure 1C)."
+
+a(MESH:"Blood Transfusion") pos p(HGNC:HBB)
+
+SET Evidence = "The plasma hemoglobin levels at two 
+and four hours after SRBC-transfusion were greater 
+than the cell-free hemoglobin levels in the supernatant 
+of the SRBCs before transfusion (Figure 1C, 
+Supplemental Table I), providing evidence that 
+hemolysis occurs in vivo during and after 
+transfusion of SRBCs."
+
+a(MESH:"Blood Transfusion") pos path(MESH:Hemolysis)
+path(MESH:Hemolysis) pos p(HGNC:HBB)
+
+SET Evidence = "In animals resuscitated with SRBCs, 
+plasma hemopexin levels significantly decreased from 
+147.1±11.4 mg/dl at baseline to 86.7±12.2 and 76.3±5.
+4 mg/dl at two and four hours after resuscitation, 
+respectively (p<0.05 for both, Figure 2A)."
+
+a(MESH:"Blood Transfusion") neg p(MGI:Hpx)
+
+SET Evidence = "The increase in plasma haptoglobin 
+levels from baseline to 48 hours after resuscitation 
+was less in mice transfused with SRBCs compared 
+to mice transfused with FRBCs (P<0.001)."
+
+SET TimePoint = "48 hours"
+a(MESH:"Blood Transfusion") neg p(MGI:Hp)
+
+SET Evidence = "In contrast, all of the mice survived after 
+SRBC-transfusion and treatment with hemopexin (SRBC+Hx vs. 
+SRBC+Alb, P=0.018). Similarly the survival rate of mice 
+resuscitated with SRBCs and co-infusion of haptoglobin 
+was 96% (SRBC+Hp vs. SRBC+Alb, P=0.030)."
+
+SET TimePoint = "2 weeks"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx)) neg a(MESH:Mortality)
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) neg a(MESH:Mortality)
+
+SET Evidence = "Resuscitation with SRBCs together with 
+albumin did not alter plasma levels of hemoglobin, 
+hemopexin, haptoglobin, or heme as compared to 
+resuscitation with SRBCs alone 
+(Figure 3C–E, I, Supplemental Material 
+and Supplemental Figure II A–B)."
+
+SET MeSHAnatomy = "Plasma"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb)) causesNoChange p(HGNC:HBB)
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb)) causesNoChange a(CHEBI:heme)
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb)) causesNoChange p(MGI:Hpx)
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb)) causesNoChange p(MGI:Hp)
+
+SET Evidence = "Infusion of hemopexin together with SRBCs resulted in a 6.4-fold (95% CI [5.2 – 7.6])
+increase in plasma hemopexin levels at four hours after transfusion (Figure 3D)."
+
+SET TimePoint = "4 hours"
+SET MeSHAnatomy = "Plasma"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx)) pos p(MGI:Hpx)
+
+SET Evidence = "The increase in hemopexin was associated with
+decreased plasma heme levels (Figure 3I)."
+
+p(MGI:Hpx) neg a(CHEBI:heme)
+
+SET Evidence = "These results demonstrate that transfusion with SRBCs and simultaneous 
+infusion of exogenous hemopexin results in decreased levels of circulating cell-free heme."
+
+SET MeSHAnatomy = "Plasma"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx)) neg a(CHEBI:heme)
+
+SET Evidence = "Co-administration of haptoglobin with 
+SRBCs results in a prolonged increase in plasma 
+hemoglobin levels for more than 48 hours after 
+transfusion."
+
+SET MeSHAnatomy = "Plasma"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) pos p(HGNC:HBB)
+
+SET Evidence = "Hemoglobinuria was noted in mice resuscitated with SRBCs 
+alone but not mice resuscitated with FRBCs or sham-treated mice 
+(Figure 4A and B)."
+
+a(MESH:"Blood Transfusion") pos path(MESH:Hemoglobinuria)
+
+SET Evidence = "Hemoglobinuria was present in mice 
+resuscitated with SRBCs combined with albumin or 
+hemopexin but not in mice resuscitated with SRBCs 
+combined with haptoglobin (Figure 4A and B)."
+
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) neg path(MESH:Hemoglobinuria)
+
+SET Evidence = "Markers of renal damage, including kidney 
+KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels, 
+and plasma NGAL concentration, were greater in mice after 
+resuscitation with SRBCs or SRBCs and albumin than in mice 
+transfused with FRBCs (Figures 4C–F)."
+
+SET MeSHAnatomy = "Kidney"|"Urine"
+a(MESH:"Blood Transfusion") pos p(MGI:Havcr1)
+a(MESH:"Blood Transfusion") pos p(MGI:Havcr1)
+a(MESH:"Blood Transfusion") pos r(MGI:Lcn2)
+SET MeSHAnatomy = "Plasma"
+a(MESH:"Blood Transfusion") pos p(MGI:Lcn2)
+
+SET Evidence = "However, kidney KIM-1 and NGAL mRNA levels, 
+urinary KIM-1 protein levels and NGAL plasma concentrations 
+in mice transfused with SRBCs and haptoglobin were lower 
+than in mice transfused with SRBCs given a co-infusion 
+of albumin (Figures 4C–F)."
+
+SET MeSHAnatomy = "Kidney"|"Urine"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) neg p(MGI:Havcr1)
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) neg p(MGI:Havcr1)
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) neg r(MGI:Lcn2)
+SET MeSHAnatomy = "Plasma"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) neg p(MGI:Lcn2)
+
+SET Evidence = "Tubular regeneration, an indirect marker 
+of tubular injury, was assessed by quantification of the 
+number of Ki-67-positive renal tubular cells at 48 hours 
+after resuscitation and by measuring the level of Ki-67 
+mRNA in kidney tissue (Figures 5C–E)."
+
+SET MeSHAnatomy = "Kidney Tubules"
+bp(GO:"tissue regeneration") pos p(MGI:Mki67)
+
+SET Evidence = "Kidney sections of mice resuscitated with SRBCs showed 
+more cortical Ki-67 positive cells per 20× field (1.08 mm field diameter) 
+than those of mice resuscitated with FRBCs 
+(SRBC vs. FRBC: 156.2±10.4 vs. 56.4±4.7, p<0.01)."
+
+SET MeSHAnatomy = "Kidney Cortex"
+a(MESH:"Blood Transfusion") pos p(MGI:Mki67)
+
+SET Evidence = "The number of Ki-67 positive cells 
+in kidneys from mice that received SRBCs and 
+haptoglobin was similar to the number of Ki-67 
+positive cells in kidneys from mice that 
+received FRBCs.."
+
+SET MeSHAnatomy = "Kidney Cortex"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) neg p(MGI:Mki67)
+
+SET Evidence = "Co-infusion of haptoglobin but not 
+albumin or hemopexin prevented SRBC-induced 
+hemoglobinuria and kidney injury at 48 
+hours after resuscitation from hemorrhagic shock."
+
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) neg path(MESH:Hemoglobinuria)
+
+SET Evidence = "Tissue iron staining revealed greater 
+cortical iron accumulation in the kidneys of mice 
+resuscitated with SRBCs, SRBCs combined with albumin 
+and SRBCs combined with hemopexin than in the kidneys 
+of mice transfused with FRBCs (Figure 6A and B)."
+
+SET MeSHAnatomy = "Kidney Cortex"
+a(MESH:"Blood Transfusion") pos a(CHEBI:"iron(2+)")
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx)) pos a(CHEBI:"iron(2+)")
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb)) pos a(CHEBI:"iron(2+)")
+
+SET Evidence = "Only transfusion of SRBCs and haptoglobin prevented 
+SRBC-induced renal iron accumulation (Figure 6A and B)."
+
+SET MeSHAnatomy = "Kidney Cortex"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) neg a(CHEBI:"iron(2+)")
+
+SET Evidence = "Splenic iron content was greater in mice after 
+resuscitation with SRBCs than in FRBC-transfused mice."
+
+SET MeSHAnatomy = "Spleen"
+a(MESH:"Blood Transfusion") pos a(CHEBI:"iron(2+)")
+
+SET Evidence = "In comparison to mice transfused with SRBCs alone, the spleens of mice 
+resuscitated with SRBCs and haptoglobin contained more iron (Figure 6D)."
+
+SET MeSHAnatomy = "Spleen"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) pos a(CHEBI:"iron(2+)")
+
+SET Evidence = "Liver damage, measured by plasma levels 
+of alanine transaminase (ALT) and aspartate transaminase 
+(AST) at 48 hours after resuscitation, was greater after 
+resuscitation with SRBCs compared to resuscitation with 
+FRBCs (Figure 6E and F)."
+
+SET MeSHAnatomy = "Liver"
+a(MESH:"Blood Transfusion") pos p(MGI:Gpt)
+a(MESH:"Blood Transfusion") pos p(MGI:Got1)
+
+SET Evidence = "Taken together, these results indicate that haptoglobin co-transfusion prevented stored blood
+transfusion-associated renal iron uptake and led to increased weight and greater iron-
+accumulation in the spleens of mice."
+
+SET MeSHAnatomy = "Spleen"
+a(MESH:"Blood Transfusion") pos a(CHEBI:"iron(2+)")
+
+SET Evidence = "The renal expression level of IL-6 
+was greater 48 hours after resuscitation with SRBCs 
+alone, SRBC and albumin, and SRBCs and hemopexin 
+when compared to resuscitation with FRBCs 
+(Supplemental Figure VI D)."
+
+
+SET MeSHAnatomy = "Kidney"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx)) pos p(MGI:Il6)
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb)) pos p(MGI:Il6)
+
+SET Evidence = "Mice that were resuscitated with SRBCs and albumin or SRBCs and hemopexin showed a 
+marked increase in HO-1 expression when compared to mice resuscitated with FRBCs."
+
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx)) pos p(MGI:Hmox1)
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb)) pos p(MGI:Hmox1)
+
+SET Evidence = "Resuscitation with SRBCs and haptoglobin prevented 
+the increase in SRBC-induced renal HO-1 expression (Figure 7F)."
+
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) neg p(MGI:Hmox1)
+
+SET Evidence = "Without adjusting for multiple comparison 
+testing, IL-6 expression was lower in kidneys of mice 
+resuscitated with SRBCs and haptoglobin compared to mice 
+resuscitated with SRBCs and albumin (P<0.05)."
+
+SET MeSHAnatomy = "Kidney"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp)) neg p(MGI:Il6)
+
+UNSET TextLocation
+##############

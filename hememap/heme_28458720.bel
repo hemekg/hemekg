@@ -1,0 +1,383 @@
+#######################
+# Document Properties #
+#######################
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_28458720.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "ISBT Sci Ser. 2017 Feb;12(1):176-183. doi:10.1111/voxs.12331. Epub 2016 Dec 14.", "28458720"}
+
+SET TextLocation = "Review"
+
+SET Evidence = "However, in the past few decades there has been increasing evidence that RBCs have a
+variety of active functions in hemostasis and thrombosis that are significant and need to be
+taken into account in assessing health and disease."
+
+a(MESH:Erythrocytes) -- bp(MESH:Hemostasis)
+a(MESH:Erythrocytes) -- path(MESH:Thrombosis)
+
+SET Evidence = "On the other hand, an abnormally high hematocrit is associated with thrombosis,
+and patients with polycythemia vera or taking erythropoietin are more susceptible to
+thrombosis and thromboembolism [4, 5]."
+
+bp(MESH:Hematocrit) -- path(MESH:Thrombosis)
+path(MESH:"Polycythemia Vera") pos path(MESH:Thrombosis)
+p(HGNC:EPO) pos path(MESH:Thrombosis)
+p(HGNC:EPO) pos path(MESH:Thromboembolism)
+
+SET Evidence = "High hematocrit results in an increase in blood viscosity that impedes the blood flow [6, 7]."
+
+bp(MESH:Hematocrit) -> bp(MESH:"Blood Viscosity")
+bp(MESH:Hematocrit) -| bp(MESH:"Blood Flow Velocity")
+
+SET Evidence = "The hematocrit-related blood viscosity may have physical
+effects on the interaction between platelets and blood vessel surfaces.Under flow conditions,
+platelet adhesion increases greatly with hematocrit."
+
+bp(MESH:Hematocrit) -> bp(MESH:"Platelet Adhesiveness")
+
+SET Evidence = "Thus the volume fraction of red cells
+may have a significant impact on hemostasis and thrombosis, with the nature of the effect
+related to the flow conditions [9]."
+
+bp(MESH:"Erythrocyte Volume") pos bp(MESH:Hemostasis)
+bp(MESH:"Erythrocyte Volume") pos path(MESH:Thrombosis)
+
+SET Evidence = "A remarkable rheological effect of RBCs that affects platelets in hemostasis and thrombosis
+is that RBCs preferentially move down the center of blood vessel, causing margination of
+platelets, so that they are poised to adhere preferentially to the site of vessel-wall injury [10]."
+
+a(MESH:Erythrocytes) -> a(HM:"Platelet margination")
+a(MESH:Erythrocytes) -> bp(MESH:"Platelet Adhesiveness")
+
+SET Evidence = "Another consequence of the
+axial RBC accumulation followed by reduction in local viscosity is a decrease of the wall
+shear stress causing a lesser local release of nitric oxide [15]."
+
+bp(MESH:"Erythrocyte Aggregation") -| bp(MESH:"Blood Viscosity")
+bp(MESH:"Erythrocyte Aggregation") -| a(CHEBI:"nitric oxide")
+
+SET Evidence = "Because nitric oxide is known
+to prevent activation of endothelial cells and platelets, this nitric oxide deficiency promotes
+cellular activation."
+
+a(CHEBI:"nitric oxide") -| bp(GO:"endothelial cell activation")
+
+SET Evidence = "At low shear rates or with stasis of blood, RBCs tend to form linear arrays of stacked cells
+(roleaux) or three-dimensional aggregates [16]."
+
+a(HM:"shear stress") pos bp(MESH:"Erythrocyte Aggregation")
+
+SET Evidence = "Such aggregates are difficult to disperse and
+they tend to increase the blood viscosity and hydrodynamic resistance in larger blood vessels
+with low shear, such as the veins in the lower limbs."
+
+bp(MESH:"Erythrocyte Aggregation") -> bp(MESH:"Blood Viscosity")
+
+SET Evidence = "RBC aggregation promotes thrombosis
+in veins, confirming the pathogenic importance of locally altered blood rheology in the
+development of venous thrombosis [17]."
+
+SET MeSHAnatomy = "Veins"
+bp(MESH:"Erythrocyte Aggregation") -> path(MESH:Thrombosis)
+bp(MESH:"Erythrocyte Aggregation") -> path(MESH:"Venous Thrombosis")
+
+SET Evidence = "More rigid RBCs may be less able to squeeze through the
+capillaries and they also increase platelet margination described above, both of which
+increase the susceptibility to thrombosis [18]."
+
+bp(MESH:"Erythrocyte Deformability") -| a(HM:"Platelet margination")
+bp(MESH:"Erythrocyte Deformability") -| path(MESH:Thrombosis)
+a(HM:"Platelet margination") -> path(MESH:Thrombosis)
+
+SET Evidence = "Other diseases,
+including -thalassemia, hemolytic anemias caused by RBC antibodies, and hereditary
+stomatocytosis, also commonly have RBCs with stiff membranes [23]."
+
+path(MESH:Thalassemia) -| bp(MESH:"Erythrocyte Deformability")
+path(HP:"autoimmune hemolytic anemia") -| bp(MESH:"Erythrocyte Deformability")
+
+SET Evidence = "Some diseases, such
+as diabetes, hypertension, lower limb vein thrombosis, coronary heart disease, can
+secondarily alter the properties of RBCs, making them stiffer and prothrombotic [24]."
+
+path(HP:"Diabetes mellitus") -| bp(MESH:"Erythrocyte Deformability")
+bp(MESH:"Erythrocyte Deformability") neg path(MESH:Thrombosis)
+ 
+SET Evidence = "Stored RBCs exhibit altered
+biophysical characteristics, including higher cell rigidity that accounts in part for impaired
+blood flow hemodynamics and adverse effects of RBC transfusion [26]."
+
+a(HM:"stored erythrocytes") -| bp(MESH:"Erythrocyte Deformability")
+a(HM:"stored erythrocytes") -| bp(MESH:Hemodynamics)
+
+SET Evidence = "RBCs can modulate platelet reactivity directly through either chemical signaling or adhesive
+RBC-platelet interactions. RBCs promote platelet aggregation and degranulation by
+releasing ATP and ADP under low pO2, low pH and in response to mechanical deformation
+[27, 28]."
+
+a(MESH:Erythrocytes) -> bp(MESH:"Platelet Aggregation")
+a(MESH:Erythrocytes) -> bp(MESH:"Cell Degranulation")
+
+SET Evidence = "Another mechanism for platelet activation by RBC lysate is extracellular
+hemoglobin, which enhances platelet activation by lowering NO bioavailability [ 29]."
+
+p(HGNC:HBB) -> bp(MESH:"Platelet Activation")
+p(HGNC:HBB) -| a(CHEBI:"nitric oxide")
+a(CHEBI:"nitric oxide") -| bp(MESH:"Platelet Activation")
+
+SET Evidence = "Damaged RBCs also release arginase that cleaves L-arginine, a
+substrate for NO production [29]."
+
+a(MESH:"Erythrocytes, Abnormal") -> a(MESH:Arginase)
+
+SET Evidence = "In acute coronary syndrome, RBC transfusion increases
+platelet reactivity [31]."
+
+SET MeSHDisease = "Acute Coronary Syndrome"
+a(MESH:"Blood Transfusion") -> bp(MESH:"Platelet Activation")
+
+SET Evidence = "When RBCs are damaged by high shear in continuous 
+flow ventricular assist devices, free hemoglobin induces platelet
+aggregation, contributing to high risk of thrombotic complications [33]."
+
+a(MESH:"Erythrocytes, Abnormal") -> p(HGNC:HBB)
+p(HGNC:HBB) -> bp(MESH:"Platelet Aggregation")
+bp(MESH:"Platelet Aggregation") -> path(MESH:Thrombosis)
+
+SET Evidence = "The RBC-platelet adhesive interaction
+may be important in pathological conditions associated with a high incidence of thrombosis,
+such as thalassemia [36] or sickle cell disease [37]."
+
+SET MeSHDisease = {"beta-Thalassemia", "Anemia, Sickle Cell"}
+a(HM:"erythrocyte-platelet adhesion") -> path(MESH:Thrombosis)
+
+SET Evidence = "The most common pathological states in which RBCs interact with the
+endothelium include sickle cell disease [39], malaria [40], and diabetes [41]."
+
+path(MESH:"Anemia, Sickle Cell") pos a(HM:"erythrocyte-endothelium adhesion")
+path(MESH:Malaria) pos a(HM:"erythrocyte-endothelium adhesion")
+path(HP:"Diabetes mellitus") pos a(HM:"erythrocyte-endothelium adhesion")
+
+SET Evidence = "Under conditions of apoptosis or RBC damage, such as
+high shear rates, inflammation, or oxidative stress, RBCs can lose membrane asymmetry and
+expose phosphatidylserine [43]."
+
+a(HM:"shear stress") pos a(MESH:"Erythrocytes, Abnormal")
+bp(MESH:"Oxidative Stress") pos a(MESH:"Erythrocytes, Abnormal")
+path(MESH:Inflammation) pos a(MESH:"Erythrocytes, Abnormal")
+a(MESH:"Erythrocytes, Abnormal") pos a(CHEBI:"phosphatidyl-L-serine")
+
+SET Evidence = "Phosphatidylserine externalization and shedding are
+mediated by increased cellular Ca-flux and play an important role in natural RBC
+senescence [44]."
+
+bp(MESH:"Calcium Signaling") -> a(CHEBI:"phosphatidyl-L-serine")
+a(CHEBI:"phosphatidyl-L-serine") pos a(MESH:"Erythrocytes, Abnormal")
+
+SET Evidence = "Because of the large numbers of RBCs present in the blood, even a small
+fraction of RBCs with phosphatidylserine exposure can result in prothrombotic conditions."
+
+a(CHEBI:"phosphatidyl-L-serine") pos path(MESH:Thrombosis)
+
+SET Evidence = "An increase in RBC
+phosphatidylserine exposure in -thalassemia patients has been shown to be connected with
+eryptosis, the suicidal death of RBCs [49]."
+
+SET MeSHDisease = "beta-Thalassemia"
+a(CHEBI:"phosphatidyl-L-serine") pos bp(MESH:Eryptosis)
+
+SET Evidence = "Activation, aging, and apoptosis of various cells, including RBCs, are accompanied by
+formation of microscopic extracellular membranous structures named microvesicles or
+microparticles (MPs)."
+
+SET Cell = "erythrocyte"
+bp(MESH:Apoptosis) -> a(MESH:"Cell-Derived Microparticles")
+
+SET Evidence = "The ability of cells to generate MPs in vivo is an important regulatory
+mechanism of physiologic reactions, a means for intercellular communications and a
+pathogenic component in many diseases that impact hemostasis and thrombosis [50, 51]."
+
+a(MESH:"Cell-Derived Microparticles") pos bp(MESH:Hemostasis)
+a(MESH:"Cell-Derived Microparticles") pos path(MESH:Thrombosis)
+
+SET Evidence = "Formation of RBC-derived MPs is typical during the ex vivo storage of whole blood [52]
+and accumulation of MPs is thought to be responsible for an increased incidence of deep
+vein thrombosis after transfusion of “old” red cells [53]."
+
+SET Cell = "erythrocyte"
+a(MESH:"Cell-Derived Microparticles") -> path(HP:"Deep venous thrombosis")
+
+SET Evidence = "Irrespective of their source, elevated plasma
+levels of MPs are associated with a reduced clotting time and a dose- and time-dependent
+increase in thrombin generation, suggesting that the MPs enhance hypercoagulability."
+
+a(MESH:"Cell-Derived Microparticles") -| bp(MESH:"Whole Blood Coagulation Time")
+a(MESH:"Cell-Derived Microparticles") -> path(HP:Hypercoagulability) 
+
+SET Evidence = "The circulating MPs can internalize free heme and transfer it to vascular
+endothelium, promoting vaso-occlusion, or amplify systemic inflammation via thrombin mediated
+activation of the complement system [57]."
+
+a(MESH:"Cell-Derived Microparticles") -> path(HM:"vaso-occlusive crisis")
+a(MESH:"Cell-Derived Microparticles") -> bp(GO:"complement activation")
+bp(GO:"complement activation") -> path(MESH:Inflammation)
+
+SET Evidence = "Stored RBCs undergo a complex structural and metabolic impairment that includes leakage
+of hemoglobin from the cells and hemolysis, reduced energy and NO production, formation
+of toxic products, such as lysophospholipids and free iron, phosphatidylserine exposure and
+shedding MPs [59]."
+
+a(HM:"stored erythrocytes") -> path(MESH:Hemolysis)
+a(HM:"stored erythrocytes") -| a(CHEBI:"nitric oxide")
+a(HM:"stored erythrocytes") -> a(MESH:Lysophospholipids)
+a(HM:"stored erythrocytes") -> a(CHEBI:"iron(2+)")
+a(HM:"stored erythrocytes") -> a(CHEBI:"phosphatidyl-L-serine")
+a(HM:"stored erythrocytes") -> a(MESH:"Cell-Derived Microparticles")
+
+SET Evidence = "Extracellular hemoglobin sequesters NO and thus promotes activation of endothelial cells
+and adhesion/aggregation of platelets [64]."
+
+p(HGNC:HBB) -| a(CHEBI:"nitric oxide")
+p(HGNC:HBB) -> bp(GO:"endothelial cell activation")
+p(HGNC:HBB) -> bp(MESH:"Platelet Aggregation")
+
+SET Evidence = "Free heme upregulates heme oxygenase activity,
+generates reactive oxygen species, and activates endothelial cells and macrophages directly[65]."
+
+a(CHEBI:heme) -> bp(GO:"endothelial cell activation")
+a(CHEBI:heme) -> a(MESH:"Reactive Oxygen Species")
+a(CHEBI:heme) -> bp(MESH:"Macrophage Activation")
+
+SET Evidence = "Second, immune hemolysis is accompanied by production of TNF- which induces
+tissue factor expression in endothelial cells and also decreases the endothelial expression of
+thrombomodulin, a potent modulator of thrombin activity [62]."
+
+path(MESH:Hemolysis) -> p(HGNC:TNF)
+
+SET Evidence = "Third, hemolysis results in a
+massive release of procoagulant RBC-derived MPs [66]."
+
+SET Cell = "erythrocyte"
+path(MESH:Hemolysis) -> a(MESH:"Cell-Derived Microparticles")
+
+SET Evidence = "An increase of fibrinogen concentration can result in greater RBC aggregation, which is
+associated with a higher incidence of thrombosis."
+
+a(MESH:Fibrinogen) -> bp(MESH:"Erythrocyte Aggregation") 
+bp(MESH:"Erythrocyte Aggregation") pos path(MESH:Thrombosis)
+
+SET Evidence = "Besides the effects of
+intact RBCs, free extracellular hemoglobin prolongs clotting time of fibrinogen due to
+impaired polymerization [73]."
+
+p(HGNC:HBB) -> bp(MESH:"Whole Blood Coagulation Time")
+
+SET Evidence = "As a generality, incorporation of RBCs increases the lytic
+resistance and decreases the permeability of fibrin in a dose-dependent manner [79, 80]."
+
+a(MESH:"Erythrocytes, Abnormal") -| a(HM:"permeability of fibrin")
+
+SET Evidence = "Clot contraction requires platelets and fibrin or
+fibrinogen."
+
+a(MESH:"Blood Platelets") pos bp(MESH:"Clot Retraction")
+a(MESH:Fibrinogen) pos bp(MESH:"Clot Retraction")
+
+SET Evidence = "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor
+XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction
+process."
+
+a(MESH:Thrombin) pos bp(MESH:"Clot Retraction")
+a(MESH:Calcium) pos bp(MESH:"Clot Retraction")
+p(HGNC:ITGB3) pos bp(MESH:"Clot Retraction")
+p(HGNC:MYH9) pos bp(MESH:"Clot Retraction")
+p(HGNC:F13A1) pos bp(MESH:"Clot Retraction")
+a(MESH:"Blood Platelets") pos bp(MESH:"Clot Retraction")
+
+
+SET Evidence = "In contrast, RBCs impair contraction and reduce stiffness, while increasing the
+overall contractile stress generated by the platelet-fibrin meshwork [75, 76, 85]."
+
+a(MESH:"Erythrocytes, Abnormal") neg bp(MESH:"Clot Retraction")
+
+UNSET TextLocation
+################
+
+

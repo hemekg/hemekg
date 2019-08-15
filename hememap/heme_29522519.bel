@@ -1,0 +1,173 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_29522519.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "PLoS Med. 2018 Mar 9;15(3):e1002522. doi: 10.1371/journal.pmed.1002522. eCollection 2018 Mar.", "29522519"}
+
+SET TextLocation = "Results"
+
+SET Evidence = "However, mortality significantly increased in mice resuscitated with stored RBCs (median survival
+8 h, n = 9), with all mice dying within 20 h of PAK instillation (Fig 1C)."
+
+SET TimePoint = "20 hours"
+a(HM:"stored erythrocytes") -> a(MESH:Mortality)
+
+SET Evidence = "Pulmonary
+edema approximately doubled (Fig 1D), and lung bacterial CFUs significantly increased
+(Fig 1E) in mice resuscitated with stored RBCs compared to those that received fresh RBCs."
+
+a(HM:"stored erythrocytes") pos path(MESH:"Pulmonary Edema")
+a(HM:"stored erythrocytes") pos bp(MESH:"Bacterial Load")
+
+SET Evidence = "Consistent with our previous studies [25,36], free oxyHb, metHb, and heme levels
+were increased after 14 d of RBC storage, being 930 ± 125 μM, 40.3 ± 8.8 μM, and 168 ±
+44.7 μM, respectively (mean ± SEM, n = 7)."
+
+SET TimePoint = "14 days"
+a(HM:"stored erythrocytes") pos a(CHEBI:heme)
+a(HM:"stored erythrocytes") pos a(CHEBI:oxyhemoglobin)
+a(HM:"stored erythrocytes") pos a(CHEBI:methemoglobin)
+
+SET Evidence = "Fig 2 shows that free hemoglobin and free heme
+were higher 4 h after resuscitation with stored RBCs compared to fresh RBCs (n = 3±7 as indicated);
+NTBI level was also higher, but this difference did not reach statistical significance
+(p = 0.07)."
+
+a(HM:"stored erythrocytes") pos a(CHEBI:heme)
+a(HM:"stored erythrocytes") pos p(MGI:"Hbb-b1")
+a(HM:"stored erythrocytes") pos a(CHEBI:"iron(2+)")
+
+SET Evidence = "Hemopexin
+improved post-pneumonia survival in mice that underwent massive resuscitation with stored
+RBCs (Fig 3A)."
+
+p(MGI:Hpx) neg path(MESH:Pneumonia)
+
+SET Evidence = "These data indicate
+that the increased severity of bacterial lung injury secondary to massive resuscitation with
+stored RBCs is heme-dependent."
+
+a(CHEBI:heme) pos path(MESH:"Lung Injury") 
+
+SET Evidence = "These data demonstrate that TLR4
+signaling plays a role in heme-induced exacerbation of lung bacterial infection secondary to
+TH followed by massive resuscitation with stored RBCs."
+
+act(p(MGI:Tlr4)) neg path(MESH:"Lung Injury")
+
+SET Evidence = "TH and resuscitation with stored compared to fresh RBCs not only caused increased mortality
+but also significantly increased the severity of pulmonary edema induced by P. aeruginosa
+pneumonia (Fig 1D)."
+
+a(HM:"stored erythrocytes") pos path(MESH:"Pulmonary Edema")
+
+SET Evidence = "Fig 5A shows that extracellular serum levels of HMGB1 were
+approximately 5-fold higher in mice (n = 3) resuscitated with stored RBCs compared to mice
+resuscitated fresh RBCs."
+
+a(HM:"stored erythrocytes") pos p(MGI:Hmgb1) 
+
+SET Evidence = "Furthermore, free heme also induced extracellular release of HMGB1
+from RMVECs compared to vehicle control (Fig 5B)."
+
+a(CHEBI:heme) pos p(MGI:Hmgb1)
+
+SET Evidence = "In summary, these
+results indicate that heme from resuscitation with stored RBCs increases extracellular release
+of HMGB1, which inhibits macrophage phagocytosis of P. aeruginosa, leading to increased
+mortality."
+
+a(CHEBI:heme) pos p(MGI:Hmgb1)
+SET Cell = "macrophage"
+p(MGI:Hmgb1) -| bp(GO:phagocytosis)
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "Our findings using a mouse model of trauma and hemorrhagic shock with stored blood transfusion
+and subsequent PAK instillation demonstrate that transfusion with older stored RBCs
+increases the severity of bacterial pneumonia."
+
+a(HM:"stored erythrocytes") pos path(MESH:Pneumonia)
+
+UNSET TextLocation
+##################
+

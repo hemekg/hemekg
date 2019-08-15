@@ -1,0 +1,722 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_25307023.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Br J Haematol. 2015 Jan;168(2):175-85. doi: 10.1111/bjh.13183. Epub 2014 Oct 13.", "25307023"}
+
+SET TextLocation = "Review"
+
+SET Evidence = "The triad consists
+of hypercoagulability, blood stasis and endothelial injury/dysfunction,
+which are useful concepts for understanding
+thrombosis."
+
+path(HP:Hypercoagulability) pos path(MESH:Thrombosis)
+bp(MESH:Hemostasis) pos path(MESH:Thrombosis)
+path(HM:"Endothelial dysfunction") pos path(MESH:Thrombosis)
+
+SET Evidence = "Haemolysis, which is observed in multiple diseases,
+can affect all three components of Virchow’s triad;
+thus, it is not surprising that there is a link between haemolytic
+disorders and thrombosis."
+
+path(MESH:Hemolysis) -- path(MESH:Thrombosis)
+
+SET Evidence = "The essential feature of any haemolytic disorder is shortened
+red blood cell (RBC) lifespan."
+
+path(MESH:Hemolysis) neg bp(MESH:"Erythrocyte Count")
+
+SET Evidence = "The haptoglobin–haemoglobin complex is
+recognized by the haemoglobin scavenger receptor, CD163,
+on the surface of monocytes/macrophages, which mediates
+haptoglobin–haemoglobin endocytosis and degradation (Kristiansen
+et al, 2001)."
+
+SET Cell = "macrophage"
+p(HGNC:CD163) -> deg(a(MESH:"haptoglobin-hemoglobin complex"))
+
+SET Evidence = "Formation of large amounts of haptoglobin–
+haemoglobin complexes rapidly depletes haptoglobin."
+
+a(MESH:"haptoglobin-hemoglobin complex") -| p(HGNC:HP)
+
+SET Evidence = "Thus, in severe haemolytic diseases, such as paroxysmal nocturnal
+haemoglobinuria (PNH) and sickle cell disease (SCD),
+serum haptoglobin is typically undetectable and plasma
+haemoglobin is elevated (Tabbara, 1992)."
+
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -| p(HGNC:HP)
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -> p(HGNC:HBB)
+path(MESH:"Anemia, Sickle Cell") -| p(HGNC:HP)
+path(MESH:"Anemia, Sickle Cell") -> p(HGNC:HBB)
+
+SET Evidence = "Ferrous (Fe2+) haem, the oxygen-binding component of
+haemoglobin, can be oxidized to ferric (Fe3+) haem (thereby
+producing methaemoglobin), which is then released from
+haemoglobin and binds with high affinity to circulating haemopexin
+(Hvidberg et al, 2005)."
+
+complex(a(CHEBI:methemoglobin), p(HGNC:HPX))
+
+SET Evidence = "Normally, haemopexin
+safely transports haem away from the vessel wall to ligate
+LRP1 (also termed CD91) on hepatocytes and macrophages,
+where the haem–haemopexin complex is endocytosed and
+haem is degraded intracellularly (Hvidberg et al, 2005)."
+
+SET Cell = "macrophage"
+p(HGNC:LRP1) -> deg(complex(a(CHEBI:heme), p(HGNC:HPX)))
+p(HGNC:LRP1) -> deg(a(CHEBI:heme))
+
+SET Evidence = "Carbon monoxide has
+vasodilatory, anti-proliferative, anti-inflammatory and antioxidant
+properties, whereas bilirubin, the product of biliverdin
+reductase, is an antioxidant (Baranano et al, 2002)."
+
+a(CHEBI:"carbon monoxide") -> bp(MESH:Vasodilation)
+a(CHEBI:"carbon monoxide") -| bp(GO:"cell proliferation")
+a(CHEBI:"carbon monoxide") -| path(MESH:Inflammation)
+a(CHEBI:"carbon monoxide") pos act(a(CHEBI:antioxidant))
+a(CHEBI:bilirubin) pos act(a(CHEBI:antioxidant))
+
+SET Evidence  = "Thus,
+the antioxidant, anticoagulant, anti-proliferative and vasodilating
+effects of the HMOX1 and biliverdin reductase systems
+probably compensate for the nitric oxide (NO) scavenging,
+vasoconstrictive, proliferative, inflammatory and pro-oxidant
+effects of circulating free haemoglobin, haem and haem-iron,
+which are discussed below (Rother et al, 2005)."
+
+p(HGNC:HBB) -| bp(MESH:Vasodilation)
+p(HGNC:HBB) -> bp(GO:"cell proliferation")
+p(HGNC:HBB) -> path(MESH:Inflammation)
+p(HGNC:HBB) -| act(a(CHEBI:antioxidant))
+a(CHEBI:heme) -| bp(MESH:Vasodilation)
+a(CHEBI:heme) -> bp(GO:"cell proliferation")
+a(CHEBI:heme) -> path(MESH:Inflammation)
+a(CHEBI:heme) neg act(a(CHEBI:antioxidant))
+a(CHEBI:"iron(2+)") -| bp(MESH:Vasodilation)
+a(CHEBI:"iron(2+)") -> bp(GO:"cell proliferation")
+a(CHEBI:"iron(2+)") -> path(MESH:Inflammation)
+a(CHEBI:"iron(2+)") -| act(a(CHEBI:antioxidant))
+
+SET Evidence = "Haemoglobin and haem levels increase in plasma and
+urine when haptoglobin and haemopexin scavenging mechanisms
+are saturated during acute or chronic haemolysis."
+
+SET MeSHAnatomy = {"Plasma", "Urine"}
+path(MESH:Hemolysis) pos p(HGNC:HBB)
+path(MESH:Hemolysis) pos a(CHEBI:heme)
+
+SET Evidence = "Free plasma haemoglobin and haem also scavenge NO and
+have multiple pro-inflammatory and pro-oxidant properties
+that mediate many of the adverse effects of haemolysis."
+
+p(HGNC:HBB) -| a(CHEBI:"nitric oxide")
+a(CHEBI:heme) -| a(CHEBI:"nitric oxide")
+p(HGNC:HBB) -> path(MESH:Inflammation)
+a(CHEBI:heme) -> path(MESH:Inflammation)
+p(HGNC:HBB) -| act(a(CHEBI:antioxidant))
+a(CHEBI:heme) -| act(a(CHEBI:antioxidant))
+
+SET Evidence = "Multiple haemolytic disorders and therapeutic interventions
+produce substantial intravascular haemolysis. Examples
+include PNH, SCD, thalassaemias, glucose-6-phosphate dehydrogenase
+(G6PD) deficiency, hereditary spherocytosis and
+stomatocytosis, pyruvate kinase deficiency, autoimmune haemolytic
+anaemia, microangiopathies, acute haemolytic
+transfusion reactions, mechanical circulatory support
+[e.g., left ventricular assist device (LVAD)/extracorporeal
+membrane oxygenation (ECMO)], RBC transfusions and
+infusions of RBC substitutes. These disorders, therapies and
+procedures are also associated with an increased risk of
+thrombosis."
+
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -> path(MESH:Hemolysis)
+path(MESH:"Anemia, Sickle Cell") -> path(MESH:Hemolysis)
+path(MESH:Thalassemia) -> path(MESH:Hemolysis)
+a(HM:"Glucose-6-phosphate dehydrogenase deficiency") -> path(MESH:Hemolysis)
+path(MESH:"Spherocytosis, Hereditary") -> path(MESH:Hemolysis)
+path(HP:Stomatocytosis) -> path(MESH:Hemolysis)
+path(MESH:"Pyruvate Kinase Deficiency of Red Cells") -> path(MESH:Hemolysis)
+path(HP:"autoimmune hemolytic anemia") -> path(MESH:Hemolysis)
+path(MESH:"Thrombotic Microangiopathies") -> path(MESH:Hemolysis)
+a(MESH:"Blood Transfusion") -> path(MESH:Hemolysis)
+#: infusion of red blood cells
+a(MESH:"Blood Substitutes") -> path(MESH:Hemolysis)
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -- path(MESH:Thrombosis)
+path(MESH:"Anemia, Sickle Cell") -- path(MESH:Thrombosis)
+path(MESH:Thalassemia) -- path(MESH:Thrombosis)
+a(HM:"Glucose-6-phosphate dehydrogenase deficiency") -- path(MESH:Thrombosis)
+path(MESH:"Spherocytosis, Hereditary") -- path(MESH:Thrombosis)
+path(HP:Stomatocytosis) -- path(MESH:Thrombosis)
+path(MESH:"Pyruvate Kinase Deficiency of Red Cells") -- path(MESH:Thrombosis)
+path(HP:"autoimmune hemolytic anemia") -- path(MESH:Thrombosis)
+path(MESH:"Thrombotic Microangiopathies") -- path(MESH:Thrombosis)
+a(HM:"acute hemolytic transfusion reaction") -- path(MESH:Thrombosis)
+a(MESH:"Blood Transfusion") -- path(MESH:Thrombosis)
+a(MESH:"Blood Substitutes") -- path(MESH:Thrombosis)
+
+SET Evidence = "In PNH, uncontrolled complement activity leads to systemic
+complications, principally through intravascular haemolysis
+and platelet activation."
+
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -> bp(GO:"complement activation")
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -> path(MESH:Hemolysis)
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -> bp(MESH:"Platelet Activation")
+
+SET Evidence = "Thromboembolism is the
+most common cause of death in PNH patients and accounts
+for 40–67% of deaths for which the cause is known."
+
+SET MeSHDisease = "Hemoglobinuria, Paroxysmal"
+path(MESH:Thromboembolism) pos path(MESH:Death)
+
+SET Evidence = "SCD is a haemolytic disorder caused by a HBB (b-globin
+gene) mutation leading to polymerization of haemoglobin S,
+sickling, and haemolysis."
+
+path(MESH:"Anemia, Sickle Cell") pos path(MESH:Hemolysis)
+
+SET Evidence = "The abnormal phospholipid membrane
+asymmetry present in the RBCs of b-thalassaemia and
+SCD patients, with resultant phosphatidylserine exposure,
+appears to play a significant role in the aetiology of the
+observed hypercoagulable state and in the link between
+haemolysis and thrombosis (Ataga et al, 2007)."
+
+SET MeSHDisease = {"beta-Thalassemia", "Anemia, Sickle Cell"}
+SET Cell = "erythrocyte"
+a(CHEBI:"phosphatidyl-L-serine") pos path(HP:Hypercoagulability)
+a(CHEBI:"phosphatidyl-L-serine") -> path(MESH:Hemolysis)
+a(CHEBI:"phosphatidyl-L-serine") -> path(MESH:Thrombosis)
+
+SET Evidence = "Although
+RBC transfusions reduce the risk of stroke in SCD (Adams
+et al, 1998), both clinical strokes and silent infarcts still
+occur."
+
+SET MeSHDisease = "Anemia, Sickle Cell"
+a(MESH:"Blood Transfusion") neg path(MESH:Stroke)
+
+SET Evidence = "Thrombotic events also occur in
+b-thalassaemia patients; for example, pulmonary embolism,
+portal vein thrombosis and deep vein thrombosis occurred in
+29% of b-thalassaemia intermedia patients followed for
+10 years (Cappellini et al, 2000)."
+
+SET MeSHDisease = "beta-Thalassemia"
+path(MESH:"beta-Thalassemia") pos path(MESH:"Pulmonary Embolism")
+path(MESH:"beta-Thalassemia") pos path(HP:"Deep venous thrombosis") 
+path(MESH:"beta-Thalassemia") pos path(HP:"Portal vein thrombosis")
+
+SET Evidence = "The highest
+prevalence was observed in splenectomized patients."
+
+a(MESH:Splenectomy) pos path(MESH:Thrombosis)
+
+SET Evidence = "The increased risk of thrombosis in patients who undergo
+a splenectomy is important. About 22 000 splenectomies are
+still conducted annually for all causes in the United States
+and splenectomized patients have a 22-fold increased rate of
+being hospitalized for deep vein thrombosis or pulmonary
+embolism (Kristinsson et al, 2014)."
+
+a(MESH:Splenectomy) pos path(MESH:"Pulmonary Embolism")
+a(MESH:Splenectomy) pos path(HP:"Deep venous thrombosis") 
+
+SET Evidence = "In a report of 28 heterogeneous patients
+with either warm or cold AIHA, 5 of 15 episodes of haemolysis
+were associated with venous thromboembolism (Hendrick,
+2003)."
+
+path(HP:"autoimmune hemolytic anemia") pos path(MESH:"Venous Thromboembolism")
+
+SET Evidence = "In addition, 8 of 30 patients (27%) with
+unspecified warm or cold AIHA experienced an episode of
+venous thromboembolism (Pullarkat et al, 2002); of these,
+the presence of a lupus anticoagulant identified AIHA
+patients at higher risk for venous thromboembolism."
+
+SET MeSHDisease = "Anemia, Hemolytic, Autoimmune"
+a(MESH:"Lupus Coagulation Inhibitor") pos path(MESH:"Venous Thromboembolism")
+
+SET Evidence = "This common X-linked inherited disorder, characterized by
+severe intravascular and extravascular haemolysis, is classically
+triggered by fava bean ingestion or pro-oxidant medications.
+It causes haemolysis in susceptible individuals and an
+association with thrombosis was described in multiple case
+reports (Jewett, 1976; Thompson et al, 2013; Albertsen et al,
+2014)."
+
+a(HM:"Glucose-6-phosphate dehydrogenase deficiency") pos path(MESH:Hemolysis)
+a(HM:"Glucose-6-phosphate dehydrogenase deficiency") pos path(MESH:Thrombosis)
+
+SET Evidence = "Patients with hereditary haemolytic anaemia due to RBC
+structural abnormalities have an increased risk of thromboembolic
+events, particularly in splenectomized patients (Stewart
+et al, 1996; Schilling et al, 2008)."
+
+path(HP:"Congenital hemolytic anemia") pos path(MESH:Thromboembolism)
+
+SET Evidence = "Although haemolysis and thrombosis are hallmarks of the
+thrombo microangiopathies, such as disseminated intravascular
+coagulation (DIC) and thrombotic thrombocytopenic
+purpura/haemolytic uraemic syndrome (TTP/HUS), it is difficult
+to isolate the causative role of haemolysis in the pathophysiology
+of thrombosis in these complex disorders."
+
+path(MESH:Hemolysis) pos path(MESH:"Thrombotic Microangiopathies")
+path(MESH:Thrombosis) pos path(MESH:"Thrombotic Microangiopathies")
+path(MESH:Hemolysis) pos path(MESH:"Disseminated Intravascular Coagulation")
+path(MESH:Thrombosis) pos path(MESH:"Disseminated Intravascular Coagulation")
+path(MESH:Hemolysis) pos path(HP:"Hemolytic-uremic syndrome")
+path(MESH:Thrombosis) pos path(HP:"Hemolytic-uremic syndrome")
+
+SET Evidence = "Immunological incompatibility of transfused RBCs can lead
+to acute haemolytic transfusion reactions."
+
+a(HM:"ABO-incompatible erythrocytes") pos path(MESH:"Transfusion Reaction")
+
+SET Evidence  = "Although acute
+intravascular haemolysis is a rare complication of transfusion,
+it is among the most feared transfusion-associated complications,
+principally because death may rapidly ensue."
+
+path(MESH:"Transfusion Reaction") pos path(MESH:Death)
+
+SET Evidence = "Surprisingly, 66% (187/282) of ABO incompatible transfusions
+are asymptomatic; however, 67% (19/282) result in
+death and 27% (76/282) in major morbidities (Bolton-Maggs
+et al, 2014), including DIC (Goldfinger, 1977)."
+
+a(HM:"ABO-incompatible erythrocytes") pos path(MESH:Death)
+a(HM:"ABO-incompatible erythrocytes") pos path(MESH:"Disseminated Intravascular Coagulation")
+
+SET Evidence = "Biochemical
+and biomechanical changes occur in the RBCs during the
+storage process, ultimately leading to increased haemolysis
+upon transfusion (Cohen & Matot, 2013)."
+
+a(MESH:"Blood Transfusion") -> path(MESH:Hemolysis)
+
+SET Evidence = "Furthermore,
+retrospective studies suggest an association between transfusion
+of older, stored RBCs and thrombosis (Spinella et al,
+2009)."
+
+a(HM:"stored erythrocytes") -- path(MESH:Thrombosis)
+
+SET Evidence = "For example, infusion of haem into humans is
+associated with disturbances in coagulation assays and
+overt thrombophlebitis (Simionatto et al, 1988)."
+
+a(CHEBI:heme) -- path(MESH:"Blood Coagulation Disorders")
+a(CHEBI:heme) -- path(HP:Thrombophlebitis)
+
+SET Evidence = "The main mediator of these adverse 
+effects is thought to be free haem
+via its effects on NO scavenging, pro-inflammatory cytokine
+responses, and reactive oxygen species (ROS) generation."
+
+a(CHEBI:heme) neg a(CHEBI:"nitric oxide")
+a(CHEBI:heme) pos a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "NO is also known as endothelial-
+derived relaxing factor, because of its role in signalling
+to relax the smooth muscle lining the vasculature (Rother
+et al, 2005)."
+
+a(CHEBI:"nitric oxide") -> bp(GO:"relaxation of smooth muscle")
+
+SET Evidence = "As such, it nitrosylates the haem-moiety of
+guanylate cyclase, thereby stimulating formation of cyclic
+guanine monophosphate (cGMP), which then initiates 
+calcium-dependent vasodilation (Olson et al, 2004)."
+
+a(CHEBI:"nitric oxide") -> a(CHEBI:"3',5'-cyclic GMP")
+a(CHEBI:"3',5'-cyclic GMP") -> bp(GO:vasodilation)
+bp(GO:"nitric oxide-cGMP-mediated signaling pathway") -> bp(GO:vasodilation)
+
+SET Evidence = "During
+intravascular haemolysis, NO availability is severely limited
+by its reaction with oxyhaemoglobin (i.e., NO scavenging)
+and by breakdown of the substrate for NO synthesis, L-arginine,
+by arginase released from RBCs (Schnog et al, 2004)."
+
+path(MESH:Hemolysis) -| a(CHEBI:"nitric oxide")
+
+SET Evidence = "Oxyhaemoglobin reacts in a rapid and irreversible dioxygenation
+reaction with NO to form methaemoglobin and nitrate
+(Rother et al, 2005)."
+
+rxn(reactants(a(CHEBI:oxyhemoglobin), a(CHEBI:"nitric oxide")), products(a(CHEBI:methemoglobin), a(CHEBI:nitrate)))
+
+SET Evidence = "Thus, haemolysis results in NO scavenging,
+systemic vasoconstriction and increased blood stasis,
+thereby affecting one of the principle components of Virchow’s
+Triad."
+
+path(MESH:Hemolysis) pos bp(GO:vasoconstriction)
+path(MESH:Hemolysis) pos bp(MESH:Hemostasis)
+
+SET Evidence = "Furthermore, NO has a fundamental role in
+normal vascular physiology by inhibiting both platelet aggregation
+and endothelial adhesion molecule expression, as
+detailed below"
+
+a(CHEBI:"nitric oxide") -| path(MESH:"Platelet Aggregation")
+a(CHEBI:"nitric oxide") -| a(MESH:"Cell Adhesion Molecules")
+
+SET Evidence = "Finally, NO may also affect coagulation by
+inhibiting Factor XIII activity (Catani et al, 1998)."
+
+a(CHEBI:"nitric oxide") -| act(complex(p(HGNC:F13A1), p(HGNC:F13B)))
+
+SET Evidence = "Factor
+XIII stabilizes clots by catalysing fibrin monomer cross-linking;
+thus, NO deficiency enhances clot stability and reduces
+clot dissolution."
+
+complex(p(HGNC:F13A1), p(HGNC:F13B)) -> a(HM:"fibrin monomer cross-linking")
+complex(p(HGNC:F13A1), p(HGNC:F13B)) -| path(MESH:"Clot Retraction")
+a(CHEBI:"nitric oxide") -> path(MESH:"Clot Retraction")
+
+SET Evidence = "Therefore, decreased NO bioavailability
+affects vascular tone, platelet and endothelial function and
+coagulation, thus increasing thrombotic risk."
+
+a(CHEBI:"nitric oxide") -| path(MESH:Thrombosis)
+
+SET Evidence = "The large amounts of haem released upon haemolysis can
+overwhelm the capacity of haem scavengers and enzyme systems
+(i.e., HMOX1), thus causing oxidative stress (Jeney
+et al, 2002)."
+
+a(CHEBI:heme) -> bp(MESH:"Oxidative Stress")
+
+SET Evidence = "ROS generation by haem is at least
+partially dependent on the Fenton reaction, in which iron
+catalyses the production of toxic ROS (Wagener et al, 2003)."
+
+a(CHEBI:"iron(2+)") -> a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "These ROS then
+oxidize cell membrane constituents to induce cytotoxicity
+and promote inflammation and thrombosis."
+
+a(MESH:"Reactive Oxygen Species") -> bp(MESH:"Cytotoxicity, Immunologic")
+a(MESH:"Reactive Oxygen Species") -> path(MESH:Inflammation)
+a(MESH:"Reactive Oxygen Species") -> path(MESH:Thrombosis)
+
+SET Evidence = "Furthermore, ROS induction by haem directly depends on
+signal transduction involving Ga inhibitory protein and
+phosphoinositide 3-kinase, and partially depends on phospholipase
+Cb, protein kinase C, the mitogen-activated protein
+kinases (MAPKs) and Rho kinase in neutrophils (Porto
+et al, 2007)."
+
+act(p(HGNC:PDPK1)) pos a(MESH:"Reactive Oxygen Species")
+a(MESH:"Phospholipase C beta") pos a(MESH:"Reactive Oxygen Species")
+a(MESH:"Protein Kinase C") pos a(MESH:"Reactive Oxygen Species")
+a(MESH:"Mitogen-Activated Protein Kinases") pos a(MESH:"Reactive Oxygen Species")
+p(HGNC:ROCK1) pos a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "Transfusion of RBCs after prolonged refrigerator storage is
+associated with haemolysis (Donadee et al, 2011; Hod et al,
+2011) and enhances cytokine secretion in response to lipopolysaccharide
+(LPS) administration (Hod et al, 2010)."
+
+a(CHEBI:"lipopolysaccharide") -> a(MESH:Cytokines)
+
+SET Evidence = "Haem increases lethality and cytokine secretion
+induced by LPS in vivo and enhances cytokine secretion by
+macrophages stimulated with various innate immune receptor
+agonists (e.g., TLR2, TLR9, TLR3, and nucleotide-binding
+oligomerization domain (NOD) agonists) (Fernandez et al,
+2010)."
+
+SET Cell = "macrophage"
+p(HGNC:TLR2) -> a(MESH:Cytokines)
+p(HGNC:TLR9) -> a(MESH:Cytokines)
+p(HGNC:TLR3) -> a(MESH:Cytokines)
+p(HGNC:NOD1) -> a(MESH:Cytokines)
+
+SET Evidence = "Haem also induces tumour necrosis factor (TNF)
+secretion in monocyte/macrophages through TLR4 and the
+adaptor molecule, MYD88 (Figueiredo et al, 2007)."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) -> p(HGNC:TNF)
+p(HGNC:TLR4) -> p(HGNC:TNF)
+p(HGNC:MYD88) -> p(HGNC:TNF)
+
+SET Evidence = "Furthermore, cytokine secretion depends on the
+coordinated iron in the porphyrin ring (Figueiredo et al,
+2007), and nuclear factor-jB (NF-jB), MAPKs activation
+and ROS are essential for the increase in cytokine production
+induced by haem (Fernandez et al, 2010)."
+
+a(CHEBI:"iron coordination entity") pos a(MESH:Cytokines)
+p(HGNC:NFKB1) -> a(MESH:Cytokines)
+p(HGNC:MAPK1) -> a(MESH:Cytokines)
+a(MESH:"Reactive Oxygen Species") pos a(MESH:Cytokines)
+
+SET Evidence = "Finally, the cytokines
+produced through these pathways can then affect endothelial
+activation, leucocyte recruitment, and ultimately
+thrombotic risk."
+
+a(MESH:Cytokines) -- bp(GO:"endothelial cell activation")
+a(MESH:Cytokines) -> path(MESH:Thrombosis)
+
+SET Evidence = "Platelets may be activated during haemolysis by several different
+mechanisms involving decreased NO levels, increased
+pro-inflammatory cytokines and mediators, and ROS."
+
+a(MESH:Cytokines) -> bp(MESH:"Platelet Activation")
+a(CHEBI:"nitric oxide") -| bp(MESH:"Platelet Activation")
+a(MESH:"Reactive Oxygen Species") ->  bp(MESH:"Platelet Activation")
+
+SET Evidence = "NO inhibits platelet aggregation mediated by guanylate cyclase
+activation with a subsequent rise in cGMP (Faint et al,
+1991)."
+
+a(CHEBI:"3',5'-cyclic GMP") -| bp(MESH:"Platelet Aggregation")
+
+SET Evidence = "Platelet deposition and adhesion at sites of subintimal
+injury are increased by free haemoglobin or inhibition of NO
+production; this effect can be prevented by infusions of
+L-arginine, the precursor of NO (Olsen et al, 1996)."
+
+a(CHEBI:heme) -> bp(MESH:"Platelet Aggregation")
+a(CHEBI:"nitric oxide") -| bp(MESH:"Platelet Aggregation")
+a(CHEBI:"L-arginine") -| bp(MESH:"Platelet Aggregation")
+
+SET Evidence = "In addition,
+reduced NO bioavailability induces platelet activation
+and aggregation, leading to thrombosis in a mouse model of
+intravascular haemolysis (Hu et al, 2010)."
+ 
+bp(MESH:"Platelet Aggregation") pos path(MESH:Thrombosis)
+bp(MESH:"Platelet Activation") pos path(MESH:Thrombosis)
+
+SET Evidence = "In patients with SCD (Wun et al, 1998) and b-thalassaemia
+(Ruf et al, 1997), flow cytometry demonstrates the presence
+of an increased fraction of platelets expressing P-selectin, a
+platelet membrane receptor that mediates platelet–endothelial
+interactions."
+
+p(HGNC:SELP) pos bp(MESH:"Platelet Aggregation")
+
+SET Evidence = "In addition, platelet-derived soluble CD40
+ligand (CD40LG) is elevated in SCD patients, as compared
+with normal controls (Lee et al, 2006). This inflammatory
+ligand enhances adhesion molecule expression, stimulates
+cytokine secretion and initiates coagulation (Lee et al, 2006)."
+
+SET MeSHDisease = "Anemia, Hemolytic, Autoimmune"
+p(HGNC:CD40LG) -> a(MESH:"Cell Adhesion Molecules")
+p(HGNC:CD40LG) -> a(MESH:Cytokines)
+p(HGNC:CD40LG) -> path(MESH:"Blood Coagulation")
+
+SET Evidence = "ADP induces platelet activation and may also contribute
+to transfusion-related vascular thrombosis."
+
+a(MESH:"Adenosine Diphosphate") pos bp(MESH:"Platelet Activation")
+
+SET Evidence = "ADP released
+from haemolysed RBCs induces CD40LG release from platelets
+and lymphocytes, thereby contributing to the pro-inflammatory
+and pro-thrombotic environment (Helms et al,
+2013)."
+
+a(MESH:"Adenosine Diphosphate") -> p(HGNC:CD40LG)
+a(MESH:"Adenosine Diphosphate") pos path(MESH:Inflammation)
+a(MESH:"Adenosine Diphosphate") pos path(MESH:Thrombosis)
+
+SET Evidence = "Finally, ferrous iron, through Fenton-derived hydroxyl
+radical species production and protein kinase C function,
+activates platelets (Iuliano et al, 1994). "
+
+a(CHEBI:"iron(2+)") -> bp(MESH:"Platelet Activation")
+
+SET Evidence = "Thus, by participating
+in Fenton chemistry, non-transferrin-bound iron (i.e., iron
+not bound to the physiological iron transport protein, transferrin)
+causes oxidative damage, cytotoxicity and enhanced
+endothelial expression of adhesion molecules, thereby
+enhancing thrombotic risk (Hershko, 2007)."
+
+a(CHEBI:"iron(2+)") pos bp(MESH:"Oxidative Stress")
+a(CHEBI:"iron(2+)") pos bp(MESH:"Cytotoxicity, Immunologic")
+a(CHEBI:"iron(2+)") -> a(MESH:"Cell Adhesion Molecules")
+a(CHEBI:"iron(2+)") -> path(MESH:Thrombosis)
+
+SET Evidence = "For example, haem stimulates expression of P-selectin and
+von Willebrand Factor (VWF) ‘strings’ on endothelial cells
+in vitro and on the vessel walls of both normal and SCD
+mice (Belcher et al, 2014)."
+
+a(CHEBI:heme) -> p(HGNC:SELP)
+a(CHEBI:heme) -> p(HGNC:VWF)
+
+SET Evidence = "Inhibiting NADPH oxidase, its upstream activator
+protein kinase C or antioxidants inhibit haem-mediated
+stasis, Weibel-Palade body degranulation and oxidant
+production by the endothelium (Belcher et al, 2014)."
+
+a(MESH:"NADPH Oxidase") -> bp(MESH:Hemostasis)
+a(MESH:"Protein Kinase C") -> bp(MESH:Hemostasis)
+a(MESH:"NADPH Oxidase") -> a(HM:"Weibel Palade body degranulation") 
+a(MESH:"Protein Kinase C") -> a(HM:"Weibel Palade body degranulation") 
+
+SET Evidence = "Furthermore,
+incubating endothelial cells with haem induces tissue
+factor, which can initiate coagulation (Setty et al, 2008)."
+
+a(CHEBI:heme) -> p(HGNC:F3)
+p(HGNC:F3) pos path(MESH:"Blood Coagulation")
+
+SET Evidence = "In addition, haem activates endothelial cell expression of
+intracellular adhesion molecule 1 (ICAM1), vascular cell
+adhesion molecule (VCAM1), and E-selectin (Wagener et al,
+1997)."
+
+a(CHEBI:heme) -> p(HGNC:ICAM1)
+a(CHEBI:heme) -> p(HGNC:VCAM1)
+a(CHEBI:heme) -> p(HGNC:SELE)
+
+SET Evidence = "Decreased
+function of this zinc-containing metalloprotease that cleaves
+VWF is implicated in the pathogenesis of both congenital and
+sporadic TTP (Furlan et al, 1998)."
+
+p(HGNC:ADAMTS13) neg path(MESH:"Purpura, Thrombotic Thrombocytopenic")
+
+SET Evidence = "This pro-inflammatory cytokine
+milieu is crucial in mediating the pro-coagulant effects of
+vascular endothelial cells and promotes localized inflammation
+and thrombosis (Qari et al, 2012)."
+
+p(HGNC:IL1B) -> path(MESH:Inflammation)
+p(HGNC:IL1B) -> path(MESH:Thrombosis)
+p(HGNC:CXCL8) -> path(MESH:Inflammation)
+p(HGNC:CXCL8) -> path(MESH:Thrombosis)
+p(HGNC:TNF) -> path(MESH:Inflammation)
+p(HGNC:TNF) -> path(MESH:Thrombosis)
+p(HGNC:CCL2) -> path(MESH:Inflammation)
+p(HGNC:CCL2) -> path(MESH:Thrombosis)
+
+SET Evidence = "Furthermore, haem released
+during SCD-induced haemolysis triggers the release of neutrophil
+extracellular traps (NETs) via a ROS-dependent
+mechanism (Chen et al, 2014)."
+
+path(MESH:Hemolysis) pos a(MESH:"Extracellular Traps")
+
+SET Evidence = "Thus, NETs recruit RBCs, activate
+platelets and promote fibrin deposition; they are a previously
+unrecognized link between haemolysis and thrombosis
+that may further explain this epidemiological association."
+
+a(MESH:"Extracellular Traps") -> bp(MESH:"Platelet Activation")
+a(MESH:"Extracellular Traps") -> a(HM:"fibrin deposition")
+
+SET Evidence = "Furthermore, phosphatidylserine is
+actively maintained on the inner leaflet of the bilayer membrane
+and, when externalized, is a recognition signal for cell
+clearance or for activation of coagulation (Zwaal & Schroit,
+1997)."
+
+a(CHEBI:"phosphatidyl-L-serine") pos path(MESH:"Blood Coagulation")
+
+SET Evidence = "These RBC microparticles
+can initiate and propogate thrombin generation
+(Rubin et al, 2013)."
+
+a(CHEBI:"phosphatidyl-L-serine") pos a(CHEBI:Thrombin)
+
+UNSET TextLocation
+################

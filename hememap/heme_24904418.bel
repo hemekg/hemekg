@@ -1,0 +1,687 @@
+#######################
+# Document Properties #
+#######################
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_24904418.bel"
+SET DOCUMENT Version     = "1.0.2"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Front Pharmacol. 2014 May 27;5:115. doi: 10.3389/fphar.2014.00115. eCollection 2014.", "24904418"}
+
+SET TextLocation = "Review"
+
+SET Evidence = "Importantly, heme b interaction with heme oxygenase
+(HO; Lad et al., 2003), the enzyme responsible for heme intracellular
+catabolism, and hemopexin (Hx; Paoli et al., 1999), a plasmatic
+heme scavenger, is essential for the regulation of free heme availability
+and Fe recycling (Kovtunovych et al., 2010; Tolosano et al.,
+2010)."
+
+p(HGNC:HMOX1) pos deg(a(CHEBI:heme))
+p(HGNC:HPX) -| a(CHEBI:heme) 
+
+SET Evidence = "Besides its physiological importance, heme has a potent oxidative
+capacity oxidizing lipids (Tappel, 1953, 1955; Vincent et al.,
+1988) and proteins (Aft and Mueller, 1984; Vincent, 1989), and
+damaging DNA (Aft and Mueller, 1983)."
+
+a(CHEBI:heme) pos bp(MESH:"Lipid Peroxidation")
+a(CHEBI:heme) pos bp(GO:"protein oxidation")
+a(CHEBI:heme) neg a(CHEBI:"deoxyribonucleic acid")
+
+SET Evidence = "The consequences
+of heme toxicity can be appreciated in hemolytic diseases such
+as β-thalassemia, sickle-cell disease (SCD), ischemia-reperfusion
+(IR), and malaria (Katori et al., 2002; Pamplona et al., 2007;Vinchi
+et al., 2013)."
+
+a(CHEBI:heme) pos path(MESH:"beta-Thalassemia")
+a(CHEBI:heme) pos path(MESH:"Anemia, Sickle Cell")
+a(CHEBI:heme) pos path(MESH:"Reperfusion Injury")
+a(CHEBI:heme) pos path(MESH:Malaria)
+
+SET Evidence = "Because of its large
+molecular size, this complex is maintained in the intravascular
+space, preventing the association of otherwise free Hb with nitric
+oxide (NO; Reiter et al., 2002) and inhibiting the release of free
+heme (Melamed-Frank et al., 2001)."
+
+a(MESH:"haptoglobin-hemoglobin complex") neg p(HGNC:HBB)
+
+SET Evidence = ". In the presence of
+reactive oxygen species (ROS), Hb is oxidized to methemoglobin
+(MetHb; Balla et al., 1993), characterized by the change in the
+oxidative state of the Fe present in the heme molecule from ferrous
+(Fe+2) to ferric (Fe+3)."
+
+a(MESH:"Reactive Oxygen Species") pos rxn(reactants(p(HGNC:HBB)), products(a(CHEBI:methemoglobin)))
+
+SET Evidence = "Hx inhibits
+the oxidative property of heme (Eskew et al., 1999) and mediates
+heme transportation to intracellular compartments through
+the macrophage receptor CD91 (Hvidberg et al., 2005), a critical
+step on heme catabolism."
+
+p(HGNC:HPX) -| bp(GO:"heme oxidation")
+p(HGNC:LRP1) -> bp(GO:"heme catabolic process")
+
+SET Evidence = "Once inside the cells, heme is catabolized
+by HO enzymes, generating equimolar amounts of biliverdin,
+carbon monoxide (CO), and Fe (Tenhunen et al., 1968). "
+
+p(HGNC:HMOX1) pos bp(GO:"heme catabolic process")
+bp(GO:"heme catabolic process") -> a(MESH:Biliverdine)
+bp(GO:"heme catabolic process") -> a(CHEBI:"carbon monoxide")
+bp(GO:"heme catabolic process") -> a(CHEBI:"iron(2+)")
+
+SET Evidence = " Differently
+from biliverdin and CO, which have anti-inflammatory
+effects (Otterbein et al., 2000; Baranano et al., 2002), free Fe is
+highly oxidative and can promote free radicals generation through
+the Fenton reaction, which catalyzes hydroxyl radicals from the
+reaction of Fe with H2O2 (Fenton, 1894)."
+
+a(MESH:Biliverdine) -| bp(GO:"inflammatory response") 
+a(CHEBI:"carbon monoxide") -| bp(GO:"inflammatory response") 
+a(CHEBI:"iron(2+)") pos a(MESH:"Free Radicals")
+rxn(reactants(a(CHEBI:"iron(2+)"), a(CHEBI:"hydrogen peroxide")), products(a(MESH:"Hydroxyl Radical")))
+
+SET Evidence = "Cells deficient on FtH are more susceptible
+to oxidative damage, while increased amounts of FtH protects
+cells from death induced by challenges such as Fe, tumor necrosis
+factor (TNF), heme, heme plus TNF, or oxidized low-density
+lipoprotein (LDL; Juckett et al., 1995; Pham et al., 2004; Gozzelino
+et al., 2012)."
+
+p(HGNC:FTH1) -| bp(MESH:"Oxidative Stress")
+p(HGNC:FTH1) -| p(HGNC:TNF)
+p(HGNC:FTH1) -| a(CHEBI:"iron(2+)")
+p(HGNC:FTH1) -| a(CHEBI:heme)
+p(HGNC:FTH1) -| a(CHEBI:"oxidised LDL")
+
+SET Evidence = ". Heme can destabilize biological
+membranes increasing its permeability and the chance of
+lysis (Schmitt et al., 1993), as it happens with erythrocytes (Chiu
+and Lubin, 1989)."
+
+SET Cell = "erythrocyte"
+a(CHEBI:heme) -> bp(GO:"positive regulation of membrane permeability")
+
+SET Evidence = "Once intercalated into cellular
+plasma membranes heme amplifies cellular susceptibility to
+oxidative-mediated injury by oxidants such as H2O2 or those
+derived from activated inflammatory cells (Balla et al., 1991a,b,
+1993)."
+
+a(CHEBI:heme) -> a(CHEBI:hydroperoxide)
+a(CHEBI:"hydrogen peroxide") -> bp(MESH:"Oxidative Stress")
+
+SET Evidence = "Furthermore, heme induces
+ROS generation dependent on enzymatic reactions."
+
+a(CHEBI:heme) -> a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "Alternatively, heme induced
+formation of radical species relies on the conversion of
+low-reactive organic hydroperoxides (ROOH) into highly reactive
+alkoxyl (RO•) and peroxyl (ROO•) radicals (Tappel, 1953, 1955;
+Van der Zee et al., 1996)."
+
+a(CHEBI:heme) -> rxn(reactants(a(CHEBI:hydroperoxide)), products(a(MESH:"alkoxyl radical"), a(CHEBI:hydroperoxyl)))
+
+SET Evidence = " These radicals may initiate further lipid
+peroxidation forming alkyl radicals that in the presence of O2
+form more peroxyl radicals leading to a facile propagation of free
+radical reactions."
+
+a(MESH:"alkoxyl radical") -> bp(MESH:"Lipid Peroxidation")
+a(CHEBI:hydroperoxyl) -> bp(MESH:"Lipid Peroxidation")
+
+SET Evidence = " Heme injection in mice leads to vascular
+permeability, leukocyte migration from the intravascular environment
+to tissues and increase of acute-phase proteins (Lyoumi et al.,
+1999; Wagener et al., 2001b), hallmarks of acute inflammation."
+
+a(CHEBI:heme) pos bp(GO:"regulation of vascular permeability")
+a(CHEBI:heme) pos bp(GO:"leukocyte migration involved in inflammatory response")
+
+SET Evidence = "Heme activates endothelial cells inducing the expression of the
+adhesion molecules ICAM-1 (intercellular adhesion molecule 1),
+VCAM-1 (vascular cell adhesion molecule 1), E-selectin, Pselectin,
+and von Willebrand factor (VWF; Wagener et al., 1997;
+Belcher et al., 2014) and causes neutrophil migration (GraçaSouza
+et al., 2002; Porto et al., 2007). "
+
+a(CHEBI:heme) -> bp(GO:"endothelial cell activation")
+a(CHEBI:heme) -> p(MGI:Icam1)
+a(CHEBI:heme) -> p(MGI:Vcam1)
+a(CHEBI:heme) -> p(HGNC:SELE)
+a(CHEBI:heme) -> p(HGNC:SELP)
+a(CHEBI:heme) -> p(MGI:Vwf)
+a(CHEBI:heme) -> bp(GO:"neutrophil migration")
+
+SET Evidence = "A seminal study demonstrated that the ability
+of heme to activate neutrophils depend on protein kinase C
+(PKC) activation and ROS generation, inducing the expression of
+adhesion molecules and modifying actin cytoskeleton dynamics,
+necessary features for neutrophils migration (Graça-Souza et al.,
+2002)."
+
+a(CHEBI:heme) -> bp(GO:"neutrophil migration")
+a(MESH:"Protein Kinase C") -> bp(GO:"neutrophil migration")
+a(MESH:"Reactive Oxygen Species") -> bp(GO:"neutrophil migration")
+
+SET Evidence = "In fact, heme can induce neutrophil migration by acting
+as a chemotactic molecule (Porto et al., 2007) or by inducing
+the production of leukotriene B4 (LTB4) by macrophages (Monteiro
+et al., 2011)."
+
+a(CHEBI:"leukotriene B4") -> bp(GO:"neutrophil migration")
+
+SET Evidence = "Heme-induced neutrophils activation leads to
+extracellular traps (NETs) release through a mechanism dependent
+on ROS generation (Chen et al., 2014). "
+
+a(CHEBI:heme) -> bp(GO:"neutrophil activation")
+bp(GO:"neutrophil activation") pos a(MESH:"Extracellular Traps")
+
+SET Evidence = "Although neutrophils have important
+functions controlling infection, these cells can promote
+vascular and tissue injury by generating ROS, secreting proteases,
+and releasing extracellular chromatin (NETs; reviewed in
+Mócsai, 2013)."
+
+a(MESH:Neutrophils) -| path(MESH:Infection)
+a(MESH:Neutrophils) pos a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "In this context, heme inhibits
+neutrophils apoptosis, increasing their longevity, and possibly
+enhancing harmful stimuli from these cells (Arruda et al., 2004,
+2006)."
+
+a(CHEBI:heme) -| bp(GO:"neutrophil apoptotic process")
+
+SET Evidence = "Moreover, IL-1β
+and TNF modifies the hypothalamus threshold of the body temperature
+causing fever."
+
+p(HGNC:TNF) pos path(MESH:Fever)
+p(HGNC:IL1B) pos path(MESH:Fever)
+
+SET Evidence = " KC (keratinocyte-derived chemokine) is
+a chemokine that attracts neutrophils to sites of inflammation
+and LTB4 is a lipid mediator that functions as a chemoattractant
+molecule and also activates leukocytes."
+
+a(CHEBI:"leukotriene B4") -> act(a(MESH:Leukocytes))
+
+SET Evidence = ". Heme activates
+macrophages inducing the production of TNF, KC (Figueiredo
+et al., 2007), IL-1β (unpublished), and LTB4 (Monteiro et al.,
+2011)."
+
+a(CHEBI:heme) -> p(HGNC:TNF)
+a(CHEBI:heme) -> p(HGNC:IL1B)
+a(CHEBI:heme) -> a(CHEBI:"leukotriene B4")
+
+SET Evidence = " Although KC and IL-1β functions were not investigated
+during heme-induced inflammatory effects, TNF and LTB4 were
+described as essential inflammatory mediators during inflammatory
+events induced by heme."
+
+p(HGNC:TNF) -> path(MESH:Inflammation)
+p(HGNC:IL1B) -> path(MESH:Inflammation)
+
+SET Evidence = " As described before, LTB4 has an
+important function regulating heme-induced neutrophils migration
+(Monteiro et al., 2011)."
+
+a(CHEBI:"leukotriene B4") -> bp(GO:"neutrophil migration")
+a(CHEBI:heme) -> bp(GO:"neutrophil migration")
+
+SET Evidence = "On the other hand, TNF secretion
+induced by heme is essential for the activation of the programed
+necrotic cell death pathway, which is denominated necroptosis
+(Fortes et al., 2012)."
+
+a(CHEBI:heme) -> p(HGNC:TNF)
+p(HGNC:TNF) -> bp(GO:"necroptotic process")
+
+SET Evidence = "Hemoglobin is used as a nutrient by Plasmodium, the protozoan
+parasite that causes malaria, during its replication stage inside erythrocytes
+in the course of the infection in mammals (Francis et al.,
+1997)."
+
+a(MESH:Plasmodium) pos path(MESH:Malaria)
+
+SET Evidence = " Similarly to heme, Hz also induces the production of
+several inflammatory mediators by macrophages such as cytokines
+and chemokines, and induces leukocytes migration (reviewed
+by Olivier et al., 2014)."
+
+a(MESH:hemozoin) -> a(MESH:Cytokines)
+a(MESH:hemozoin) -> a(MESH:Chemokines)
+a(MESH:hemozoin) -> bp(GO:"leukocyte migration")
+
+SET Evidence = "These concepts challenged the idea that
+the cytotoxic and inflammatory effects of heme were exclusively
+mediated by the oxidative capability of the Fe associated with the
+amphipathic property of the porphyrin ring."
+
+a(CHEBI:"iron(2+)") -> path(MESH:Inflammation)
+
+SET Evidence = "In fact, hemolysis
+or heme injection in Hx−/− mice cause increased inflammation
+and severe renal damage compared to wild type (WT)
+mice (Tolosano et al., 1999; Vinchi et al., 2008). "
+
+p(HGNC:HPX) -| path(MESH:Inflammation)
+p(HGNC:HPX) -| path(MESH:"Kidney Diseases")
+
+SET Evidence = "Mice lacking
+HO-1 (Hmox1−/−) are highly susceptible to pathologic conditions
+associated with increased serum heme concentration."
+
+p(MGI:Hmox1) -| a(CHEBI:heme)
+
+SET Evidence = "For
+instance, Hmox−/− mice develops acute renal failure and marked
+mortality when submitted to rhabdomyolysis, a pathological condition
+that increases serum myoglobin which can be oxidized
+and release heme (Nath et al., 2000). "
+
+SET MeSHDisease = "Rhabdomyolysis"
+p(MGI:Hmox1) neg path(MESH:"Acute Kidney Injury")
+
+SET MeSHAnatomy = "Serum"
+path(MESH:Rhabdomyolysis) pos p(MGI:Mb)
+
+SET Evidence = " Furthermore, Hmox1−/−
+mice are susceptible to liver IR which is characterized by tissue
+damage in sites that are reperfused after ischemia injury
+and hemolysis (Devey et al., 2009)."
+
+SET MeSHAnatomy = "Liver"
+p(MGI:Hmox1) neg path(MESH:"Insulin Resistance")
+
+SET Evidence = " SCD and β-thalassemia are genetic diseases
+associated to erythrocytes that are prone to lysis due to
+defective Hb production (Heinle and Read, 1948; Pauling et al.,
+1949; Ingram, 1957; discussed later). "
+
+path(MESH:"Anemia, Sickle Cell") pos path(MESH:Hemolysis)
+path(MESH:"beta-Thalassemia") pos path(MESH:Hemolysis)
+
+SET Evidence = " CO inhibits Hb oxidation and subsequently heme
+release, thus blocking heme accumulation in serum and preventing
+heme from exerting its inflammatory effects in the course
+of malaria disease (Ferreira et al., 2011)."
+
+SET MeSHDisease = "Malaria"
+a(CHEBI:"carbon monoxide") -| a(CHEBI:heme)
+a(CHEBI:heme) -> path(MESH:Inflammation)
+
+SET Evidence = "During the resolution phase of
+inflammation HO-1 expression in leukocytes reduces adhesion
+molecules expression and leukocytes migration, thus contributing
+to wound healing (Wagener et al., 2003a). "
+
+SET Cell = "leukocyte"
+p(HGNC:HMOX1) -| a(MESH:"Cell Adhesion Molecules")
+p(HGNC:HMOX1) -| bp(GO:"leukocyte migration")
+p(HGNC:HMOX1) -> bp(MESH:"Wound Healing")
+
+SET Evidence = "Highly purified heme free
+of endotoxin contamination was used, as well as polymyxin B,
+anti-TLR4/MD2, and lipid A antagonist, all of which inhibited
+the effects of LPS but did not interfere with the induction of
+TNF by heme."
+
+a(CHEBI:heme) -> p(RGD:Tnf)
+
+SET Evidence = "The TLR4 activates
+two distinct pathways: MyD88 and TRIF. In macrophages, heme
+induces a biased MyD88 activation and the secretion of the
+pro-inflammatory cytokines TNF and KC."
+
+p(HGNC:TLR4) -> p(HGNC:MYD88)
+p(HGNC:TLR4) -> p(HGNC:TICAM1)
+a(CHEBI:heme) -> p(HGNC:MYD88)
+a(CHEBI:heme) -> p(HGNC:TNF)
+a(CHEBI:heme) -> a(MESH:"keratinocyte-derived chemokines")
+
+SET Evidence = "TLR4 activation leads to
+MAPKs and NFκB activation, which are necessary to TNF secretion."
+
+p(HGNC:TLR4) -> a(MESH:"Mitogen-Activated Protein Kinases")
+p(HGNC:TLR4) -> p(HGNC:NFKB1)
+p(HGNC:NFKB1) -> p(HGNC:TNF)
+a(MESH:"Mitogen-Activated Protein Kinases") -> p(HGNC:TNF)
+
+SET Evidence = "Heme induces ROS generation independently of TLR4."
+
+a(CHEBI:heme) -> a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "However, ROS
+is necessary to induce TNF secretion and MAPK activation."
+
+a(MESH:"Reactive Oxygen Species") -> p(HGNC:TNF)
+a(MESH:"Reactive Oxygen Species") -> a(MESH:"Mitogen-Activated Protein Kinases")
+
+SET Evidence = " mROS scavenger
+(Mito-TEMPO) and NADPH oxidases inhibitors (apocynin and DPI) block
+TNF production induced by heme."
+
+a(CHEBI:TEMPO) -| p(HGNC:TNF)
+a(CHEBI:apocynin) -| p(HGNC:TNF)
+a(CHEBI:dibenziodolium) -| p(HGNC:TNF)
+
+SET Evidence = "WhileMAPK8 increases ROS
+generation, TNF induces RIP1–RIP3 necrosome which triggers necroptosis."
+
+p(HGNC:MAPK8) -> a(MESH:"Reactive Oxygen Species")
+p(HGNC:TNF) -> act(p(HGNC:RIPK1))
+p(HGNC:TNF) -> act(p(HGNC:RIPK3))
+p(HGNC:RIPK1) -> bp(GO:"necroptotic process")
+p(HGNC:RIPK3) -> bp(GO:"necroptotic process")
+
+SET Evidence = "mROS scavenger (Mito-TEMPO) and NADPH oxidases inhibitors (apocynin
+and DPI) block heme-induced necroptosis."
+
+a(CHEBI:TEMPO) -| bp(GO:"necroptotic process")
+a(CHEBI:apocynin) -| bp(GO:"necroptotic process")
+a(CHEBI:dibenziodolium) -| bp(GO:"necroptotic process")
+
+SET Evidence = "Moreover, HO-1 has a protective effect
+during heme-induced necroptosis."
+
+a(CHEBI:heme) -> bp(GO:"necroptotic process")
+p(HGNC:HMOX1) -| bp(GO:"necroptotic process")
+
+SET Evidence = "Heme induces Syk phosphorylation in macrophages."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) -> p(HGNC:SYK, pmod(Ph)) 
+
+SET Evidence = " Heme amplifies cytokines induced by cell surface
+receptors (TLR2, TLR4, TLR5), endosome receptors (TLR3, TLR9), and
+cytosolic receptors (NOD1 and NOD2)."
+
+a(CHEBI:heme) -> a(MESH:Cytokines)
+a(CHEBI:heme) -> p(HGNC:TLR2)
+a(CHEBI:heme) -> p(HGNC:TLR4)
+a(CHEBI:heme) -> p(HGNC:TLR5)
+a(CHEBI:heme) -> p(HGNC:TLR9)
+a(CHEBI:heme) -> p(HGNC:TLR2)
+a(CHEBI:heme) -> p(HGNC:NOD1)
+a(CHEBI:heme) -> p(HGNC:NOD2)
+
+SET Evidence = "Moreover, heme amplifies MyD88-
+(TNF and IL-6) and TRIF-dependent (IP-10) cytokines."
+
+a(CHEBI:heme) -> p(HGNC:TNF)
+a(CHEBI:heme) -> p(HGNC:IL6)
+a(CHEBI:heme) -> p(HGNC:CXCL10)
+
+SET Evidence = "During intravascular hemolysis the serum proteins responsible
+for removing heme get saturated and heme can exert its inflammatory
+effects."
+
+a(CHEBI:heme) -> path(MESH:Inflammation)
+
+SET Evidence = "Hemolysis can happen due to ischemia/reperfusion, SCD or
+β-thalassemia."
+
+path(MESH:Ischemia) pos path(MESH:Hemolysis) 
+path(MESH:"Anemia, Sickle Cell") pos path(MESH:Hemolysis) 
+path(MESH:Thalassemia) pos path(MESH:Hemolysis) 
+
+SET Evidence = "Hemolysis increases the concentration of Hb
+which, under oxidative stress, releases free heme."
+
+path(MESH:Hemolysis) pos p(HGNC:HBB)
+p(HGNC:HBB) -> a(CHEBI:heme)
+
+SET Evidence = "Heme activates
+neutrophils and endothelial cells, by ROS generation."
+
+a(CHEBI:heme) -> a(MESH:"Reactive Oxygen Species")
+a(MESH:"Reactive Oxygen Species") -> bp(MESH:"Neutrophil Activation")
+a(MESH:"Reactive Oxygen Species") -> bp(GO:"endothelial cell activation")
+
+SET Evidence = "In
+endothelial cells, heme induces TLR4-dependent degranulation of
+Weibel–Palade bodies and P-selectins and VWF release."
+
+a(CHEBI:heme) -> p(HGNC:SELP)
+a(CHEBI:heme) -> p(HGNC:VWF)
+
+SET Evidence = "The VWF is
+prothrombotic and can increase the adhesion of erythrocytes to the
+endothelium."
+
+p(HGNC:VWF) pos path(MESH:Thrombosis)
+
+SET Evidence = "Heme also induces the expression of the adhesion
+molecules ICAM-1, VCAM-1, and E-selectins."
+
+a(CHEBI:heme) -> p(HGNC:ICAM1)
+a(CHEBI:heme) -> p(HGNC:VCAM1)
+a(CHEBI:heme) -> p(HGNC:SELE)
+
+SET Evidence = " Depending on
+the extension of the vaso-occlusion, some tissues may experience
+hypoxia and damage."
+
+path(HM:"vaso-occlusive crisis") pos path(MESH:Hypoxia)
+
+SET Evidence = " Vaso-occlusion of the lung microvasculature may
+result in the development of the ACS through the infarction of the lung
+parenchyma."
+
+path(HM:"vaso-occlusive crisis") pos path(MESH:"Acute Chest Syndrome")
+
+SET Evidence = "Therefore, it is clear that heme triggers 
+ROS-induced sensitization of macrophages to TNFR-mediated 
+cell death through RIP1 and RIP3 activation to promote 
+necroptosis (Figure 2)."
+
+a(CHEBI:heme) -> bp(GO:"necroptotic process")
+
+SET Evidence = "Heme-induced necroptosis is reversed by deferoxamine, a Fe chelator."
+
+a(CHEBI:"desferrioxamine B") neg bp(GO:"necroptotic process")
+
+SET Evidence = "Stimulation of astrocytes with heme, 
+as a model of hemorrhagic injury, causes cell death 
+with characteristics of programed necrosis including 
+the loss of plasma membrane integrity, reversion by 
+necrostatin-1, a selective inhibitor of RIP1, and 
+by antioxidants (Laird et al., 2008)."
+
+a(MESH:"necrostatin-1") -| p(HGNC:RIPK1) 
+
+SET Evidence = "In fact, TLR4 is involved in intracerebral 
+hemorrhage (ICH) induced by heme (Lin et al., 2012)."
+
+SET MeSHDisease = "Cerebral Hemorrhage"
+a(CHEBI:heme) -> p(HGNC:TLR4)
+
+SET Evidence = "Moreover, heme induces apoptosis in human 
+brain vascular endothelial cells (HBVEC) by STAT3 
+(signal transducer and activator of transcription 3)-dependent 
+activation of matrix metallopeptidase 3 (MMP3; Liu et al., 2013)."
+
+a(CHEBI:heme) -> bp(MESH:Apoptosis)
+
+SET Evidence = "Importantly, increased expression of FtH also 
+protects different cell types from the cytotoxic effects 
+of heme, TNF or heme and TNF (Balla et al., 1992; 
+Berberat et al., 2003; Cozzi et al., 2003; Gozzelino et al., 2012)."
+
+p(HGNC:FTH1) -| a(HM:"Heme cytotoxicity")
+
+SET Evidence = "The antioxidant property of FtH blocks TNF-induced JNK 
+activation, reducing cell death (Pham et al., 2004; Kamata et 
+al., 2005; Gozzelino et al., 2012)."
+
+p(HGNC:FTH1) -| p(HGNC:MAPK8)
+
+SET Evidence = "Hb synergizes with LPS enhancing 
+the production of pro-inflammatory cytokines 
+by macrophages (Yang et al., 2002). "
+
+complex(p(HGNC:HBB), a(MESH:Lipopolysaccharides)) -> a(MESH:Cytokines)
+
+SET Evidence = " In vivo, injection of heme and LPS 
+induces a significant increase in the concentrations 
+of TNF and IL-6 when compared to the challenge 
+with LPS alone (Fernandez et al., 2010)."
+
+complex(a(CHEBI:heme), a(MESH:Lipopolysaccharides)) -> p(HGNC:TNF)
+complex(a(CHEBI:heme), a(MESH:Lipopolysaccharides)) -> p(HGNC:IL6)
+
+SET Evidence = "Atypical hemolytic uremic syndrome (aHUS) 
+is characterized by an over activation of the complement 
+alternative pathway (CAP) due to genetic and acquired 
+abnormalities (Noris and Remuzzi, 2009)."
+
+bp(GO:"complement activation, alternative pathway") pos  path(MESH:"Atypical Hemolytic Uremic Syndrome")
+
+SET Evidence = "In fact, Tlr4-/- or anti-TLR4 treatment suppresses heme-induced neuroinflammation, edema, and neurologic deficit. "
+
+p(HGNC:TLR4) pos path(MESH:"Neurogenic Inflammation")
+p(HGNC:TLR4) pos path(MESH:"Brain Edema")
+
+SET Evidence = ". Interestingly, NLRP3 knockdown and mROS inhibitors reduce brain 
+edema and improve neurological functions (Ma et al., 2014)."
+
+p(HGNC:NLRP3) pos path(MESH:"Brain Edema")
+
+SET Evidence = "Low-density lipoprotein is the major lipid involved in plaque formation."
+
+a(CHEBI:"low-density lipoprotein") pos path(MESH:"Plaque, Atherosclerotic")
+
+SET Evidence = "Indeed, TLRs and NLRP3 have been associated with atherosclerosis development."
+
+p(HGNC:NLRP3) -> path(MESH:Atherosclerosis)
+p(HGNC:TLR4) -> path(MESH:Atherosclerosis)
+p(HGNC:TLR6) -> path(MESH:Atherosclerosis)
+
+SET Evidence = "In fact, heme-induced LDL oxidation is 
+highly cytotoxic for endothelial cells and LDL oxidation 
+seems to be mediated by Fe (Jeney et al., 2002; Nagy et al., 2010). "
+
+a(CHEBI:heme) pos a(CHEBI:"oxidised LDL")
+
+SET Evidence = "Interestingly, a 6-year-old patient with HO-1 deficiency 
+experienced a severe atherosclerotic pathology (Yachie et al., 1999). "
+
+p(HGNC:HMOX1) -| path(MESH:Atherosclerosis)
+
+SET Evidence = "After hemolysis, sustained interaction between 
+Hb and ROS can lead to ferrylhemoglobin (ferrylHb) formation, 
+which is characterized by an increase in the Fe oxidative 
+state to Fe+4 (Harel and Kanner, 1988; Patel et al., 1996). "
+
+complex(p(HGNC:HBB), a(MESH:"Reactive Oxygen Species")) -> a(MESH:ferrylhemoglobin)
+
+SET Evidence = "Similarly to heme, ferrylHb activates endothelial 
+cells through NFκB activation (Silva et al., 2009)."
+
+a(MESH:ferrylhemoglobin) -> bp(GO:"endothelial cell activation")
+
+SET Evidence = " Moreover, ferrylHb is unable to induce cytokine secretion by endothelial cells (Silva et al., 2009), 
+another difference to heme which induces IL-8 production (Natarajan et al., 2007). "
+
+a(MESH:ferrylhemoglobin) causesNoChange a(MESH:Cytokines)
+a(MESH:ferrylhemoglobin) -> p(HGNC:CXCL8)
+
+SET Evidence = "Like MetHb, ferrylHb is unstable and releases free heme to 
+further increase oxLDL formation (Potor et al., 2013)."
+
+a(MESH:ferrylhemoglobin) -> a(CHEBI:heme)
+
+SET Evidence = " LXR-β protects against lipid overload 
+by activating a lipid exportation program regulated by 
+proteins such as LXR-α and ATP binding cassette 
+transporter A1 (ABCA1), preventing foam cells formation. "
+
+p(HGNC:NR1H2) pos bp(GO:"lipid homeostasis")
+
+UNSET TextLocation
+##################

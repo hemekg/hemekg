@@ -1,0 +1,387 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_20378845.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Arterioscler Thromb Vasc Biol. 2010 Jul;30(7):1347-53. doi: 10.1161/ATVBAHA.110.206433. Epub 2010 Apr 8.", "20378845"} 
+
+SET Evidence = "Oxysterols and oxidation products of polyunsaturated fatty acids (PUFAs) are present in human
+atheromatous lesions.4,5"
+
+a(HM:"Atheromatous lesions") pos a(CHEBI:oxysterol) 
+
+SET Evidence = "In previous studies we found that endothelial cells exposed to oxidized LDL upregulated both
+heme oxygenase-1 (HO-1) and ferritin,8,9 presumably as a defense mechanism.6,11-14"
+
+SET Cell = "endothelial cell"
+a(CHEBI:"oxidised LDL") -> p(HGNC:HMOX1)
+a(CHEBI:"oxidised LDL") -> p(PFAM:Ferritin)
+
+SET Evidence = "Upregulation
+of HO-115 and ferritin H chain16 in endothelial cells has been reported in the early
+phase of progression of atherosclerotic lesions."
+
+SET MeSHDisease = "Atherosclerosis"
+SET Cell = "endothelial cell"
+a(CHEBI:"oxidised LDL") -> p(HGNC:HMOX1)
+a(CHEBI:"oxidised LDL") -> p(PFAM:Ferritin)
+
+SET Evidence = "Expression of HO-1 provides protection against
+atherosclerosis in several experimental models17,18 and HO-1 deficiency in humans has been
+associated with the appearance of vasculature fatty streaks and atheromatous plaques at age of
+six.19"
+
+p(HGNC:HMOX1) neg path(MESH:Atherosclerosis)
+p(HGNC:HMOX1) neg path(MESH:"Plaque, Atherosclerotic")
+
+SET TextLocation = "Results"
+
+SET Evidence = "Hematomas occur in atheromatous lesions and plaque material contains lipid oxidation
+products including lipid hydroperoxide22 which can mediate not only the oxidation of
+hemoglobin but might also lyse intact red cells.23"
+
+a(HM:"Atheromatous lesions") pos path(MESH:Hematoma)
+
+SET MeSHDisease = "Plaque, Atherosclerotic"
+a(CHEBI:"lipid hydroperoxide") -> p(HGNC:HBB, pmod(O))
+a(CHEBI:"lipid hydroperoxide") pos a(HM:"Erythrocytes, lysed")
+
+SET Evidence = "Lipids of atheromatous (Fig 1A, 1b and 2b
+panels) and ruptured complicated lesions (Fig 1A, 1c and 2c panels) as well as oxidized LDL
+caused significant lysis of red cells within 24 hours (Fig 1B, black bars)."
+
+a(HM:"Atheroma lipid") -> a(HM:"Erythrocytes, lysed")
+a(HM:"Atheromatous lesions") -> a(HM:"Erythrocytes, lysed")
+a(CHEBI:"oxidised LDL") -> a(HM:"Erythrocytes, lysed")
+
+SET Evidence = "Preincubation of lipid extract derived from
+atheroma, complicated lesion or oxidized LDL with glutathione/glutathione peroxidase (which
+specifically reduced lipid hydroperoxide to alcohol by 35%, 38% and 90%, respectively)
+significantly lowered the lytic effect (Fig 1B, empty bars).Oxidation of liberated hemoglobin
+was also reduced (Fig 1C, empty bars)"
+
+a(MESH:"Glutathione Peroxidase") -| a(CHEBI:"lipid hydroperoxide")
+a(MESH:"Glutathione Peroxidase") -| a(HM:"Erythrocytes, lysed")
+a(MESH:"Glutathione Peroxidase") -| p(HGNC:HBB, pmod(O))
+
+SET Evidence = "Indeed, lipids derived from
+atheromatous lesions promoted the oxidation of ferrohemoglobin to ferrihemoglobin (Fig 2C)."
+
+a(HM:"Atheroma lipid") -> p(HGNC:HBB, pmod(O))
+
+SET Evidence = "Treatment of oxidized LDL (Fig 2B), or atheroma lipids (Fig 2D) with glutathione/glutathione
+peroxidase lowered the lipid hydroperoxide content as well as the oxidation of hemoglobin."
+
+complex(a(CHEBI:"oxidised LDL"), a(MESH:"Glutathione Peroxidase")) -| a(CHEBI:"lipid hydroperoxide")
+complex(a(CHEBI:"oxidised LDL"), a(MESH:"Glutathione Peroxidase")) -| p(HGNC:HBB, pmod(O))
+
+SET Evidence = "As is true of intact hemoglobin, lipid extracts from atheromatous lesions exposed to heme also
+underwent lipid peroxidation as reflected by the accumulation of thiobarbituric acid-reactive
+substances (TBARs) and lipid hydroperoxides (supplemental Fig I)."
+
+complex(a(CHEBI:heme), a(HM:"Atheroma lipid")) -> a(MESH:"Thiobarbituric Acid Reactive Substances")
+complex(a(CHEBI:heme), a(HM:"Atheroma lipid")) -> a(CHEBI:"lipid hydroperoxide")
+complex(a(CHEBI:heme), a(HM:"Atheroma lipid")) -> bp(MESH:"Lipid Peroxidation")
+
+SET Evidence = "Heme/iron-mediated oxidative modification of LDL can cause endothelial cytotoxicity8,24 and
+– at sublethal doses – the expression of stress-response genes.9,11-14"
+
+SET Cell = "endothelial cell"
+a(CHEBI:"oxidised LDL") pos bp(MESH:"Cytotoxicity, Immunologic")
+
+SET Evidence = "As shown in Fig 3B, lipids
+from atherosclerotic lesions were cytotoxic to endothelium, an effect strikingly enhanced when
+lipids were pre-oxidized by exposure to heme."
+
+a(HM:"Atheroma lipid") pos path(HM:"Endothelial dysfunction")
+
+SET Evidence = "At sublethal doses, atheroma lipid - whether pre-treated with
+heme or not - induced the expression of the stress-responsive gene HO-1, at both mRNA (Fig
+3C) and protein levels (Fig 3D)."
+
+a(HM:"Atheroma lipid") -> p(HGNC:HMOX1)
+a(HM:"Atheroma lipid") -> r(HGNC:HMOX1)
+
+SET Evidence = "Pre-treatment of heme-oxidized lipids with
+glutathione/glutathione peroxidase reduced the lipid hydroperoxide content (113±30 vs. 74±22
+nmol LOOH/mg extract, p<0.01) and inhibited the endothelial cell cytotoxicity by 25% (p<0.05)."
+
+a(MESH:"Glutathione Peroxidase") -| a(CHEBI:"lipid hydroperoxide")
+SET Cell = "endothelial cell"
+a(MESH:"Glutathione Peroxidase") -| bp(MESH:"Cytotoxicity, Immunologic")
+
+SET Evidence = "Furthermore, the induction of HO-1 was decreased (153 ± 16 versus 105 ± 3 pmol bilirubin
+formed per milligram of cell protein per 60 minutes, p<0.01) in endothelial cells."
+
+SET Cell = "endothelial cell"
+a(MESH:"Glutathione Peroxidase") -| p(HGNC:HMOX1)
+
+SET Evidence = "Levels of conjugated dienes, lipid hydroperoxides and TBARs were
+significantly higher in atheromatous lesions compared to controls (supplemental Table I)."
+
+a(HM:"Atheromatous lesions") pos a(CHEBI:"lipid hydroperoxide")
+a(HM:"Atheromatous lesions") pos a(MESH:"Thiobarbituric Acid Reactive Substances")
+
+SET Evidence = "Elevated cholesterol, oxy-cholesterol, lyso-phospholipid and decreased phosphatidylserine
+were found in atheromatous lipids compared to controls (supplemental Table II)."
+
+a(HM:"Atheroma lipid") pos a(CHEBI:cholesterol) 
+a(HM:"Atheroma lipid") pos a(MESH:"5,6-epoxycholesterol")
+a(HM:"Atheroma lipid") neg a(CHEBI:"phosphatidyl-L-serine")
+
+SET Evidence = "Moreover,
+lipids extracted from atheromatous lesions contained 1.9 times more monounsaturated fatty
+acids than control extracts."
+
+a(HM:"Atheroma lipid") pos a(CHEBI:"monounsaturated fatty acid")
+
+SET Evidence = "Hemoglobinmediated
+oxidative modification of lipid extracted from atheromatous lesions was inhibited by
+haptoglobin (Fig 4A)."
+
+p(HGNC:HP) -| a(HM:"oxidative modification of atheroma lipid")
+
+SET Evidence = "Moreover, the heme-binding protein, hemopexin, also suppressed the
+oxidation of lipid by ferro- and ferrihemoglobin, indicating the necessity for heme release from
+ferrihemoglobin for this oxidative process."
+
+p(HGNC:HPX) -| a(HM:"oxidative modification of atheroma lipid")
+
+SET Evidence = "Inhibition of lipid oxidation by either haptoglobin
+or hemopexin reduced the cytotoxicity (Fig 4B) and HO-1 induction caused by sublethal
+amounts of pretreated atheromatous lesion lipids (Fig 4C and D)."
+
+bp(MESH:"Lipid Peroxidation") pos bp(MESH:"Cytotoxicity, Immunologic")
+p(HGNC:HP) -| bp(MESH:"Lipid Peroxidation")
+p(HGNC:HPX) -| bp(MESH:"Lipid Peroxidation")
+
+SET Evidence = "Concentrations of iron, conjugated dienes and lipid hydroperoxides were elevated by about 2-
+fold in ruptured complicated lesions, as compared to atheromatous lesions (0.433 ± 0.075 vs.
+0.185 ± 0.096 nmol Fe/mg tissue; 0.047 ± 0.019 vs. 0.021 ± 0.003 A234 conjugated dienes/mg
+tissue and 0.465 ± 0.110 vs. 0.248 ± 0.106 nmol LOOH/mg tissue, respectively) and
+complicated lesions contained 5.6 times more TBARs than atheromatous lesions (0.028 ± 0.012
+vs. 0.005 ± 0.001 nmol/mg tissue)."
+
+a(HM:"ruptured complicated lesions") pos a(CHEBI:"iron(2+)")
+a(HM:"ruptured complicated lesions") pos a(CHEBI:"lipid hydroperoxide")
+a(HM:"ruptured complicated lesions") pos a(MESH:"Thiobarbituric Acid Reactive Substances")
+
+SET Evidence = "Moreover, the amounts of a protein
+oxidation marker, dityrosine,21 were elevated in complicated lesions (Fig 5B) whereas
+atheromatous lesions did not contain detectable dityrosine."
+
+a(HM:"ruptured complicated lesions") pos a(CHEBI:dityrosine)
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "Atheromatous lesions are prone to disruption leading to hematoma or hemorrhage."
+
+a(HM:"Atheromatous lesions") pos path(MESH:Hematoma) 
+a(HM:"Atheromatous lesions") pos path(MESH:Hemorrhage)
+
+SET Evidence = "The results reported
+here indicate that, once exposed to oxidized plaque material, erythrocytes are lysed, the
+liberated hemoglobin is oxidized and heme dissociates from the resultant ferrihemoglobin."
+
+a(HM:"Erythrocytes, lysed") -> p(HGNC:HBB)
+p(HGNC:HBB) -> a(HM:ferrihemoglobin)
+deg(a(HM:ferrihemoglobin)) -> a(CHEBI:heme)
+
+SET Evidence = "This engenders the release of iron, which can promote further the
+oxidation of plaque lipids through redox cycling reactions. The result of these chemical
+reactions is the formation of deleterious oxidized ‘gruel’ which, among other things, leads to
+endothelial oxidative stress and ultimately to cytotoxicity."
+
+SET Cell = "endothelial cell"
+a(CHEBI:"iron(2+)") pos bp(MESH:"Oxidative Stress")
+
+SET Evidence = "Previously we have shown that
+heme can enter the lipid moiety of LDL and induce iron-dependent lipid peroxidation.8"
+
+a(CHEBI:heme) pos bp(MESH:"Lipid Peroxidation")
+
+SET Evidence = "Here we demonstrate that lipids isolated from human atheromatous lesions – which are already in
+an oxidized state – can be further oxidized in the presence of heme, whereas this effect is not
+observed using lipids isolated from normal vasculature."
+
+a(CHEBI:heme) pos bp(MESH:"Lipid Peroxidation")
+
+SET Evidence = "Heme treatment of the atheroma and
+its extracted lipid increased the amount of conjugated dienes, LOOHs and TBARs."
+
+SET MeSHDisease = "Atherosclerosis"
+rxn(reactants(a(CHEBI:heme), a(HM:"Atheroma lipid")), products(a(CHEBI:"lipid hydroperoxide")))
+rxn(reactants(a(CHEBI:heme), a(HM:"Atheroma lipid")), products(a(MESH:"Thiobarbituric Acid Reactive Substances")))
+
+SET Evidence = "The heme-binding protein, hemopexin, which
+likely prevents heme:lipid interactions and blocks the oxidative scission of heme,26
+significantly inhibited the oxidative reactions."
+
+p(HGNC:HPX) -| a(HM:"oxidative reactions")
+
+SET Evidence = "This serum protein, present at remarkably high
+concentrations in plasma (≈1g/L), binds heme with extraordinary avidity (Kd less than 1 pmol/
+L) and promotes its clearance."
+
+complex(a(CHEBI:heme), p(HGNC:HPX)) -> deg(a(CHEBI:heme)) 
+
+SET Evidence = "We have found that
+atheroma lipids when oxidized by heme are highly cytotoxic to human endothelial cells, and
+hemopexin reduced this cytotoxicity."
+
+SET Cell = "endothelial cell"
+a(HM:"Atheroma lipid") -> bp(MESH:"Cytotoxicity, Immunologic")
+p(HGNC:HPX) -| path(HM:"Endothelial dysfunction")
+
+SET Evidence = "After a co-incubation of ferrihemoglobin and
+atheroma lipid, peroxidation products were formed to an extent similar to that of heme
+treatment."
+
+rxn(reactants(a(HM:ferrihemoglobin), a(HM:"Atheroma lipid")), products(a(CHEBI:"lipid hydroperoxide")))
+rxn(reactants(a(HM:ferrihemoglobin), a(HM:"Atheroma lipid")), products(a(MESH:"Thiobarbituric Acid Reactive Substances")))
+
+SET Evidence = "Both the hemoglobin-binding protein, haptoglobin,27 and the heme-binding protein,
+hemopexin, inhibited such oxidative modification of lipids indicating the importance of heme
+loss and scission in hemoglobin-provoked oxidation of lipids derived from atheromatous
+lesions."
+
+p(HGNC:HP) -| a(HM:"oxidative modification of atheroma lipid")
+p(HGNC:HPX) -| a(HM:"oxidative modification of atheroma lipid")
+
+SET Evidence = "Thus, it appears that
+these extracts oxidize ferrohemoglobin to ferrihemoglobin, thereby leading to heme instability
+and heme-mediated initiation of lipid peroxidation."
+
+path(MESH:"Plaque, Atherosclerotic") pos p(HGNC:HBB, pmod(O))
+a(CHEBI:heme) pos bp(MESH:"Lipid Peroxidation")
+
+SET Evidence = "Heme oxygenase-1, a key antioxidant enzyme that exerts cytoprotective effects in endothelial
+cells8,11-14 also plays an important role in preventing the development of atherosclerosis."
+
+p(HGNC:HMOX1) neg path(HP:atherosclerosis)
+
+SET Evidence = "Elevated amounts of HO-1 were found in macrophages and medial smooth muscle cells of
+human atherosclerotic lesions.15"
+
+SET Cell = "macrophage"|"smooth muscle cell"
+a(HM:"Atheromatous lesions") pos p(HGNC:HMOX1)
+
+SET Evidence = "Now we demonstrate that heme
+and hemoglobin-treated atheroma lipids also induce HO-1 in endothelial cells exposed in
+sublethal doses." 
+
+complex(a(CHEBI:heme), a(HM:"Atheroma lipid")) -> p(HGNC:HMOX1)
+complex(p(HGNC:HBB), a(HM:"Atheroma lipid")) -> p(HGNC:HMOX1)
+
+SET Evidence = "Earlier chemical investigations
+of gruel from advanced lesions revealed that it contains ceroid-like insoluble material
+composed mainly of hydoxyapatite, iron and calcium."
+
+path(MESH:"Plaque, Atherosclerotic") pos a(MESH:Hydroxyapatites)
+path(MESH:"Plaque, Atherosclerotic") pos a(CHEBI:"iron(2+)")
+path(MESH:"Plaque, Atherosclerotic") pos a(MESH:Calcium)
+
+SET Evidence = "Gruel from advanced
+plaque also contains large amounts of organic soluble carbonyls and aldehydes that are also
+cytotoxic."
+
+path(MESH:"Plaque, Atherosclerotic") pos a(CHEBI:"carbonyl group")
+path(MESH:"Plaque, Atherosclerotic") pos a(MESH:Aldehydes)
+
+SET Evidence = "Cell-free hemoglobin is
+readily oxidized to ferrihemoglobin by oxidants such as H2O2 produced by activated
+polymorphonuclear cells or monocyte/macrophages."
+
+SET Cell = "macrophage"
+rxn(reactants(p(HGNC:HBB), a(CHEBI:"hydrogen peroxide")), products(a(HM:ferrihemoglobin)))
+
+SET Evidence = "We recently found that, contrary to
+other forms of oxidized hemoglobin, ferrylhemoglobin acts as a potent pro-inflammatory
+agonist in endothelial cells, leading to the up-regulation of adhesion molecules that support the
+recruitment of macrophages into the vessel wall.36"
+
+SET Cell = "endothelial cell"
+a(MESH:ferrylhemoglobin) pos path(MESH:Inflammation)
+a(MESH:ferrylhemoglobin) -> a(MESH:"Cell Adhesion Molecules")
+
+UNSET TextLocation
+##########

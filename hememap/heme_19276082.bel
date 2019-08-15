@@ -1,0 +1,264 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_19276082.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "J Biol Chem. 2009 May 8;284(19):13110-8. doi: 10.1074/jbc.M809095200. Epub 2009 Mar 10.", "19276082"} 
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "Interestingly elevated levels of body iron
+stores are associated with an increased risk of myocardial
+infarction, and carriers of the hemochromatosis gene have an
+increased risk of myocardial infarction and cardiovascular
+death (20, 21)."
+
+a(CHEBI:"iron(2+)") pos path(HP:"Myocardial infarction")
+
+SET Evidence = "High concentrations of FeCl3 induce profound injury to the
+vasculature, leading to endothelial denudation, and collagen
+and tissue factor exposure, leading to the rapid formation of
+vaso-occlusive thrombi."
+
+a(CHEBI:"iron trichloride") pos path(MESH:"Vascular System Injuries")
+
+SET Evidence = "As demonstrated in Fig. 1, topically exposing aorta in
+vivo (Fig. 1A) or ex vivo (Fig. 1B) to 6% FeCl3 resulted
+in major vascular injury as evidenced by endothelial denudation,
+collagen exposure, and the subsequent formation of
+arterial thrombi (Fig. 1D and supplemental Video 1)."
+
+a(CHEBI:"iron trichloride") pos path(MESH:"Vascular System Injuries")
+
+SET Evidence = "Platelet
+thrombus formation in the ex vivo model occurred in the
+presence of hirudin (Fig. 1B); however, it was critically
+dependent on collagen activation of platelets as thrombus
+formation failed to develop using platelets deficient in the
+major collagen receptor GPVI/FcR -chain (FcR / mice)
+(data not shown)."
+
+SET Cell = "platelet"
+p(MGI:Gp6) pos a(HM:Thrombus)
+
+SET Evidence = "To investigate
+the direct effects of FeCl3 on aortic endothelium, FeCl3 was
+perfused through isolated aorta independently of flowing
+blood. Strikingly no endothelial denudation or collagen exposure
+was evident following prolonged exposure to FeCl3 (6%)
+(Fig. 1C)."
+
+SET MeSHAnatomy = "Aorta"
+a(CHEBI:"iron trichloride") neg path(HM:"Endothelial dysfunction")
+
+SET Evidence = "Subsequent perfusion of anticoagulated whole blood
+through FeCl3-pretreated vessels was associated with an
+increase in leukocyte and platelet adhesion to the vessel wall
+(Fig. 1E and supplemental Video 2); however, relative to
+untreated aorta (Fig. 1F and supplemental Video 3) and treatment
+in the presence of flowing blood (Fig. 1D and supplemental
+Video 1), thrombus formation was not observed."
+
+SET MeSHAnatomy = "Blood"|"Aorta"
+a(CHEBI:"iron trichloride") pos path(HM:"Endothelial dysfunction")
+a(CHEBI:"iron trichloride") pos bp(GO:"leukocyte adhesion to vascular endothelial cell")
+a(CHEBI:"iron trichloride") pos bp(MESH:"Platelet Adhesiveness")
+
+SET Evidence = "In contrast, selectively
+removing RBCs prevented endothelial denudation and
+collagen exposure, resulting in a relatively mild perturbation of
+endothelial function similar to that observed with FeCl3 alone
+(data not shown)."
+
+SET Cell = "erythrocyte"
+a(CHEBI:"iron trichloride") pos path(HM:"Endothelial dysfunction")
+
+SET Evidence = "Analysis of Hb
+release from ex vivo vessel chamber experiments revealed a significant
+(p  0.05; n  4) increase in Hb levels following FeCl3
+treatment of isolated aorta in the presence of flowing blood
+(157  45 g/ml), whereas FeCl3 pretreatment of vessels prior
+to blood perfusion caused no hemolysis (Fig. 2A)."
+
+SET MeSHAnatomy = "Aorta"
+a(CHEBI:"iron trichloride") pos p(HGNC:HBB)
+
+SET Evidence = "Analysis of
+the time course of hemolysis in whole blood revealed a rapid
+linear increase in Hb levels, peaking 10 min after FeCl3 addition
+(Fig. 2B), a time course consistent with the rapid hemolysis and
+vascular injury observed in the ex vivo aortic thrombosis model."
+
+SET MeSHAnatomy = "Aorta"
+SET TimePoint = "10 min"
+a(CHEBI:"iron trichloride") pos p(HGNC:HBB)
+a(CHEBI:"iron trichloride") pos path(MESH:Hemolysis)
+a(CHEBI:"iron trichloride") pos path(MESH:"Vascular System Injuries")
+
+SET Evidence = "FeCl3 treatment resulted in a dose- (Fig. 3) and timedependent
+(data not shown) increase inRBClipid peroxidation,
+which correlated closely with hemolysis (Fig. 2B)."
+
+SET Cell = "erythrocyte" 
+a(CHEBI:"iron trichloride") pos bp(MESH:"Lipid Peroxidation")
+
+SET Evidence = "Topical treatment with 6% FeCl3 with hemin (1mM) perfusions
+caused no greater endothelial injury than FeCl3 or hemin (1
+mM) alone (data not shown), whereas FeCl3 in the presence of
+low concentrations of metHb (0.38 mg/ml) induced extensive
+vascular injury similar to that observed with FeCl3 in the presence
+of whole blood (Figs. 4 and 1D, respectively)."
+
+complex(a(CHEBI:"iron trichloride"), a(CHEBI:methemoglobin)) pos path(HM:"Endothelial dysfunction")
+
+SET Evidence = "By-products of
+heme and iron metabolism, such as heme oxygenase-dependent
+generation of carbon monoxide (CO), have antioxidant and
+anti-inflammatory protective functions against iron-induced
+vascular damage (33); therefore we examined the impact of CO
+donors on collagen exposure and thrombus formation in the ex
+vivo vascular injury model."
+
+a(CHEBI:"carbon monoxide") neg path(MESH:"Vascular System Injuries")
+
+SET Evidence = "Pretreating anticoagulated whole
+blood with tricarbonyldichlororuthenium(II) dimer, a CO
+donor, significantly reduced collagen exposure (Fig. 5A) and
+thrombus formation (Fig. 5B) induced by FeCl3."
+
+a(CHEBI:"carbon monoxide") neg a(HM:Thrombus)
+a(CHEBI:"iron trichloride") pos a(HM:Thrombus)
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "Moreover they have demonstrated
+that released Hb plays an important role in exacerbating
+RBC hemolysis, establishing a damaging hemolysis/
+oxidative cycle that drives further red cell damage, vascular
+injury, and thrombosis."
+
+p(HGNC:HBB) pos path(MESH:Hemolysis)
+path(MESH:Hemolysis) pos path(MESH:"Vascular System Injuries")
+path(MESH:Hemolysis) pos path(MESH:Thrombosis)
+
+SET Evidence = "Third, reintroduction of washed RBCs or
+purified metHb in the presence of FeCl3 led to a similar level
+of vascular injury as observed with whole blood, whereas
+isolated RBC membranes and heme, even in the presence of
+FeCl3, produced relatively mild injury."
+
+complex(a(CHEBI:"iron trichloride"), a(CHEBI:methemoglobin)) pos path(HM:"Endothelial dysfunction")
+
+SET Evidence = "Free heme is lipophilic and intercalates into the
+membrane of endothelial cells increasing vascular permeability
+and ICAM-1, VCAM-1, and E-selectin expression (19)."
+
+a(CHEBI:heme) pos bp(GO:"regulation of vascular permeability")
+a(CHEBI:heme) pos p(MGI:Icam1)
+a(CHEBI:heme) pos p(MGI:Vcam1)
+a(CHEBI:heme) pos p(MGI:Sele)
+
+SET Evidence = "As a
+consequence, infused heme (hemin) has been demonstrated to
+enhance leukocyte adhesion to the vessel wall (17, 18), a finding
+confirmed in the current study."
+
+a(CHEBI:heme) pos bp(GO:"leukocyte adhesion to vascular endothelial cell")
+
+SET Evidence = "Furthermore superoxide can react with
+Hb to produce hydrogen peroxide (H2O2), a well defined prooxidative
+molecule that causes vascular injury (1)."
+
+rxn(reactants(p(HGNC:HBB), a(CHEBI:superoxide)), products(a(CHEBI:"hydrogen peroxide"))) pos path(MESH:"Vascular System Injuries")
+
+SET Evidence = "Clinical studies have confirmed endothelial dysfunction
+and vasculopathy in a patient with HO-1 deficiency, and
+similarly, mice lacking HO-1 have increased vascular injury and
+thrombotic complications (43, 44)."
+
+p(MGI:Hmox1) neg path(MESH:"Vascular System Injuries")
+p(MGI:Hmox1) neg path(MESH:Thrombosis)
+
+UNSET TextLocation
+###############

@@ -1,0 +1,643 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_29956069.bel"
+SET DOCUMENT Version     = "1.0.1"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Inflammation.2018 Oct;41(5):1569-1581.doi:10.1007/s10753-018-0810-y.", "29956069"} 
+
+SET TextLocation = "Review"
+
+SET Evidence = "It is crucial, hence, to further investigate the mechanisms of sepsis-induced hemolysis with the aim of
+deriving possible therapeutic principles. Herein, we collected the most important previously
+known triggers of hemolysis during sepsis, which are (1) transfusion reactions and complement
+activation, (2) disseminated intravascular coagulation, (3) capillary stopped-flow, (4)
+restriction of glucose to red blood cells, (5) changes in red blood cell membrane properties, (6)
+hemolytic pathogens, and (7) red blood cell apoptosis."
+
+bp(GO:"complement activation") pos path(MESH:Hemolysis)
+path(MESH:"Transfusion Reaction") pos path(MESH:Hemolysis)
+path(MESH:"Disseminated Intravascular Coagulation") pos path(MESH:Hemolysis)
+bp(MESH:"Glucose-Galactose Malabsorption") pos path(MESH:Hemolysis)
+
+SET Evidence = "Both clinical [1–4] and experimental [5–8] studies
+have shown that sepsis and systemic inflammation lead to
+a massive release of hemoglobin from red blood cells
+(hemolysis) being accompanied with an increased risk of
+death [1–4, 8, 9]."
+
+path(MESH:Sepsis) pos path(MESH:Hemolysis)
+
+SET Evidence = "In animal experiments, the administration
+of lipopolysaccharide (LPS) to induce systemic
+inflammation leads to a significant increase in plasma
+concentration of cell-free hemoglobin as well [5–8]."
+
+a(CHEBI:lipopolysaccharide) -> p(HGNC:HBB)
+
+SET Evidence = "Cell-free hemoglobin and its prosthetic group
+heme can contribute to organ dysfunction and death
+[1–4, 9–12]; the pathological mechanisms include nitric
+oxide consumption, vasoconstriction, oxidative injury
+to lipid membranes, activation of the transcription factor
+NF-κB, endothelial injury as well as iron-driven 
+oxidative inhibition of glucose metabolism[10–14]."
+
+a(CHEBI:heme) -> bp(GO:"nitric oxide storage")
+a(CHEBI:heme) -> bp(GO:vasoconstriction)
+a(CHEBI:heme) -> bp(MESH:"Oxidative Stress")
+a(CHEBI:heme) -> p(HGNC:NFKB1)
+a(CHEBI:heme) -| bp(HP:"glucose metabolic process")
+
+SET Evidence = "Thus, hemolysis can act as a kind of amplifier of the
+complex response to an infection or injury [8, 15] and
+worsen the outcome from animals and patients with
+systemic inflammation, sepsis, or trauma [1–4, 10]."
+
+path(MESH:Hemolysis) pos path(MESH:Inflammation) 
+path(MESH:Hemolysis) pos path(MESH:Sepsis)
+path(MESH:Hemolysis) pos path(MESH:"Shock, Traumatic")
+
+SET Evidence = "Crucial for
+a sepsis, thus, was the presence of at least two of four
+criteria of a systemic inflammatory response syndrome
+(SIRS), which includes (1) fever (≥ 38.0 °C) or hypothermia
+(≤ 36.0 °C), (2) tachycardia (heart rate ≥ 90/min), (3)
+tachypnea (frequency ≥ 20/min) or hyperventilation, and
+(4) leukocytosis (white blood cells ≥ 12,000/mm3) or
+leukopenia (white blood cells ≤ 4000/mm3)."
+
+path(MESH:"Systemic Inflammatory Response Syndrome") pos path(MESH:Hypothermia)
+path(MESH:"Systemic Inflammatory Response Syndrome") pos path(MESH:Tachycardia)
+path(MESH:"Systemic Inflammatory Response Syndrome") pos path(MESH:Hyperventilation)
+path(MESH:"Systemic Inflammatory Response Syndrome") pos path(MESH:Leukocytosis)
+path(MESH:"Systemic Inflammatory Response Syndrome") pos path(MESH:Leukopenia)
+path(MESH:Sepsis) pos path(MESH:Hypothermia)
+path(MESH:Sepsis) pos path(MESH:Tachycardia)
+path(MESH:Sepsis) pos path(MESH:Hyperventilation)
+path(MESH:Sepsis) pos path(MESH:Leukocytosis)
+path(MESH:Sepsis) pos path(MESH:Leukopenia)
+
+SET Evidence = "A severe sepsis further
+was defined as sepsis with organ dysfunction and a septic
+shock as severe sepsis with cardiovascular collapse that
+does not respond to fluid intake [23]."
+
+path(MESH:"Shock, Septic") pos path(MESH:"Cardiovascular Infections")
+
+SET Evidence = "The cause of
+sepsis is primarily an exaggerated, generalized inflammatory
+response to an extrinsic stimulus. Mechanistically, so-called
+PAMPs (pathogen-associated molecular patterns) lead to the
+activation of pattern recognition receptors (PRRs) such as tolllike
+receptors (TLRs) and C-type lectin receptors (CLRs) [28,
+29]."
+
+SET MeSHDisease = "Sepsis"
+a(HM:"Pathogen Associated Molecular Pattern") -> act(p(HGNC:TLR4))
+a(HM:"Pathogen Associated Molecular Pattern") -> act(p(PFAM:"Lectin_C"))
+
+SET Evidence = "The cytokines released can further lead
+to pronounced peripheral vasodilation with arterial hypotension
+by activating the inducible nitric oxide (NO) synthase
+(iNOS) and the subsequent formation of NO [30]."
+
+SET MeSHAnatomy = "Arteries"
+a(MESH:Cytokines) -> bp(GO:vasodilation)
+a(MESH:Cytokines) -> path(MESH:Hypotension)
+
+SET Evidence = "Hemodynamics
+will be impaired, which on the one hand can lead to
+the production of oxygen radicals and thus directly to tissue
+damage."
+
+path(MESH:Sepsis) pos a(CHEBI:"oxygen radical")
+a(CHEBI:"oxygen radical") => path(HP:"cell and tissue damage")
+
+SET Evidence = "On the other hand, impaired microcirculation in the
+tissue usually causes local ischemia (circulatory disorders and
+lack of oxygen in the tissue) and often results in multiple
+organ failure [31]."
+
+path(HP:"Abnormality of blood circulation") -> path(MESH:Ischemia)
+path(MESH:Ischemia) -> path(MESH:"Multiple Organ Failure")
+
+SET Evidence = "Furthermore, a massive release of cytokines will shift
+the balance between pro- and anti-coagulatory factors in the
+blood, which will lead to increased coagulation of the blood
+(coagulopathy)."
+
+a(MESH:Cytokines) -> path(MESH:"Blood Coagulation Disorders")
+
+SET Evidence = "In recent years, it has also been shown that toll-like
+receptors and other pattern recognition receptors are activated
+not only by extrinsic factors but also by intrinsic stimuli (so called
+damage-associated molecular patterns, DAMPs) that
+are released when the host cell is damaged [27, 29]."
+
+a(MESH:Alarmins) -> act(p(HGNC:TLR4))
+
+SET Evidence = "However, the metabolic response to an
+infection also includes alterations in heme metabolism; a
+strategy to restrain pathogens to access iron would be the
+induction of hypoferremia [14, 38]."
+
+
+SET Evidence = "Normally, cellfree
+hemoglobin will dimerize and rapidly be bound by its
+hemoglobin scavengers haptoglobin and hemopexin [12]."
+
+p(HGNC:HP) -| p(HGNC:HBB)
+
+SET Evidence = "One of the mechanisms by which
+cell-free hemoglobin exerts its detrimental effects is its ability
+to effectively scavenge nitric oxide (NO), which in turn leads
+to perfusion disorders and an increased arterial and pulmonary
+arterial pressure [39, 40]."
+
+SET MeSHAnatomy = "Arteries"
+p(HGNC:HBB) -| a(CHEBI:"nitric oxide")
+p(HGNC:HBB) -> path(MESH:Hypertension)
+
+SET Evidence = "Another pathogenic mechanism
+involves the release of iron from cell-free hemoglobin
+with consecutive radical formation, which in turn can modify
+lipids, proteins, and DNA, leading to inflammation [39]."
+
+p(HGNC:HBB) -> a(CHEBI:"iron(2+)")
+a(CHEBI:"iron(2+)") -> bp(GO:"inflammatory response")
+
+SET Evidence = "Heme released from cell-free hemoglobin has been described
+to be an activator of TLR-4 [39, 41, 42]."
+
+a(CHEBI:heme) -> p(HGNC:TLR4)
+
+SET Evidence = "Heme/TLR-4
+signaling, moreover, was found to activate NF-κB and trigger
+vaso-occlusion [42]."
+
+a(CHEBI:heme) -> p(HGNC:TLR4)
+a(CHEBI:heme) -> p(HGNC:NFKB1)
+a(CHEBI:heme) -> path(HM:"vaso-occlusive crisis")
+
+SET Evidence = "Once cell-free
+hemoglobin was bound by its scavenger haptoglobin, the
+resulting haptoglobin–hemoglobin complex will bind to
+CD163 on the surface of macrophages/monocytes to initiate
+endocytosis and degradation of the complex [12, 39]."
+
+SET Cell = "macrophage"
+complex(a(MESH:"haptoglobin-hemoglobin complex"), p(HGNC:CD163)) -> bp(MESH:Endocytosis)
+
+SET Evidence = "Heme
+released from cell-free hemoglobin on oxidation is bound by
+hemopexin and degraded by hepatocytes in the liver [12]."
+
+SET MeSHAnatomy = "Liver"
+SET Cell = "hepatocyte"
+p(HGNC:HPX) -| a(CHEBI:heme)
+
+SET Evidence  = "In infectious diseases, such as malaria and sepsis, high
+amounts of cell-free hemoglobin and heme were found [8],
+suggesting that hemolysis during sepsis and systemic inflammation
+is of pathophysiological relevance."
+
+SET MeSHDisease = "Sepsis" | "Malaria"
+p(HGNC:HBB) pos path(MESH:Hemolysis)
+p(HGNC:HBB) pos path(MESH:Inflammation)
+a(CHEBI:heme) pos path(MESH:Hemolysis)
+a(CHEBI:heme) pos path(MESH:Inflammation)
+
+SET Evidence = "Thus, the intravenous administration of
+hemoglobin in LPS-pretreated mice leads to a higher TNF-
+α concentration and an increased mortality; in turn, these
+effects could be inhibited by hemoglobin antibodies [33, 34]."
+
+p(HGNC:HBB) -> p(RGD:Tnf)
+
+SET Evidence = "Moreover, longer storage duration of red blood cells
+is associated with an increased risk of acute lung injury in
+patients with sepsis [63]."
+
+SET MeSHDisease = "Sepsis"
+a(HM:"stored erythrocytes") pos path(MESH:"Acute Lung Injury")
+
+SET Evidence = "Most hemolytic transfusion
+reactions^ can be attributed to ABO antibodies
+(ABO incompatibility of red blood cells) leading to intravascular
+hemolysis [69, 70] as a consequence of robust
+complement activation [71]."
+
+bp(MESH:"Blood Group Incompatibility") pos path(MESH:Hemolysis)
+
+SET Evidence = "Extravascular hemolysis,
+however, results from Rh incompatibility of red blood cells
+[72] and is complement independent [71]."
+
+SET Cell = "erythrocyte"
+bp(HM:"Rh incompatibility") pos path(MESH:Hemolysis)
+
+SET Evidence = "During extravascular
+hemolysis, the IgG-coated red blood cells are
+degraded in the so-called reticuloendothelial systems such
+as liver, spleen, and lymph nodes."
+
+SET MeSHDisease = "Hemolysis"
+SET Cell = "erythrocyte"
+
+a(MESH:Liver) -> deg(complex(GO:"IgG immunoglobulin complex"))
+a(MESH:Spleen) -> deg(complex(GO:"IgG immunoglobulin complex"))
+a(MESH:"Lymph Nodes") -> deg(complex(GO:"IgG immunoglobulin complex"))
+
+SET Evidence = "Ultimately,
+activation of the complement cascade results in
+formation of the terminal complement complex C5b-9,
+the so-called membrane attack complex, and consequently
+a pore formation resulting in osmotic lysis of the target
+[71]. In the case of red blood cells, hemolysis will result."
+
+a(MESH:"Complement Membrane Attack Complex") -> bp(GO:cytolysis)
+
+SET Cell = "erythrocyte"
+a(MESH:"Complement Membrane Attack Complex") -> path(MESH:Hemolysis)
+
+SET Evidence = "Thus, the complement
+system may be causally involved in the onset of hemolysis
+during sepsis [74] by directly damaging the red blood cells
+upon activation as a result of detecting pathogen structures
+[73]."
+
+SET MeSHDisease = "Sepsis"
+bp(GO:"complement activation") -> path(MESH:Hemolysis)
+
+SET Evidence = "However, also the anaphylatoxins C3a and C5a may lead
+to cellular and organ disturbances [75]."
+
+a(MESH:"Complement C3a") -> path(MESH:Hemolysis)
+a(MESH:"Complement C5a") -> path(MESH:Hemolysis)
+
+SET Evidence = "Inhibition of the terminal complement cascade by
+eculizumab (inhibits the cleavage of C5 into C5a und
+C5b and thus the formation of the membrane attack
+complex 8, MAC C5b-C9) for the treatment of hemolytic
+paroxymal nocturnal hemoglobinuria (PNH) significantly
+prevented PNH-related symptoms in patients including
+abnormal thrombophilia, red blood cell destruction, and
+the extent of hemolysis [76]."
+ 
+a(MESH:eculizumab) -| path(HP:"Paroxysmal nocturnal hemoglobinuria")
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -- path(MESH:Thrombophilia)
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -- path(HP:"Hemolytic anemia")
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -- path(MESH:Hemolysis)
+
+SET Evidence = "From hemolytic uremic syndrome
+(HUS), we know that damage to the endothelium (endothelial
+lesions) might be the primary cause of hemolysis."
+
+SET MeSHDisease = "Atypical Hemolytic Uremic Syndrome"
+a(HM:"endothelial lesions") -> path(MESH:Hemolysis)
+
+SET Evidence = "During HUS, endothelial lesions cause a complement dependent
+activation of immune response and local thrombus
+formation—attachment of fibrin and platelets to the
+endothelial lesions and consequently disseminated intravascular
+coagulation (DIC)—and further mechanical destruction
+of the red blood cells in the fibrin mesh resulting
+in hemolysis [82]."
+
+SET MeSHDisease = "Atypical Hemolytic Uremic Syndrome")
+a(HM:"endothelial lesions") -> path(MESH:Thrombosis)
+a(HM:"endothelial lesions") -> path(MESH:"Disseminated Intravascular Coagulation")
+a(HM:"endothelial lesions") -> path(MESH:Hemolysis)
+
+SET Evidence = "Similar to HUS, during sepsis an activation
+not just of the complement system but also of the
+coagulation system has been described (essentially in consequence
+of the so-called pro-coagulant shift of the endothelial
+cells), which offers us the next possible cause of
+hemolysis during sepsis: destruction of the red blood cells
+in the fibrin mesh."
+
+SET MeSHDisease = "Sepsis"                                    
+bp(MESH:"Blood Coagulation") ->  path(MESH:Hemolysis)
+
+SET Evidence = "Sepsis/systemic inflammation is frequently associated
+with disseminated intravascular coagulation (DIC) being a
+predictor of mortality in septic patients [84, 85]."
+
+SET MeSHDisease = "Sepsis"  
+path(MESH:Inflammation) -- path(MESH:"Disseminated Intravascular Coagulation")
+
+SET Evidence = "DIC is characterized by a systemic 
+intravascular coagulation, formation
+of microvascular thrombi, insufficiently compensated
+consumption of platelets and coagulation factors, and
+eventually bleeding tendency [84]."
+
+SET MeSHAnatomy = "Microvessels"
+path(MESH:"Disseminated Intravascular Coagulation") pos path(MESH:Thrombosis)
+path(MESH:"Disseminated Intravascular Coagulation") pos path(MESH:Thrombocytopenia)
+
+SET Evidence = "Furthermore, fibrinolysis
+(dissolution of a blood clot) is also regularly inhibited in
+the early stages of sepsis [86]."
+
+path(MESH:Sepsis) -| path(MESH:Fibrinolysis)
+
+SET Evidence = "Essential for the development
+of DIC during sepsis is the so-called pro-coagulatory
+shift of the endothelial cells, caused among others by an
+increased expression of tissue factor and adhesion molecules
+especially by damaged endothelial cells [87]."
+
+SET MeSHDisease = "Sepsis" 
+p(HGNC:F3) -> path(MESH:"Disseminated Intravascular Coagulation"))
+a(MESH:"Cell Adhesion Molecules") -> path(MESH:"Disseminated Intravascular Coagulation")
+
+SET Evidence = "During
+DIC, fibrin strands within the fibrin mesh formed could cut
+red blood cells, resulting in the formation of schistocytes
+(strongly deformed red blood cells or fragments of red
+blood cells) and the release of hemoglobin."
+
+SET MeSHDisease = "Disseminated Intravascular Coagulation"
+a(MESH:Fibrin) pos a(HM:schistocytes)
+a(MESH:Fibrin) pos p(HGNC:HBB)
+
+SET Evidence = "In a case
+report, Bull and Kuhn presented the pathogenesis of microangiopathic
+hemolytic anemia in a patient with an infiltrating
+adenocarcinoma [88]. In that patient, they found large
+numbers of micro-clots composed of fine fibrin strands in
+his vasculature."
+
+SET MeSHDisease = "Adenocarcinoma"
+path(HP:"Microangiopathic hemolytic anemia") pos bp(GO:"blood coagulation, fibrin clot formation")
+
+SET Evidence = "They concluded that intravascular coagulation
+must be the most likely cause of this microangiopathic       
+hemolytic anemia."
+
+path(MESH:"Disseminated Intravascular Coagulation") pos path(HP:"Microangiopathic hemolytic anemia")
+
+SET Evidence = "However, 6 years later, Heyes
+and co-workers demonstrated in an experimental study in
+rats that infusions of thrombin induce DIC accompanied
+with hemolysis and schistocytosis [89]."
+
+a(CHEBI:Thrombin) pos path(MESH:"Disseminated Intravascular Coagulation")
+a(CHEBI:Thrombin) pos path(MESH:Hemolysis)
+a(CHEBI:Thrombin) pos a(HM:schistocytosis)
+
+SET Evidence = "This study further
+supports the concept that fibrin deposition in the blood
+vessels as a result of DIC might contribute to red blood
+cell fragmentation and, in turn, hemolysis [89]."
+
+SET MeSHDisease = "Disseminated Intravascular Coagulation"
+a(HM:"fibrin deposition") pos path(MESH:Hemolysis)
+
+SET Evidence = "Recently, using a rat
+model of lipopolysaccharide (LPS)-induced systemic inflammation,
+our own collaboration could show that argatroban
+(a specific direct thrombin inhibitor and consequently
+an inhibitor of coagulation) abolishes DIC, schistocyte
+formation, and hemolysis."
+
+a(CHEBI:argatroban) -| path(MESH:"Disseminated Intravascular Coagulation")
+a(CHEBI:argatroban) -| a(HM:schistocytosis)
+a(CHEBI:argatroban) -| path(MESH:Hemolysis)
+
+SET Evidence = "Interestingly, inhibition
+of coagulation is capable of diminishing DIC and hemolysis
+but not antiplatelet therapy—treatment with eptifibatide
+(an antiplatelet drug of the glycoprotein IIb/IIIa inhibitor
+class) failed to reduce LPS-induced DIC, schistocyte formation,
+and hemolysis."
+
+a(CHEBI:eptifibatide) causesNoChange path(MESH:"Disseminated Intravascular Coagulation")
+a(CHEBI:eptifibatide) causesNoChange a(HM:schistocytosis)
+a(CHEBI:eptifibatide) causesNoChange path(MESH:Hemolysis)
+
+SET Evidence = "Finally, a bi-directional crosstalk between hemolysis
+and coagulation was postulated with induction of tissue
+factor by cell-free hemoglobin as potentially central mechanism
+for hemolysis to trigger coagulation [87]."
+
+p(HGNC:HBB) pos path(MESH:Hemolysis)
+
+SET Evidence = "One crucial factor in pathogenesis of systemic
+inflammation/sepsis is an impaired microcirculation [99]."
+
+path(MESH:Sepsis) pos a(HM:"Impaired microcirculation")
+
+SET Evidence = "There are various studies that show a relationship between
+microvascular stasis and intravascular hemolysis. Already
+in 1940, Mumme described that renal stasis causes
+hemolysis [108]."
+
+a(HM:"renal stasis") pos path(MESH:Hemolysis)
+
+SET Evidence = "Vinchi
+and co-workers proved that the hemoglobin scavenger
+hemopexin prevents from hepatic microvascular stasis induced
+by intravascular hemolysis (using a mouse model of heme
+overloadin wild-typemicecomparedtohemopexin-nullmice)
+[116]."
+
+SET MeSHAnatomy = "Liver"
+p(HGNC:HPX) -| a(HM:"microvascular stasis")
+
+SET Evidence = "A higher
+glucose requirement is covered, then, by increased glycogenolysis
+and gluconeogenesis [37, 118]."
+
+bp(MESH:Glycogenolysis) -> a(CHEBI:glucose)
+bp(MESH:Gluconeogenesis) -> a(CHEBI:glucose)
+
+SET Evidence  = "If
+glucose consumption further exceeds glucose production or
+uptake, finally hypoglycemia occurs [118]."
+
+bp(GO:"glucose catabolic process") -> path(MESH:Hypoglycemia)
+
+SET Evidence = "Without sufficient glucose supply, red blood cells will
+starve and perish and cytoplasmic components will release.
+Hemolysis will be the consequence [120]."
+
+a(CHEBI:glucose) neg path(MESH:Hemolysis)
+
+SET Evidence = "Recently, our own
+collaboration could show that moderate glucose supply
+reduces hemolysis in rats treated with LPS to induce systemic
+inflammation [121]."
+
+a(CHEBI:glucose) neg path(MESH:Hemolysis)
+
+SET Evidence = "Nevertheless, the crosstalk between glucose and
+heme metabolism in sepsis is bidirectional since an excessive
+accumulation of cell-free heme following hemolysis
+influences the glucose metabolism by iron-driven oxidative
+inhibition of the glucose-6-phosphatase (a liver
+enzymes being important for endogenous glucose production
+via gluconeogenesis and glycogenolysis) [14]."
+
+SET MeSHDisease = "Sepsis"
+p(HGNC:HBB) neg bp(GO:"regulation of glucose-6-phosphatase activity")
+
+SET Evidence = "Lipopolysaccharide (LPS)—the main constituent of the
+outer cell wall of Gram-negative bacteria—is known to bind
+to the pathogen recognition receptor TLR-4 and to activate
+the innate immune and hemostatic systems."
+
+complex(a(CHEBI:lipopolysaccharide), p(HGNC:TLR4)) -> bp(MESH:"Immunity, Innate")
+complex(a(CHEBI:lipopolysaccharide), p(HGNC:TLR4)) -> bp(MESH:Hemostasis)
+
+SET Evidence = "Due to these properties, LPS
+can easily be incorporated into the membrane of (red blood)
+cells, alter their membrane properties, and thus promote cell
+death [123, 124]."
+
+SET Cell = "erythrocyte"
+a(CHEBI:lipopolysaccharide) -> bp(GO:"cell death")
+
+SET Evidence = "We found, moreover, a decreased osmotic resistance
+and membrane stiffness of washed red blood cells treated
+with LPS [80, 81]."
+
+SET Cell = "erythrocyte"
+a(CHEBI:lipopolysaccharide) -> bp(MESH:"Osmotic Fragility")
+
+SET Evidence = "Lipid A alone, however, does not appear to
+affect the osmotic resistance of red blood cells [127]."
+
+a(CHEBI:"lipid A") causesNoChange bp(MESH:"Osmotic Fragility")
+
+SET Evidence = "Already in 1941, Macfarlane and collaborators
+described hemolysis due to loss of lecithin from
+the red blood cell membrane in consequence of an infection
+with Clostridium perfingens [128, 130]."
+
+SET Cell = "erythrocyte"
+a(CHEBI:lecithin) neg path(MESH:Hemolysis) 
+
+SET Evidence = "Some pathogens are capable of causing hemolysis by
+cytolytic toxins."
+
+a(HM:cytolysin) pos path(MESH:Hemolysis)
+
+SET Evidence = "The earliest documented effect of
+PFTs is their ability to rapidly kill red blood cells through
+osmotic lysis."
+
+a(MESH:"Pore Forming Cytotoxic Proteins") -> bp(GO:cytolysis)
+
+SET Evidence = "Eryptosis is tightly regulated
+and triggered by a wide range of (endogenous) mediators and
+stimuli such as calcium signaling, ceramide formation, complement
+activation, energy depletion, eicosanoid release, hemolysin,
+and heme [140–142]."
+
+bp(MESH:"Calcium Signaling") -> bp(MESH:Eryptosis)
+a(CHEBI:ceramide) -> bp(MESH:Eryptosis)
+bp(GO:"complement activation") -> bp(MESH:Eryptosis)
+a(MESH:Eicosanoids) -> bp(MESH:Eryptosis)
+p(PFAM:Leukocidin) -> bp(MESH:Eryptosis)
+a(CHEBI:heme) -> bp(MESH:Eryptosis)
+
+SET Evidence = "On the other hand, eryptosis is associated with anemia, microcirculatory
+derangement, and thrombosis [142, 144]."
+
+bp(MESH:Eryptosis) -- path(MESH:Anemia)
+bp(MESH:Eryptosis) -- path(MESH:Thrombosis)
+
+SET Evidence = "The same applies to hemolysin. For one thing,
+the pore-forming toxin hemolysin is one the pathogens’
+tools of causing hemolysis or releasing hemoglobin and
+poorly available iron [139]; then again it trigger eryptosis,
+one mechanism of protecting against hemolysis [142]."
+
+p(PFAM:Leukocidin) -> path(MESH:Hemolysis) 
+p(PFAM:Leukocidin) -> p(HGNC:HBB)
+p(PFAM:Leukocidin) -> bp(MESH:Eryptosis)
+
+UNSET TextLocation 
+############

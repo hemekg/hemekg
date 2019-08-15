@@ -1,0 +1,228 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_29610666.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Pharmacol Res Perspect. 2018 Mar 30;6(2):e00392. doi: 10.1002/prp2.392. eCollection 2018 Apr.", "29610666"}
+
+SET TextLocation = "Results"
+
+SET Evidence = "Exposure of washed human peripheral blood leukocytes to protein free
+crystalline heme that has been dissolved in NaOH (100 mmolL1)
+with subsequent adjustment to pH 7.8 resulted in a drastic reduction
+in cell surface CD62L expression on CD14 low CD15 high neutrophil
+granulocytes after 30 minutes of exposure (Figure 1A)."
+
+SET Cell = "neutrophil"
+a(CHEBI:heme) -| p(HGNC:SELL)
+
+SET Evidence = "By modeling the
+equilibrium concentration in the experiments performed with
+heme-albumin we could show that the free heme is the active
+neutrophil-stimulating component, which is inactivated by protein
+association (Figure S2)."
+
+a(CHEBI:heme) pos bp(GO:"neutrophil activation")
+
+SET Evidence = "These observations
+suggest that in any physiological scenario in which heme might
+be present in extracellular spaces as a component of a natural
+hemoprotein, the concentration of free or quasi-free heme can be
+expected to be very low, possibly below the minimum range
+required to trigger granulocyte activation and other innate immunity
+responses."
+
+a(CHEBI:heme) pos bp(GO:"granulocyte activation")
+
+SET Evidence = "In serum-free
+conditions, NaOH-dissolved heme (final pH 7.8) reduced cellular ATP in
+both cell types in a dose-dependent manner after 8 hours of exposure
+(Figure 2A)"
+
+SET MeSHAnatomy = "Human Umbilical Vein Endothelial Cells" 
+SET TimePoint = "8 hours"
+a(CHEBI:heme) -| a(CHEBI:"adenosine triphosphate")
+
+SET Evidence = "In contrast, less ATP depletion was observed during exposure
+to heme-albumin, and no effect could be detected when either cell
+type was exposed to metHb or oxyHb at concentrations of up to
+500 lmolL1, even in the absence of serum."
+
+SET MeSHAnatomy = "Human Umbilical Vein Endothelial Cells"
+complex(a(CHEBI:heme), p(HGNC:ALB)) pos a(CHEBI:"adenosine triphosphate") 
+a(CHEBI:oxyhemoglobin) causesNoChange a(CHEBI:"adenosine triphosphate")
+a(CHEBI:methemoglobin) causesNoChange a(CHEBI:"adenosine triphosphate")
+
+SET Evidence = "This experiment demonstrated that under serum-free
+conditions, 4 hours of exposure to NaOH-dissolved heme induced complete
+deterioration of mitochondrial respiration at concentrations as low
+as 10 lmolL1, while exposure to albumin-associated heme in the presence
+of 2% FCS stimulated respiratory capacity to levels above baseline."
+
+SET MeSHAnatomy = "Mitochondria"
+a(CHEBI:heme) -| bp(GO:"cellular respiration")
+complex(a(CHEBI:heme), p(HGNC:ALB)) pos bp(GO:"cellular respiration")
+
+SET Evidence = "In
+endothelial cells, we found that, in the absence of serum, heme-albumin
+triggered a dose-dependent HMOX1 protein expression signal in an
+exposure range of 0–175 lmolL1."
+
+SET Cell = "endothelial cell"
+complex(a(CHEBI:heme), p(HGNC:ALB)) pos p(HGNC:HMOX1)
+
+SET Evidence = "heme-albumin is also a robust inducer
+of dose-dependent HMOX1 expression in BMDMs (Figure 2D)."
+
+complex(a(CHEBI:heme), p(HGNC:ALB)) pos p(HGNC:HMOX1)
+
+SET Evidence = "heme-albumin, in contrast, induced HMOX1 in a dose-dependent
+manner."
+
+complex(a(CHEBI:heme), p(HGNC:ALB)) pos p(HGNC:HMOX1)
+
+SET Evidence = "However, a weak TNF-alpha signal appeared in
+macrophages that were treated with the highest concentration of
+NaOH-dissolved heme (500 lmolL1)."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) pos p(MGI:Tnf)
+
+SET Evidence = "These experiments confirm a number of earlier reports and support
+the idea that certain solutions derived from purified/crystalline heme
+have the potential to induce weak TLR4-mediated inflammatory
+responses in macrophages in the complete absence of plasma derived
+proteins."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) -> bp(GO:"inflammatory response")
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "The first process links the nitric oxide (NO)
+reactivity of oxyHb to a cascade of cell-free Hb extravasation,
+hemolysis-associated NO-depletion, and vasoconstriction.21–23"
+
+p(HGNC:HBB) -| a(CHEBI:"nitric oxide")
+p(HGNC:HBB) pos bp(MESH:Vasoconstriction)
+
+SET Evidence = "The
+second biochemical process relates to the ability of Hb to facilitate
+oxidative reactions outside of the reducing environment of the RBC,
+leading to the accumulation of ferric metHb(Fe3+) in tissue.24"
+
+p(HGNC:HBB) pos a(HM:"oxidative reactions")
+p(HGNC:HBB) -> a(CHEBI:methemoglobin)
+
+SET Evidence = "In subsequent
+reactions, metHb or metHb-derived heme participates in
+redox chain reactions that lead to the accumulation of modified
+lipids and proteins, as well as to heme degradation and to the
+release of free iron.19,25"
+
+a(CHEBI:methemoglobin) -> deg(a(CHEBI:heme))
+deg(a(CHEBI:heme)) -> a(CHEBI:"iron(2+)")
+
+SET Evidence = "Purified heme was found to be
+an activator of TLR4 8,11,27 in some studies and of the inflammasome
+9 in others, and these activities were considered to be the molecular
+mechanism behind the coexistence of inflammation and hemolysis."
+
+a(CHEBI:heme) -> act(p(HGNC:TLR4))
+
+SET Evidence = "However, similar to
+Hb, heme-albumin did not induce an inflammatory response in
+macrophages or endothelial cells in the presence of low concentrations
+of serum."
+
+SET Cell = "macrophage"|"endothelial cell"
+complex(a(CHEBI:heme), p(HGNC:ALB)) neg bp(GO:"inflammatory response")
+
+SET Evidence = "Only under protein-free conditions did we observe a limited
+heme-induced TNF-alpha response in cultured macrophages, which
+was triggered via signaling of the classical TLR4–MyD88–TRIF pathway
+of NF-kB activation.28"
+
+SET Cell = "macrophage"
+a(CHEBI:heme) -> p(HGNC:TNF)
+
+UNSET TextLocation 
+###########

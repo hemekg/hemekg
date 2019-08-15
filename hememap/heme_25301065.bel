@@ -1,0 +1,231 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_25301065.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Cell Death Differ. 2015 Apr;22(4):597-611. doi: 10.1038/cdd.2014.154. Epub 2014 Oct 10.", "25301065"} 
+
+SET TextLocation = "Results"
+
+SET Evidence = "The Hmox1 (− /− ) MEF cells expressed no functional
+Hmox1 mRNA (Figure 1a) and as a result accumulated more
+cell-associated heme during extracellular exposure compared
+with wild-type cells (Figure 1b)."
+
+p(MGI:Hmox1) neg a(CHEBI:heme)
+
+SET Evidence = "During heme exposure the
+Hmox1 (−/ −) cells show a dose-dependent decrease in
+mitochondrial function as indicated by decreased cellular ATP
+(Figure 1c) and parallel induction of caspase 3/7 activity
+(Figure 1d) as well as nuclear condensation (Figure 1e) that
+occurred at heme concentrations exceeding 10 μM."
+
+a(CHEBI:heme) pos path(MESH:"Mitochondrial Diseases")
+p(MGI:Hmox1) neg path(MESH:"Mitochondrial Diseases")
+
+SET Evidence = "Beyond this
+common protein expression signature, the toxic heme
+response of Hmox1 (− /−) MEF cells was uniquely characterized
+by a cluster of strongly upregulated proteins. Within
+this cluster we identified ubiquitin, the ubiquitin adaptor
+protein sequestosome/p-62 (Sqstm1), a number of heat
+shock proteins, as well as antioxidant defense proteins (i.e.,
+peroxiredoxins, glutathione-S-transferase, and thioredoxin
+reductase)."
+
+a(CHEBI:heme) -> p(PFAM:ubiquitin)
+a(CHEBI:heme) -> p(MGI:Sqstm1)
+a(CHEBI:heme) -> complex(p(MGI:Prdx1), p(MGI:Prdx2), p(MGI:Prdx3), p(MGI:Prdx4), p(MGI:Prdx5), p(MGI:Prdx6))
+a(CHEBI:heme) -> p(INTERPRO:"Glutathione Transferase family")
+a(CHEBI:heme) -> p(INTERPRO:"Thioredoxin reductase")
+
+SET Evidence = "We confirmed by selected reaction monitoring (SRM)
+mode mass spectrometry (Figure 3a) and western blot
+(Figures 3c and d), respectively, that heme increased Sqstm1,
+ubiquitin, and Hsp70, with a much stronger response in
+Hmox1 (−/− ) compared with Hmox1 (+/+) MEF cells."
+
+a(CHEBI:heme) -> p(MGI:Sqstm1)
+a(CHEBI:heme) -> p(PFAM:ubiquitin)
+a(CHEBI:heme) -> p(MGI:Hspa2)
+
+p(MGI:Hmox1) -| p(MGI:Sqstm1)
+p(MGI:Hmox1) -| p(PFAM:ubiquitin)
+p(MGI:Hmox1) -| p(MGI:Hspa2)
+
+SET Evidence = "We also
+confirmed ferritin light chain enhancement as a common
+response to heme exposure of Hmox1 (+/+) and Hmox1
+(−/ −) MEF cells (Figure 3a)."
+
+a(CHEBI:heme) -> p(MGI:Ftl1)
+
+SET Evidence = "At
+higher extracellular heme concentrations, heme exposure
+dose dependently caused accumulation of myc-tagged
+Sqstm1 (Figure 3g)."
+
+a(CHEBI:heme) -> p(MGI:Sqstm1)
+
+SET Evidence = "This result strongly supports that high
+cellular heme concentration impairs degradation of Sqstm1 by
+the homeostatic protein degradation pathways."
+
+a(CHEBI:heme) neg deg(p(MGI:Sqstm1))
+
+SET Evidence = "These data, in
+addition to older biochemical studies that empirically used
+heme to inhibit proteasome function in biochemical assays,
+led us to the hypothesis that excessive intracellular heme
+could disrupt cellular protein homeostasis by an inhibitory
+action on the proteasome."
+
+a(CHEBI:heme) neg bp(GO:"cellular homeostasis")
+
+SET Evidence = "Interestingly, besides the common cluster of upregulated
+proteins, which includes Sqstm1, ubiquitin, and a number of
+heat shock and oxidative defence proteins, we also observed
+that heme strongly suppressed the abundance of collagen
+(Col1a1) 1 protein."
+
+a(CHEBI:heme) -| p(MGI:Col1a1)
+
+SET Evidence = "Collectively, these data support that heme is an inhibitor of
+proteasome activity in different cell types and in a cell-free
+system."
+
+a(CHEBI:heme) -| act(p(PFAM:Proteasome))
+
+SET Evidence = "Accordingly, higher levels of lipid peroxide-protein
+adducts were detected in heme-treated Hmox1 (− /−) than
+in Hmox1 (+/+) MEF cells when the cells were heme exposed
+in the presence of an alkyne-tagged analog of linoleic
+acid, which is an unsaturated, heme-reactive fatty acid
+(Supplementary Figure 3)."
+
+a(CHEBI:heme) pos a(MESH:"Lipid Peroxides")
+p(MGI:Hmox1) neg a(MESH:"Lipid Peroxides")
+
+SET Evidence = "In contrast, at an equal
+antioxidant concentration, Trolox completely blocked
+heme-triggered lipid peroxidation (measured as production
+of thiobarbituric acid reactive substances (TBARS)) in
+soybean lecithin micelles (Figure 7g)."
+
+a(CHEBI:heme) -> bp(MESH:"Lipid Peroxidation")
+a(CHEBI:Trolox) -| bp(MESH:"Lipid Peroxidation")
+
+SET Evidence = "Identical results
+were obtained with the antioxidant dithiothreitol (DTT)
+(data not shown)."
+
+a(CHEBI:"D-1,4-dithiothreitol") -| bp(MESH:"Lipid Peroxidation")
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "Proteasome inhibition promotes accumulation of
+damaged proteins and may thereby critically enhance the
+cellular injury that is triggered by oxidative heme effects."
+
+a(MESH:"Proteasome Inhibitors") pos bp(GO:"cellular response to oxidative stress")
+
+SET Evidence = "In addition to this well-established role of
+heme as an oxidant, a novel and consistent finding of the
+present study is that excessive heme levels lead to dysfunctional
+cellular protein degradation by the proteasome."
+
+a(CHEBI:heme) -| act(p(PFAM:Proteasome))
+
+SET Evidence = "The proteasome is the principal pathway to remove
+senescent and damaged proteins, and intact proteasome
+function is essential to preserve and repair cellular homeostasis
+during oxidative stress, such as that triggered by heme
+exposure.27"
+
+a(CHEBI:heme) neg bp(GO:"cellular homeostasis")
+act(p(PFAM:Proteasome)) pos bp(GO:"cellular homeostasis")
+
+UNSET TextLocation
+###############
+

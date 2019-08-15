@@ -1,0 +1,186 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_26202471.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Transfusion. 2015 Dec;55(12):2967-78. doi: 10.1111/trf.13248. Epub 2015 Jul 22.", "26202471"} 
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "Prx-2 has emerged as the key antioxidant 
+protein that protects RBCs against biologically relevant 
+concentrations of H2O2 produced endogenously 
+(via hemoglobin autoxidation) or exogenously 
+by inflammatory cells25,26."
+
+p(HGNC:PRDX2) neg a(CHEBI:"hydrogen peroxide")
+
+SET Evidence = "We have also shown that older RBCs oxidize 
+nitrite with faster rates compared to younger RBCs, 
+which may account for decreased circulating nitrite 
+levels in trauma patients receiving older RBCs14."
+
+a(HM:"stored erythrocytes") neg a(CHEBI:nitrite) 
+
+SET TextLocation = "Results"
+
+SET Evidence = "Figures 2A-F show changes in oxyhemoglobin, 
+methemoglobin and free heme in both the intraerythrocytic 
+and supernatant fractions in both d7 and d35 RBC.
+Significant storage-dependent increases for all 
+species in the cell-free fraction were observed, 
+with no storage-dependent differences observed 
+in the erythrocyte."
+
+SET TimePoint = "1 week"|"5 week"
+a(HM:"stored erythrocytes") pos a(CHEBI:oxyhemoglobin)
+a(HM:"stored erythrocytes") pos a(CHEBI:methemoglobin)
+a(HM:"stored erythrocytes") pos a(CHEBI:heme)
+
+SET Evidence = "Figure 2G shows storage also resulted in a 
+significant increase in Prx-2 oxidation."
+
+a(HM:"stored erythrocytes") pos p(MGI:Prdx2)
+
+SET Evidence = "Figures 4B-D shows that d7 Prx-2 oxidation 
+correlates positively with nitrite oxidation kinetics in 
+the lag phase (i.e. inversely with lag time, positively 
+with lag rates, Figures 4B-C respectively)."
+
+SET TimePoint = "1 week"
+p(MGI:Prdx2) pos a(HM:"nitrite oxidation")
+
+SET Evidence = "Figures 5A-5B, show that at d7, faster rates 
+for nitrite oxidation in the lag phase were positively 
+associated with higher concentrations of extracellular 
+free heme at d7 and d35."
+
+SET TimePoint = "1 week"|"5 week"
+a(HM:"nitrite oxidation") pos a(CHEBI:heme)
+
+SET Evidence = "Figures 5C-5D show that d7 propagation rates 
+for nitrite oxidation correlate with both d7 and d35 
+cell-free oxyhemoglobin."
+
+SET TimePoint = "1 week"|"5 week"
+a(HM:"nitrite oxidation") pos a(CHEBI:oxyhemoglobin)
+
+SET Evidence = "Figure 5E shows that d7 nitrite oxidation 
+propagation rates also positively correlate with the extent 
+of Prx-2 oxidation that occurred during storage 
+(i.e. d35 – d7 Prx-2 oxidation in RBC)."
+
+SET TimePoint = "1 week"
+a(HM:"nitrite oxidation") pos p(MGI:Prdx2)
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "Storage is known to result in increased 
+hemolysis which in turn results in loss of NO-signaling, 
+oxidative stress and inflammation post-transfusion."
+
+a(HM:"stored erythrocytes") pos path(MESH:Hemolysis)
+a(HM:"stored erythrocytes") pos bp(GO:"nitric oxide mediated signal transduction")
+a(HM:"stored erythrocytes") pos bp(MESH:"Oxidative Stress")
+a(HM:"stored erythrocytes") pos path(MESH:Inflammation)
+
+SET Evidence = "More recently, we have also shown that free heme
+is also released during storage and may mediate further inflammation28"
+
+a(HM:"stored erythrocytes") pos a(CHEBI:heme)
+a(CHEBI:heme) pos path(MESH:Inflammation)
+
+SET Evidence = "The higher the basal (d7) level of Prx-2 oxidation, the higher the 
+level of Prx-2 oxidation in the same RBC after 35 days of storage."
+
+SET TimePoint = "1 week"|"5 week"
+a(HM:"stored erythrocytes") pos p(MGI:Prdx2)
+
+SET Evidence = "In other words, the faster rate of d7 nitrite oxidation predicted 
+greater extents of oxidative damage incurred by the RBCs during storage."
+
+SET TimePoint = "1 week"
+a(HM:"nitrite oxidation") pos bp(MESH:"Oxidative Stress")
+
+UNSET TextLocation 
+##############

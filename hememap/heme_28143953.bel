@@ -1,0 +1,319 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_28143953.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Haematologica. 2017 Feb;102(2):260-270. doi: 10.3324/haematol.2016.151621. Epub 2016 Nov 10.", "28143953"}
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "The major regulator
+of iron homeostasis is hepcidin (reviewed by Ganz1),
+which is directly down-regulated by stimulated activity of
+erythropoiesis.2"
+
+p(HGNC:HAMP) pos bp(GO:"iron ion homeostasis")
+bp(MESH:Erythropoiesis) -| p(HGNC:HAMP)
+
+SET TextLocation = "Results"
+
+SET Evidence = "Type I porphyrins (Uro and Copro) were
+increased in urine and feces (data not shown) and in RBCs
+of CEP mice (Table 1)."
+
+SET MeSHAnatomy = "Urine"|"Feces"
+SET Cell = "erythrocyte"
+
+path(MESH:"Porphyria, Erythropoietic") pos a(CHEBI:uroporphyrin)
+path(MESH:"Porphyria, Erythropoietic") pos a(CHEBI:coproporphyrin)
+
+SET Evidence = "Congenital erythropoietic porphyria mice showed
+increased serum bilirubin and LDH levels (Table 1), with
+almost undetectable levels of Hp and Hpx (Figure 1A and
+B, respectively), which was strongly indicative of
+hemolytic anemia."
+
+SET MeSHAnatomy = "Serum"
+path(MESH:"Porphyria, Erythropoietic") pos a(CHEBI:bilirubin)
+path(MESH:"Porphyria, Erythropoietic") pos p(INTERPRO:"L-lactate dehydrogenase")
+path(MESH:"Porphyria, Erythropoietic") neg p(MGI:Hpx)
+path(MESH:"Porphyria, Erythropoietic") neg p(MGI:Hp)
+
+SET Evidence = "The anemia in CEP mice
+was severe with significant reduction of Hb levels and
+RBC number (Table 1), regenerative with marked reticulocytosis
+(28.8±4.2%) (Table 1), and microcytic and
+hypochromic with reduced mean cell Hb content
+(9.95±0.64 pg in CEP vs. 14.5±0.18 in WT mice) (Table 1)."
+
+SET MeSHDisease = "Porphyria, Erythropoietic"
+path(MESH:Anemia) neg p(HGNC:HBB)
+path(MESH:Anemia) neg bp(MESH:"Erythrocyte Count")
+
+SET Evidence = "These data suggest that erythrocytes surviving
+in the circulation are more resistant to in vitro hemolysis:
+they are likely to correspond to reticulocytes and could
+explain the increased G6PD activity in CEP erythrocytes
+(Table 1)."
+
+SET Cell = "erythrocyte"
+path(MESH:"Porphyria, Erythropoietic") pos act(p(INTERPRO:"Glucose-6-phosphate dehydrogenase"))
+
+SET Evidence = "Indeed, in this organ, there was a strong
+increase in the total number of erythroblasts at all stages
+of differentiation (Figure 2C)."
+
+SET MeSHAnatomy = "Spleen"
+path(MESH:"Porphyria, Erythropoietic") pos a(MESH:Erythroblasts)
+
+SET Evidence = "However, in contrast to the
+bone marrow, there was no significant decrease between
+intermediate and late erythroblasts (Figure 2C) and we
+observed decreased rather than increased apoptosis, as
+usually observed in ineffective erythropoiesis22,23 (Figure
+2D)."
+
+path(MESH:"Porphyria, Erythropoietic") neg bp(GO:"apoptotic process")
+
+SET Evidence = "We thus analyzed BMP4
+expression level in CEP mice and show its strong increase
+in the red pulp of the spleen (Figure 2E), likely contributing
+to the rapid formation of stress burst-forming unit erythroid
+progenitors (BFU-Es) as a consequence of the high
+levels of erythropoietin (Epo) in these mice (Table 1)."
+
+SET MeSHAnatomy = "Spleen"
+path(MESH:"Porphyria, Erythropoietic") pos p(MGI:Bmp4)
+
+SET Evidence = "Therefore, hemolytic anemia in CEP mice activates a compensatory
+stress erythropoiesis with no sign of ineffective
+erythropoiesis."
+
+SET MeSHDisease = "Porphyria, Erythropoietic"
+path(HP:"Hemolytic anemia") pos bp(MESH:Erythropoiesis)
+
+SET Evidence = "As expected, hepcidin was markedly reduced,
+both in the liver (at the mRNA level) and in the serum
+(Figure 3A and B)."
+
+SET MeSHAnatomy = "Liver"|"Spleen"
+path(MESH:"Porphyria, Erythropoietic") neg r(MGI:Hamp)
+
+SET Evidence = "Fam132b mRNA expression in bone
+marrow cells was significantly increased (30-fold compared
+to WT mice) (Figure 3C)."
+
+SET Cell = "bone marrow cell"
+path(MESH:"Porphyria, Erythropoietic") pos r(MGI:Erfe) 
+
+SET Evidence = "Using isolated duodenal
+loops to measure the transepithelial iron transport, we
+found that CEP mice presented a higher rate of iron
+absorption than the WT mice, although the differences
+between the area under the curves did not reach statistical
+significance (Figure 3D)."
+
+SET MeSHAnatomy = "Duodenum"
+path(MESH:"Porphyria, Erythropoietic") pos a(CHEBI:"iron(2+)")
+
+SET Evidence = "In addition, we observed an
+increase of ferroportin protein expression in duodenal
+enterocytes (Figure 3E and F)."
+
+SET MeSHAnatomy = "Duodenum"
+path(MESH:"Porphyria, Erythropoietic") pos p(MGI:Slc40a1)
+
+SET Evidence = "Serum iron was also
+increased in CEP mice, but this did not lead to elevated Tf
+saturation because Tf was also significantly increased,
+which is reminiscent of iron deficiency anemia and facilitates
+iron delivery to a larger number of erythroblasts
+(Table 1 and Figure 3G)."
+
+SET MeSHAnatomy = "Serum"
+path(MESH:"Porphyria, Erythropoietic") pos a(CHEBI:"iron(2+)")
+path(MESH:"Porphyria, Erythropoietic") pos p(MGI:Trf)
+
+SET Evidence = "As expected, serum ferritin was significantly increased
+in CEP mice (Figure 3H)."
+
+path(MESH:"Porphyria, Erythropoietic") pos p(MGI:Ftl1)
+
+SET Evidence  = "Iron was also detected in the macrophages of the red pulp
+of CEP mice, while almost no iron deposit was observed
+in the spleen of Hjv–/– mice (Figure 4B), confirming that Hb
+and “free” heme are the likely source of macrophage iron
+accumulation."
+
+SET Cell = "macrophage"
+path(MESH:"Porphyria, Erythropoietic") pos a(CHEBI:"iron(2+)")
+p(HGNC:HBB) -> a(CHEBI:"iron(2+)")
+a(CHEBI:heme) -> a(CHEBI:"iron(2+)")
+
+SET Evidence = "The Hp plasma concentration was very low in CEP mice
+(Figure 1A), probably because of an increased rate of its
+endocytosis and subsequent lysosomal degradation."
+
+path(MESH:"Porphyria, Erythropoietic") neg p(MGI:Hp)
+
+SET Evidence = "Interestingly, in both liver and spleen, the expression of
+the Hb-Hp receptor (CD163)29 was found to be fully suppressed
+at both the mRNA and protein levels (Figure 4C
+and D and Online Supplementary Figure S1B), suggesting a
+slowdown of Hb uptake in macrophages which may prevent
+excess iron overload."
+
+SET MeSHAnatomy = "Liver"|"Spleen"
+path(MESH:"Porphyria, Erythropoietic") neg r(MGI:Cd163)
+path(MESH:"Porphyria, Erythropoietic") neg p(MGI:Cd163)
+
+SET Evidence = "The mRNA level of CD91 was significantly
+reduced in the liver and was fully suppressed in the spleen
+(Online Supplementary Figure S1A and B)."
+
+SET MeSHAnatomy = "Liver"|"Spleen"
+path(MESH:"Porphyria, Erythropoietic") neg r(MGI:Lrp1)
+
+SET Evidence = "Moreover, HO-1 was highly expressed in the liver
+of CEP compared to WT mice (Figure 4E), confirming that
+residual heme uptake is rapidly degraded in the liver."
+
+path(MESH:"Porphyria, Erythropoietic") pos p(MGI:Hmox1)
+
+SET Evidence = "In
+addition, despite an increase in ferritin expression, ferroportin
+expression was also induced in the liver of CEP
+mice (Figure 4E), suggesting an increase of iron release in
+the circulation to satisfy the high iron demand."
+
+SET MeSHAnatomy = "Liver"
+path(MESH:"Porphyria, Erythropoietic") pos p(MGI:Slc40a1)
+
+SET Evidence = "Interestingly, in contrast with the preserved mRNA levels
+(data not shown), the immunostaining of the endocytic
+receptor megalin/cubilin complexes revealed evidence of
+increased cubilin protein expression (Figure 5B) with no
+significant changes in megalin protein abundance (data not
+shown)."
+
+path(MESH:"Porphyria, Erythropoietic") pos p(MGI:Cubn)
+
+SET Evidence = "As expected, Perl’s staining of CEP kidneys showed
+significant accumulation of iron in the renal cortical part,
+particularly in the proximal tubules (Figure 6A)."
+
+SET MeSHAnatomy = "Kidney Cortex"
+path(MESH:"Porphyria, Erythropoietic") pos a(CHEBI:"iron(2+)")
+
+SET Evidence = "Ferritin protein level was significantly increased in the cortex but
+not in the medulla of CEP mice, confirming exclusive iron
+handing in the proximal renal tubules in these mice (Figure
+6B); no change in the mRNA-expression of ferritin was
+observed (Figure 6B)."
+
+SET MeSHAnatomy = "Kidney Cortex"
+path(MESH:"Porphyria, Erythropoietic") pos p(MGI:Ftl1)
+
+SET Evidence = "However, the mRNA and protein
+expression of both TFR1 and DMT1 responsible for iron
+entry into renal cells were slightly decreased, although not
+reaching statistical significance (Online Supplementary
+Figure S4)."
+
+SET Cell = "inner renal cortex cell"
+path(MESH:"Porphyria, Erythropoietic") neg r(MGI:Tfrc)
+path(MESH:"Porphyria, Erythropoietic") neg r(MGI:Slc11a2)
+path(MESH:"Porphyria, Erythropoietic") neg p(MGI:Tfrc)
+path(MESH:"Porphyria, Erythropoietic") neg p(MGI:Slc11a2)
+
+SET Evidence = "Interestingly, the mRNA expression levels of
+HO-1 and ferroportin, which are both induced transcriptionally
+by free heme, were enhanced significantly in the
+cortex, but not in the medulla, of CEP mice, resulting in
+large increases in their protein abundance (Figure 6)."
+
+SET MeSHAnatomy = "Kidney Cortex"
+path(MESH:"Porphyria, Erythropoietic") pos r(MGI:Ftl1)
+path(MESH:"Porphyria, Erythropoietic") pos r(MGI:Hmox1)
+
+UNSET TextLocation
+############

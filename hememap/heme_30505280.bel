@@ -1,0 +1,302 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_30505280.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Front Physiol. 2018 Nov 16;9:1596. doi: 10.3389/fphys.2018.01596. eCollection 2018.", "30505280"}
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "Knee osteoarthritis (OA) is the most common joint disease and
+is a major cause of pain and disability in the older population
+worldwide (Liu et al., 2015)."
+
+path(MESH:"Osteoarthritis, Knee") pos path(MESH:Pain)
+
+SET Evidence = "Obesity, genetic factors, and aging are some of
+the most prominent risk factors (Sharma et al., 2006), and in
+the younger population, previous knee injury is an important
+contributor to increased prevalence of knee OA – as much as half
+of those sustaining a knee injury in their 20s had developed posttraumatic
+knee OA in the following 12 to 14 years (Lohmander
+et al., 2004, 2007; von Porat et al., 2004)."
+
+path(MESH:Obesity) pos path(MESH:"Osteoarthritis, Knee")
+bp(GO:aging) pos path(MESH:"Osteoarthritis, Knee")
+bp(MESH:"Genetic Markers") pos path(MESH:"Osteoarthritis, Knee")
+path(MESH:"Knee Injuries") pos path(MESH:"Osteoarthritis, Knee")
+
+SET Evidence = "Lately, much evidence has emerged to support a central role
+for participation of local inflammatory pathways in the disease
+processes (Scanzello, 2017), particularly so after knee injury
+(Goldring and Otero, 2011)."
+
+SET MeSHAnatomy = "Knee"
+SET MeSHDisease = "Osteoarthritis, Knee"
+path(MESH:"Knee Injuries") pos bp(GO:"inflammatory response")
+
+SET Evidence = "As a part of the inflammatory
+response after injury, oxidative stress due to formation of reactive
+oxygen species (ROS) is involved both in direct damage of
+cartilage components and as integral factors in cell signaling
+leading to cartilage degradation (Henrotin et al., 2003)."
+
+bp(GO:"inflammatory response") pos a(MESH:"Reactive Oxygen Species")
+a(MESH:"Reactive Oxygen Species") -> bp(MESH:"Oxidative Stress")
+bp(MESH:"Oxidative Stress") -> path(MESH:Osteoarthritis)
+
+SET Evidence = "In
+addition to inflammation, cell-free hemoglobin (Hb) released via
+hemolysis is a potent inducer of oxidative stress."
+
+path(MESH:Hemolysis) pos p(HGNC:HBB)
+p(HGNC:HBB) pos bp(MESH:"Oxidative Stress")
+
+SET Evidence = "Spontaneous
+decomposition of Hb via auto-oxidation leads to the formation
+of ROS, free heme groups and free iron, which are highly reactive
+and have the ability to damage lipids, proteins, and DNA (Olsson
+et al., 2012)."
+
+deg(p(HGNC:HBB)) pos complex(a(MESH:"Reactive Oxygen Species"), a(CHEBI:heme), a(CHEBI:"iron(2+)")) 
+
+SET Evidence = "On the extracellular level, within the
+circulation, haptoglobin (Hp) and hemopexin (Hpx) are two
+of the most prominent scavenger proteins, with antioxidative
+properties through their capacity to remove cell-free Hb (by
+Hp) and heme (by Hpx)."
+
+p(HGNC:HP) -| p(HGNC:HBB)
+p(HGNC:HPX) -| a(CHEBI:heme)
+
+SET Evidence = "A major intracellular antioxidant is
+heme oxygenase-1 (HO-1) which, through its heme-degrading
+activity, plays a critical role in the protection of cells."
+
+p(HGNC:HMOX1) -> deg(a(CHEBI:heme)) 
+
+SET Evidence = "Oxidation of proteins
+result in stable carbonyl groups on amino acid side chains, and
+protein carbonyl content is one of the most widely used marker
+of protein oxidation and a general indicator of oxidative stress
+(Dalle-Donne et al., 2003)."
+
+bp(GO:"protein oxidation") pos bp(MESH:"Oxidative Stress")
+
+SET Evidence = "Another protein that in the last decade has been shown to
+play a central role as a protective protein against oxidative stress
+is a1-microglobulin (A1M) (Åkerström and Gram, 2014)."
+
+p(HGNC:AMBP) -| bp(MESH:"Oxidative Stress")
+
+SET Evidence = "Of particular interest for this
+investigation is that the expression of A1M has been shown to be
+up-regulated in several cells and tissues during oxidative stress
+conditions in response to elevated levels of ROS, Hb, and free
+heme (Olsson et al., 2007, 2011)."
+
+path(HM:"Oxidative damage") pos p(HGNC:AMBP)
+
+SET TextLocation = "Results"
+
+SET Evidence = "The highest concentrations of A1M, both in
+synovial fluid and serum, were found in the AIA (Figure 1A)."
+
+SET MeSHAnatomy = "Synovial Fluid"|"Serum"
+path(MESH:Arthritis) pos p(HGNC:AMBP)
+
+SET Evidence = "In serum, the A1M concentration in
+the AIA group was between 1.3- and 1.4-fold higher compared
+to the injury and osteoarthritis groups (p = 0.035 and 0.030,
+respectively), whereas the 1.2-fold higher mean concentration
+compared to the reference group was not statistically significan
+(p = 0.15; Figure 1A)."
+
+SET MeSHAnatomy = "Knee"
+path(HM:bleeding) -> path(HM:"Oxidative damage")
+SET MeSHAnatomy = "Synovial Fluid"
+path(HM:bleeding) pos a(HM:"Protein carbonyls")
+path(HM:bleeding) pos p(HGNC:AMBP)
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "When adjusted for their respective
+absolute concentrations, the higher the proportion sf-A1M to
+sf-heme or sf-Hb, the less oxidative damage measured as protein
+carbonyl groups in synovial fluid."
+
+SET MeSHAnatomy = "Synovial Fluid"
+p(HGNC:AMBP) -| path(HM:"Oxidative damage")
+
+SET Evidence = "These novel data support
+a role for A1M in the protection against oxidative damage
+due to extracellular Hb and heme in the joint in various knee
+arthropathies."
+
+SET MeSHDisease = "Osteoarthritis, Knee"
+p(HGNC:HBB) -> path(HM:"Oxidative damage")
+a(CHEBI:heme) -> path(HM:"Oxidative damage")
+p(HGNC:AMBP) -| path(HM:"Oxidative damage")
+
+SET Evidence = "Altogether, our best interpretation of these data is that increased
+levels of cell-free Hb and heme in synovial fluid early after injury
+triggered an increase in the synovial fluid A1M concentration that
+appeared to be protective of oxidative damage."
+
+SET MeSHAnatomy = "Synovial Fluid"
+path(MESH:"Knee Injuries") -> p(HGNC:HBB)
+path(MESH:"Knee Injuries") -> a(CHEBI:heme)
+path(MESH:"Knee Injuries") -> p(HGNC:AMBP)
+p(HGNC:AMBP) -| path(HM:"Oxidative damage")
+
+SET Evidence = "There are many examples of studies that have shown increased
+A1M in serum or urine to be a biomarker of diseases such
+as preeclampsia (Anderson et al., 2011, 2016; Gram et al.,
+2015), and kidney failure (Terzi et al., 2014; Kang et al., 2015)."
+
+SET MeSHAnatomy = "Serum"|"Urine"
+p(HGNC:AMBP) pos path(HP:Preeclampsia)
+p(HGNC:AMBP) pos path(MESH:"Kidney Failure, Chronic")
+
+SET Evidence = "Our study extends those findings to include elevated A1M
+in both serum and synovial fluid as a biomarker of AIA,
+as suggested by the ROC-curves with AUCs close to 0.8."
+
+SET MeSHAnatomy = "Synovial Fluid"|"Serum"
+p(HGNC:AMBP) pos path(MESH:Arthritis)
+
+SET Evidence = "In similarity with
+both studies, we found detectable concentrations of A1M in
+synovial fluid in subjects with knee OA."
+
+SET MeSHAnatomy = "Synovial Fluid"
+p(HGNC:AMBP) pos path(MESH:"Osteoarthritis, Knee")
+
+SET Evidence = "Expression and synthesis of A1M has been shown to be
+upregulated in cells after exposure to heme and ROS (Olsson
+et al., 2007, 2011)."
+
+p(HGNC:AMBP) pos a(CHEBI:heme)
+p(HGNC:AMBP) pos a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "This is consistent with our findings here
+that both heme and Hb were associated with increased levels of
+synovial fluid A1M."
+
+SET MeSHAnatomy = "Synovial Fluid"
+p(HGNC:AMBP) pos a(CHEBI:heme)
+p(HGNC:AMBP) pos p(HGNC:HBB)
+
+SET Evidence = "However, with A1M increased in both synovial fluid and
+serum in AIA, the present study further suggests that, in addition
+to heme and ROS, A1M may be regulated by inflammatory
+cytokines."
+
+SET MeSHAnatomy = "Synovial Fluid"|"Serum"
+p(HGNC:AMBP) pos a(MESH:Cytokines)
+
+SET Evidence = "In addition to
+the obvious protective benefit of exogenous A1M binding and
+neutralizing cell-free Hb and heme, it may also be beneficial as
+a repair mechanism in already damaged cartilage, since in vitro
+studies showed that collagen fibrils were restored to normal
+by addition of recombinant A1M after destruction already had
+begun (Olsson et al., 2011)."
+
+SET MeSHAnatomy = "Knee"
+p(HGNC:AMBP) pos bp(MESH:"Wound Healing")
+
+SET Evidence = "Finally, we note that in AIA A1M is
+increased both locally in the joint fluid and systemically in serum,
+whereas in knee injury A1M is increased only in the joint fluid."
+
+SET MeSHAnatomy = "Synovial Fluid"|"Serum"
+p(HGNC:AMBP) pos path(MESH:Arthritis)
+
+SET MeSHAnatomy = "Synovial Fluid"
+p(HGNC:AMBP) pos path(MESH:"Osteoarthritis, Knee")
+
+UNSET TextLocation 
+##########
+
+
+

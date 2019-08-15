@@ -1,0 +1,275 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_27798618.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Nat Immunol. 2016 Dec;17(12):1361-1372. doi: 10.1038/ni.3590. Epub 2016 Oct 31.", "27798618"} 
+
+SET TextLocation = "Results"
+
+SET Evidence = "Macrophages are crucial for the removal 
+of excess heme resulting from hemolysis via the uptake 
+and degradation of heme by HO-1 (ref. 23), 
+encoded by Hmox1."
+
+SET Cell = "macrophage"
+p(MGI:Hmox1) -> deg(a(CHEBI:heme))
+
+SET Evidence = "Following i.p. E. coli
+infection, we observed a significant increase 
+in plasma heme levels in LysM-Cre+/−Hmox1fl/fl 
+mice (Fig. 1e and Supplementary Fig. 1c), 
+which was accompanied by increased bacterial 
+numbers in blood and liver (Fig. 1f 
+and Supplementary Fig. 1d) and impaired survival 
+(Fig. 1g) when compared with LysM-Cre−/−Hmox1fl/fl controls." 
+
+SET MeSHAnatomy = "Plasma"|"Blood"|"Liver"
+a(CHEBI:heme) pos bp(MESH:"Bacterial Load")
+
+SET Evidence = "Thus, enhanced levels of plasma heme, 
+induced by either exogenous heme administration or a 
+lack of HO-1 expression in macrophages, resulted in 
+an increased susceptibility to E. coli sepsis."
+
+SET MeSHDisease = "Sepsis"
+a(CHEBI:heme) pos bp(MESH:"Bacterial Load")
+
+SET Evidence = "Chelation of growth-medium iron with deferoxamine 
+(DFO, 10 μM) led to a reduction in bacterial growth, 
+as compared with non-chelated controls (Fig. 2a)."
+
+a(CHEBI:"desferrioxamine B") -| bp(MESH:"Bacterial Load")
+
+SET Evidence = "Plasma heme amounts were comparable in mice 
+pretreated with Fe3+ or PBS (Fig. 2d), and despite the 
+similarly increased availability of iron in both heme- 
+and Fe3+-treated mice (Fig. 2e), only heme-treated mice 
+presented a significantly higher bacterial
+burden in the blood and liver compared with 
+PBS- or Fe3+-treated mice (Fig. 2f)."
+
+SET MeSHAnatomy = "Blood"|"Liver"
+a(CHEBI:heme) pos bp(MESH:"Bacterial Load")
+
+SET Evidence = "These results indicate that increased 
+heme concentrations directly lead to increased bacterial 
+counts during sepsis and that bacterial iron requirements 
+are met via heme-independent mechanisms."
+
+SET MeSHDisease = "Sepsis"
+a(CHEBI:heme) pos bp(MESH:"Bacterial Load")
+
+SET Evidence = "We focused on macrophage effector functions 
+and found that heme pretreatment (15 min, 3–30 μM unless 
+otherwise indicated) led to a strong, dose-dependent 
+reduction of phagocytosis of E. coli by RAW264.7 
+macrophages compared with DMSO-treated controls 
+(Fig. 3a,b and Supplementary Fig. 2a)."
+
+a(CHEBI:heme) neg bp(MESH:Phagocytosis)
+
+SET Evidence = "In addition, we observed that heme treatment 
+of RAW264.7 macrophages led to a dose-dependent
+inhibition of apoptotic cell uptake (Supplementary Fig. 2m)."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) neg bp(GO:"engulfment of apoptotic cell")
+
+SET Evidence = "Induction of hemolysis with 
+phenylhydrazine or addition of heme to whole 
+blood at concentrations mimicking the physiological 
+range of plasma heme in hemolytic patients 
+(5–50 μM)6 led to a dose-dependent impairment
+of E. coli phagocytosis by neutrophils 
+and monocytes, as compared with DMSO 
+controls (Fig. 3g and Supplementary Fig. 2n,o), 
+indicating that our mouse model was reflective 
+of human hemolytic conditions."
+
+SET Species = "Escherichia coli"
+SET Cell = "monocyte"|"neutrophil"
+a(CHEBI:heme) neg bp(MESH:Phagocytosis)
+
+SET Evidence = "We quantified these changes by automatic image analysis and found that heme-induced cytoskeleton rearrangement led to a significant increase in cell
+area and perimeter, as well as a decrease in circularity (form factor)
+(Fig. 4d,e and Supplementary Fig. 3b–d), indicating that the
+heme-induced defective phagocytic response was likely tied to cytoskeleton rearrangements."
+
+a(CHEBI:heme) pos bp(GO:"actin cytoskeleton reorganization")
+bp(GO:"actin cytoskeleton reorganization") neg bp(MESH:Phagocytosis)
+
+SET Evidence = "Together, these data indicate that heme 
+induces extensive actin cytoskeleton alterations,
+which results in defective phagocytosis and inflammatory cell migration."
+
+bp(GO:"actin cytoskeleton reorganization") neg bp(MESH:Phagocytosis)
+
+SET Evidence = "Heme is an amphipathic molecule that can 
+promote the generation of reactive oxygen species (ROS) 
+via Fenton chemistry, thereby leading to membrane damage."
+
+a(CHEBI:heme) pos a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "Cdc42 is involved in cell motility 
+and phagocytosis, but is mainly recognized as being 
+a central node in the formation of lamellipodia and 
+filopodia at the leading edge3"
+
+p(MGI:Cdc42) pos bp(MESH:"Cell Movement")
+p(MGI:Cdc42) pos bp(MESH:Phagocytosis)
+p(MGI:Cdc42) pos a(MESH:Pseudopodia)
+
+SET Evidence = "Heme stimulation of RAW264.7 macrophages 
+induced immediate Cdc42 activation for up to 30 min after 
+stimulation (Fig. 6d), without inducing changes in total 
+Cdc42 protein amounts (Supplementary Fig. 6b)."
+
+a(CHEBI:heme) -> act(p(MGI:Cdc42))
+
+SET Evidence = "Inhibiting mDIA2 using its 
+specific inhibitor, K216-0385, fully abrogated
+heme-induced filopodia extension 
+(Fig. 6g,h and Supplementary Fig. 6c)."
+
+p(MGI:Diaph3) pos a(MESH:Pseudopodia)
+
+SET Evidence = "In contrast with wild-type ER-HoxB8 
+BMDMs, Dock8−/− ER-HoxB8 BMDM did not spread or 
+extend filopodia (Fig. 7a,b), and failed to 
+activate Cdc42 following treatment with heme 
+(Fig. 7c), indicating that DOCK8 was essential 
+for heme-induced activation of Cdc42."
+
+p(MGI:Dock8) pos p(MGI:Cdc42)
+
+SET Evidence = "The top performing drug identified was 
+the antimalarial compound quinine, which fully restored 
+phagocytosis in the presence of heme, without affecting 
+baseline phagocytosis (Fig. 8a and 
+Supplementary Fig. 8b,c)."
+
+a(CHEBI:quinine) pos bp(MESH:Phagocytosis)
+
+SET Evidence = "Quinine pretreatment protected RAW264.7 
+macrophages (Fig. 8b and Supplementary Fig. 8c,d) and 
+human macrophages (Fig. 8c) from heme-induced inhibition 
+of phagocytosis and actin cytoskeleton changes 
+(Supplementary Fig. 8e,f) compared with 
+DMSO-treated cells."
+
+a(CHEBI:quinine) pos bp(MESH:Phagocytosis)
+a(CHEBI:quinine) neg bp(GO:"actin cytoskeleton reorganization")
+
+SET Evidence = "Notably, quinine diminished the association 
+of heme with DOCK8 without affecting the association of heme 
+with MPP1 or LGALS3 in RAW264.7 macrophages (Fig. 8d), 
+suggesting that quinine exerted its protective effect by 
+specifically disrupting the heme-DOCK8 association."
+
+a(CHEBI:quinine) -| complex(a(CHEBI:heme), p(MGI:Dock8))
+
+SET Evidence = "Following induction of E. coli peritonitis 
+in wild-type mice, quinine treatment did not affect plasma 
+heme levels, but did lead to a reduction in bacterial counts 
+in blood and liver (Fig. 8f,g and Supplementary Fig. 8g,h), 
+thereby restoring the bacterial clearance capacity 
+of heme-treated mice."
+
+SET MeSHAnatomy = "Blood"|"Liver"
+a(CHEBI:quinine) neg bp(MESH:"Bacterial Load")
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "Our finding that DOCK8 is necessary 
+for the cytoskeleton changes and disruption of 
+bacterial phagocytosis by heme is consistent 
+with recent studies showing that DOCK8 
+regulates dendritic cell migration via Cdc42 
+(refs. 37,44)."
+
+p(MGI:Dock8) pos bp(GO:"actin cytoskeleton reorganization")
+p(MGI:Dock8) neg bp(MESH:Phagocytosis)
+
+UNSET TextLocation
+#############

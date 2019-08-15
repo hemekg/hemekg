@@ -1,0 +1,245 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_26974230.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Am J Respir Cell Mol Biol. 2016 Aug;55(2):288-98. doi: 10.1165/rcmb.2015-0197OC.", "26974230"}
+
+SET MeSHAnatomy = "Alveolar Epithelial Cells"
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "Subsequent RBC lysis leads to release
+of acellular Hb, which, in turn, damages
+the alveolar epithelial cells."
+
+path(MESH:Hemolysis) pos p(HGNC:HBB)
+
+SET TextLocation = "Results"
+
+SET Evidence = "We also
+found that HbFe21 and HbFe31 activate
+NF-kB and mitogen-activated protein kinase
+pathways, as shown by phosphorylation of
+NF-kB p65 subunit and p44/42, respectively
+(Figure E3) as noted previously (31)."
+
+p(HGNC:HBB) -> act(p(MGI:Nfkb1))
+a(CHEBI:methemoglobin) -> act(a(MESH:"Mitogen-Activated Protein Kinases"))
+
+SET Evidence = "Hp
+attenuated HbFe21- and HbFe31-induced
+up-regulation of HO-1 and H-ferritin
+proteins (Figure 2B)."
+
+p(MGI:Hp) -| p(MGI:Hmox1)
+p(MGI:Hp) -| p(MGI:Fth1)
+
+SET Evidence = "Exposure to ferric Hb
+(HbFe31) induced a significant expression
+in HO-1 protein– (15.1761.04-fold) when
+compared with HbFe21 (9.3260.76-fold)-
+induced expression (Figure 2C)."
+
+a(CHEBI:methemoglobin) -> p(MGI:Hmox1)
+
+SET Evidence = "Similarly,
+HbFe31 induced a significant expression
+H-ferritin protein (60.4062.76-fold) when
+compared with a 25.25 (61.91)-fold
+induction by HbFe21 (Figure 2D)."
+
+a(CHEBI:methemoglobin) -> p(MGI:Fth1)
+
+SET Evidence = "We found a significant enrichment
+of HO-1 in the mitochondrial, but not in the
+cytosolic fractions after exposure to HbFe21
+and HbFe31 (Figures 3A and 3B)."
+
+SET MeSHAnatomy = "Mitochondria"
+a(CHEBI:methemoglobin) -> p(MGI:Hmox1)
+p(HGNC:HBB) -> p(MGI:Hmox1)
+
+SET Evidence = "Exposure to HbFe21 and HbFe31
+did not alter the expression of cytochrome c
+oxidase IV protein (Figure 3A)."
+
+SET MeSHAnatomy = "Mitochondria"
+a(CHEBI:methemoglobin) causesNoChange p(MGI:Cox4i1)
+p(HGNC:HBB) causesNoChange p(MGI:Cox4i1)
+
+SET Evidence = "Interestingly, Hp attenuated the HbFe21-
+and HbFe31-induced HO-1 expression in
+the mitochondria (Figures 3A and 3B)."
+
+SET MeSHAnatomy = "Mitochondria"
+p(MGI:Hp) -| p(MGI:Hmox1)
+
+SET Evidence = "This effect indicates a
+loss of mitochondrial bioenergetic function
+after exposure to HbFe31 (Figures 3C and
+3D)."
+
+SET Evidence = "Exposure to HbFe41 caused a significant
+up-regulation of HO-1 within 12 hours
+when compared with HbFe21 and HbFe31
+(Figures 4A and 4B)."
+
+a(MESH:ferrylhemoglobin) -> p(MGI:Hmox1)
+
+SET Evidence = "We found
+significant enrichment of HO-1 in
+mitochondrial fraction after exposure to
+HbFe31 and HbFe41 (Figure 4C)."
+
+SET MeSHAnatomy = "Mitochondria"
+a(MESH:ferrylhemoglobin) -> p(MGI:Hmox1)
+
+SET Evidence = "Exposure to HbFe41
+resulted in a drop in hyperpolarized cell
+percentage over untreated control, thus
+indicating a significant mitochondrial
+depolarization or compromised
+mitochondrial respiration."
+
+SET MeSHAnatomy = "Mitochondria"
+a(MESH:ferrylhemoglobin) pos bp(GO:"mitochondrial depolarization")
+a(MESH:ferrylhemoglobin) neg bp(GO:"cellular respiration")
+
+SET Evidence = "We found that
+Hpx effectively attenuated HO-1 induction
+by all redox forms of Hb."
+
+p(MGI:Hpx) -| p(MGI:Hmox1)
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "For example, HbFe41 (20 mM), but not
+HbFe31 or HbFe21, induced cytoskeletal
+reorganization, inflammation and disrupted
+barrier integrity in endothelial cells after 8
+hours of incubation with the proteins."
+
+SET Cell = "endothelial cell"
+a(MESH:ferrylhemoglobin) pos a(HM:"cytoskeletal reorganization")
+a(MESH:ferrylhemoglobin) pos path(MESH:Inflammation)
+
+SET Evidence = "A recent study indicated
+that expression of HO-1 targeted to
+mitochondria attenuated oxidative
+stress (43)."
+
+p(MGI:Hmox1) -|  bp(MESH:"Oxidative Stress")
+
+SET Evidence = "However, hemin or LPS-induced
+mitochondrial accumulation of HO-1 was
+associated with decreased mitochondrial
+heme content and reduced expression
+of heme-sensitive subunit I of complex IV
+with loss of activity (33)."
+
+p(MGI:Hmox1) neg p(MGI:Cox4i1)
+
+SET Evidence = "Moreover,
+mitochondrial translocation of HO-1
+can also lead to localized CO production as
+a result of heme degradation, thus
+inhibiting electron flow though
+mitochondrial electron transport chain
+complex IV (44)."
+
+SET MeSHAnatomy = "Mitochondria"
+p(MGI:Hmox1) -> a(CHEBI:"carbon monoxide")
+a(CHEBI:"carbon monoxide") -| complex(a(GO:"mitochondrial respiratory chain complex IV"))
+
+SET Evidence = "Exposure to Hb and its oxidized products
+increases heme overload on the AT1 cells.
+Heme overload induces the expression of
+HO-1 and iron-sequestering proteins, such
+as ferritin."
+
+p(HGNC:HBB) -> a(CHEBI:heme)
+a(CHEBI:heme) -> p(MGI:Hmox1)
+a(CHEBI:heme) -> p(MGI:Fth1)
+
+UNSET TextLocation
+###########

@@ -1,0 +1,314 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_26794659.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Cell Death Dis. 2016 Jan 21;7:e2064. doi: 10.1038/cddis.2015.392.", "26794659"} 
+
+SET Species = "Cavia porcellus"
+SET TextLocation = "Introduction"
+
+SET Evidence = "Free heme
+is a potent trigger of lipid peroxidation and a promoter of
+inflammation.4–6"
+
+a(CHEBI:heme) pos bp(MESH:"Lipid Peroxidation")
+a(CHEBI:heme) pos path(MESH:Inflammation)
+
+SET Evidence = "At high concentrations, heme can act as an
+endogenous inhibitor of the proteasome and as a trigger of the
+response to unfolded proteins in vitro.7"
+
+a(CHEBI:heme) -| p(PFAM:Proteasome)
+
+SET Evidence = "Free Hb is bound by the
+plasma protein haptoglobin, and the large molecular size Hb:
+Hp complexes are ultimately cleared by spleen and liver
+macrophages expressing the Hb scavenger receptor CD163.8"
+
+SET MeSHAnatomy = "Liver"|"Spleen"
+p(HGNC:HP) -| p(HGNC:HBB)
+
+SET Evidence = "Therefore, acute kidney injury (AKI)
+remains an important complication of acute and severe
+intravascular hemolysis."
+
+path(MESH:Hemolysis) pos path(MESH:"Acute Kidney Injury")
+
+SET Evidence = "Renal damage has also been reported to occur
+throughout many other acute hemolytic conditions associated
+with hemoglobinuria."
+
+path(MESH:"Acute Kidney Injury") -- path(MESH:Hemoglobinuria)
+
+SET TextLocation = "Results"
+
+SET Evidence = "Isovolemic transfusion of guinea pigs with
+10-unit equivalents of old blood, which consisted of red
+blood cells that were stored for 28 days, led to moderate
+hemoglobinuria."
+
+SET TimePoint = "28 days"
+a(MESH:"Blood Transfusion") pos path(MESH:Hemoglobinuria)
+
+SET Evidence = "Old blood transfusion resulted in systemic
+free Hb total exposure (AUC0–∞) of 4600 μmol heme-h/l,
+which was primarily cleared by the kidney within 24 h."
+
+a(MESH:"Blood Transfusion") pos p(HGNC:HBB)
+a(MESH:Kidney) neg p(HGNC:HBB)
+
+SET Evidence = "Immunofluorescence confirmed that renal Hb exposure
+triggered overexpression of HMOX1 and the unfolded protein
+response (UPR) chaperone HSP70 in tubule epithelial cells
+(Figure 2d)."
+
+SET MeSHAnatomy = "Kidney"|"Kidney Tubules"
+SET Cell = "epithelial cell"
+p(HGNC:HBB) -> p(HGNC:HMOX1)
+p(HGNC:HBB) -> p(HGNC:HSPA5)
+
+SET Evidence = "Electron paramagnetic resonance (EPR) spectra of renal
+tissues from old blood-transfused animals were recorded at 6K
+and showed a strong signal around g=6, which is indicative of
+high-spin ferric Hb(Fe3+) (Figure 3a)."
+
+SET MeSHAnatomy = "Kidney"|"Tissues"
+a(MESH:"Blood Transfusion") pos a(CHEBI:methemoglobin) 
+
+SET Evidence = "No high-spin ferric
+Hb was present in the control tissues or renal tissues of old
+blood-transfused, Hp-treated guinea pigs."
+
+p(HGNC:HP) neg a(CHEBI:methemoglobin)
+
+SET Evidence = "In
+old blood-transfused animals, strong Hb and iron deposition was
+observed in the tubule lumen and epithelial cells, respectively."
+
+SET MeSHAnatomy = "Kidney Tubules"
+SET Cell = "epithelial cell"
+a(MESH:"Blood Transfusion") pos p(HGNC:HBB)
+a(MESH:"Blood Transfusion") pos a(CHEBI:"iron(2+)")
+
+SET Evidence = "Hp
+treatment prevented renal Hb exposure."
+
+p(HGNC:HP) -| p(HGNC:HBB)
+
+SET Evidence = "Renal tissues
+from old blood-transfused animals exhibited 4-HNE-positive
+staining."
+
+SET MeSHAnatomy = "Kidney"|"Tissues"
+a(MESH:"Blood Transfusion") pos a(CHEBI:"4-hydroxynon-2-enal")
+
+SET Evidence = "In control, new blood-transfused, and old bloodtransfused,
+Hp-treated animals, 4-HNE was not detected."
+
+p(HGNC:HP) -| a(CHEBI:"4-hydroxynon-2-enal")
+
+SET Evidence = "Accordingly, heme
+exposures of more than 10 μM caused the significant and
+progressive depletion of cellular ATP, which was measured
+after an 8-h exposure period."
+
+a(CHEBI:heme) -| a(CHEBI:ATP)
+
+SET Evidence = "This ATP depletion was
+prevented by the addition of the heme scavenger, hemopexin
+(Figure 5b)."
+
+p(HGNC:HPX) pos a(CHEBI:ATP)
+
+SET Evidence = "Reduced glutathione (GSH) was also depleted
+after 4 h of heme exposure, indicating that heme induces
+oxidative stress in exposed cells (Figure 5c)."
+
+SET TimePoint = "4 hours"
+a(CHEBI:heme) -| a(CHEBI:glutathione)
+a(CHEBI:glutathione) neg bp(MESH:"Oxidative Stress")
+a(CHEBI:heme) pos bp(MESH:"Oxidative Stress")
+
+SET Evidence = "These data
+suggest that the estimated free heme concentrations that
+occur in the renal tubular system during severe intravascular
+hemolysis are in the range of heme concentrations that could
+trigger oxidative stress and cell damage to the renal
+epithelium."
+
+SET MeSHAnatomy = "Kidney"
+SET Cell = "epithelial cell"
+a(CHEBI:heme) pos bp(MESH:"Oxidative Stress")
+
+SET Evidence = "In agreement with the electrical
+cell–substrate impedance sensing data described above, the
+proteome changes triggered by 10 μM heme were indicative
+of an adaptive response with prominent induction of HMOX1
+and ferritin light (FTL) and heavy (FTH1) chains (Figure 5d,left panel)."
+
+SET Concentration = "10 μM"
+a(CHEBI:heme) -> p(HGNC:HMOX1)
+a(CHEBI:heme) -> p(HGNC:FTL)
+a(CHEBI:heme) -> p(HGNC:FTH1)
+
+SET Evidence = "However, in the presence of 40 μM heme, the toxic
+response was characterized by the strong induction of heat
+shock proteins, namely HSP70 (HSPA1B, HSPA4, HSPA5,
+DNAJB1), HSP72 (HSPA1A), HSP105 (HSPH1), and HSP10
+(HSPE1), as well as the proteasome adaptor protein
+sequestosome."
+
+SET Concentration = "40 μM"
+a(CHEBI:heme) -> p(HGNC:HSPA1B)
+a(CHEBI:heme) -> p(HGNC:HSPA4)
+a(CHEBI:heme) -> p(HGNC:HSPA5)
+a(CHEBI:heme) -> p(HGNC:DNAJB1)
+a(CHEBI:heme) -> p(HGNC:HSPA1A)
+a(CHEBI:heme) -> p(HGNC:HSPH1)
+a(CHEBI:heme) -> p(HGNC:HSPE1)
+
+SET Evidence = "In the presence of both 10 and 40 μM, the
+transferrin receptor was identified as the most suppressed
+protein."
+
+a(CHEBI:heme) -| p(HGNC:TFRC)
+
+SET Evidence = "The ratio of spliced XBP1 to either total XBP1 or unspliced XBP1
+was strongly increased by 40 μM heme for 4 and 8 h."
+
+SET Concentration = "40 μM"
+a(CHEBI:heme) -> p(HGNC:XBP1)
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "Ultimately, we found that uncontrolled cellular heme levels can
+activate the response to unfolded proteins and associated
+apoptosis pathways in mouse embryonic fibroblast cells."
+
+a(CHEBI:heme) pos bp(MESH:"Unfolded Protein Response")
+
+SET Evidence = "Other studies demonstrated that heme can trigger the
+activation of Toll-like receptor 4 and inflammasomes, thus
+leading to inflammatory reactions.5,35–37"
+
+a(CHEBI:heme) pos p(HGNC:TLR4)
+p(HGNC:TLR4) pos bp(GO:"inflammatory response")
+
+SET Evidence = "First, quantification of high-spin
+ferric Hb(Fe3+), which is the initial Hb oxidation product
+resulting from the oxidation of ferrous oxyHb(Fe2+), in the
+kidneys of the old blood-transfused guinea pigs suggests
+very high concentrations of ferric Hb can accumulate in renal
+tissues at 24 h after old blood transfusion."
+
+SET MeSHAnatomy = "Kidney"
+a(MESH:"Blood Transfusion") pos a(CHEBI:methemoglobin)
+
+SET Evidence = "The above-discussed findings provide strong in vivo evidence
+that high concentrations of ferric Hb(Fe3+) and free heme can
+accumulate in the renal cortex during hemolysis."
+
+SET MeSHAnatomy = "Kidney Cortex"
+path(MESH:Hemolysis) pos a(CHEBI:methemoglobin)
+path(MESH:Hemolysis) pos a(CHEBI:heme)
+
+SET Evidence = "However, at higher heme concentrations (20 and 40 μM), we
+observed a cytotoxic response with the irreversible breakdown
+of the epithelial barrier."
+
+SET Concentration = "20 μM"|"40 μM"
+a(CHEBI:heme) neg a(MESH:"Glomerular Filtration Barrier")
+
+SET Evidence = "The prevention of renal Hb
+filtration by Hp may be a therapeutic strategy to block renal Hb
+exposure and to rescue renal function in patients with severe
+hemoglobinuria."
+
+SET MeSHAnatomy = "Kidney"
+SET MeSHDisease = "Hemoglobinuria"
+p(HGNC:HP) -| p(HGNC:HBB)
+
+
+UNSET TextLocation
+############
+

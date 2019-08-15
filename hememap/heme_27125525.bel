@@ -1,0 +1,286 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_27125525.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Stroke. 2016 Jun;47(6):1626-31. doi: 10.1161/STROKEAHA.116.013146. Epub 2016 Apr 28.", "27125525"} 
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "Hematoma resolution occurs in the days after intracerebral hemorrhage (ICH)."
+
+path(MESH:"Cerebral Hemorrhage") pos path(MESH:Hematoma)
+
+SET Evidence = "The
+hematoma clearance may be via red blood cell (RBC) lysis or phagocytosis."
+
+bp(MESH:Phagocytosis) neg path(MESH:Hematoma)
+
+SET Evidence = "Erythrocyte lysis
+after ICH can be mediated by the complement activation and formation of the membrane
+attack complex (MAC), which contains complement C5b, C6, C7, C8 and C9 proteins (C5b–
+9)."
+
+bp(GO:"complement activation") pos path(MESH:Hemolysis) 
+a(MESH:"Complement Membrane Attack Complex") pos path(MESH:Hemolysis)
+ 
+SET TextLocation = "Results"
+ 
+SET Evidence = "We found that diameter of
+RBC decreased gradually in the hematoma edge and hematoma center (e.g. day-3 at
+hematoma edge: 2.71 ± 0.38μm vs. 3.89 ± 0.35μm at 4 hours, p<0.01; hematoma center:
+2.61 ± 0.29 μm vs. 3.75 ± 0.25μm at 4 hours, p<0.01. Fig. 1)."
+
+path(MESH:Hematoma) neg bp(MESH:"Erythrocyte Indices")
+
+SET Evidence = "The level of hemoglobin declined gradually over the time after the onset of ICH with a
+significant reduction at day 3. The contents of hemoglobin in the clot were 26.2 ± 5.2 mg/g
+at 4 hours, but were reduced to 13.9 ± 0.9 mg/g at day-3 (Fig. 2B, p<0.01)."
+
+SET MeSHDisease = "Cerebral Hemorrhage"
+path(MESH:Hematoma) neg p(HGNC:HBB)
+
+SET Evidence = "Activation of the complement system and 
+the formation of MAC resulted in an increased membrane 
+permeability and erythrocyte lysis."
+
+bp(GO:"complement activation") pos path(MESH:Hemolysis) 
+bp(GO:"complement activation") pos bp(MESH:"Cell Membrane Permeability")
+a(MESH:"Complement Membrane Attack Complex") pos path(MESH:Hemolysis)
+a(MESH:"Complement Membrane Attack Complex") pos bp(MESH:"Cell Membrane Permeability")
+
+SET Evidence = "In this present study, MAC contents in the clot 
+gradually increased with a marked accumulation at day-3 
+(53.5 ± 8.2 vs. 11.0 ± 3.9 ng/g at 4 hour, p<0.01, Fig. 2C) 
+and stayed at high levels at day 7."
+
+SET MeSHDisease = "Cerebral Hemorrhage"
+path(MESH:Hematoma) pos a(MESH:"Complement Membrane Attack Complex")
+
+SET Evidence = "Erythrophagocytosis was observed in the hematoma 
+edge at day-3 (Fig. 3A), and hemosiderin deposition was 
+identifiable in the hematoma edge at day-7 (Fig. 3A)."
+
+SET TimePoint = "3 days"
+path(MESH:Hematoma) pos a(HM:erythrophagocytosis)
+SET TimePoint = "1 week"
+path(MESH:Hematoma) pos a(MESH:Hemosiderin)
+
+SET Evidence = "CD163 and HO-1 positive cells infiltrated into 
+the hematoma from edge to center after ICH (Figs. 4A & 4B). 
+A significant increase of CD163 cells was found at day 3."
+
+SET TimePoint = "3 days"
+path(MESH:Hematoma) pos p(HGNC:CD163)
+
+SET Evidence = "HO-1 protein levels in the hematoma also increased 
+at day-3 (HO-1/GAPDH: 0.65 ± 0.08 at day-3 vs. 0.04 ± 0.01 at 4 hour, p<0.01)."
+
+SET TimePoint = "3 days"
+path(MESH:Hematoma) pos p(HGNC:HMOX1)
+
+SET Evidence = "We found that hemoglobin contents in 
+hematoma were significantly higher in the DFX treated 
+group compare to the vehicle-treated group 
+(15.9 ± 1.8 vs. 11.8 ± 0.8 mg/g, p<0.05, Fig. 5A)."
+
+SET MeSHDisease = "Cerebral Hemorrhage"
+path(MESH:Hematoma) neg p(HGNC:HBB)
+a(CHEBI:"desferrioxamine B") pos p(HGNC:HBB)
+
+SET Evidence = "DFX also reduced the MAC content in the clot 
+at day-3 (33.0 ± 6.6 vs. 56.2 ± 9.2 ng/g in the 
+vehicle-treated group, p<0.05, Fig. 5B)."
+
+a(CHEBI:"desferrioxamine B") neg a(MESH:"Complement Membrane Attack Complex")
+
+SET Evidence = "These results suggested that the treatment of DFX 
+reduced the process of hemolysis after ICH, which might be due 
+to alleviating MAC formation."
+
+SET MeSHDisease = "Cerebral Hemorrhage"
+a(CHEBI:"desferrioxamine B") -| path(MESH:Hemolysis)
+
+SET Evidence = "The loss of CD47 in the clot was reduced 
+significantly by DFX treatment at day 3 
+(CD47/GAPDH: 1.32 ± 0.16 in ICH+DFX group 
+vs. 0.74 ± 0.07 in ICH + vehicle group, p<0.05, Fig. 5C) 
+and day 7 (p<0.01, Suppl Figure I)."
+
+SET TimePoint = "3 days"
+SET MeSHDisease = "Cerebral Hemorrhage"
+a(CHEBI:"desferrioxamine B") pos p(HGNC:CD47)
+
+SET Evidence = "DFX treatment also caused a significant 
+reduction in infiltrating CD163-positive and HO-1 positive 
+cell in the hematoma at day 3 (Figs. 6A and B) and day 7 
+(Suppl Figures II & III)."
+
+a(CHEBI:"desferrioxamine B") neg p(HGNC:CD163)
+a(CHEBI:"desferrioxamine B") neg p(HGNC:HMOX1)
+
+SET Evidence = "Western blot analysis showed that 
+the protein expression of HO-1 was decreased in the 
+hematoma in the DFX treated group at day 3(
+HO-1/GAPDH: 0.32 ± 0.04 vs. 0.98 ± 0.07 in 
+the vehicle-treated group, p<0.05, Fig. 6B) 
+and day 7 (p<0.05, Suppl Figure III)."
+
+a(CHEBI:"desferrioxamine B") neg p(HGNC:HMOX1)
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "The diameter of RBCs within the hematoma decreased with time after ICH."
+
+SET MeSHDisease = "Cerebral Hemorrhage"
+path(MESH:Hematoma) neg bp(MESH:"Erythrocyte Indices")
+
+SET Evidence = "Following complement cascade activation, 
+MAC on the cell membrane forms a pore resulting in membrane 
+permeability changes17 finally leading to RBC morphological 
+alterations and erythrocyte lysis."
+
+a(MESH:"Complement Membrane Attack Complex") pos bp(MESH:"Cell Membrane Permeability")
+a(MESH:"Complement Membrane Attack Complex") pos path(MESH:Hemolysis)
+
+SET Evidence = "The current study examined the natural time course 
+of CD47 expression in the hematoma in a swine ICH model and found 
+that CD47 levels in the clot decrease with time."
+
+SET MeSHDisease = "Cerebral Hemorrhage"
+path(MESH:Hematoma) neg p(HGNC:CD47)
+
+SET Evidence = "CD47 exerts its inhibitory effect on phagocytosis 
+through binding to inhibitory immunoreceptor SIRPα expressed by 
+microglia/macrophages 21.Thus, the CD47-SIRPα constitutes a 
+negative feedback for erythrophagocytosis22."
+
+SET Cell = "macrophage"
+complex(p(HGNC:CD47), p(HGNC:SIRPA)) neg a(HM:erythrophagocytosis)
+
+SET Evidence = "Our recent study showed that depleting CD47 
+in RBCs resulted in faster hematoma clearance with microglia/
+macrophages being less likely to phagocytize RBCs with CD47 
+than CD47-deficient RBC 7."
+
+p(HGNC:CD47) neg path(MESH:Hematoma)
+
+SET Evidence = "Evidence suggested that CD163 acts as 
+a hemoglobin scavenger receptor on microglia/macrophage 
+with a role in erythrophagocytosis."
+
+SET Cell = "macrophage"
+p(HGNC:CD163) pos a(HM:erythrophagocytosis)
+
+SET Evidence = "CD163 mediated hemoglobin/hematoma clearance 
+is involved in the induction of HO-1, a rate-limiting enzyme 
+for heme degradation 26."
+
+p(HGNC:CD163) -> p(HGNC:HMOX1)
+p(HGNC:HMOX1) pos deg(a(CHEBI:heme))
+
+SET Evidence = "A recent study, however, indicated that HO-1 
+is associated with blood clearance by enhancing erythrophagocytosis 
+after stroke."
+
+SET MeSHDisease = "Stroke"
+p(HGNC:HMOX1) pos a(HM:erythrophagocytosis)
+
+SET Evidence = "The present study found that DFX treatment reduces MAC formation in the clot."
+
+a(CHEBI:"desferrioxamine B") neg a(MESH:"Complement Membrane Attack Complex")
+
+SET Evidence = "DFX also reduced CD47 loss and microglia/macrophage
+infiltration after ICH suggesting it also affects erythrophagocytosis."
+
+a(CHEBI:"desferrioxamine B") pos p(HGNC:CD47)
+
+SET Evidence = "In combination, these finding may underlie 
+our previous results showing that DFX slows hematoma 
+resolution after ICH in aged rats 12."
+
+SET MeSHDisease = "Cerebral Hemorrhage"
+a(CHEBI:"desferrioxamine B") neg path(MESH:Hematoma)
+
+UNSET TextLocation
+######################

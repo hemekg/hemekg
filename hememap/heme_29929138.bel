@@ -1,0 +1,416 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_29929138.bel"
+SET DOCUMENT Version     = "1.0.1"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Thromb Res. 2018 Aug;168:67-77. doi: 10.1016/j.thromres.2018.06.006. Epub 2018 Jun 11.", "29929138"} 
+
+SET TextLocation = "Abstract"
+
+SET Evidence = "Nonfunctioning CD59 is a major risk factor for stroke and hypercoagulability."
+
+p(HGNC:CD59, var("p.Cys89Tyr")) -> path(MESH:Stroke)
+p(HGNC:CD59, var("p.Cys89Tyr")) -> path(HP:Hypercoagulability)
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "Thrombosis is the prognostic factor with
+the greatest effect on survival in paroxysmal nocturnal hemoglobinuria
+(PNH) patients [1, 2]."
+
+path(HP:"Paroxysmal nocturnal hemoglobinuria") pos path(MESH:Thrombosis)
+
+SET Evidence = "Data from several retrospective studies in the preeculizumab
+era showed that the cause of death was related to thrombosis
+in 22.2–37.2% of PNH patients."
+
+SET MeSHDisease = "Hemoglobinuria, Paroxysmal"
+path(MESH:Thrombosis) pos path(MESH:Death)
+
+SET Evidence = "CD59 deficiency is a common finding in adult patients with PNH,
+which is characterized by clonal expansion of hematopoietic stem cells
+that have acquired a mutation in the PIGA gene (phosphatidylinositol
+glycan anchor biosynthesis, class A)."
+
+path(HP:"Paroxysmal nocturnal hemoglobinuria") neg p(HGNC:CD59)
+
+SET Evidence = "PIGA encodes a GPI biosynthesis
+protein, phosphatidylinositol N-acetylglucosaminyltransferase subunit
+A [5, 6], and erythrocytes deficient in GPI-anchored membrane proteins,
+including CD59, undergo complement-mediated hemolysis."
+
+p(HGNC:CD59) neg path(MESH:Hemolysis)
+
+SET Evidence = "The Cys89Tyr mutation in CD59 was initially
+described with manifestation in infancy by chronic hemolysis and relapsing
+peripheral demyelinating disease resembling recurrent Guillain-
+Barre syndrome (GBS) or chronic inflammatory demyelinating polyneuropathy
+(CIDP)."
+
+p(HGNC:CD59, var("p.Cys89Tyr")) pos path(MESH:Hemolysis)
+p(HGNC:CD59, var("p.Cys89Tyr")) pos path(MESH:"Guillain-Barre Syndrome")
+p(HGNC:CD59, var("p.Cys89Tyr")) pos path(MESH:"Polyradiculoneuropathy, Chronic Inflammatory Demyelinating")
+
+SET Evidence = "More recently, we have described two infants carrying
+the mutation who manifested with recurrent strokes [8], establishing
+the concept that primary Cys89Tyr mutation in CD59 leads to a
+thrombophilic state."
+
+p(HGNC:CD59, var("p.Cys89Tyr")) pos path(MESH:Stroke)
+p(HGNC:CD59, var("p.Cys89Tyr")) pos path(MESH:Thrombosis)
+
+SET TextLocation = "Results"
+
+SET Evidence = "As shown in Fig. 1, significantly increased
+MAC deposition is seen on RBCs (p < 0.0003), neutrophils
+(p < 0.009), and platelets (p < 0.0003), but not on monocytes
+(p=0.5, not shown)."
+
+SET Cell = {"erythrocyte", "neutrophil", "platelet"}
+p(HGNC:CD59, var("p.Cys89Tyr")) pos a(MESH:"Complement Membrane Attack Complex")
+
+SET Cell = "monocyte"
+p(HGNC:CD59, var("p.Cys89Tyr")) causesNoChange a(MESH:"Complement Membrane Attack Complex")
+
+SET Evidence = "Increased MAC deposition may lead to cell lysis
+and hemolysis, as is usually seen in RBCs but to a lesser extent in
+neutrophils and platelets (please see below)."
+
+SET Cell = {"erythrocyte", "neutrophil", "platelet"}
+a(MESH:"Complement Membrane Attack Complex") pos path(MESH:Hemolysis)
+
+SET Evidence = "Following MAC deposition on RBCs, intravascular hemolysis that
+leads to increasing levels of free hemoglobin was seen."
+
+a(MESH:"Complement Membrane Attack Complex") pos path(MESH:Hemolysis)
+path(MESH:Hemolysis) pos p(HGNC:HBB)
+
+SET Evidence = "free hemoglobin is rapidly cleared from the circulation by several
+scavenging mechanisms; however, we found that the plasma-free hemoglobin
+was high and haptoglobin levels were low in the patients
+examined (Table 1)."
+
+p(HGNC:HP) -| p(HGNC:HBB)
+
+SET Evidence = "This is a principal requirement
+for hemoglobin and hemin to induce adverse reactivity in tissues,
+including nitric oxide and oxidative reactions, release of free hemin,
+and molecular-signaling effects of hemin (reviewed by Schaer DJ et al.)
+[13] and Hill A et al. [14]."
+
+p(HGNC:HBB) -> a(HM:"oxidative reactions")
+
+SET Evidence = "We have assessed the presence
+of MPs in four patients with primary Cys89Tyr mutation in CD59 and
+two PNH patients, as well as in four healthy donors."
+
+SET Cell = {"erythrocyte", "neutrophil", "platelet"}
+p(HGNC:CD59, var("p.Cys89Tyr")) -> a(MESH:"Cell-Derived Microparticles")
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -> a(MESH:"Cell-Derived Microparticles")
+
+SET Evidence = "In summary, patients with primary Cys89Tyr mutation in CD59
+showed about 9–10-fold increase in the number of MPs compared to
+controls and slightly but significantly increased numbers when com
+pared to PNH patients. The origin of MPs was primarily RBCs and to a
+much lesser extent platelets and neutrophils."
+
+SET Cell = {"erythrocyte", "neutrophil", "platelet"}
+p(HGNC:CD59, var("p.Cys89Tyr")) -> a(MESH:"Cell-Derived Microparticles")
+path(HP:"Paroxysmal nocturnal hemoglobinuria") -> a(MESH:"Cell-Derived Microparticles")
+
+SET Evidence = "The
+average mean fluorescence (MF) for CD61 staining of was slightly reduced
+in patients with primary Cys89Tyr CD59 deficiency and PNH as
+compared to controls. However, the average MF for CD62P expression
+in the healthy individuals was 38.3 ± 3.1 compared to 48.5 ± 4.7 in
+patients with primary Cys89Tyr CD59 deficiency (p < 0.0085) and
+54.0 ± 4.2 in patients with PNH (p < 0.0013), indicating a significantly
+more activated platelet phenotype in both the patients with
+PNH and those with primary Cys89Tyr CD59 deficiency."
+
+p(HGNC:CD59, var("p.Cys89Tyr")) -> bp(GO:"platelet activation")
+path(HP:"Paroxysmal nocturnal hemoglobinuria") pos bp(GO:"platelet activation")
+
+SET Evidence = "Monocyte–platelet interactions are believed to be predominantly
+mediated by surface P-selectin/integrins and their receptors, and it was
+suggested that monocyte-platelet aggregates are a marker of platelet
+activation as well as a pathway for the regulation of monocyte and
+platelet function [17]."
+
+p(HGNC:SELP) pos bp(HM:"Monocyte–platelet aggregation")
+
+SET Evidence = "Interaction between
+monocytes and platelets was suggested to be via p selection [17], which
+was shown here to be much higher in patients with primary Cys89Tyr
+mutation in CD59."
+
+p(HGNC:CD59, var("p.Cys89Tyr")) -> p(HGNC:SELP)
+
+SET Evidence = "It is thus plausible to suggest that the increased
+monocyte-platelet interaction in patients with primary Cys89Tyr mutation
+in CD59 is related to an activated platelet phenotype."
+
+p(HGNC:CD59, var("p.Cys89Tyr")) -> bp(GO:"platelet activation")
+
+SET Evidence = "High free hemoglobin
+was shown in patients with primary Cys89Tyr mutation in CD59
+(Table 1) and it has been suggested in several ways that free hemoglobin
+may serve as a major mechanism for thrombophilia."
+
+p(HGNC:CD59, var("p.Cys89Tyr")) -> p(HGNC:HBB)
+p(HGNC:HBB) pos path(MESH:Thrombophilia)
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "Intravascular hemolysis is one thrombophilic mechanisms
+in PNH (reviewed by Hill et al. [14])."
+
+SET MeSHDisease = "Hemoglobinuria, Paroxysmal"
+path(MESH:Hemolysis) pos path(MESH:Thrombophilia)
+
+SET Evidence = "High free hemoglobin
+was shown in patients with primary Cys89Tyr mutation in CD59
+(Table 1) and it has been suggested in several ways that free hemoglobin
+may serve as a major mechanism for thrombophilia."
+
+p(HGNC:CD59, var("p.Cys89Tyr")) -> p(HGNC:HBB)
+p(HGNC:HBB) pos path(MESH:Thrombophilia)
+
+SET Evidence = "Administration of heme in healthy volunteers caused thrombophlebitis,
+demonstrating that it can cause vascular inflammation followed by
+vascular obstruction [18]."
+
+a(CHEBI:heme) -> path(MESH:Thrombophlebitis)
+a(CHEBI:heme) -> path(MESH:Inflammation)
+a(CHEBI:heme) -> path(HM:"vaso-occlusive crisis")
+
+SET Evidence = "One mechanism that may contribute to
+enhanced platelet thrombus formation is inhibition of the metalloprotease
+ADAMTS13 by free hemoglobin [20]."
+
+p(HGNC:HBB) -| p(HGNC:ADAMTS13)
+SET Cell = "platelet"
+p(HGNC:ADAMTS13) -| a(HM:Thrombus)
+
+SET Evidence = "Excessive intravascular hemolysis saturates scavenger mechanisms,
+resulting in free hemoglobin in plasma that irreversibly reacts with
+nitric oxide (NO) to form nitrate and methemoglobin."
+
+path(MESH:Hemolysis) -> p(HGNC:HBB)
+rxn(reactants(p(HGNC:HBB), a(CHEBI:"nitric oxide")), products(a(CHEBI:nitrate), a(CHEBI:methemoglobin)))
+
+SET Evidence = "In addition, lysed
+erythrocytes release arginase, which catalyzes the conversion of arginine,
+the substrate for NO synthesis, to ornithine."
+
+a(HM:"Erythrocytes, lysed") -> a(MESH:Arginase)
+a(MESH:Arginase) pos rxn(reactants(a(CHEBI:arginine)), products(a(CHEBI:ornithine)))
+
+SET Evidence = "Both processes decrease
+the availability of NO, which normally maintains smooth muscle
+cell relaxation, inhibits platelet activation and aggregation, and has
+anti-inflammatory effects on the endothelium."
+
+rxn(reactants(a(CHEBI:arginine)), products(a(CHEBI:ornithine))) -| a(CHEBI:"nitric oxide")
+a(CHEBI:"nitric oxide") -| bp(MESH:"Platelet Activation")
+a(CHEBI:"nitric oxide") -| bp(MESH:"Platelet Aggregation")
+SET MeSHAnatomy = "Endothelium"
+a(CHEBI:"nitric oxide") -| path(MESH:Inflammation)
+
+SET Evidence = "The endothelium normally expresses high levels of CD59, which
+protects endothelial cells in healthy individuals and in PNH patients
+from MAC-mediated injury."
+
+SET MeSHAnatomy = "Endothelium"
+SET MeSHDisease = "Hemoglobinuria, Paroxysmal"
+p(HGNC:CD59) neg act(a(MESH:"Complement Membrane Attack Complex"))
+
+SET Evidence = "However, in primary Cys89Tyr CD59 deficiency
+and not in PNH, the endothelial cells are exposed to MACmediated
+injury."
+
+p(HGNC:CD59, var("p.Cys89Tyr")) pos act(a(MESH:"Complement Membrane Attack Complex"))
+
+SET Evidence = "Injured endothelium may provide tissue factors and
+additional prothrombotic factors [21] that are not a prothrombotic
+mechanism in PNH."
+
+a(HM:"endothelial lesions") pos p(HGNC:F3)
+
+SET Evidence = "Endothelial injury may also be related to Free
+hemoglobin and its breakdown oxidative product heme, and MPs,
+which mediates direct proinflammatory, proliferative, and pro-oxidant
+effects on endothelial cells [22–24] both in PNH and congenital CD59
+deficiency, but may be more pronounced in congenital CD59 deficiency
+and perhaps even more in the brain due to loss of CD59 in the endothelium
+of these patients."
+
+SET MeSHDisease = "Hemoglobinuria, Paroxysmal"
+p(HGNC:HBB) pos a(HM:"endothelial lesions")
+a(CHEBI:heme) pos a(HM:"endothelial lesions")
+a(MESH:"Cell-Derived Microparticles") pos a(HM:"endothelial lesions")
+
+SET Evidence = "Circulating MPs in PNH express the endothelial markers
+ICAM-1 (CD54), sVCAM-1, VWF, CD144, and CD105, indicating endothelial
+activation [24]."
+
+SET MeSHDisease = "Hemoglobinuria, Paroxysmal"
+a(MESH:"Cell-Derived Microparticles") -> p(HGNC:ICAM1)
+a(MESH:"Cell-Derived Microparticles") -> p(HGNC:VCAM1)
+a(MESH:"Cell-Derived Microparticles") -> p(HGNC:VWF)
+a(MESH:"Cell-Derived Microparticles") -> p(HGNC:CDH5)
+a(MESH:"Cell-Derived Microparticles") -> p(HGNC:ENG)
+
+SET Evidence = "MPs are small membrane-derived vesicles that are shed upon activation,
+inflammation, or cell death/damage."
+
+path(MESH:Inflammation) -> a(MESH:"Cell-Derived Microparticles")
+bp(MESH:"Cell Death") -> a(MESH:"Cell-Derived Microparticles")
+
+SET Evidence = "In
+this work, we were able to document a significant increase in RBCderived
+MPs, and a lesser increase in PMN- and platelet-derived MPs, in
+these patient
+s. This increase in MPs may lead to the thrombophilic state
+[15]."
+
+SET Cell = "erythrocyte"
+a(MESH:"Cell-Derived Microparticles") pos path(MESH:Thrombophilia)
+
+SET Evidence = "In contrast to platelet lysis, platelet activation is clearly seen, based
+on both the higher expression of CD62P (Fig. 3B) and increased coaggregation
+with white blood cells."
+
+p(HGNC:SELP) pos bp(MESH:"Platelet Activation")
+bp(HM:"Monocyte-platelet aggregation") pos bp(MESH:"Platelet Activation")
+
+SET Evidence = "Surface accumulation of MAC may be at least partially responsible
+for the activated platelet phenotype seen in patients with primary
+Cys89Tyr CD59 mutation, as manifested both by increased CD62P expression
+and monocyte-platelet aggregates."
+
+a(MESH:"Cell-Derived Microparticles") pos bp(MESH:"Platelet Activation")
+p(HGNC:SELP) pos bp(MESH:"Platelet Activation")
+bp(HM:"Monocyte-platelet aggregation") pos bp(MESH:"Platelet Activation")
+
+SET Evidence = "Although aggregation has not been investigated
+in PNH, we clearly show here that in primary Cys89Tyr CD59 mutation
+there is a significant increase in coaggregation with high numbers of
+activated platelets adhering to a single monocyte, and granulocytes to
+monocytes, that may lead to nonendothelial-bound arterial occlusion,
+among other effects [36]."
+
+p(HGNC:CD59, var("p.Cys89Tyr")) pos bp(HM:"Monocyte-platelet aggregation")
+bp(HM:"Monocyte-platelet aggregation") pos path(HP:"Arterial occlusion")
+
+SET Evidence = "Ziakas et al. [38] described 38 reports of
+arterial thrombosis, mainly in the central nervous system or coronary
+arteries in PNH patients."
+
+SET MeSHAnatomy = "Coronary Vessels"|"Central Nervous System"
+path(HP:"Paroxysmal nocturnal hemoglobinuria") pos path(HP:"Arterial thrombosis")
+
+SET Evidence = "We recently encountered patients with recurrent strokes leading to
+premature death in 2/7 young children with primary Cys89Tyr CD59
+deficiency [8]."
+
+p(HGNC:CD59, var("p.Cys89Tyr")) -> path(MESH:Stroke)
+
+SET Evidence = "Interestingly, we have recently reported an association with
+venous thrombosis for lack of CD55 [45], so PNH patients lacking both
+CD55 and CD59 may suffer from both venous and arterial thrombosis."
+
+SET MeSHDisease = "Hemoglobinuria, Paroxysmal"
+p(HGNC:CD55) neg path(HP:"Arterial thrombosis")
+p(HGNC:CD59) neg path(HP:"Arterial thrombosis")
+p(HGNC:CD55) neg path(HP:"Venous thrombosis")
+p(HGNC:CD59) neg path(HP:"Venous thrombosis")
+
+SET Evidence = "In summary, thrombosis is an extremely important prognostic factor
+both in PNH and in primary Cys89Tyr nonfunctioning CD59."
+
+path(HP:"Paroxysmal nocturnal hemoglobinuria") pos path(MESH:Thrombosis)
+p(HGNC:CD59, var("p.Cys89Tyr")) pos path(MESH:Thrombosis)
+
+UNSET TextLocation
+############

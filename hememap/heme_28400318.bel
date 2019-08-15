@@ -1,0 +1,259 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_28400318.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Free Radic Biol Med. 2017 Jul;108:452-464. doi: 10.1016/j.freeradbiomed.2017.04.003. Epub 2017 Apr 8.", "28400318"}
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "Excess production of reactive oxygen
+species (ROS) has been implicated in progression of chronic heart failure as well as in other
+cardiovascular disorders including ischemia-reperfusion injury and cardiovascular complications of
+hemolytic diseases [2-7]."
+
+a(MESH:"Reactive Oxygen Species") pos path(MESH:"Heart Failure")
+a(MESH:"Reactive Oxygen Species") pos path(MESH:"Reperfusion Injury")
+
+SET Evidence = "Heme promotes endothelial
+dysfunction by inducing the expression of adhesion molecules and reducing nitric oxide (NO)
+availability, which causes vasoconstriction [9-14]."
+
+SET Cell = "endothelial cell"
+
+a(CHEBI:heme) -> a(MESH:"Cell Adhesion Molecules")
+a(CHEBI:heme) -| a(CHEBI:"nitric oxide")
+a(CHEBI:"nitric oxide") neg bp(GO:vasoconstriction)
+
+SET Evidence = "Moreover, heme-derived ROS induce the
+proliferation of smooth muscle cells, that participate in vasculopathy associated with
+atherosclerosis and hypertension [15]."
+
+a(CHEBI:heme) -> a(MESH:"Reactive Oxygen Species")
+SET Cell = "smooth muscle cell"
+a(MESH:"Reactive Oxygen Species") -> bp(MESH:"Cell Proliferation")
+a(MESH:"Reactive Oxygen Species") pos path(MESH:Atherosclerosis)
+a(MESH:"Reactive Oxygen Species") pos path(MESH:Hypertension)
+
+SET TextLocation = "Results"
+
+SET Evidence = "Hx-heme-treated CMs were protected from heme accumulation, compared to cells treated
+with albumin-heme or heme alone (Figure 1A), indicating that Hx prevents heme entry in cardiac
+cells."
+
+SET Cell = "regular cardiac myocyte"
+p(MGI:Hpx) -| a(CHEBI:heme)
+
+SET Evidence = "Moreover, in CMs
+the heme-mediated induction of the iron exporter Ferroportin (Fpn) was abrogated by Hx
+treatment while the down-regulation of the iron importer Transferrin receptor 1 (TfR1) was
+significantly reduced by Hx (see Figure 3 in [37]) further indicating that Hx limits heme-iron
+accumulation within the cell."
+
+SET Cell = "regular cardiac myocyte"
+p(MGI:Hpx) -| p(MGI:Slc40a1)
+p(MGI:Hpx) -> p(MGI:Tfrc)
+
+SET Evidence = "Consistently, Hx treatment blunted heme-mediated induction of the
+heme exporter Feline Leukemia Virus subgroup C Receptor 1(Flvcr1) [31, 38, 39] in H9c2 cells (see
+Figure 3 in [37])."
+
+p(MGI:Hpx) neg p(MGI:Flvcr1)
+
+SET Evidence = "Being heme a well-known pro-oxidant agent [17], we then evaluated ROS levels in CMs
+exposed to heme alone or bound to either Hx or albumin. In the presence of Hx-heme complexes,
+CMs were protected from ROS formation, if compared to CMs treated with either albumin-heme
+complexes or heme alone (Figure 1D)."
+
+SET Cell = "regular cardiac myocyte"
+p(MGI:Hpx) -| a(MESH:"Reactive Oxygen Species") 
+
+SET Evidence = "Staining of CMs with a fluorescent probe for specific
+detection of mitochondrial superoxide (Mito-sox) confirmed lower oxidative stress in cells exposed
+to Hx-heme than in those exposed to albumin-heme or heme alone (Figure 1E)."
+
+p(MGI:Hpx) -| bp(MESH:"Oxidative Stress")
+
+SET Evidence = "Consistently, the
+mRNA levels of Glutathione reductase (Gsr), -Glutamylcysteine synthetase (-Gcs) and
+thioredoxin reductase (Thiored red), anti-oxidant systems important in resistance of cardiac cell to
+oxidative damage [40, 41], were increased to a higher extent in CMs treated with either albumin
+heme or heme alone, compared to cells treated with Hx-heme (Figure 1F and see Figure 3 in [37])."
+
+SET Cell = "regular cardiac myocyte"
+
+a(CHEBI:heme) -> r(MGI:Gsr)
+a(CHEBI:heme) -> r(MGI:Gclc)
+a(CHEBI:heme) -> complex(r(MGI:Txnrd1), r(MGI:Txnrd2), r(MGI:Txnrd3))
+p(MGI:Hpx) -| r(MGI:Gsr)
+p(MGI:Hpx) -| r(MGI:Gclc)
+p(MGI:Hpx) -| complex(r(MGI:Txnrd1), r(MGI:Txnrd2), r(MGI:Txnrd3))
+
+SET Evidence = "The data were reproduced in H9c2 cells in which we were also able to demonstrate that Hx limits
+protein nitrosylation, another hallmark of cellular oxidative damage (see Figure 2 in [37])."
+
+p(MGI:Hpx) -| bp(GO:"protein nitrosylation")
+
+SET Evidence = "Consistently, HO-1 mRNA
+and protein levels were higher in hearts from Hx-/- mice than in controls (Figure 2B).
+Immunohistochemistry for HO-1 on heart sections indicated higher HO-1 expression in
+cardiomyocytes from Hx-/- mice than in wild-type animals (Figure 2B)."
+
+p(MGI:Hpx) -| r(MGI:Hmox1)
+p(MGI:Hpx) -| p(MGI:Hmox1)
+
+SET Evidence = "Moreover, the mRNA levels
+of Fpn and Flvcr1a were increased in Hx-/- mice, whereas those of the iron importers Divalent
+Metal Transporter 1 (Dmt1) and Tfr1 were decreased (see Figure 4 in [37])."
+
+p(MGI:Hpx) -| r(MGI:Slc40a1)
+p(MGI:Hpx) -| r(MGI:Flvcr1)
+p(MGI:Hpx) -> p(MGI:Tfrc)
+p(MGI:Hpx) -> p(MGI:Slc11a2)
+
+SET Evidence = "Both ROS and lipid peroxidation were increased in the heart of Hx-/-
+mice compared to that of wild-type animals (Figure 2C, D)."
+
+p(MGI:Hpx) -| bp(MESH:"Oxidative Stress")
+p(MGI:Hpx) -| bp(MESH:"Lipid Peroxidation")
+
+SET Evidence = "Consistently, the oxidative stress
+responsive gene Gsr was up-regulated in the heart of Hx-/- mice compared to wild-type animals
+(Figure 2E)."
+
+p(MGI:Hpx) -| g(MGI:Gsr)
+
+SET Evidence = "Cardiac contractility was severely impaired in 3
+month-old Hx-/- mice compared to wild-type controls, as evidenced by significantly lower fractional
+shortening (FS) and ejection fraction (EF) (Figure 3A-C)."
+
+p(MGI:Hpx) neg path(HP:"Impaired myocardial contractility")
+
+SET Evidence = "These data collectively indicate that heart free heme accumulating when Hx is lost is responsible
+for systolic dysfunction."
+
+a(CHEBI:heme) pos path(HP:"Left ventricular systolic dysfunction")
+
+SET Evidence = "In agreement with data on
+pro-oxidant effects of heme in neonatal mouse CMs (Figure 1D-F), oxidative stress was
+significantly increased in adult rat CMs exposed to free heme (see Figure 1 in [37])."
+
+a(CHEBI:heme) -> bp(MESH:"Oxidative Stress")
+
+SET Evidence = "As well as NAC, Hx co-treatment significantly
+improved systolic Ca2+ transients and accelerated Ca2+ transient decay kinetics, which resulted in a
+significant improvement of cardiomyocyte contractility (Figure 4A-E)."
+
+a(CHEBI:acetylcysteine) neg path(HP:"Impaired myocardial contractility")
+p(MGI:Hpx) neg path(HP:"Impaired myocardial contractility")
+
+SET Evidence = "Consistently, CaMKII-dependent phosphorylation of RyR2 (Ser-2814) and
+Phospholamban (PLB) (Thr-17) were significantly higher in Hx-/- hearts than in wild-type controls
+(Figure 5C, D)."
+
+p(MGI:Hpx) -| p(MGI:Ryr2, pmod(Ph, Ser, 2814))
+p(MGI:Hpx) -| p(MGI:Pln, pmod(Ph, Thr, 17))
+
+SET Evidence = "As
+expected, α-tocopherol treatment prevented ROS accumulation and the induction of anti-oxidant
+genes in the heart (Figure 6A, B and see Figure 8 in [37])."
+
+a(CHEBI:"alpha-tocopherol") -| a(MESH:"Reactive Oxygen Species") 
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "Consistently, we measured increased lipid peroxidation in both cells and tissues exposed
+to free heme, which can be rescued by α-tocopherol, an agent able to react with lipid radicals and
+interrupt the oxidation reaction."
+
+a(CHEBI:heme) -> bp(MESH:"Lipid Peroxidation")
+a(CHEBI:"alpha-tocopherol") -| bp(MESH:"Lipid Peroxidation")
+
+SET Evidence = "Mechanistically, heme-derived ROS may directly modify Ca2+
+handling proteins (such as the RyR2 or SERCA2a) [35, 57], and may also activate intracellular stress
+kinases, such as CaMKII [58], which in turn phosphorylate the same Ca2+ effectors and ultimately
+exacerbate Ca2+ mishandling."
+
+a(MESH:"Reactive Oxygen Species") pos act(p(PFAM:"CaMKII_AD"))
+act(p(PFAM:"CaMKII_AD")) neg bp(HM:"Calcium Homeostasis")
+
+UNSET TextLocation
+##########

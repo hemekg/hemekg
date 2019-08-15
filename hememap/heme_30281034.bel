@@ -1,0 +1,239 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_30281034.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Curr Opin Hematol. 2018 Nov;25(6):452-458. doi: 10.1097/MOH.0000000000000458.", "30281034"} 
+
+SET TextLocation = "Review"
+
+SET Evidence = "There is a clear need
+for, and medical benefit from, blood transfusions;
+nonetheless, administration of red blood cells
+(RBCs) does result in exposure to toxicants specific
+to hemoglobin (Hb) and its degradation components,
+hemin and iron."
+
+a(MESH:"Blood Transfusion") -> p(HGNC:HBB)
+a(MESH:"Blood Transfusion") -> a(CHEBI:heme)
+a(MESH:"Blood Transfusion") -> a(CHEBI:"iron(2+)")
+
+SET Evidence = "The causes for RBC-based
+toxicant exposures are multifactorial; however, following
+acute transfusion, the most common occurs
+during the processes of extravascular hemolysis,
+which includes macrophage erythrophagocytosis
+followed by macrophage death [1&&], release of iron,
+transferrin (Tf) saturation and, finally, accumulation
+of labile plasma iron (LPI) [2]."
+
+SET Cell = "erythrocyte"
+a(HM:"Blood Transfusion, Acute") -> bp(MESH:Phagocytosis)
+bp(MESH:Phagocytosis) -> bp(GO:"macrophage apoptotic process")
+bp(MESH:Phagocytosis) -> a(CHEBI:"iron(2+)")
+bp(MESH:Phagocytosis) -> path(HP:"Elevated transferrin saturation")
+bp(MESH:Phagocytosis) -> a(HM:"Labile iron", loc(MESH:Plasma))
+
+SET Evidence = "Conversely, chronic transfusions associated with
+b-thalassemia major and sickle cell disease lead to
+hemochromatosis with end organ injury."
+
+a(HM:"Blood Transfusion, Chronic") -> path(MESH:Hemochromatosis)
+
+SET Evidence = "For example, Hb and
+subsequently, hemin accumulate during storage of
+human blood as RBC membrane integrity decreases
+[4]."
+
+a(HM:"stored erythrocytes") -> bp(MESH:"Erythrocyte Deformability")
+
+SET Evidence = "Tf is an
+abundant plasma glycoprotein that normally circulates
+at a high concentration (2–4mg/ml) to prevent
+accumulation of LPI."
+
+p(HGNC:TF) -| a(HM:"Labile iron", loc(MESH:Plasma))
+
+SET Evidence = "The pool
+of di-ferric Tf binds to erythroid cell transferrin
+receptor 1 (TfR1) and contributes to erythropoiesis
+[16]."
+
+complex(a(MESH:"diferric transferrin"), p(HGNC:TFRC)) -> bp(MESH:Erythropoiesis)
+
+SET Evidence = "Acute large volume blood transfusion
+or administration of blood units at later
+stages of storage causes elevation of bilirubin, Tf
+saturation and LPI in animals [18&&] and humans
+[19&&]."
+
+a(HM:"Blood Transfusion, Acute") -> a(CHEBI:bilirubin)
+a(HM:"Blood Transfusion, Acute") -> path(HP:"Elevated transferrin saturation")
+a(HM:"Blood Transfusion, Acute") -> a(HM:"Labile iron", loc(MESH:Plasma))
+
+SET Evidence = "Accumulation of iron in tissue parenchyma with
+subsequent hemochromatosis is a well-known problem
+in chronic transfusion-dependent diseases such
+as b-thalassemia major, and in sickle cell disease
+patients when stroke prevention is indicated."
+
+SET MeSHDisease = {"beta-Thalassemia", "Anemia, Sickle Cell"}
+a(HM:"Blood Transfusion, Chronic") -> path(MESH:Hemochromatosis)
+
+SET Evidence = "For example, cardiac iron accumu
+-lation is more common in transfused thalassemia
+patients, whereas liver iron accumulation is most
+common in transfused sickle cell disease patients."
+
+SET MeSHDisease = "beta-Thalassemia"
+a(HM:"Blood Transfusion, Chronic") -> a(MESH:Iron , loc(MESH:Heart))
+SET MeSHDisease = "Anemia, Sickle Cell"
+a(HM:"Blood Transfusion, Chronic") -> a(MESH:Iron , loc(MESH:Liver))
+
+SET Evidence = "Because of large exposures to iron that occur in
+both disorders following transfusion, patients are
+inevitably prescribed small molecule iron chelation
+and the concomitant monitoring that is required."
+
+SET MeSHDisease = {"beta-Thalassemia", "Anemia, Sickle Cell"}
+
+a(MESH:"Iron Chelating Agents") -| a(CHEBI:"iron(2+)")
+
+SET Evidence = "Sequestration of LPI and prevention of pro-oxidative
+effects by the administration of apo-Tf may
+have clinical relevance following acute and chronic
+transfusion iron overload."
+
+p(HGNC:TF) -| a(HM:"Labile iron", loc(MESH:Plasma))
+
+SET Evidence = "These studies do begin
+to suggest that apo-Tf administration could attenuate
+acute iron overload and hemochromatosis progression
+following chronic RBC transfusions."
+
+p(HGNC:TF) -| a(CHEBI:"iron(2+)")
+p(HGNC:TF) -| path(MESH:Hemochromatosis)
+
+SET Evidence = "Of the biological components known to bind
+hemin, Hpx is by far the most efficient with a
+dissociation constant (Kd) lower than 1 x 10–13 M;
+as a result, after binding, the transfer of hemin from
+Hpx to other proteins or lipids is not possible [24]."
+
+p(HGNC:HPX) -| a(CHEBI:heme)
+
+SET Evidence = "Once bound to
+hemin, the Hpx-hemin complex prevents oxidative
+reactions and facilitates clearance of the complex
+through macrophage CD91, also referred to as lowdensity
+lipoprotein receptor-related protein 1."
+
+complex(p(HGNC:HPX), a(CHEBI:hemin)) -| a(HM:"oxidative reactions")
+
+SET Evidence = "In mice, this response was
+attenuated after administration of the TLR-4 inhibitor,
+TAK-242, suggesting hemin potentiates pulmonary
+macrophage activation and inflammation
+through hemin-induced TLR-4 receptor binding
+[27]."
+
+a(CHEBI:heme) -> p(HGNC:TLR4)
+a(CHEBI:heme) -> bp(MESH:"Macrophage Activation")
+a(CHEBI:heme) -> path(MESH:Inflammation)
+
+SET Evidence = "Hp
+is a plasma glyco-protein that normally circulates in
+within a concentration range of 0.3–2mg/ml and is
+the putative scavenger of cell-free Hb with a high
+affinity (KD¼10–12M) for Hb dimers (Fig. 1 A,B and
+Fig. 2 C [31])."
+
+p(HGNC:HP) -| p(HGNC:HBB)
+
+SET Evidence = "In diseases of intravascular hemolysis,
+Hp is often not detectable and lower Hp levels
+are associated with transfusion."
+
+a(MESH:"Blood Transfusion") -| p(HGNC:HP)
+
+UNSET TextLocation
+################

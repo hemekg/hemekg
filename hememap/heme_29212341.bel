@@ -1,0 +1,263 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_29212341.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Antioxid Redox Signal. 2018 Aug 10;29(5):484-499. doi: 10.1089/ars.2017.7089. Epub 2018 Mar 2.", "29212341"}
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "High ferroportin
+levels were measured in macrophages upon heme overload
+and erythrophagocytosis (12, 13, 31, 32, 37) and in hemolytic
+murine models of b-thalassemia and phenylhydrazineinduced
+hemolytic anemia (11, 22, 34)."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) pos p(MGI:Slc40a1)
+a(HM:erythrophagocytosis) pos p(MGI:Slc40a1)
+
+SET Evidence = "In
+addition, ferroportin undergoes post-translational control by
+the systemic iron regulator, hepcidin, whereby binding of
+hepcidin to ferroportin causes its internalization and degradation,
+leading to iron retention within the cells (21, 41)."
+
+complex(p(MGI:Hamp), p(MGI:Slc40a1)) -> deg(p(MGI:Slc40a1))
+
+SET TextLocation = "Results"
+
+SET Evidence = "These data suggested that during severe hemolysis, heme mediated
+ferroportin induction and low hepcidin in HbS mice
+(11) served to elevate systemic iron availability, required to
+sustain high erythropoietic demands in these mice."
+
+a(CHEBI:heme) pos p(MGI:Slc40a1)
+p(MGI:Slc40a1) pos a(CHEBI:"iron(2+)")
+
+SET Evidence = "Our in vivo observations could be recapitulated in isolated
+macrophages, which upon stimulation with heme (25 lM;
+16 h) demonstrated increased ferroportin mRNA and protein
+expression (Fig. 4A, B) and a significant decrease in
+the intracellular iron pool (2.2-fold; p < 0.01) (Fig. 4C)."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) pos r(MGI:Slc40a1)
+a(CHEBI:heme) pos p(MGI:Slc40a1)
+
+SET Evidence = "In
+a time-line experiment, we showed that heme loading of
+macrophages decreased the expression of heme–hemopexin
+complex receptor and transferrin receptor 1 (TfR1) (Fig. 4D),
+while ferritin levels remained largely unchanged except for
+an increase in ferritin levels at 16 h post-treatment (Fig. 4D)."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) -| complex(a(CHEBI:heme), p(MGI:Hpx))
+a(CHEBI:heme) -| p(MGI:Tfrc)
+SET TimePoint = "16 hours post-treatment"
+a(CHEBI:heme) -> p(MGI:Ftl1)
+
+SET Evidence = "So far, our results established that in the conditions of
+acute and chronic heme overload, macrophages acquired
+high ferroportin expression and an efficient iron export."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) pos p(MGI:Slc40a1)
+
+SET Evidence = "We showed that
+simulation of macrophages with LPS resulted in significant
+reduction in ferroportin mRNA and protein expression and
+enhanced intracellular iron deposition throughout all time
+points tested (Fig. 5A–D)."
+
+SET Cell = "macrophage"
+a(CHEBI:lipopolysaccharide) neg r(MGI:Slc40a1)
+a(CHEBI:lipopolysaccharide) neg p(MGI:Slc40a1)
+a(CHEBI:lipopolysaccharide) pos a(CHEBI:"iron(2+)")
+
+SET Evidence = "By contrast, treatment
+of macrophages with PPIX failed to increase the ROS production
+and ferroportin expression, implying that iron within
+the heme moiety was required for the observed effects
+(Fig. 7B)."
+
+a(CHEBI:protoporphyrin) causesNoChange a(MESH:"Reactive Oxygen Species")
+a(CHEBI:protoporphyrin) causesNoChange p(MGI:Slc40a1)
+
+SET Evidence = "In contrast, PPIX treatment of macrophages was
+capable of inducing Hmox-1 expression (Fig. 7C), indicating
+that PPIX was taken up by macrophages and catabolized (13)."
+
+a(CHEBI:protoporphyrin) -> p(MGI:Hmox1)
+
+SET Evidence = "We confirmed that the redox active iron, which is derived
+from heme catabolism in macrophages, is capable of catalyzing
+ROS formation (Fig. 7A) (19)."
+
+a(CHEBI:"iron(2+)") -> a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "Expectedly, and in line with previous report (13), treatment
+of macrophages with DFO abolished ferroportin and ferritin
+induction by heme, whereas TfR1 expression was lowered
+upon heme and combined treatment with heme and DFO
+(Fig. 7D)."
+
+SET Cell = "macrophage"
+a(CHEBI:"desferrioxamine B") -| p(MGI:Slc40a1)
+a(CHEBI:"desferrioxamine B") -| p(MGI:Ftl1)
+complex(a(CHEBI:heme), a(CHEBI:"desferrioxamine B")) -| p(MGI:Tfrc)
+
+SET Evidence = "We showed that cotreatment of macrophages with heme and
+apocynin (Fig. 7E), as well as with heme and allopurinol
+(Fig. 7F), fully prevented ferroportin induction by heme.
+These data revealed that inhibiting superoxide at its production
+site is an effective way to counteract heme-mediated
+ferroportin induction."
+
+complex(a(CHEBI:heme), a(CHEBI:apocynin)) -| p(MGI:Slc40a1)
+complex(a(CHEBI:heme), a(CHEBI:allopurinol)) -| p(MGI:Slc40a1)
+
+SET Evidence = "We showed that NAC treatment scavenged ROS production
+and, more importantly, it counteracted ferroportin induction
+by heme (Fig. 8B, C)."
+
+a(CHEBI:acetylcysteine) neg a(MESH:"Reactive Oxygen Species")
+a(CHEBI:acetylcysteine) -| p(MGI:Slc40a1) 
+
+SET Evidence = "In parallel to ferroportin, the
+expression of Hmox-1 was increased by heme-triggered ROS
+production and its induction was prevented by the combined
+treatment with NAC and heme (Fig. 8B)."
+
+complex(a(CHEBI:acetylcysteine), a(CHEBI:heme)) -| p(MGI:Hmox1)
+
+SET Evidence = "We
+showed that increase in ferroportin mRNA and protein expression
+by heme was effectively prevented in mice receiving
+combined treatment of NAC and heme (Fig. 8D, E)."
+
+complex(a(CHEBI:acetylcysteine), a(CHEBI:heme)) -| r(MGI:Slc40a1) 
+complex(a(CHEBI:acetylcysteine), a(CHEBI:heme)) -| p(MGI:Slc40a1) 
+
+SET Evidence = "Similarly,
+the induction of Hmox1 by heme was abolished by
+cotreatment with NAC and heme, supporting our in vitro
+findings (Fig. 8D)."
+
+complex(a(CHEBI:acetylcysteine), a(CHEBI:heme)) -| p(MGI:Hmox1)
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "We show that heme, in a concentration
+range found during hemolytic episodes, increases intracellular
+ROS production and consequentially signals for ferroportin
+induction and subsequent iron export from the macrophages."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) -> a(MESH:"Reactive Oxygen Species")
+a(MESH:"Reactive Oxygen Species") -> p(MGI:Slc40a1)
+
+SET Evidence = "Under heme overload conditions, macrophages acquire an
+iron phenotype characterized by low intracellular iron and
+high ferroportin expression."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) neg a(CHEBI:"iron(2+)")
+a(CHEBI:heme) pos p(MGI:Slc40a1)
+
+SET Evidence = "This dramatically contrasts the
+iron phenotype that develops in response to LPS, hallmarked
+by high intracellular iron levels and low ferroportin expression
+(10, 20, 48)."
+
+a(CHEBI:lipopolysaccharide) pos a(CHEBI:"iron(2+)")
+a(CHEBI:lipopolysaccharide) neg p(MGI:Slc40a1)
+
+SET Evidence = "Our study provides
+evidence that the increase in cellular oxidant levels, as a
+result of NADPH oxidase activity, was responsible for ferroportin
+induction by heme."
+
+act(a(MESH:"NADPH Oxidase")) pos p(MGI:Slc40a1)
+
+UNSET TextLocation
+###########

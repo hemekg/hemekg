@@ -1,0 +1,207 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_26368565.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Thromb Res. 2015 Oct;136(4):769-74. doi: 10.1016/j.thromres.2015.08.017. Epub 2015 Aug 28.", "26368565"}
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "The classical findings that define PE are hypertension and proteinuria
+appearing after 20 weeks of gestation."
+
+path(MESH:"Pre-Eclampsia") pos path(MESH:Proteinuria)
+path(MESH:"Pre-Eclampsia") pos path(MESH:Hypertension)
+
+SET Evidence = "It was hypothesized that through the generation
+of reactive oxygen species (ROS), Hb induces oxidative damage to the placenta and a subsequent
+leakage over the blood-placental barrier [12]."
+
+SET MeSHAnatomy = "Placenta"
+a(MESH:"Fetal Hemoglobin") -> a(HM:"Oxidative damage")
+
+SET Evidence = "Haptoglobin (Hp) is perhaps the most well investigated Hb-clearing molecule. It binds
+cell-free Hb in plasma [20,21] and the resulting Hp-Hb complex is cleared from blood via
+binding to the macrophage receptor CD163 [22]."
+
+p(HGNC:HP) pos a(MESH:"haptoglobin-hemoglobin complex")
+p(HGNC:CD163) -| a(MESH:"haptoglobin-hemoglobin complex")
+
+SET Evidence = "Free heme in blood is sequestered by hemopexin (Hpx) [23,24] and the Hpx-heme
+complex is cleared from the circulation by the hepatocyte receptor CD91 [25]."
+
+SET Cell = "hepatocyte"
+p(HGNC:LRP1) -| complex(p(HGNC:HPX), a(CHEBI:heme))
+
+SET Evidence = "In the extravascular
+compartment, cellular heme oxygenase (HO) is the most essential heme degrading
+protein, converting heme to free iron, biliverdin and CO [26,27]."
+
+p(HGNC:HMOX1) -> deg(a(CHEBI:heme))
+deg(a(CHEBI:heme)) -> complex(a(CHEBI:"iron(2+)"), a(CHEBI:biliverdin), a(CHEBI:"carbon monoxide"))
+
+SET Evidence = "Furthermore, the plasmaand
+extravascular reductase and heme- and radical scavenger α1-microglobulin (A1M)
+binds and degrades free heme and can reduce metHb [28–30]."
+
+p(HGNC:AMBP) -> deg(a(CHEBI:heme))
+
+SET TextLocation = "Results"
+
+SET Evidence = "A 4-fold increase of the HbF concentration was
+seen in the PE patients (p-value 0.01) as compared to the controls."
+
+SET MeSHDisease = "Pre-Eclampsia"
+path(MESH:"Pre-Eclampsia") pos a(MESH:"Fetal Hemoglobin")
+
+SET Evidence = "A statistically significant increase in the mean Hp-HbF concentration
+was observed for women with PE as compared to controls (p-value 0.018)."
+
+SET MeSHDisease = "Pre-Eclampsia"
+path(MESH:"Pre-Eclampsia") pos a(MESH:"haptoglobin-hemoglobin complex")
+
+SET Evidence = "Analysis of the Hp concentration in plasma showed a statistically significant decrease in Hp
+concentration in plasma samples of women with PE as compared to controls (pvalue<
+0.0001)."
+
+SET MeSHAnatomy = "Plasma"
+path(MESH:"Pre-Eclampsia") neg p(HGNC:HP)
+
+SET Evidence = "Soluble, shedded CD163, the macrophage receptor mediating elimination of the Hp-Hb complex,
+was analyzed in plasma [40–42]. The analysis showed a small but not statistically significant
+(p-value 0.37) increase in the PE group as compared to the controls (Table 3)."
+
+SET MeSHAnatomy = "Plasma"
+path(MESH:"Pre-Eclampsia") pos p(HGNC:CD163)
+
+SET Evidence = "Analysis of the intravascular heme-scavenger protein Hpx showed a statistically significant decrease
+in plasma Hpx concentration of women with PE (p-value<0.0001) as compared to the controls
+(Table 3)."
+
+SET MeSHAnatomy = "Plasma"
+path(MESH:"Pre-Eclampsia") neg p(HGNC:HPX)
+
+SET Evidence = "Analysis of plasma levels of the heme- and radical scavenger A1M showed a statistically significant
+increase of plasma A1M concentration in women with PE (p-value 0.035) as compared to
+controls (Table 3)."
+
+SET MeSHAnatomy = "Plasma"
+path(MESH:"Pre-Eclampsia") pos p(HGNC:AMBP)
+
+SET Evidence = "A negative correlation
+was found, i.e. an increased plasma cell-free HbF concentration was associated with a
+decreased plasma Hp concentration, when including all individuals, controls and women with
+PE (r = -0.335, p-value<0.0001, n = 145)(Fig 1A)."
+
+SET MeSHAnatomy = "Plasma" 
+a(MESH:"Fetal Hemoglobin") neg p(HGNC:HP)
+
+SET Evidence = "Correlation analysis using Pearson’s correlation coefficient showed statistically significant
+inverse correlation between Hpx and blood pressure, both systolic (r = -0.511, pvalue<
+0.00001, n = 145) and diastolic (r = -0,520, p-value<0.00001, n = 145)(Fig 3)."
+
+SET MeSHDisease = "Pre-Eclampsia"
+p(HGNC:HPX) neg bp(MESH:"Blood Pressure")
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "In line with previously
+published studies [13,14] the extravascular heme- and radical scavenger A1M was significantly
+increased in plasma of women with PE."
+
+SET MeSHAnatomy = "Plasma"
+path(MESH:"Pre-Eclampsia") pos p(HGNC:AMBP)
+path(MESH:"Pre-Eclampsia") pos a(CHEBI:heme)
+
+SET Evidence = "This could be explained by the
+finding that CO induces vasodilation by binding to the heme-protein guanylyl cyclase [67]."
+
+a(CHEBI:"carbon monoxide") -> bp(MESH:Vasodilation)
+
+SET Evidence = "Studies of sickle cell anemia patients have reported decreased levels of Hpx following hemolysis
+[68]."
+
+path(MESH:"Anemia, Sickle Cell") neg p(HGNC:HPX)
+
+UNSET TextLocation
+#########
+

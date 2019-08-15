@@ -1,0 +1,281 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme 28314763.bel"
+SET DOCUMENT Version     = "1.0.2"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Am J Physiol Heart Circ Physiol. 2017 Jun 1;312(6):H1120-H1127. doi: 10.1152/ajpheart.00851.2016. Epub 2017 Mar 17.", "28314763"} 
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "Some of the adverse effects
+caused by cell-free hemoglobin are a result of depletion of nitric oxide (NO), which
+may lead to vasoconstriction, inflammation, and platelet activation (10, 24)."
+
+p(HGNC:HBB) -| a(CHEBI:"nitric oxide")
+
+SET Evidence = "Haptoglobin binds to
+hemoglobin dimers and forms a high-molecular weight haptoglobin-hemoglobin
+complex, which is cleared from the circulation after binding to the CD163 receptor on
+hepatic and splenic macrophages (12)."
+
+p(HGNC:CD163) -> deg(a(MESH:"haptoglobin-hemoglobin complex"))
+
+SET Evidence = "By binding cell-free hemoglobin, haptoglobin
+prevents glomerular filtration of cell-free hemoglobin and subsequent kidney injury (2,7)."
+
+p(MGI:Hp) -| path(MESH:"Acute Kidney Injury")
+
+SET Evidence = "Schaer and colleagues
+107 showed that administration of exogenous haptoglobin prevents extravasation of cell
+free hemoglobin and vasoconstriction in rats (18)."
+
+p(MGI:Hp) -| bp(GO:vasoconstriction)
+
+SET Evidence = "The extensive crosslinkage of cell-free
+hemoglobin in a high-molecular weight HBOC retains cell-free hemoglobin dimers in
+the intravascular compartment, thereby preventing extravasation 112 of cell-free
+hemoglobin into the muscular layer of the arteries where local NO consumption can
+trigger vasoconstriction (25)."
+
+a(CHEBI:"nitric oxide") -> bp(GO:vasoconstriction)
+
+SET Evidence = "Mice with diabetes mellitus or hyperlipidemia have
+evidence of endothelial dysfunction, which is associated with reduced nitric oxide
+synthase (NOS) 3 activity (15, 16)."
+
+path(MESH:Hyperlipidemias) -| act(a(MESH:"Nitric Oxide Synthase"))
+
+SET Evidence = "Compared to wild-type (WT) mice, mice with
+117 endothelial dysfunction have an increased vasoconstrictor response to infusion of
+118 cell-free hemoglobin (25)."
+
+p(HGNC:HBB) -> path(HM:"Endothelial dysfunction")
+ 
+SET Evidence = "Intravenous infusion of cell-free hemoglobin induces hypertension in mice
+205 (24)."
+
+p(HGNC:HBB) -> path(MESH:Hypertension)
+
+SET Evidence = "Co-administration of haptoglobin attenuated the hemoglobin-induced increase in SBP
+during the 40 minutes after co-injection by an average of 13±3 mmHg (Figure 1A)."
+
+complex(p(MGI:Hp), p(HGNC:HBB)) -| bp(MESH:"Blood Pressure")
+
+SET Evidence = "SBP increased
+224 on average 20±2 mmHg in mice injected with hemoglobin mixed with hemopexin and
+225 therefore was similar to the increase after hemoglobin injection alone."
+
+complex(p(MGI:Hpx), p(HGNC:HBB)) -> bp(MESH:"Blood Pressure")
+
+SET Evidence = "These results
+230 suggest that co-injection of haptoglobin but not hemopexin with cell-free hemoglobin
+231 can prevent hemoglobin-induced hypertension in awake, healthy mice."
+
+complex(p(MGI:Hp), p(HGNC:HBB)) -| path(MESH:Hypertension)
+
+SET Evidence = "Haptoglobin binds to cell-free hemoglobin and thereby prevents glomerular filtration
+237 (6)."
+
+complex(p(MGI:Hp), p(HGNC:HBB)) -| bp(MESH:"Glomerular Filtration Rate")
+
+SET Evidence = "These results show that, in contrast to haptoglobin, hemopexin
+247 was unable to prevent free hemoglobin-induced hemoglobinuria."
+
+p(MGI:Hpx) -> path(MESH:Hemoglobinuria)
+
+SET Evidence = "Mice that received cell
+free hemoglobin together with haptoglobin had significantly higher plasma NO
+258 consumption than mice that received cell-free hemoglobin alone at 60 minutes after
+259 injection."
+
+complex(p(MGI:Hp), p(HGNC:HBB)) -> a(HM:"nitric oxide consumption")
+
+SET Evidence = "Taken together these results suggest that infusion of cell-free hemoglobin
+264 mixed with an equal mass of haptoglobin is sufficient to bind cell-free hemoglobin
+265 and prevent renal clearance of extracellular hemoglobin."
+
+complex(p(MGI:Hp), p(HGNC:HBB)) -| path(MESH:Hemoglobinuria)
+
+SET Evidence = "Endothelial dysfunction, a condition associated with reduced bioavailability of
+282 vascular NO, occurs in humans and mice with hyperlipidemia (16)."
+
+path(MESH:Hyperlipidemias) -> path(HM:"Endothelial dysfunction") 
+
+SET Evidence = "These data suggest that co-administration of human haptoglobin or hemopexin does
+276 not attenuate the conversion of NO to nitrate that is mediated by cell-free murine
+277 hemoglobin."
+
+p(HGNC:HBB) -> rxn(reactants(a(CHEBI:"nitric oxide")), products(a(CHEBI:nitrate)))
+
+SET Evidence = "Previous studies showed that db/db mice have enhanced
+312 susceptibility to hemoglobin-induced vasoconstriction (25)."
+
+SET MeSHDisease = "Diabetes Mellitus"
+p(HGNC:HBB) -> bp(GO:vasoconstriction)
+
+SET Evidence = "SBP
+315 increased 27±2 mmHg during the 40 minutes following infusion of hemoglobin in
+316 db/db mice (Figure 4A)."
+
+SET MeSHDisease = "Diabetes Mellitus"
+p(HGNC:HBB) -> bp(MESH:"Blood Pressure")
+
+SET Evidence = "Furthermore, haptoglobin retained cell-free
+338 hemoglobin in plasma and prevented hemoglobinuria."
+
+p(MGI:Hp) -| path(MESH:Hemoglobinuria)
+
+SET Evidence = "In mice fed a HFD or in
+339 diabetic mice fed a normal diet, haptoglobin mixed with murine tetrameric
+340 hemoglobin in a 1:1 weight ratio also retained cell-free hemoglobin in plasma and
+341 prevented hemoglobinuria but did not reduce hemoglobin-induced hypertension."
+
+SET MeSHDisease = "Diabetes Mellitus"
+p(MGI:Hp) -| path(MESH:Hemoglobinuria)
+
+SET Evidence = "When mice
+347 are infused with extracellular hemoglobin that has been extensively crosslinked and
+348 only contains a small fraction of monomeric hemoglobin (as in the HBOCs,
+349 PolyHeme), scavenging of NO is markedly reduced (25)."
+
+p(HGNC:HBB) -| bp(HM:"Nitric oxide scavenging")
+
+SET Evidence = "Inhibition of extravasation of cross-linked extracellular
+352 hemoglobin has been postulated as a possible mechanism of decreased NO353
+scavenging in the muscular layer of arteries by high-molecular weight HBOCs."
+
+SET MeSHAnatomy = "Arteries"
+p(HGNC:HBB) -| bp(HM:"Nitric oxide scavenging")
+
+SET Evidence = "Recent data suggest that haptoglobin prevents hemoglobin-induced hypertension by
+355 a similar mechanism (18)."
+
+p(MGI:Hp) -| path(MESH:Hypertension)
+
+SET Evidence = "In the
+358 current study, we demonstrated that administration of human haptoglobin retained
+359 cell-free hemoglobin in plasma, prevented hemoglobinuria, and reduced the
+360 hemoglobin-induced hypertension in healthy awake mice (see Figure 1A)."
+
+p(MGI:Hp) -| path(MESH:Hemoglobinuria)
+p(MGI:Hp) -| path(MESH:Hypertension)
+
+SET Evidence = "Increased plasma concentrations of cell-free heme, the breakdown product of
+390 hemoglobin, promote activation and inflammation of endothelial cells and enhance
+391 oxidative stress and vascular permeability (22)."
+
+SET Cell = "endothelial cell"
+a(CHEBI:heme) -> bp(GO:"endothelial cell activation")
+a(CHEBI:heme) -> path(MESH:Inflammation)
+a(CHEBI:heme) -> bp(MESH:"Oxidative Stress")
+
+SET Evidence = "In mouse models associated with
+392 chronic hemolysis and heme overload, such as in mice with a sickle hemoglobin
+393 (HbS) gene knock-in or mouse models of β-thalassemia, repeated treatment with
+394 hemopexin was shown to reduce chronically elevated blood pressure (21)."
+
+p(MGI:Hpx) -| bp(MESH:"Blood Pressure")
+
+SET Evidence = "Likewise,
+395 infusion of haptoglobin or hemopexin in HbS mice inhibited hemoglobin-dependent
+396 vaso-occlusion (3)."
+
+p(MGI:Hp) -| path(HM:"vaso-occlusive crisis")
+
+SET Evidence = "The mechanism postulated for the beneficial effects
+398 of hemopexin in mouse models of chronic hemolysis involves inhibition of heme399
+dependent activation of TLR4 signaling and a combination of reduced endothelial
+400 formation of reactive oxygen species and restored endothelial NOS-activity."
+
+p(MGI:Hpx) -| p(MGI:Tlr4)
+
+SET Evidence = "TLR4
+401 activation by free heme would induce mobilization of P-selectin and von Willebrand
+402 factor to the endothelial surface that triggers VCAM-1, ICAM-1, and E-selectin403
+dependent hemostasis and vasoocclusion (3, 4)."
+
+p(MGI:Tlr4) -> p(MGI:Vcam1)
+p(MGI:Tlr4) -> p(MGI:Icam1)
+p(MGI:Tlr4) -> p(MGI:Sele)
+
+UNSET TextLocation 
+############

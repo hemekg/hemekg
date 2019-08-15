@@ -1,0 +1,270 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_24464629.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Cell Biochem Biophys. 2014 Jul;69(3):495-502. doi: 10.1007/s12013-014-9823-9.", "24464629"} 
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "As a component of hemoglobin, free
+heme is released when hemolysis or extensive cell damage
+occur which results in inflammatory response."
+
+a(CHEBI:heme) pos bp(GO:"inflammatory response")
+
+SET Evidence = "Kidney inflammation is the major pathologic process of
+chronic kidney disease (CKD) and acute kidney injury
+(AKI) which cause significant morbidity and mortality in
+the general population [1]."
+
+SET MeSHAnatomy = "Kidney"
+path(MESH:Inflammation) pos path(HP:"Chronic kidney disease")
+path(MESH:Inflammation) pos path(HP:"Acute kidney injury")
+
+SET Evidence = "As a component of inflammasome, NLRP3 is the best
+characterized member of NLRs, which recruits and
+activates caspase-1 via the adapter molecule ASC (apoptosis-
+associated speck-like protein containing caspase
+activation and recruitment domain) [8, 9]."
+
+p(HGNC:NLRP3) pos p(HGNC:CASP1)
+
+SET Evidence = "IL-1b participates
+in a robust inflammatory response."
+
+p(HGNC:IL1B) pos bp(GO:"inflammatory response")
+
+SET Evidence = "Free heme is generated by intra- and extra-vascular
+hemolysis or extensive cell damage [14, 15]."
+
+path(MESH:Hemolysis) pos a(CHEBI:heme)
+
+SET Evidence = "Free heme is a dangerous molecule which can be recognized
+and degenerated by stress-responsive enzyme oxygenase-
+1 (HO-1) [16] which plays an essential role in host
+defense against heme."
+
+p(HGNC:HMOX1) pos deg(a(CHEBI:heme))
+
+SET Evidence = "Free heme has been proved possess
+pro-inflammatory activities, such as leukocyte activation,
+migration and infiltration, adhesion molecules activation,
+and cytokines and acute phase proteins induction [17, 18]."
+
+a(CHEBI:heme) pos bp(GO:"leukocyte activation")
+a(CHEBI:heme) pos a(MESH:"Cell Adhesion Molecules")
+a(CHEBI:heme) pos a(MESH:Cytokines)
+
+SET TextLocation = "Results"
+
+SET Species = "Mus musculus"
+
+SET Evidence = "ELISA
+analysis displayed that the concentration of IL-1b in culture
+supernatants was significantly enhanced after stimulated
+by heme and PPIX."
+
+a(CHEBI:heme) -> p(MGI:Il1b)
+a(CHEBI:protoporphyrin) -> p(MGI:Il1b)
+
+SET Evidence = "The effect of heme on IL-1b
+production initiated as early as 4 h after stimulation and
+displayed strict time- and dose-dependent manner (Fig. 1a–
+d)."
+
+SET TimePoint = "4 hours"
+a(CHEBI:heme) -> p(MGI:Il1b)
+
+SET Evidence = "These
+results demonstrate that heme could efficiently induce
+maturation and secretion of IL-1b in macrophages and
+primarily suggested that heme participates in immune
+response."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) -> p(MGI:Il1b)
+
+SET Evidence = "Western blotting results showed that the p10 active form of
+caspase-1 was detected in macrophages incubated with
+heme for 12 h."
+
+SET TimePoint = "12 hours"
+SET Cell = "macrophage"
+a(CHEBI:heme) pos act(p(MGI:Casp1))
+
+SET Evidence = "These results suggest that heme induces maturation
+and secretion of IL-1b in macrophages through activating
+caspase-1 (Fig. 2a)."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) pos act(p(MGI:Casp1))
+act(p(MGI:Casp1)) -> p(MGI:Il1b)
+
+SET Evidence = "Knockdown of ASC significantly
+inhibits the secretion of IL-1b, which primarily
+suggests that Inflammation/ASC axis is involved in the
+heme-mediated maturation and secretion of IL-1b
+(Fig. 2b)."
+
+act(p(MGI:Pycard)) pos p(MGI:Il1b)
+
+SET Evidence = "As expected, NLRP3+/+ macrophages were
+efficiently stimulated to secrete IL-1b by heme, and displayed
+dose-dependent (up to 40 lM) manner."
+
+act(p(MGI:Nlrp3)) pos p(MGI:Il1b)
+
+SET Evidence = "These results demonstrate that free heme
+induces IL-1b through activating NLRP3 inflammasome
+via ASC and suggest that free heme plays an essential role
+in inflammation response as a dangerous signal."
+
+a(CHEBI:heme) pos act(p(MGI:Nlrp3))
+act(p(MGI:Nlrp3)) pos p(MGI:Il1b)
+
+SET Evidence = "Furthermore,
+P2X7R was reported that participates in NLRP3 activation
+in renal inflammation and injury induced by high-fat diet
+[29]."
+
+SET MeSHAnatomy = "Kidney"
+p(MGI:P2rx7) pos act(p(MGI:Nlrp3))
+
+SET Evidence = "Western blotting
+showed that deficiency of P2X7R partially inhibited the
+secretion of mature IL-1b that heme induced (Fig. 3c)."
+
+p(MGI:P2rx7) pos p(MGI:Il1b)
+
+SET Evidence = "Therefore, knockdown of P2X4R and double knockdown
+of P2X7R plus P2X4R were performed by shRNA in
+macrophages and the result showed that P2X4R knockdown
+also partially inhibit the heme induced IL-1b secretion
+and double knockdown of P2X7R plus P2X4R almost
+completely depressed the IL-1b secretion (Fig. 3d)."
+
+p(MGI:P2rx4) pos p(MGI:Il1b)
+
+SET Evidence = "These
+results strongly suggest that heme activates NLRP3
+through P2X receptors, especially P2X4R and P2X7R."
+
+a(CHEBI:heme) pos p(MGI:P2rx7)
+a(CHEBI:heme) pos p(MGI:P2rx4)
+p(MGI:P2rx7) pos act(p(MGI:Nlrp3))
+p(MGI:P2rx4) pos act(p(MGI:Nlrp3))
+
+SET Evidence = "These results suggest that heme
+induced activation of NLRP3-Caspase-1-IL-1b axis is
+involved in kidney inflammation in mice UUO model and
+that heme serves as a dangerous factor participates in this
+process."
+
+SET MeSHAnatomy = "Kidney"
+p(MGI:Nlrp3) pos path(MESH:Inflammation)
+p(MGI:Casp1) pos path(MESH:Inflammation)
+p(MGI:Il1b) pos path(MESH:Inflammation)
+
+SET Evidence = "The results showed that
+enforced HO-1 could efficiently decline the heme level in
+the lysates of ligated kidneys, and inhibit kidney inflammation
+characterized by down-regulation of NLRP3-Caspase-
+1-IL-1b axis."
+
+SET MeSHAnatomy = "Kidney"
+p(MGI:Hmox1) neg a(CHEBI:heme)
+p(MGI:Hmox1) -| path(MESH:Inflammation)
+p(MGI:Hmox1) neg p(MGI:Nlrp3)
+p(MGI:Hmox1) neg p(MGI:Casp1)
+p(MGI:Hmox1) neg p(MGI:Il1b)
+
+SET Evidence = "These results suggest that heme plays an
+essential role in kidney inflammation via regulating
+NLRP3-Caspase-1-IL-1b axis."
+
+SET MeSHAnatomy = "Kidney"
+a(CHEBI:heme) pos path(MESH:Inflammation)
+
+UNSET TextLocation 
+##############

@@ -1,0 +1,325 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_25411909.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Chem Res Toxicol. 2015 Mar 16;28(3):460-9. doi: 10.1021/tx500422q. Epub 2014 Dec 1.", "25411909"} 
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "In other
+words, Hri is necessary for erythroid differentiation and survival
+under oxidative stress."
+
+p(HGNC:EIF2AK1) pos bp(GO:"erythrocyte differentiation")
+p(HGNC:EIF2AK1) neg bp(MESH:"Oxidative Stress")
+
+SET TextLocation = "Results"
+
+SET Evidence = "In contrast, Ko mice administrated with
+Pb(NO3)2 (Ko + Pb) developed significant anemia, evidenced
+by a great reduction of RBC count and hemoglobin
+concentration, compared to those of untreated Hri Ko mice
+(Ko − Pb) and Wt + Pb mice (Table 1; P < 0.05)."
+
+a(CHEBI:"lead nitrate") pos path(MESH:Anemia)
+
+SET Evidence = "Analogous
+to phenotypic observations of anemia, the percentage of
+reticulocytes in peripheral blood of Ko + Pb mice was greatly
+induced by more than 2-fold relative to Ko − Pb mice (P <
+0.05) and Wt + Pb mice (P < 0.001) (Figure 2A and B)."
+
+a(CHEBI:"lead nitrate") -> a(MESH:Reticulocytes)
+
+SET Evidence = "Elevated reticulocytes indicated markedly increased erythropoiesis
+in Ko mice challenged with Pb.29"
+
+a(MESH:Reticulocytes) pos bp(MESH:Erythropoiesis)
+
+SET Evidence = "The serum levels of direct bilirubin (DBil) and total
+bilirubin (TBil) were significantly increased in Ko + Pb mice,
+compared to those in Ko − Pb mice and Wt + Pb mice (Figure
+2C and D; P < 0.05)."
+
+SET MeSHAnatomy = "Serum"
+a(CHEBI:"lead nitrate") -> a(CHEBI:bilirubin)
+
+SET Evidence = "Furthermore, the level of hematocrit (HCT) was also
+diminished by roughly 15% in Ko + Pb mice, compared to
+that in Wt + Pb mice (Table 1), and the mean corpuscular
+volume (MCV) in Ko + Pb mice was elevated by approximately
+15% and 21%, compared to that in Ko − Pb mice and Wt + Pb
+mice, respectively (Table 1; P < 0.05)."
+
+a(CHEBI:"lead nitrate") -| bp(MESH:Hematocrit)
+a(CHEBI:"lead nitrate") -> bp(MESH:"Erythrocyte Volume")
+
+SET Evidence = "In stark contrast to Wt mice,
+there was an exuberant increase (57.9%) in Ter119+ cells in Ko
++ Pb mice, compared to that in Ko − Pb mice (Figure 3A; P =
+0.01), suggesting enhanced medullary erythropoiesis in Ko
+mice upon Pb(NO3)2 administration."
+
+a(CHEBI:"lead nitrate") -> g(MGI:Ly76)
+a(CHEBI:"lead nitrate") pos bp(MESH:Erythropoiesis)
+
+SET Evidence = "Consistent with the FACS analysis
+results, abundant production of erythroblast and megakaryocytes
+in the sections of BM from Ko + Pb mice was observed,
+indicting enhanced medullary erythropoiesis (Figure 3C)."
+
+SET MeSHAnatomy = "Bone Marrow"
+a(CHEBI:"lead nitrate") pos a(MESH:Erythroblasts)
+a(CHEBI:"lead nitrate") pos a(MESH:Megakaryocytes)
+
+SET Evidence = "Extramedullary erythropoiesis is
+often switched on upon anemia, as characterized by
+splenomegaly.31"
+
+SET Cell = "erythrocyte"
+path(MESH:Anemia) pos path(MESH:"Hematopoiesis, Extramedullary")
+
+SET Evidence = "As shown in Figure 4B, Pb treatment
+resulted in an induction of splenic Ter119+ erythroid cells in Ko
++ Pb mice, compared to that in Wt + Pb mice (59.6% vs 36.5%,
+P < 0.001; Figure 4B)."
+
+SET Cell = "erythroid progenitor cell"
+SET MeSHAnatomy = "Spleen"
+a(CHEBI:"lead nitrate") -> g(MGI:Ly76)
+
+SET Evidence = "Examination of histological sections
+of spleens showed a dramatic expansion of erythroblasts in the
+red pulp of the spleens of Hri-null mice upon Pb administration
+(Figure 4C)."
+
+SET MeSHAnatomy = "Spleen"
+a(CHEBI:"lead nitrate") pos a(MESH:Erythroblasts)
+
+SET Evidence = "These results also indicated that, in spite of enforced
+extramedullary and medullary erythropoiesis in Ko + Pb
+mice, erythroid cells did not robustly survive and differentiate
+under Pb exposure as shown in Table 1, analogous to the
+observations in cadmium-treated mice.22"
+
+a(CHEBI:"lead nitrate") neg bp(GO:"erythrocyte differentiation")
+a(CHEBI:cadmium) neg bp(GO:"erythrocyte differentiation")
+
+SET Evidence = "These findings
+together led us to postulate that there could be disordered
+differentiation and survival for Hri-deficient erythroid cells
+upon Pb exposure."
+
+SET Cell = "erythroid progenitor cell"
+p(MGI:Eif2ak1) pos bp(GO:"erythrocyte differentiation")
+
+SET Evidence = "These results are similar to our findings in an
+earlier study where Hri deficiency resulted in the blockade of
+erythroid differentiation of FL cells from early and late
+basophilic erythroblasts into chromatophilic and orthochromatophilic
+erythroblasts.19"
+
+p(MGI:Eif2ak1) pos bp(GO:"erythrocyte differentiation")
+
+SET Evidence = "These results suggest that
+Pb elicits direct inhibition of erythroid cell differentiation and
+that more importantly Hri takes a crucial role in promoting
+erythroid differentiation in response to Pb-induced toxicity."
+
+a(CHEBI:"lead(2+)") -| bp(GO:"erythrocyte differentiation")
+p(MGI:Eif2ak1) pos bp(GO:"erythrocyte differentiation")
+
+SET Evidence = "Pb treatment
+has been demonstrated to reduce heme availability for globin
+assembly.38 "
+
+a(CHEBI:"lead nitrate") -| a(CHEBI:heme)
+
+SET Evidence = "These data together demonstrated that Pb caused the inhibition
+of erythroid enucleation and that Hri seemingly surveilled the
+terminal differentiation of erythroblasts for appropriate
+hemoglobin production and final maturation before enucleation."
+
+a(CHEBI:"lead(2+)") -| bp(GO:"erythrocyte enucleation")
+p(MGI:Eif2ak1) pos bp(GO:"erythrocyte differentiation")
+
+SET Evidence = "In
+Ko + Pb mice, apoptotic cells were increased by a greater
+degree, 79.4% in BM erythrocytes, compared to those in Ko −
+Pb mice (Figure 7B; P = 0.012)."
+
+SET MeSHAnatomy = "Bone Marrow"
+a(CHEBI:"lead nitrate") pos bp(GO:"erythrocyte apoptotic process") 
+
+SET Evidence = "Apoptosis of splenic
+erythrocytes in Ko + Pb mice was enhanced by 19.0%,
+compared to that in Ko − Pb mice and by 55.4% in comparison
+to that in Wt + Pb mice (Figure 7C; P = 0.019)."
+
+SET MeSHAnatomy = "Spleen"
+a(CHEBI:"lead nitrate") pos bp(GO:"erythrocyte apoptotic process") 
+
+SET Evidence = "These data suggested that
+Pb-induced anemia should be ascribed to (at least partially) Pbinduced
+death of erythrocytes, and also stressed the critical role
+of Hri in assuring the survival of BM and spleen erythroid cells
+under Pb exposure."
+
+SET MeSHAnatomy = "Spleen"|"Bone Marrow"
+p(MGI:Eif2ak1) neg bp(GO:"erythrocyte apoptotic process")
+
+SET Evidence = "With respect to the absence of Hri, there were slightly greater
+serum iron concentrations, total splenic iron content, and
+hepatic hepcidin expression level in Hri-deficient mice, relative
+to those in Wt mice (Figure 8A−C)."
+
+SET MeSHAnatomy = "Serum"|"Spleen"
+a(CHEBI:"lead nitrate") pos a(CHEBI:"iron(2+)")
+
+SET MeSHAnatomy = "Liver"
+a(CHEBI:"lead nitrate") pos p(MGI:Hamp)
+
+SET Evidence = "However,
+Pb exposure induced hepatic hepcidin expression by nearly 2-
+fold in Ko + Pb mice with a resultant significant increase of
+total splenic iron, compared to that in Ko − Pb mice (Figure 8
+B and C; P < 0.05)."
+
+SET MeSHAnatomy = "Liver"
+a(CHEBI:"lead nitrate") pos p(MGI:Hamp)
+
+SET MeSHAnatomy = "Spleen"
+a(CHEBI:"lead nitrate") pos a(CHEBI:"iron(2+)")
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "For example, the binding of Pb2+
+to protein sulfydryl groups would result in inhibition of ALA-D
+activity, leading to heme deficiency, and reduction of heme
+supply is a known reason for lead-related pathology.10,11"
+
+complex(a(CHEBI:thiol), a(CHEBI:"lead(2+)")) -| p(HGNC:ALAD)
+
+SET Evidence = "Under Pb administration, Wt mice did not develop phenotypes
+of anemia; however, Hri-deficient mice developed severe
+anemia."
+
+p(MGI:Eif2ak1) neg path(MESH:Anemia)
+
+SET Evidence = "Our combined results revealed that Hri functions to
+protect erythroid cells from Pb-induced toxicity through
+enhancing erythroid differentiation, enforcing cell survival,
+and orchestrating iron homeostasis."
+
+p(MGI:Eif2ak1) pos bp(GO:"erythrocyte differentiation")
+
+SET Evidence = "Hri is activated to
+protect cells from oxidative stress-provoked apoptosis upon
+arsenic, cadmium, and iron deficiency.18,19,22"
+
+p(MGI:Eif2ak1) neg bp(GO:"erythrocyte apoptotic process")
+
+SET Evidence = "Moreover, in the current study, we identified a crucial
+role of Hri in protecting erythroid precursors during differentiation
+by promoting terminal maturation including
+enucleation, preventing cell death, and increasing iron
+availability for erythropoiesis."
+
+p(MGI:Eif2ak1) pos bp(GO:"erythrocyte enucleation")
+p(MGI:Eif2ak1) neg bp(GO:"cell death")
+
+SET Evidence = "Extramedullary and medullary
+erythropoiesis was enhanced in Hri-null mice upon Pb
+treatment."
+
+SET Cell = "erythrocyte"
+a(CHEBI:"lead nitrate") pos path(MESH:"Hematopoiesis, Extramedullary")
+
+SET Evidence = "Moreover, loss of Hri gave rise to hepatic hepcidin induction,
+associated with iron retention in spleens."
+
+p(MGI:Eif2ak1) neg p(MGI:Hamp)
+
+UNSET TextLocation
+##########

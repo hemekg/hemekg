@@ -1,0 +1,186 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_25264713.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Antioxid Redox Signal. 2015 Feb 1;22(4):294-307. doi: 10.1089/ars.2014.5950. Epub 2014 Nov 10.", "25264713"} 
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "Peroxiredoxin-2
+(Prx-2) has emerged as the critical antioxidant protecting
+RBCs from H2O2 produced endogenously (by Hb autoxidation
+and subsequent superoxide dismutation) and exogenously
+(e.g., from activated neutrophils) at low (physiologic)
+concentrations (11, 32, 38, 40, 43, 45) and, therefore, may
+limit oxidative injury to other cells/tissues in the vasculature
+(6, 57)."
+
+SET Cell = "erythrocyte"
+p(MGI:Prdx2) neg a(CHEBI:"hydrogen peroxide")
+p(MGI:Prdx2) neg bp(MESH:"Oxidative Stress")
+
+SET TextLocation = "Results"
+
+SET Evidence = "Figure 1B presents these data and
+shows that (i) basal (time 0) Prx-2 oxidation was higher at day
+35 relative to day 14 and 28 ( p < 0.05 by one-way analysis of
+variance (ANOVA) with Tukey post hoc test); (ii) H2O2
+significantly increased Prx-2 oxidation, which was maximal
+at the first time point (5 min) measured; (iii) the magnitude of
+the maximal level of Prx-2 oxidation increased with RBC
+storage age ( p < 0.05 by one-way ANOVA with Tukey post
+hoc test for day 7 vs. 35 for 5 min data); and (iv) dimeric Prx-2
+was slowly reduced back to the monomer over 60 min;
+however, this was not observed with day 35 RBC, where Prx-
+2 remained > 75% oxidized."
+
+SET TimePoint = "5 min"
+a(CHEBI:"hydrogen peroxide") pos p(MGI:Prdx2, pmod(O))
+a(HM:"stored erythrocytes") pos p(MGI:Prdx2, pmod(O))
+
+SET Evidence = "Finally, slower Prx-2 reduction correlated with increased
+H2O2 (10 lM)-induced hemolysis of day 35 RBC
+compared with day 7 RBC (Fig. 1D)."
+
+a(CHEBI:"hydrogen peroxide") pos path(MESH:Hemolysis)
+p(MGI:Prdx2) neg path(MESH:Hemolysis)
+
+SET Evidence = "However,
+no differences in basal Trx-reductase activities, Trx
+protein levels, or NADPH levels were observed in day 7
+versus 35 RBC (Fig. 2), suggesting that this was not the basis
+of differential Prx-2 reduction kinetics."
+
+a(HM:"stored erythrocytes") causesNoChange p(MGI:Txn1)
+a(HM:"stored erythrocytes") causesNoChange a(CHEBI:NADPH)
+
+SET Evidence = "Inclusion of glucose increased
+the rate of Prx-2 reduction for both day 7 and 35 RBC compared with
+the reaction without glucose (compare to Fig. 1)."
+
+a(CHEBI:glucose) pos p(MGI:Prdx2, pmod(R))
+
+SET Evidence = "Presaturation
+of RBC with CO affected neither initial H2O2-
+dependent Prx-2 oxidation nor Prx-2 reduction in either RBC,
+although a trend toward decreased Prx-2 oxidation over 5 min
+was noted in CO-treated cells ( p = 0.08 between with and
+without CO groups for b93Cys RBC)."
+
+SET TimePoint = "5 min"
+a(CHEBI:"carbon monoxide") -| p(MGI:Prdx2, pmod(O))
+
+SET Evidence = "Figure
+5C shows that pretreatment of human RBC stored for 35 days
+with CO, or CO-added 5 min after H2O2, significantly accelerated
+Prx-2 reduction from the dimer to monomer (by
+*35% relative to control at 20 min)."
+
+SET TimePoint = "5 min"
+a(CHEBI:"carbon monoxide") pos p(MGI:Prdx2, pmod(O))
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "This is consistent with increased Prx-2 oxidation and a role
+for this enzyme in protecting RBC membrane constituents
+from storage-dependent oxidative stress (49, 50)."
+
+p(MGI:Prdx2) -| bp(MESH:"Oxidative Stress")
+
+SET Evidence = "The potential significance of this finding is underscored by
+the fact that Prx-2 is considered the primary antioxidant
+system to negate H2O2-mediated oxidative damage in the
+RBC (41)."
+
+p(MGI:Prdx2) -| a(CHEBI:"hydrogen peroxide")
+p(MGI:Prdx2) -| bp(MESH:"Oxidative Stress")
+
+SET Evidence = "Data presented here suggest that
+the b93Cys is also involved in Prx-2 reduction."
+
+a(HM:"hemoglobin beta-93-cysteine") pos p(MGI:Prdx2, pmod(R))
+
+UNSET TextLocation
+#############

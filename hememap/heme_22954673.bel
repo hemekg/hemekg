@@ -1,0 +1,176 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_22954673.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Atherosclerosis. 2012 Oct;224(2):394-400. doi: 10.1016/j.atherosclerosis.2012.07.043. Epub 2012 Aug 23.", "22954673"}
+
+SET TextLocation = "Results"
+
+SET Evidence = "As can be observed in Fig. 1, heme has a potent
+chemotactic activity on VSMC (Fig. 1A), and is also a potent inducer
+of VSMC proliferation (Fig. 1B)."
+
+SET MeSHAnatomy = "Muscle, Smooth, Vascular"
+a(CHEBI:heme) -> bp(GO:"cell proliferation")
+
+SET Evidence = "Heme effects were shown to be redoxsensitive,
+since the antioxidant Trolox (100 mM) abrogated
+heme-induced VSMC migration and proliferation (Fig. 1C,D)."
+
+SET Concentration = "100 mM" 
+SET MeSHAnatomy = "Muscle, Smooth, Vascular"
+a(CHEBI:Trolox) -| bp(GO:"cell proliferation")
+a(CHEBI:Trolox) -| bp(GO:"cell migration")
+
+SET Evidence = "Accordingly, Fig. 2A shows that heme (10 mM) induces a strong
+ROS production after 1 h of incubation with VSMC."
+
+SET Concentration = "10 mM"
+SET TimePoint = "60 min"
+
+a(CHEBI:heme) -> a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "Corroborating
+recent studies that showed heme as an inductor of ROS generation
+via NADPHox in neutrophils, macrophages and in VSMC [7,8,19], the
+pretreatment of cells with DPI (10 mM), a NADPHox inhibitor [20],
+prevented heme-induced ROS production in A7r5 VSMC (Fig. 2A)."
+
+SET Cell = "neutrophil"|"macrophage" 
+SET MeSHAnatomy = "Muscle, Smooth, Vascular"
+a(CHEBI:heme) -> a(MESH:"Reactive Oxygen Species")
+SET Concentration = "10 mM"
+a(CHEBI:dibenziodolium) -| a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "Moreover, DPI strongly inhibited heme-induced VSMC migration
+(Fig. 2B) and blunted the proliferative capability of heme-treated
+VSMC that reached levels below the controls. (Fig. 2C), indicating
+that heme effects on VSMC migration and proliferation are modulated
+by NADPHox."
+
+SET MeSHAnatomy = "Muscle, Smooth, Vascular"
+a(CHEBI:dibenziodolium) -| bp(GO:"cell proliferation")
+a(CHEBI:dibenziodolium) -| bp(GO:"cell migration")
+
+SET Evidence = "Among the redox-sensitive molecules, ERK-2, a member of
+MAPK family, is of crucial importance to VSMC proliferation and
+migration [21]."
+
+SET MeSHAnatomy = "Muscle, Smooth, Vascular"
+p(RGD:Mapk1) pos bp(GO:"cell proliferation")
+p(RGD:Mapk1) pos bp(GO:"cell migration")
+
+SET Evidence = "In VSMC pretreated with the ERK-2 inhibitor
+PD98059 (10 mM), migration induced by heme was partially
+inhibited (Fig. 3A) and heme proliferative effect on VSMC was
+impaired (Fig. 3B)."
+
+SET MeSHAnatomy = "Muscle, Smooth, Vascular"
+SET Concentration = "10 mM"
+a(CHEBI:"2-(2-amino-3-methoxyphenyl)chromen-4-one") -| bp(GO:"cell proliferation")
+a(CHEBI:"2-(2-amino-3-methoxyphenyl)chromen-4-one") -| bp(GO:"cell migration")
+
+SET Evidence = "On the other hand, heme induced
+HO-1 expression in VSMC (Suppl. Fig. 2)."
+
+SET MeSHAnatomy = "Muscle, Smooth, Vascular"
+a(CHEBI:heme) -> p(RGD:Hmox1)
+
+SET Evidence = "Fig. 4 shows that the inhibition of
+HO activity by both, SnPP (Fig. 4A) or ZnPP (Fig. 4B), potentiates the
+effect of heme on VSMC proliferation."
+
+a(CHEBI:"zinc protoporphyrin") -| act(p(RGD:Hmox1))
+complex(a(CHEBI:protoporphyrin), a(CHEBI:"tin atom")) -| act(p(RGD:Hmox1))
+
+SET Evidence = "Additionally, it was observed
+that inhibition of HO-1 by ZnPP induced a further increase in hemeinduced
+ROS production (Fig. 4C), suggesting that activation of HO
+system attenuates the NADPHox-dependent activation of VSMC
+induced by heme."
+
+a(CHEBI:"zinc protoporphyrin") -| act(p(RGD:Hmox1))
+p(RGD:Hmox1) -| a(MESH:"Reactive Oxygen Species")
+
+UNSET TextLocation 
+##################

@@ -1,0 +1,359 @@
+#######################
+# Document Properties #
+#######################
+
+SET DOCUMENT Licenses    = "MIT License"
+SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
+
+SET DOCUMENT Name        = "heme_26675351.bel"
+SET DOCUMENT Version     = "1.0.0"
+SET DOCUMENT Authors     = "Farah Humayun"
+SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+
+##############
+# Namespaces #
+##############
+
+# Namespaces hosted on https://github.com/pharmacome/terminology
+# --------------------------------------------------------------
+DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
+DEFINE NAMESPACE DRUGBANK       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
+DEFINE NAMESPACE ECCODE         AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+# DEFINE NAMESPACE FB           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/80171ae62cf43aa1fc8a6c326b94537ab342458c/external/fb-names.belns"
+DEFINE NAMESPACE HBP            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns"
+DEFINE NAMESPACE HGNC           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
+DEFINE NAMESPACE HGNCGENEFAMILY AS URL "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns"
+DEFINE NAMESPACE GO             AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
+DEFINE NAMESPACE INTERPRO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns"
+DEFINE NAMESPACE MESH           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns"
+DEFINE NAMESPACE MGI            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns"
+DEFINE NAMESPACE MIRBASE        AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
+DEFINE NAMESPACE NCBIGENE       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
+DEFINE NAMESPACE PFAM           AS URL "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns"
+DEFINE NAMESPACE RGD            AS URL "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns"
+
+# Namespaces hosted on https://github.com/sorgerlab/famplex
+# ---------------------------------------------------------
+DEFINE NAMESPACE FPLX           AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
+
+# Namespaces hosted on https://arty.scai.fraunhofer.de/artifactory/bel/namespace
+# ------------------------------------------------------------------------------
+DEFINE NAMESPACE CTO            AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns"
+DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns"
+DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
+DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
+DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
+DEFINE NAMESPACE UNIPROT        AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM        AS PATTERN "^\d+$"
+
+DEFINE NAMESPACE HM        AS PATTERN ".*"
+
+
+###############
+# Annotations #
+###############
+
+# Annotations defined with regular expressions
+# --------------------------------------------
+
+DEFINE ANNOTATION Species       AS PATTERN ".*"
+DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
+DEFINE ANNOTATION Concentration     AS PATTERN ".*"
+
+# Annotations hosted on https://arty.scai.fraunhofer.de/artifactory/bel/annotation
+# --------------------------------------------------------------------------------
+DEFINE ANNOTATION Anatomy       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno"
+DEFINE ANNOTATION CellLine      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno"
+DEFINE ANNOTATION CellStructure AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno"
+DEFINE ANNOTATION Cell          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno"
+DEFINE ANNOTATION Confidence    AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno"
+DEFINE ANNOTATION Disease       AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno"
+DEFINE ANNOTATION Gender        AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION MeSHAnatomy   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno"
+DEFINE ANNOTATION MeSHDisease   AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno"
+DEFINE ANNOTATION Subgraph      AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno"
+DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+
+##############
+# Statements #
+##############
+
+SET Citation = {"PubMed", "Blood. 2016 Jan 28;127(4):473-86. doi: 10.1182/blood-2015-08-663245. Epub 2015 Dec 16.", "26675351"} 
+
+SET TextLocation = "Introduction"
+
+SET Evidence = "Sickle cell disease (SCD) and malaria are paradigmatic hemolytic disorders, in which
+alteration in the structure of red blood cells (RBCs) leads to the release of Hb and heme into the
+circulation."
+
+SET MeSHDisease = "Anemia, Sickle Cell"|"Malaria"
+bp(MESH:"Erythrocyte Deformability") pos p(HGNC:HBB)
+bp(MESH:"Erythrocyte Deformability") pos a(CHEBI:heme)
+
+SET Evidence = "Within cells, heme
+is catabolized by the activity of heme oxygenases (inducible HO-1 and constitutive HO-2) into iron,
+carbon monoxide, and biliverdin."
+
+deg(a(CHEBI:heme)) pos a(CHEBI:"iron(2+)")
+deg(a(CHEBI:heme)) pos a(CHEBI:"carbon monoxide")
+deg(a(CHEBI:heme)) pos a(CHEBI:biliverdin)
+
+SET Evidence = "For
+example, monocytes from SCD patients show an enhanced state of activation, with increased expression of
+interleukin (IL)-15 and production of TNFα and IL-1β."
+
+SET MeSHDisease = "Anemia, Sickle Cell"
+a(MESH:Monocytes) pos p(HGNC:IL15)
+a(MESH:Monocytes) pos p(HGNC:TNF)
+a(MESH:Monocytes) pos p(HGNC:IL1B)
+
+SET Evidence = "M1 cells have inflammatory functions and bactericidal activity and
+produce high levels of proinflammatory cytokines and reactive nitrogen and oxygen radicals; M2 cells
+have immunoregulatory functions, aid parasite clearance, show increased phagocytic activity, and are
+involved in cell growth control, matrix remodeling, angiogenesis, and tissue repair."
+
+SET TextLocation = "Results"
+
+SET Evidence = "Recently, we demonstrated that Hx controls hepatic heme uptake and thus limits heme accumulation in
+extrahepatic tissues, such as the vessel wall and the heart, preventing heme-induced toxicity and tissue
+injury."
+
+SET MeSHAnatomy = "Liver"
+p(HGNC:HPX) -| a(CHEBI:heme)
+
+SET Evidence = "Consistently,
+CD11b cells (granulocytes and monocytes) and iron-rich cells (macrophages) isolated from heme-treated
+Hx-null mice show a higher heme content and increased mRNA and protein expression of HO-1, Lferritin,
+and Fpn (Figure 1B-G) and elevated mRNA levels of the proinflammatory cytokine IL-6 (
+Figure 1H)."
+
+a(CHEBI:heme) -> r(HGNC:HMOX1)
+a(CHEBI:heme) -> p(HGNC:HMOX1)
+a(CHEBI:heme) -> p(HGNC:FTL)
+a(CHEBI:heme) -> p(PFAM:FPN1)
+a(CHEBI:heme) -> r(HGNC:IL6)
+
+SET Evidence = "In addition, we observed increased ROS production (
+Figure 2I; supplemental Figure 2), as well as an enhanced expression of IL-6 and TNFα in cells treated
+with heme-albumin compared with heme-Hx (Figure 2J-K)."
+
+a(CHEBI:heme) -> a(MESH:"Reactive Oxygen Species")
+a(CHEBI:heme) -> p(HGNC:IL6)
+a(CHEBI:heme) -> p(HGNC:TNF)
+
+SET Evidence = "Taken together, these data demonstrate that Hx limits macrophage heme overload and prevents the prooxidant
+and proinflammatory effects triggered by heme in cellular assays and in vivo."
+
+SET Cell = "macrophage"
+p(HGNC:HPX) -| a(CHEBI:heme) 
+p(HGNC:HPX) -| a(MESH:"Reactive Oxygen Species")
+p(HGNC:HPX) -| bp(GO:"inflammatory response")
+
+SET Evidence = "Likewise, heme and FeNTA treatment causes the
+induction of the M1 markers MHCII, CD86, CD14, TNFα, IL-6, and IL1β and a decrease in the M2
+markers CD206, IL-10, and Arginase-1 (the last with FeNTA only) in M0 BMDMs (Figure 3A;
+supplemental Figures 5, 6A, and 7)."
+
+a(CHEBI:heme) -> complex(SCOMP:"MHC Class II Complex")
+a(CHEBI:heme) -> p(HGNC:CD86)
+a(CHEBI:heme) -> p(HGNC:CD14)
+a(CHEBI:heme) -> p(HGNC:IL6)
+a(CHEBI:heme) -> p(HGNC:IL1B)
+
+a(CHEBI:heme) -| p(HGNC:MRC1)
+a(CHEBI:heme) -| p(HGNC:IL10)
+a(CHEBI:heme) -| p(HGNC:ARG1)
+
+SET Evidence = "Importantly,
+protoporphyrin did not induce TNFα, suggesting a critical proinflammatory role for iron within the heme
+moiety (supplemental Figure 8)."
+
+a(CHEBI:protoporphyrin) causesNoChange p(HGNC:TNF)
+a(CHEBI:"iron(2+)") pos bp(GO:"inflammatory response")
+
+SET Evidence = "Importantly, 15 hours after heme injection, hepatic macrophages showed
+iron deposition (data not shown) and an increased expression of the M1 markers MHCII and CD86 and
+reduced levels of the M2 markers CD206 and Arginase-1 compared with nontreated mice."
+
+SET MeSHAnatomy = "Liver"
+SET TimePoint = "15 hours"
+a(CHEBI:heme) -> complex(SCOMP:"MHC Class II Complex")
+a(CHEBI:heme) -> p(HGNC:CD86)
+a(CHEBI:heme) -| p(HGNC:MRC1)
+a(CHEBI:heme) -| p(HGNC:ARG1)
+
+SET Evidence = "Likewise,
+splenic macrophages from heme-treated mice show increased expression of CD86 and reduced levels of
+CD206 and Arginase-1 (Figure 3D)."
+
+SET MeSHAnatomy = "Spleen"
+a(CHEBI:heme) -> p(HGNC:CD86)
+a(CHEBI:heme) -| p(HGNC:MRC1)
+a(CHEBI:heme) -| p(HGNC:ARG1)
+
+SET Evidence = "Cotreatment of M0 BMDMs with heme
+and TAK-242 attenuated the increase of the M1 markers MHCII, CD14, TNFα, IL-6, IL-1β, and CD86 and
+the decrease of the M2 marker CD206, IL-10, and Ym1 in comparison with heme treatment alone (
+Figure 4A; supplemental Figures 5 and 12)."
+
+complex(a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"), a(CHEBI:heme)) -| complex(SCOMP:"MHC Class II Complex")
+complex(a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"), a(CHEBI:heme)) -| p(HGNC:CD14)
+complex(a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"), a(CHEBI:heme)) -| p(HGNC:TNF)
+complex(a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"), a(CHEBI:heme)) -| p(HGNC:IL6)
+complex(a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"), a(CHEBI:heme)) -| p(HGNC:IL1B)
+complex(a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"), a(CHEBI:heme)) -| p(HGNC:CD86)
+
+complex(a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"), a(CHEBI:heme)) -> p(HGNC:MRC1)
+complex(a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"), a(CHEBI:heme)) -> p(HGNC:IL10)
+
+SET Evidence = "Similarly, NAC prevented increased expression of MHCII,
+CD14, TNFα, IL-6, IL-1β, and CD86 and mildly compensated for the decrease of CD206 and IL-10
+following heme treatment (Figure 4D; supplemental Figure 5)."
+
+a(CHEBI:"N-acetyl-L-cysteine") -| complex(SCOMP:"MHC Class II Complex")
+a(CHEBI:"N-acetyl-L-cysteine") -| p(HGNC:CD14)
+a(CHEBI:"N-acetyl-L-cysteine") -| p(HGNC:TNF)
+a(CHEBI:"N-acetyl-L-cysteine") -| p(HGNC:IL6)
+a(CHEBI:"N-acetyl-L-cysteine") -| p(HGNC:CD86)
+a(CHEBI:"N-acetyl-L-cysteine") -> p(HGNC:MRC1)
+a(CHEBI:"N-acetyl-L-cysteine") -> p(HGNC:IL10)
+
+SET Evidence = "Likewise, NAC was able
+to prevent iron-induced M1 polarization in M0, M1, and M2 BMDMs (supplemental Figure 13), indicating
+that the alteration of macrophage plasticity in response to iron is mostly explained by its pro-oxidant
+properties."
+
+SET Cell = "macrophage"
+a(CHEBI:"iron(2+)") pos a(HM:"macrophage M1 polarization")
+a(CHEBI:"N-acetyl-L-cysteine") neg a(HM:"macrophage M1 polarization")
+
+SET Evidence = "In hepatic and splenic macrophages, cotreatment with NAC
+or TAK-242 reduced the heme-induced upregulation of the M1 markers MHCII and CD86 and attenuated
+inducible nitric oxide synthase (iNOS) expression."
+
+SET Cell = "macrophage"
+SET MeSHAnatomy = "Spleen"|"Liver"
+a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate") -| complex(SCOMP:"MHC Class II Complex")
+a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate") -| p(HGNC:CD86)
+a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate") -| p(PFAM:"NO_synthase")
+
+SET Evidence = "In hepatic macrophages, TAK-242 also diminished
+heme-driven induction of IL-6 and TNFα and NAC partially recovered CD206 downregulation (
+Figure 5B-C)."
+
+SET MeSHAnatomy = "Liver"
+a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate") -| p(HGNC:IL6)
+a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate") -| p(HGNC:TNF)
+a(CHEBI:"N-acetyl-L-cysteine") pos p(HGNC:MRC1)
+
+SET Evidence = "Treatment with
+Hx or DFO diminished the increase of some M1 polarization markers in BMDMs following treatment with
+hemolytic RBCs (supplemental Figure 14)."
+
+p(HGNC:HPX) neg a(HM:"macrophage M1 polarization")
+a(CHEBI:"desferrioxamine B") neg a(HM:"macrophage M1 polarization")
+
+SET Evidence = "In addition, Hx and DFO prevented the heme- and ironmediated
+induction of the M1 markers MHCII, CD86, CD14, and TNFα and the decrease of some M2
+markers, such as CD206, IL-10, and Arginase-1 (the last for FeNTA only) in M0 BMDMs (Figure 6A;
+supplemental Figure 15A)."
+
+p(HGNC:HPX) -| complex(SCOMP:"MHC Class II Complex")
+p(HGNC:HPX) -| p(HGNC:CD86)
+p(HGNC:HPX) -| p(HGNC:CD14)
+p(HGNC:HPX) -| p(HGNC:TNF)
+p(HGNC:HPX) pos p(HGNC:MRC1)
+p(HGNC:HPX) pos p(HGNC:ARG1)
+p(HGNC:HPX) pos p(HGNC:IL10)
+
+SET Evidence = "Here we show that Hx treatment
+decreases expression of the M1 cytokine TNFα, the monocyte chemoattractant protein (MCP)1, and the
+profibrotic and mitogenic cytokines transforming growth factor (TGF)β and platelet-derived growth factor
+(PDGF) in the liver of sickle mice."
+
+SET MeSHDisease = "Anemia, Sickle Cell"
+SET MeSHAnatomy = "Liver"
+p(MGI:Hpx) -| p(MGI:Tnf)
+p(MGI:Hpx) -| p(MGI:Ccl2)
+p(MGI:Hpx) -| p(MGI:Tgfb1)
+p(MGI:Hpx) -| p(PFAM:PDGF)
+
+SET Evidence = "Moreover, Hx administration increases hepatic expression of the matrix
+metalloproteinases MMP-9, MMP-12, and MMP-13 (mostly expressed by M2 macrophages)."
+
+SET MeSHAnatomy = "Liver"
+p(MGI:Hpx) -> p(MGI:Mmp9)
+p(MGI:Hpx) -> p(MGI:Mmp12)
+p(MGI:Hpx) -> p(MGI:Mmp13)
+
+SET Evidence = "It further
+increases the expression of a marker for resting HSCs, synaptophysin, and reduces the expression of a
+marker for activated myofibroblast-like HSCs, smooth muscle actin (SMA) (Figure 7B)."
+
+p(MGI:Hpx) -| p(MGI:Acta2)
+p(MGI:Hpx) -> p(MGI:Syp)
+
+SET Evidence = "We therefore next analyzed heme-Hx-treated wild-type mice that showed decreased hepatic expression of
+collagens, TGFβ, PDGF, SMA, and the tissue inhibitor of MMPs, TIMP2, as well as increased expression
+of the M2 polarizing colony stimulating factor-1 and MMPs compared with heme-HSA–treated mice (
+Figure 7C)."
+
+complex(a(CHEBI:heme), p(MGI:Hpx)) -| p(MGI:Tgfb1)
+complex(a(CHEBI:heme), p(MGI:Hpx)) -| p(PFAM:PDGF)
+complex(a(CHEBI:heme), p(MGI:Hpx)) -| p(MGI:Acta2)
+complex(a(CHEBI:heme), p(MGI:Hpx)) -| p(MGI:Timp2)
+complex(a(CHEBI:heme), p(MGI:Hpx)) -> p(MGI:Csf1)
+complex(a(CHEBI:heme), p(MGI:Hpx)) -> p(INTERPRO:"Peptidase M10A")
+
+SET Evidence = "Taken together, these data suggest that Hx administration decreases heme-driven proinflammatory
+activation of macrophages."
+
+SET Cell = "macrophage"
+p(MGI:Hpx) neg bp(GO:"inflammatory response")
+
+SET Evidence = "In conclusion, an Hx-based therapy shows beneficial effects, in that it counteracts heme-induced
+proinflammatory activation of macrophages and attenuates some of its pathophysiologic consequences,
+such as chronic inflammation, hepatic fibrosis, and apoptosis (Figure 7E)."
+
+p(MGI:Hpx) neg bp(GO:"inflammatory response")
+p(MGI:Hpx) neg path(MESH:Inflammation)
+SET MeSHAnatomy = "Liver"
+p(MGI:Hpx) neg path(MESH:Fibrosis)
+p(MGI:Hpx) neg bp(MESH:Apoptosis)
+
+SET TextLocation = "Discussion"
+
+SET Evidence = "This is the case in a mouse model of SCD,
+which is hallmarked by hemolysis, increased circulating Hb/heme, and low levels of Hp and Hx and shows
+elevated hepatic macrophage iron levels and M1 polarization."
+
+SET Cell = "macrophage"
+a(CHEBI:heme) -> a(HM:"macrophage M1 polarization")
+p(HGNC:HBB) -> a(HM:"macrophage M1 polarization")
+
+SET Evidence = "Importantly, by scavenging free heme, Hx prevents heme-induced M1 macrophage polarization
+and thus avoids both TLR4 activation and ROS formation."
+
+a(CHEBI:heme) -> a(HM:"macrophage M1 polarization")
+p(MGI:Hpx) neg a(HM:"macrophage M1 polarization")
+p(MGI:Hpx) neg act(p(MGI:Tlr4))
+p(MGI:Hpx) neg a(MESH:"Reactive Oxygen Species")
+
+SET Evidence = "Our data support the idea that heme-induced phenotypic switching of macrophages toward a
+proinflammatory phenotype can contribute to the exacerbation of inflammation and chronic tissue injury in
+hemolytic disorders and that Hx therapy could alleviate these pathophysiologic consequences by
+preventing macrophage inflammatory activation."
+
+a(CHEBI:heme) -> a(HM:"macrophage M1 polarization")
+a(HM:"macrophage M1 polarization") pos bp(GO:"inflammatory response")
+bp(GO:"inflammatory response") pos path(MESH:Inflammation)
+p(MGI:Hpx) neg a(HM:"macrophage M1 polarization")
+p(MGI:Hpx) neg bp(GO:"inflammatory response")
+
+UNSET TextLocation
+############
