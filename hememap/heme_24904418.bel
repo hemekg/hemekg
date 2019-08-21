@@ -413,6 +413,27 @@ TNF by heme."
 
 a(CHEBI:heme) -> p(RGD:Tnf)
 
+SET Evidence = "The MyD88-dependent pathway leads to the activation 
+of mitogen-activated protein kinases (MAPKs) and NF-κB 
+(nuclear factor kappa-light-chain-enhancer of activated B cells) 
+transcription factors inducing the expression of inflammatory 
+cytokines such as TNF, IL-6, IL-1β, and KC (Takeuchi and Akira, 2010)".
+
+p(HGNC:MYD88) -> act(p(HGNC:NFKB1))
+act(p(HGNC:NFKB1)) -> p(HGNC:TNF)
+act(p(HGNC:NFKB1)) -> p(HGNC:IL6)
+act(p(HGNC:NFKB1)) -> p(HGNC:IL1B)
+act(p(HGNC:NFKB1)) -> a(MESH:"keratinocyte-derived chemokines")
+
+SET Evidence = "The TRIF-dependent pathway activates the IRF3 
+(IFN regulatory transcription factor-3), which induce the 
+expression of type I IFN, and late-phase NF-κB 
+(Takeuchi and Akira, 2010)."
+
+p(HGNC:TICAM1) -> act(p(HGNC:IRF3))
+act(p(HGNC:IRF3)) -> p(HGNC:IFNA1)
+act(p(HGNC:IRF3)) -> p(HGNC:NFKB1)
+
 SET Evidence = "The TLR4 activates
 two distinct pathways: MyD88 and TRIF. In macrophages, heme
 induces a biased MyD88 activation and the secretion of the
@@ -420,17 +441,23 @@ pro-inflammatory cytokines TNF and KC."
 
 p(HGNC:TLR4) -> p(HGNC:MYD88)
 p(HGNC:TLR4) -> p(HGNC:TICAM1)
-a(CHEBI:heme) -> p(HGNC:MYD88)
-a(CHEBI:heme) -> p(HGNC:TNF)
-a(CHEBI:heme) -> a(MESH:"keratinocyte-derived chemokines")
+a(CHEBI:heme) -> p(HGNC:TLR4)
 
 SET Evidence = "TLR4 activation leads to
 MAPKs and NFκB activation, which are necessary to TNF secretion."
 
-p(HGNC:TLR4) -> a(MESH:"Mitogen-Activated Protein Kinases")
+p(HGNC:TLR4) -> complex(p(HGNC:MAPK1), p(HGNC:MAPK8), p(HGNC:MAPK14))
 p(HGNC:TLR4) -> p(HGNC:NFKB1)
 p(HGNC:NFKB1) -> p(HGNC:TNF)
-a(MESH:"Mitogen-Activated Protein Kinases") -> p(HGNC:TNF)
+complex(p(HGNC:MAPK1), p(HGNC:MAPK8), p(HGNC:MAPK14)) -> p(HGNC:TNF)
+
+SET Evidence = "Moreover, human embryonic kidney (HEK) cells transfected 
+with human TLR4 secretes IL-8 upon stimulation with heme (Piazza et al., 2011)."
+
+a(CHEBI:heme) -> p(HGNC:TLR4)
+p(HGNC:TLR4) -> p(HGNC:MYD88)
+p(HGNC:MYD88) -> act(p(HGNC:NFKB1))
+p(HGNC:NFKB1) -> p(HGNC:CXCL8)
 
 SET Evidence = "Heme induces ROS generation independently of TLR4."
 
@@ -440,7 +467,7 @@ SET Evidence = "However, ROS
 is necessary to induce TNF secretion and MAPK activation."
 
 a(MESH:"Reactive Oxygen Species") -> p(HGNC:TNF)
-a(MESH:"Reactive Oxygen Species") -> a(MESH:"Mitogen-Activated Protein Kinases")
+a(MESH:"Reactive Oxygen Species") -> complex(p(HGNC:MAPK1), p(HGNC:MAPK8), p(HGNC:MAPK14))
 
 SET Evidence = " mROS scavenger
 (Mito-TEMPO) and NADPH oxidases inhibitors (apocynin and DPI) block

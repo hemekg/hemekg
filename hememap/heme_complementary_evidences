@@ -5,7 +5,7 @@
 SET DOCUMENT Licenses    = "MIT License"
 SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
 
-SET DOCUMENT Name        = "heme_29610666.bel"
+SET DOCUMENT Name        = "heme_complementary_evidences.bel"
 SET DOCUMENT Version     = "1.0.0"
 SET DOCUMENT Authors     = "Farah Humayun"
 SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
@@ -59,6 +59,7 @@ DEFINE NAMESPACE HM        AS PATTERN ".*"
 
 # Annotations defined with regular expressions
 # --------------------------------------------
+
 DEFINE ANNOTATION Species       AS PATTERN ".*"
 DEFINE ANNOTATION TimePoint     AS PATTERN ".*"
 DEFINE ANNOTATION Concentration     AS PATTERN ".*"
@@ -81,153 +82,188 @@ DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifact
 # Statements #
 ##############
 
-SET Citation = {"PubMed", "Pharmacol Res Perspect. 2018 Mar 30;6(2):e00392. doi: 10.1002/prp2.392. eCollection 2018 Apr.", "29610666"}
+SET Citation = {"PubMed", "PLoS One. 2015 Nov 10;10(11):e0142328. doi: 10.1371/journal.pone.0142328. eCollection 2015.", "26555697"}
 
-SET TextLocation = "Results"
+SET Evidence = "We have previously shown that free heme is a potent apoptotic factor as well as inducer of
+the pro-inflammatory chemokine CXCL10 in microvasculature".
 
-SET Evidence = "Exposure of washed human peripheral blood leukocytes to protein free
-crystalline heme that has been dissolved in NaOH (100 mmolL1)
-with subsequent adjustment to pH 7.8 resulted in a drastic reduction
-in cell surface CD62L expression on CD14 low CD15 high neutrophil
-granulocytes after 30 minutes of exposure (Figure 1A)."
+a(CHEBI:heme) pos p(HGNC:CXCL10)
 
-SET Cell = "neutrophil"
-a(CHEBI:heme) -| p(HGNC:SELL)
+SET Evidence = "In both human and murine malaria infection, increases in
+heme, CXCL10 and TLR4 and TLR9 have been shown to regulate the host immune response to
+Plasmodium infection [47–49]."
 
-SET Evidence = "By modeling the
-equilibrium concentration in the experiments performed with
-heme-albumin we could show that the free heme is the active
-neutrophil-stimulating component, which is inactivated by protein
-association (Figure S2)."
+a(CHEBI:heme) -> act(p(HGNC:TLR4))
+p(HGNC:TLR4) -> p(HGNC:CXCL10)
 
-a(CHEBI:heme) pos bp(GO:"neutrophil activation")
+SET Evidence = "In the present study, we have shown that heme-induced expression
+of CXCL10 and apoptosis was mediated by TLR4 in HBVEC and CD34+-HSPC."
 
-SET Evidence = "These observations
-suggest that in any physiological scenario in which heme might
-be present in extracellular spaces as a component of a natural
-hemoprotein, the concentration of free or quasi-free heme can be
-expected to be very low, possibly below the minimum range
-required to trigger granulocyte activation and other innate immunity
-responses."
+a(CHEBI:heme) -> act(p(HGNC:TLR4))
+p(HGNC:TLR4) -> p(HGNC:CXCL10)
 
-a(CHEBI:heme) pos bp(GO:"granulocyte activation")
+SET Evidence = "Therefore, we propose a pathophysiological
+mechanism whereby heme mediates the TLR4 signaling pathway, resulting in overproduction
+of cytotoxic CXCL10."
 
-SET Evidence = "In serum-free
-conditions, NaOH-dissolved heme (final pH 7.8) reduced cellular ATP in
-both cell types in a dose-dependent manner after 8 hours of exposure
-(Figure 2A)"
+a(CHEBI:heme) -> act(p(HGNC:TLR4))
+p(HGNC:TLR4) -> p(HGNC:CXCL10)
 
-SET MeSHAnatomy = "Human Umbilical Vein Endothelial Cells" 
-SET TimePoint = "8 hours"
-a(CHEBI:heme) -| a(CHEBI:"adenosine triphosphate")
+SET Evidence = "HBVEC showed significant reductions in expression of CXCL10 in the presence of the
+TLR4-blocking agent anti-CD14 in vitro conditions, though decreases in CXCL10 expression
+in CD34+-HSPC did not reach statistical significance."
 
-SET Evidence = "In contrast, less ATP depletion was observed during exposure
-to heme-albumin, and no effect could be detected when either cell
-type was exposed to metHb or oxyHb at concentrations of up to
-500 lmolL1, even in the absence of serum."
+p(HGNC:TLR4) -> p(HGNC:CXCL10)
 
-SET MeSHAnatomy = "Human Umbilical Vein Endothelial Cells"
-complex(a(CHEBI:heme), p(HGNC:ALB)) pos a(CHEBI:"adenosine triphosphate") 
-a(CHEBI:oxyhemoglobin) causesNoChange a(CHEBI:"adenosine triphosphate")
-a(CHEBI:methemoglobin) causesNoChange a(CHEBI:"adenosine triphosphate")
+UNSET Citation
+###########
 
-SET Evidence = "This experiment demonstrated that under serum-free
-conditions, 4 hours of exposure to NaOH-dissolved heme induced complete
-deterioration of mitochondrial respiration at concentrations as low
-as 10 lmolL1, while exposure to albumin-associated heme in the presence
-of 2% FCS stimulated respiratory capacity to levels above baseline."
+SET Citation = {"PubMed", "Innate Immun. 2011 Feb;17(3):293-301. doi: 10.1177/1753425910369020. Epub 2010 May 14.", "20472612"}
 
-SET MeSHAnatomy = "Mitochondria"
-a(CHEBI:heme) -| bp(GO:"cellular respiration")
-complex(a(CHEBI:heme), p(HGNC:ALB)) pos bp(GO:"cellular respiration")
+SET Evidence = "High concentrations
+of hemin (50 mM) triggered TLR4-mediated IL-8 
+production in the human HEK293/TLR4 cell line 
+in the absenceof the co-receptors CD14 and MD-2; 
+the latter an essential co-receptor for TLR4 
+activation by endotoxin."
 
-SET Evidence = "In
-endothelial cells, we found that, in the absence of serum, heme-albumin
-triggered a dose-dependent HMOX1 protein expression signal in an
-exposure range of 0–175 lmolL1."
+a(CHEBI:heme) -> act(p(HGNC:TLR4))
+p(HGNC:TLR4) -> p(HGNC:CXCL8)
 
-SET Cell = "endothelial cell"
-complex(a(CHEBI:heme), p(HGNC:ALB)) pos p(HGNC:HMOX1)
+SET Evidence = "We
+show that hemin can induce TLR4-dependent cell
+activation in a human cell line in both a
+MD-2/CD14-dependent and –independent manner."
 
-SET Evidence = "heme-albumin is also a robust inducer
-of dose-dependent HMOX1 expression in BMDMs (Figure 2D)."
+p(HGNC:CD14) pos complex(p(HGNC:TLR4), a(CHEBI:heme))
 
-complex(a(CHEBI:heme), p(HGNC:ALB)) pos p(HGNC:HMOX1)
-
-SET Evidence = "heme-albumin, in contrast, induced HMOX1 in a dose-dependent
-manner."
-
-complex(a(CHEBI:heme), p(HGNC:ALB)) pos p(HGNC:HMOX1)
-
-SET Evidence = "However, a weak TNF-alpha signal appeared in
-macrophages that were treated with the highest concentration of
-NaOH-dissolved heme (500 lmolL1)."
+SET Evidence = "The studies reported here confirm and extend the recent
+observations by Figueiredo et al.20 that showed TLR4-
+and CD14-dependent cell activation by hemin using
+mouse macrophages."
 
 SET Cell = "macrophage"
-a(CHEBI:heme) pos p(MGI:Tnf)
+p(MGI:Cd14) pos complex(p(MGI:Tlr4), a(CHEBI:heme))
 
-SET Evidence = "These experiments confirm a number of earlier reports and support
-the idea that certain solutions derived from purified/crystalline heme
-have the potential to induce weak TLR4-mediated inflammatory
-responses in macrophages in the complete absence of plasma derived
-proteins."
+SET Evidence = "We have demonstrated
+TLR4-dependent activation of a human HEK293/TLR4
+cell line by hemin that was MD-2/CD14-dependent at
+hemin concentrations 10 mM, but was MD-2/
+CD14-independent at higher hemin concentrations
+(50 mM; Fig. 2A)."
 
-SET Cell = "macrophage"
-a(CHEBI:heme) -> bp(GO:"inflammatory response")
+#higher concentrations of heme
+p(HGNC:CD14) pos complex(p(HGNC:TLR4), a(CHEBI:heme))
 
-SET TextLocation = "Discussion"
-
-SET Evidence = "The first process links the nitric oxide (NO)
-reactivity of oxyHb to a cascade of cell-free Hb extravasation,
-hemolysis-associated NO-depletion, and vasoconstriction.21–23"
-
-p(HGNC:HBB) -| a(CHEBI:"nitric oxide")
-p(HGNC:HBB) pos bp(MESH:Vasoconstriction)
-
-SET Evidence = "The
-second biochemical process relates to the ability of Hb to facilitate
-oxidative reactions outside of the reducing environment of the RBC,
-leading to the accumulation of ferric metHb(Fe3+) in tissue.24"
-
-p(HGNC:HBB) pos a(HM:"oxidative reactions")
-p(HGNC:HBB) -> a(CHEBI:methemoglobin)
-
-SET Evidence = "In subsequent
-reactions, metHb or metHb-derived heme participates in
-redox chain reactions that lead to the accumulation of modified
-lipids and proteins, as well as to heme degradation and to the
-release of free iron.19,25"
-
-a(CHEBI:methemoglobin) -> deg(a(CHEBI:heme))
-deg(a(CHEBI:heme)) -> a(CHEBI:"iron(2+)")
-
-SET Evidence = "Purified heme was found to be
-an activator of TLR4 8,11,27 in some studies and of the inflammasome
-9 in others, and these activities were considered to be the molecular
-mechanism behind the coexistence of inflammation and hemolysis."
+SET Evidence = "The ability of heme to act
+as a ‘danger’ signal may be linked to its ability to initiate
+TLR4-dependent as well as TLR4-independent responses."
 
 a(CHEBI:heme) -> act(p(HGNC:TLR4))
 
-SET Evidence = "However, similar to
-Hb, heme-albumin did not induce an inflammatory response in
-macrophages or endothelial cells in the presence of low concentrations
-of serum."
-
-SET Cell = "macrophage"|"endothelial cell"
-complex(a(CHEBI:heme), p(HGNC:ALB)) neg bp(GO:"inflammatory response")
-
-SET Evidence = "Only under protein-free conditions did we observe a limited
-heme-induced TNF-alpha response in cultured macrophages, which
-was triggered via signaling of the classical TLR4–MyD88–TRIF pathway
-of NF-kB activation.28"
-
-SET Cell = "macrophage"
-a(CHEBI:heme) -> p(HGNC:TLR4)
-a(CHEBI:TLR4) -> p(HGNC:MYD88)
-a(CHEBI:TLR4) -> p(HGNC:TICAM1)
-p(HGNC:MYD88) -> act(p(HGNC:NFKB1)
-p(HGNC:TICAM1) -> act(p(HGNC:NFKB1)
-act(p(HGNC:NFKB1) -> p(HGNC:TNF)
-
-UNSET TextLocation 
+UNSET Citation
 ###########
+
+
+SET Citation = {"PubMed", "J Biol Chem. 2007 Jul 13;282(28):20221-9. Epub 2007 May 14.", "17502383"}
+
+SET Evidence = "Degradation of IkBa
+by heme and LPS indicated the
+activation of the NFkB signaling
+pathway (Fig. 5A)."
+
+a(CHEBI:heme) -> deg(p(HGNC:NFKBIA))
+deg(p(HGNC:NFKBIA)) -> act(p(HGNC:NFKB1))
+
+SET Evidence = "The MyD88 pathway leads to
+the activation of NFkB and MAPKs and the induction of cytokines
+such as TNF-alpha, KC, IL-6, and IL-12."
+
+p(HGNC:MYD88) -> act(p(HGNC:NFKB1))
+act(p(HGNC:NFKB1)) -> p(HGNC:TNF)
+act(p(HGNC:NFKB1)) -> p(HGNC:IL6)
+act(p(HGNC:NFKB1)) -> complex(p(HGNC:IL12A), p(HGNC:IL12B))
+act(p(HGNC:NFKB1)) -> a(MESH:"keratinocyte-derived chemokines")
+
+SET Evidence = "Similarly, heme induced the expression of TNF-a
+mRNA but not of IL-6 or IFN-b by macrophages (data not
+shown)."
+
+a(CHEBI:heme) -> p(HGNC:TNF)
+
+SET Evidence = "Degradation of IkBa
+by heme and LPS indicated the
+activation of the NFkB signaling
+pathway (Fig. 5A). Activation of
+macrophages and DC by LPS causes
+TLR4-dependent phosphorylation
+of selected tyrosine kinases such as
+p38 and ERK1/2 (2, 4). The stimulation of macrophages by
+heme caused the phosphorylation of ERK1/2 but only modestly
+affected p38 (Fig. 5, B and C)."
+
+a(CHEBI:heme) -> deg(p(HGNC:NFKBIA))
+deg(p(HGNC:NFKBIA)) -> act(p(HGNC:NFKB1))
+SET Cell = "macrophage"
+a(CHEBI:heme) -> p(HGNC:MAPK3, pmod(Ph)) 
+a(CHEBI:heme) -> p(HGNC:MAPK1, pmod(Ph))
+a(CHEBI:heme) -> p(HGNC:MAPK14, pmod(Ph))
+
+SET Evidence = "Heme caused
+degradation and ERK phosphorylation
+similar to LPS, whereas p38 phosphorylation 
+was modestly induced by heme."
+
+a(CHEBI:heme) -> deg(p(HGNC:NFKBIA))
+a(CHEBI:heme) -> p(HGNC:MAPK3, pmod(Ph)) 
+a(CHEBI:heme) -> p(HGNC:MAPK1, pmod(Ph))
+
+UNSET Citation
+###########
+
+SET Citation = {"PubMed", "J Pineal Res. 2012 Aug;53(1):67-76. doi: 10.1111/j.1600-079X.2012.00972.x. Epub 2012 Jan 31.", "22288937"}
+
+SET Evidence = "TLR4 signaling is mediated by MyD88-dependent and
+MyD88-independent pathways and ultimately induces the
+expression of inflammatory gene products such as cytokines
+and chemokines [34]. While MyD88 is a common downstream
+adaptor molecule that induces activation of mitogen-
+activated protein kinases and NF-kB transcription
+factor, the MyD88-independent pathway, that is, TRIFdependent
+pathway, is responsible for the activation of
+interferon regulatory factor 3 (IRF3) and subsequent
+induction of IFN-b and IFN-inducible gene products
+(e.g., CXCL-10)."
+
+p(HGNC:TLR4) -> act(p(HGNC:MYD88))
+p(HGNC:TLR4) -> act(p(HGNC:TICAM1))
+p(HGNC:MYD88) -> act(p(HGNC:NFKB1))
+p(HGNC:TICAM1) -> act(p(HGNC:IRF3))
+p(HGNC:IRF3) -> p(HGNC:IFNB1)
+p(HGNC:IRF3) -> p(HGNC:CXCL10)
+
+SET Evidence = "IFN-b elicits the secondary response to TLR4 activation
+and contributes to further upregulation of CXCL-10, an
+instrumental chemokine in the neutrophil-mediated phase
+of hepatic inflammation and I/R injury [37]."
+
+p(HGNC:IFNB1) pos p(HGNC:CXCL10)
+
+UNSET Citation
+###########
+
+SET Citation = {"PubMed", "Am J Physiol Renal Physiol. 2018 May 1;314(5):F906-F914. doi: 10.1152/ajprenal.00432.2017. Epub 2017 Oct 4.", "28978536"}
+
+#SET Species = "Mice"
+
+SET Evidence = "We employed MCP-1 expression as a 
+readout for renal inflammation (19, 45).
+As shown in Figures 2 and 3 respectively, heme markedly increased expression of MCP-1
+mRNA and MCP-1 protein content in the supernatant of heme-exposed cells, and both these
+effects were significantly reduced by TAK-242."
+
+a(CHEBI:heme) pos p(MGI:Ccl2)
+
+UNSET Citation
+###########
+
