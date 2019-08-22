@@ -315,7 +315,7 @@ SET Evidence = "Injured endothelium may provide tissue factors and
 additional prothrombotic factors [21] that are not a prothrombotic
 mechanism in PNH."
 
-a(HM:"endothelial lesions") pos p(HGNC:F3)
+path(HM:"endothelial lesions") pos p(HGNC:F3)
 
 SET Evidence = "Endothelial injury may also be related to Free
 hemoglobin and its breakdown oxidative product heme, and MPs,
@@ -326,9 +326,9 @@ and perhaps even more in the brain due to loss of CD59 in the endothelium
 of these patients."
 
 SET MeSHDisease = "Hemoglobinuria, Paroxysmal"
-p(HGNC:HBB) pos a(HM:"endothelial lesions")
-a(CHEBI:heme) pos a(HM:"endothelial lesions")
-a(MESH:"Cell-Derived Microparticles") pos a(HM:"endothelial lesions")
+p(HGNC:HBB) pos path(HM:"endothelial lesions")
+a(CHEBI:heme) pos path(HM:"endothelial lesions")
+a(MESH:"Cell-Derived Microparticles") pos path(HM:"endothelial lesions")
 
 SET Evidence = "Circulating MPs in PNH express the endothelial markers
 ICAM-1 (CD54), sVCAM-1, VWF, CD144, and CD105, indicating endothelial

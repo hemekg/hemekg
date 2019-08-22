@@ -459,7 +459,7 @@ XIII stabilizes clots by catalysing fibrin monomer cross-linking;
 thus, NO deficiency enhances clot stability and reduces
 clot dissolution."
 
-complex(p(HGNC:F13A1), p(HGNC:F13B)) -> a(HM:"fibrin monomer cross-linking")
+complex(p(HGNC:F13A1), p(HGNC:F13B)) -> bp(HM:"fibrin monomer cross-linking")
 complex(p(HGNC:F13A1), p(HGNC:F13B)) -| path(MESH:"Clot Retraction")
 a(CHEBI:"nitric oxide") -> path(MESH:"Clot Retraction")
 
@@ -654,10 +654,9 @@ protein kinase C or antioxidants inhibit haem-mediated
 stasis, Weibel-Palade body degranulation and oxidant
 production by the endothelium (Belcher et al, 2014)."
 
+a(MESH:"Protein Kinase C") -> act(a(MESH:"NADPH Oxidase"))
 a(MESH:"NADPH Oxidase") -> bp(MESH:Hemostasis)
-a(MESH:"Protein Kinase C") -> bp(MESH:Hemostasis)
 a(MESH:"NADPH Oxidase") -> a(HM:"Weibel Palade body degranulation") 
-a(MESH:"Protein Kinase C") -> a(HM:"Weibel Palade body degranulation") 
 
 SET Evidence = "Furthermore,
 incubating endothelial cells with haem induces tissue

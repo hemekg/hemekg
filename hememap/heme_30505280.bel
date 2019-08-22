@@ -192,10 +192,9 @@ compared to the reference group was not statistically significan
 (p = 0.15; Figure 1A)."
 
 SET MeSHAnatomy = "Knee"
-path(HM:bleeding) -> path(HM:"Oxidative damage")
+path(MESH:Hemorrhage) -> path(HM:"Oxidative damage")
 SET MeSHAnatomy = "Synovial Fluid"
-path(HM:bleeding) pos a(HM:"Protein carbonyls")
-path(HM:bleeding) pos p(HGNC:AMBP)
+path(MESH:Hemorrhage) pos p(HGNC:AMBP)
 
 SET TextLocation = "Discussion"
 

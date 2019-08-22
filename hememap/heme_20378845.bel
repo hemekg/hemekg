@@ -87,7 +87,7 @@ SET Citation = {"PubMed", "Arterioscler Thromb Vasc Biol. 2010 Jul;30(7):1347-53
 SET Evidence = "Oxysterols and oxidation products of polyunsaturated fatty acids (PUFAs) are present in human
 atheromatous lesions.4,5"
 
-a(HM:"Atheromatous lesions") pos a(CHEBI:oxysterol) 
+bp(HM:"Atheromatous lesions") pos a(CHEBI:oxysterol) 
 
 SET Evidence = "In previous studies we found that endothelial cells exposed to oxidized LDL upregulated both
 heme oxygenase-1 (HO-1) and ferritin,8,9 presumably as a defense mechanism.6,11-14"
@@ -119,7 +119,7 @@ SET Evidence = "Hematomas occur in atheromatous lesions and plaque material cont
 products including lipid hydroperoxide22 which can mediate not only the oxidation of
 hemoglobin but might also lyse intact red cells.23"
 
-a(HM:"Atheromatous lesions") pos path(MESH:Hematoma)
+bp(HM:"Atheromatous lesions") pos path(MESH:Hematoma)
 
 SET MeSHDisease = "Plaque, Atherosclerotic"
 a(CHEBI:"lipid hydroperoxide") -> p(HGNC:HBB, pmod(O))
@@ -130,7 +130,7 @@ panels) and ruptured complicated lesions (Fig 1A, 1c and 2c panels) as well as o
 caused significant lysis of red cells within 24 hours (Fig 1B, black bars)."
 
 a(HM:"Atheroma lipid") -> a(HM:"Erythrocytes, lysed")
-a(HM:"Atheromatous lesions") -> a(HM:"Erythrocytes, lysed")
+bp(HM:"Atheromatous lesions") -> a(HM:"Erythrocytes, lysed")
 a(CHEBI:"oxidised LDL") -> a(HM:"Erythrocytes, lysed")
 
 SET Evidence = "Preincubation of lipid extract derived from
@@ -198,8 +198,8 @@ a(MESH:"Glutathione Peroxidase") -| p(HGNC:HMOX1)
 SET Evidence = "Levels of conjugated dienes, lipid hydroperoxides and TBARs were
 significantly higher in atheromatous lesions compared to controls (supplemental Table I)."
 
-a(HM:"Atheromatous lesions") pos a(CHEBI:"lipid hydroperoxide")
-a(HM:"Atheromatous lesions") pos a(MESH:"Thiobarbituric Acid Reactive Substances")
+bp(HM:"Atheromatous lesions") pos a(CHEBI:"lipid hydroperoxide")
+bp(HM:"Atheromatous lesions") pos a(MESH:"Thiobarbituric Acid Reactive Substances")
 
 SET Evidence = "Elevated cholesterol, oxy-cholesterol, lyso-phospholipid and decreased phosphatidylserine
 were found in atheromatous lipids compared to controls (supplemental Table II)."
@@ -255,8 +255,8 @@ SET TextLocation = "Discussion"
 
 SET Evidence = "Atheromatous lesions are prone to disruption leading to hematoma or hemorrhage."
 
-a(HM:"Atheromatous lesions") pos path(MESH:Hematoma) 
-a(HM:"Atheromatous lesions") pos path(MESH:Hemorrhage)
+bp(HM:"Atheromatous lesions") pos path(MESH:Hematoma) 
+bp(HM:"Atheromatous lesions") pos path(MESH:Hemorrhage)
 
 SET Evidence = "The results reported
 here indicate that, once exposed to oxidized plaque material, erythrocytes are lysed, the
@@ -343,7 +343,7 @@ SET Evidence = "Elevated amounts of HO-1 were found in macrophages and medial sm
 human atherosclerotic lesions.15"
 
 SET Cell = "macrophage"|"smooth muscle cell"
-a(HM:"Atheromatous lesions") pos p(HGNC:HMOX1)
+bp(HM:"Atheromatous lesions") pos p(HGNC:HMOX1)
 
 SET Evidence = "Now we demonstrate that heme
 and hemoglobin-treated atheroma lipids also induce HO-1 in endothelial cells exposed in

@@ -99,7 +99,7 @@ of SA therapy has already been demonstrated in a rat model
 of acute intracerebral hematoma [2, 9]."
 
 SET MeSHDisease = "Hematoma"
-p(RGD:Alb) -| a(HM:"Heme cytotoxicity")
+p(RGD:Alb) -| path(HM:"Heme cytotoxicity")
 
 SET Evidence = "HSA
 was found to be the major target of oxidative stress in
@@ -255,7 +255,7 @@ SET Evidence = "This result suggested that tyrosine
 residues of BSA may play an important role in heme
 detoxification."
 
-p(HGNC:ALB, var("tyr")) -| a(HM:"Heme cytotoxicity")
+p(HGNC:ALB, var("tyr")) -| path(HM:"Heme cytotoxicity")
 
 SET Evidence = "Furthermore, the cytoprotective effect of
 BSA was stronger than that of BSA-T (Fig. 5), suggesting

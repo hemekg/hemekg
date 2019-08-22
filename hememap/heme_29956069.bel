@@ -373,7 +373,7 @@ SET Evidence = "From hemolytic uremic syndrome
 lesions) might be the primary cause of hemolysis."
 
 SET MeSHDisease = "Atypical Hemolytic Uremic Syndrome"
-a(HM:"endothelial lesions") -> path(MESH:Hemolysis)
+path(HM:"endothelial lesions") -> path(MESH:Hemolysis)
 
 SET Evidence = "During HUS, endothelial lesions cause a complement dependent
 activation of immune response and local thrombus
@@ -384,9 +384,9 @@ of the red blood cells in the fibrin mesh resulting
 in hemolysis [82]."
 
 SET MeSHDisease = "Atypical Hemolytic Uremic Syndrome")
-a(HM:"endothelial lesions") -> path(MESH:Thrombosis)
-a(HM:"endothelial lesions") -> path(MESH:"Disseminated Intravascular Coagulation")
-a(HM:"endothelial lesions") -> path(MESH:Hemolysis)
+path(HM:"endothelial lesions") -> path(MESH:Thrombosis)
+path(HM:"endothelial lesions") -> path(MESH:"Disseminated Intravascular Coagulation")
+path(HM:"endothelial lesions") -> path(MESH:Hemolysis)
 
 SET Evidence = "Similar to HUS, during sepsis an activation
 not just of the complement system but also of the
@@ -514,7 +514,7 @@ microvascular stasis and intravascular hemolysis. Already
 in 1940, Mumme described that renal stasis causes
 hemolysis [108]."
 
-a(HM:"renal stasis") pos path(MESH:Hemolysis)
+path(HM:"renal stasis") pos path(MESH:Hemolysis)
 
 SET Evidence = "Vinchi
 and co-workers proved that the hemoglobin scavenger
@@ -524,7 +524,7 @@ overloadin wild-typemicecomparedtohemopexin-nullmice)
 [116]."
 
 SET MeSHAnatomy = "Liver"
-p(HGNC:HPX) -| a(HM:"microvascular stasis")
+p(HGNC:HPX) -| path(HM:"microvascular stasis")
 
 SET Evidence = "A higher
 glucose requirement is covered, then, by increased glycogenolysis
