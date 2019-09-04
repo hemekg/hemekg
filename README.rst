@@ -21,10 +21,18 @@ Commands
 
 To see all the commands, simply run:
 
-.. code-block:: sh
-
-    $ heme_map
+    $ hememap
     
+Usage
+-----
+To get the BEL graph, use the following code:
+
+.. code-block:: python
+
+    import hememap
+    graph = hememap.get_graph()
+    graph.summarize()
+
 
 Annotations
 ~~~~~~~~~~~
