@@ -229,8 +229,8 @@ that the alteration of macrophage plasticity in response to iron is mostly expla
 properties."
 
 SET Cell = "macrophage"
-a(CHEBI:"iron(2+)") pos a(HM:"macrophage M1 polarization")
-a(CHEBI:"N-acetyl-L-cysteine") neg a(HM:"macrophage M1 polarization")
+a(CHEBI:"iron(2+)") pos bp(HM:"macrophage M1 polarization")
+a(CHEBI:"N-acetyl-L-cysteine") neg bp(HM:"macrophage M1 polarization")
 
 SET Evidence = "In hepatic and splenic macrophages, cotreatment with NAC
 or TAK-242 reduced the heme-induced upregulation of the M1 markers MHCII and CD86 and attenuated
@@ -255,8 +255,8 @@ SET Evidence = "Treatment with
 Hx or DFO diminished the increase of some M1 polarization markers in BMDMs following treatment with
 hemolytic RBCs (supplemental Figure 14)."
 
-p(HGNC:HPX) neg a(HM:"macrophage M1 polarization")
-a(CHEBI:"desferrioxamine B") neg a(HM:"macrophage M1 polarization")
+p(HGNC:HPX) neg bp(HM:"macrophage M1 polarization")
+a(CHEBI:"desferrioxamine B") neg bp(HM:"macrophage M1 polarization")
 
 SET Evidence = "In addition, Hx and DFO prevented the heme- and ironmediated
 induction of the M1 markers MHCII, CD86, CD14, and TNFα and the decrease of some M2
@@ -333,14 +333,14 @@ which is hallmarked by hemolysis, increased circulating Hb/heme, and low levels 
 elevated hepatic macrophage iron levels and M1 polarization."
 
 SET Cell = "macrophage"
-a(CHEBI:heme) -> a(HM:"macrophage M1 polarization")
-p(HGNC:HBB) -> a(HM:"macrophage M1 polarization")
+a(CHEBI:heme) -> bp(HM:"macrophage M1 polarization")
+p(HGNC:HBB) -> bp(HM:"macrophage M1 polarization")
 
 SET Evidence = "Importantly, by scavenging free heme, Hx prevents heme-induced M1 macrophage polarization
 and thus avoids both TLR4 activation and ROS formation."
 
-a(CHEBI:heme) -> a(HM:"macrophage M1 polarization")
-p(MGI:Hpx) neg a(HM:"macrophage M1 polarization")
+a(CHEBI:heme) -> bp(HM:"macrophage M1 polarization")
+p(MGI:Hpx) neg bp(HM:"macrophage M1 polarization")
 p(MGI:Hpx) neg act(p(MGI:Tlr4))
 p(MGI:Hpx) neg a(MESH:"Reactive Oxygen Species")
 
@@ -349,10 +349,10 @@ proinflammatory phenotype can contribute to the exacerbation of inflammation and
 hemolytic disorders and that Hx therapy could alleviate these pathophysiologic consequences by
 preventing macrophage inflammatory activation."
 
-a(CHEBI:heme) -> a(HM:"macrophage M1 polarization")
-a(HM:"macrophage M1 polarization") pos bp(GO:"inflammatory response")
+a(CHEBI:heme) -> bp(HM:"macrophage M1 polarization")
+bp(HM:"macrophage M1 polarization") pos bp(GO:"inflammatory response")
 bp(GO:"inflammatory response") pos path(MESH:Inflammation)
-p(MGI:Hpx) neg a(HM:"macrophage M1 polarization")
+p(MGI:Hpx) neg bp(HM:"macrophage M1 polarization")
 p(MGI:Hpx) neg bp(GO:"inflammatory response")
 
 UNSET TextLocation

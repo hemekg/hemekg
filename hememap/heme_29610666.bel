@@ -222,7 +222,12 @@ was triggered via signaling of the classical TLR4–MyD88–TRIF pathway
 of NF-kB activation.28"
 
 SET Cell = "macrophage"
-a(CHEBI:heme) -> p(HGNC:TNF)
+a(CHEBI:heme) -> p(HGNC:TLR4)
+p(HGNC:TLR4) -> p(HGNC:MYD88)
+p(HGNC:TLR4) -> p(HGNC:TICAM1)
+p(HGNC:MYD88) -> act(p(HGNC:NFKB1))
+p(HGNC:TICAM1) -> act(p(HGNC:NFKB1))
+act(p(HGNC:NFKB1)) -> p(HGNC:TNF)
 
 UNSET TextLocation 
 ###########

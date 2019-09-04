@@ -15,12 +15,13 @@ in this repository, use the following code in your shell:
     $ git clone https://github.com/hememap/hememap.git
     $ cd hememap
     $ pip install -e .
+    
+Commands
+--------
 
-To compile all of the BEL files, run:
+To see all the commands, simply run:
 
-.. code-block:: sh
-
-    $ hememap compile
+    $ hememap
     
 Usage
 -----

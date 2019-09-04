@@ -5,7 +5,7 @@
 SET DOCUMENT Licenses    = "MIT License"
 SET DOCUMENT ContactInfo = "farah.humayun@scai-extern.fraunhofer.de"
 
-SET DOCUMENT Name        = "heme_26974230.bel"
+SET DOCUMENT Name        = "heme_complementary_evidences.bel"
 SET DOCUMENT Version     = "1.0.0"
 SET DOCUMENT Authors     = "Farah Humayun"
 SET DOCUMENT Description = "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
@@ -82,164 +82,188 @@ DEFINE ANNOTATION TextLocation  AS URL "https://arty.scai.fraunhofer.de/artifact
 # Statements #
 ##############
 
-SET Citation = {"PubMed", "Am J Respir Cell Mol Biol. 2016 Aug;55(2):288-98. doi: 10.1165/rcmb.2015-0197OC.", "26974230"}
+SET Citation = {"PubMed", "PLoS One. 2015 Nov 10;10(11):e0142328. doi: 10.1371/journal.pone.0142328. eCollection 2015.", "26555697"}
 
-SET MeSHAnatomy = "Alveolar Epithelial Cells"
+SET Evidence = "We have previously shown that free heme is a potent apoptotic factor as well as inducer of
+the pro-inflammatory chemokine CXCL10 in microvasculature".
 
-SET TextLocation = "Introduction"
+a(CHEBI:heme) pos p(HGNC:CXCL10)
 
-SET Evidence = "Subsequent RBC lysis leads to release
-of acellular Hb, which, in turn, damages
-the alveolar epithelial cells."
+SET Evidence = "In both human and murine malaria infection, increases in
+heme, CXCL10 and TLR4 and TLR9 have been shown to regulate the host immune response to
+Plasmodium infection [47–49]."
 
-path(MESH:Hemolysis) pos p(HGNC:HBB)
+a(CHEBI:heme) -> act(p(HGNC:TLR4))
+p(HGNC:TLR4) -> p(HGNC:CXCL10)
 
-SET TextLocation = "Results"
+SET Evidence = "In the present study, we have shown that heme-induced expression
+of CXCL10 and apoptosis was mediated by TLR4 in HBVEC and CD34+-HSPC."
 
-SET Evidence = "We also
-found that HbFe21 and HbFe31 activate
-NF-kB and mitogen-activated protein kinase
-pathways, as shown by phosphorylation of
-NF-kB p65 subunit and p44/42, respectively
-(Figure E3) as noted previously (31)."
+a(CHEBI:heme) -> act(p(HGNC:TLR4))
+p(HGNC:TLR4) -> p(HGNC:CXCL10)
 
-p(HGNC:HBB) -> act(p(MGI:Nfkb1))
-a(CHEBI:methemoglobin) -> act(a(MESH:"Mitogen-Activated Protein Kinases"))
+SET Evidence = "Therefore, we propose a pathophysiological
+mechanism whereby heme mediates the TLR4 signaling pathway, resulting in overproduction
+of cytotoxic CXCL10."
 
-SET Evidence = "Hp
-attenuated HbFe21- and HbFe31-induced
-up-regulation of HO-1 and H-ferritin
-proteins (Figure 2B)."
+a(CHEBI:heme) -> act(p(HGNC:TLR4))
+p(HGNC:TLR4) -> p(HGNC:CXCL10)
 
-p(MGI:Hp) -| p(MGI:Hmox1)
-p(MGI:Hp) -| p(MGI:Fth1)
+SET Evidence = "HBVEC showed significant reductions in expression of CXCL10 in the presence of the
+TLR4-blocking agent anti-CD14 in vitro conditions, though decreases in CXCL10 expression
+in CD34+-HSPC did not reach statistical significance."
 
-SET Evidence = "Exposure to ferric Hb
-(HbFe31) induced a significant expression
-in HO-1 protein– (15.1761.04-fold) when
-compared with HbFe21 (9.3260.76-fold)-
-induced expression (Figure 2C)."
+p(HGNC:TLR4) -> p(HGNC:CXCL10)
 
-a(CHEBI:methemoglobin) -> p(MGI:Hmox1)
-
-SET Evidence = "Similarly,
-HbFe31 induced a significant expression
-H-ferritin protein (60.4062.76-fold) when
-compared with a 25.25 (61.91)-fold
-induction by HbFe21 (Figure 2D)."
-
-a(CHEBI:methemoglobin) -> p(MGI:Fth1)
-
-SET Evidence = "We found a significant enrichment
-of HO-1 in the mitochondrial, but not in the
-cytosolic fractions after exposure to HbFe21
-and HbFe31 (Figures 3A and 3B)."
-
-SET MeSHAnatomy = "Mitochondria"
-a(CHEBI:methemoglobin) -> p(MGI:Hmox1)
-p(HGNC:HBB) -> p(MGI:Hmox1)
-
-SET Evidence = "Exposure to HbFe21 and HbFe31
-did not alter the expression of cytochrome c
-oxidase IV protein (Figure 3A)."
-
-SET MeSHAnatomy = "Mitochondria"
-a(CHEBI:methemoglobin) causesNoChange p(MGI:Cox4i1)
-p(HGNC:HBB) causesNoChange p(MGI:Cox4i1)
-
-SET Evidence = "Interestingly, Hp attenuated the HbFe21-
-and HbFe31-induced HO-1 expression in
-the mitochondria (Figures 3A and 3B)."
-
-SET MeSHAnatomy = "Mitochondria"
-p(MGI:Hp) -| p(MGI:Hmox1)
-
-SET Evidence = "This effect indicates a
-loss of mitochondrial bioenergetic function
-after exposure to HbFe31 (Figures 3C and
-3D)."
-
-SET Evidence = "Exposure to HbFe41 caused a significant
-up-regulation of HO-1 within 12 hours
-when compared with HbFe21 and HbFe31
-(Figures 4A and 4B)."
-
-a(MESH:ferrylhemoglobin) -> p(MGI:Hmox1)
-
-SET Evidence = "We found
-significant enrichment of HO-1 in
-mitochondrial fraction after exposure to
-HbFe31 and HbFe41 (Figure 4C)."
-
-SET MeSHAnatomy = "Mitochondria"
-a(MESH:ferrylhemoglobin) -> p(MGI:Hmox1)
-
-SET Evidence = "Exposure to HbFe41
-resulted in a drop in hyperpolarized cell
-percentage over untreated control, thus
-indicating a significant mitochondrial
-depolarization or compromised
-mitochondrial respiration."
-
-SET MeSHAnatomy = "Mitochondria"
-a(MESH:ferrylhemoglobin) pos bp(GO:"mitochondrial depolarization")
-a(MESH:ferrylhemoglobin) neg bp(GO:"cellular respiration")
-
-SET Evidence = "We found that
-Hpx effectively attenuated HO-1 induction
-by all redox forms of Hb."
-
-p(MGI:Hpx) -| p(MGI:Hmox1)
-
-SET TextLocation = "Discussion"
-
-SET Evidence = "For example, HbFe41 (20 mM), but not
-HbFe31 or HbFe21, induced cytoskeletal
-reorganization, inflammation and disrupted
-barrier integrity in endothelial cells after 8
-hours of incubation with the proteins."
-
-SET Cell = "endothelial cell"
-a(MESH:ferrylhemoglobin) pos bp(HM:"cytoskeletal reorganization")
-a(MESH:ferrylhemoglobin) pos path(MESH:Inflammation)
-
-SET Evidence = "A recent study indicated
-that expression of HO-1 targeted to
-mitochondria attenuated oxidative
-stress (43)."
-
-p(MGI:Hmox1) -|  bp(MESH:"Oxidative Stress")
-
-SET Evidence = "However, hemin or LPS-induced
-mitochondrial accumulation of HO-1 was
-associated with decreased mitochondrial
-heme content and reduced expression
-of heme-sensitive subunit I of complex IV
-with loss of activity (33)."
-
-p(MGI:Hmox1) neg p(MGI:Cox4i1)
-
-SET Evidence = "Moreover,
-mitochondrial translocation of HO-1
-can also lead to localized CO production as
-a result of heme degradation, thus
-inhibiting electron flow though
-mitochondrial electron transport chain
-complex IV (44)."
-
-SET MeSHAnatomy = "Mitochondria"
-p(MGI:Hmox1) -> a(CHEBI:"carbon monoxide")
-a(CHEBI:"carbon monoxide") -| complex(a(GO:"mitochondrial respiratory chain complex IV"))
-
-SET Evidence = "Exposure to Hb and its oxidized products
-increases heme overload on the AT1 cells.
-Heme overload induces the expression of
-HO-1 and iron-sequestering proteins, such
-as ferritin."
-
-p(HGNC:HBB) -> a(CHEBI:heme)
-a(CHEBI:heme) -> p(MGI:Hmox1)
-a(CHEBI:heme) -> p(MGI:Fth1)
-
-UNSET TextLocation
+UNSET Citation
 ###########
+
+SET Citation = {"PubMed", "Innate Immun. 2011 Feb;17(3):293-301. doi: 10.1177/1753425910369020. Epub 2010 May 14.", "20472612"}
+
+SET Evidence = "High concentrations
+of hemin (50 mM) triggered TLR4-mediated IL-8 
+production in the human HEK293/TLR4 cell line 
+in the absenceof the co-receptors CD14 and MD-2; 
+the latter an essential co-receptor for TLR4 
+activation by endotoxin."
+
+a(CHEBI:heme) -> act(p(HGNC:TLR4))
+p(HGNC:TLR4) -> p(HGNC:CXCL8)
+
+SET Evidence = "We
+show that hemin can induce TLR4-dependent cell
+activation in a human cell line in both a
+MD-2/CD14-dependent and –independent manner."
+
+p(HGNC:CD14) pos complex(p(HGNC:TLR4), a(CHEBI:heme))
+
+SET Evidence = "The studies reported here confirm and extend the recent
+observations by Figueiredo et al.20 that showed TLR4-
+and CD14-dependent cell activation by hemin using
+mouse macrophages."
+
+SET Cell = "macrophage"
+p(MGI:Cd14) pos complex(p(MGI:Tlr4), a(CHEBI:heme))
+
+SET Evidence = "We have demonstrated
+TLR4-dependent activation of a human HEK293/TLR4
+cell line by hemin that was MD-2/CD14-dependent at
+hemin concentrations 10 mM, but was MD-2/
+CD14-independent at higher hemin concentrations
+(50 mM; Fig. 2A)."
+
+#higher concentrations of heme
+p(HGNC:CD14) pos complex(p(HGNC:TLR4), a(CHEBI:heme))
+
+SET Evidence = "The ability of heme to act
+as a ‘danger’ signal may be linked to its ability to initiate
+TLR4-dependent as well as TLR4-independent responses."
+
+a(CHEBI:heme) -> act(p(HGNC:TLR4))
+
+UNSET Citation
+###########
+
+
+SET Citation = {"PubMed", "J Biol Chem. 2007 Jul 13;282(28):20221-9. Epub 2007 May 14.", "17502383"}
+
+SET Evidence = "Degradation of IkBa
+by heme and LPS indicated the
+activation of the NFkB signaling
+pathway (Fig. 5A)."
+
+a(CHEBI:heme) -> deg(p(HGNC:NFKBIA))
+deg(p(HGNC:NFKBIA)) -> act(p(HGNC:NFKB1))
+
+SET Evidence = "The MyD88 pathway leads to
+the activation of NFkB and MAPKs and the induction of cytokines
+such as TNF-alpha, KC, IL-6, and IL-12."
+
+p(HGNC:MYD88) -> act(p(HGNC:NFKB1))
+act(p(HGNC:NFKB1)) -> p(HGNC:TNF)
+act(p(HGNC:NFKB1)) -> p(HGNC:IL6)
+act(p(HGNC:NFKB1)) -> complex(p(HGNC:IL12A), p(HGNC:IL12B))
+act(p(HGNC:NFKB1)) -> a(MESH:"keratinocyte-derived chemokines")
+
+SET Evidence = "Similarly, heme induced the expression of TNF-a
+mRNA but not of IL-6 or IFN-b by macrophages (data not
+shown)."
+
+a(CHEBI:heme) -> p(HGNC:TNF)
+
+SET Evidence = "Degradation of IkBa
+by heme and LPS indicated the
+activation of the NFkB signaling
+pathway (Fig. 5A). Activation of
+macrophages and DC by LPS causes
+TLR4-dependent phosphorylation
+of selected tyrosine kinases such as
+p38 and ERK1/2 (2, 4). The stimulation of macrophages by
+heme caused the phosphorylation of ERK1/2 but only modestly
+affected p38 (Fig. 5, B and C)."
+
+a(CHEBI:heme) -> deg(p(HGNC:NFKBIA))
+deg(p(HGNC:NFKBIA)) -> act(p(HGNC:NFKB1))
+SET Cell = "macrophage"
+a(CHEBI:heme) -> p(HGNC:MAPK3, pmod(Ph)) 
+a(CHEBI:heme) -> p(HGNC:MAPK1, pmod(Ph))
+a(CHEBI:heme) -> p(HGNC:MAPK14, pmod(Ph))
+
+SET Evidence = "Heme caused
+degradation and ERK phosphorylation
+similar to LPS, whereas p38 phosphorylation 
+was modestly induced by heme."
+
+a(CHEBI:heme) -> deg(p(HGNC:NFKBIA))
+a(CHEBI:heme) -> p(HGNC:MAPK3, pmod(Ph)) 
+a(CHEBI:heme) -> p(HGNC:MAPK1, pmod(Ph))
+
+UNSET Citation
+###########
+
+SET Citation = {"PubMed", "J Pineal Res. 2012 Aug;53(1):67-76. doi: 10.1111/j.1600-079X.2012.00972.x. Epub 2012 Jan 31.", "22288937"}
+
+SET Evidence = "TLR4 signaling is mediated by MyD88-dependent and
+MyD88-independent pathways and ultimately induces the
+expression of inflammatory gene products such as cytokines
+and chemokines [34]. While MyD88 is a common downstream
+adaptor molecule that induces activation of mitogen-
+activated protein kinases and NF-kB transcription
+factor, the MyD88-independent pathway, that is, TRIFdependent
+pathway, is responsible for the activation of
+interferon regulatory factor 3 (IRF3) and subsequent
+induction of IFN-b and IFN-inducible gene products
+(e.g., CXCL-10)."
+
+p(HGNC:TLR4) -> act(p(HGNC:MYD88))
+p(HGNC:TLR4) -> act(p(HGNC:TICAM1))
+p(HGNC:MYD88) -> act(p(HGNC:NFKB1))
+p(HGNC:TICAM1) -> act(p(HGNC:IRF3))
+p(HGNC:IRF3) -> p(HGNC:IFNB1)
+p(HGNC:IRF3) -> p(HGNC:CXCL10)
+
+SET Evidence = "IFN-b elicits the secondary response to TLR4 activation
+and contributes to further upregulation of CXCL-10, an
+instrumental chemokine in the neutrophil-mediated phase
+of hepatic inflammation and I/R injury [37]."
+
+p(HGNC:IFNB1) pos p(HGNC:CXCL10)
+
+UNSET Citation
+###########
+
+SET Citation = {"PubMed", "Am J Physiol Renal Physiol. 2018 May 1;314(5):F906-F914. doi: 10.1152/ajprenal.00432.2017. Epub 2017 Oct 4.", "28978536"}
+
+#SET Species = "Mice"
+
+SET Evidence = "We employed MCP-1 expression as a 
+readout for renal inflammation (19, 45).
+As shown in Figures 2 and 3 respectively, heme markedly increased expression of MCP-1
+mRNA and MCP-1 protein content in the supernatant of heme-exposed cells, and both these
+effects were significantly reduced by TAK-242."
+
+a(CHEBI:heme) pos p(MGI:Ccl2)
+
+UNSET Citation
+###########
+
