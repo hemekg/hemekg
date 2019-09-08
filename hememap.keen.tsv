@@ -4,6 +4,7 @@ CHEBI:"3',5'-cyclic GMP"	decreasesAmountOf	MESH:"Platelet Aggregation"
 CHEBI:"3',5'-cyclic GMP"	increasesAmountOf	GO:vasodilation
 CHEBI:"3-nitrotyrosine"	positiveCorrelation	MESH:"Reactive Nitrogen Species"
 CHEBI:"3-nitrotyrosine"	positiveCorrelation	MESH:"Reactive Oxygen Species"
+CHEBI:"3-nitrotyrosine"	positiveCorrelation	complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))
 CHEBI:"4-hydroxynon-2-enal"	negativeCorrelation	MGI:Hp
 CHEBI:"4-hydroxynon-2-enal"	negativeCorrelation	MGI:Hpx
 CHEBI:"4-hydroxynon-2-enal"	positiveCorrelation	MESH:"Blood Transfusion"
@@ -23,13 +24,15 @@ CHEBI:"N-acetyl-L-cysteine"	increasesAmountOf	HGNC:IL10
 CHEBI:"N-acetyl-L-cysteine"	increasesAmountOf	HGNC:MRC1
 CHEBI:"N-acetyl-L-cysteine"	negativeCorrelation	HM:"macrophage M1 polarization"
 CHEBI:"N-acetyl-L-cysteine"	positiveCorrelation	HGNC:MRC1
+CHEBI:"adenosine triphosphate"	positiveCorrelation	complex(a(CHEBI:heme), p(HGNC:ALB))
 CHEBI:"alpha-tocopherol"	decreasesAmountOf	MESH:"Lipid Peroxidation"
 CHEBI:"alpha-tocopherol"	decreasesAmountOf	MESH:"Reactive Oxygen Species"
 CHEBI:"carbon monoxide"	decreases	MESH:Inflammation
 CHEBI:"carbon monoxide"	decreasesAmountOf	CHEBI:heme
 CHEBI:"carbon monoxide"	decreasesAmountOf	GO:"cell proliferation"
 CHEBI:"carbon monoxide"	decreasesAmountOf	GO:"inflammatory response"
-CHEBI:"carbon monoxide"	decreasesAmountOf	MGI:Prdx2
+CHEBI:"carbon monoxide"	decreasesAmountOf	complex(a(GO:"mitochondrial respiratory chain complex IV"))
+CHEBI:"carbon monoxide"	decreasesAmountOf	p(MGI:Prdx2, pmod(Ox))
 CHEBI:"carbon monoxide"	increasesAmountOf	MESH:Vasodilation
 CHEBI:"carbon monoxide"	negativeCorrelation	HM:"vaso-occlusive crisis"
 CHEBI:"carbon monoxide"	negativeCorrelation	HM:Thrombus
@@ -42,8 +45,9 @@ CHEBI:"carbon monoxide"	positiveCorrelation	CHEBI:antioxidant
 CHEBI:"carbon monoxide"	positiveCorrelation	CHEBI:heme
 CHEBI:"carbon monoxide"	positiveCorrelation	MGI:Hp
 CHEBI:"carbon monoxide"	positiveCorrelation	MGI:Hpx
-CHEBI:"carbon monoxide"	positiveCorrelation	MGI:Prdx2
+CHEBI:"carbon monoxide"	positiveCorrelation	p(MGI:Prdx2, pmod(Ox))
 CHEBI:"carbonyl group"	positiveCorrelation	MESH:"Plaque, Atherosclerotic"
+CHEBI:"carbonyl group"	positiveCorrelation	complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))
 CHEBI:"deoxyribonucleic acid"	negativeCorrelation	CHEBI:heme
 CHEBI:"desferrioxamine B"	decreases	MESH:Hemolysis
 CHEBI:"desferrioxamine B"	decreasesAmountOf	MESH:"Bacterial Load"
@@ -69,7 +73,7 @@ CHEBI:"hydrogen peroxide"	partOf	complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:h
 CHEBI:"hydrogen peroxide"	positiveCorrelation	CHEBI:heme
 CHEBI:"hydrogen peroxide"	positiveCorrelation	CHEBI:methemoglobin
 CHEBI:"hydrogen peroxide"	positiveCorrelation	MESH:Hemolysis
-CHEBI:"hydrogen peroxide"	positiveCorrelation	MGI:Prdx2
+CHEBI:"hydrogen peroxide"	positiveCorrelation	p(MGI:Prdx2, pmod(Ox))
 CHEBI:"iron coordination entity"	positiveCorrelation	MESH:Cytokines
 CHEBI:"iron trichloride"	negativeCorrelation	HM:"Endothelial dysfunction"
 CHEBI:"iron trichloride"	partOf	complex(a(CHEBI:"iron trichloride"), a(CHEBI:methemoglobin))
@@ -92,6 +96,7 @@ CHEBI:"iron(2+)"	increasesAmountOf	MESH:"Cell Adhesion Molecules"
 CHEBI:"iron(2+)"	increasesAmountOf	MESH:"Platelet Activation"
 CHEBI:"iron(2+)"	increasesAmountOf	MESH:"Reactive Oxygen Species"
 CHEBI:"iron(2+)"	negativeCorrelation	CHEBI:heme
+CHEBI:"iron(2+)"	negativeCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))
 CHEBI:"iron(2+)"	partOf	complex(a(CHEBI:"carbon monoxide"), a(CHEBI:"iron(2+)"), a(CHEBI:biliverdin))
 CHEBI:"iron(2+)"	partOf	complex(a(CHEBI:"iron(2+)"), a(CHEBI:heme), a(MESH:"Reactive Oxygen Species"))
 CHEBI:"iron(2+)"	positiveCorrelation	CHEBI:"lead nitrate"
@@ -115,6 +120,9 @@ CHEBI:"iron(2+)"	positiveCorrelation	MESH:Hydrocephalus
 CHEBI:"iron(2+)"	positiveCorrelation	MESH:Inflammation
 CHEBI:"iron(2+)"	positiveCorrelation	MESH:Thrombosis
 CHEBI:"iron(2+)"	positiveCorrelation	MGI:Slc40a1
+CHEBI:"iron(2+)"	positiveCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Alb))
+CHEBI:"iron(2+)"	positiveCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))
+CHEBI:"iron(2+)"	positiveCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))
 CHEBI:"lead nitrate"	decreasesAmountOf	CHEBI:heme
 CHEBI:"lead nitrate"	decreasesAmountOf	MESH:Hematocrit
 CHEBI:"lead nitrate"	increasesAmountOf	CHEBI:bilirubin
@@ -135,13 +143,15 @@ CHEBI:"lead(2+)"	decreasesAmountOf	GO:"erythrocyte enucleation"
 CHEBI:"lead(2+)"	partOf	complex(a(CHEBI:"lead(2+)"), a(CHEBI:thiol))
 CHEBI:"leukotriene B4"	activityDirectlyPositivelyRegulatesActivityOf	MESH:Leukocytes
 CHEBI:"leukotriene B4"	increasesAmountOf	GO:"neutrophil migration"
-CHEBI:"lipid hydroperoxide"	increasesAmountOf	HGNC:HBB
+CHEBI:"lipid A"	notRegulatesAmountOf	MESH:"Osmotic Fragility"
+CHEBI:"lipid hydroperoxide"	increasesAmountOf	p(HGNC:HBB, pmod(Ox))
 CHEBI:"lipid hydroperoxide"	negativeCorrelation	MGI:Prdx2
 CHEBI:"lipid hydroperoxide"	positiveCorrelation	HM:"Atheromatous lesions"
 CHEBI:"lipid hydroperoxide"	positiveCorrelation	HM:"Erythrocytes, lysed"
 CHEBI:"lipid hydroperoxide"	positiveCorrelation	HM:"ruptured complicated lesions"
 CHEBI:"low-density lipoprotein"	positiveCorrelation	MESH:"Plaque, Atherosclerotic"
 CHEBI:"monounsaturated fatty acid"	positiveCorrelation	HM:"Atheroma lipid"
+CHEBI:"nitric oxide"	activityDirectlyNegativelyRegulatesActivityOf	complex(p(HGNC:F13A1), p(HGNC:F13B))
 CHEBI:"nitric oxide"	decreases	MESH:"Platelet Aggregation"
 CHEBI:"nitric oxide"	decreases	MESH:Inflammation
 CHEBI:"nitric oxide"	decreases	MESH:Thrombosis
@@ -219,8 +229,11 @@ CHEBI:dibenziodolium	decreasesAmountOf	HGNC:TNF
 CHEBI:dibenziodolium	decreasesAmountOf	MESH:"Reactive Oxygen Species"
 CHEBI:dityrosine	positiveCorrelation	HM:"ruptured complicated lesions"
 CHEBI:enflurane	decreasesAmountOf	MESH:"Nitric Oxide Synthase"
+CHEBI:eptifibatide	notRegulatesAmountOf	HM:schistocytosis
+CHEBI:eptifibatide	notRegulatesAmountOf	MESH:"Disseminated Intravascular Coagulation"
+CHEBI:eptifibatide	notRegulatesAmountOf	MESH:Hemolysis
 CHEBI:glucose	negativeCorrelation	MESH:Hemolysis
-CHEBI:glucose	positiveCorrelation	MGI:Prdx2
+CHEBI:glucose	positiveCorrelation	p(MGI:Prdx2, pmod(ADPRib))
 CHEBI:glutathione	negativeCorrelation	MESH:"Oxidative Stress"
 CHEBI:halothane	decreasesAmountOf	MESH:"Nitric Oxide Synthase"
 CHEBI:heme	activityDirectlyNegativelyRegulatesActivityOf	CHEBI:antioxidant
@@ -257,6 +270,7 @@ CHEBI:heme	decreasesAmountOf	MESH:Vasodilation
 CHEBI:heme	decreasesAmountOf	MGI:Col1a1
 CHEBI:heme	decreasesAmountOf	MGI:Tfrc
 CHEBI:heme	decreasesAmountOf	PFAM:Proteasome
+CHEBI:heme	decreasesAmountOf	complex(a(CHEBI:heme), p(MGI:Hpx))
 CHEBI:heme	increases	HM:"Endothelial dysfunction"
 CHEBI:heme	increases	HM:"Oxidative damage"
 CHEBI:heme	increases	HM:"vaso-occlusive crisis"
@@ -307,7 +321,6 @@ CHEBI:heme	increasesAmountOf	HGNC:NOD1
 CHEBI:heme	increasesAmountOf	HGNC:NOD2
 CHEBI:heme	increasesAmountOf	HGNC:SELE
 CHEBI:heme	increasesAmountOf	HGNC:SELP
-CHEBI:heme	increasesAmountOf	HGNC:SYK
 CHEBI:heme	increasesAmountOf	HGNC:TLR2
 CHEBI:heme	increasesAmountOf	HGNC:TLR4
 CHEBI:heme	increasesAmountOf	HGNC:TLR5
@@ -355,6 +368,11 @@ CHEBI:heme	increasesAmountOf	PFAM:ubiquitin
 CHEBI:heme	increasesAmountOf	RGD:Hmox1
 CHEBI:heme	increasesAmountOf	RGD:Tnf
 CHEBI:heme	increasesAmountOf	SCOMP:"MHC Class II Complex"
+CHEBI:heme	increasesAmountOf	complex(a(CHEBI:"carbon monoxide"), a(CHEBI:"iron(2+)"), a(CHEBI:biliverdin))
+CHEBI:heme	increasesAmountOf	complex(p(MGI:Prdx1), p(MGI:Prdx2), p(MGI:Prdx3), p(MGI:Prdx4), p(MGI:Prdx5), p(MGI:Prdx6))
+CHEBI:heme	increasesAmountOf	complex(r(MGI:Txnrd1), r(MGI:Txnrd2), r(MGI:Txnrd3))
+CHEBI:heme	increasesAmountOf	p(HGNC:SYK, pmod(Ph))
+CHEBI:heme	increasesAmountOf	rxn(reactants(a(CHEBI:hydroperoxide)), products(a(CHEBI:hydroperoxyl), a(MESH:"alkoxyl radical")))
 CHEBI:heme	negativeCorrelation	CHEBI:"deoxyribonucleic acid"
 CHEBI:heme	negativeCorrelation	CHEBI:"iron(2+)"
 CHEBI:heme	negativeCorrelation	CHEBI:"nitric oxide"
@@ -369,6 +387,12 @@ CHEBI:heme	negativeCorrelation	MGI:Hmox1
 CHEBI:heme	negativeCorrelation	MGI:Hpx
 CHEBI:heme	negativeCorrelation	MGI:Prdx2
 CHEBI:heme	negativeCorrelation	MGI:Sqstm1
+CHEBI:heme	negativeCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))
+CHEBI:heme	notRegulatesAmountOf	HGNC:CFB
+CHEBI:heme	notRegulatesAmountOf	HGNC:CFD
+CHEBI:heme	notRegulatesAmountOf	HGNC:CFH
+CHEBI:heme	notRegulatesAmountOf	HGNC:TLR2
+CHEBI:heme	notRegulatesAmountOf	HGNC:TLR4
 CHEBI:heme	partOf	complex(a(CHEBI:"carbon monoxide"), a(CHEBI:heme), p(HGNC:FGA))
 CHEBI:heme	partOf	complex(a(CHEBI:"desferrioxamine B"), a(CHEBI:heme))
 CHEBI:heme	partOf	complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme))
@@ -472,12 +496,16 @@ CHEBI:lipopolysaccharide	positiveCorrelation	CHEBI:"iron(2+)"
 CHEBI:malonaldehyde	positiveCorrelation	MESH:"Lipid Peroxidation"
 CHEBI:malonaldehyde	positiveCorrelation	MESH:"Oxidative Stress"
 CHEBI:malonaldehyde	positiveCorrelation	MESH:Inflammation
+CHEBI:malonaldehyde	positiveCorrelation	complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))
 CHEBI:methemoglobin	activityDirectlyPositivelyRegulatesActivityOf	MESH:"Mitogen-Activated Protein Kinases"
+CHEBI:methemoglobin	decreasesAmountOf	CHEBI:heme
 CHEBI:methemoglobin	increasesAmountOf	CHEBI:heme
 CHEBI:methemoglobin	increasesAmountOf	MGI:Fth1
 CHEBI:methemoglobin	increasesAmountOf	MGI:Hmox1
 CHEBI:methemoglobin	negativeCorrelation	HGNC:HP
 CHEBI:methemoglobin	negativeCorrelation	MGI:Prdx2
+CHEBI:methemoglobin	notRegulatesAmountOf	CHEBI:"adenosine triphosphate"
+CHEBI:methemoglobin	notRegulatesAmountOf	MGI:Cox4i1
 CHEBI:methemoglobin	partOf	complex(a(CHEBI:"iron trichloride"), a(CHEBI:methemoglobin))
 CHEBI:methemoglobin	partOf	complex(a(CHEBI:methemoglobin), p(HGNC:HPX))
 CHEBI:methemoglobin	positiveCorrelation	CHEBI:"hydrogen peroxide"
@@ -487,6 +515,7 @@ CHEBI:methemoglobin	positiveCorrelation	MESH:Hemolysis
 CHEBI:nitrite	negativeCorrelation	HM:"stored erythrocytes"
 CHEBI:nitrite	partOf	complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))
 CHEBI:oxyhemoglobin	increasesAmountOf	CHEBI:methemoglobin
+CHEBI:oxyhemoglobin	notRegulatesAmountOf	CHEBI:"adenosine triphosphate"
 CHEBI:oxyhemoglobin	positiveCorrelation	HM:"nitrite oxidation"
 CHEBI:oxyhemoglobin	positiveCorrelation	HM:"stored erythrocytes"
 CHEBI:oxysterol	positiveCorrelation	HM:"Atheromatous lesions"
@@ -494,7 +523,11 @@ CHEBI:peroxynitrite	negativeCorrelation	MGI:Prdx2
 CHEBI:peroxynitrite	positiveCorrelation	CHEBI:heme
 CHEBI:protoporphyrin	increasesAmountOf	MGI:Hmox1
 CHEBI:protoporphyrin	increasesAmountOf	MGI:Il1b
+CHEBI:protoporphyrin	notRegulatesAmountOf	HGNC:TNF
+CHEBI:protoporphyrin	notRegulatesAmountOf	MESH:"Reactive Oxygen Species"
+CHEBI:protoporphyrin	notRegulatesAmountOf	MGI:Slc40a1
 CHEBI:protoporphyrin	partOf	complex(a(CHEBI:"tin atom"), a(CHEBI:protoporphyrin))
+CHEBI:quinine	decreasesAmountOf	complex(a(CHEBI:heme), p(MGI:Dock8))
 CHEBI:quinine	negativeCorrelation	GO:"actin cytoskeleton reorganization"
 CHEBI:quinine	negativeCorrelation	MESH:"Bacterial Load"
 CHEBI:quinine	positiveCorrelation	MESH:Phagocytosis
@@ -514,6 +547,7 @@ GO:"cell proliferation"	positiveCorrelation	RGD:Mapk1
 GO:"cellular homeostasis"	negativeCorrelation	CHEBI:heme
 GO:"cellular homeostasis"	positiveCorrelation	PFAM:Proteasome
 GO:"cellular respiration"	negativeCorrelation	MESH:ferrylhemoglobin
+GO:"cellular respiration"	positiveCorrelation	complex(a(CHEBI:heme), p(HGNC:ALB))
 GO:"cellular response to oxidative stress"	positiveCorrelation	MESH:"Proteasome Inhibitors"
 GO:"complement activation"	association	MESH:Malaria
 GO:"complement activation"	increasesAmountOf	MESH:Eryptosis
@@ -542,6 +576,7 @@ GO:"heme catabolic process"	increasesAmountOf	MESH:Biliverdine
 GO:"heme catabolic process"	positiveCorrelation	HGNC:HMOX1
 GO:"heme transport"	positiveCorrelation	HGNC:SLC48A1
 GO:"inflammatory response"	negativeCorrelation	MGI:Hpx
+GO:"inflammatory response"	negativeCorrelation	complex(a(CHEBI:heme), p(HGNC:ALB))
 GO:"inflammatory response"	positiveCorrelation	CHEBI:"iron(2+)"
 GO:"inflammatory response"	positiveCorrelation	CHEBI:heme
 GO:"inflammatory response"	positiveCorrelation	HGNC:IL1B
@@ -575,15 +610,18 @@ GO:vasoconstriction	positiveCorrelation	HGNC:HBB
 GO:vasoconstriction	positiveCorrelation	MESH:Hemolysis
 HGNC:ADAMTS13	decreasesAmountOf	HM:Thrombus
 HGNC:ADAMTS13	negativeCorrelation	MESH:"Purpura, Thrombotic Thrombocytopenic"
-HGNC:ALB	activityDirectlyNegativelyRegulatesActivityOf	MESH:"Reactive Nitrogen Species"
+HGNC:ALB	activityDirectlyNegativelyRegulatesActivityOf	complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))
 HGNC:ALB	decreasesAmountOf	CHEBI:"3-nitrotyrosine"
 HGNC:ALB	decreasesAmountOf	CHEBI:"phosphatidyl-L-serine"
 HGNC:ALB	decreasesAmountOf	CHEBI:heme
-HGNC:ALB	decreasesAmountOf	HM:"Heme cytotoxicity"
 HGNC:ALB	decreasesAmountOf	MESH:"Erythrocyte Aggregation"
 HGNC:ALB	decreasesAmountOf	MESH:"Lipid Peroxidation"
 HGNC:ALB	decreasesAmountOf	MESH:"Protein Carbonylation"
+HGNC:ALB	hasVariant	p(HGNC:ALB, pmod(Ph, Tyr))
+HGNC:ALB	hasVariant	p(HGNC:ALB, var("tyr"))
 HGNC:ALB	negativeCorrelation	MESH:Apoptosis
+HGNC:ALB	notRegulatesAmountOf	HM:"erythrocyte-endothelium adhesion"
+HGNC:ALB	notRegulatesAmountOf	MESH:"Erythrocyte Aggregation"
 HGNC:ALB	partOf	complex(a(CHEBI:heme), p(HGNC:ALB))
 HGNC:ALB	positiveCorrelation	MESH:"Cell Survival"
 HGNC:AMBP	decreasesAmountOf	CHEBI:Catalase
@@ -597,6 +635,7 @@ HGNC:AMBP	increasesAmountOf	CHEBI:Catalase
 HGNC:AMBP	increasesAmountOf	HGNC:IL6
 HGNC:AMBP	increasesAmountOf	HGNC:SOD2
 HGNC:AMBP	negativeCorrelation	MESH:Necrosis
+HGNC:AMBP	notRegulatesAmountOf	CHEBI:creatinine
 HGNC:AMBP	positiveCorrelation	CHEBI:heme
 HGNC:AMBP	positiveCorrelation	HGNC:HBB
 HGNC:AMBP	positiveCorrelation	HM:"Oxidative damage"
@@ -641,28 +680,17 @@ HGNC:CD55	decreasesAmountOf	MESH:Hemolysis
 HGNC:CD55	negativeCorrelation	HP:"Arterial thrombosis"
 HGNC:CD55	negativeCorrelation	HP:"Venous thrombosis"
 HGNC:CD59	decreasesAmountOf	MESH:Hemolysis
-HGNC:CD59	increasesAmountOf	GO:"platelet activation"
-HGNC:CD59	increasesAmountOf	HGNC:HBB
-HGNC:CD59	increasesAmountOf	HGNC:SELP
-HGNC:CD59	increasesAmountOf	HP:Hypercoagulability
-HGNC:CD59	increasesAmountOf	MESH:"Cell-Derived Microparticles"
-HGNC:CD59	increasesAmountOf	MESH:Stroke
+HGNC:CD59	hasVariant	p(HGNC:CD59, var("p.Cys89Tyr"))
 HGNC:CD59	negativeCorrelation	HP:"Arterial thrombosis"
 HGNC:CD59	negativeCorrelation	HP:"Paroxysmal nocturnal hemoglobinuria"
 HGNC:CD59	negativeCorrelation	HP:"Venous thrombosis"
 HGNC:CD59	negativeCorrelation	MESH:"Complement Membrane Attack Complex"
 HGNC:CD59	negativeCorrelation	MESH:Hemolysis
-HGNC:CD59	positiveCorrelation	HM:"Monocyte-platelet aggregation"
-HGNC:CD59	positiveCorrelation	MESH:"Complement Membrane Attack Complex"
-HGNC:CD59	positiveCorrelation	MESH:"Guillain-Barre Syndrome"
-HGNC:CD59	positiveCorrelation	MESH:"Polyradiculoneuropathy, Chronic Inflammatory Demyelinating"
-HGNC:CD59	positiveCorrelation	MESH:Hemolysis
-HGNC:CD59	positiveCorrelation	MESH:Stroke
-HGNC:CD59	positiveCorrelation	MESH:Thrombosis
 HGNC:CXCL8	increasesAmountOf	MESH:Inflammation
 HGNC:CXCL8	increasesAmountOf	MESH:Thrombosis
 HGNC:EIF2AK1	negativeCorrelation	MESH:"Oxidative Stress"
 HGNC:EIF2AK1	positiveCorrelation	GO:"erythrocyte differentiation"
+HGNC:ELANE	decreasesAmountOf	HGNC:HBB
 HGNC:EPO	positiveCorrelation	MESH:Thromboembolism
 HGNC:EPO	positiveCorrelation	MESH:Thrombosis
 HGNC:F13A1	partOf	complex(p(HGNC:F13A1), p(HGNC:F13B))
@@ -691,6 +719,7 @@ HGNC:HBB	decreasesAmountOf	CHEBI:"nitric oxide"
 HGNC:HBB	decreasesAmountOf	HGNC:ADAMTS13
 HGNC:HBB	decreasesAmountOf	HM:"Nitric oxide scavenging"
 HGNC:HBB	decreasesAmountOf	MESH:Vasodilation
+HGNC:HBB	hasVariant	p(HGNC:HBB, pmod(Ox))
 HGNC:HBB	increasesAmountOf	CHEBI:"iron(2+)"
 HGNC:HBB	increasesAmountOf	CHEBI:heme
 HGNC:HBB	increasesAmountOf	CHEBI:methemoglobin
@@ -716,6 +745,7 @@ HGNC:HBB	increasesAmountOf	MESH:Hypertension
 HGNC:HBB	increasesAmountOf	MESH:Inflammation
 HGNC:HBB	increasesAmountOf	MGI:Hmox1
 HGNC:HBB	increasesAmountOf	RGD:Tnf
+HGNC:HBB	increasesAmountOf	rxn(reactants(a(CHEBI:"nitric oxide")), products(a(CHEBI:nitrate)))
 HGNC:HBB	negativeCorrelation	CHEBI:"nitric oxide"
 HGNC:HBB	negativeCorrelation	GO:"regulation of glucose-6-phosphatase activity"
 HGNC:HBB	negativeCorrelation	HGNC:HP
@@ -724,6 +754,7 @@ HGNC:HBB	negativeCorrelation	MESH:"haptoglobin-hemoglobin complex"
 HGNC:HBB	negativeCorrelation	MESH:Anemia
 HGNC:HBB	negativeCorrelation	MESH:Hematoma
 HGNC:HBB	negativeCorrelation	MESH:Kidney
+HGNC:HBB	notRegulatesAmountOf	MGI:Cox4i1
 HGNC:HBB	partOf	complex(a(CHEBI:"carbon monoxide"), p(HGNC:HBB))
 HGNC:HBB	partOf	complex(a(CHEBI:"nitric oxide"), p(HGNC:HBB))
 HGNC:HBB	partOf	complex(a(HM:"Atheroma lipid"), p(HGNC:HBB))
@@ -745,7 +776,6 @@ HGNC:HBB	positiveCorrelation	MESH:"Brain Diseases"
 HGNC:HBB	positiveCorrelation	MESH:"Erythrocyte Deformability"
 HGNC:HBB	positiveCorrelation	MESH:"Kidney Diseases"
 HGNC:HBB	positiveCorrelation	MESH:"Oxidative Stress"
-HGNC:HBB	positiveCorrelation	MESH:"Plaque, Atherosclerotic"
 HGNC:HBB	positiveCorrelation	MESH:"Platelet Activation"
 HGNC:HBB	positiveCorrelation	MESH:"Platelet Aggregation"
 HGNC:HBB	positiveCorrelation	MESH:"Vascular Diseases"
@@ -757,6 +787,10 @@ HGNC:HBB	positiveCorrelation	MESH:Inflammation
 HGNC:HBB	positiveCorrelation	MESH:Thrombophilia
 HGNC:HBB	positiveCorrelation	MESH:Thrombosis
 HGNC:HBB	positiveCorrelation	MESH:Vasoconstriction
+HGNC:HBB	positiveCorrelation	complex(a(CHEBI:"iron(2+)"), a(CHEBI:heme), a(MESH:"Reactive Oxygen Species"))
+HGNC:HBB	positiveCorrelation	complex(a(CHEBI:"nitric oxide"), p(HGNC:HBB))
+HGNC:HBB	positiveCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))
+HGNC:HMOX1	decreasesAmountOf	CHEBI:heme
 HGNC:HMOX1	decreasesAmountOf	GO:"leukocyte migration"
 HGNC:HMOX1	decreasesAmountOf	GO:"necroptotic process"
 HGNC:HMOX1	decreasesAmountOf	MESH:"Cell Adhesion Molecules"
@@ -772,6 +806,8 @@ HGNC:HMOX1	positiveCorrelation	GO:"heme catabolic process"
 HGNC:HMOX1	positiveCorrelation	HM:"Atheromatous lesions"
 HGNC:HMOX1	positiveCorrelation	HM:erythrophagocytosis
 HGNC:HMOX1	positiveCorrelation	MESH:Hematoma
+HGNC:HMOX1	positiveCorrelation	complex(a(CHEBI:"carbon monoxide"), p(HGNC:HBB))
+HGNC:HMOX1	positiveCorrelation	complex(a(CHEBI:heme), p(HGNC:ALB))
 HGNC:HP	decreasesAmountOf	CHEBI:"4-hydroxynon-2-enal"
 HGNC:HP	decreasesAmountOf	HGNC:HBB
 HGNC:HP	decreasesAmountOf	HM:"oxidative modification of atheroma lipid"
@@ -790,6 +826,7 @@ HGNC:HP	negativeCorrelation	MESH:Infection
 HGNC:HP	negativeCorrelation	MESH:Morbidity
 HGNC:HP	negativeCorrelation	MESH:Mortality
 HGNC:HP	negativeCorrelation	MESH:Thrombosis
+HGNC:HP	notActivityDirectlyRegulatesActivityOf	CHEBI:Peroxidase
 HGNC:HP	partOf	complex(p(HGNC:HP), p(INTERPRO:"NEAT domain"))
 HGNC:HP	positiveCorrelation	CHEBI:heme
 HGNC:HP	positiveCorrelation	CHEBI:lactate
@@ -814,6 +851,7 @@ HGNC:HPX	negativeCorrelation	MESH:"Anemia, Sickle Cell"
 HGNC:HPX	negativeCorrelation	MESH:"Blood Pressure"
 HGNC:HPX	negativeCorrelation	MESH:"Pre-Eclampsia"
 HGNC:HPX	negativeCorrelation	MESH:Hemolysis
+HGNC:HPX	notActivityDirectlyRegulatesActivityOf	CHEBI:Peroxidase
 HGNC:HPX	partOf	complex(a(CHEBI:heme), p(HGNC:HPX))
 HGNC:HPX	partOf	complex(a(CHEBI:hemin), p(HGNC:HPX))
 HGNC:HPX	partOf	complex(a(CHEBI:methemoglobin), p(HGNC:HPX))
@@ -835,6 +873,8 @@ HGNC:IL1B	positiveCorrelation	MESH:Monocytes
 HGNC:IRF3	increasesAmountOf	HGNC:IFNA1
 HGNC:IRF3	increasesAmountOf	HGNC:NFKB1
 HGNC:ITGB3	positiveCorrelation	MESH:"Clot Retraction"
+HGNC:LRP1	decreasesAmountOf	CHEBI:heme
+HGNC:LRP1	decreasesAmountOf	complex(a(CHEBI:heme), p(HGNC:HPX))
 HGNC:LRP1	increasesAmountOf	GO:"heme catabolic process"
 HGNC:MAPK1	increasesAmountOf	MESH:Cytokines
 HGNC:MAPK1	partOf	complex(p(HGNC:MAPK1), p(HGNC:MAPK14), p(HGNC:MAPK8))
@@ -877,13 +917,14 @@ HGNC:SERPINA1	decreasesAmountOf	MESH:"Cell Adhesion Molecules"
 HGNC:SERPINA1	decreasesAmountOf	MESH:"Cell Adhesion"
 HGNC:SERPINA1	decreasesAmountOf	MESH:"Reactive Oxygen Species"
 HGNC:SERPINA1	decreasesAmountOf	MESH:Inflammation
-HGNC:SERPINA1	decreasesAmountOf	PFAM:"Pkinase_C"
+HGNC:SERPINA1	decreasesAmountOf	p(PFAM:"Pkinase_C", pmod(Ph))
 HGNC:SERPINA1	negativeCorrelation	PFAM:"Pkinase_C"
 HGNC:SERPINA1	partOf	complex(a(CHEBI:hemin), p(HGNC:SERPINA1))
 HGNC:SERPINA1	positiveCorrelation	HGNC:NR3C1
 HGNC:SIRPA	partOf	complex(p(HGNC:CD47), p(HGNC:SIRPA))
 HGNC:SLC48A1	positiveCorrelation	GO:"heme transport"
 HGNC:SLC48A1	positiveCorrelation	MESH:Hemolysis
+HGNC:SYK	hasVariant	p(HGNC:SYK, pmod(Ph))
 HGNC:TF	decreasesAmountOf	CHEBI:"iron(2+)"
 HGNC:TF	decreasesAmountOf	HM:"Labile iron"
 HGNC:TF	decreasesAmountOf	MESH:Hemochromatosis
@@ -897,6 +938,7 @@ HGNC:TLR4	increasesAmountOf	HGNC:NFKB1
 HGNC:TLR4	increasesAmountOf	HGNC:TICAM1
 HGNC:TLR4	increasesAmountOf	HGNC:TNF
 HGNC:TLR4	increasesAmountOf	MESH:Atherosclerosis
+HGNC:TLR4	increasesAmountOf	complex(p(HGNC:MAPK1), p(HGNC:MAPK14), p(HGNC:MAPK8))
 HGNC:TLR4	partOf	complex(a(CHEBI:lipopolysaccharide), p(HGNC:TLR4))
 HGNC:TLR4	positiveCorrelation	CHEBI:heme
 HGNC:TLR4	positiveCorrelation	GO:"inflammatory response"
@@ -911,16 +953,17 @@ HGNC:TNF	increasesAmountOf	MESH:Inflammation
 HGNC:TNF	increasesAmountOf	MESH:Thrombosis
 HGNC:TNF	positiveCorrelation	MESH:Fever
 HGNC:TNF	positiveCorrelation	MESH:Monocytes
+HGNC:VWF	increasesAmountOf	HGNC:F8
 HGNC:VWF	positiveCorrelation	MESH:Thrombosis
 HM:"ABO-incompatible erythrocytes"	positiveCorrelation	MESH:"Disseminated Intravascular Coagulation"
 HM:"ABO-incompatible erythrocytes"	positiveCorrelation	MESH:"Transfusion Reaction"
 HM:"ABO-incompatible erythrocytes"	positiveCorrelation	MESH:Death
 HM:"Anemia, acute"	positiveCorrelation	MESH:Hypoxia
 HM:"Anemia, subacute"	positiveCorrelation	MESH:Hypoxia
-HM:"Atheroma lipid"	increasesAmountOf	HGNC:HBB
 HM:"Atheroma lipid"	increasesAmountOf	HGNC:HMOX1
 HM:"Atheroma lipid"	increasesAmountOf	HM:"Erythrocytes, lysed"
 HM:"Atheroma lipid"	increasesAmountOf	MESH:"Cytotoxicity, Immunologic"
+HM:"Atheroma lipid"	increasesAmountOf	p(HGNC:HBB, pmod(Ox))
 HM:"Atheroma lipid"	negativeCorrelation	CHEBI:"phosphatidyl-L-serine"
 HM:"Atheroma lipid"	partOf	complex(a(CHEBI:heme), a(HM:"Atheroma lipid"))
 HM:"Atheroma lipid"	partOf	complex(a(HM:"Atheroma lipid"), p(HGNC:HBB))
@@ -946,6 +989,7 @@ HM:"Endothelial dysfunction"	negativeCorrelation	CHEBI:"iron trichloride"
 HM:"Endothelial dysfunction"	positiveCorrelation	CHEBI:"iron trichloride"
 HM:"Endothelial dysfunction"	positiveCorrelation	HM:"Atheroma lipid"
 HM:"Endothelial dysfunction"	positiveCorrelation	MESH:Thrombosis
+HM:"Endothelial dysfunction"	positiveCorrelation	complex(a(CHEBI:"iron trichloride"), a(CHEBI:methemoglobin))
 HM:"Erythrocytes, lysed"	increasesAmountOf	HGNC:HBB
 HM:"Erythrocytes, lysed"	increasesAmountOf	MESH:Arginase
 HM:"Erythrocytes, lysed"	increasesAmountOf	RGD:Hmox1
@@ -959,9 +1003,9 @@ HM:"Glucose-6-phosphate dehydrogenase deficiency"	increases	MESH:Hemolysis
 HM:"Glucose-6-phosphate dehydrogenase deficiency"	positiveCorrelation	MESH:Hemolysis
 HM:"Glucose-6-phosphate dehydrogenase deficiency"	positiveCorrelation	MESH:Thrombosis
 HM:"Impaired microcirculation"	positiveCorrelation	MESH:Sepsis
-HM:"Monocyte-platelet aggregation"	positiveCorrelation	HGNC:CD59
 HM:"Monocyte-platelet aggregation"	positiveCorrelation	HP:"Arterial occlusion"
 HM:"Monocyte-platelet aggregation"	positiveCorrelation	MESH:"Platelet Activation"
+HM:"Monocyte-platelet aggregation"	positiveCorrelation	p(HGNC:CD59, var("p.Cys89Tyr"))
 HM:"Monocyte–platelet aggregation"	positiveCorrelation	HGNC:SELP
 HM:"Oxidative damage"	positiveCorrelation	HGNC:AMBP
 HM:"Pathogen Associated Molecular Pattern"	activityDirectlyPositivelyRegulatesActivityOf	HGNC:TLR4
@@ -985,7 +1029,7 @@ HM:"erythrocyte-endothelium adhesion"	positiveCorrelation	MESH:Malaria
 HM:"erythrocyte-platelet adhesion"	increases	MESH:Thrombosis
 HM:"fibrin deposition"	positiveCorrelation	MESH:Hemolysis
 HM:"heme-iron recycling"	positiveCorrelation	HM:erythrophagocytosis
-HM:"hemoglobin beta-93-cysteine"	positiveCorrelation	MGI:Prdx2
+HM:"hemoglobin beta-93-cysteine"	positiveCorrelation	p(MGI:Prdx2, pmod(ADPRib))
 HM:"macrophage M1 polarization"	negativeCorrelation	CHEBI:"N-acetyl-L-cysteine"
 HM:"macrophage M1 polarization"	negativeCorrelation	CHEBI:"desferrioxamine B"
 HM:"macrophage M1 polarization"	negativeCorrelation	HGNC:HPX
@@ -1019,6 +1063,8 @@ HM:"stored erythrocytes"	increasesAmountOf	MESH:"Erythrocyte Deformability"
 HM:"stored erythrocytes"	increasesAmountOf	MESH:Lysophospholipids
 HM:"stored erythrocytes"	increasesAmountOf	MESH:Mortality
 HM:"stored erythrocytes"	negativeCorrelation	CHEBI:nitrite
+HM:"stored erythrocytes"	notRegulatesAmountOf	CHEBI:NADPH
+HM:"stored erythrocytes"	notRegulatesAmountOf	MGI:Txn1
 HM:"stored erythrocytes"	positiveCorrelation	CHEBI:"iron(2+)"
 HM:"stored erythrocytes"	positiveCorrelation	CHEBI:heme
 HM:"stored erythrocytes"	positiveCorrelation	CHEBI:methemoglobin
@@ -1035,6 +1081,7 @@ HM:"stored erythrocytes"	positiveCorrelation	MESH:Pneumonia
 HM:"stored erythrocytes"	positiveCorrelation	MGI:"Hbb-b1"
 HM:"stored erythrocytes"	positiveCorrelation	MGI:Hmgb1
 HM:"stored erythrocytes"	positiveCorrelation	MGI:Prdx2
+HM:"stored erythrocytes"	positiveCorrelation	p(MGI:Prdx2, pmod(Ox))
 HM:"vaso-occlusive crisis"	negativeCorrelation	CHEBI:"carbon monoxide"
 HM:"vaso-occlusive crisis"	negativeCorrelation	MGI:Hmox1
 HM:"vaso-occlusive crisis"	negativeCorrelation	MGI:Hp
@@ -1050,6 +1097,7 @@ HM:Thrombus	positiveCorrelation	CHEBI:"iron trichloride"
 HM:Thrombus	positiveCorrelation	MGI:Gp6
 HM:cytolysin	positiveCorrelation	MESH:Hemolysis
 HM:erythrophagocytosis	decreasesAmountOf	MESH:"Erythrocyte Count"
+HM:erythrophagocytosis	negativeCorrelation	complex(p(HGNC:CD47), p(HGNC:SIRPA))
 HM:erythrophagocytosis	positiveCorrelation	GO:"complement activation, alternative pathway"
 HM:erythrophagocytosis	positiveCorrelation	HGNC:CD163
 HM:erythrophagocytosis	positiveCorrelation	HGNC:HMOX1
@@ -1203,7 +1251,10 @@ MESH:"Cell Membrane Permeability"	positiveCorrelation	MESH:"Complement Membrane 
 MESH:"Cell Movement"	positiveCorrelation	MGI:Cdc42
 MESH:"Cell Survival"	negativeCorrelation	CHEBI:heme
 MESH:"Cell Survival"	negativeCorrelation	MESH:"Glucose Oxidase"
+MESH:"Cell Survival"	negativeCorrelation	complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme))
+MESH:"Cell Survival"	negativeCorrelation	complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))
 MESH:"Cell Survival"	positiveCorrelation	HGNC:ALB
+MESH:"Cell Survival"	positiveCorrelation	p(HGNC:ALB, pmod(Ph, Tyr))
 MESH:"Cell-Derived Microparticles"	decreasesAmountOf	MESH:"Whole Blood Coagulation Time"
 MESH:"Cell-Derived Microparticles"	increases	HM:"vaso-occlusive crisis"
 MESH:"Cell-Derived Microparticles"	increases	HP:"Deep venous thrombosis"
@@ -1234,10 +1285,10 @@ MESH:"Complement Membrane Attack Complex"	increases	MESH:Hemolysis
 MESH:"Complement Membrane Attack Complex"	increasesAmountOf	GO:cytolysis
 MESH:"Complement Membrane Attack Complex"	negativeCorrelation	CHEBI:"desferrioxamine B"
 MESH:"Complement Membrane Attack Complex"	negativeCorrelation	HGNC:CD59
-MESH:"Complement Membrane Attack Complex"	positiveCorrelation	HGNC:CD59
 MESH:"Complement Membrane Attack Complex"	positiveCorrelation	MESH:"Cell Membrane Permeability"
 MESH:"Complement Membrane Attack Complex"	positiveCorrelation	MESH:Hematoma
 MESH:"Complement Membrane Attack Complex"	positiveCorrelation	MESH:Hemolysis
+MESH:"Complement Membrane Attack Complex"	positiveCorrelation	p(HGNC:CD59, var("p.Cys89Tyr"))
 MESH:"Cytotoxicity, Immunologic"	positiveCorrelation	CHEBI:"iron(2+)"
 MESH:"Cytotoxicity, Immunologic"	positiveCorrelation	CHEBI:"oxidised LDL"
 MESH:"Cytotoxicity, Immunologic"	positiveCorrelation	MESH:"Lipid Peroxidation"
@@ -1293,12 +1344,12 @@ MESH:"Glomerular Filtration Barrier"	negativeCorrelation	CHEBI:heme
 MESH:"Glucose Oxidase"	negativeCorrelation	MESH:"Cell Survival"
 MESH:"Glucose-Galactose Malabsorption"	positiveCorrelation	MESH:Hemolysis
 MESH:"Glutathione Peroxidase"	decreasesAmountOf	CHEBI:"lipid hydroperoxide"
-MESH:"Glutathione Peroxidase"	decreasesAmountOf	HGNC:HBB
 MESH:"Glutathione Peroxidase"	decreasesAmountOf	HGNC:HMOX1
 MESH:"Glutathione Peroxidase"	decreasesAmountOf	HM:"Erythrocytes, lysed"
 MESH:"Glutathione Peroxidase"	decreasesAmountOf	MESH:"Cytotoxicity, Immunologic"
+MESH:"Glutathione Peroxidase"	decreasesAmountOf	p(HGNC:HBB, pmod(Ox))
 MESH:"Glutathione Peroxidase"	partOf	complex(a(CHEBI:"oxidised LDL"), a(MESH:"Glutathione Peroxidase"))
-MESH:"Guillain-Barre Syndrome"	positiveCorrelation	HGNC:CD59
+MESH:"Guillain-Barre Syndrome"	positiveCorrelation	p(HGNC:CD59, var("p.Cys89Tyr"))
 MESH:"Heart Failure"	positiveCorrelation	MESH:"Reactive Oxygen Species"
 MESH:"Hematopoiesis, Extramedullary"	positiveCorrelation	CHEBI:"lead nitrate"
 MESH:"Hematopoiesis, Extramedullary"	positiveCorrelation	MESH:Anemia
@@ -1321,6 +1372,7 @@ MESH:"Lipid Peroxides"	positiveCorrelation	CHEBI:heme
 MESH:"Lung Injury"	negativeCorrelation	MGI:Tlr4
 MESH:"Lung Injury"	positiveCorrelation	CHEBI:heme
 MESH:"Lupus Coagulation Inhibitor"	positiveCorrelation	MESH:"Venous Thromboembolism"
+MESH:"Lymph Nodes"	decreasesAmountOf	GO:"IgG immunoglobulin complex"
 MESH:"Mitochondrial Diseases"	negativeCorrelation	MGI:Hmox1
 MESH:"Mitochondrial Diseases"	positiveCorrelation	CHEBI:heme
 MESH:"Mitogen-Activated Protein Kinases"	positiveCorrelation	MESH:"Reactive Oxygen Species"
@@ -1354,10 +1406,10 @@ MESH:"Plaque, Atherosclerotic"	negativeCorrelation	HGNC:HMOX1
 MESH:"Plaque, Atherosclerotic"	positiveCorrelation	CHEBI:"carbonyl group"
 MESH:"Plaque, Atherosclerotic"	positiveCorrelation	CHEBI:"iron(2+)"
 MESH:"Plaque, Atherosclerotic"	positiveCorrelation	CHEBI:"low-density lipoprotein"
-MESH:"Plaque, Atherosclerotic"	positiveCorrelation	HGNC:HBB
 MESH:"Plaque, Atherosclerotic"	positiveCorrelation	MESH:Aldehydes
 MESH:"Plaque, Atherosclerotic"	positiveCorrelation	MESH:Calcium
 MESH:"Plaque, Atherosclerotic"	positiveCorrelation	MESH:Hydroxyapatites
+MESH:"Plaque, Atherosclerotic"	positiveCorrelation	p(HGNC:HBB, pmod(Ox))
 MESH:"Platelet Activation"	increasesAmountOf	CHEBI:"zinc(2+)"
 MESH:"Platelet Activation"	positiveCorrelation	CHEBI:"iron(2+)"
 MESH:"Platelet Activation"	positiveCorrelation	CHEBI:heme
@@ -1375,7 +1427,7 @@ MESH:"Platelet Aggregation"	positiveCorrelation	HGNC:SELP
 MESH:"Platelet Aggregation"	positiveCorrelation	MESH:Thrombosis
 MESH:"Platelet Count"	positiveCorrelation	HGNC:AMBP
 MESH:"Polycythemia Vera"	positiveCorrelation	MESH:Thrombosis
-MESH:"Polyradiculoneuropathy, Chronic Inflammatory Demyelinating"	positiveCorrelation	HGNC:CD59
+MESH:"Polyradiculoneuropathy, Chronic Inflammatory Demyelinating"	positiveCorrelation	p(HGNC:CD59, var("p.Cys89Tyr"))
 MESH:"Pore Forming Cytotoxic Proteins"	increasesAmountOf	GO:cytolysis
 MESH:"Porphyria, Erythropoietic"	negativeCorrelation	GO:"apoptotic process"
 MESH:"Porphyria, Erythropoietic"	negativeCorrelation	MGI:Cd163
@@ -1434,6 +1486,7 @@ MESH:"Reactive Oxygen Species"	increasesAmountOf	MESH:"Neutrophil Activation"
 MESH:"Reactive Oxygen Species"	increasesAmountOf	MESH:"Oxidative Stress"
 MESH:"Reactive Oxygen Species"	increasesAmountOf	MESH:"Platelet Activation"
 MESH:"Reactive Oxygen Species"	increasesAmountOf	MGI:Slc40a1
+MESH:"Reactive Oxygen Species"	increasesAmountOf	complex(p(HGNC:MAPK1), p(HGNC:MAPK14), p(HGNC:MAPK8))
 MESH:"Reactive Oxygen Species"	negativeCorrelation	CHEBI:acetylcysteine
 MESH:"Reactive Oxygen Species"	negativeCorrelation	MESH:"Erythrocyte Deformability"
 MESH:"Reactive Oxygen Species"	negativeCorrelation	MGI:Hpx
@@ -1457,8 +1510,10 @@ MESH:"Reactive Oxygen Species"	positiveCorrelation	MESH:Cytokines
 MESH:"Reactive Oxygen Species"	positiveCorrelation	MESH:Hypertension
 MESH:"Reactive Oxygen Species"	positiveCorrelation	MESH:Neutrophils
 MESH:"Reactive Oxygen Species"	positiveCorrelation	PFAM:"CaMKII_AD"
+MESH:"Reactive Oxygen Species"	positiveCorrelation	rxn(reactants(p(HGNC:HBB)), products(a(CHEBI:methemoglobin)))
 MESH:"Reperfusion Injury"	positiveCorrelation	CHEBI:heme
 MESH:"Reperfusion Injury"	positiveCorrelation	MESH:"Reactive Oxygen Species"
+MESH:"Salivary Glands"	increasesAmountOf	rxn(reactants(a(CHEBI:nitrate)), products(a(CHEBI:nitrite)))
 MESH:"Shock, Septic"	positiveCorrelation	MESH:"Cardiovascular Infections"
 MESH:"Shock, Traumatic"	positiveCorrelation	MESH:Hemolysis
 MESH:"Spherocytosis, Hereditary"	association	MESH:Thrombosis
@@ -1479,6 +1534,7 @@ MESH:"Transfusion Reaction"	positiveCorrelation	MESH:Death
 MESH:"Transfusion Reaction"	positiveCorrelation	MESH:Hemolysis
 MESH:"Tricuspid Valve Insufficiency"	negativeCorrelation	HGNC:HMOX1
 MESH:"Tricuspid Valve Insufficiency"	negativeCorrelation	HGNC:HP
+MESH:"Tricuspid Valve Insufficiency"	notRegulatesAmountOf	HGNC:PTGS2
 MESH:"Tricuspid Valve Insufficiency"	positiveCorrelation	HGNC:ARG1
 MESH:"Unfolded Protein Response"	positiveCorrelation	CHEBI:heme
 MESH:"Vascular Diseases"	positiveCorrelation	CHEBI:"iron(2+)"
@@ -1490,6 +1546,7 @@ MESH:"Vascular System Injuries"	negativeCorrelation	MGI:Hmox1
 MESH:"Vascular System Injuries"	positiveCorrelation	CHEBI:"iron trichloride"
 MESH:"Vascular System Injuries"	positiveCorrelation	HGNC:HBB
 MESH:"Vascular System Injuries"	positiveCorrelation	MESH:Hemolysis
+MESH:"Vascular System Injuries"	positiveCorrelation	rxn(reactants(a(CHEBI:superoxide), p(HGNC:HBB)), products(a(CHEBI:"hydrogen peroxide")))
 MESH:"Venous Thromboembolism"	positiveCorrelation	HP:"autoimmune hemolytic anemia"
 MESH:"Venous Thromboembolism"	positiveCorrelation	MESH:"Lupus Coagulation Inhibitor"
 MESH:"Wound Healing"	positiveCorrelation	HGNC:AMBP
@@ -1527,9 +1584,12 @@ MESH:Anemia	increasesAmountOf	MESH:Hypoxia
 MESH:Anemia	increasesAmountOf	MGI:Epo
 MESH:Anemia	increasesAmountOf	MGI:Gapdh
 MESH:Anemia	increasesAmountOf	MGI:Hmox1
+MESH:Anemia	increasesAmountOf	complex(a(MESH:Luciferases), p(MGI:Hif1a))
 MESH:Anemia	negativeCorrelation	HGNC:HBB
 MESH:Anemia	negativeCorrelation	MESH:"Erythrocyte Count"
 MESH:Anemia	negativeCorrelation	MGI:Eif2ak1
+MESH:Anemia	notActivityDirectlyRegulatesActivityOf	MGI:Epo
+MESH:Anemia	notRegulatesAmountOf	MESH:"Partial Pressure"
 MESH:Anemia	positiveCorrelation	CHEBI:"lead nitrate"
 MESH:Anemia	positiveCorrelation	MESH:"Acute Kidney Injury"
 MESH:Anemia	positiveCorrelation	MESH:"Hematopoiesis, Extramedullary"
@@ -1539,8 +1599,11 @@ MESH:Anemia	positiveCorrelation	MESH:Stroke
 MESH:Apoptosis	increasesAmountOf	MESH:"Cell-Derived Microparticles"
 MESH:Apoptosis	negativeCorrelation	HGNC:ALB
 MESH:Apoptosis	negativeCorrelation	MGI:Hpx
+MESH:Apoptosis	negativeCorrelation	p(HGNC:ALB, pmod(Ph, Tyr))
 MESH:Apoptosis	positiveCorrelation	MESH:"Reactive Nitrogen Species"
 MESH:Apoptosis	positiveCorrelation	MESH:"Reactive Oxygen Species"
+MESH:Apoptosis	positiveCorrelation	complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))
+MESH:Arginase	positiveCorrelation	rxn(reactants(a(CHEBI:arginine)), products(a(CHEBI:ornithine)))
 MESH:Arthritis	positiveCorrelation	HGNC:AMBP
 MESH:Atherosclerosis	negativeCorrelation	HGNC:HMOX1
 MESH:Atherosclerosis	positiveCorrelation	MESH:"Reactive Oxygen Species"
@@ -1605,9 +1668,11 @@ MESH:Hematoma	positiveCorrelation	HM:erythrophagocytosis
 MESH:Hematoma	positiveCorrelation	MESH:"Cerebral Hemorrhage"
 MESH:Hematoma	positiveCorrelation	MESH:"Complement Membrane Attack Complex"
 MESH:Hematoma	positiveCorrelation	MESH:Hemosiderin
+MESH:Hemeproteins	increasesAmountOf	rxn(reactants(a(CHEBI:nitrite)), products(a(CHEBI:"nitric oxide")))
 MESH:Hemodilution	decreasesAmountOf	CHEBI:nitrate
 MESH:Hemodilution	decreasesAmountOf	CHEBI:nitrite
 MESH:Hemoglobinuria	association	MESH:"Acute Kidney Injury"
+MESH:Hemoglobinuria	negativeCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))
 MESH:Hemoglobinuria	positiveCorrelation	MESH:"Blood Transfusion"
 MESH:Hemolysis	association	HP:"Paroxysmal nocturnal hemoglobinuria"
 MESH:Hemolysis	association	MESH:Thrombosis
@@ -1630,7 +1695,6 @@ MESH:Hemolysis	positiveCorrelation	CHEBI:methemoglobin
 MESH:Hemolysis	positiveCorrelation	GO:"complement activation"
 MESH:Hemolysis	positiveCorrelation	GO:vasoconstriction
 MESH:Hemolysis	positiveCorrelation	HGNC:ARG1
-MESH:Hemolysis	positiveCorrelation	HGNC:CD59
 MESH:Hemolysis	positiveCorrelation	HGNC:HAMP
 MESH:Hemolysis	positiveCorrelation	HGNC:HBB
 MESH:Hemolysis	positiveCorrelation	HGNC:SLC48A1
@@ -1663,6 +1727,7 @@ MESH:Hemolysis	positiveCorrelation	MESH:Sepsis
 MESH:Hemolysis	positiveCorrelation	MESH:Thalassemia
 MESH:Hemolysis	positiveCorrelation	MESH:Thrombophilia
 MESH:Hemolysis	positiveCorrelation	MESH:Thrombosis
+MESH:Hemolysis	positiveCorrelation	p(HGNC:CD59, var("p.Cys89Tyr"))
 MESH:Hemorrhage	increasesAmountOf	HM:"Oxidative damage"
 MESH:Hemorrhage	positiveCorrelation	HGNC:AMBP
 MESH:Hemorrhage	positiveCorrelation	HM:"Atheromatous lesions"
@@ -1711,6 +1776,7 @@ MESH:Inflammation	positiveCorrelation	MESH:ferrylhemoglobin
 MESH:Inflammation	positiveCorrelation	MGI:Casp1
 MESH:Inflammation	positiveCorrelation	MGI:Il1b
 MESH:Inflammation	positiveCorrelation	MGI:Nlrp3
+MESH:Inflammation	positiveCorrelation	complex(a(CHEBI:heme), p(MGI:Tlr4))
 MESH:Ischemia	increasesAmountOf	MESH:"Multiple Organ Failure"
 MESH:Ischemia	positiveCorrelation	MESH:Hemolysis
 MESH:Kidney	negativeCorrelation	HGNC:HBB
@@ -1720,6 +1786,7 @@ MESH:Leukopenia	positiveCorrelation	MESH:"Systemic Inflammatory Response Syndrom
 MESH:Leukopenia	positiveCorrelation	MESH:Sepsis
 MESH:Lipopolysaccharides	partOf	complex(a(CHEBI:heme), a(MESH:Lipopolysaccharides))
 MESH:Lipopolysaccharides	partOf	complex(a(MESH:Lipopolysaccharides), p(HGNC:HBB))
+MESH:Liver	decreasesAmountOf	GO:"IgG immunoglobulin complex"
 MESH:Luciferases	partOf	complex(a(MESH:Luciferases), p(MGI:Hif1a))
 MESH:Lymphocytes	positiveCorrelation	HGNC:AMBP
 MESH:Malaria	association	GO:"complement activation"
@@ -1735,6 +1802,8 @@ MESH:Monocytes	positiveCorrelation	HGNC:TNF
 MESH:Morbidity	negativeCorrelation	HGNC:HP
 MESH:Morbidity	positiveCorrelation	MESH:Anemia
 MESH:Mortality	negativeCorrelation	HGNC:HP
+MESH:Mortality	negativeCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))
+MESH:Mortality	negativeCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))
 MESH:Mortality	positiveCorrelation	MESH:"Blood Transfusion"
 MESH:Mortality	positiveCorrelation	MESH:Anemia
 MESH:Necrosis	negativeCorrelation	HGNC:AMBP
@@ -1772,12 +1841,13 @@ MESH:Sepsis	positiveCorrelation	MESH:Hypothermia
 MESH:Sepsis	positiveCorrelation	MESH:Leukocytosis
 MESH:Sepsis	positiveCorrelation	MESH:Leukopenia
 MESH:Sepsis	positiveCorrelation	MESH:Tachycardia
+MESH:Spleen	decreasesAmountOf	GO:"IgG immunoglobulin complex"
 MESH:Splenectomy	positiveCorrelation	HP:"Deep venous thrombosis"
 MESH:Splenectomy	positiveCorrelation	MESH:"Pulmonary Embolism"
 MESH:Splenectomy	positiveCorrelation	MESH:Thrombosis
 MESH:Stroke	negativeCorrelation	MESH:"Blood Transfusion"
-MESH:Stroke	positiveCorrelation	HGNC:CD59
 MESH:Stroke	positiveCorrelation	MESH:Anemia
+MESH:Stroke	positiveCorrelation	p(HGNC:CD59, var("p.Cys89Tyr"))
 MESH:Tachycardia	positiveCorrelation	MESH:"Systemic Inflammatory Response Syndrome"
 MESH:Tachycardia	positiveCorrelation	MESH:Sepsis
 MESH:Thalassemia	association	MESH:Thrombosis
@@ -1794,6 +1864,7 @@ MESH:Thrombophilia	association	HP:"Paroxysmal nocturnal hemoglobinuria"
 MESH:Thrombophilia	positiveCorrelation	HGNC:HBB
 MESH:Thrombophilia	positiveCorrelation	MESH:"Cell-Derived Microparticles"
 MESH:Thrombophilia	positiveCorrelation	MESH:Hemolysis
+MESH:Thrombophilia	positiveCorrelation	complex(a(CHEBI:"carbon monoxide"), a(CHEBI:heme), p(HGNC:FGA))
 MESH:Thrombosis	association	HM:"Glucose-6-phosphate dehydrogenase deficiency"
 MESH:Thrombosis	association	HM:"acute hemolytic transfusion reaction"
 MESH:Thrombosis	association	HM:"stored erythrocytes"
@@ -1817,7 +1888,6 @@ MESH:Thrombosis	negativeCorrelation	MGI:Hmox1
 MESH:Thrombosis	positiveCorrelation	CHEBI:"iron(2+)"
 MESH:Thrombosis	positiveCorrelation	CHEBI:"phosphatidyl-L-serine"
 MESH:Thrombosis	positiveCorrelation	CHEBI:heme
-MESH:Thrombosis	positiveCorrelation	HGNC:CD59
 MESH:Thrombosis	positiveCorrelation	HGNC:EPO
 MESH:Thrombosis	positiveCorrelation	HGNC:HBB
 MESH:Thrombosis	positiveCorrelation	HGNC:VWF
@@ -1839,6 +1909,7 @@ MESH:Thrombosis	positiveCorrelation	MESH:Death
 MESH:Thrombosis	positiveCorrelation	MESH:Hemolysis
 MESH:Thrombosis	positiveCorrelation	MESH:Hemostasis
 MESH:Thrombosis	positiveCorrelation	MESH:Splenectomy
+MESH:Thrombosis	positiveCorrelation	p(HGNC:CD59, var("p.Cys89Tyr"))
 MESH:Vasoconstriction	positiveCorrelation	HGNC:HBB
 MESH:eculizumab	decreases	HP:"Paroxysmal nocturnal hemoglobinuria"
 MESH:ferrylhemoglobin	increasesAmountOf	CHEBI:heme
@@ -1847,6 +1918,7 @@ MESH:ferrylhemoglobin	increasesAmountOf	HGNC:CXCL8
 MESH:ferrylhemoglobin	increasesAmountOf	MESH:"Cell Adhesion Molecules"
 MESH:ferrylhemoglobin	increasesAmountOf	MGI:Hmox1
 MESH:ferrylhemoglobin	negativeCorrelation	GO:"cellular respiration"
+MESH:ferrylhemoglobin	notRegulatesAmountOf	MESH:Cytokines
 MESH:ferrylhemoglobin	positiveCorrelation	GO:"mitochondrial depolarization"
 MESH:ferrylhemoglobin	positiveCorrelation	HM:"cytoskeletal reorganization"
 MESH:ferrylhemoglobin	positiveCorrelation	MESH:Inflammation
@@ -1854,6 +1926,8 @@ MESH:hemozoin	increasesAmountOf	GO:"leukocyte migration"
 MESH:hemozoin	increasesAmountOf	MESH:Chemokines
 MESH:hemozoin	increasesAmountOf	MESH:Cytokines
 MGI:"Hbb-b1"	positiveCorrelation	HM:"stored erythrocytes"
+MGI:Alb	notActivityDirectlyRegulatesActivityOf	MGI:Nfkb1
+MGI:Alb	notRegulatesAmountOf	MGI:Hmox1
 MGI:Alb	partOf	complex(a(MESH:"Blood Transfusion"), p(MGI:Alb))
 MGI:Bach1	decreasesAmountOf	MGI:Spic
 MGI:Bach1	increasesAmountOf	MGI:Spic
@@ -1893,6 +1967,7 @@ MGI:Hamp	negativeCorrelation	MESH:"Porphyria, Erythropoietic"
 MGI:Hamp	negativeCorrelation	MGI:Eif2ak1
 MGI:Hamp	partOf	complex(p(MGI:Hamp), p(MGI:Slc40a1))
 MGI:Hamp	positiveCorrelation	CHEBI:"lead nitrate"
+MGI:Havcr1	negativeCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))
 MGI:Havcr1	positiveCorrelation	MESH:"Blood Transfusion"
 MGI:Hif1a	partOf	complex(a(MESH:Luciferases), p(MGI:Hif1a))
 MGI:Hmgb1	decreasesAmountOf	GO:phagocytosis
@@ -1917,7 +1992,10 @@ MGI:Hmox1	negativeCorrelation	MGI:Casp1
 MGI:Hmox1	negativeCorrelation	MGI:Cox4i1
 MGI:Hmox1	negativeCorrelation	MGI:Il1b
 MGI:Hmox1	negativeCorrelation	MGI:Nlrp3
+MGI:Hmox1	negativeCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))
 MGI:Hmox1	positiveCorrelation	MESH:"Porphyria, Erythropoietic"
+MGI:Hmox1	positiveCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Alb))
+MGI:Hmox1	positiveCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))
 MGI:Hp	decreasesAmountOf	GO:vasoconstriction
 MGI:Hp	decreasesAmountOf	HM:"vaso-occlusive crisis"
 MGI:Hp	decreasesAmountOf	MESH:"Acute Kidney Injury"
@@ -1933,6 +2011,7 @@ MGI:Hp	negativeCorrelation	MGI:Ccl5
 MGI:Hp	negativeCorrelation	MGI:Icam1
 MGI:Hp	negativeCorrelation	MGI:Nfkb1
 MGI:Hp	negativeCorrelation	MGI:Vcam1
+MGI:Hp	negativeCorrelation	complex(a(CHEBI:"tin atom"), a(CHEBI:protoporphyrin))
 MGI:Hp	partOf	complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))
 MGI:Hp	partOf	complex(p(HGNC:HBB), p(MGI:Hp))
 MGI:Hp	positiveCorrelation	CHEBI:"carbon monoxide"
@@ -1949,13 +2028,14 @@ MGI:Hpx	decreasesAmountOf	MGI:Flvcr1
 MGI:Hpx	decreasesAmountOf	MGI:Gclc
 MGI:Hpx	decreasesAmountOf	MGI:Gsr
 MGI:Hpx	decreasesAmountOf	MGI:Hmox1
-MGI:Hpx	decreasesAmountOf	MGI:Pln
-MGI:Hpx	decreasesAmountOf	MGI:Ryr2
 MGI:Hpx	decreasesAmountOf	MGI:Slc40a1
 MGI:Hpx	decreasesAmountOf	MGI:Tgfb1
 MGI:Hpx	decreasesAmountOf	MGI:Tlr4
 MGI:Hpx	decreasesAmountOf	MGI:Tnf
 MGI:Hpx	decreasesAmountOf	PFAM:PDGF
+MGI:Hpx	decreasesAmountOf	complex(r(MGI:Txnrd1), r(MGI:Txnrd2), r(MGI:Txnrd3))
+MGI:Hpx	decreasesAmountOf	p(MGI:Pln, pmod(Ph, Thr, 17))
+MGI:Hpx	decreasesAmountOf	p(MGI:Ryr2, pmod(Ph, Ser, 2814))
 MGI:Hpx	increasesAmountOf	MESH:Hemoglobinuria
 MGI:Hpx	increasesAmountOf	MGI:Mmp12
 MGI:Hpx	increasesAmountOf	MGI:Mmp13
@@ -1982,10 +2062,12 @@ MGI:Hpx	negativeCorrelation	MGI:Icam1
 MGI:Hpx	negativeCorrelation	MGI:Nfkb1
 MGI:Hpx	negativeCorrelation	MGI:Tlr4
 MGI:Hpx	negativeCorrelation	MGI:Vcam1
+MGI:Hpx	negativeCorrelation	complex(a(CHEBI:"tin atom"), a(CHEBI:protoporphyrin))
 MGI:Hpx	partOf	complex(a(CHEBI:heme), p(MGI:Hpx))
 MGI:Hpx	partOf	complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))
 MGI:Hpx	partOf	complex(p(HGNC:HBB), p(MGI:Hpx))
 MGI:Hpx	positiveCorrelation	CHEBI:"carbon monoxide"
+MGI:Hpx	positiveCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))
 MGI:Hrg	decreasesAmountOf	CHEBI:"phosphatidyl-L-serine"
 MGI:Hrg	decreasesAmountOf	HM:Immunothrombosis
 MGI:Hrg	decreasesAmountOf	MESH:Hemolysis
@@ -1999,14 +2081,20 @@ MGI:Il1b	positiveCorrelation	MGI:Nlrp3
 MGI:Il1b	positiveCorrelation	MGI:P2rx4
 MGI:Il1b	positiveCorrelation	MGI:P2rx7
 MGI:Il1b	positiveCorrelation	MGI:Pycard
+MGI:Il6	negativeCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))
+MGI:Il6	positiveCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Alb))
+MGI:Il6	positiveCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))
+MGI:Lcn2	negativeCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))
 MGI:Lcn2	positiveCorrelation	MESH:"Blood Transfusion"
 MGI:Lrp1	negativeCorrelation	MESH:"Porphyria, Erythropoietic"
 MGI:Mb	positiveCorrelation	MESH:Rhabdomyolysis
+MGI:Mki67	negativeCorrelation	complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))
 MGI:Mki67	positiveCorrelation	GO:"tissue regeneration"
 MGI:Mki67	positiveCorrelation	MESH:"Blood Transfusion"
 MGI:Nfkb1	negativeCorrelation	CHEBI:"carbon monoxide"
 MGI:Nfkb1	negativeCorrelation	MGI:Hp
 MGI:Nfkb1	negativeCorrelation	MGI:Hpx
+MGI:Nfkb1	negativeCorrelation	complex(a(CHEBI:"tin atom"), a(CHEBI:protoporphyrin))
 MGI:Nlrp3	negativeCorrelation	MGI:Hmox1
 MGI:Nlrp3	positiveCorrelation	CHEBI:heme
 MGI:Nlrp3	positiveCorrelation	MESH:Inflammation
@@ -2019,9 +2107,12 @@ MGI:P2rx4	positiveCorrelation	MGI:Nlrp3
 MGI:P2rx7	positiveCorrelation	CHEBI:heme
 MGI:P2rx7	positiveCorrelation	MGI:Il1b
 MGI:P2rx7	positiveCorrelation	MGI:Nlrp3
+MGI:Pln	hasVariant	p(MGI:Pln, pmod(Ph, Thr, 17))
 MGI:Prdx1	partOf	complex(p(MGI:Prdx1), p(MGI:Prdx2), p(MGI:Prdx3), p(MGI:Prdx4), p(MGI:Prdx5), p(MGI:Prdx6))
 MGI:Prdx2	decreasesAmountOf	CHEBI:"hydrogen peroxide"
 MGI:Prdx2	decreasesAmountOf	MESH:"Oxidative Stress"
+MGI:Prdx2	hasVariant	p(MGI:Prdx2, pmod(ADPRib))
+MGI:Prdx2	hasVariant	p(MGI:Prdx2, pmod(Ox))
 MGI:Prdx2	negativeCorrelation	CHEBI:"hydrogen peroxide"
 MGI:Prdx2	negativeCorrelation	CHEBI:"lipid hydroperoxide"
 MGI:Prdx2	negativeCorrelation	CHEBI:heme
@@ -2032,10 +2123,6 @@ MGI:Prdx2	negativeCorrelation	MESH:"Oxidative Stress"
 MGI:Prdx2	negativeCorrelation	MESH:"Reactive Oxygen Species"
 MGI:Prdx2	negativeCorrelation	MESH:Hemolysis
 MGI:Prdx2	partOf	complex(p(MGI:Prdx1), p(MGI:Prdx2), p(MGI:Prdx3), p(MGI:Prdx4), p(MGI:Prdx5), p(MGI:Prdx6))
-MGI:Prdx2	positiveCorrelation	CHEBI:"carbon monoxide"
-MGI:Prdx2	positiveCorrelation	CHEBI:"hydrogen peroxide"
-MGI:Prdx2	positiveCorrelation	CHEBI:glucose
-MGI:Prdx2	positiveCorrelation	HM:"hemoglobin beta-93-cysteine"
 MGI:Prdx2	positiveCorrelation	HM:"nitrite oxidation"
 MGI:Prdx2	positiveCorrelation	HM:"stored erythrocytes"
 MGI:Prdx2	positiveCorrelation	MESH:"Erythrocyte Deformability"
@@ -2044,6 +2131,7 @@ MGI:Prdx4	partOf	complex(p(MGI:Prdx1), p(MGI:Prdx2), p(MGI:Prdx3), p(MGI:Prdx4),
 MGI:Prdx5	partOf	complex(p(MGI:Prdx1), p(MGI:Prdx2), p(MGI:Prdx3), p(MGI:Prdx4), p(MGI:Prdx5), p(MGI:Prdx6))
 MGI:Prdx6	partOf	complex(p(MGI:Prdx1), p(MGI:Prdx2), p(MGI:Prdx3), p(MGI:Prdx4), p(MGI:Prdx5), p(MGI:Prdx6))
 MGI:Pycard	positiveCorrelation	MGI:Il1b
+MGI:Ryr2	hasVariant	p(MGI:Ryr2, pmod(Ph, Ser, 2814))
 MGI:Sele	positiveCorrelation	CHEBI:heme
 MGI:Serpina1a	decreasesAmountOf	MGI:Cxcl1
 MGI:Siglec1	positiveCorrelation	MGI:Spic
@@ -2056,6 +2144,8 @@ MGI:Slc40a1	positiveCorrelation	HM:erythrophagocytosis
 MGI:Slc40a1	positiveCorrelation	MESH:"NADPH Oxidase"
 MGI:Slc40a1	positiveCorrelation	MESH:"Porphyria, Erythropoietic"
 MGI:Slc48a1	positiveCorrelation	HM:erythrophagocytosis
+MGI:Sod1	notRegulatesAmountOf	CHEBI:heme
+MGI:Sod1	notRegulatesAmountOf	MESH:"Erythrocyte Deformability"
 MGI:Spic	positiveCorrelation	HP:macrophage
 MGI:Spic	positiveCorrelation	MGI:Siglec1
 MGI:Sqstm1	negativeCorrelation	CHEBI:heme
@@ -2076,6 +2166,7 @@ MGI:Vcam1	negativeCorrelation	MGI:Hpx
 MGI:Vcam1	positiveCorrelation	CHEBI:heme
 PFAM:"CaMKII_AD"	negativeCorrelation	HM:"Calcium Homeostasis"
 PFAM:"CaMKII_AD"	positiveCorrelation	MESH:"Reactive Oxygen Species"
+PFAM:"Pkinase_C"	hasVariant	p(PFAM:"Pkinase_C", pmod(Ph))
 PFAM:"Pkinase_C"	negativeCorrelation	HGNC:SERPINA1
 PFAM:C1q	partOf	complex(a(CHEBI:heme), p(PFAM:C1q))
 PFAM:Ferritin	positiveCorrelation	HM:"Erythrocytes, lysed"
@@ -2093,6 +2184,137 @@ RGD:Ftl1	positiveCorrelation	HM:"Erythrocytes, lysed"
 RGD:Hmox1	decreasesAmountOf	MESH:"Reactive Oxygen Species"
 RGD:Mapk1	positiveCorrelation	GO:"cell migration"
 RGD:Mapk1	positiveCorrelation	GO:"cell proliferation"
+complex(a(CHEBI:"carbon monoxide"), a(CHEBI:heme), p(HGNC:FGA))	positiveCorrelation	MESH:Thrombophilia
+complex(a(CHEBI:"carbon monoxide"), p(HGNC:HBB))	positiveCorrelation	HGNC:HMOX1
+complex(a(CHEBI:"desferrioxamine B"), a(CHEBI:heme))	decreasesAmountOf	MGI:Tfrc
+complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme))	negativeCorrelation	MESH:"Cell Survival"
+complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))	negativeCorrelation	MESH:"Cell Survival"
+complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))	positiveCorrelation	CHEBI:"3-nitrotyrosine"
+complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))	positiveCorrelation	CHEBI:"carbonyl group"
+complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))	positiveCorrelation	CHEBI:malonaldehyde
+complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))	positiveCorrelation	MESH:Apoptosis
+complex(a(CHEBI:"iron trichloride"), a(CHEBI:methemoglobin))	positiveCorrelation	HM:"Endothelial dysfunction"
+complex(a(CHEBI:"iron(2+)"), a(CHEBI:heme), a(MESH:"Reactive Oxygen Species"))	positiveCorrelation	HGNC:HBB
+complex(a(CHEBI:"lead(2+)"), a(CHEBI:thiol))	decreasesAmountOf	HGNC:ALAD
+complex(a(CHEBI:"nitric oxide"), p(HGNC:HBB))	positiveCorrelation	HGNC:HBB
+complex(a(CHEBI:"oxidised LDL"), a(MESH:"Glutathione Peroxidase"))	decreasesAmountOf	CHEBI:"lipid hydroperoxide"
+complex(a(CHEBI:"oxidised LDL"), a(MESH:"Glutathione Peroxidase"))	decreasesAmountOf	p(HGNC:HBB, pmod(Ox))
+complex(a(CHEBI:"tin atom"), a(CHEBI:protoporphyrin))	activityDirectlyNegativelyRegulatesActivityOf	RGD:Hmox1
+complex(a(CHEBI:"tin atom"), a(CHEBI:protoporphyrin))	negativeCorrelation	MGI:Hp
+complex(a(CHEBI:"tin atom"), a(CHEBI:protoporphyrin))	negativeCorrelation	MGI:Hpx
+complex(a(CHEBI:"tin atom"), a(CHEBI:protoporphyrin))	negativeCorrelation	MGI:Nfkb1
+complex(a(CHEBI:acetylcysteine), a(CHEBI:heme))	decreasesAmountOf	MGI:Hmox1
+complex(a(CHEBI:acetylcysteine), a(CHEBI:heme))	decreasesAmountOf	MGI:Slc40a1
+complex(a(CHEBI:allopurinol), a(CHEBI:heme))	decreasesAmountOf	MGI:Slc40a1
+complex(a(CHEBI:apocynin), a(CHEBI:heme))	decreasesAmountOf	MGI:Slc40a1
+complex(a(CHEBI:heme), a(CHEBI:thioester))	increasesAmountOf	HGNC:C3
+complex(a(CHEBI:heme), a(HM:"Atheroma lipid"))	increasesAmountOf	CHEBI:"lipid hydroperoxide"
+complex(a(CHEBI:heme), a(HM:"Atheroma lipid"))	increasesAmountOf	HGNC:HMOX1
+complex(a(CHEBI:heme), a(HM:"Atheroma lipid"))	increasesAmountOf	MESH:"Lipid Peroxidation"
+complex(a(CHEBI:heme), a(HM:"Atheroma lipid"))	increasesAmountOf	MESH:"Thiobarbituric Acid Reactive Substances"
+complex(a(CHEBI:heme), a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"))	decreasesAmountOf	HGNC:CD14
+complex(a(CHEBI:heme), a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"))	decreasesAmountOf	HGNC:CD86
+complex(a(CHEBI:heme), a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"))	decreasesAmountOf	HGNC:IL1B
+complex(a(CHEBI:heme), a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"))	decreasesAmountOf	HGNC:IL6
+complex(a(CHEBI:heme), a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"))	decreasesAmountOf	HGNC:TNF
+complex(a(CHEBI:heme), a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"))	decreasesAmountOf	SCOMP:"MHC Class II Complex"
+complex(a(CHEBI:heme), a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"))	increasesAmountOf	HGNC:IL10
+complex(a(CHEBI:heme), a(MESH:"ethyl 6-(N-(2-chloro-4-fluorophenyl)sulfamoyl)cyclohex-1-ene-1-carboxylate"))	increasesAmountOf	HGNC:MRC1
+complex(a(CHEBI:heme), a(MESH:Lipopolysaccharides))	increasesAmountOf	HGNC:IL6
+complex(a(CHEBI:heme), a(MESH:Lipopolysaccharides))	increasesAmountOf	HGNC:TNF
+complex(a(CHEBI:heme), p(HGNC:ALB))	activityDirectlyPositivelyRegulatesActivityOf	CHEBI:"hydrogen peroxide"
+complex(a(CHEBI:heme), p(HGNC:ALB))	negativeCorrelation	GO:"inflammatory response"
+complex(a(CHEBI:heme), p(HGNC:ALB))	positiveCorrelation	CHEBI:"adenosine triphosphate"
+complex(a(CHEBI:heme), p(HGNC:ALB))	positiveCorrelation	GO:"cellular respiration"
+complex(a(CHEBI:heme), p(HGNC:ALB))	positiveCorrelation	HGNC:HMOX1
+complex(a(CHEBI:heme), p(HGNC:HPX))	decreasesAmountOf	CHEBI:heme
+complex(a(CHEBI:heme), p(INTERPRO:"NEAT domain"))	activityDirectlyNegativelyRegulatesActivityOf	CHEBI:Peroxidase
+complex(a(CHEBI:heme), p(INTERPRO:"NEAT domain"))	decreasesAmountOf	MESH:"Oxidative Stress"
+complex(a(CHEBI:heme), p(INTERPRO:"NEAT domain"))	increasesAmountOf	CHEBI:"nitric oxide"
+complex(a(CHEBI:heme), p(MGI:Hpx))	decreasesAmountOf	MGI:Acta2
+complex(a(CHEBI:heme), p(MGI:Hpx))	decreasesAmountOf	MGI:Tgfb1
+complex(a(CHEBI:heme), p(MGI:Hpx))	decreasesAmountOf	MGI:Timp2
+complex(a(CHEBI:heme), p(MGI:Hpx))	decreasesAmountOf	PFAM:PDGF
+complex(a(CHEBI:heme), p(MGI:Hpx))	increasesAmountOf	INTERPRO:"Peptidase M10A"
+complex(a(CHEBI:heme), p(MGI:Hpx))	increasesAmountOf	MGI:Csf1
+complex(a(CHEBI:heme), p(MGI:Tlr4))	positiveCorrelation	MESH:Inflammation
+complex(a(CHEBI:heme), p(PFAM:C1q))	activityDirectlyNegativelyRegulatesActivityOf	HGNC:C3
+complex(a(CHEBI:hemin), p(HGNC:HPX))	decreasesAmountOf	HM:"oxidative reactions"
+complex(a(CHEBI:hemin), p(HGNC:SERPINA1))	notRegulatesAmountOf	HGNC:LRP1
+complex(a(CHEBI:hemin), p(HGNC:SERPINA1))	notRegulatesAmountOf	HGNC:TLR2
+complex(a(CHEBI:hemin), p(HGNC:SERPINA1))	notRegulatesAmountOf	HGNC:TLR4
+complex(a(CHEBI:lipopolysaccharide), p(HGNC:TLR4))	increasesAmountOf	MESH:"Immunity, Innate"
+complex(a(CHEBI:lipopolysaccharide), p(HGNC:TLR4))	increasesAmountOf	MESH:Hemostasis
+complex(a(HM:"Atheroma lipid"), p(HGNC:HBB))	increasesAmountOf	HGNC:HMOX1
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb))	notRegulatesAmountOf	CHEBI:heme
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb))	notRegulatesAmountOf	HGNC:HBB
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb))	notRegulatesAmountOf	MGI:Hp
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb))	notRegulatesAmountOf	MGI:Hpx
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb))	positiveCorrelation	CHEBI:"iron(2+)"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb))	positiveCorrelation	MGI:Hmox1
+complex(a(MESH:"Blood Transfusion"), p(MGI:Alb))	positiveCorrelation	MGI:Il6
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))	negativeCorrelation	CHEBI:"iron(2+)"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))	negativeCorrelation	MESH:Hemoglobinuria
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))	negativeCorrelation	MESH:Mortality
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))	negativeCorrelation	MGI:Havcr1
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))	negativeCorrelation	MGI:Hmox1
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))	negativeCorrelation	MGI:Il6
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))	negativeCorrelation	MGI:Lcn2
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))	negativeCorrelation	MGI:Mki67
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))	positiveCorrelation	CHEBI:"iron(2+)"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hp))	positiveCorrelation	HGNC:HBB
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))	negativeCorrelation	CHEBI:heme
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))	negativeCorrelation	MESH:Mortality
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))	positiveCorrelation	CHEBI:"iron(2+)"
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))	positiveCorrelation	MGI:Hmox1
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))	positiveCorrelation	MGI:Hpx
+complex(a(MESH:"Blood Transfusion"), p(MGI:Hpx))	positiveCorrelation	MGI:Il6
+complex(a(MESH:"Reactive Oxygen Species"), p(HGNC:HBB))	increasesAmountOf	MESH:ferrylhemoglobin
+complex(a(MESH:"diferric transferrin"), p(HGNC:TFRC))	increasesAmountOf	MESH:Erythropoiesis
+complex(a(MESH:"haptoglobin-hemoglobin complex"), p(HGNC:CD163))	increasesAmountOf	MESH:Endocytosis
+complex(a(MESH:Lipopolysaccharides), p(HGNC:HBB))	increasesAmountOf	MESH:Cytokines
+complex(p(HGNC:CD47), p(HGNC:SIRPA))	negativeCorrelation	HM:erythrophagocytosis
+complex(p(HGNC:F13A1), p(HGNC:F13B))	decreasesAmountOf	MESH:"Clot Retraction"
+complex(p(HGNC:F13A1), p(HGNC:F13B))	increasesAmountOf	HM:"fibrin monomer cross-linking"
+complex(p(HGNC:F3), p(HGNC:F7))	increasesAmountOf	HGNC:F10
+complex(p(HGNC:HBB), p(MGI:Hp))	decreasesAmountOf	MESH:"Blood Pressure"
+complex(p(HGNC:HBB), p(MGI:Hp))	decreasesAmountOf	MESH:"Glomerular Filtration Rate"
+complex(p(HGNC:HBB), p(MGI:Hp))	decreasesAmountOf	MESH:Hemoglobinuria
+complex(p(HGNC:HBB), p(MGI:Hp))	decreasesAmountOf	MESH:Hypertension
+complex(p(HGNC:HBB), p(MGI:Hp))	increasesAmountOf	HM:"nitric oxide consumption"
+complex(p(HGNC:HBB), p(MGI:Hpx))	increasesAmountOf	MESH:"Blood Pressure"
+complex(p(HGNC:HP), p(INTERPRO:"NEAT domain"))	activityDirectlyNegativelyRegulatesActivityOf	CHEBI:Peroxidase
+complex(p(HGNC:HP), p(INTERPRO:"NEAT domain"))	decreasesAmountOf	CHEBI:heme
+complex(p(HGNC:MAPK1), p(HGNC:MAPK14), p(HGNC:MAPK8))	increasesAmountOf	HGNC:TNF
+complex(p(MGI:Hamp), p(MGI:Slc40a1))	decreasesAmountOf	MGI:Slc40a1
+p(HGNC:ALB, pmod(Ph, Tyr))	activityDirectlyNegativelyRegulatesActivityOf	complex(a(CHEBI:"hydrogen peroxide"), a(CHEBI:heme), a(CHEBI:nitrite))
+p(HGNC:ALB, pmod(Ph, Tyr))	decreasesAmountOf	CHEBI:"3-nitrotyrosine"
+p(HGNC:ALB, pmod(Ph, Tyr))	decreasesAmountOf	MESH:"Lipid Peroxidation"
+p(HGNC:ALB, pmod(Ph, Tyr))	decreasesAmountOf	MESH:"Protein Carbonylation"
+p(HGNC:ALB, pmod(Ph, Tyr))	negativeCorrelation	MESH:Apoptosis
+p(HGNC:ALB, pmod(Ph, Tyr))	positiveCorrelation	MESH:"Cell Survival"
+p(HGNC:ALB, var("tyr"))	activityDirectlyNegativelyRegulatesActivityOf	MESH:"Reactive Nitrogen Species"
+p(HGNC:ALB, var("tyr"))	decreasesAmountOf	HM:"Heme cytotoxicity"
+p(HGNC:CD59, var("p.Cys89Tyr"))	increasesAmountOf	GO:"platelet activation"
+p(HGNC:CD59, var("p.Cys89Tyr"))	increasesAmountOf	HGNC:HBB
+p(HGNC:CD59, var("p.Cys89Tyr"))	increasesAmountOf	HGNC:SELP
+p(HGNC:CD59, var("p.Cys89Tyr"))	increasesAmountOf	HP:Hypercoagulability
+p(HGNC:CD59, var("p.Cys89Tyr"))	increasesAmountOf	MESH:"Cell-Derived Microparticles"
+p(HGNC:CD59, var("p.Cys89Tyr"))	increasesAmountOf	MESH:Stroke
+p(HGNC:CD59, var("p.Cys89Tyr"))	notRegulatesAmountOf	MESH:"Complement Membrane Attack Complex"
+p(HGNC:CD59, var("p.Cys89Tyr"))	positiveCorrelation	HM:"Monocyte-platelet aggregation"
+p(HGNC:CD59, var("p.Cys89Tyr"))	positiveCorrelation	MESH:"Complement Membrane Attack Complex"
+p(HGNC:CD59, var("p.Cys89Tyr"))	positiveCorrelation	MESH:"Guillain-Barre Syndrome"
+p(HGNC:CD59, var("p.Cys89Tyr"))	positiveCorrelation	MESH:"Polyradiculoneuropathy, Chronic Inflammatory Demyelinating"
+p(HGNC:CD59, var("p.Cys89Tyr"))	positiveCorrelation	MESH:Hemolysis
+p(HGNC:CD59, var("p.Cys89Tyr"))	positiveCorrelation	MESH:Stroke
+p(HGNC:CD59, var("p.Cys89Tyr"))	positiveCorrelation	MESH:Thrombosis
+p(HGNC:HBB, pmod(Ox))	positiveCorrelation	MESH:"Plaque, Atherosclerotic"
+p(MGI:Prdx2, pmod(ADPRib))	positiveCorrelation	CHEBI:glucose
+p(MGI:Prdx2, pmod(ADPRib))	positiveCorrelation	HM:"hemoglobin beta-93-cysteine"
+p(MGI:Prdx2, pmod(Ox))	positiveCorrelation	CHEBI:"carbon monoxide"
+p(MGI:Prdx2, pmod(Ox))	positiveCorrelation	CHEBI:"hydrogen peroxide"
+p(MGI:Prdx2, pmod(Ox))	positiveCorrelation	HM:"stored erythrocytes"
 rxn(reactants(a(CHEBI:"hydrogen peroxide"), a(CHEBI:"iron(2+)")), products(a(MESH:"Hydroxyl Radical")))	hasProduct	MESH:"Hydroxyl Radical"
 rxn(reactants(a(CHEBI:"hydrogen peroxide"), a(CHEBI:"iron(2+)")), products(a(MESH:"Hydroxyl Radical")))	hasReactant	CHEBI:"hydrogen peroxide"
 rxn(reactants(a(CHEBI:"hydrogen peroxide"), a(CHEBI:"iron(2+)")), products(a(MESH:"Hydroxyl Radical")))	hasReactant	CHEBI:"iron(2+)"
@@ -2113,8 +2335,10 @@ rxn(reactants(a(CHEBI:"nitric oxide"), p(HGNC:HBB)), products(a(CHEBI:methemoglo
 rxn(reactants(a(CHEBI:"nitric oxide"), p(HGNC:HBB)), products(a(CHEBI:methemoglobin), a(CHEBI:nitrate)))	hasProduct	CHEBI:nitrate
 rxn(reactants(a(CHEBI:"nitric oxide"), p(HGNC:HBB)), products(a(CHEBI:methemoglobin), a(CHEBI:nitrate)))	hasReactant	CHEBI:"nitric oxide"
 rxn(reactants(a(CHEBI:"nitric oxide"), p(HGNC:HBB)), products(a(CHEBI:methemoglobin), a(CHEBI:nitrate)))	hasReactant	HGNC:HBB
+rxn(reactants(a(CHEBI:arginine)), products(a(CHEBI:ornithine)))	decreasesAmountOf	CHEBI:"nitric oxide"
 rxn(reactants(a(CHEBI:arginine)), products(a(CHEBI:ornithine)))	hasProduct	CHEBI:ornithine
 rxn(reactants(a(CHEBI:arginine)), products(a(CHEBI:ornithine)))	hasReactant	CHEBI:arginine
+rxn(reactants(a(CHEBI:arginine)), products(a(CHEBI:ornithine)))	positiveCorrelation	MESH:Arginase
 rxn(reactants(a(CHEBI:deoxyhemoglobin), a(CHEBI:nitrite)), products(a(HM:"heme-NO species")))	hasProduct	HM:"heme-NO species"
 rxn(reactants(a(CHEBI:deoxyhemoglobin), a(CHEBI:nitrite)), products(a(HM:"heme-NO species")))	hasReactant	CHEBI:deoxyhemoglobin
 rxn(reactants(a(CHEBI:deoxyhemoglobin), a(CHEBI:nitrite)), products(a(HM:"heme-NO species")))	hasReactant	CHEBI:nitrite
@@ -2134,6 +2358,7 @@ rxn(reactants(a(CHEBI:nitrite)), products(a(CHEBI:"nitric oxide")))	hasReactant	
 rxn(reactants(a(CHEBI:superoxide), p(HGNC:HBB)), products(a(CHEBI:"hydrogen peroxide")))	hasProduct	CHEBI:"hydrogen peroxide"
 rxn(reactants(a(CHEBI:superoxide), p(HGNC:HBB)), products(a(CHEBI:"hydrogen peroxide")))	hasReactant	CHEBI:superoxide
 rxn(reactants(a(CHEBI:superoxide), p(HGNC:HBB)), products(a(CHEBI:"hydrogen peroxide")))	hasReactant	HGNC:HBB
+rxn(reactants(a(CHEBI:superoxide), p(HGNC:HBB)), products(a(CHEBI:"hydrogen peroxide")))	positiveCorrelation	MESH:"Vascular System Injuries"
 rxn(reactants(a(HM:"Atheroma lipid"), a(HM:ferrihemoglobin)), products(a(CHEBI:"lipid hydroperoxide")))	hasProduct	CHEBI:"lipid hydroperoxide"
 rxn(reactants(a(HM:"Atheroma lipid"), a(HM:ferrihemoglobin)), products(a(CHEBI:"lipid hydroperoxide")))	hasReactant	HM:"Atheroma lipid"
 rxn(reactants(a(HM:"Atheroma lipid"), a(HM:ferrihemoglobin)), products(a(CHEBI:"lipid hydroperoxide")))	hasReactant	HM:ferrihemoglobin
@@ -2142,3 +2367,4 @@ rxn(reactants(a(HM:"Atheroma lipid"), a(HM:ferrihemoglobin)), products(a(MESH:"T
 rxn(reactants(a(HM:"Atheroma lipid"), a(HM:ferrihemoglobin)), products(a(MESH:"Thiobarbituric Acid Reactive Substances")))	hasReactant	HM:ferrihemoglobin
 rxn(reactants(p(HGNC:HBB)), products(a(CHEBI:methemoglobin)))	hasProduct	CHEBI:methemoglobin
 rxn(reactants(p(HGNC:HBB)), products(a(CHEBI:methemoglobin)))	hasReactant	HGNC:HBB
+rxn(reactants(p(HGNC:HBB)), products(a(CHEBI:methemoglobin)))	positiveCorrelation	MESH:"Reactive Oxygen Species"
