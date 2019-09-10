@@ -1,0 +1,3275 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_26875449.bel",
+      "version": "1.0.2"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_26875449.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In cases of congenital hemoglobinopathies such as sickle cell disease, deficiencies in complement system regulators such as paroxysmal nocturnal hemoglobinuria, and many other disorders, erythrocytes can lyse and liberate large quantities of hemoglobin.",
+      "key": "1e13c4010d1b3071ffac05ba997c1dcb7ecb0289975e365c909eb3f4fbe6bd79d1d457da7c40240ac820ebea8c2f75d7aa3c7315bbc5fbb1a18f36a68a120f01",
+      "line": 93,
+      "relation": "positiveCorrelation",
+      "source": 51,
+      "target": 40
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In cases of congenital hemoglobinopathies such as sickle cell disease, deficiencies in complement system regulators such as paroxysmal nocturnal hemoglobinuria, and many other disorders, erythrocytes can lyse and liberate large quantities of hemoglobin.",
+      "key": "0691941edc0617c17d4bf890dedfcfd6849a05bfe7ad8f55f52e8a93bfd2446089fd991a906457b0dd5f0f609d7ebe37fd0e4666fcb2430fbb4fdf55c3d7d392",
+      "line": 93,
+      "relation": "positiveCorrelation",
+      "source": 40,
+      "target": 51
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Extracellular hemoglobin and heme are pro-oxidative, proinflammatory, and cytotoxic [10–12], and can contribute to the pathology of hemolytic diseases.",
+      "key": "e60497d9ca75857d607a549aac857134095eae530b1e4cfcd3f6495d2acfa4db05afd7284689279daa0bd313425472323a4426862b68b18af2144c00bd7b3833",
+      "line": 99,
+      "relation": "increases",
+      "source": 40,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Extracellular hemoglobin and heme are pro-oxidative, proinflammatory, and cytotoxic [10–12], and can contribute to the pathology of hemolytic diseases.",
+      "key": "57d6e33a0f042a8ff3d07a9a0eb18c72eea67cf1562b821b441021bdf7281644c10ad8dfc216084f26bf403407b5f676e792352f0984dc2f8bdf6710b734d88e",
+      "line": 100,
+      "relation": "increases",
+      "source": 40,
+      "target": 57
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Extracellular hemoglobin and heme are pro-oxidative, proinflammatory, and cytotoxic [10–12], and can contribute to the pathology of hemolytic diseases.",
+      "key": "c78474f2b9e53d6653e7018b5b0ff30ec480616b1ae0838d213051c81fbf7948f28e92d093b833fbd1ba31d42c6c48243dab1841b5be2478ce9501b9956725a0",
+      "line": 101,
+      "relation": "increases",
+      "source": 40,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Extracellular hemoglobin and heme are pro-oxidative, proinflammatory, and cytotoxic [10–12], and can contribute to the pathology of hemolytic diseases.",
+      "key": "29ef3b7dc6908a4f64647b46abb4d2e8bac6b2702454991b1ac43c14dab527c457d089ef39d05a8b5f2d6c6f8838607a9b9bf1411879c35e5e2d7460e05c7d0c",
+      "line": 102,
+      "relation": "increases",
+      "source": 0,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Extracellular hemoglobin and heme are pro-oxidative, proinflammatory, and cytotoxic [10–12], and can contribute to the pathology of hemolytic diseases.",
+      "key": "26676cf9bda12f4a6331de98960fd133ed5ab8cc99a324fdb723989ff4cf51f67b42ba4388cd2d5d60dbcf7c90b11101d176359858420088f25c649978789dac",
+      "line": 103,
+      "relation": "increases",
+      "source": 0,
+      "target": 57
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Extracellular hemoglobin and heme are pro-oxidative, proinflammatory, and cytotoxic [10–12], and can contribute to the pathology of hemolytic diseases.",
+      "key": "f787617a4fed7ff29707e32618b981c002057d5db39156000082361fa1893905ab2f5e990c6c42ce49a03d769ebbeaad45037a772f292cf7563c7298ce38c561",
+      "line": 104,
+      "relation": "increases",
+      "source": 0,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Most studies concerning the pathophysiological roles of heme have focused on the protective effect of the heme-degrading enzyme, heme oxygenase 1 (HO-1) [25] (Box 2), and on the effect of this danger-associated molecule on cells, leading to oxidative stress, TLR4 signaling [26,27], and NLRP3 inflammasome activation [28] (Box 4).",
+      "key": "37d623dbdc7e1d9e23533b8fd3f3aa26c999f557cc972c7bce0f0b91f3f3fe60ff4ab9926988d196ddf630d967f490beb7563d78adbc6dfcbe91820c2c4a5503",
+      "line": 138,
+      "relation": "increases",
+      "source": 0,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Most studies concerning the pathophysiological roles of heme have focused on the protective effect of the heme-degrading enzyme, heme oxygenase 1 (HO-1) [25] (Box 2), and on the effect of this danger-associated molecule on cells, leading to oxidative stress, TLR4 signaling [26,27], and NLRP3 inflammasome activation [28] (Box 4).",
+      "key": "fdf4aacc9cb31e91e5276271a5aef60418d53c97d040bc16ec077d3082c0ed084a4a7891db437d0dd44a9c01140b923bf705820921a22dff01bd407043aaa1b9",
+      "line": 139,
+      "relation": "increases",
+      "source": 0,
+      "target": 44
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Most studies concerning the pathophysiological roles of heme have focused on the protective effect of the heme-degrading enzyme, heme oxygenase 1 (HO-1) [25] (Box 2), and on the effect of this danger-associated molecule on cells, leading to oxidative stress, TLR4 signaling [26,27], and NLRP3 inflammasome activation [28] (Box 4).",
+      "key": "31e5bd8be2cfc67df5790bcca74750f44a5384a27d2e9e849aa7703625cc52fc18cb7eeb25c18a3fb3340b88ad1dadbe1b32b0b353699c38d21e6aa4be0658cc",
+      "line": 140,
+      "relation": "increases",
+      "source": 0,
+      "target": 45
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "For example, one of the severe complications of sickle-cell disease is vaso-occlusion, an outcome that can be triggered in mice upon heme administration [27,32].",
+      "key": "c12fb3ba16f4ab75d282f4f10d0a243f95ddfb0969cd02c9a0cdeca8a3f8058b234471ad913c7a850d567de35833723952f07fc374b413e56b72aea01d4db551",
+      "line": 147,
+      "relation": "increases",
+      "source": 0,
+      "target": 50
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme is one of the factors capable of inducing stimulation and damage of endothelium, promoting the recruitment of neutrophils and sickle-cell erythro- cytes, and subsequently prompting a vaso-occlusive crisis.",
+      "key": "1969202b1f6671b04267f358f0865034fe1b615f02f33cc9597056a22670d47b74e716e05e856d10e3e04e8fe341a96d618302e35fb42b52885004587efea5f8",
+      "line": 155,
+      "relation": "increases",
+      "source": 0,
+      "target": 50
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme may be implicated and contribute to the development of (i) bp(MESH:",
+      "key": "8a8bf8b5e2d4d26da0b0cf365546ceb2e5e11050e8b82ec985d51613620feb10f1221614fb6e26a7c75deb89fb1dd6e6dfc794b22de865c9653f7ba618e71228",
+      "line": 340,
+      "relation": "increases",
+      "source": 0,
+      "target": 50
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme is one of the factors capable of inducing stimulation and damage of endothelium, promoting the recruitment of neutrophils and sickle-cell erythro- cytes, and subsequently prompting a vaso-occlusive crisis.",
+      "key": "d871b7e296f7be7eee2d6a407f70bfdf2067c6864dec5f67427e289df231346dd79f2c6b56ec7971b09409d8a9f7c1e6aca218c4654b4c2a449dd4308ca284e9",
+      "line": 153,
+      "relation": "increases",
+      "source": 0,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme is one of the factors capable of inducing stimulation and damage of endothelium, promoting the recruitment of neutrophils and sickle-cell erythro- cytes, and subsequently prompting a vaso-occlusive crisis.",
+      "key": "e79a35f5c3b608b112f6d72dc381f0815f1751088410cdd8e44cd0e514cf628e2c31a746a58fdb2e6476f5c3f31ebf1e21b45a196b4f27bf65af48a1ff418d47",
+      "line": 154,
+      "relation": "increases",
+      "source": 0,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Moreover, in vitro studies have demonstrated that heme binds to human platelets and induces platelet activation and aggregation [37–39].",
+      "key": "d77946eb5e16f478f40aa2212f53cc163621caaa78e9b90c2d820bc76e5297a85c535b82bde3bbd8e5424abf9d812197017ee2369c55a8fe9e646c47d4c20d51",
+      "line": 160,
+      "relation": "increases",
+      "source": 0,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Moreover, in vitro studies have demonstrated that heme binds to human platelets and induces platelet activation and aggregation [37–39].",
+      "key": "7d799378020fcff827891d843833e4cad22c7934692b939d7fd9ccbf8a591fe5c74666afdda202ee618d14813e2e9a2f6f7b3b03f859347ee956bb86008e70de",
+      "line": 161,
+      "relation": "increases",
+      "source": 0,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme significantly reduced FVIII cofactor activity by inhibiting its interaction with activated factor IX(FIXa) in vitro.",
+      "key": "dea833376276f7cbbed9c39fcefb8b56d1ca26f9eed8ee8034fa55c6100321c5507512df7fee153c5ecb31cbc223041010b2bb4ede0c315df199520de5b2e430",
+      "line": 166,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "decreases",
+      "source": 0,
+      "target": 39
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Taken sequentially, it appears that the release of heme under hemolytic conditions initiates the extrinsic pathway of coagulation through the upregulation of TF on endothelial cells and leukocytes, but subsequently blocks the propagation of coagulation by inhibiting FVIII and FV, and by inhibiting the conversion of fibrinogen into fibrin and fibrin clots.",
+      "key": "8e52064aa12dbc0c859eab956d25ebc7deaee24b31caa5daef4baf6ada0643f443186eb15511524689f7b73adace970171f9fc777812baf0ca7339a9da33e803",
+      "line": 212,
+      "relation": "decreases",
+      "source": 0,
+      "target": 39
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "From another perspective, in vitro assays have demonstrated that heme can also bind to fibrinogen and decrease its thrombin-mediated cleavage, thus affecting the final common coagulation pathway and reducing fibrin formation, important in clotting [44] (Figure 1).",
+      "key": "a12fe7227a66592ae406151bfd72a0e525b98306bd4c9d96ad35d22503e9c98c0ff80365376dc33801c7b133b8b5e23d17e85873468543f9c0aa98ab6ebc77b1",
+      "line": 179,
+      "relation": "decreases",
+      "source": 0,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme perturbs the enzymatic activity of thrombin, further contributing to the overall anticoagulant effect and decreased fibrin formation [45].",
+      "key": "cb137f3993184c44ad937247b88fa0479a5fe4a1acb511147e007941fdfecb496499b64feace26864d091a7de17ed893fa667934efd16c1ec8572be249137517",
+      "line": 186,
+      "relation": "decreases",
+      "source": 0,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Taken sequentially, it appears that the release of heme under hemolytic conditions initiates the extrinsic pathway of coagulation through the upregulation of TF on endothelial cells and leukocytes, but subsequently blocks the propagation of coagulation by inhibiting FVIII and FV, and by inhibiting the conversion of fibrinogen into fibrin and fibrin clots.",
+      "key": "f96b5072fe148553689d5d77d5a00f90ff55daf41410ed897a441feba1d5e473b3a9feb40bbd3c21b963f38263b76b3fbdb45a72a736a98c051f10f8e419a019",
+      "line": 214,
+      "relation": "decreases",
+      "source": 0,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In contrast to the anticoagulant effect of heme on the intrinsic and terminal pathways of coagulation, heme can also trigger the extrinsic pathway of coagulation by upregulating tissue factor (TF) on the surface of human endothelial cells in vitro, as well as on leukocytes and perivascular cells in mice [50,51].",
+      "key": "27e8e6333acb0b4d582bc34d27ac4d3f608486e443b3c26e81541ce82cdaed4c076b402cca1b69d14acf1a581a8eb9af6ec1808405a9084dd0808b386ef3aadf",
+      "line": 193,
+      "relation": "increases",
+      "source": 0,
+      "target": 48
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Taken sequentially, it appears that the release of heme under hemolytic conditions initiates the extrinsic pathway of coagulation through the upregulation of TF on endothelial cells and leukocytes, but subsequently blocks the propagation of coagulation by inhibiting FVIII and FV, and by inhibiting the conversion of fibrinogen into fibrin and fibrin clots.",
+      "key": "ec49bcca783814ea020509b71d2d1d4b35ac72c9d75e0cc38aae3e02794e5ece83186a1118e437aa3087968b9aeb277dbdb7483b784c6edcfc2920f828c7fab0",
+      "line": 210,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Taken sequentially, it appears that the release of heme under hemolytic conditions initiates the extrinsic pathway of coagulation through the upregulation of TF on endothelial cells and leukocytes, but subsequently blocks the propagation of coagulation by inhibiting FVIII and FV, and by inhibiting the conversion of fibrinogen into fibrin and fibrin clots.",
+      "key": "9ac083c44dc8919378ca19a2b288128ab3529d785a1fba223e4d31f7220873e9798742712ba4a61954a1bccb008a232cdf822ee0b2bbd9a13f876056642babbd",
+      "line": 211,
+      "relation": "increases",
+      "source": 0,
+      "target": 46
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Taken sequentially, it appears that the release of heme under hemolytic conditions initiates the extrinsic pathway of coagulation through the upregulation of TF on endothelial cells and leukocytes, but subsequently blocks the propagation of coagulation by inhibiting FVIII and FV, and by inhibiting the conversion of fibrinogen into fibrin and fibrin clots.",
+      "key": "762da184511bf4588dc5c787aad12386e60bb5ef96a96c06e1ec453fa42bcec78fa58f39c95cd28f81ee79619ca134fb0d6dc703a57cc009c6133aef69664f76",
+      "line": 213,
+      "relation": "decreases",
+      "source": 0,
+      "target": 37
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "For example, the in vitro appearance of strong reactivity towards phospholipids of antibodies from normal human plasma following exposure to heme suggests that heme, when released in vivo, may perturb coagulation processes indirectly via its effects on antibodies.",
+      "key": "8770b9487506da05b99225d26c641bb3972449c5e1614ceed201d4df13ce382a4139ec678c29ab9fe5162f35660286aed4226e94fb92d281c2025ca3c3772f2d",
+      "line": 221,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Hemolytic diseases are often accompanied by dysregulation and overactivation of the complement system [72–74], which may be induced by free extracellular heme [33,75–77] (Figure 3B).",
+      "key": "ee7bc49ffcb4b0cc490ad7c75ec456dd0ae740dab9722a2271c64a4a91b1c4f2984dd2d1d21a472be24501534b1e09e2d7af3d51d5405693495b0e3011cc5bba",
+      "line": 227,
+      "relation": "increases",
+      "source": 0,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "C3a and C5a anaphylatoxins, as well as the soluble membrane attack complex (sC5b9), are generated by incubation of heme with human serum or blood in vitro, via the alternative complement pathway [33,77] (Box 5).",
+      "key": "bd36918de66fdd54501c45cade0cc8750e87bdee220c2e6c2657a78d51a7d27aa97487277fb6ab4e374f64d5e7f5f0c5bee1c57720ba3aa4cc63a8615b3a61c9",
+      "line": 234,
+      "relation": "increases",
+      "source": 0,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "C3a and C5a anaphylatoxins, as well as the soluble membrane attack complex (sC5b9), are generated by incubation of heme with human serum or blood in vitro, via the alternative complement pathway [33,77] (Box 5).",
+      "key": "814060490b804aced47473ff3cc3206f1cd9454e27669b928c8dba7edef8c6cd21aed38c06184f982084fcbf677385d9e965c0603e4e467d5de4377c1f2e893c",
+      "line": 235,
+      "relation": "increases",
+      "source": 0,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "C3a and C5a anaphylatoxins, as well as the soluble membrane attack complex (sC5b9), are generated by incubation of heme with human serum or blood in vitro, via the alternative complement pathway [33,77] (Box 5).",
+      "key": "d8831db48cf3b15ec72c04fa00d3d881d1918d5a5d7dda88fb410f988dec9365f02334847a6b19ba6dc660423ba9aed239238152436673cde287e520e375d90e",
+      "line": 236,
+      "relation": "increases",
+      "source": 0,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Furthermore, the incubation of serum or whole blood with heme induces deposition of activation fragments (C3b, iC3b, C3dg) of complement component 3 (C3) at the surface of erythrocytes [77].",
+      "key": "eba47305daafe56f67bd5db791350aa5560481cd2c68533cd946e84e2d74edd01f3d785103691a35c5c5ebb6f7ad980d7869318a2979491fa7a4a9eb438e169b",
+      "line": 243,
+      "relation": "increases",
+      "source": 0,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "It is possible that heme-induced overactivation of the alternative complement pathway, and depo- sition of C3 fragments on erythrocyte membranes, participate in erythrophagocytosis of uninfected red blood cells in severe forms of malaria [77].",
+      "key": "62f559da3df6b00dcd3382d8c23f2d301b1f5e6587c042bf2a11dccff17cc4abb16a1754c1697f6ca8bd316a8b5b18800fc51cca2cabc1ecd0c32d8ede23d05c",
+      "line": 268,
+      "relation": "increases",
+      "source": 0,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme exposure of other proteins in the alternative pathway (factors B, D, and H) does not appear to have any impact on their functions, thus implying that heme activates the alternative complement pathway by affecting C3 directly [33].",
+      "key": "aa3d581b0f63b27e1f6c96dba4682390ae0459b44a705ab0896d627cbffe20498de5ef526fa879fae22fdbbeadbdb37a1527be104bad2440adad5f1df5ddf859",
+      "line": 293,
+      "relation": "increases",
+      "source": 0,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "The inhibitory effect of heme on the classical pathway is in agreement with in vitro functional assays showing that heme is capable of activating only the alternative pathway in human sera.",
+      "key": "10fc98de9d43e26af3c36afa7fe404bb1bf7fa93d267326e3617e250344de4ac41cb23f71eee69c64fdb50c946fa821a122cbf9c1c6f7ecb36d11b6541372c2d",
+      "line": 320,
+      "relation": "increases",
+      "source": 0,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In contrast to its overactivating effects on the alternative pathway, heme inhibits the classical pathway. It binds to C1q, alters its electrostatic properties, and hampers the recognition of target molecules. This results in a reduction of classical pathway C3 convertase formation and C3b deposition.",
+      "key": "f6217c179d40201cb80419134ae09c2517284b7d5a353c54b211517a238e06feda724fd6250d40e625252b18ef8d91f956719346898f53afdb0ed252e3b0f697",
+      "line": 327,
+      "relation": "increases",
+      "source": 0,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme exposure of other proteins in the alternative pathway (factors B, D, and H) does not appear to have any impact on their functions, thus implying that heme activates the alternative complement pathway by affecting C3 directly [33].",
+      "key": "1a63ccc6c93bc2cb4d357085c10891b8c5810c0f31f0c52799e591c923d24602660e191e6f871f5374889c03a4829fed1611bf2bba590a9194432e7794290671",
+      "line": 290,
+      "relation": "causesNoChange",
+      "source": 0,
+      "target": 32
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme exposure of other proteins in the alternative pathway (factors B, D, and H) does not appear to have any impact on their functions, thus implying that heme activates the alternative complement pathway by affecting C3 directly [33].",
+      "key": "a6c90c73972a6abc7415f49a6af4380760fc51af17598c109fdc3015a1b943ae1b14a08e67a41efb2dc985b38acb5468319aec924797e07d06f26433ca897a24",
+      "line": 291,
+      "relation": "causesNoChange",
+      "source": 0,
+      "target": 33
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme exposure of other proteins in the alternative pathway (factors B, D, and H) does not appear to have any impact on their functions, thus implying that heme activates the alternative complement pathway by affecting C3 directly [33].",
+      "key": "6b43e66c7152f686bdb4ae46ebc322a407e2192e1ee2b67bb48640368a91ed462856f69dfe4a1bc2aa6d4079be7d453a137feb9b9aa3805a65e2e824d43a200f",
+      "line": 292,
+      "relation": "causesNoChange",
+      "source": 0,
+      "target": 34
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Moreover, exposure of endothelial cells to heme results in diminished surface expression of the negative complement regulators decay-accelerating factor (DAF) and membrane cofactor protein (MCP) [33], and hence reduces protection against complement.",
+      "key": "3268ee723e39153933f01f53f071867067cd2d280699e4544932f0932ffaa52deeab74d57959596e4396104291973dc50722fac5ec569e7d5da94a2c7f275abf",
+      "line": 300,
+      "relation": "decreases",
+      "source": 0,
+      "target": 30
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Moreover, exposure of endothelial cells to heme results in diminished surface expression of the negative complement regulators decay-accelerating factor (DAF) and membrane cofactor protein (MCP) [33], and hence reduces protection against complement.",
+      "key": "26a731d72eb11f4c67ad9418b77fcb6d13d92969421942fa94d908be03ab586934079d286399a4bcb13b76fc15b78adbec2a0e6936dd99716b077536c558c824",
+      "line": 301,
+      "relation": "decreases",
+      "source": 0,
+      "target": 29
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme could suppress C1q binding to its main ligands, immunoglobulins and C-reactive protein (CRP), in a concentrationdepended manner.",
+      "key": "05e1f5ec658e1914f8dac54b278d60ba93c617373f43ab597fd0ec48ed8c7933242c472020a5bc50127ccef4a00bc5681c7b8c0980fd87f59b0d6c105b5e0158",
+      "line": 312,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "decreases",
+      "source": 0,
+      "target": 49
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In contrast to its overactivating effects on the alternative pathway, heme inhibits the classical pathway. It binds to C1q, alters its electrostatic properties, and hampers the recognition of target molecules. This results in a reduction of classical pathway C3 convertase formation and C3b deposition.",
+      "key": "6a24b65e20003fab7762074897635d2bab77e40a15aab08263a1f01b6ec62c5ab8f68fb15dc51e95103ce64614e92199d1ea633fef8aa49132d2139ced4ed814",
+      "line": 328,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "decreases",
+      "source": 0,
+      "target": 49
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "The inhibitory effect of heme on the classical pathway is in agreement with in vitro functional assays showing that heme is capable of activating only the alternative pathway in human sera.",
+      "key": "c9daa4aba8c259b5dd4e6088c1cdfbb0e38c7a9358550557ef136337293c0f48badb6c10c0f75bca02c5180a8478a43808387a5669f831fd21d0a87f26ab0cbf",
+      "line": 319,
+      "relation": "decreases",
+      "source": 0,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In contrast to its overactivating effects on the alternative pathway, heme inhibits the classical pathway. It binds to C1q, alters its electrostatic properties, and hampers the recognition of target molecules. This results in a reduction of classical pathway C3 convertase formation and C3b deposition.",
+      "key": "1a75636de43b7ef627ceb8210c7fcd19b8f26e8ecbaa8678cd04323d3f5882c1d1ec0588b532e743d2ef98179ed374d3213b9f11d973716af21b30b1ec2966e4",
+      "line": 326,
+      "relation": "decreases",
+      "source": 0,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Atypical Hemolytic Uremic Syndrome": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme may be implicated and contribute to the development of (i) bp(MESH:",
+      "key": "a399dafef603dea737ff5785ced689f796837b8c03969bf77cad767e283d7db51b7f2ecf308ac96552e45ba66e18395b654ac83852763eb9ad35f42df3f5a75f",
+      "line": 337,
+      "relation": "increases",
+      "source": 0,
+      "target": 53
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme may be implicated and contribute to the development of (i) bp(MESH:",
+      "key": "d1b91760801fcfa32035fb1a269ab590ee7cef2d45d747fbf332d2c24b7c7230e715e4d97dc32495d5dd9b5700192957a6a5282322311590ccfd73349ff17de2",
+      "line": 341,
+      "relation": "increases",
+      "source": 0,
+      "target": 54
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme may be implicated and contribute to the development of (i) bp(MESH:",
+      "key": "3d0d13e79efe006e89c32088c2bea28e2aba35249e84214586664a593e62f030ea262728877e297acbf43cbb019b1a5c57d8ddf2971784313a1dd8d796fa0f25",
+      "line": 342,
+      "relation": "increases",
+      "source": 0,
+      "target": 52
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme may be implicated and contribute to the development of (i) bp(MESH:",
+      "key": "9a9affc49e24a73228686039a82b716ca0c5650b85682caac94ce5209efd9f594854abb37b333d864ca0ee6a18c919a4ad0d52df3abb0766cd0aeb2cd27b08c1",
+      "line": 344,
+      "relation": "increases",
+      "source": 0,
+      "target": 55
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Heme may be implicated and contribute to the development of (i) bp(MESH:",
+      "key": "00200a0fa97288a348e8b71eb8a9bb9b674e727197d4bd17408cd08996e15865e9ce4fdab0d1a91c8298f6f64cd18e9bdc0c0c1955e8979e7cbd91339d11f49c",
+      "line": 347,
+      "relation": "decreases",
+      "source": 0,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Despite its damaging effects, heme induces the expression of HO-1, which degrades heme to anti-inflammatory, cytoprotective, and antioxidant products [25].",
+      "key": "028d4091c29e5287ae1266e88ec8aa2dc55523a5b6643f5e261c126c2740d28ec0311b83115dbe3fd671e178f0eb7bd7712825074a48749bdf77c952e44ce93c",
+      "line": 352,
+      "relation": "increases",
+      "source": 0,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "A recent Phase IIB clinical trial showed that preconditioning using hemin upregulated HO-1 in renal transplantation, launching further studies on clinical outcome [97].",
+      "key": "80d07663d7d63a8383cc2fc4d0cc90477984b15f20181d0299bf8a38257ab1122fe2669fba0d52decd51bc1f3617d6f7ba47d6881e35f4501eb5301d44dfb1ca",
+      "line": 358,
+      "relation": "increases",
+      "source": 0,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Thus, the interactions of hemoglobin with haptoglobin, and of heme with hemopexin, ensure safe disposal of potentially dangerous molecules [6,7,15–19]",
+      "key": "7542121157fbc9291c6e3ca754d83aaaead62bda93e3185363fb932751d6e0e167b89ff35b649c96a2697da19bce637633d4cf9f63a934f1c39b39c94a8ed0b2",
+      "line": 109,
+      "relation": "decreases",
+      "source": 42,
+      "target": 40
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In cases of extensive and chronic hemolysis, levels of haptoglobin and hemopexin in plasma decrease markedly [20,21].",
+      "key": "9fcaa42c2164421011468063ccd90980fc88f9e99b5a68839aca33eb543b03694876adb735c44b314079578e0afc300069dee821514a85449f3d79da04412e74",
+      "line": 115,
+      "relation": "negativeCorrelation",
+      "source": 42,
+      "target": 56
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Thus, the interactions of hemoglobin with haptoglobin, and of heme with hemopexin, ensure safe disposal of potentially dangerous molecules [6,7,15–19]",
+      "key": "b39b0b14dd131435d2918fb5f7d93bfa2051b647286862b8383fccd9c5ab1a15f6ed2c956d45f1d9ec8499cfa5fc3185a68699bb0c020bab43cf740251efe103",
+      "line": 110,
+      "relation": "decreases",
+      "source": 43,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In cases of extensive and chronic hemolysis, levels of haptoglobin and hemopexin in plasma decrease markedly [20,21].",
+      "key": "4511723cd9b29cca0c6421097da8006d60461345f3b17bfbbd022d4159d0590f7d50385f8b44c441c5a8d92287f35bce3c571e7e26cb96efd7587cc19fac0f45",
+      "line": 116,
+      "relation": "negativeCorrelation",
+      "source": 43,
+      "target": 56
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In cases of extensive and chronic hemolysis, levels of haptoglobin and hemopexin in plasma decrease markedly [20,21].",
+      "key": "70c8364d95f182ee4a7f7cc3b9ec8ba8e7dfddcc1e68e63655ac11ceadff32baa1f7f1bb101ef59a7c7eeaf0b66df3c3dc6d6352ec73d9204452d151d11c0276",
+      "line": 115,
+      "relation": "negativeCorrelation",
+      "source": 56,
+      "target": 42
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In cases of extensive and chronic hemolysis, levels of haptoglobin and hemopexin in plasma decrease markedly [20,21].",
+      "key": "db7ba2c247de741d30d07304f481b0504bcf8e4be1a851b9628d74130243dd6a9930e53934223c1a017708e863319c0a9d12454da1a8c37fd27f077dd247b8b9",
+      "line": 116,
+      "relation": "negativeCorrelation",
+      "source": 56,
+      "target": 43
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Interestingly, a recent study demonstrated that, in severe hemolytic disease (sickle cell anemia), at least one third of plasma heme was associated with membrane vesicle structures (microparticles) that were generated from erythrocytes during hemolysis [24].",
+      "key": "79d9b68ce669bed8d08036c15b10918ba621ac71eef1be4de1051bed984aebf014fafdf3e82c9eb66741a8b0a0a5c4106339aca338e0a722983ae8ce5e92712c",
+      "line": 130,
+      "relation": "increases",
+      "source": 56,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Excess extracellular heme is weakly bound to albumin [22], /1-microglobulin (which can also degrade heme) [23] and, most likely, to other plasma proteins and lipoproteins; there is a dynamic nature to such interactions.",
+      "key": "0ce64aa8096657103c2195366be43acba1d7d7a6959b42253046bed7d6929ea52ee0b355e6d92562a03e1c9d8be4ac8fecd1cf77c6523e3cef54f792a7c8e687",
+      "line": 124,
+      "relation": "decreases",
+      "source": 27,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Interestingly, a recent study demonstrated that, in severe hemolytic disease (sickle cell anemia), at least one third of plasma heme was associated with membrane vesicle structures (microparticles) that were generated from erythrocytes during hemolysis [24].",
+      "key": "7fa4ab9620c9eee74849fdbbf3ed9a266344837797fcbdb5721a8f098411316690f4f090acbd9f1fc21b9d7949837d2b87e5379bee1fdcc0b41947a19a3de78f",
+      "line": 131,
+      "relation": "increases",
+      "source": 23,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In humans and mice, VWF protects FVIII from degradation by proteases in the circulation and controls FVIII catabolism [43].",
+      "key": "4f2bfbb62a81edfc628c406082914b142fc5d1780297d5155e8225f549823d69ebcc74bc3b44004aa3833a5744a817dfc679078e402c4d7c1c909a57fec8715c",
+      "line": 172,
+      "object": {
+        "modifier": "Degradation"
+      },
+      "relation": "decreases",
+      "source": 47,
+      "target": 39
+    },
+    {
+      "key": "b63a148f6666e26245d05eff1188bf78a408875a95bc19696ea9d46556ee5a033a0484fb3bec8cc97678a7c7a52746e75ab105feb13fde4f039d4a6261603b00",
+      "relation": "hasComponent",
+      "source": 26,
+      "target": 36
+    },
+    {
+      "key": "225a619f3106e01bbc8dba5e9eb25ae3de9568eaad0c56436e650e14b2cf44c7bebdf7c8bc9209bd94c5e0fac33d56787853da629fb92f10727049d7a5b6a0e9",
+      "relation": "hasComponent",
+      "source": 26,
+      "target": 38
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In the extrinsic pathway of coagulation, upregulated TF binds to activated factor VII (FVIIa), thus leading to activation of FX.",
+      "key": "0be62e976d03f629c6b369da5ee8e8039091db421a6c22f056a9a167bd5d991d6828aac6b640c92affbcacf5cdd10ae03b7d02fef4fe82519a1143f28356a2ed",
+      "line": 199,
+      "relation": "increases",
+      "source": 26,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Taken sequentially, it appears that the release of heme under hemolytic conditions initiates the extrinsic pathway of coagulation through the upregulation of TF on endothelial cells and leukocytes, but subsequently blocks the propagation of coagulation by inhibiting FVIII and FV, and by inhibiting the conversion of fibrinogen into fibrin and fibrin clots.",
+      "key": "8bdb74534a18b9a418d23aa03cda73e928c5c3d03e0428ad121780a62cece1a421ac489e30f41867c22618d64e8bd74f6a7f4911e07f685f842513f21ff7cdbb",
+      "line": 210,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "For example, the in vitro appearance of strong reactivity towards phospholipids of antibodies from normal human plasma following exposure to heme suggests that heme, when released in vivo, may perturb coagulation processes indirectly via its effects on antibodies.",
+      "key": "5ecac8b070ef3a0be790d8fd6e32ebd36e15257d81f18f87b9fbdd2af9c92c51e8d08bac6c59f18050b39a2db2ae438f69a728f67198bb7a4c4fe606bff48173",
+      "line": 221,
+      "relation": "negativeCorrelation",
+      "source": 18,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Indeed, the severe forms of malaria are associated with activation of the complement system [74].",
+      "key": "d53809559566612ffa7d68434a920ea31769d9f1035ed2f1276c93728d5d88cf4b58351e2c0a1ebdf59775d01cffd6a0346febf93dc85892f52336e9a1a91bdc",
+      "line": 247,
+      "relation": "association",
+      "source": 12,
+      "target": 58
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Indeed, the severe forms of malaria are associated with activation of the complement system [74].",
+      "key": "d20d5c88f3511407e9cb447ebbc921ea78b8125a47ab7932133d60f720d6f640e3e201821f4eadf082bf97184464ff1b78a386ac2c5662a1b012cbdf0dd206bc",
+      "line": 247,
+      "relation": "association",
+      "source": 58,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Plasmodium-mediated lysis of a single infected erythrocyte in vivo was shown to result in the lysis of 8–10 uninfected cells [78,79].",
+      "key": "e7bf7ff41cf357806f080efda8782624b3d0d915075b7b59f7771c9f552d26688bcf9b00f2560b6b02ca1eb93e3a66140e5910e851fb0be1e19a33a5db8fee96",
+      "line": 252,
+      "relation": "increases",
+      "source": 10,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 56
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "The mechanism behind this erythrocyte loss is not well understood but may be related to reduced erythrocyte deformability, accelerated senescence, or to complement or antibody-mediated (anti-erythrocyte) erythrophagocytosis [79].",
+      "key": "abdbdf979724f75f9015cf55f85c27b4f3cc2f2d1ca71b55809cc194ea586e1628e1cde4870e3518a1db9db5754090f9a75cfa41e53f20c6f04c564fe720c645",
+      "line": 258,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "The mechanism behind this erythrocyte loss is not well understood but may be related to reduced erythrocyte deformability, accelerated senescence, or to complement or antibody-mediated (anti-erythrocyte) erythrophagocytosis [79].",
+      "key": "b440c9bd6de0e92559f821b5d0981b62e983c9e19a3e9f074a0928f87b59695311c4e7bd8a88aa9103e185e0107accd5ec19241ae780a6879f3d3fb770233eb0",
+      "line": 258,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "The mechanism behind this erythrocyte loss is not well understood but may be related to reduced erythrocyte deformability, accelerated senescence, or to complement or antibody-mediated (anti-erythrocyte) erythrophagocytosis [79].",
+      "key": "43f717a8b8f21135202ad875c32d652f9e846df9feaf8730815ad7a7c7c1c22caa03a29c248b8c225dd0685aa4d1703b35b75bf8e7375377a5c97d4e9bdc2f22",
+      "line": 259,
+      "relation": "decreases",
+      "source": 3,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "It is possible that heme-induced overactivation of the alternative complement pathway, and depo- sition of C3 fragments on erythrocyte membranes, participate in erythrophagocytosis of uninfected red blood cells in severe forms of malaria [77].",
+      "key": "585132844b7e57719d1c97a004d0cd68035107aee00dca7c9cbdda15006ca21b1df9d241d0b38cda2bfcacb838f80eeecbce1378c4e92cf32ff1fc6bb19c8ebf",
+      "line": 269,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "It is possible that heme-induced overactivation of the alternative complement pathway, and depo- sition of C3 fragments on erythrocyte membranes, participate in erythrophagocytosis of uninfected red blood cells in severe forms of malaria [77].",
+      "key": "a93d6fdac77e23ddf5ca6615969c81de493ab38c0b81d31ae063ae3f5f83220352cf3a2df00a168fb2e9527b1618539ca920c12a997fd21068fab239e03910a3",
+      "line": 269,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "This scenario may resemble that of paroxysmal nocturnal hemoglobinuria patients, who can be treated with complement C5- blocking antibody eculizumab [80]; in this example, extravascular hemolysis has been shown to occur in a small number of these patients despite treatment. It has been suggested that this is due to erythrophagocytosis of red blood cells deficient in the C3d-opsonized complement regulators – CD55 and CD59 [81,82].",
+      "key": "27cb98b28c18b364e3407e35abcb86b4f94e9d39eab4ff51c9123aba19592600c6904f3c88129f56194627994916615096a7c295348350bfcdb6501a5328a99b",
+      "line": 278,
+      "relation": "decreases",
+      "source": 30,
+      "target": 56
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "This scenario may resemble that of paroxysmal nocturnal hemoglobinuria patients, who can be treated with complement C5- blocking antibody eculizumab [80]; in this example, extravascular hemolysis has been shown to occur in a small number of these patients despite treatment. It has been suggested that this is due to erythrophagocytosis of red blood cells deficient in the C3d-opsonized complement regulators – CD55 and CD59 [81,82].",
+      "key": "9cc48ac93d249fb97f0724f193b18712c1dd42dc75a0705e0a1790db7dca181d8e42c1e2ad86c7f518a6f92d2ec8bc674a83b45e16c785d05b3cb3dc6d13192b",
+      "line": 279,
+      "relation": "decreases",
+      "source": 31,
+      "target": 56
+    },
+    {
+      "key": "65100205e9c7fa3ce3eba80d5d84e1fe4e582a86c304670d2f4cb31601fe56b7547575d8b9a100e723c569efb62dce3ce6055c44bae9b3cd1b9db81f56a46d22",
+      "relation": "hasComponent",
+      "source": 24,
+      "target": 0
+    },
+    {
+      "key": "b2dd75871176ae0c4f26b00b12fe08df28ac341cf0554857d33a617f9ba9f0b0b60224167f013a9044e7271ff460fdef33dc000b82072f958717c5f376cb79c5",
+      "relation": "hasComponent",
+      "source": 24,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Molecular docking predicted the interaction of heme in close proximity to a thioester bond, known to be important for the activation of C3.",
+      "key": "bc1717f4bdd8a26e90a85285a8fb4416ac2a34a038d29150e3047162aecf01666b64f7f3b1043a8f970caf2bde1f5349501ba4d9c974588188f5bf1070610c52",
+      "line": 284,
+      "relation": "increases",
+      "source": 24,
+      "target": 28
+    },
+    {
+      "key": "c6b955876dafc7daf371892a4be72b2ff1547b6477ee2a3324951a03064d475cd8eb31ab5cf9563de77d082447b794550053a872ff874b8798bce87c51abf8c2",
+      "relation": "hasComponent",
+      "source": 25,
+      "target": 0
+    },
+    {
+      "key": "3a78351ac5b2d9a15cc4c1f75816b24156fd78d8683dc33ac5fc6b24f9e4b402537e817ded281628d48285f84b6f9b181ef7a94c2adbb180bb754f3d500a5530",
+      "relation": "hasComponent",
+      "source": 25,
+      "target": 49
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "However, in contrast to its effect on C3, exposure of C1q to heme was demonstrated to inhibit its functions in vitro [89,90] (Figure 3B).",
+      "key": "a802f3ae081cda8f9a82d22e1df8b5d60738110e7aaccf35a688edef1322cd4fe5b58b6a9bd27de2a18363c782530e0ec616258b1f4fee318adb52cddbac7485",
+      "line": 306,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "decreases",
+      "source": 25,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Malaria": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Dimitrov JD",
+          "Lacroix-Desmazes S",
+          "Rayes J",
+          "Roumenina LT"
+        ],
+        "date": "2016-03-01",
+        "first": "Roumenina LT",
+        "last": "Dimitrov JD",
+        "name": "Trends in molecular medicine",
+        "pages": "200-213",
+        "reference": "26875449",
+        "title": "Heme: Modulator of Plasma Systems in Hemolytic Diseases.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Despite its damaging effects, heme induces the expression of HO-1, which degrades heme to anti-inflammatory, cytoprotective, and antioxidant products [25].",
+      "key": "38b1c604ede22352c9a039ca811bd2b6a878f2868a5a9024f6ba504dc2c11df3e06a9c3313e7a143875ffa136e71d1074ab35dd9986d0beb85765631f0510acc",
+      "line": 353,
+      "object": {
+        "modifier": "Degradation"
+      },
+      "relation": "increases",
+      "source": 41,
+      "target": 0
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:thioester)",
+      "function": "Abundance",
+      "id": "e35a08d762bd7b6d1e04e12bc3e6fce283a0c2f0c4829aef828d9f291a8a8fcebe37f60aeb3545ea4417f82bf2d9d5ed5f4756ba046bc8deebe73a37ef9f0c42",
+      "name": "thioester",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:\"oxidative reactions\")",
+      "function": "Abundance",
+      "id": "424bc8c5ee95b5a9ac077c96ec0fdd63901bb2f7bd11a22842ae879e021f4b04cae5a4564feea644a1e45a1220947f7269f7b5cb8b6ff9347c965f4a9fd7dcf6",
+      "name": "oxidative reactions",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:erythrophagocytosis)",
+      "function": "Abundance",
+      "id": "bac9c07789a564cc366314aee9e3a2c1d62636dbb4c02865888c17574fb21a30c65181203ab5f20993830f9d209274452d01a13f29ab8f1230ed5dc956fa262f",
+      "name": "erythrophagocytosis",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(MESH:\"Cell-Derived Microparticles\")",
+      "function": "Abundance",
+      "id": "cbdd1c0e96832ed2dc8166dd4de0db4724d8bf06ba0c5e7b8f6720cf04d7c50fcf8abc5cc8cc27228f47b8b422592d1084bb0e832c29fb932d57b70741c4413d",
+      "name": "Cell-Derived Microparticles",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Complement C3a\")",
+      "function": "Abundance",
+      "id": "572d4205a3417e5f5a92b8ae26e580b597fcfab4201abe34f539500bc64785bb3aafe6edfbfe1235a144e7ea990225571a4360eebb4b5c914c7b9add87a7bf89",
+      "name": "Complement C3a",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Complement C5a\")",
+      "function": "Abundance",
+      "id": "41c64b39e6217a0c85c123e780f83595146ef1afc36f1d2ba0b8e2c27edd3b86f8f21c00e1e1dfdc01000353bdf826feaa871b1823a750e63821b2138cea9ab5",
+      "name": "Complement C5a",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Complement Membrane Attack Complex\")",
+      "function": "Abundance",
+      "id": "697440f9efe6d464dff14ff66b2554c4c0fac81fd532f4039c33a96b1070ad6aaf25f4b64023470df259819a994b8fae792ef76b64d97ef8d38de60855f16b0b",
+      "name": "Complement Membrane Attack Complex",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Toxic Actions\")",
+      "function": "Abundance",
+      "id": "d0a77d591b79dc5af5bab6bc54a49ce4867bb868f3c9347334883a9f831c648df14b300bef4cc0ccb7c3b10c81713d29f61a1bd720a71a4117679f3c9047ed90",
+      "name": "Toxic Actions",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Fibrin)",
+      "function": "Abundance",
+      "id": "dcd81fb34ae1e9c14e11e108f1e34383f107c53e2c2468ae6d3da1aa4f3f03cbc2d081599412a863f5afe0ca8f9318f9de412ce3893a7a5b4b7eb164be17cc1e",
+      "name": "Fibrin",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Plasmodium)",
+      "function": "Abundance",
+      "id": "a4ff374be4afed35a01192d4217d67fc0b930fbae629be184802159e00e4cbdc7ef96c363c70182eb8b2e537de794df16262dbd133527e172427df78540bc59c",
+      "name": "Plasmodium",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(GO:\"blood coagulation, extrinsic pathway\")",
+      "function": "BiologicalProcess",
+      "id": "6b7032cef83f00d90e1e1bf09fda13a7953dbcfe42a0d03eed47dc0e29f70af513a2fa7b9500ae1961a985c466d89e0ffc09a1b745302073e277cdb405193c85",
+      "name": "blood coagulation, extrinsic pathway",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"complement activation\")",
+      "function": "BiologicalProcess",
+      "id": "7dffe42517c3d74ef8db1b8f29a0be191ff33eb743bcb3f274446e3e4e0af75347a0294e3d14b50508fa8f0e46b076f844f664d7f93566c31246a2f841df1316",
+      "name": "complement activation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"complement activation, alternative pathway\")",
+      "function": "BiologicalProcess",
+      "id": "1ce263917e71ed0c37c9cec08dc3ff15ec5234515006e1a44b39911fceab5f568becf73c72bd66de7246f4936ddc9f5d4160ed133ff6d59bc9eb41f068d863ea",
+      "name": "complement activation, alternative pathway",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"complement activation, classical pathway\")",
+      "function": "BiologicalProcess",
+      "id": "9329f4cea3f0e5acb9c9d88b3153f23590a094aea9949f8457f580fbee216792ff451a5ac8ea8ac163b95107d117d403cc38e982765500613eb0d186e7fe70f0",
+      "name": "complement activation, classical pathway",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"endothelial cell activation\")",
+      "function": "BiologicalProcess",
+      "id": "c894e9d33edfed940a51b6b3c296739792fd65fa6d722a79d7adc2bb71d574d2b29d8567e118c9c88d2447f6fd8b362ac1ae9361950533cd5069ee34104f7689",
+      "name": "endothelial cell activation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"neutrophil activation\")",
+      "function": "BiologicalProcess",
+      "id": "e30fc31dd56009c9ff9eafa73c6fd5daac54e234231794745a4fa11600d2a00f772e830fde93aa7bc07d138531018372f1891bac6583a0d224da1fd49b12957f",
+      "name": "neutrophil activation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"platelet activation\")",
+      "function": "BiologicalProcess",
+      "id": "668939e1a7166202876f21af69bbe8367e08002ac69312d1326c46aa605b22c0fffb3c9f2cd1073782f79141c51903b9e898140df4deda6e150565e6ad25babb",
+      "name": "platelet activation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Antibody Specificity\")",
+      "function": "BiologicalProcess",
+      "id": "aca855319c622e5f04d11fe427a8577d37c37108fe16f6d5b8b72a7c8065909633449dc6626d5e4d5cef2747ca157fe0fc377f32132dd6cd79b90a4fa452bd40",
+      "name": "Antibody Specificity",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Erythrocyte Count\")",
+      "function": "BiologicalProcess",
+      "id": "9ad455e5601363a918f538de6c61f2550ff91e96f6021087a83a88d0346c89c09b78f4e1fa43ca523a6c32aa7bd3804685a5790ceb767f729994633627ef24d6",
+      "name": "Erythrocyte Count",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Erythrocyte Deformability\")",
+      "function": "BiologicalProcess",
+      "id": "aafe5f8fc07e6abe467e9e2c47e0be8c08012664bc30134675ce5df8b3ab3ccc93ed0cdec5627fb8e8ab4f5e2cc991a6fb0ce0adfe41fe8358ea8c37ac60816d",
+      "name": "Erythrocyte Deformability",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Oxidative Stress\")",
+      "function": "BiologicalProcess",
+      "id": "32bd3ab5e8a3a26be3209856c88741f0f0e2dff98d2587599a6a21b0f4793c5d8feb1194ea2166cf3cece076e7095530b116270e6655bc8feb35a437fda42cf6",
+      "name": "Oxidative Stress",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Platelet Aggregation\")",
+      "function": "BiologicalProcess",
+      "id": "026950aa67d966b0562d40da4c1a06acbb77aacf83d7fd29ac0f546d1cf200c9c4f588431ca9e719d2bdc1c8ed8962fdf947ffad69d21bbdccd0362f529ef5bf",
+      "name": "Platelet Aggregation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Eryptosis)",
+      "function": "BiologicalProcess",
+      "id": "ffbf53403f946cfd9921d613f7acf5d1eaa8bfbef19b2e41549c17b09bebc9a91596a261988e5e713c51594a9a2084324a6fe2c2adb7a78954b510ae93630e93",
+      "name": "Eryptosis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "complex(a(CHEBI:heme), a(CHEBI:thioester))",
+      "function": "Complex",
+      "id": "e752f1434483fc3dc229ecc82ac87f273ef5316db4f75080c9d346f04e0f2e00037b01f1862e183ff44a045d7f1d19fce08156c22090ca7f0ae70466e1fc1b2b",
+      "members": [
+        {
+          "bel": "a(CHEBI:heme)",
+          "function": "Abundance",
+          "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+          "name": "heme",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:thioester)",
+          "function": "Abundance",
+          "id": "e35a08d762bd7b6d1e04e12bc3e6fce283a0c2f0c4829aef828d9f291a8a8fcebe37f60aeb3545ea4417f82bf2d9d5ed5f4756ba046bc8deebe73a37ef9f0c42",
+          "name": "thioester",
+          "namespace": "CHEBI"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(CHEBI:heme), p(PFAM:C1q))",
+      "function": "Complex",
+      "id": "138c0f8c636e977d097b69401c576179f6730c77b861e02d2b1631355b4edc3ddb04b4537322a3f4b8eee25419bacc55d78f7675943eafd04a56f07238c4ef8f",
+      "members": [
+        {
+          "bel": "a(CHEBI:heme)",
+          "function": "Abundance",
+          "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+          "name": "heme",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "p(PFAM:C1q)",
+          "function": "Protein",
+          "id": "be4b9b6438aed3835f58a0dccaee333fd2ec388a51081301a3bcbdf7209d1f95264638fcc6175dd722cfdb139354c6300fa4d1ee6996ce3c9b8f52e143d0e753",
+          "name": "C1q",
+          "namespace": "PFAM"
+        }
+      ]
+    },
+    {
+      "bel": "complex(p(HGNC:F3), p(HGNC:F7))",
+      "function": "Complex",
+      "id": "ec0cd0dddd8fbd0d4f46d00c6cc7f0cc790dbbed132e3ec164d053d7f2afb78a85ba6e101a8c7251ec64f41bd7b8bae7a04e812412ce2a5d92aa06e5c9a4eefb",
+      "members": [
+        {
+          "bel": "p(HGNC:F3)",
+          "function": "Protein",
+          "id": "afb1d311045b4ee19a7d907dc8dd92023621887d3c4f0e75bad2a18fce0ef6a80cdfde64fe2c3c0504f5bbd1588964fd173eff33d4da51d1ddd156588943ea10",
+          "name": "F3",
+          "namespace": "HGNC"
+        },
+        {
+          "bel": "p(HGNC:F7)",
+          "function": "Protein",
+          "id": "01f772db5966ef76162a35421c3f42c3e1c55a07259a7675d3da2ea1052b5e2c02b07093392c7d9c936456602448f0d0d9c7a25e9852ccc24fc089bec091fcf8",
+          "name": "F7",
+          "namespace": "HGNC"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:AMBP)",
+      "function": "Protein",
+      "id": "0b37d3c803f2d3c4918b4a254f486462ee5463ebf252e088a50a228332537b2d84e8c9bb1089a9b40a9c5730af5bf8de5574c7f3391b5de4f28b518acb1bdd79",
+      "name": "AMBP",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:C3)",
+      "function": "Protein",
+      "id": "0edfd55c060706048fdcf977108c333ff8efc8adbf002b1c9dde5c3bd1dcc787db0397fd423224707a5e691d14afdb25dba7beaabd44b15dc8dff5d21c5034c5",
+      "name": "C3",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:CD46)",
+      "function": "Protein",
+      "id": "da10fce165d2908b0004a3936e912eabb32c52af1bcaa6fb4b350647b6efaaa12768b36226dbcc064ce922e568ed131a0fbc5236f12ac4559ab4fcdbd22d95c3",
+      "name": "CD46",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:CD55)",
+      "function": "Protein",
+      "id": "582341a6d212dede0879e274bf35b572fd11d01869b232ecd0426f2f93d9b142081321dd2b13af5abbb81cc3de472cb1ae18259523e166abb9b445558b7dea26",
+      "name": "CD55",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:CD59)",
+      "function": "Protein",
+      "id": "cc68931776a96853d13400a3a86c2a80fc8cc18b08584c410f48699c1a202ee0f66b699f5b7be2ccdf818749bf0f3a92f3fb51d60138ead3aed23e5de2f3b992",
+      "name": "CD59",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:CFB)",
+      "function": "Protein",
+      "id": "0c9d03749fe16696fcde4c187d99a33c66cac139ae2afdfed65c1a6ba451c9a59faa69e088f8e0135400cb538d13443124ed7fcb9c173d25dee7b11348288bf9",
+      "name": "CFB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:CFD)",
+      "function": "Protein",
+      "id": "1fedd55598e0a311e83f1345b39128739ad616ec395579c37d0d8e0d9b2d9d793d9d3cb03dff44a27e81436a41f5fbd81aac8cb3753f65294c04aa86ee225da8",
+      "name": "CFD",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:CFH)",
+      "function": "Protein",
+      "id": "fc7eadb98840a209ec88e805b2165b4815f7d4408620a0f92fb74c929fb011a51bba58249ab92ed96529213c91f569713f3d62f6e1023484cfdec738def2efbf",
+      "name": "CFH",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:F10)",
+      "function": "Protein",
+      "id": "75363b2ac5e5b9ec2e5764ebe3bc445452f6fbbf383bbfd3ee1837f9cf128ca3b02389c655de02a6baf047f024af5a9c494378f41a768228c4cef426533f7632",
+      "name": "F10",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:F3)",
+      "function": "Protein",
+      "id": "afb1d311045b4ee19a7d907dc8dd92023621887d3c4f0e75bad2a18fce0ef6a80cdfde64fe2c3c0504f5bbd1588964fd173eff33d4da51d1ddd156588943ea10",
+      "name": "F3",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:F5)",
+      "function": "Protein",
+      "id": "822dda9562a81cb0198212666111f145454c0485f2f7460bcdfc2e8ebcf5e0321e8a440058a1048267c5c156b1d1083001b741598f45a4648d0c0d3bf45bd804",
+      "name": "F5",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:F7)",
+      "function": "Protein",
+      "id": "01f772db5966ef76162a35421c3f42c3e1c55a07259a7675d3da2ea1052b5e2c02b07093392c7d9c936456602448f0d0d9c7a25e9852ccc24fc089bec091fcf8",
+      "name": "F7",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:F8)",
+      "function": "Protein",
+      "id": "0216cc5c0ff3fd797dbe73bdfdce51a3f6aec5c27431b622c38aad035b65d33b9258f2e4ae4ed517a1be16c6f0bf9b57d11afb7d5da7d3e799ec9eb707a2fcc6",
+      "name": "F8",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HMOX1)",
+      "function": "Protein",
+      "id": "c4981e9d3903b58471e749e0a1e38277c2729152c5582926243649d5c266ea44d831061cf916b7c6334634d357628b16c015a7ce07c97084f06b2c3f3cc94d5c",
+      "name": "HMOX1",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HP)",
+      "function": "Protein",
+      "id": "0052c8eac45d6228dca9f6db302e8c98c9d2292c20e1bf791ca8fd0749fa28c163d424e0faa9a8dfa46a882f85d0967fc41819b18763a7abd987d07b8cbec1c3",
+      "name": "HP",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HPX)",
+      "function": "Protein",
+      "id": "903fb55a7cb538b12d22305b73d01f90a340e7fd5622711c4b41d1538af80cbb1ed5bc2f065f360c8bdc8d377993c9b55bd06633323591ed22f54741612c3775",
+      "name": "HPX",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:NLRP3)",
+      "function": "Protein",
+      "id": "1758ad4da211678a6e4ed0bafd0054a554f7d286651184c3bdfc6ba70f3caa446607d0164b8108f861e90b975dcef41b64619249b61e818b768f09843f0ba11f",
+      "name": "NLRP3",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:TLR4)",
+      "function": "Protein",
+      "id": "78baff0fa37f42a32cb911fcb85a347d217c0cb39fc58b19343a2a831d87febb268c4e159670cd621d3a7e29526bc3acfb79ac387aadea33a00624d7024e6701",
+      "name": "TLR4",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:TNF)",
+      "function": "Protein",
+      "id": "a262f5edbfb734dd0ec9696a3b78644fccfb4054a9cf9225beb17c33ef416a75809ff59ec1646e29a3cccc804c9294f8d2c48120af9f5ee98e764a584626426d",
+      "name": "TNF",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:VWF)",
+      "function": "Protein",
+      "id": "a101326bdf4988f866703f8a046ed20135ce76b47556ae1a0d5115a2230c7ab01b24d5a03535ec845085d65a60f2bae4b5ddd906244da261baad9420efcb8a10",
+      "name": "VWF",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(MGI:F3)",
+      "function": "Protein",
+      "id": "d6eb2ca4a1bef2c702bbe730d5f99aa68a4b1085f6d7578b9aa13fed1d07b578ff54f988e52ef4ad90f4d7facd905e048b24791d9e3a5fde18ffe0a8beeebeac",
+      "name": "F3",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(PFAM:C1q)",
+      "function": "Protein",
+      "id": "be4b9b6438aed3835f58a0dccaee333fd2ec388a51081301a3bcbdf7209d1f95264638fcc6175dd722cfdb139354c6300fa4d1ee6996ce3c9b8f52e143d0e753",
+      "name": "C1q",
+      "namespace": "PFAM"
+    },
+    {
+      "bel": "path(HM:\"vaso-occlusive crisis\")",
+      "function": "Pathology",
+      "id": "7007ee304406d4320c9dcbefa93caf0b8ca48c68e148031ff1268674b1581667e2815de7ed2d14f5ac673c886c0493c40b8b821f94db58cf6f8ac9093dca5a48",
+      "name": "vaso-occlusive crisis",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(HP:\"Paroxysmal nocturnal hemoglobinuria\")",
+      "function": "Pathology",
+      "id": "b435a1d59be1cdaa0b4ed194d90883cdd83744b9266a0dfabcd67b3b3602ac6e83e987e8037ee732aa09bf34ebca2af45464d443827dd1d6b2f249563b69e007",
+      "name": "Paroxysmal nocturnal hemoglobinuria",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(MESH:\"Acute Kidney Injury\")",
+      "function": "Pathology",
+      "id": "ceb5d050086a580ed32495afbc5cf4c4ce723f0ea5ef95dd84871b5872a9f6ef15e59ad7ca9c102b3571006fef03926e656ebc78e07934b1ab539c8d5d6b7b90",
+      "name": "Acute Kidney Injury",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Thrombotic Microangiopathies\")",
+      "function": "Pathology",
+      "id": "5a4ed637b8e8e5cfd83125e6ad779ca5c10cc46906884e01d9dbeb597484a1c41e83210a37d5ab2a55fda308ea5505cf3020f64a4dbe1d81bdb402e995511657",
+      "name": "Thrombotic Microangiopathies",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Vascular System Injuries\")",
+      "function": "Pathology",
+      "id": "2c1dc10562090ab803cf25bbb0eaa83a64b75c8750bd549df2e66f6f3545a54bd009fd5c1a689c5489abb49876de701c8542c0c371e00e4420f455faa8fff57a",
+      "name": "Vascular System Injuries",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Atherosclerosis)",
+      "function": "Pathology",
+      "id": "18fdde6cb24c9d4214eeebf2aa06f1137477ccfb0b31f46c6aab8020e5c4c9787a0d193d08631001c015c81f4f49a5372064be5fd1f4da59ef8653cbe6333b14",
+      "name": "Atherosclerosis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "function": "Pathology",
+      "id": "3196cc4c6a20279c822cae925a9b271d0224f2c8d468e3069a3ee460662be286b61db2f144c550686a9c624e58af4ffa7570f4f2384e1cb8ee40496f8cb3fa5e",
+      "name": "Inflammation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Malaria)",
+      "function": "Pathology",
+      "id": "6b20b7391c3b35f2b029a5af26e188cba4855d5b8cf0f88547f6d679928d738f03c46b5b6f289877f0f8c5fb28fd0f4c6cac5bfe3d8830375260b1eceae968c5",
+      "name": "Malaria",
+      "namespace": "MESH"
+    }
+  ]
+}

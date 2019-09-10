@@ -1,0 +1,4839 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_29929138.bel",
+      "version": "1.0.1"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_29929138.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Nonfunctioning CD59 is a major risk factor for stroke and hypercoagulability.",
+      "key": "d2e1b39aac38b757597b1ca57fd99346f514260c9955acedd1096246df923aa3e4b8de2a7daba4536024c867ff7bf00580cde0eeea5f62173781072b550923ab",
+      "line": 92,
+      "relation": "increases",
+      "source": 21,
+      "target": 43
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "More recently, we have described two infants carrying the mutation who manifested with recurrent strokes [8], establishing the concept that primary Cys89Tyr mutation in CD59 leads to a thrombophilic state.",
+      "key": "03c70193a7edc64824a1811537a28d160d896a1632afaa80c0ef8e326c9f6bd363cbe02a30ae04fee6e7773351f76c2b7ad959bf457be6ff1d08cd6efaa18654",
+      "line": 139,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 43
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "We recently encountered patients with recurrent strokes leading to premature death in 2/7 young children with primary Cys89Tyr CD59 deficiency [8].",
+      "key": "67ab4c9c52b787dca3944c447600c28042dfc8ad29d7d5f8a800676aa9ca655ee68a77d1c0da7d3fdabf633c0c89074647c15353fbbe52a4a1dcef5c26049dd5",
+      "line": 397,
+      "relation": "increases",
+      "source": 21,
+      "target": 43
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Nonfunctioning CD59 is a major risk factor for stroke and hypercoagulability.",
+      "key": "eae82e2995ff269ad1cdf2d433332872b8b5338c7c1de590e07cd0ec54bd7e944ea0d2fa50da7e8de96360a94865d6197b6e8808fab410345e2155b8a874415a",
+      "line": 93,
+      "relation": "increases",
+      "source": 21,
+      "target": 37
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "The Cys89Tyr mutation in CD59 was initially described with manifestation in infancy by chronic hemolysis and relapsing peripheral demyelinating disease resembling recurrent Guillain- Barre syndrome (GBS) or chronic inflammatory demyelinating polyneuropathy (CIDP).",
+      "key": "93f788d6617ce7a5a4f5e6773cbc01fcca340e5d6771e1b8aaaaf11e064c61de598d17b244d6d60fc9b570d5e9ba6376428a411298aa37cb4f88ee5dd7b58a57",
+      "line": 130,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "The Cys89Tyr mutation in CD59 was initially described with manifestation in infancy by chronic hemolysis and relapsing peripheral demyelinating disease resembling recurrent Guillain- Barre syndrome (GBS) or chronic inflammatory demyelinating polyneuropathy (CIDP).",
+      "key": "89a8c540285542ed1480bd0a82309988679da6aee3b98d1b46e25662aa1baaf57b084166222fcaf96af79b012081216d5ec991e648f652422b968d9964bba5df",
+      "line": 131,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 38
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "The Cys89Tyr mutation in CD59 was initially described with manifestation in infancy by chronic hemolysis and relapsing peripheral demyelinating disease resembling recurrent Guillain- Barre syndrome (GBS) or chronic inflammatory demyelinating polyneuropathy (CIDP).",
+      "key": "f641a5e7f69b0a1587baa1757c8288d84998a85c87ec8f354f741d5bef788423765eef29f759cca63931630bceef39de6b5b5d02048dac19fcf7ed0e1ece0347",
+      "line": 132,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 39
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "More recently, we have described two infants carrying the mutation who manifested with recurrent strokes [8], establishing the concept that primary Cys89Tyr mutation in CD59 leads to a thrombophilic state.",
+      "key": "7c7e0cd60d1d158f2b8a58c468d46de52b2bdeacbc72d1ad7389420aa89f2b2c7a89de23e002f5c8e98166d9cc8776edf45f2f0dc45ee2d972bc3b2ed4748afa",
+      "line": 140,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 46
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In summary, thrombosis is an extremely important prognostic factor both in PNH and in primary Cys89Tyr nonfunctioning CD59.",
+      "key": "311ba92745023954ce0d02350ba99d1d48b8deede763d282c467a8d8f012e5ce41508a84dd4f455dc566b556616b677329cca1e72c07659a69880f7acf21b10c",
+      "line": 413,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 46
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "As shown in Fig. 1, significantly increased MAC deposition is seen on RBCs (p < 0.0003), neutrophils (p < 0.009), and platelets (p < 0.0003), but not on monocytes (p=0.5, not shown).",
+      "key": "bf68b6181935799a41560230a4c2b3dd0c3a5dfb12d5c29a7f2fce83b3f1a19c5c45d734886fe8a0de5f62e91536d61488193fe1a0e262ce03fc083dd7724cec",
+      "line": 150,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "monocyte": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "As shown in Fig. 1, significantly increased MAC deposition is seen on RBCs (p < 0.0003), neutrophils (p < 0.009), and platelets (p < 0.0003), but not on monocytes (p=0.5, not shown).",
+      "key": "7907a648c23e015d2021bf19cbf2635514723c9f2ac4a655ed2586318c24e1cdb1fba1a53571754c3391ee7fd13ebd1a46972340fa13d6bd5b65dfa48becfc03",
+      "line": 153,
+      "relation": "causesNoChange",
+      "source": 21,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "However, in primary Cys89Tyr CD59 deficiency and not in PNH, the endothelial cells are exposed to MACmediated injury.",
+      "key": "e06a05f483581ea5d1dfba0eb42f3f570ee046d228606129be031fa1a5455d9b7b48585317c993ea4f3d70ca251b370d9bbbb6f771c78aefac86206ecbecb1ea",
+      "line": 312,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "We have assessed the presence of MPs in four patients with primary Cys89Tyr mutation in CD59 and two PNH patients, as well as in four healthy donors.",
+      "key": "6c235f0b18743ba4c8d97fb7e367ff8c3f738fe094da3e6577bc3710bb617e3476bdae9add5fe91065811651aad02eff95d51f1144757e1bcb298a13ed0f1ed7",
+      "line": 188,
+      "relation": "increases",
+      "source": 21,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In summary, patients with primary Cys89Tyr mutation in CD59 showed about 9–10-fold increase in the number of MPs compared to controls and slightly but significantly increased numbers when com pared to PNH patients. The origin of MPs was primarily RBCs and to a much lesser extent platelets and neutrophils.",
+      "key": "920291e4de63651e3332724b220ad6f40b1263a82c97e100929038282177ab1ad9a7053df4ce68538366753203aaa54b685b706eb8f7fc62a83e4476289d1828",
+      "line": 198,
+      "relation": "increases",
+      "source": 21,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "The average mean fluorescence (MF) for CD61 staining of was slightly reduced in patients with primary Cys89Tyr CD59 deficiency and PNH as compared to controls. However, the average MF for CD62P expression in the healthy individuals was 38.3 ± 3.1 compared to 48.5 ± 4.7 in patients with primary Cys89Tyr CD59 deficiency (p < 0.0085) and 54.0 ± 4.2 in patients with PNH (p < 0.0013), indicating a significantly more activated platelet phenotype in both the patients with PNH and those with primary Cys89Tyr CD59 deficiency.",
+      "key": "443c8caa8a8cb7ba8fc92b435ab446f897246948a24d05b8ba03395dc28a13b94f6f94af666b688547af334d155dea432618ed6d48f4a26c9a501e8ce52512b5",
+      "line": 211,
+      "relation": "increases",
+      "source": 21,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "It is thus plausible to suggest that the increased monocyte-platelet interaction in patients with primary Cys89Tyr mutation in CD59 is related to an activated platelet phenotype.",
+      "key": "cd7535b6e980e60a00b3e17edb0e776dd889a7f1dc1321bee3f910614ca9eb6d289436c3957a1171697fb2dd1cd9f0ca02ea50d91802bfada6086b11320fd858",
+      "line": 233,
+      "relation": "increases",
+      "source": 21,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Interaction between monocytes and platelets was suggested to be via p selection [17], which was shown here to be much higher in patients with primary Cys89Tyr mutation in CD59.",
+      "key": "31d77032f8199222708a430c7d0ada89cdf8a7c10a4bca22f65cce587fab9e4ffe97bce394146736d48ae82e274bbdf824be0f6756b33bbfa82a7547c9475181",
+      "line": 227,
+      "relation": "increases",
+      "source": 21,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "High free hemoglobin was shown in patients with primary Cys89Tyr mutation in CD59 (Table 1) and it has been suggested in several ways that free hemoglobin may serve as a major mechanism for thrombophilia.",
+      "key": "00d2573efb72f76b3f465b7873166d093fde5e7ab2f84eb354b955741f60ebc23880ef660faf5d97459b4cd2ebc2533e95f508c0ccdf44f8ecb3215623efff4b",
+      "line": 240,
+      "relation": "increases",
+      "source": 21,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Although aggregation has not been investigated in PNH, we clearly show here that in primary Cys89Tyr CD59 mutation there is a significant increase in coaggregation with high numbers of activated platelets adhering to a single monocyte, and granulocytes to monocytes, that may lead to nonendothelial-bound arterial occlusion, among other effects [36].",
+      "key": "f809cb558a91625710f68821e448f2ce85efcaa8486aa0607a9bb722bdda013a084aa97907746903adf3dec47d4ca81caf3e32948476b33ca487667e769e36e6",
+      "line": 383,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 13
+    },
+    {
+      "key": "7eb185f5b7ccf0dca065ddad64eefc4aa7099aeebae25e8ef3b9cfb4077bb1d530cb4bb6a42e629216cccf80574c648e9de0ddf4ec5b5390573997ff5cd77407",
+      "relation": "hasVariant",
+      "source": 20,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "CD59 deficiency is a common finding in adult patients with PNH, which is characterized by clonal expansion of hematopoietic stem cells that have acquired a mutation in the PIGA gene (phosphatidylinositol glycan anchor biosynthesis, class A).",
+      "key": "6309531e3d040a2aa04143fb53256377b8f5abfd5264d5fee4be3ec5a07d33544026362f4d7b90c8dbe53907a7bff657c7cbc78b4b7e927ba8f5ef32d3f3eff6",
+      "line": 115,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "PIGA encodes a GPI biosynthesis protein, phosphatidylinositol N-acetylglucosaminyltransferase subunit A [5, 6], and erythrocytes deficient in GPI-anchored membrane proteins, including CD59, undergo complement-mediated hemolysis.",
+      "key": "3672e1f15c148121b3e63fa304ea4412b333e6493bc58433d2d5279dc7af32607af64fbd56334f6065c3c5aa6745fe9819bd234c0fa249cc8558d6950466730f",
+      "line": 122,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "The endothelium normally expresses high levels of CD59, which protects endothelial cells in healthy individuals and in PNH patients from MAC-mediated injury.",
+      "key": "0219f5123118c6f32438e45e6971e0e7645d937aea5ffa984e79a50fad9f92c7b870eada88ada9cea5e9db91fb6abe990a19f7533cebb3f48bda27fee9258156",
+      "line": 306,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Interestingly, we have recently reported an association with venous thrombosis for lack of CD55 [45], so PNH patients lacking both CD55 and CD59 may suffer from both venous and arterial thrombosis.",
+      "key": "bc461739f5d22bb58081355b2395db49f9fa1407b428bab4abf21196754e1053ce5aada911fcb8bd87b2b548c2078a8d254726a04d3c587d52451df74a24ce9b",
+      "line": 405,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 34
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Interestingly, we have recently reported an association with venous thrombosis for lack of CD55 [45], so PNH patients lacking both CD55 and CD59 may suffer from both venous and arterial thrombosis.",
+      "key": "a0038c7831f97a67166157d1dd2d8711ffd3d05efc49c0c68be0019d1451adaa8a45cd6680163ae780386efa78bb7301a01c216d75b41bd724cd59aba39a54bb",
+      "line": 407,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 36
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "More recently, we have described two infants carrying the mutation who manifested with recurrent strokes [8], establishing the concept that primary Cys89Tyr mutation in CD59 leads to a thrombophilic state.",
+      "key": "a5d3e74f6e2e82d20f80e95b186003ef419b23802602e874a1de666e3987e3906b0974d8061f3efe970d09c112fb2e6fea1350a3ba37f62ec9dc04f58e23719b",
+      "line": 139,
+      "relation": "positiveCorrelation",
+      "source": 43,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Thrombosis is the prognostic factor with the greatest effect on survival in paroxysmal nocturnal hemoglobinuria (PNH) patients [1, 2].",
+      "key": "cf5d37248cfb4d65eef3b6e0951f5aa13a13d01cf4ff015e9c478e1896f33cd4808536a3a5142a30462678c8c0e4a4aafca9d235afa9a983c54b3df71bb2f990",
+      "line": 101,
+      "relation": "positiveCorrelation",
+      "source": 35,
+      "target": 46
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In summary, thrombosis is an extremely important prognostic factor both in PNH and in primary Cys89Tyr nonfunctioning CD59.",
+      "key": "bbcf165f9cf20ffc6f94c97e25941f47524553a8e77300e22f9bfdfc7fde855192e23f7fea98f5b4b18d5991cc44b4fadfd51b94a4c4eaa8e12a22c9414866c6",
+      "line": 412,
+      "relation": "positiveCorrelation",
+      "source": 35,
+      "target": 46
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "CD59 deficiency is a common finding in adult patients with PNH, which is characterized by clonal expansion of hematopoietic stem cells that have acquired a mutation in the PIGA gene (phosphatidylinositol glycan anchor biosynthesis, class A).",
+      "key": "09761e3319fc4c4c87492d00de49e1b517fca74813355bc1b6a2ea7ef2c1c06b18737b3f742d6f38fd9babe6b37e34e85e75078dbb1e0d167c3c416261747f22",
+      "line": 115,
+      "relation": "negativeCorrelation",
+      "source": 35,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "We have assessed the presence of MPs in four patients with primary Cys89Tyr mutation in CD59 and two PNH patients, as well as in four healthy donors.",
+      "key": "3806093c4316f4dd518ce63158f0e8613738a9236cbed96a7762547520481478a5f46bb6270338b0c7632aa9786b24dffedecf86f841f48f473870d2c8930f10",
+      "line": 189,
+      "relation": "increases",
+      "source": 35,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In summary, patients with primary Cys89Tyr mutation in CD59 showed about 9–10-fold increase in the number of MPs compared to controls and slightly but significantly increased numbers when com pared to PNH patients. The origin of MPs was primarily RBCs and to a much lesser extent platelets and neutrophils.",
+      "key": "f2ec13e7423951dc4c625ea06443932dcb4a14d8d5257d70075c1e074e37968bba42b5157eb18519ad8b4f12850b0b648f7d866fa249f8882080500a44d267fd",
+      "line": 199,
+      "relation": "increases",
+      "source": 35,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "The average mean fluorescence (MF) for CD61 staining of was slightly reduced in patients with primary Cys89Tyr CD59 deficiency and PNH as compared to controls. However, the average MF for CD62P expression in the healthy individuals was 38.3 ± 3.1 compared to 48.5 ± 4.7 in patients with primary Cys89Tyr CD59 deficiency (p < 0.0085) and 54.0 ± 4.2 in patients with PNH (p < 0.0013), indicating a significantly more activated platelet phenotype in both the patients with PNH and those with primary Cys89Tyr CD59 deficiency.",
+      "key": "5955ba0a3c5e12aa9beb761432c17afcb0fdb86f81f949c497ee30bdabbbcb0499db0ccea22d1bbba01338b1e290b8f9e42ac4219b874e70007400ef1c5cf82a",
+      "line": 212,
+      "relation": "positiveCorrelation",
+      "source": 35,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Ziakas et al. [38] described 38 reports of arterial thrombosis, mainly in the central nervous system or coronary arteries in PNH patients.",
+      "key": "ec3ff0fabf8d409d694e641035cb22307ffa1a8c84d005f85f4f3bcf0dbc3f9f41fb77dd187ef4add83a8b1d55f37b668ce23c4e4cee37a45820d6415c91b944",
+      "line": 391,
+      "relation": "positiveCorrelation",
+      "source": 35,
+      "target": 34
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Thrombosis is the prognostic factor with the greatest effect on survival in paroxysmal nocturnal hemoglobinuria (PNH) patients [1, 2].",
+      "key": "8cd038b87876058a25178fed2d4ab1730f1d4e0b94aa57f535a7583754b3427e3d5f5af8a356aafc051c0a1d127dd52f50c5abe4f2c4bc733dc8b4d236e30daf",
+      "line": 101,
+      "relation": "positiveCorrelation",
+      "source": 46,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In summary, thrombosis is an extremely important prognostic factor both in PNH and in primary Cys89Tyr nonfunctioning CD59.",
+      "key": "b2e4856ccecad9ee999a5f5b73d6571b57d06e2da59b3aa26458257b4d27c45a5d01f3f2b727e8d27a93743183da845674343c2a0d26d872767688ce478e9b88",
+      "line": 412,
+      "relation": "positiveCorrelation",
+      "source": 46,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Data from several retrospective studies in the preeculizumab era showed that the cause of death was related to thrombosis in 22.2–37.2% of PNH patients.",
+      "key": "8b410889f993c331b18d154d52a32b72c385add17cd0bbeec338e032664f0d4a77f417ee1249b5fe44f4494eed3fa09baada82b33ac15a472d9b03f4b64c7062",
+      "line": 108,
+      "relation": "positiveCorrelation",
+      "source": 46,
+      "target": 40
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "More recently, we have described two infants carrying the mutation who manifested with recurrent strokes [8], establishing the concept that primary Cys89Tyr mutation in CD59 leads to a thrombophilic state.",
+      "key": "65888f366b3e9cc0ff1356825a5676cdcfbf201a272a0581f7f9659e7c53cc39100a892dc120996c44d05d976c39350055b5c012d2f20c8de49c27b1937f4d72",
+      "line": 140,
+      "relation": "positiveCorrelation",
+      "source": 46,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In summary, thrombosis is an extremely important prognostic factor both in PNH and in primary Cys89Tyr nonfunctioning CD59.",
+      "key": "d1bc138cd9088fffd1f0b4bde7e85190e3939cc250f8f4f2b8523472863343a1be1af51440898548dddc40fe80f2847eee7376d9df4d063aa6eb78985316e397",
+      "line": 413,
+      "relation": "positiveCorrelation",
+      "source": 46,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Data from several retrospective studies in the preeculizumab era showed that the cause of death was related to thrombosis in 22.2–37.2% of PNH patients.",
+      "key": "fda5968a221d201a26babd1053e23eb364f7033612a9fa16f9b020cf162070a2c086f8888a45b74ca8e15473b385f95da1154d3c6099d0f0d8cdb26b42563b8c",
+      "line": 108,
+      "relation": "positiveCorrelation",
+      "source": 40,
+      "target": 46
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "PIGA encodes a GPI biosynthesis protein, phosphatidylinositol N-acetylglucosaminyltransferase subunit A [5, 6], and erythrocytes deficient in GPI-anchored membrane proteins, including CD59, undergo complement-mediated hemolysis.",
+      "key": "f9619e8619df9efdad00b1e2b1b1f50254747ca56f820d6d5716bca3323a8b8848135bc714b11bedaf4d3a7fbdb642b1d4bc3add4054a4a3035c95f599f6c5f7",
+      "line": 122,
+      "relation": "negativeCorrelation",
+      "source": 41,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "The Cys89Tyr mutation in CD59 was initially described with manifestation in infancy by chronic hemolysis and relapsing peripheral demyelinating disease resembling recurrent Guillain- Barre syndrome (GBS) or chronic inflammatory demyelinating polyneuropathy (CIDP).",
+      "key": "09bc1902dcc0539671b64520c7ecdf5b9d604e3211e65d2a73350a95d2adcaac645009b19165e8f9c2f8e9471d068cee52ce46c19a685bca89463295830238f9",
+      "line": 130,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Increased MAC deposition may lead to cell lysis and hemolysis, as is usually seen in RBCs but to a lesser extent in neutrophils and platelets (please see below).",
+      "key": "e92bf54d1e4e794698817fdcd19721bb0cd4cdb56a92e46a80d179468055ea6af29a6cf9c0cc72bc0192f3b1448d79e98d037f24d043d5380c973213a4afa1db",
+      "line": 160,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Following MAC deposition on RBCs, intravascular hemolysis that leads to increasing levels of free hemoglobin was seen.",
+      "key": "b507f2ae9a9b60e43e896b89c53f6adcee8b4af47c5863b557781ea41a1678d3a150b9139369432bcb10bb8b7d7ca9a07667df237c7a252cd9f7c66405d9ba7a",
+      "line": 165,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Following MAC deposition on RBCs, intravascular hemolysis that leads to increasing levels of free hemoglobin was seen.",
+      "key": "04549e39c60c02c2063e3be9ff16aa7794e2319cec93c7141c85bd08f08ce66907b5dea66e114fb078860f5ce71a066e129cd70c99b59189a9402f4ea67181c6",
+      "line": 166,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Excessive intravascular hemolysis saturates scavenger mechanisms, resulting in free hemoglobin in plasma that irreversibly reacts with nitric oxide (NO) to form nitrate and methemoglobin.",
+      "key": "d29f1f2bde45d37565173f26c80f8e15ce0649b6ca08dadf7c65996932888052aa571b089120062b306c340c7c88c6756b5673ec2591fbfb05c0e5f34c23fd61",
+      "line": 279,
+      "relation": "increases",
+      "source": 41,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Intravascular hemolysis is one thrombophilic mechanisms in PNH (reviewed by Hill et al. [14]).",
+      "key": "d82481fd9a857a6d76d033a1357ad563636542cb85635379668d30a4e601484b34f08dc9faff12fddaa7bd6ba08635648a56831f61b6c981b158ef621b49bc5e",
+      "line": 249,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 44
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "The Cys89Tyr mutation in CD59 was initially described with manifestation in infancy by chronic hemolysis and relapsing peripheral demyelinating disease resembling recurrent Guillain- Barre syndrome (GBS) or chronic inflammatory demyelinating polyneuropathy (CIDP).",
+      "key": "143da4470bc748e4eb06323f0002a1cedf40565da7480126c6046942f2ecb650ef2f9e7b3df13e7861ee9b21eb36c8f0ddfa443a41c24b5494d018ac62842d5f",
+      "line": 131,
+      "relation": "positiveCorrelation",
+      "source": 38,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "The Cys89Tyr mutation in CD59 was initially described with manifestation in infancy by chronic hemolysis and relapsing peripheral demyelinating disease resembling recurrent Guillain- Barre syndrome (GBS) or chronic inflammatory demyelinating polyneuropathy (CIDP).",
+      "key": "2d3fb3f98e50a33e973013d24c3262b539d8d1c6ce82e3ec9873ad3b4a4aa6da31d2fb700e7ae08eb3dce2ebc2fac7cc1c867f1a8786ef8be80c1fe88bcb733b",
+      "line": 132,
+      "relation": "positiveCorrelation",
+      "source": 39,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "As shown in Fig. 1, significantly increased MAC deposition is seen on RBCs (p < 0.0003), neutrophils (p < 0.009), and platelets (p < 0.0003), but not on monocytes (p=0.5, not shown).",
+      "key": "1fd655620a1a78bb5c088ef1519f887ca2cf0de9938534e5679d131d19b708d3a98e0e6c1d33caed6c360ebc54d56f892a2fecfaa9656242f0842dbae0576d61",
+      "line": 150,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "However, in primary Cys89Tyr CD59 deficiency and not in PNH, the endothelial cells are exposed to MACmediated injury.",
+      "key": "b33cb6c10b49c0613f1461380b84c0277543b45734886a45ee3785101cad53d9d54e95e5e536fc1f88e45e330a2a5fa20cbef2ce045cb820ddbcbe8cb7ae830c",
+      "line": 312,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Increased MAC deposition may lead to cell lysis and hemolysis, as is usually seen in RBCs but to a lesser extent in neutrophils and platelets (please see below).",
+      "key": "12cd000c662b3eea093931b520cefb0edc178594c61444c34d3b751428882e3c550113ccdbc01801817e899f361838a93ee4193d0eff8b1d6c8637018e60d4db",
+      "line": 160,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Following MAC deposition on RBCs, intravascular hemolysis that leads to increasing levels of free hemoglobin was seen.",
+      "key": "2cb138e1a12f3428fdad02bf680bf342da419e40cb319f347eeecddf973c305416e02f421f011ef850edb8904ac850038c8bc4366c25e45f82dc760ebdab378f",
+      "line": 165,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "The endothelium normally expresses high levels of CD59, which protects endothelial cells in healthy individuals and in PNH patients from MAC-mediated injury.",
+      "key": "6b7a3ceaeec3f0a14754b19099f05f63d965b00087b17948e22496cafb2d7e70beb8bc377999a7111e2368250874c6aea3aad70e2acd18b09125a2f3e3cb7327",
+      "line": 306,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Following MAC deposition on RBCs, intravascular hemolysis that leads to increasing levels of free hemoglobin was seen.",
+      "key": "49ff77de9d30660441fad64d946e9ed7677e9082087b8a2bb9403133a01ddd07a8dd7a26afabb79e65ff33cc00bb5a876584273e117f0b7979a483186e908322",
+      "line": 166,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "This is a principal requirement for hemoglobin and hemin to induce adverse reactivity in tissues, including nitric oxide and oxidative reactions, release of free hemin, and molecular-signaling effects of hemin (reviewed by Schaer DJ et al.) [13] and Hill A et al. [14].",
+      "key": "ee52e5b56a9f5ba41922fe3fa677851ba72ff464f8b1795617ddddabf97ec07e0efbd014f5a69ccadcdc2e21c60f84f26745b2b799f2a23e0aba2dbaa3d62f59",
+      "line": 181,
+      "relation": "increases",
+      "source": 25,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "High free hemoglobin was shown in patients with primary Cys89Tyr mutation in CD59 (Table 1) and it has been suggested in several ways that free hemoglobin may serve as a major mechanism for thrombophilia.",
+      "key": "df02328aad80a7c3ce632a0fb020e691140add366011c0fac97adfac746e07d37ad2dcc2e795cffd5229222dee7e9fdbd4253534332c3ed6df530223bd8006f0",
+      "line": 241,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 44
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "One mechanism that may contribute to enhanced platelet thrombus formation is inhibition of the metalloprotease ADAMTS13 by free hemoglobin [20].",
+      "key": "72ea9340f6bd83601fb6cb63c32d20ee109bebc339b87119853dfc467336642cc4ecf69d205dbae2fb16e22b74cf521e4631fc803a7f56393d9e91ec6ef1eddf",
+      "line": 271,
+      "relation": "decreases",
+      "source": 25,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Endothelial injury may also be related to Free hemoglobin and its breakdown oxidative product heme, and MPs, which mediates direct proinflammatory, proliferative, and pro-oxidant effects on endothelial cells [22–24] both in PNH and congenital CD59 deficiency, but may be more pronounced in congenital CD59 deficiency and perhaps even more in the brain due to loss of CD59 in the endothelium of these patients.",
+      "key": "8819ce788845e775acc115b5d46bb5d85f47a6bff74f42feaa4cc795c22f4a474d0d854bbc22685ef2f006eb23798a352ab79243e2e07a32bff2b8e64f704b31",
+      "line": 329,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 31
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "free hemoglobin is rapidly cleared from the circulation by several scavenging mechanisms; however, we found that the plasma-free hemoglobin was high and haptoglobin levels were low in the patients examined (Table 1).",
+      "key": "c1ffb4b0c573b7db4f0a47d05e423f128c874552f2f4779fafd368387e43db2aa6ebbecaccf3c82a69b5ea5dc16fe45c75f0b247ecb66df68e9908b51fb87d52",
+      "line": 173,
+      "relation": "decreases",
+      "source": 26,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Endothelial injury may also be related to Free hemoglobin and its breakdown oxidative product heme, and MPs, which mediates direct proinflammatory, proliferative, and pro-oxidant effects on endothelial cells [22–24] both in PNH and congenital CD59 deficiency, but may be more pronounced in congenital CD59 deficiency and perhaps even more in the brain due to loss of CD59 in the endothelium of these patients.",
+      "key": "7c34287adbae53be3eecc811cec12da77865be9029c6892bc03cea642c011cf04fa9aee2028d174f07b53aa92e9c124813eca867516c19e18b3260c02cf3ad02",
+      "line": 331,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 31
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Circulating MPs in PNH express the endothelial markers ICAM-1 (CD54), sVCAM-1, VWF, CD144, and CD105, indicating endothelial activation [24].",
+      "key": "6782598387426d3821b1405dce643c6fc591970c2178b13138224132c1ae911313ff68ccd3347174bde3b354040d3feb3ea11d991feec370cff09025aba9d711",
+      "line": 338,
+      "relation": "increases",
+      "source": 9,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Circulating MPs in PNH express the endothelial markers ICAM-1 (CD54), sVCAM-1, VWF, CD144, and CD105, indicating endothelial activation [24].",
+      "key": "91ed54b92c0d70ee688632dfdcd132be2ef0f8faacba804e52c02df28c7237ab4bb6263bb45819459d9ce72e230adf17f68a308dd7f96026b9c51306fde902e8",
+      "line": 339,
+      "relation": "increases",
+      "source": 9,
+      "target": 29
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Circulating MPs in PNH express the endothelial markers ICAM-1 (CD54), sVCAM-1, VWF, CD144, and CD105, indicating endothelial activation [24].",
+      "key": "1dfb7e5a65b75ce2e8d8bfe0bb9b459f17a6a228220f786ece628d6a69468b2e718df7619e417bc27c23155561c21fe1c36a2109bc0d68acd4bd1449a6b85328",
+      "line": 340,
+      "relation": "increases",
+      "source": 9,
+      "target": 30
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Circulating MPs in PNH express the endothelial markers ICAM-1 (CD54), sVCAM-1, VWF, CD144, and CD105, indicating endothelial activation [24].",
+      "key": "5fa0fd9be8959f0a1b3058a32d098f2896d14c545e4f8002f39298067cf4312d2ca64e5105effeaea291e526a9eee1507499f73f9aeee475ed86f43edab037be",
+      "line": 341,
+      "relation": "increases",
+      "source": 9,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Circulating MPs in PNH express the endothelial markers ICAM-1 (CD54), sVCAM-1, VWF, CD144, and CD105, indicating endothelial activation [24].",
+      "key": "c0d28dc80596b87b4faf6795f5a5ecdde5ecb456fc419b19e511f9a0a4b27d92e20b03fe9d12fdb832b8dfe495bfddcad81579d315ee327d298745f9b83d6f9e",
+      "line": 342,
+      "relation": "increases",
+      "source": 9,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In this work, we were able to document a significant increase in RBCderived MPs, and a lesser increase in PMN- and platelet-derived MPs, in these patient s. This increase in MPs may lead to the thrombophilic state [15].",
+      "key": "0f1ef4cc5fcd13e8288c09edd3c2f8b1b978c9439874133fd98326475a775735c98f4647197fe3af01dbbb3de670e826a8e2d2a4383e5e2731f50043b6f26e4a",
+      "line": 358,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 44
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Surface accumulation of MAC may be at least partially responsible for the activated platelet phenotype seen in patients with primary Cys89Tyr CD59 mutation, as manifested both by increased CD62P expression and monocyte-platelet aggregates.",
+      "key": "1b8c43a5650864e91d0d3dc1f7fef84b0ca7d98f30f342523c93eacc7a6eae5b0f50ce07cc50416334f3b4c0f3b127492920fd202cab379fb9999fc23a155334",
+      "line": 372,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "The average mean fluorescence (MF) for CD61 staining of was slightly reduced in patients with primary Cys89Tyr CD59 deficiency and PNH as compared to controls. However, the average MF for CD62P expression in the healthy individuals was 38.3 ± 3.1 compared to 48.5 ± 4.7 in patients with primary Cys89Tyr CD59 deficiency (p < 0.0085) and 54.0 ± 4.2 in patients with PNH (p < 0.0013), indicating a significantly more activated platelet phenotype in both the patients with PNH and those with primary Cys89Tyr CD59 deficiency.",
+      "key": "5783d51324d54593286d98b44d5b0231857cbfa2acc915ba3ec63c85f6f43b01ee633473b4b6ed6fa5c605eb693820475c9e977c9a8d197bc91c18c32f5ccd59",
+      "line": 212,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Monocyte–platelet interactions are believed to be predominantly mediated by surface P-selectin/integrins and their receptors, and it was suggested that monocyte-platelet aggregates are a marker of platelet activation as well as a pathway for the regulation of monocyte and platelet function [17].",
+      "key": "b9f828489389f0edd0056b4ff5e3bb220021f5a30b8f36d64c387391ac8e22b29e5f328cf4f9f3894d7408386e8655ba4b405bb730c86a4f15adc05173baf04c",
+      "line": 220,
+      "relation": "positiveCorrelation",
+      "source": 28,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In contrast to platelet lysis, platelet activation is clearly seen, based on both the higher expression of CD62P (Fig. 3B) and increased coaggregation with white blood cells.",
+      "key": "69024f96fdc869f6e9f242bb236f59c8cd56c691bb3786858497dc84be5fccd1bfb5bfce90a14dff3ad6ac68b48964fff3642d75c556dc206807b5aed682bdfc",
+      "line": 364,
+      "relation": "positiveCorrelation",
+      "source": 28,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Surface accumulation of MAC may be at least partially responsible for the activated platelet phenotype seen in patients with primary Cys89Tyr CD59 mutation, as manifested both by increased CD62P expression and monocyte-platelet aggregates.",
+      "key": "dbd62a05f8591c0a73079b4ae225bc0b81322ba4d582be80eb21fe7d343c950394ec0beb687d5116d0cdae90564b68bd3edb370cdea799a8cc3adb1b5aeed1e1",
+      "line": 373,
+      "relation": "positiveCorrelation",
+      "source": 28,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Monocyte–platelet interactions are believed to be predominantly mediated by surface P-selectin/integrins and their receptors, and it was suggested that monocyte-platelet aggregates are a marker of platelet activation as well as a pathway for the regulation of monocyte and platelet function [17].",
+      "key": "f20048f897b051476ce521a6cc2fe92884ddf2a7ba40c231ce760410b67a1c6fa2eeb36f206da6bee4ad86f545e6f8f6d5d02ca03cad8964dc296c290684dfda",
+      "line": 220,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "High free hemoglobin was shown in patients with primary Cys89Tyr mutation in CD59 (Table 1) and it has been suggested in several ways that free hemoglobin may serve as a major mechanism for thrombophilia.",
+      "key": "14bf341435e3ebfb3ce6dcc4dfd4b5b41f6ab71f67dec96686d374a5cc968e26d1b864bbd9a277cc7027d50dbb840518302142d064d3d48e8bf636b674492c79",
+      "line": 241,
+      "relation": "positiveCorrelation",
+      "source": 44,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Intravascular hemolysis is one thrombophilic mechanisms in PNH (reviewed by Hill et al. [14]).",
+      "key": "5f192bae9e5ecf90e46345005d49077b0c87a3dffcf889c45efec2f7dc4badee0b11be9841e5d570ed9456c9f670ce83d656fb982ddcc2528c3d922aac14b60b",
+      "line": 249,
+      "relation": "positiveCorrelation",
+      "source": 44,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In this work, we were able to document a significant increase in RBCderived MPs, and a lesser increase in PMN- and platelet-derived MPs, in these patient s. This increase in MPs may lead to the thrombophilic state [15].",
+      "key": "f8d89ab3ad360034688ba70bd833e1af4ad936cf17c11d0af08524c953ffaf807bae0f180645e76b10725b9cb906e1db7f32987b60c0690db7b93b35bbbe934f",
+      "line": 358,
+      "relation": "positiveCorrelation",
+      "source": 44,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Administration of heme in healthy volunteers caused thrombophlebitis, demonstrating that it can cause vascular inflammation followed by vascular obstruction [18].",
+      "key": "1a965aee3ce314d39254a1ceef479b6f2721e7bcc7ae905407643631bf6fd5bfcbe0985a5b12fe0764743ec835bd1e010d4f0a385407c3403f9ae78e682e8677",
+      "line": 263,
+      "relation": "increases",
+      "source": 2,
+      "target": 45
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Administration of heme in healthy volunteers caused thrombophlebitis, demonstrating that it can cause vascular inflammation followed by vascular obstruction [18].",
+      "key": "fdb662eddcf25709c43ae52be1089fc813a4140c88d3fcfda226e16704a685dd9edd732609acb715d37e53c6bb2629a47947e862b1bf462be12cc8f643246b3a",
+      "line": 264,
+      "relation": "increases",
+      "source": 2,
+      "target": 42
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true,
+          "neutrophil": true,
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Administration of heme in healthy volunteers caused thrombophlebitis, demonstrating that it can cause vascular inflammation followed by vascular obstruction [18].",
+      "key": "3ecf75b9c06be05790d7872c05e5bf5f095a4c28c8314bb8596efce66d0d95c480c61211d22db6689b17ff6725a42626c91558f4ffd10eae92d3636a00809aff",
+      "line": 265,
+      "relation": "increases",
+      "source": 2,
+      "target": 32
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Endothelial injury may also be related to Free hemoglobin and its breakdown oxidative product heme, and MPs, which mediates direct proinflammatory, proliferative, and pro-oxidant effects on endothelial cells [22–24] both in PNH and congenital CD59 deficiency, but may be more pronounced in congenital CD59 deficiency and perhaps even more in the brain due to loss of CD59 in the endothelium of these patients.",
+      "key": "b1056782de2034c1a3cf0f706e40e55163ca994f505b3cad555b9cda154823bada2d975e02d69fa82149aba056d1ee4a52b3eb61833ae50dfcfcf53b5bec21ad",
+      "line": 330,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 31
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "MPs are small membrane-derived vesicles that are shed upon activation, inflammation, or cell death/damage.",
+      "key": "31ead39762f06f4fe7bddac192b02f20d43f2cf36d468cb2831e2530958b528413935b3c05e996218759cedac7f2748efa5d7fd5b7eefc9a1e8374ca66f76f44",
+      "line": 347,
+      "relation": "increases",
+      "source": 42,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "One mechanism that may contribute to enhanced platelet thrombus formation is inhibition of the metalloprotease ADAMTS13 by free hemoglobin [20].",
+      "key": "5a62acfc1cbd8b3368d14ae9289c4cb4347e8c1bf31a37715162b47054419d4684e74bfe9de1648141d6451559dc3ae44e5bf39f9b7bcbc8566f19ffece44d67",
+      "line": 273,
+      "relation": "decreases",
+      "source": 18,
+      "target": 8
+    },
+    {
+      "key": "edafbc3166986f43d356e712089a6439f3a4cbe2b7bf5d2b3f1b22e24dc53c7bf11fe55d6f5a0228922db96eb35a53e34301ae97fe79f398c12629b65c7aac60",
+      "relation": "hasReactant",
+      "source": 47,
+      "target": 0
+    },
+    {
+      "key": "bb29454aafefd5c9fbb87140bdf5fab4c8595fe2f3e165bdcfb3bc157d8531fd2e819ee02a56e78e705b4752f0d94d0fa9fc641990d79947b60140d0ea36e810",
+      "relation": "hasReactant",
+      "source": 47,
+      "target": 25
+    },
+    {
+      "key": "a68e43955fe14f3e059e5a50504275372ef673fb6eb83d070b86dae3bd7b63892849ba97832d8faa4da1a71f7e9cd5157bd9d54856b92b0bfd1225d76fdbee4e",
+      "relation": "hasProduct",
+      "source": 47,
+      "target": 3
+    },
+    {
+      "key": "e06640725a9797c72da72f43949f4f7c0091849640a7a2f6d8cfc235046fa21cb168d90cf5c6146607dab7c942efaed7d06120f286d0f220dfefe69297eec108",
+      "relation": "hasProduct",
+      "source": 47,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Both processes decrease the availability of NO, which normally maintains smooth muscle cell relaxation, inhibits platelet activation and aggregation, and has anti-inflammatory effects on the endothelium.",
+      "key": "c78ad8ba92d81cbaa7b905dd556b4d563269e9e405301dc3b46dd01f0ca765cfd66057729fa719ae15364cc6583d5af7e159f87723bfabfbf635b8cf533f4e84",
+      "line": 295,
+      "relation": "decreases",
+      "source": 0,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Both processes decrease the availability of NO, which normally maintains smooth muscle cell relaxation, inhibits platelet activation and aggregation, and has anti-inflammatory effects on the endothelium.",
+      "key": "5e10439a90c1950c714193142ecacbe302353a85d55e89d86115a4c5ddcb76314c5dab23d173df8620dbe0b7ee6c8edfa12c1e9ad990172407cad6241fbc9126",
+      "line": 296,
+      "relation": "decreases",
+      "source": 0,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Both processes decrease the availability of NO, which normally maintains smooth muscle cell relaxation, inhibits platelet activation and aggregation, and has anti-inflammatory effects on the endothelium.",
+      "key": "7d2c319ccfe564cc0acb2a69990ac28db7d5513046afb0b62c6d906b7edbb65ab13f2cb758a9b09c5a71398d76abb8c49691bb9c4c91545e01f7c01f73137e68",
+      "line": 298,
+      "relation": "decreases",
+      "source": 0,
+      "target": 42
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In addition, lysed erythrocytes release arginase, which catalyzes the conversion of arginine, the substrate for NO synthesis, to ornithine.",
+      "key": "9a851777dc45280cb59e3eb0e45582e8bd7cfba20d8ab04bfc47c06b376744dd1393fd3645544c5452ff77db7dfbc944ca22afc8e7906860ccba85c7c0180564",
+      "line": 286,
+      "relation": "increases",
+      "source": 6,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In addition, lysed erythrocytes release arginase, which catalyzes the conversion of arginine, the substrate for NO synthesis, to ornithine.",
+      "key": "830ea45acf5897a5f3839aa3645500212410aa1b911ca4e6d62ea57587a7b75f00cfc31e1a615492d6c5d5cc932dc1ce413ea6fd0edf0696347d3f59b9ef7604",
+      "line": 287,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 48
+    },
+    {
+      "key": "1196babfa697e635fa193a58ecd13dc3060bdcbff358c329855184f04b09649bb491212d6151ff856121ed8602cd7799cb3d4c268d62ea32135e038dac202f4d",
+      "relation": "hasReactant",
+      "source": 48,
+      "target": 1
+    },
+    {
+      "key": "a49ce69cea34f4921543053c07631500d6f4fe861ce77b80d5beb638c70ddb0c968a50d54a0d2a8e3bd2723a4df3923e664aa77abc096e5cb1d7353350c4657e",
+      "relation": "hasProduct",
+      "source": 48,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In addition, lysed erythrocytes release arginase, which catalyzes the conversion of arginine, the substrate for NO synthesis, to ornithine.",
+      "key": "3aa85656ec158ab4fec3219ab400a609e0048a3d8cff623b3c1a62b496fb6837b054c0c58c5e6786cdc7e583fd5aafd37d4fd00d58d6b9f08207b88aa0ab7af5",
+      "line": 287,
+      "relation": "positiveCorrelation",
+      "source": 48,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Both processes decrease the availability of NO, which normally maintains smooth muscle cell relaxation, inhibits platelet activation and aggregation, and has anti-inflammatory effects on the endothelium.",
+      "key": "3a12e8cb7a45da718dcb4f9659975c664a9ebff9fd9c461ddac178e1293d18f6266fd213e8bf82ee10b9a279354ecce7964c6b9b72a30ea9d9646d2a0352b8da",
+      "line": 294,
+      "relation": "decreases",
+      "source": 48,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In contrast to platelet lysis, platelet activation is clearly seen, based on both the higher expression of CD62P (Fig. 3B) and increased coaggregation with white blood cells.",
+      "key": "9d505659a662f4c85210b5bc77b6af66a363ff61ffa08cfcc88cf024c7b3e7a1504e8666d7dfa29e0b98713815f583601fe4e7f9e8d951312319b9a8425f6894",
+      "line": 364,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Surface accumulation of MAC may be at least partially responsible for the activated platelet phenotype seen in patients with primary Cys89Tyr CD59 mutation, as manifested both by increased CD62P expression and monocyte-platelet aggregates.",
+      "key": "138002cac0057b89d6e7b44649f608cecee4e6c73bdc0e3fc2fc7c3f0f9894ff1b3a46055d4ac3c61ae8607c943d255a12fcb6fe815535688a923613d5f0135a",
+      "line": 373,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In contrast to platelet lysis, platelet activation is clearly seen, based on both the higher expression of CD62P (Fig. 3B) and increased coaggregation with white blood cells.",
+      "key": "7cbeda7008258a89129758968ac2fb074dbded58ec42f14ba5fa1406e3b6fb326704190702f426454d1eb8dcca4dea53751b5fc403e537afb565190f035d543d",
+      "line": 365,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Surface accumulation of MAC may be at least partially responsible for the activated platelet phenotype seen in patients with primary Cys89Tyr CD59 mutation, as manifested both by increased CD62P expression and monocyte-platelet aggregates.",
+      "key": "e6ba8a1315f5809986d7e3057b57c3bdb8302f9a94e56c44b81067c4b87bfd4ce4968945859d7c6445cae9317a8ad2986a3f6a12e9f3e985176420775feed7a0",
+      "line": 374,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Surface accumulation of MAC may be at least partially responsible for the activated platelet phenotype seen in patients with primary Cys89Tyr CD59 mutation, as manifested both by increased CD62P expression and monocyte-platelet aggregates.",
+      "key": "778bb626e4ab508e4132195a19f4cfe7eff0c2a0894b624c3462ccc6f7521fb7e465ed2b98e1d78902b5c5bd1a5c453b839958b01a109de7b66099461e2eeeb7",
+      "line": 372,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Injured endothelium may provide tissue factors and additional prothrombotic factors [21] that are not a prothrombotic mechanism in PNH.",
+      "key": "1591116fbd69c54c1303b9e1f5e828f9272705014bf0abd24f5de61c536434e01d2a0f20e28e20b65cd22a2b3de4a5840530335014f8deb9917ac9b1805c51b6",
+      "line": 318,
+      "relation": "positiveCorrelation",
+      "source": 31,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Endothelial injury may also be related to Free hemoglobin and its breakdown oxidative product heme, and MPs, which mediates direct proinflammatory, proliferative, and pro-oxidant effects on endothelial cells [22–24] both in PNH and congenital CD59 deficiency, but may be more pronounced in congenital CD59 deficiency and perhaps even more in the brain due to loss of CD59 in the endothelium of these patients.",
+      "key": "847686095104e7e3cc136c39819c270efd6694d1dfc96d3100181210b3bb59d6e799cbdab8682ce58d263a3f4cac4e3d44145fe1b1d7e48ce33844b631ab1d26",
+      "line": 329,
+      "relation": "positiveCorrelation",
+      "source": 31,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Endothelial injury may also be related to Free hemoglobin and its breakdown oxidative product heme, and MPs, which mediates direct proinflammatory, proliferative, and pro-oxidant effects on endothelial cells [22–24] both in PNH and congenital CD59 deficiency, but may be more pronounced in congenital CD59 deficiency and perhaps even more in the brain due to loss of CD59 in the endothelium of these patients.",
+      "key": "e6f2e0a16c999f0aa6e1b9e5e07e0db76da86cce83f7de5d479334b6d6630024852caee80b7b414730366822d9992f7da5fc2e0e14d99feb57011aa950e98dc7",
+      "line": 330,
+      "relation": "positiveCorrelation",
+      "source": 31,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Endothelial injury may also be related to Free hemoglobin and its breakdown oxidative product heme, and MPs, which mediates direct proinflammatory, proliferative, and pro-oxidant effects on endothelial cells [22–24] both in PNH and congenital CD59 deficiency, but may be more pronounced in congenital CD59 deficiency and perhaps even more in the brain due to loss of CD59 in the endothelium of these patients.",
+      "key": "05cfdfffef34c342e16738503f5650f7a1fc97fd6c3fc5bc8a350a26abb8cba9a7f33fe8b4543ac99e3aeba13c2f304149eb58573e6319389760a695b4c14e23",
+      "line": 331,
+      "relation": "positiveCorrelation",
+      "source": 31,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Injured endothelium may provide tissue factors and additional prothrombotic factors [21] that are not a prothrombotic mechanism in PNH.",
+      "key": "97d246ec83e523abe4a5a11bfb385244fa2e38fae83541436a4e2e0bfd3b26850ab2dae8bbd87dd263176376fb8b6b1cec03129b26988507e20b0aa4bcfc3b13",
+      "line": 318,
+      "relation": "positiveCorrelation",
+      "source": 24,
+      "target": 31
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "MPs are small membrane-derived vesicles that are shed upon activation, inflammation, or cell death/damage.",
+      "key": "81cbafa8baa019bbede2743bf3081b55df42a9b4fe3edc2e96449848b5f901aa8c47198c0a733dbe50d94ae461a6163e80a43476c2390a7d5566974b8b729a0f",
+      "line": 348,
+      "relation": "increases",
+      "source": 15,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "In contrast to platelet lysis, platelet activation is clearly seen, based on both the higher expression of CD62P (Fig. 3B) and increased coaggregation with white blood cells.",
+      "key": "91e6a841e841255b5ef6459a37927ef93ae60a1bf3f93a020bb1721108841984a8e7a30c51555c480b15e330f6d27ae95989ba723e70d43e14bff01d04d8e495",
+      "line": 365,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Surface accumulation of MAC may be at least partially responsible for the activated platelet phenotype seen in patients with primary Cys89Tyr CD59 mutation, as manifested both by increased CD62P expression and monocyte-platelet aggregates.",
+      "key": "01b9fed6daee1b0de0853097fe168e7101786f363cf80d4599d35dc4435699f1586929d72869a5e85f152a7d7bf7d633dfbb817875ea6133a41e05710351d5f9",
+      "line": 374,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Although aggregation has not been investigated in PNH, we clearly show here that in primary Cys89Tyr CD59 mutation there is a significant increase in coaggregation with high numbers of activated platelets adhering to a single monocyte, and granulocytes to monocytes, that may lead to nonendothelial-bound arterial occlusion, among other effects [36].",
+      "key": "b196023b08f3c85bd98cd67f01c17f8aec0dacdfdcccd2956317c0b1e9c6b640e8e1ed5f35d706dcf783cfb1e45b62568ddcf38eb9b278efbd1e50b9ef32d499",
+      "line": 383,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Although aggregation has not been investigated in PNH, we clearly show here that in primary Cys89Tyr CD59 mutation there is a significant increase in coaggregation with high numbers of activated platelets adhering to a single monocyte, and granulocytes to monocytes, that may lead to nonendothelial-bound arterial occlusion, among other effects [36].",
+      "key": "1f8586075b7cf9f5d5213fdeb089cfbe085d1db04eb16212b9c810d3051200e5f5fa7995163ce9b30b8fead061a51d9816ccf524175b7d586ca76775fa1d5cbd",
+      "line": 384,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 33
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Endothelium": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Although aggregation has not been investigated in PNH, we clearly show here that in primary Cys89Tyr CD59 mutation there is a significant increase in coaggregation with high numbers of activated platelets adhering to a single monocyte, and granulocytes to monocytes, that may lead to nonendothelial-bound arterial occlusion, among other effects [36].",
+      "key": "7b12cbb9eba50809b880ec486a5864e1c5472d01b6e4c51ac6ca29cab48fbf2a7310d40755b641621ff1b56d02ac0c4e2e78006cc2db31fec91e7480400ce63a",
+      "line": 384,
+      "relation": "positiveCorrelation",
+      "source": 33,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Ziakas et al. [38] described 38 reports of arterial thrombosis, mainly in the central nervous system or coronary arteries in PNH patients.",
+      "key": "f9d91093457b170caaba7435c05800b41c5d134381f24a4e9e7b30a3598638c3de5052ec70b7a176bd6a58d298798880781f96e47a818ad45ddefa88944e816d",
+      "line": 391,
+      "relation": "positiveCorrelation",
+      "source": 34,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Interestingly, we have recently reported an association with venous thrombosis for lack of CD55 [45], so PNH patients lacking both CD55 and CD59 may suffer from both venous and arterial thrombosis.",
+      "key": "676840a5bcee2dad6506169dc5a38f9f0ce2f676f21ba1cbfb79446c1fe16871b8a71abaaadb1a6a886273b0f5a04115581dcda11836d2a8522c52d9fc156c86",
+      "line": 404,
+      "relation": "negativeCorrelation",
+      "source": 34,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Interestingly, we have recently reported an association with venous thrombosis for lack of CD55 [45], so PNH patients lacking both CD55 and CD59 may suffer from both venous and arterial thrombosis.",
+      "key": "0bf73a691b3c5d3f749bc7551e4c7b1aaa74ab3c306e4fdcf42d831ffa181e38132195a40701bfa5bfb7251821abf10d8b25145098cc83a8a33a4a0e62d4bbbd",
+      "line": 405,
+      "relation": "negativeCorrelation",
+      "source": 34,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Interestingly, we have recently reported an association with venous thrombosis for lack of CD55 [45], so PNH patients lacking both CD55 and CD59 may suffer from both venous and arterial thrombosis.",
+      "key": "34b8f1cded000ed2fbc64f45f6f9b3fe1cd2f34ab7a8f4bfe8ef9f564f04b211903d982e477545043b03e832e2dbc6d71c116261123413a74de0dea3ba7cd603",
+      "line": 404,
+      "relation": "negativeCorrelation",
+      "source": 19,
+      "target": 34
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Interestingly, we have recently reported an association with venous thrombosis for lack of CD55 [45], so PNH patients lacking both CD55 and CD59 may suffer from both venous and arterial thrombosis.",
+      "key": "55e7d246f70d87b816ca4e39c1e363d256c8767f64378a2d465918dfe54a460f453ee27845f3d7938e15f9ee74d1ad227926559238909698c5d7ef855a72ccec",
+      "line": 406,
+      "relation": "negativeCorrelation",
+      "source": 19,
+      "target": 36
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Interestingly, we have recently reported an association with venous thrombosis for lack of CD55 [45], so PNH patients lacking both CD55 and CD59 may suffer from both venous and arterial thrombosis.",
+      "key": "315a3cc5ac8cb9ed458c509dfb8ee32f0724d9dcb36884e03f4352f2eb934366d5e17bc41f7a8ef695c7259f3a6dc85b130f75cf0c15ede015b798e4d2d95fa1",
+      "line": 406,
+      "relation": "negativeCorrelation",
+      "source": 36,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Coronary Vessels": true
+        },
+        "MeSHDisease": {
+          "Hemoglobinuria, Paroxysmal": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Falach B",
+          "Hindi I",
+          "Karbian N",
+          "Mevorach D",
+          "Tabib A",
+          "Zelig O"
+        ],
+        "date": "2018-08-01",
+        "first": "Tabib A",
+        "last": "Mevorach D",
+        "name": "Thrombosis research",
+        "pages": "67-77",
+        "reference": "29929138",
+        "title": "Prothrombotic mechanisms in patients with congenital p.Cys89Tyr mutation in CD59.",
+        "type": "PubMed",
+        "volume": "168"
+      },
+      "evidence": "Interestingly, we have recently reported an association with venous thrombosis for lack of CD55 [45], so PNH patients lacking both CD55 and CD59 may suffer from both venous and arterial thrombosis.",
+      "key": "42de54cff87b32b5390b250f13249644962dce943d320c4590b0dae78c1b763defe242a2ab509778275bc64cd36a0ad19925f881e3e222fa0e86f5408d2e778c",
+      "line": 407,
+      "relation": "negativeCorrelation",
+      "source": 36,
+      "target": 20
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"nitric oxide\")",
+      "function": "Abundance",
+      "id": "fd0dcffbd4e00c161d74c931890123439e35f86a92cbcf20c1efaed0bb8b8469434bbafd8364de8822b9af6368de418ed1728b1534bb8eeb47320d5a9c895548",
+      "name": "nitric oxide",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:arginine)",
+      "function": "Abundance",
+      "id": "a0034163dc9937f8dbaa37fb922464061de898bf89d331eb4c3ed2fcd98b7dbd2ad63eea4249de74d7fd095647eb8ccb37ee8adcb2294a30259899bfc7cf01db",
+      "name": "arginine",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:methemoglobin)",
+      "function": "Abundance",
+      "id": "7805bca22642b820fb0a026eb5c67eb4512f0a021ec5c97c5f505f5706c0ef4cb986edf806c547d40110c084b98e15c3520dd558cb96c5071b4dd9709e641130",
+      "name": "methemoglobin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:nitrate)",
+      "function": "Abundance",
+      "id": "170cd192d0720c603c4deb0840ff56840e94603eed24f8678372bf2c3af3c25c96e67b8e1c4e27c8d54606c9a465586d1bcbce79f6c5b3c014a6c4b08d63a62c",
+      "name": "nitrate",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:ornithine)",
+      "function": "Abundance",
+      "id": "792f686a1ff21195ca1875a47a5b89679a8780cf6231a2950859e988f02779d1f8dbba73777db3695b8d3c038fa56c9e83d3bc2a5c12d26535d8022d6d47f5d1",
+      "name": "ornithine",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:\"Erythrocytes, lysed\")",
+      "function": "Abundance",
+      "id": "fe735c846dc4403ede1d163b79403c0a0e1959f278d26beab76325dc998870ac60beae3656ee3bd98af5e6723c6712138ab48b80ca83c8cb9faf51e0fba311b7",
+      "name": "Erythrocytes, lysed",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"oxidative reactions\")",
+      "function": "Abundance",
+      "id": "424bc8c5ee95b5a9ac077c96ec0fdd63901bb2f7bd11a22842ae879e021f4b04cae5a4564feea644a1e45a1220947f7269f7b5cb8b6ff9347c965f4a9fd7dcf6",
+      "name": "oxidative reactions",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:Thrombus)",
+      "function": "Abundance",
+      "id": "6336558e5712497de9f40c3029535182ec1f5ec15bdfce1a1bb339a4e7ab31181c7885be286060f140b4cce4d0beb75bfd17416949bc26aacde0e1f07c607c54",
+      "name": "Thrombus",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(MESH:\"Cell-Derived Microparticles\")",
+      "function": "Abundance",
+      "id": "cbdd1c0e96832ed2dc8166dd4de0db4724d8bf06ba0c5e7b8f6720cf04d7c50fcf8abc5cc8cc27228f47b8b422592d1084bb0e832c29fb932d57b70741c4413d",
+      "name": "Cell-Derived Microparticles",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Complement Membrane Attack Complex\")",
+      "function": "Abundance",
+      "id": "697440f9efe6d464dff14ff66b2554c4c0fac81fd532f4039c33a96b1070ad6aaf25f4b64023470df259819a994b8fae792ef76b64d97ef8d38de60855f16b0b",
+      "name": "Complement Membrane Attack Complex",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Arginase)",
+      "function": "Abundance",
+      "id": "99f67056503b499e72a650337bbc859b98323535c79850b87d6d47a3dcee67b024cb7f8ad5ac2beeec7d33d33826a4986cf4c84e52ee58930f5ba9e900060fe5",
+      "name": "Arginase",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(GO:\"platelet activation\")",
+      "function": "BiologicalProcess",
+      "id": "668939e1a7166202876f21af69bbe8367e08002ac69312d1326c46aa605b22c0fffb3c9f2cd1073782f79141c51903b9e898140df4deda6e150565e6ad25babb",
+      "name": "platelet activation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(HM:\"Monocyte-platelet aggregation\")",
+      "function": "BiologicalProcess",
+      "id": "d34d173d68f3259772c5c1571c550cadabadc3bdb73e8ae6ec691f0b239d586d24aae8fe8a694d985ae242c294ba9570a993ee2fbda953d07e99ebfa49c71768",
+      "name": "Monocyte-platelet aggregation",
+      "namespace": "HM"
+    },
+    {
+      "bel": "bp(HM:\"Monocyte–platelet aggregation\")",
+      "function": "BiologicalProcess",
+      "id": "d93ca6ea5e3108b2f089f34961612bfb59996a676511467794d4b0417607860bb624d889892bd807ad7e7f9ec7fc4c4715001ff7d2879b59bc7319a3cb668a6f",
+      "name": "Monocyte–platelet aggregation",
+      "namespace": "HM"
+    },
+    {
+      "bel": "bp(MESH:\"Cell Death\")",
+      "function": "BiologicalProcess",
+      "id": "b6f7f46bf475abe5611546c2a6ecbdd2364a702f8f709816402f23ce4d6ca59d9fc0153a125c4803acaed81bdd652abc6f14185419ebdf8c16e3c9721abe89c6",
+      "name": "Cell Death",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Platelet Activation\")",
+      "function": "BiologicalProcess",
+      "id": "bc3ac5ceee11548085c1a7e0d96d4010c7e723996372d0d939fcf3692d8c2e70ca67a0cb96b5e091f3c69e850885005c1f2765ff9cbd2a675bfcce404bddda86",
+      "name": "Platelet Activation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Platelet Aggregation\")",
+      "function": "BiologicalProcess",
+      "id": "026950aa67d966b0562d40da4c1a06acbb77aacf83d7fd29ac0f546d1cf200c9c4f588431ca9e719d2bdc1c8ed8962fdf947ffad69d21bbdccd0362f529ef5bf",
+      "name": "Platelet Aggregation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "p(HGNC:ADAMTS13)",
+      "function": "Protein",
+      "id": "62e60c96921f5b8c1c610f183d30ed6c656b34ab40d0d2affac34e6128631c2243d679651b697d93fa043e5a0218bfb69d53dba158480a63dfc63909ef89124a",
+      "name": "ADAMTS13",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:CD55)",
+      "function": "Protein",
+      "id": "582341a6d212dede0879e274bf35b572fd11d01869b232ecd0426f2f93d9b142081321dd2b13af5abbb81cc3de472cb1ae18259523e166abb9b445558b7dea26",
+      "name": "CD55",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:CD59)",
+      "function": "Protein",
+      "id": "cc68931776a96853d13400a3a86c2a80fc8cc18b08584c410f48699c1a202ee0f66b699f5b7be2ccdf818749bf0f3a92f3fb51d60138ead3aed23e5de2f3b992",
+      "name": "CD59",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:CD59, var(\"p.Cys89Tyr\"))",
+      "function": "Protein",
+      "id": "64620dfc08ca7bd4d4f47fb3573acdb4f660f66c533370c939430b0d0423dd6b0ac97faf239f79242306e0783ce579f66d1dd18f43b6495e7614e570bf87a276",
+      "name": "CD59",
+      "namespace": "HGNC",
+      "variants": [
+        {
+          "identifier": "p.Cys89Tyr",
+          "kind": "hgvs"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:CDH5)",
+      "function": "Protein",
+      "id": "807c70f8aa60b3e16c03f1be25f4a4bf6ccc84476ec47f71ab0e897d776a37efbc1f9412d3224d60193c82b7494af0612a8c3cfe0bcec54fa9520db3e5145448",
+      "name": "CDH5",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:ENG)",
+      "function": "Protein",
+      "id": "eeae6ce818d2bc4c76cab3ffbe872c4599328e695d7104e5c30500846924eb87653069e25c7e34a0f1953b9d12df39c80e74e4520cb6c6f435ce1f65df24ddf2",
+      "name": "ENG",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:F3)",
+      "function": "Protein",
+      "id": "afb1d311045b4ee19a7d907dc8dd92023621887d3c4f0e75bad2a18fce0ef6a80cdfde64fe2c3c0504f5bbd1588964fd173eff33d4da51d1ddd156588943ea10",
+      "name": "F3",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HP)",
+      "function": "Protein",
+      "id": "0052c8eac45d6228dca9f6db302e8c98c9d2292c20e1bf791ca8fd0749fa28c163d424e0faa9a8dfa46a882f85d0967fc41819b18763a7abd987d07b8cbec1c3",
+      "name": "HP",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:ICAM1)",
+      "function": "Protein",
+      "id": "62f213f2262719b575fb019b72ed869992c5673a697ff650aa80f47bba29d5762dc9a109e772c69d04e02b3b2598b42dac9b34a2d306bc31ed1a4cd095e32dcd",
+      "name": "ICAM1",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:SELP)",
+      "function": "Protein",
+      "id": "bd5c153eb5d509c9625e8e411ed47f1126e086926419bd53ac17b8a9eba27358ca66e6ba73e64e8cf64c1efda1f0c102d24fce7bffdb63ca54285a2587e9ea9b",
+      "name": "SELP",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:VCAM1)",
+      "function": "Protein",
+      "id": "9182f83c0710285059375fb3f125e04b17a0a286f3fb6577b6872038c04eccb83d5f24d35cee3058df3d8b748e41f81babe72748dc4386482c3a24226511e477",
+      "name": "VCAM1",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:VWF)",
+      "function": "Protein",
+      "id": "a101326bdf4988f866703f8a046ed20135ce76b47556ae1a0d5115a2230c7ab01b24d5a03535ec845085d65a60f2bae4b5ddd906244da261baad9420efcb8a10",
+      "name": "VWF",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "path(HM:\"endothelial lesions\")",
+      "function": "Pathology",
+      "id": "d9a492688715d5331a960fbb3c39060914d8e70b5a8434abc630dd89ccb15c3e1e793a9360d2b67a825853706e468ee33e6480b9f1149bcd45eb866d82a69846",
+      "name": "endothelial lesions",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(HM:\"vaso-occlusive crisis\")",
+      "function": "Pathology",
+      "id": "7007ee304406d4320c9dcbefa93caf0b8ca48c68e148031ff1268674b1581667e2815de7ed2d14f5ac673c886c0493c40b8b821f94db58cf6f8ac9093dca5a48",
+      "name": "vaso-occlusive crisis",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(HP:\"Arterial occlusion\")",
+      "function": "Pathology",
+      "id": "403c95889c6fbf487a45455a9734a867147a4192e112c057a5e6f2d8d0c82ec8d6d73f91d47914cfd267268b349475eb221dedd889003402a6d18d766434f937",
+      "name": "Arterial occlusion",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(HP:\"Arterial thrombosis\")",
+      "function": "Pathology",
+      "id": "89e54d0b36b2214bf2f26d58cb2c43da91c810ac1209a65ced341eb30ad28b06375d9b127273e14583213809f1814a9cf2a30c6528cba11f3c1e5fa8d19af17c",
+      "name": "Arterial thrombosis",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(HP:\"Paroxysmal nocturnal hemoglobinuria\")",
+      "function": "Pathology",
+      "id": "b435a1d59be1cdaa0b4ed194d90883cdd83744b9266a0dfabcd67b3b3602ac6e83e987e8037ee732aa09bf34ebca2af45464d443827dd1d6b2f249563b69e007",
+      "name": "Paroxysmal nocturnal hemoglobinuria",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(HP:\"Venous thrombosis\")",
+      "function": "Pathology",
+      "id": "cf184b209bbf242a49aaae5ae537eaaf483c8657c2e17856a4eb61fe151dde0be9f5f6003242b28698b84a37ae500b52eb2bf222f3038e59ba488e9f43cf4557",
+      "name": "Venous thrombosis",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(HP:Hypercoagulability)",
+      "function": "Pathology",
+      "id": "07f44daf89394689b3d3282f04d404d98952885ac12c8a0369700c0a806350240bb6444411c054bc1caa0135e7573d2f7f45ba42e66d3c8af49ea8355cd9ea3d",
+      "name": "Hypercoagulability",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(MESH:\"Guillain-Barre Syndrome\")",
+      "function": "Pathology",
+      "id": "f7507e59bed91ab310745b3715cfa5c90e6a30b55691c7cc020c7e5a5a8ec099dc444d0eea472c8cd0330cef1dfd446552f19cae28f72156865c848d6ac0a1ec",
+      "name": "Guillain-Barre Syndrome",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Polyradiculoneuropathy, Chronic Inflammatory Demyelinating\")",
+      "function": "Pathology",
+      "id": "be32b9caec65a2ea5a511be7f501f3b2c8e8c5c68f3963134d2caacf7e33e201fa89dd40d6741357cac1bb29fb15df61d47bd6b0e1affaa907cf3f447a6e24fb",
+      "name": "Polyradiculoneuropathy, Chronic Inflammatory Demyelinating",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Death)",
+      "function": "Pathology",
+      "id": "7277084fc3a1b0e377445b9052c02ac77fa754286debbdf8cfb948a489cda1bbfabab27531dc1a81026f92c278772709598e2982fd523d37d8d9b888532f8d63",
+      "name": "Death",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "function": "Pathology",
+      "id": "3196cc4c6a20279c822cae925a9b271d0224f2c8d468e3069a3ee460662be286b61db2f144c550686a9c624e58af4ffa7570f4f2384e1cb8ee40496f8cb3fa5e",
+      "name": "Inflammation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Stroke)",
+      "function": "Pathology",
+      "id": "891ab955a87bc07f1aca17a8812fdb154648daf1fd922711f2b3ce7825285f2b5d94f7fa3bd825edd47463578b3269c30eacdafa276ffdb595f10127366aa95d",
+      "name": "Stroke",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Thrombophilia)",
+      "function": "Pathology",
+      "id": "a89751b63dc8baa53057776a979154777dc207f3f044a71e3620e824c83506ff10e8f984bad566b6c003201f2d1210eb329ba3e516757acf746c4d4890b96d2b",
+      "name": "Thrombophilia",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Thrombophlebitis)",
+      "function": "Pathology",
+      "id": "9923566be3a1532ee0e7b8e641b5ffb47900aae120e5bcae620f95c0c60e5e3229a40c33c3a4e64d81412b3e2dd4a81e65e97b34505c3da815ff2b2d384c7435",
+      "name": "Thrombophlebitis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Thrombosis)",
+      "function": "Pathology",
+      "id": "b8739fcb57aeef4e74a351a9a6298e8d50bd9a172d37973c9c286907a2c6f131a06ff7070db9641962cc62043cd6e64ab2361b9c3e0adde501b1f69294ea5490",
+      "name": "Thrombosis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "rxn(reactants(a(CHEBI:\"nitric oxide\"), p(HGNC:HBB)), products(a(CHEBI:methemoglobin), a(CHEBI:nitrate)))",
+      "function": "Reaction",
+      "id": "09db00351d1c764e7e68716a8152a87a419a06f6f9f66b4847e1d1a40015a9ec3f7c549c311f7874e345aa5008ac0d9f5f72ff3b2ba9de1bc7922078df392ea1",
+      "products": [
+        {
+          "bel": "a(CHEBI:methemoglobin)",
+          "function": "Abundance",
+          "id": "7805bca22642b820fb0a026eb5c67eb4512f0a021ec5c97c5f505f5706c0ef4cb986edf806c547d40110c084b98e15c3520dd558cb96c5071b4dd9709e641130",
+          "name": "methemoglobin",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:nitrate)",
+          "function": "Abundance",
+          "id": "170cd192d0720c603c4deb0840ff56840e94603eed24f8678372bf2c3af3c25c96e67b8e1c4e27c8d54606c9a465586d1bcbce79f6c5b3c014a6c4b08d63a62c",
+          "name": "nitrate",
+          "namespace": "CHEBI"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(CHEBI:\"nitric oxide\")",
+          "function": "Abundance",
+          "id": "fd0dcffbd4e00c161d74c931890123439e35f86a92cbcf20c1efaed0bb8b8469434bbafd8364de8822b9af6368de418ed1728b1534bb8eeb47320d5a9c895548",
+          "name": "nitric oxide",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "p(HGNC:HBB)",
+          "function": "Protein",
+          "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+          "name": "HBB",
+          "namespace": "HGNC"
+        }
+      ]
+    },
+    {
+      "bel": "rxn(reactants(a(CHEBI:arginine)), products(a(CHEBI:ornithine)))",
+      "function": "Reaction",
+      "id": "f797a9ec601157399ed4137b1d4ed10b42313d5cfa993f997d9f3ef6e4045d794cdd172fa62f0ffe7f86f7d7a7ffa075bf58737cfd3c1afea0628d31d68a5649",
+      "products": [
+        {
+          "bel": "a(CHEBI:ornithine)",
+          "function": "Abundance",
+          "id": "792f686a1ff21195ca1875a47a5b89679a8780cf6231a2950859e988f02779d1f8dbba73777db3695b8d3c038fa56c9e83d3bc2a5c12d26535d8022d6d47f5d1",
+          "name": "ornithine",
+          "namespace": "CHEBI"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(CHEBI:arginine)",
+          "function": "Abundance",
+          "id": "a0034163dc9937f8dbaa37fb922464061de898bf89d331eb4c3ed2fcd98b7dbd2ad63eea4249de74d7fd095647eb8ccb37ee8adcb2294a30259899bfc7cf01db",
+          "name": "arginine",
+          "namespace": "CHEBI"
+        }
+      ]
+    }
+  ]
+}

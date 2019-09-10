@@ -1,0 +1,2410 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_30324533.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_30324533.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Serum albumin (SA) can act as the heme scavenger by forming heme-SA complex [2, 4–8].",
+      "key": "ff91082ae284d60d38ea35f14ff1e740bffeda3f84c54122a60d2ae37976f16b054acdf97d935b729877131f95c45c83c4a4b03cdbf7e90fe3c86c39af121c6c",
+      "line": 93,
+      "relation": "decreases",
+      "source": 17,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As shown in Fig. 2d, heme/H2O2/ NO2−-induced loss of cell viability was significantly attenuated by BSA or BSA-T pretreatment, and BSA was more effective than BSA-T.",
+      "key": "81e15ae73982495d0b169f85af584c327100124ad19a3ef89ccb38900fb7762820069d8339ef06ade7af8584e4f41864169406de3d59f6a1423e31d94f458a5d",
+      "line": 142,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 9
+    },
+    {
+      "key": "476f8cbb5eb898a219a0028cf97038d694bccafdaeebd31ecf8d03d4b628edb4ec09e56c6d9272f4bd4b7c464ee6f7abb09d15c69a5feca8e44ba7e6ad6f674c",
+      "relation": "hasVariant",
+      "source": 17,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "However, pretreatment with 2 μM BSA or BSA-T, we found that both BSA and BSA-T efficiently inhibited heme/H2O2/NO2 −- induced cell apoptotic and increased cell yields.",
+      "key": "c9fec0e30693f306561f0e9d2235fdad39742e3d4ffa170efd3d2a1d8e8fe24d12d616a7c78b121888da641b307c043980c792fbee4942a6f89b284a29272631",
+      "line": 167,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "decreases",
+      "source": 17,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "However, pretreatment with 2 μM BSA or BSA-T, we found that both BSA and BSA-T efficiently inhibited heme/H2O2/NO2 −- induced cell apoptotic and increased cell yields.",
+      "key": "ffed47f4d55f4f3b65801f19b75879bf183e5f16b88d9554e20d64a740a91960588993cf2b568c343743e8d7d649aa68ec114ff92c99e0197ce754c9ccc1b0df",
+      "line": 169,
+      "relation": "negativeCorrelation",
+      "source": 17,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As quantified in Fig. 3c, although heme/H2O2/NO2 − increased the apoptotic rate to 32 ± 6.4%, BSA or BSA-T pretreatment caused a statistically significant reduced apoptotic rate (10 ± 5.0% and 15 ± 6.1%, respectively).",
+      "key": "4abd9491ffab9ffbf50f24e9847469a9b23da70a5f20d5c93d74dc0ed99c06ec6056e4066d2bf03f54f5cc912bab555637172dff32706ca6a05065f990313d9f",
+      "line": 180,
+      "relation": "negativeCorrelation",
+      "source": 17,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Both BSA and BSA-T attenuated heme/H2O2/NO2 −-induced protein carbonylation and lipid peroxidation.",
+      "key": "6007bab930761d6220ed09dcc7c0a498ed955668a14eb7211984c661ab309dc1468a708a1e8f29fc7385fa0458175108ac2e55bd9b4d806dc15550f1f6e3dc94",
+      "line": 212,
+      "relation": "decreases",
+      "source": 17,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Both BSA and BSA-T attenuated heme/H2O2/NO2 −-induced protein carbonylation and lipid peroxidation.",
+      "key": "4171fd72095cfbd9f96b6d4a7c13d2ad6e3178ebd6c8a689bd78ae01c40aa3b399bc482ff4c54aca78e1bdd7b6cbe1d5210153d7b11c57a3d1c504114b623f58",
+      "line": 214,
+      "relation": "decreases",
+      "source": 17,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Of note, incubation with BSA or BSA-T for 24 h decreased heme/ H2O2/NO2 −-derived 3-NT deposits as compared with heme/ H2O2/NO2 − treatment alone, and BSA is more effective on suppressing the formation of 3-NT than BSA-T (Fig. 5b).",
+      "key": "665b0fce12261b387f872f72f08a36a56c06487b23d8663919d449cf86bbbecd210d03764c07cd867dfbaae34fceffae2bdb808f8566387869b7505b17f2db95",
+      "line": 241,
+      "relation": "decreases",
+      "source": 17,
+      "target": 0
+    },
+    {
+      "key": "705f211962e7d284d7d7fe59cefb8e71beedc7a746b08890c4f04e46bbbd0ca473d82dbea1361dfc5c5482e7f896d7e1671cc5f6ba38242564729ec6bdfa2fe4",
+      "relation": "hasVariant",
+      "source": 17,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Whereas at the doses of 3, 4, and 5 μM, heme significantly reduced the viability of cells, which was in agreement with an earlier study [1].",
+      "key": "215d8e8edd1208259222f7903c765c4c801e865f1f9adc485571bec935ea9b112e15e5dcd0e57813f904624d3829543e437e2518701c8dd49694b0515c5f7f93",
+      "line": 116,
+      "relation": "negativeCorrelation",
+      "source": 3,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "For this reason, it has been considered as a therapeutic tool to counteract heme toxic effects in severe hemolytic diseases, and the usefulness of SA therapy has already been demonstrated in a rat model of acute intracerebral hematoma [2, 9].",
+      "key": "92370b243b98f7ec881cc02d6da5040c8aa1c43c1819910ddd934a8cd3cc9894ee9e73b80a448d90856e8530fba45213c89031fec5a255c729bb8a6c54dda340",
+      "line": 102,
+      "relation": "decreases",
+      "source": 20,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Whereas at the doses of 3, 4, and 5 μM, heme significantly reduced the viability of cells, which was in agreement with an earlier study [1].",
+      "key": "6fd245c1002687d473a95dcd71a00b2be82af574d3a294ae56a18b6d8f678865505a5da68fe2c060a848dab323c136baadd789bd22ce7e76ce1089074fc277cc",
+      "line": 116,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "The result showed that cell viability loss in a GO dose-dependent manner, and 1.5 mU mL−1 GO induced approximately 15% cell death after 24 h of treatment (Fig. 2b).",
+      "key": "8887c61c2754018021cbaa99ae7557783c078b55fd1f5709991e1d5a01a1db1a36b5673c0641af2da72b3f8a548f8185f4e7fa7c9e442eb9f0705139ede2d2d3",
+      "line": 123,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As illustrated in Fig. 2d, the loss of viability by heme/H2O2 and heme/H2O2/NO2 − was approximately 53 ± 3.8% and 65 ± 4.5%, respectively, which further confirmed that NO2 − dramatically enhances heme/ H2O2 toxicity.This result is well consistent with previous reports [3, 13].",
+      "key": "4c5290e7b7ddfee1090280a1d495b39078749cf12d9c8e0802f20a32d798eab1c4ab0f2fb95435e981f2c3a3b1732ff3ed06d376e9ee2004da2bd168ab40059a",
+      "line": 134,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As illustrated in Fig. 2d, the loss of viability by heme/H2O2 and heme/H2O2/NO2 − was approximately 53 ± 3.8% and 65 ± 4.5%, respectively, which further confirmed that NO2 − dramatically enhances heme/ H2O2 toxicity.This result is well consistent with previous reports [3, 13].",
+      "key": "65720e921909756dc351d21f74011b24d4db664d2d75f108396809b07d328dd1c082f1c8453ad8c338ca09fe99e3f096aabb95ebbafa1590ef0e4ea9877ee8c8",
+      "line": 135,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As shown in Fig. 2d, heme/H2O2/ NO2−-induced loss of cell viability was significantly attenuated by BSA or BSA-T pretreatment, and BSA was more effective than BSA-T.",
+      "key": "3b0da6ff5267da938ca7cc13e486b28011a274bc661bb63ddce809264fb82ac855dbd20e238748e97f3f7349581589392e9d912fbe037397f2b3da3054af881e",
+      "line": 142,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As shown in Fig. 2d, heme/H2O2/ NO2−-induced loss of cell viability was significantly attenuated by BSA or BSA-T pretreatment, and BSA was more effective than BSA-T.",
+      "key": "bc04fb1a159466e6d793d2be245ad1cb02f0eb3e10e6093f1fff9d775886d4248c20244331d48b94dc29c21f3ded3271cf3ac6b218d7aaa99d342baa0e6716d9",
+      "line": 143,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "The result showed that cell viability loss in a GO dose-dependent manner, and 1.5 mU mL−1 GO induced approximately 15% cell death after 24 h of treatment (Fig. 2b).",
+      "key": "ae54185daa9127b44e73ec56de568e29968a6a251c8e29fcb390d3bf38fb5861e224dd990245098d563683431f897f82afbbcae680dca4ec863f65fac6d78cdd",
+      "line": 123,
+      "relation": "negativeCorrelation",
+      "source": 6,
+      "target": 9
+    },
+    {
+      "key": "1e58439671ab48b7f0a7833943bbb712528e373466d05e0fdca7ca57506d5556d382c8cef0d2dd5253b9db127d728f70cb3339ca7c5869b0ec8fb10f7a649705",
+      "relation": "hasComponent",
+      "source": 14,
+      "target": 2
+    },
+    {
+      "key": "f5d2004fb15efaf5d86445a6a255709129a3aa49862a6c1feffa0b5a89281b569fc1a51d92995f65af55a90bc3a23449c455a672a91870f1dff58575aa74ff00",
+      "relation": "hasComponent",
+      "source": 14,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As illustrated in Fig. 2d, the loss of viability by heme/H2O2 and heme/H2O2/NO2 − was approximately 53 ± 3.8% and 65 ± 4.5%, respectively, which further confirmed that NO2 − dramatically enhances heme/ H2O2 toxicity.This result is well consistent with previous reports [3, 13].",
+      "key": "498d3ba6bff7555b764fffc98924257414fc4c23a258a083ecf60033cd505c5a820629867e56d0e89b7babc64a06554359e9dc892211f1f79f65d01107cccd79",
+      "line": 134,
+      "relation": "negativeCorrelation",
+      "source": 14,
+      "target": 9
+    },
+    {
+      "key": "6203e69490689c4718763b0cee4fd2cacdcc37927d0785ab17aeed51b71c77c1720c9cf49ee552c2f24fb2c686d0a61506bba0dfbbcbd00b8019aeace69372e6",
+      "relation": "hasComponent",
+      "source": 15,
+      "target": 2
+    },
+    {
+      "key": "b399d2a25194a1856378c5e5c2e93226127685ccaee0e9ffbf509b0a5035c52e00366ecf275df35817bb331606a6448f7db278305180b2d4a79cf47a505a98a1",
+      "relation": "hasComponent",
+      "source": 15,
+      "target": 3
+    },
+    {
+      "key": "7fc3ee878454aed5bac3b7732a9e890a1f040900a6091ea0387aab56aebced565d27c9a5b8decb713d55f7a4d32ceed742dcda05bda8b92a9f17465550f8dd5e",
+      "relation": "hasComponent",
+      "source": 15,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As illustrated in Fig. 2d, the loss of viability by heme/H2O2 and heme/H2O2/NO2 − was approximately 53 ± 3.8% and 65 ± 4.5%, respectively, which further confirmed that NO2 − dramatically enhances heme/ H2O2 toxicity.This result is well consistent with previous reports [3, 13].",
+      "key": "ecbca608ce1e160371dd33c7f83478bfa501226b1ec5249044ca2e7c8488f886f6f37e4bbf85c1367177903beda296b42bbfafa7ba66d95188a0f0e2a1357092",
+      "line": 135,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Figure 3a depicts the morphology of SHSY5Y cells after treated with various conditions. Compared with heme/H2O2 treatment, cells exposing to heme/ H2O2/NO2 − exacerbated cell apoptotic and reduced cell yield.",
+      "key": "3654f85b6c1770d33c0fe894599e00cc38ffa5bf5c7943516645323a5e5bb01cd3716b369c459c07ac62f9f5f912046944d7331d47c424037afab33e7c0525d3",
+      "line": 159,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As quantified in Fig. 3c, although heme/H2O2/NO2 − increased the apoptotic rate to 32 ± 6.4%, BSA or BSA-T pretreatment caused a statistically significant reduced apoptotic rate (10 ± 5.0% and 15 ± 6.1%, respectively).",
+      "key": "a71b4903d1c8c8b813b30061b43e37b9e10f0ca9da4264a59dc396135f3acf836a067615010d4f4f1be36e5f30a91d35e6797f1dd83b0066850ae9e751caff80",
+      "line": 179,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "The carbonyl contents (Fig. 4a) and MDA level (Fig. 4c) from heme/H2O2/NO2 −-treated cells were the highest under all conditions.",
+      "key": "a6a9460bccbd175b8d66fca223dc363e3569ffbea973e200540dc3bf7d453d144c40d2a9cc0b51751792be0cd697f89bf9c3d032edd19518fe3a757b788b8fe2",
+      "line": 204,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "The carbonyl contents (Fig. 4a) and MDA level (Fig. 4c) from heme/H2O2/NO2 −-treated cells were the highest under all conditions.",
+      "key": "9991a23a68de802917a1e48c981d4a5f626e98d71fba5174bf3087e1503ac7eaea8d6369d5f1deb8e7f431a181160fe84630ad1a45103a6f6af651cf87aa4fd7",
+      "line": 205,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As shown in Fig. 5a, significant amount of 3-NT emerged in cultures following heme/H2O2/NO2 − treatment for 24 h (red staining), indicating the strongest nitrative stress level.",
+      "key": "f0783fc3b6941644696dccfffd91834e4d781f0214bc8ada4ec0f59fba0ba2653381a547aec251c17037a28c2557951bb742133379147f7e3addedd01caf9f94",
+      "line": 231,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As shown in Fig. 2d, heme/H2O2/ NO2−-induced loss of cell viability was significantly attenuated by BSA or BSA-T pretreatment, and BSA was more effective than BSA-T.",
+      "key": "d8fe454966ed6a1ebdbf5011b0835c47ee0fa363ea20bbbd204c2f1a98e343ca1e05347d61629d222a1e89022b906c9c6a14369d0f73e091edc523b3e98a7558",
+      "line": 143,
+      "relation": "positiveCorrelation",
+      "source": 18,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "However, pretreatment with 2 μM BSA or BSA-T, we found that both BSA and BSA-T efficiently inhibited heme/H2O2/NO2 −- induced cell apoptotic and increased cell yields.",
+      "key": "9703f7c4d1848dffbd9a8a7a7245ef8942d38a5c32ffbfebe7802afef61eeb7f052dcad5d460fa85c48ba57f954d5c95b9344aee708eafc75acd2cd1dad15ad5",
+      "line": 168,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "decreases",
+      "source": 18,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "However, pretreatment with 2 μM BSA or BSA-T, we found that both BSA and BSA-T efficiently inhibited heme/H2O2/NO2 −- induced cell apoptotic and increased cell yields.",
+      "key": "cfa20bc0032f37f00793bf3a43b472f884dd1fc0c3607a51a0a56298dfbe0b09d4d9b65c83d37f3a5e403992c582ed8ea0f1fef5bca13f63e805a8f8933a6152",
+      "line": 170,
+      "relation": "negativeCorrelation",
+      "source": 18,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As quantified in Fig. 3c, although heme/H2O2/NO2 − increased the apoptotic rate to 32 ± 6.4%, BSA or BSA-T pretreatment caused a statistically significant reduced apoptotic rate (10 ± 5.0% and 15 ± 6.1%, respectively).",
+      "key": "6ce6ebcc10b2bdce1b8c5542cbe0b4f2c41510518eb81d6d78fdd8a3d6345c1f25fd0c42727e2897a0c78bb1a9d0cf112decbf24c4947a82db8d6f9067f626ac",
+      "line": 181,
+      "relation": "negativeCorrelation",
+      "source": 18,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Both BSA and BSA-T attenuated heme/H2O2/NO2 −-induced protein carbonylation and lipid peroxidation.",
+      "key": "cf2aeb71a659cd844d93afe7756fbac58c038dbf420a469c3f24ad4281ef1a568fa9c57dad9e6aa242c6c5eb340b64eaa7c85f8e2e4bc76b637bdacc3b86f444",
+      "line": 213,
+      "relation": "decreases",
+      "source": 18,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Both BSA and BSA-T attenuated heme/H2O2/NO2 −-induced protein carbonylation and lipid peroxidation.",
+      "key": "205cb62aab6200ee0063c0435a9cc7322ac5b15a48f307ac2ae7d2c74ab66bed192f08092b4a7fda62534c72785dad6371addb7b6be9e08980f7be477313f0c2",
+      "line": 215,
+      "relation": "decreases",
+      "source": 18,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Of note, incubation with BSA or BSA-T for 24 h decreased heme/ H2O2/NO2 −-derived 3-NT deposits as compared with heme/ H2O2/NO2 − treatment alone, and BSA is more effective on suppressing the formation of 3-NT than BSA-T (Fig. 5b).",
+      "key": "44ce4cd1394a505cefc234c70abeaffad645ee34152ab41958d373080b4584f03c480a7b957a708b4771f57d045046ad5cb310d78ccf26bdee4b03cdf163dd2a",
+      "line": 242,
+      "relation": "decreases",
+      "source": 18,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Apoptosis has been found to be a major rout for the elimination of cells after a variety of stresses including ROS and RNS [30].",
+      "key": "68dcce20b53813758305960ef2b9efeb21969e9c4acb5b2a14d6554b4417ee4534dad5e61b9c09f37767112461d4a26e2ea02f7f21d4794ed7eb32cec29d59b5",
+      "line": 149,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Protein tyrosine nitration has been identified as a biomarker of oxidative stress, and the generation of 3-nitrotyrosine (3-NT) is often accompanied with the increasing of ROS and RNS under pathologic condition [14].",
+      "key": "fbf64da01eea4ba1d90d320daaadb6d59fdf3f89eff8a648a596194debf74b8ff760e96ed90d20fd06a8c937888ed9ec5a5c550cc417c212b32944f303c8d0ec",
+      "line": 222,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Apoptosis has been found to be a major rout for the elimination of cells after a variety of stresses including ROS and RNS [30].",
+      "key": "8bee09c41f03e225bb21491962212b8a946da2aa7d8cb2a89ffd3c29c006707905e64be76e1ab916608009b93b3bd52724fa4bfe4cd53b042ec7012e3f141ed8",
+      "line": 149,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Apoptosis has been found to be a major rout for the elimination of cells after a variety of stresses including ROS and RNS [30].",
+      "key": "6caef9e68379a8bed226b0e53d1eb4ed140141a2f2acfe6b461e6f70d8703f99d2c79fe6f726b3694dd5a468f5680ae9cd210bb52d544da5a4eac514a1a9f1d0",
+      "line": 150,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Figure 3a depicts the morphology of SHSY5Y cells after treated with various conditions. Compared with heme/H2O2 treatment, cells exposing to heme/ H2O2/NO2 − exacerbated cell apoptotic and reduced cell yield.",
+      "key": "a4089a42970a9561f98755e0ce7fb31ec6a5c08cabe8b97c31efbf279bae3722fc899976620d3c4ed56143307af311ec729f726ae28de45cbba46b2f743fbddf",
+      "line": 159,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As quantified in Fig. 3c, although heme/H2O2/NO2 − increased the apoptotic rate to 32 ± 6.4%, BSA or BSA-T pretreatment caused a statistically significant reduced apoptotic rate (10 ± 5.0% and 15 ± 6.1%, respectively).",
+      "key": "03c58f4af60904adf7d72a4a5c8678b8de36ef354a42e9f59498ef9ec7c1fe0915cbea39ff537465dbc680fb88b5dac7b404afbbf67706a786b6fc9a896eaa3c",
+      "line": 179,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "However, pretreatment with 2 μM BSA or BSA-T, we found that both BSA and BSA-T efficiently inhibited heme/H2O2/NO2 −- induced cell apoptotic and increased cell yields.",
+      "key": "794a2c2b9ca930aad3b66736f9c5a20e5c3cfb6a50abc27b6db1d06b2cc9f1288e180234a859e3d1cf190aee75e08e6065038b62ba248c18152e85e4236d49d6",
+      "line": 169,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As quantified in Fig. 3c, although heme/H2O2/NO2 − increased the apoptotic rate to 32 ± 6.4%, BSA or BSA-T pretreatment caused a statistically significant reduced apoptotic rate (10 ± 5.0% and 15 ± 6.1%, respectively).",
+      "key": "98f9410eb8d19f31301df54543672c5aa7822b79c290e5a575d81a4059f6cd3e1660dd5b349ff375c370401880a8b1d44d659e7bf62e1ff7806a97640a23f811",
+      "line": 180,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "However, pretreatment with 2 μM BSA or BSA-T, we found that both BSA and BSA-T efficiently inhibited heme/H2O2/NO2 −- induced cell apoptotic and increased cell yields.",
+      "key": "54b9c82ce253d3875edcc7f0747cc1501c3988ec3867c5633673ff83cff890d02f806e8b3cb80dcc179abbae60f248f68168d30f2105ba6eaea85cd8f609e297",
+      "line": 170,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As quantified in Fig. 3c, although heme/H2O2/NO2 − increased the apoptotic rate to 32 ± 6.4%, BSA or BSA-T pretreatment caused a statistically significant reduced apoptotic rate (10 ± 5.0% and 15 ± 6.1%, respectively).",
+      "key": "fb2307042a1d6ef64f48c181c6da20246b7eeefc0aa1ee426ef2534f1a4409a483ae848410d388963c0aff12087e6af2f52822c67389ea3cc62be701de58e50e",
+      "line": 181,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Apoptosis has been found to be a major rout for the elimination of cells after a variety of stresses including ROS and RNS [30].",
+      "key": "fe5f4dffa449e69080e2c0f8d6902368cc7e50ab4f77881d8dadea5c5c1f7a2e46e1a2cb7d322fe12787f4fcc3f18742314bf99ccf1e9061936e3ea3daaaca03",
+      "line": 150,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Protein tyrosine nitration has been identified as a biomarker of oxidative stress, and the generation of 3-nitrotyrosine (3-NT) is often accompanied with the increasing of ROS and RNS under pathologic condition [14].",
+      "key": "dda6f42e0c5f69b002b087d7ae8cad2737053ddfffe54d6f08a74ac5d9e5ebf6f18c0a4c5fcee67ad07bb1ae2cd2b85dc4c7ced31847509d29301a5deb01279b",
+      "line": 223,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Malondialdehyde (MDA) represents evidence of systemic oxidative stress and inflammation [31], and is commonly used to estimate the level of lipid peroxidation.",
+      "key": "292f0f7f6b2cd9611146e33f041755c75a26a167c68ef0cfbca1864c4865271df9466caaee7bc8071e9e8ad70f6346cd96374f42542cd6e2a586d35f419daf09",
+      "line": 188,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Malondialdehyde (MDA) represents evidence of systemic oxidative stress and inflammation [31], and is commonly used to estimate the level of lipid peroxidation.",
+      "key": "1143b13fccf66d511d65353573cd6b49b827b74d8f1157023985bf85b7198dbddc7c2504eab5640c9ac3389f454aa155718815bfe6e1bca4afb7aab5fd6f199f",
+      "line": 189,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Malondialdehyde (MDA) represents evidence of systemic oxidative stress and inflammation [31], and is commonly used to estimate the level of lipid peroxidation.",
+      "key": "a4c37bd975ec3994735313037fabc0698919f2a54ed43ec4f9cf9380f1c3931d52a8ae8c22a5f8a75b593c04ca9442d8960cb1b0e2e8de17a4959067e37c3de8",
+      "line": 190,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "The carbonyl contents (Fig. 4a) and MDA level (Fig. 4c) from heme/H2O2/NO2 −-treated cells were the highest under all conditions.",
+      "key": "b9ebccf39f019d9c0232a2068fb108dde2740cc5be4752162eb2f38ca72f03b7247db9de27582d4ea336d3dc394d1383695093552af49edd8f858ea4db545ca5",
+      "line": 205,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Malondialdehyde (MDA) represents evidence of systemic oxidative stress and inflammation [31], and is commonly used to estimate the level of lipid peroxidation.",
+      "key": "d0419ea15c0847aad4132f106cac1791b19209bdfbb7dcac2f0a18e9f4c671d0ccc41fbf3d785c8c40aa3bd9930e9d1cdb07f9230fbd61b8f1e6e5b9693316d5",
+      "line": 188,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Malondialdehyde (MDA) represents evidence of systemic oxidative stress and inflammation [31], and is commonly used to estimate the level of lipid peroxidation.",
+      "key": "ab9d4440986d201e9a708aa202740c50767dc9647b816353e5878ea2848c407f172c4597b04a7e1e9292bd9c3c4feb754a148eae06ab367008ffebd2af5d21bc",
+      "line": 189,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Malondialdehyde (MDA) represents evidence of systemic oxidative stress and inflammation [31], and is commonly used to estimate the level of lipid peroxidation.",
+      "key": "ff77ca9c8fd2e7c6978a32defd879c30c817ea28fd359a820ece705cdfbd04812b5a82837ac0ee08885746839f2cbb1746d7b0e008571af303dc969cf680db70",
+      "line": 190,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "The carbonyl contents (Fig. 4a) and MDA level (Fig. 4c) from heme/H2O2/NO2 −-treated cells were the highest under all conditions.",
+      "key": "c43ded445184a5c2e6e253eb42b15c613f0f7f2d989d0c061b34418a0bb8c9784262191807c788fd945403795ccb6f3103958e915992c7deb9f4858689099c98",
+      "line": 204,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Protein tyrosine nitration has been identified as a biomarker of oxidative stress, and the generation of 3-nitrotyrosine (3-NT) is often accompanied with the increasing of ROS and RNS under pathologic condition [14].",
+      "key": "0d12481f53ea3164a18698ce84cf603bd7071b4d6eef8f17a4d84dfee1a3610bfa116b3cc65b021a204da9f57f5905c1b9de033b31c1f3dcd2f053eee17985c2",
+      "line": 222,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Protein tyrosine nitration has been identified as a biomarker of oxidative stress, and the generation of 3-nitrotyrosine (3-NT) is often accompanied with the increasing of ROS and RNS under pathologic condition [14].",
+      "key": "3c94cb058113d11006a7bb0401406e43361876f8fe512b19eda301a3ac3e454fa36ae67e96c5d007bab7ff7c634f0814d93339604b737f13645a36adc2fbcbe3",
+      "line": 223,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "As shown in Fig. 5a, significant amount of 3-NT emerged in cultures following heme/H2O2/NO2 − treatment for 24 h (red staining), indicating the strongest nitrative stress level.",
+      "key": "bd964ecd823672ed97cb71ff58bb7eb915bcdc47ea00355ff00d3e4a6133eed3892869b9a644ca836478c6e1f17e36df3e2228a44ce60d8603de13e985b83734",
+      "line": 231,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 15
+    },
+    {
+      "key": "364df447d512edc6268d744a4e86f0983b96864a51fa6ef0eb5c7960cb5c2c4d2bea100a5012a5a7ffe4aaced45af45562b7271af1cd180da227a2ca87b83b93",
+      "relation": "hasComponent",
+      "source": 16,
+      "target": 3
+    },
+    {
+      "key": "255a7be3fa9e5a351ac0a43269c2214a36af5218a47124f6ffe5e1230ee8794f6deef8b32ad27b18adef667330e13a75d26356efdf915a1e0b8fd93896c77fbd",
+      "relation": "hasComponent",
+      "source": 16,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Monzani et al. [10] also concluded that the heme-SA complex promotes H2O2 activation processes that bear the characteristics of enzymatic reactions and may have biological relevance.",
+      "key": "6a70038b905332bf61184e6eadee80e98cd912c96a2a61cb77182cfa8ec96b237add616c5b029fc8604516f5517bc09e18fc8cb53d9363743ea73ce750292a46",
+      "line": 252,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "increases",
+      "source": 16,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "This result suggested that tyrosine residues of BSA may play an important role in heme detoxification.",
+      "key": "270e707cd29f28eb9de08feb2f81f2ed7142c075c7ce0c9651e380f65e5f2b32ca9e6747d32854da035f6e2f8c06e6c634b9e91dfc55afb81044fe7685ce1cc0",
+      "line": 258,
+      "relation": "decreases",
+      "source": 19,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Hematoma": true
+        },
+        "Species": {
+          "Bos taurus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gao Z",
+          "Li H",
+          "Wang P",
+          "Wu J"
+        ],
+        "date": "2019-04-01",
+        "first": "Wang P",
+        "last": "Li H",
+        "name": "Molecular and cellular biochemistry",
+        "pages": "57-66",
+        "reference": "30324533",
+        "title": "Tyrosine residues of bovine serum albumin play an important role in protecting SH-SY5Y cells against heme/H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;/NO&lt;sub&gt;2&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;-induced damage.",
+        "type": "PubMed",
+        "volume": "454"
+      },
+      "evidence": "Furthermore, the cytoprotective effect of BSA was stronger than that of BSA-T (Fig. 5), suggesting that tyrosine residues of BSA act as oxidation target to prevent other important protein from heme-induced RNS associated damage.",
+      "key": "4bc1060d4f33011957cbe5728af44b1d5b729408606a9a3e7b2f2bab562100857bcee5f17f8d21ab2af69c8d62b92b2c0af0d29464a0f4ccfa7695bb0f68b0db",
+      "line": 266,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "decreases",
+      "source": 19,
+      "target": 7
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"3-nitrotyrosine\")",
+      "function": "Abundance",
+      "id": "edd7ee0bf4c1a1ff9e78865bb9e7c03b07f4793f640bd52ef2330ec6d61878ea85fe147394a6eefd9cac7a21ada57baa78c05d17a5d7e298be7363af574014f6",
+      "name": "3-nitrotyrosine",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"carbonyl group\")",
+      "function": "Abundance",
+      "id": "95cd51200caf07b0230dba587bead648cccc163e56496ce60024e0f28aac7d5cb1219eb4c28e5248f9dbe6f861748bf223c0b7da79d15575e13c25d47007362b",
+      "name": "carbonyl group",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"hydrogen peroxide\")",
+      "function": "Abundance",
+      "id": "4d65b5d180890b98afe0bc10614fde44ee750b2d1af6fdd925fc31ead7ee9a7248bda3d67c52aebf220b8c048d999f2d878a97a70b0e027a7294cbd3c7bf61bf",
+      "name": "hydrogen peroxide",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:malonaldehyde)",
+      "function": "Abundance",
+      "id": "739f31faea80a4346f93d88fb322844d4a48cedd3887e50968fbf26d7666f2cec39be3aadacf4e570e76340d40b2e860ed74d5181306d84b7ca1c26ab4443bba",
+      "name": "malonaldehyde",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:nitrite)",
+      "function": "Abundance",
+      "id": "37ca0fec42d62d553e650f035def665a1a03fccb0493c69e30533b62f3ebdd47d84da6f214fbef5b2ddd172dafe8b8a1fb46672804acf8afa3381b9b93c78e4c",
+      "name": "nitrite",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(MESH:\"Glucose Oxidase\")",
+      "function": "Abundance",
+      "id": "bdcd2472c9dcb1541f82da78a721ddb2d7c87c3ac3b9c6933180f2499b64164896c985bbb2ec480795e3cb88796ae3153560c79bfeb106e389a48e49e55db962",
+      "name": "Glucose Oxidase",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Reactive Nitrogen Species\")",
+      "function": "Abundance",
+      "id": "016b988855d016f0fe175ae48397b46f17e728ceca61ac4ab8d5cd79acd671af146bba8075d0aeb2fba0356e21e1e3d408e2417d4aa646b8c21a81dc5b641308",
+      "name": "Reactive Nitrogen Species",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Reactive Oxygen Species\")",
+      "function": "Abundance",
+      "id": "431216f8a4f002a0fa83666bebdbd0cd49a0ffe231e9273c5f429fb234b0cb494c5d4db9d46d631375f41adc4b09f76693b427348a2f18e6a281f770c25d338a",
+      "name": "Reactive Oxygen Species",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Cell Survival\")",
+      "function": "BiologicalProcess",
+      "id": "abeaa000ab588015eac485dd605b78602795a7e237f3b097d8148a27fa3ebcc7a221d318d0399960d9f10cf194fbc9c29f41a2a8ed8c332b09f4b79680170b61",
+      "name": "Cell Survival",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Lipid Peroxidation\")",
+      "function": "BiologicalProcess",
+      "id": "200d0f8dcc2deed3eae3e73e1ad1fecf13fdaff9aefe30936075f390afe344a7b841c8b5e7edef7a1cafc377c66bea8ff57806e4c027474403279f36c76c18bd",
+      "name": "Lipid Peroxidation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Oxidative Stress\")",
+      "function": "BiologicalProcess",
+      "id": "32bd3ab5e8a3a26be3209856c88741f0f0e2dff98d2587599a6a21b0f4793c5d8feb1194ea2166cf3cece076e7095530b116270e6655bc8feb35a437fda42cf6",
+      "name": "Oxidative Stress",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Protein Carbonylation\")",
+      "function": "BiologicalProcess",
+      "id": "4c34e318ee6da7f6e4f0079a10c39cc95baa35544094fcbd7d504a87199db0a4c0e19e33ad08517f1706634dbaa9af3dd8284486e86b41178deca8ae2c6de7f6",
+      "name": "Protein Carbonylation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Apoptosis)",
+      "function": "BiologicalProcess",
+      "id": "39c21a5bf990cacd109cd022171f1f8d53f15707601351a2acf509f4f1a1c21650a3be4e5ddc8df4e09a2d236cc4cc03242239c0b4cde5940d3950792f6b9449",
+      "name": "Apoptosis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "complex(a(CHEBI:\"hydrogen peroxide\"), a(CHEBI:heme))",
+      "function": "Complex",
+      "id": "ff10f8d0899bb1c51555b055cdb3bcbae080eeeb3422a20713047789fa283b195437e3061136cf2cb4b99c306733bfbd39aeef8c590425d2e97ae7899e87f7d5",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"hydrogen peroxide\")",
+          "function": "Abundance",
+          "id": "4d65b5d180890b98afe0bc10614fde44ee750b2d1af6fdd925fc31ead7ee9a7248bda3d67c52aebf220b8c048d999f2d878a97a70b0e027a7294cbd3c7bf61bf",
+          "name": "hydrogen peroxide",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:heme)",
+          "function": "Abundance",
+          "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+          "name": "heme",
+          "namespace": "CHEBI"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(CHEBI:\"hydrogen peroxide\"), a(CHEBI:heme), a(CHEBI:nitrite))",
+      "function": "Complex",
+      "id": "3755aa1b1601098e1dda7c799eb9babedd41c2a69499fe125814b609f0b1e6f6ee597ce8e55b39bf714d6e07c86eb84e548c95feffdd40f4205252e60d22834f",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"hydrogen peroxide\")",
+          "function": "Abundance",
+          "id": "4d65b5d180890b98afe0bc10614fde44ee750b2d1af6fdd925fc31ead7ee9a7248bda3d67c52aebf220b8c048d999f2d878a97a70b0e027a7294cbd3c7bf61bf",
+          "name": "hydrogen peroxide",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:heme)",
+          "function": "Abundance",
+          "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+          "name": "heme",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:nitrite)",
+          "function": "Abundance",
+          "id": "37ca0fec42d62d553e650f035def665a1a03fccb0493c69e30533b62f3ebdd47d84da6f214fbef5b2ddd172dafe8b8a1fb46672804acf8afa3381b9b93c78e4c",
+          "name": "nitrite",
+          "namespace": "CHEBI"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(CHEBI:heme), p(HGNC:ALB))",
+      "function": "Complex",
+      "id": "4772101b39469c4d573f8ff81be0d88042756eaa418755a910b68db7b83a2a50f43e61c8dd75f346dabe02998a32212f48335df3e1b7785118c3ada766556566",
+      "members": [
+        {
+          "bel": "a(CHEBI:heme)",
+          "function": "Abundance",
+          "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+          "name": "heme",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "p(HGNC:ALB)",
+          "function": "Protein",
+          "id": "888f5bd8bd1586fa3a22b3c9fa459dee00628c3ba399e7c4d2e42f7800e9f98cdfd9d801d90f0ba999670ad8d0a443f970f7dfa1633e91d49ffc34ebe6980340",
+          "name": "ALB",
+          "namespace": "HGNC"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:ALB)",
+      "function": "Protein",
+      "id": "888f5bd8bd1586fa3a22b3c9fa459dee00628c3ba399e7c4d2e42f7800e9f98cdfd9d801d90f0ba999670ad8d0a443f970f7dfa1633e91d49ffc34ebe6980340",
+      "name": "ALB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:ALB, pmod(Ph, Tyr))",
+      "function": "Protein",
+      "id": "e4a1ebb4eb2972ea37cb52340350f74e22f8d7d0e02c1d718d17235b4359af98cd622e3d58ac8c4f1bf7a741f2b733ad56058bfea94651813926eb86a1f25dfa",
+      "name": "ALB",
+      "namespace": "HGNC",
+      "variants": [
+        {
+          "code": "Tyr",
+          "identifier": {
+            "name": "Ph",
+            "namespace": "bel"
+          },
+          "kind": "pmod"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:ALB, var(\"tyr\"))",
+      "function": "Protein",
+      "id": "52f50d3c681144c7b6b8182bd593f4b720f3c017afe15e46d10d20b6bbca04f4e07ebaa159741d803968369560596e9501cb5e1cb705ead6a9cfac0bd767d699",
+      "name": "ALB",
+      "namespace": "HGNC",
+      "variants": [
+        {
+          "identifier": "tyr",
+          "kind": "hgvs"
+        }
+      ]
+    },
+    {
+      "bel": "p(RGD:Alb)",
+      "function": "Protein",
+      "id": "b058f9da3105a35644ef96f214dcca1779ca7572c137c370282563bdd9052bccb9104d29d08c066477375b8c7b19cad593ba6796a7e4885f88819c308d238537",
+      "name": "Alb",
+      "namespace": "RGD"
+    },
+    {
+      "bel": "path(HM:\"Heme cytotoxicity\")",
+      "function": "Pathology",
+      "id": "a5897f3df9369b0d06131f2237a64c57a734dfd77952b0e11ed724886104d437d90fa8abf78aa68f0723a03353de2aaa550bd2ba1436aac85d18f455b7a2bf6a",
+      "name": "Heme cytotoxicity",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "function": "Pathology",
+      "id": "3196cc4c6a20279c822cae925a9b271d0224f2c8d468e3069a3ee460662be286b61db2f144c550686a9c624e58af4ffa7570f4f2384e1cb8ee40496f8cb3fa5e",
+      "name": "Inflammation",
+      "namespace": "MESH"
+    }
+  ]
+}

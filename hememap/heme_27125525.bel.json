@@ -1,0 +1,2842 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_27125525.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_27125525.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Hematoma resolution occurs in the days after intracerebral hemorrhage (ICH).",
+      "key": "3dc906065190f3844af28704ec13487e07ad9b77e6dd5c0e32ddb6a531a06b0736a761df41fd5d3043fc6b4bd36309247172b394f6ae4ddce145bbd048a4cdac",
+      "line": 92,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Hematoma resolution occurs in the days after intracerebral hemorrhage (ICH).",
+      "key": "995b87cd736840f6772e0c9c6d959acbb274b3d9a8e5fba2351bc5d34496ebc52ebe422a4fe8cf136488fe8b5f57c2f0c00b1dec13a75526ac914add4511bedc",
+      "line": 92,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The hematoma clearance may be via red blood cell (RBC) lysis or phagocytosis.",
+      "key": "cf8702cd72c3471afff0dfd6568b30ab0788d2f3e023c6daabb99313be96b9fae0f264f9261282abb43624dd3e9d982f15343003d50ec19f0b188f75b8fdd769",
+      "line": 97,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "We found that diameter of RBC decreased gradually in the hematoma edge and hematoma center (e.g. day-3 at hematoma edge: 2.71 ± 0.38μm vs. 3.89 ± 0.35μm at 4 hours, p<0.01; hematoma center: 2.61 ± 0.29 μm vs. 3.75 ± 0.25μm at 4 hours, p<0.01. Fig. 1).",
+      "key": "85e3fd847ac865240813fe256e9ef207e0badcc69701cb044010543f8dfa019f168e619ba0b985f7b178df3775d2ddee236839345ba47a4398f303dea5df8864",
+      "line": 114,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The diameter of RBCs within the hematoma decreased with time after ICH.",
+      "key": "d6dced42f312257c09118cc40c1e486618ef48cfba0d24521416c5d3bb28eae8d04c5ba8eec3dad7c58782da4145b3ebf8ea4972031c33c80e46d2d5d62a8e02",
+      "line": 216,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The level of hemoglobin declined gradually over the time after the onset of ICH with a significant reduction at day 3. The contents of hemoglobin in the clot were 26.2 ± 5.2 mg/g at 4 hours, but were reduced to 13.9 ± 0.9 mg/g at day-3 (Fig. 2B, p<0.01).",
+      "key": "56360de1eaba70afb67d1ab34e5ecee9a4cce16211ac9dd1837afaefda92fc2eb05d01a52f111d14afcb8c985a370d408ac8b132be7ae07126466b34f2233a0a",
+      "line": 121,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "We found that hemoglobin contents in hematoma were significantly higher in the DFX treated group compare to the vehicle-treated group (15.9 ± 1.8 vs. 11.8 ± 0.8 mg/g, p<0.05, Fig. 5A).",
+      "key": "f1850a6684a945e5f5d82b77a43739d729c5dae2cc7e3186203416c5d6d6f86a2be8d8b79cd45f5e0c2aec16c9c33b8e76e81a6a21821eb111409adb1baa86b0",
+      "line": 168,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "In this present study, MAC contents in the clot gradually increased with a marked accumulation at day-3 (53.5 ± 8.2 vs. 11.0 ± 3.9 ng/g at 4 hour, p<0.01, Fig. 2C) and stayed at high levels at day 7.",
+      "key": "d80bc9d6bed5d0c6db4e44c9e7b1992bfe9261bf49bc8f1e525d9764c4d1afc8eff8caa99bcb56f9b32e122fbc481f4fcc8ff8422e6aa7fd574444826c2e78b6",
+      "line": 138,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Erythrophagocytosis was observed in the hematoma edge at day-3 (Fig. 3A), and hemosiderin deposition was identifiable in the hematoma edge at day-7 (Fig. 3A).",
+      "key": "68c03ec678d0260169d908fe5a482778154f43997c55f3161c177d180f8d6830c2d0fe98831a06bf999561220405cc6f944ffce084e21ed3982c58a8b2f168b2",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Erythrophagocytosis was observed in the hematoma edge at day-3 (Fig. 3A), and hemosiderin deposition was identifiable in the hematoma edge at day-7 (Fig. 3A).",
+      "key": "b433493626f5ebb111f3256c2bc013089f0b6a5d9db69c59143d576325cc7dc9d942b37e8c033d7f327b3ca442b1222e7d7658a80b6d6e245d663bd476593a10",
+      "line": 147,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "CD163 and HO-1 positive cells infiltrated into the hematoma from edge to center after ICH (Figs. 4A & 4B). A significant increase of CD163 cells was found at day 3.",
+      "key": "aee3fd0eab26e01438956f049257926d98111eed9b7499a517e205d874c28f567fd4eb3f3004a32851862d18ac43ce471c919d50be77af50f7d4f621e37579c7",
+      "line": 154,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "HO-1 protein levels in the hematoma also increased at day-3 (HO-1/GAPDH: 0.65 ± 0.08 at day-3 vs. 0.04 ± 0.01 at 4 hour, p<0.01).",
+      "key": "5173b215e9265ff6327a3c6868c04bd383b2132780f6c197905abee625dc44523be035b9dc1434350b1986d14e886fbc8c0c6d73945c7dd9138cc1f2faf2603b",
+      "line": 160,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The current study examined the natural time course of CD47 expression in the hematoma in a swine ICH model and found that CD47 levels in the clot decrease with time.",
+      "key": "f8d9b81cb3a616a4264c29e73446fda4f32d6b73483a81ad5bdcb15b8e2265229fe0f3aebf3c5c36b38244e990bf76fabf2ce76b8f407dec9d21b36ec751f9a0",
+      "line": 231,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Our recent study showed that depleting CD47 in RBCs resulted in faster hematoma clearance with microglia/ macrophages being less likely to phagocytize RBCs with CD47 than CD47-deficient RBC 7.",
+      "key": "a40490b8cd93151e6ee4ace6f1e100b162872e6ea801beb68fd31feb8aa98f0af6bbb58c53807139bb75eaf9740b78fee73635935babe9cfd2a4780c74922658",
+      "line": 246,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "In combination, these finding may underlie our previous results showing that DFX slows hematoma resolution after ICH in aged rats 12.",
+      "key": "b0fcfea96495474c93d46cb9b52ca28c8613db6202b790150952bd6358b0d3c5fb7a05390b981d6c239be960ef7d3af035345c49825242e3e8ca7a61e92a8bda",
+      "line": 283,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The hematoma clearance may be via red blood cell (RBC) lysis or phagocytosis.",
+      "key": "56dd95cef240fd761dc43facaa0d5c940de085a1fb5004dc01603911dfc4087cc5fb9b1554d100055229b42e7e0830ad3abc5f0173b2748d6c9cdb1445f9ddb6",
+      "line": 97,
+      "relation": "negativeCorrelation",
+      "source": 8,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Erythrocyte lysis after ICH can be mediated by the complement activation and formation of the membrane attack complex (MAC), which contains complement C5b, C6, C7, C8 and C9 proteins (C5b– 9).",
+      "key": "c65d5fc953c38043c87ae176eca68bb09a8bb5b690e5613fd16cc76cb70302e9278027c4359dd4371f67f983424171b0fd4a620272bfd8c5fdab2b2c2ae4be2c",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Activation of the complement system and the formation of MAC resulted in an increased membrane permeability and erythrocyte lysis.",
+      "key": "8b1800f63581e2c4c1c1f4aa7106a90296a896a79fc7814671ca60fe3491b4d7e5abfc9bc9ba2fc6122120546ea3128ba5f6b8134d331a18757ff404f8b766c5",
+      "line": 127,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Activation of the complement system and the formation of MAC resulted in an increased membrane permeability and erythrocyte lysis.",
+      "key": "c9f5968d61cfa308b19b29ce18468702d66f8c9c5a71c3d335dcb921ce5a1251803edba5a0e7a5b8e9c1895e893e647d8db774d876c937917da59bf280098de6",
+      "line": 128,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Erythrocyte lysis after ICH can be mediated by the complement activation and formation of the membrane attack complex (MAC), which contains complement C5b, C6, C7, C8 and C9 proteins (C5b– 9).",
+      "key": "55122d6bf0ba4c108a44e54a2430a8b6005d74e1581e8cb9fd8d2aef9eb6782846747de64a1faa20d5eb9ecc1af2f4da6101760bb79e7ccffb0e846e13d2c64d",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Activation of the complement system and the formation of MAC resulted in an increased membrane permeability and erythrocyte lysis.",
+      "key": "e1c2355920cade0cdd5971e76233492912a4ad48211469f6e7adee240cab4d4cd01b135e88663c097768c92874c5e8c7d6927eef6bc45ff7276836dc08d7aff8",
+      "line": 127,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Erythrocyte lysis after ICH can be mediated by the complement activation and formation of the membrane attack complex (MAC), which contains complement C5b, C6, C7, C8 and C9 proteins (C5b– 9).",
+      "key": "bf5a78363f67b215af4c98b818b1d9a553502e3f7153aea359ed50bf2c23b19f3dd0b55d5216772b0f1c7d9df993695fec6e54d6594cd839c188ca7ee20146ab",
+      "line": 105,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Activation of the complement system and the formation of MAC resulted in an increased membrane permeability and erythrocyte lysis.",
+      "key": "d9bf539a28894bafd3037cf1fd63d28e342c465125c3fb2ae029a0d3ca73b103e4c9f51bc9a9b660d0115d3370e1705623c20b3d5d48352a9d181db01728fc46",
+      "line": 129,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Following complement cascade activation, MAC on the cell membrane forms a pore resulting in membrane permeability changes17 finally leading to RBC morphological alterations and erythrocyte lysis.",
+      "key": "d257bc994d083f0e7be0a22980563ae5ffd4aa6ee00b19f1db25f3a3a3f2fd3ed9d049e0a35b86fda2ebf54f8acbb885734dc91587e34efb18274adb704b8ece",
+      "line": 224,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Erythrocyte lysis after ICH can be mediated by the complement activation and formation of the membrane attack complex (MAC), which contains complement C5b, C6, C7, C8 and C9 proteins (C5b– 9).",
+      "key": "1ae92d6e64cf78a12495f1a1739a3acc389f42dbd3b34b99deb356ccc2b0662b43f2fa3e77844fb2ce820a9e0315bf788f16d951e5a7936d698f009ba8bb3599",
+      "line": 105,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Activation of the complement system and the formation of MAC resulted in an increased membrane permeability and erythrocyte lysis.",
+      "key": "21955708fdc3c98e2ec2783af4bc1d5a052613d06d460404f13bc11d5a0748caef822d0352641374616d73b448ce3ba4b3fe8b6aede2c94c64d151a60613e20e",
+      "line": 129,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Following complement cascade activation, MAC on the cell membrane forms a pore resulting in membrane permeability changes17 finally leading to RBC morphological alterations and erythrocyte lysis.",
+      "key": "b067738cf478ab93e24dea5005abc63e082547b1c89e3049312ab1d2328d917df908f216de82a68982642259fd2500232b3bed4268ededaac79e43e7c8182c5e",
+      "line": 224,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Activation of the complement system and the formation of MAC resulted in an increased membrane permeability and erythrocyte lysis.",
+      "key": "99757940fb43be8ddacaeb907059764f8d3829ab47e2072149c3a426b81456d21aa368992f3f0225d1751278fa5cc4e38455ba84c636d0b70ec95ef5a0e8711a",
+      "line": 130,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Following complement cascade activation, MAC on the cell membrane forms a pore resulting in membrane permeability changes17 finally leading to RBC morphological alterations and erythrocyte lysis.",
+      "key": "1ea039864e5b8dbef562f1745fd454bd2e359d876d0537bc4415b96b1d93410d826c07992c0117a1bb390f7af614eef0e3b7fc40d5bba044ed2d69cde90d34e5",
+      "line": 223,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "In this present study, MAC contents in the clot gradually increased with a marked accumulation at day-3 (53.5 ± 8.2 vs. 11.0 ± 3.9 ng/g at 4 hour, p<0.01, Fig. 2C) and stayed at high levels at day 7.",
+      "key": "24ea7410a2ae6d00bada5a589f589e5c8d0e55d7e5a818272cc99842c42a6ccd5d22cf6e6fd4d5acbd70635a3900602a47695eacd714f99c9c11a0b11ca829e6",
+      "line": 138,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "DFX also reduced the MAC content in the clot at day-3 (33.0 ± 6.6 vs. 56.2 ± 9.2 ng/g in the vehicle-treated group, p<0.05, Fig. 5B).",
+      "key": "55cc629e1b43f9ec422d0ffb9878664eb900b2bdd2135c2f353383be580f2f58db625d170fcd57eb7b66a42fbc4a6b6c074b251aaaa117c61913bb7848233bb3",
+      "line": 175,
+      "relation": "negativeCorrelation",
+      "source": 3,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Stroke": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The present study found that DFX treatment reduces MAC formation in the clot.",
+      "key": "283f8220a64a6c09ba818e2fd09ee6ddbbe1d7a286ced8fba774538a2ef80a7c2d758935c0b508d40d9e667c04faf3b672df8f7773feb3a13d28c7a2ff2c5cbc",
+      "line": 271,
+      "relation": "negativeCorrelation",
+      "source": 3,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "We found that diameter of RBC decreased gradually in the hematoma edge and hematoma center (e.g. day-3 at hematoma edge: 2.71 ± 0.38μm vs. 3.89 ± 0.35μm at 4 hours, p<0.01; hematoma center: 2.61 ± 0.29 μm vs. 3.75 ± 0.25μm at 4 hours, p<0.01. Fig. 1).",
+      "key": "c31e6d1ba6fad5cefbfbd995015364e2568c4acd5b9893b56dd158b3a31878f50fbe02a1a83c5c1de4c09c9ed6fea25a871b98bf9bbda4f5a386157c00d18797",
+      "line": 114,
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The diameter of RBCs within the hematoma decreased with time after ICH.",
+      "key": "1f087af67ebfc3b9413f7a56f6aa809f06df0f49b7a7def67ca14f9ba59a747e212b8f890c5c46d4ae87bc5ce74b5ad92225fd30a06ae7d6ad92aab0752973ea",
+      "line": 216,
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The level of hemoglobin declined gradually over the time after the onset of ICH with a significant reduction at day 3. The contents of hemoglobin in the clot were 26.2 ± 5.2 mg/g at 4 hours, but were reduced to 13.9 ± 0.9 mg/g at day-3 (Fig. 2B, p<0.01).",
+      "key": "da858b68f92d60a6e127195a16787446eccf845a02fd253c8a8697dd424f22d4220ff68917dfab4ff423ded3959aa408ddd10887bf9ab851e6e31b6ea05992fd",
+      "line": 121,
+      "relation": "negativeCorrelation",
+      "source": 12,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "We found that hemoglobin contents in hematoma were significantly higher in the DFX treated group compare to the vehicle-treated group (15.9 ± 1.8 vs. 11.8 ± 0.8 mg/g, p<0.05, Fig. 5A).",
+      "key": "64ec750f7743f389ea7a66db1b1e552470220d3e64ac41fe531f410ad2b7d77258c2504dde13a274bffbb62a5fc063e87a2cfaf7dad798973365892d268c3fa4",
+      "line": 168,
+      "relation": "negativeCorrelation",
+      "source": 12,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "We found that hemoglobin contents in hematoma were significantly higher in the DFX treated group compare to the vehicle-treated group (15.9 ± 1.8 vs. 11.8 ± 0.8 mg/g, p<0.05, Fig. 5A).",
+      "key": "22facc307c7fd7783bca9249972cdfba9f1e7c9afe0dacc7a39f1ed06b045256aa50db0662e43c7b7a3fa43dc3aa46d65b0b43cb850d31ec1de0d04cec7346d7",
+      "line": 169,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Activation of the complement system and the formation of MAC resulted in an increased membrane permeability and erythrocyte lysis.",
+      "key": "6781a0067f5781fa667189e67eaf78ab5144d5d94951cf3e4877851fd31f4ee9bcdad65d07f5070d251b106c33f5728a0a42979cdfe5a3bc0a1750b54de26e9b",
+      "line": 128,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Activation of the complement system and the formation of MAC resulted in an increased membrane permeability and erythrocyte lysis.",
+      "key": "21c0b30aa1d33b20611ce683b8874fc4cfa27b5b69fcf139481a10bdd207282a85445bac199fd9c38a6ff50107f5c92995b038d3ed5c1b7a707a0e5db9497a54",
+      "line": 130,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Following complement cascade activation, MAC on the cell membrane forms a pore resulting in membrane permeability changes17 finally leading to RBC morphological alterations and erythrocyte lysis.",
+      "key": "ea756e50ac5925552ed841c6594ec83a1c1ec510cdd1cffd2d13cc0c8479b45821e48426223a423579246368bf1d48a43566509df39cb4060805c9b859ef5fa5",
+      "line": 223,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Erythrophagocytosis was observed in the hematoma edge at day-3 (Fig. 3A), and hemosiderin deposition was identifiable in the hematoma edge at day-7 (Fig. 3A).",
+      "key": "22282f32b03aecc7774ecb52429b40ec02d1f551426834d242c6d559caea7f5dc6fd4cfe37e2d7b163e1512898db9ab5c393378d74319b397895c2183c46fb2f",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "CD47 exerts its inhibitory effect on phagocytosis through binding to inhibitory immunoreceptor SIRPα expressed by microglia/macrophages 21.Thus, the CD47-SIRPα constitutes a negative feedback for erythrophagocytosis22.",
+      "key": "24b2a02729db31024e755fee89bacad8bb207e1dc420ef33a720fac0398da1cae256f6218a235740729c915891c9ee794dd7a40f1eb2832d2c90f25a670a6c73",
+      "line": 239,
+      "relation": "negativeCorrelation",
+      "source": 2,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Evidence suggested that CD163 acts as a hemoglobin scavenger receptor on microglia/macrophage with a role in erythrophagocytosis.",
+      "key": "08c0bce772c430ff3a895e8ad441c3ca51ada3250c9c858070daf84b2077d75bbf5c8978808c613973a4e058771ceceac52f332ac565f3acac155dc194e38ff2",
+      "line": 253,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Stroke": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "A recent study, however, indicated that HO-1 is associated with blood clearance by enhancing erythrophagocytosis after stroke.",
+      "key": "6f2c687bbbbd99fef9080f33a6de4059786dbc3b8685cc74669c8ca556a563ac12a1328acbbd10f0ebe69bfd8b4b81e10c6b3a4ab434e11cac0fdb160549aa67",
+      "line": 267,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Erythrophagocytosis was observed in the hematoma edge at day-3 (Fig. 3A), and hemosiderin deposition was identifiable in the hematoma edge at day-7 (Fig. 3A).",
+      "key": "ecb2a29e4cd1e68bbc5fc0f72d17e4d227edec8f126663446e8b584176e017106bb5802888e527fec84f93dd3b90fda381826f8f85fbb574bd9a0b0e0a8c29fa",
+      "line": 147,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "CD163 and HO-1 positive cells infiltrated into the hematoma from edge to center after ICH (Figs. 4A & 4B). A significant increase of CD163 cells was found at day 3.",
+      "key": "f4d9bcd547fba843665d0fb86bb27144390f4a1403982286b92724437153a73db07bbb5414700b48f58b53493cfdae9c058b7555e73982d25865d70eddba5081",
+      "line": 154,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "DFX treatment also caused a significant reduction in infiltrating CD163-positive and HO-1 positive cell in the hematoma at day 3 (Figs. 6A and B) and day 7 (Suppl Figures II & III).",
+      "key": "565a23c816790da0a0488556610d8064267a232e649136bcc22522d44ce0be5debc1357f1db139d4083529e26b09c9e88b2aef92ff5ef1449c7e03368417581d",
+      "line": 199,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Evidence suggested that CD163 acts as a hemoglobin scavenger receptor on microglia/macrophage with a role in erythrophagocytosis.",
+      "key": "e1476fd5e9686b2e3332942773ee29573a5da9aaf8a0ffaa79238885bba6cf15caf1edc66bae36d05454e7ee7681140813e9071ca581d4766f62d2269032b5ce",
+      "line": 253,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "CD163 mediated hemoglobin/hematoma clearance is involved in the induction of HO-1, a rate-limiting enzyme for heme degradation 26.",
+      "key": "0fdeeec100af419c0433e027f2bc09fb00323d89cd42d43aec733ea71103ac78d38a666400ff6af2d90051435cb0240edbc7b32b6b21160080fb4bc0824f80d6",
+      "line": 259,
+      "relation": "increases",
+      "source": 10,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "HO-1 protein levels in the hematoma also increased at day-3 (HO-1/GAPDH: 0.65 ± 0.08 at day-3 vs. 0.04 ± 0.01 at 4 hour, p<0.01).",
+      "key": "b8e2b942cfc367390d0851862cf1efe0c2ab10812c29a579be27cf6e74210e43f0f19a9dbf760799ff008aab5329ffdba53d535d9f6484dfec09bc307a9da861",
+      "line": 160,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "DFX treatment also caused a significant reduction in infiltrating CD163-positive and HO-1 positive cell in the hematoma at day 3 (Figs. 6A and B) and day 7 (Suppl Figures II & III).",
+      "key": "07a88303c3569798fdcaca9854ada4fe944dcb7f5514c1eedd3bd75510e274d6e98af15853ed69463530c196a981b14feb5d5fc9e349194b694cb9f4fb851f91",
+      "line": 200,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Western blot analysis showed that the protein expression of HO-1 was decreased in the hematoma in the DFX treated group at day 3( HO-1/GAPDH: 0.32 ± 0.04 vs. 0.98 ± 0.07 in the vehicle-treated group, p<0.05, Fig. 6B) and day 7 (p<0.05, Suppl Figure III).",
+      "key": "445da72e0355cfdcee910181fa5a2ec5f79f1f83428cfe8324a5f3245b4aeaf2b0bb64dc78821f1344f9e2c374d95e4b751eed614e8dfb80dc1b9001618bb5c0",
+      "line": 209,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "CD163 mediated hemoglobin/hematoma clearance is involved in the induction of HO-1, a rate-limiting enzyme for heme degradation 26.",
+      "key": "33880219fa5ad49ebc726c65c831de983d8c3a88373e49017ac583ecb8bfb5f61c7af3d94ada33c258d369f691c51680b69b41910716eeb338b2b02576315549",
+      "line": 260,
+      "object": {
+        "modifier": "Degradation"
+      },
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Stroke": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "A recent study, however, indicated that HO-1 is associated with blood clearance by enhancing erythrophagocytosis after stroke.",
+      "key": "ceeca3ffa81f2706d457c849534b002e4ca1cfd8fbecb7f5f49189cd874d3b498cc77f9b000c15c9ece0531765b237c2c54a2252b04a4d00b5d290d188cdcf5b",
+      "line": 267,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "We found that hemoglobin contents in hematoma were significantly higher in the DFX treated group compare to the vehicle-treated group (15.9 ± 1.8 vs. 11.8 ± 0.8 mg/g, p<0.05, Fig. 5A).",
+      "key": "fd8c2c705640d019baf1e29fff3cfc58d143b5ebe7c84ed04fff513a896b53bcff85dec8d3973c9453f28e701d5ab96f8b20c453cc6c6ceb2dfd7f40a9ef3572",
+      "line": 169,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "DFX also reduced the MAC content in the clot at day-3 (33.0 ± 6.6 vs. 56.2 ± 9.2 ng/g in the vehicle-treated group, p<0.05, Fig. 5B).",
+      "key": "14806d8f2a044d7dd05114158c207685fbcc8c6eec30fde8a774de9aab440e4ada54a21595f3788dea3168d0585064e02024beb269135511bc61bbf35ed107ab",
+      "line": 175,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Stroke": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The present study found that DFX treatment reduces MAC formation in the clot.",
+      "key": "f4edde5560930a942ccef8f27a4e78ec00b0c0d5571d5b3c557b8ef8044ac751be4af61d0da1e2471d2b83101c116b71ec7e05c5fb440ba5c8447e2be9bf6f19",
+      "line": 271,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "These results suggested that the treatment of DFX reduced the process of hemolysis after ICH, which might be due to alleviating MAC formation.",
+      "key": "1e237cd1c51c69e64e935b4e815960e9cef0f978bd9b9a8532faa94df7fc5504e7a7d5b410933cb03af8c2ccaca1abf141afa54a88f730898ce85b025751f094",
+      "line": 182,
+      "relation": "decreases",
+      "source": 0,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The loss of CD47 in the clot was reduced significantly by DFX treatment at day 3 (CD47/GAPDH: 1.32 ± 0.16 in ICH+DFX group vs. 0.74 ± 0.07 in ICH + vehicle group, p<0.05, Fig. 5C) and day 7 (p<0.01, Suppl Figure I).",
+      "key": "566378e42429d0ef4b2f9fc5a57985ed079924be176e938116927aafe0113133038c2c439bfe11633c5d7cb1194a458d0a2864be606f572ee48a6842fbeeb82b",
+      "line": 192,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Stroke": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "DFX also reduced CD47 loss and microglia/macrophage infiltration after ICH suggesting it also affects erythrophagocytosis.",
+      "key": "d75a363b8924b3b310d3db52b13038b1204617ad1265e9e91c0461e42452b827b01bba4ed6ffdf0a0193c258c7a2cbed0529563755ab092f27a23c5ca623c49d",
+      "line": 276,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "DFX treatment also caused a significant reduction in infiltrating CD163-positive and HO-1 positive cell in the hematoma at day 3 (Figs. 6A and B) and day 7 (Suppl Figures II & III).",
+      "key": "28f143351b7911481933b73ab6149f085a1542855d8bfbda6d9ad0a0eff5f53abfae43b414276550d2c6238d4c93e779a44048e65271c5b42a94f67c1b7db95c",
+      "line": 199,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "DFX treatment also caused a significant reduction in infiltrating CD163-positive and HO-1 positive cell in the hematoma at day 3 (Figs. 6A and B) and day 7 (Suppl Figures II & III).",
+      "key": "e4a6e24dc6345794a38251de5a52fb3d888b1c66246bc0cb65103b49df23232d66038187c6455bd8dffdf5f4256578c0a9c01dd488ff45550c8f9ea3e016ca2a",
+      "line": 200,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Western blot analysis showed that the protein expression of HO-1 was decreased in the hematoma in the DFX treated group at day 3( HO-1/GAPDH: 0.32 ± 0.04 vs. 0.98 ± 0.07 in the vehicle-treated group, p<0.05, Fig. 6B) and day 7 (p<0.05, Suppl Figure III).",
+      "key": "6e7369025d1597aad23ee16eaac92bf310ef5b5b8c76778d1926d4272f83a4f6ad48e49c0e0f3a64871575c0c8a9671db76b4ec06d89b45279decff495b772e4",
+      "line": 209,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "In combination, these finding may underlie our previous results showing that DFX slows hematoma resolution after ICH in aged rats 12.",
+      "key": "ed870947dae8d2ec2e881184442e4a08921762ba62d46daf0f8cd98cf141a73dfb46b7c9ba493ceaeaa486c364df3a2fb54597847ea013a47987b5b7869537f8",
+      "line": 283,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The loss of CD47 in the clot was reduced significantly by DFX treatment at day 3 (CD47/GAPDH: 1.32 ± 0.16 in ICH+DFX group vs. 0.74 ± 0.07 in ICH + vehicle group, p<0.05, Fig. 5C) and day 7 (p<0.01, Suppl Figure I).",
+      "key": "9bc3cc461f8eb30eb6b02442c514bab7ce829d5f6add57c2551af08ed81422fc497a83e6e46bf717300f0706d72448fba963713bab5612aa567a8d34b32445d9",
+      "line": 192,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Stroke": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "DFX also reduced CD47 loss and microglia/macrophage infiltration after ICH suggesting it also affects erythrophagocytosis.",
+      "key": "5e2665091e123eb9add1659638723cb0557dcf97ac7ff73a51e7754fdcc95ea52acef785b1a8b2d23fcd3a1dc4154016114d525bbd6bf909cdae5452a9b96cd1",
+      "line": 276,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "The current study examined the natural time course of CD47 expression in the hematoma in a swine ICH model and found that CD47 levels in the clot decrease with time.",
+      "key": "9cbda3f667d6f67eacb38a90befc21197e7881c308e20df526c86fdaacaf380fbb06654ec31572ebd1551e1c6b2b27f42b0b37cab5b4e663a701a90b72b612c7",
+      "line": 231,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "Our recent study showed that depleting CD47 in RBCs resulted in faster hematoma clearance with microglia/ macrophages being less likely to phagocytize RBCs with CD47 than CD47-deficient RBC 7.",
+      "key": "4c1e8f5345178c4e4d904cbb3aa99e7164a8fdef277a6652acec3578ea0a400f0b54d4088a1de73b7b2ecd5c88d4220fbc51c8c3299816601a40d04a5349f3ca",
+      "line": 246,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "target": 16
+    },
+    {
+      "key": "64ab18301963d8b41f52015370c2e5b61737c6070741548a3bf407aa1e68169901f4cca1a1e82f3c9225dec23c3aaa60c9ef8ee0a36e7663352049f30cc0b7e6",
+      "relation": "hasComponent",
+      "source": 9,
+      "target": 11
+    },
+    {
+      "key": "f0ce7d798ba0b8052768b5a23f195c86511e19aafb25ade91165fd3826865a2573eb78c531800785c0902e8582f94314b03aae18b7957317e792ad51b09626a0",
+      "relation": "hasComponent",
+      "source": 9,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "CD47 exerts its inhibitory effect on phagocytosis through binding to inhibitory immunoreceptor SIRPα expressed by microglia/macrophages 21.Thus, the CD47-SIRPα constitutes a negative feedback for erythrophagocytosis22.",
+      "key": "b247dbf7f000cdbf37f86159c5cf6a363f17d58b0172e7c8615182d6f3f84256613a14c23d83637e74a4e308f0174f2926d3928590b65036b7ca4335b73d83f1",
+      "line": 239,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "MeSHDisease": {
+          "Cerebral Hemorrhage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "3 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Cao S",
+          "Chen G",
+          "Hua Y",
+          "Keep RF",
+          "Xi G",
+          "Zheng M"
+        ],
+        "date": "2016-06-01",
+        "first": "Cao S",
+        "last": "Xi G",
+        "name": "Stroke",
+        "pages": "1626-31",
+        "reference": "27125525",
+        "title": "Hematoma Changes During Clot Resolution After Experimental Intracerebral Hemorrhage.",
+        "type": "PubMed",
+        "volume": "47"
+      },
+      "evidence": "CD163 mediated hemoglobin/hematoma clearance is involved in the induction of HO-1, a rate-limiting enzyme for heme degradation 26.",
+      "key": "a1dbc35c037445e98cc2bb539dc265d5dea28d5567ce1f150f29883b78dd1bc98f4cb864c6a284b536e6a80450dd05c0d97113062fc6c2ae9f167fc047b93860",
+      "line": 260,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "target": 13
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"desferrioxamine B\")",
+      "function": "Abundance",
+      "id": "a49da19b69084c675adbb4db4b674aeafc2a35181871492ccfa7c50ce64a6c4abfc8c89f61961fa7652afabff064cadb1f06bd26635ec5728404604b321f72b9",
+      "name": "desferrioxamine B",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:erythrophagocytosis)",
+      "function": "Abundance",
+      "id": "bac9c07789a564cc366314aee9e3a2c1d62636dbb4c02865888c17574fb21a30c65181203ab5f20993830f9d209274452d01a13f29ab8f1230ed5dc956fa262f",
+      "name": "erythrophagocytosis",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(MESH:\"Complement Membrane Attack Complex\")",
+      "function": "Abundance",
+      "id": "697440f9efe6d464dff14ff66b2554c4c0fac81fd532f4039c33a96b1070ad6aaf25f4b64023470df259819a994b8fae792ef76b64d97ef8d38de60855f16b0b",
+      "name": "Complement Membrane Attack Complex",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Hemosiderin)",
+      "function": "Abundance",
+      "id": "26705d5d898497476628ec17e4fca0be9687b82dde5634fe11a7916ef04f3efde8412c995edfae20e48514ef00cf18499ef9bddfede983d740075969224ed65c",
+      "name": "Hemosiderin",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(GO:\"complement activation\")",
+      "function": "BiologicalProcess",
+      "id": "7dffe42517c3d74ef8db1b8f29a0be191ff33eb743bcb3f274446e3e4e0af75347a0294e3d14b50508fa8f0e46b076f844f664d7f93566c31246a2f841df1316",
+      "name": "complement activation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Cell Membrane Permeability\")",
+      "function": "BiologicalProcess",
+      "id": "56908fff94fb6f2d451331667f58a6fcf43f41684460dbec61c3e7fdec8d68d41c49d45f64c19eae4bff36fbea32eb2e90cfdf4ee4bf6523421d5dca3c2d1f67",
+      "name": "Cell Membrane Permeability",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Erythrocyte Indices\")",
+      "function": "BiologicalProcess",
+      "id": "d757c29909c746a099bbd4a45336bd1b50ff6e2e0caab2e1c46cf2f0e02c020c12643240aaccc8334c9adb03832d03d0d28ada270b9a6d81a0ca5eb98ff43041",
+      "name": "Erythrocyte Indices",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Phagocytosis)",
+      "function": "BiologicalProcess",
+      "id": "24a222f2ff316c1e82d9d6384fa23bcf65146b96e43cad2dc483dbb7b91380d0503cf56322a6472aa8b8fe74fde67a96f94aca55fb98bca131743ae81c45a68d",
+      "name": "Phagocytosis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "complex(p(HGNC:CD47), p(HGNC:SIRPA))",
+      "function": "Complex",
+      "id": "678c1e3759ad437043292175f4a954a2c85b1fdc5e1de0c0c3eb6b09e7a312e6a83d260fb6ceaeeeb6203c6c32e16745c032400a977c7f6542c77688378f1153",
+      "members": [
+        {
+          "bel": "p(HGNC:CD47)",
+          "function": "Protein",
+          "id": "19e7a63c25843301db72d272b9004b0aa2170a144692c571c40a2cf031d662fa91abd7b6a27b1b98ecd4ccb6faab2164db808d762b30ac3f6b5da526224b9df4",
+          "name": "CD47",
+          "namespace": "HGNC"
+        },
+        {
+          "bel": "p(HGNC:SIRPA)",
+          "function": "Protein",
+          "id": "6a6625d08effdb3ec52dc8e11aea6b0e036c90ffafdbfd5e4589657b2a00cc25e7a379bb5f5e496d99b71703ca2af898e5a1a44a3c323ff8a8699ae80de01246",
+          "name": "SIRPA",
+          "namespace": "HGNC"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:CD163)",
+      "function": "Protein",
+      "id": "c09e9995e0cee750f04cb50d5a22e8c72af43ba38932051346016b5d083b5a08ac54b85cac4b84e404226a1f7a8e8bdb2b7e51c102510b6188d80366b07ab24f",
+      "name": "CD163",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:CD47)",
+      "function": "Protein",
+      "id": "19e7a63c25843301db72d272b9004b0aa2170a144692c571c40a2cf031d662fa91abd7b6a27b1b98ecd4ccb6faab2164db808d762b30ac3f6b5da526224b9df4",
+      "name": "CD47",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HMOX1)",
+      "function": "Protein",
+      "id": "c4981e9d3903b58471e749e0a1e38277c2729152c5582926243649d5c266ea44d831061cf916b7c6334634d357628b16c015a7ce07c97084f06b2c3f3cc94d5c",
+      "name": "HMOX1",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:SIRPA)",
+      "function": "Protein",
+      "id": "6a6625d08effdb3ec52dc8e11aea6b0e036c90ffafdbfd5e4589657b2a00cc25e7a379bb5f5e496d99b71703ca2af898e5a1a44a3c323ff8a8699ae80de01246",
+      "name": "SIRPA",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "path(MESH:\"Cerebral Hemorrhage\")",
+      "function": "Pathology",
+      "id": "ffc0cde2f87c12bfe56adacbfc0c9712453500831a7cfc7afc542cbe9eb812b5b8edb4c9892e9803a2c8153a8ba4036775c93e101626361ce70944a03e3bd5d2",
+      "name": "Cerebral Hemorrhage",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hematoma)",
+      "function": "Pathology",
+      "id": "5d7d50aa06632981313824480b1e9fc3888f43eebcefd6d5719284883f354dd2f3a830dd5a516f830fd94783d1a4a574113a475bf0ec4c53b186d7ca7c03fd95",
+      "name": "Hematoma",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    }
+  ]
+}

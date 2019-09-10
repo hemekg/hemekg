@@ -1,0 +1,1861 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_25301065.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_25301065.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "The Hmox1 (− /− ) MEF cells expressed no functional Hmox1 mRNA (Figure 1a) and as a result accumulated more cell-associated heme during extracellular exposure compared with wild-type cells (Figure 1b).",
+      "key": "18fa260528ce5cad4fc5e0dcc40b5fa827f0c9f48545c7b5ed8078383f0bb18d03c979f8b95a98d3ee1f4f6fe6d24213d6eb6d0653bdd4233216b7474db2b78c",
+      "line": 95,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "During heme exposure the Hmox1 (−/ −) cells show a dose-dependent decrease in mitochondrial function as indicated by decreased cellular ATP (Figure 1c) and parallel induction of caspase 3/7 activity (Figure 1d) as well as nuclear condensation (Figure 1e) that occurred at heme concentrations exceeding 10 μM.",
+      "key": "44fda752b0cf7f2426a479c1b326977dd4592aefdc4d9fcec520b68d5cb05c6d5682226e706019eba6ca7c0d254cf5021545f927413bf31231bc9d9797b8eeff",
+      "line": 105,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "We confirmed by selected reaction monitoring (SRM) mode mass spectrometry (Figure 3a) and western blot (Figures 3c and d), respectively, that heme increased Sqstm1, ubiquitin, and Hsp70, with a much stronger response in Hmox1 (−/− ) compared with Hmox1 (+/+) MEF cells.",
+      "key": "50f83bdf2c769d5e2832ab774ec178156838763cbd93f93696719b712ef584058be32643cdbdeb3b364339849cbd9b0c8e397b55eaffc820d71e427962f8e2e1",
+      "line": 133,
+      "relation": "decreases",
+      "source": 13,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "We confirmed by selected reaction monitoring (SRM) mode mass spectrometry (Figure 3a) and western blot (Figures 3c and d), respectively, that heme increased Sqstm1, ubiquitin, and Hsp70, with a much stronger response in Hmox1 (−/− ) compared with Hmox1 (+/+) MEF cells.",
+      "key": "347cb1d0a2883964aff2b92926d8ab659c1f33bb0f0ac43514e17246124b329d0daa1c45b3341aeb1d93e2168375df2758720a0c492fa2a4239724286d331f2d",
+      "line": 134,
+      "relation": "decreases",
+      "source": 13,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "We confirmed by selected reaction monitoring (SRM) mode mass spectrometry (Figure 3a) and western blot (Figures 3c and d), respectively, that heme increased Sqstm1, ubiquitin, and Hsp70, with a much stronger response in Hmox1 (−/− ) compared with Hmox1 (+/+) MEF cells.",
+      "key": "47f861cb44b1af5e5ac689893dba5fdeb62e69aa29909b15f6a062c440402ccae9d480b3ac6de5d004e454520d70973ab713e36d8bf23c9f2bc4cdbb267b168c",
+      "line": 135,
+      "relation": "decreases",
+      "source": 13,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Accordingly, higher levels of lipid peroxide-protein adducts were detected in heme-treated Hmox1 (− /−) than in Hmox1 (+/+) MEF cells when the cells were heme exposed in the presence of an alkyne-tagged analog of linoleic acid, which is an unsaturated, heme-reactive fatty acid (Supplementary Figure 3).",
+      "key": "2a51a19a2049da7dec3c0db82b68ed0cafc3883e2ec33f2bc1af1b388b413aa762b6159eb9d541291e83b181585fc3eb11085dc526eb3bbf8ae1a5f8f14f5b7e",
+      "line": 188,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "The Hmox1 (− /− ) MEF cells expressed no functional Hmox1 mRNA (Figure 1a) and as a result accumulated more cell-associated heme during extracellular exposure compared with wild-type cells (Figure 1b).",
+      "key": "5859ac5b636fc33ebaa78eddfae1bb7673fbe045bf74fc07e0faca0458f52c4ee11fe31b90cb0b82dd6b34f5b3177c5b0e725edde2d3c14a73f647c3785a3f4e",
+      "line": 95,
+      "relation": "negativeCorrelation",
+      "source": 2,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "During heme exposure the Hmox1 (−/ −) cells show a dose-dependent decrease in mitochondrial function as indicated by decreased cellular ATP (Figure 1c) and parallel induction of caspase 3/7 activity (Figure 1d) as well as nuclear condensation (Figure 1e) that occurred at heme concentrations exceeding 10 μM.",
+      "key": "514fb12d7f7e40b9c8c604445349dc5c80757c6599268b84a9af0974c8ee523e04b853ab8a397ebb462b0e3cbd19344e47e4f0288a6aa02513e936bfba4f1953",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Beyond this common protein expression signature, the toxic heme response of Hmox1 (− /−) MEF cells was uniquely characterized by a cluster of strongly upregulated proteins. Within this cluster we identified ubiquitin, the ubiquitin adaptor protein sequestosome/p-62 (Sqstm1), a number of heat shock proteins, as well as antioxidant defense proteins (i.e., peroxiredoxins, glutathione-S-transferase, and thioredoxin reductase).",
+      "key": "5131d23b475c0d20566a4cc6c9d2aadbb1255508e49b7e849651719b41f15f72a9cfaa86efcae8c521719a7dacffaf1e0fe9e41aa72f45864964c8f74f56c16e",
+      "line": 117,
+      "relation": "increases",
+      "source": 2,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "We confirmed by selected reaction monitoring (SRM) mode mass spectrometry (Figure 3a) and western blot (Figures 3c and d), respectively, that heme increased Sqstm1, ubiquitin, and Hsp70, with a much stronger response in Hmox1 (−/− ) compared with Hmox1 (+/+) MEF cells.",
+      "key": "4335253fe6104b5f443deda600f2ba5c88d2c110a82e78c189f8e5f08fe9cfce458446a35e51caa5ad5e5014da76996920e082087b2e025482cc4446bf1f7632",
+      "line": 130,
+      "relation": "increases",
+      "source": 2,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Beyond this common protein expression signature, the toxic heme response of Hmox1 (− /−) MEF cells was uniquely characterized by a cluster of strongly upregulated proteins. Within this cluster we identified ubiquitin, the ubiquitin adaptor protein sequestosome/p-62 (Sqstm1), a number of heat shock proteins, as well as antioxidant defense proteins (i.e., peroxiredoxins, glutathione-S-transferase, and thioredoxin reductase).",
+      "key": "00ba7ff6e00e15b76591e7d632c34e78d867eada87cd576e2c802c6c40d1caaa2677d5b59517bc9ab4a900c45955cf4c493d03ee9c6400f44eb2a1fb1c0a9fd6",
+      "line": 118,
+      "relation": "increases",
+      "source": 2,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "We confirmed by selected reaction monitoring (SRM) mode mass spectrometry (Figure 3a) and western blot (Figures 3c and d), respectively, that heme increased Sqstm1, ubiquitin, and Hsp70, with a much stronger response in Hmox1 (−/− ) compared with Hmox1 (+/+) MEF cells.",
+      "key": "171aa1c0369987eb74e97c556b373f7dd9a5e7512d3112f05814cbddd5f45850b94f713f4fa678c012020296e6d3f49be90a3592e5a52ea0f9b0ac3b73409e77",
+      "line": 129,
+      "relation": "increases",
+      "source": 2,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "At higher extracellular heme concentrations, heme exposure dose dependently caused accumulation of myc-tagged Sqstm1 (Figure 3g).",
+      "key": "171941faac9203c52618b9d07f593c18f169e000e242d2099d7cb8480dbe6993e51cd16ef990512e21d5069cc833feeac8941e24a1ff05e6c3d14775ad377516",
+      "line": 149,
+      "relation": "increases",
+      "source": 2,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "This result strongly supports that high cellular heme concentration impairs degradation of Sqstm1 by the homeostatic protein degradation pathways.",
+      "key": "5b4789a139132b67ddff09621ac0945509ccd27b27c91bb2c7c6b168ae450f0b4637356439c7e188179c140fc9a530afc008e9e5838454bfa6a65f51ba64a9bb",
+      "line": 155,
+      "object": {
+        "modifier": "Degradation"
+      },
+      "relation": "negativeCorrelation",
+      "source": 2,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Beyond this common protein expression signature, the toxic heme response of Hmox1 (− /−) MEF cells was uniquely characterized by a cluster of strongly upregulated proteins. Within this cluster we identified ubiquitin, the ubiquitin adaptor protein sequestosome/p-62 (Sqstm1), a number of heat shock proteins, as well as antioxidant defense proteins (i.e., peroxiredoxins, glutathione-S-transferase, and thioredoxin reductase).",
+      "key": "c00d5b299f3a1114bebfe420147f49ad3338dbf09f25a825afa9b4a4f04b85f904c6144dcae9199fbba1bc9b2687db31dbd3253d25d8a75628ae81917b4ef183",
+      "line": 119,
+      "relation": "increases",
+      "source": 2,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Beyond this common protein expression signature, the toxic heme response of Hmox1 (− /−) MEF cells was uniquely characterized by a cluster of strongly upregulated proteins. Within this cluster we identified ubiquitin, the ubiquitin adaptor protein sequestosome/p-62 (Sqstm1), a number of heat shock proteins, as well as antioxidant defense proteins (i.e., peroxiredoxins, glutathione-S-transferase, and thioredoxin reductase).",
+      "key": "a6433f5bd3793ff237737f3b572d3af8c073a6bd24ccbdad07931c87ef192a7fb6c8ca8081863b2db56f955377c8c895d9e9f8476bee15c5de39063592ad28dc",
+      "line": 120,
+      "relation": "increases",
+      "source": 2,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Beyond this common protein expression signature, the toxic heme response of Hmox1 (− /−) MEF cells was uniquely characterized by a cluster of strongly upregulated proteins. Within this cluster we identified ubiquitin, the ubiquitin adaptor protein sequestosome/p-62 (Sqstm1), a number of heat shock proteins, as well as antioxidant defense proteins (i.e., peroxiredoxins, glutathione-S-transferase, and thioredoxin reductase).",
+      "key": "ed85774c4b95b5f43f8c1741e7c9ac69f296e86ea1225e063bef32481bb5838ea21f1381e9e68132e613460fd08887e3ef8d83e41c7ff1b7c5097dfae9c32fd3",
+      "line": 121,
+      "relation": "increases",
+      "source": 2,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "We confirmed by selected reaction monitoring (SRM) mode mass spectrometry (Figure 3a) and western blot (Figures 3c and d), respectively, that heme increased Sqstm1, ubiquitin, and Hsp70, with a much stronger response in Hmox1 (−/− ) compared with Hmox1 (+/+) MEF cells.",
+      "key": "4d9653740e9eab5cb00215b569d350d1a549d2f876d228ecdc7332381d6bbaa4435f7d1de401abce209c8781e98f27efac5122f592a166c6c2f5ae45748fed31",
+      "line": 131,
+      "relation": "increases",
+      "source": 2,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "We also confirmed ferritin light chain enhancement as a common response to heme exposure of Hmox1 (+/+) and Hmox1 (−/ −) MEF cells (Figure 3a).",
+      "key": "cc009d53aea484cc43ea26d05e89c6d40faa38687fa55b2c0099be61b8553c153d96c33ea0fbad5efdb2dd408acf2b976e53e25abd23167e2da1aec9863cbc32",
+      "line": 142,
+      "relation": "increases",
+      "source": 2,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "These data, in addition to older biochemical studies that empirically used heme to inhibit proteasome function in biochemical assays, led us to the hypothesis that excessive intracellular heme could disrupt cellular protein homeostasis by an inhibitory action on the proteasome.",
+      "key": "78bff8096cc69d4fb10014616a173172755bfca45d3d1e9531f96b79fd109c3c7456b685b76a841b7c9d53e99aaf0a8cd1c9fdd27fc58633aa9ba276fac961cf",
+      "line": 164,
+      "relation": "negativeCorrelation",
+      "source": 2,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "The proteasome is the principal pathway to remove senescent and damaged proteins, and intact proteasome function is essential to preserve and repair cellular homeostasis during oxidative stress, such as that triggered by heme exposure.27",
+      "key": "d454fe6f2ea05cf97e03e04c7860d715e1bba2655a19df9f41327ec1591379137347ef405149b410a4481c26b8bcb796da065118f9ef1193ba3d278c4f7c0adf",
+      "line": 226,
+      "relation": "negativeCorrelation",
+      "source": 2,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Interestingly, besides the common cluster of upregulated proteins, which includes Sqstm1, ubiquitin, and a number of heat shock and oxidative defence proteins, we also observed that heme strongly suppressed the abundance of collagen (Col1a1) 1 protein.",
+      "key": "4862f2f45d3dd872cb9da6d411d5c145ea97ead81fe16308920b97594deb5f412c84751a87f8eecb48595a4229a3f968ef5ef8ef81782e2b46db0bbd32d89743",
+      "line": 172,
+      "relation": "decreases",
+      "source": 2,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Collectively, these data support that heme is an inhibitor of proteasome activity in different cell types and in a cell-free system.",
+      "key": "fcd07ec46e6495bea52478d7455464ac35f449b9dde1eaa8179c85b0b9d395e4678fbda736f06428f63c60f760877e83ada3e65c77de2c9f65e161461224a54c",
+      "line": 178,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "decreases",
+      "source": 2,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In addition to this well-established role of heme as an oxidant, a novel and consistent finding of the present study is that excessive heme levels lead to dysfunctional cellular protein degradation by the proteasome.",
+      "key": "973efcabe496714c7b7f44d3192e02d468614657937538baa34b00295b7924007dd3754e8c8b3c9b857c7f4b1f3fc356fead71a099da07de85b1f620f4df693c",
+      "line": 218,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "decreases",
+      "source": 2,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Accordingly, higher levels of lipid peroxide-protein adducts were detected in heme-treated Hmox1 (− /−) than in Hmox1 (+/+) MEF cells when the cells were heme exposed in the presence of an alkyne-tagged analog of linoleic acid, which is an unsaturated, heme-reactive fatty acid (Supplementary Figure 3).",
+      "key": "7a3930eecdb3d8ae3b1188887976530d2457ff223214411384acc983df45c3d7e5494d581fcb082366898399e55f8b306203a7dd1c47e4fe7d6822c004e00fa4",
+      "line": 187,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In contrast, at an equal antioxidant concentration, Trolox completely blocked heme-triggered lipid peroxidation (measured as production of thiobarbituric acid reactive substances (TBARS)) in soybean lecithin micelles (Figure 7g).",
+      "key": "e29b76922778dd39f9e9e8e7f0fe42c8f71dfbec9385f67b96da8e9d4b149f80c100507f11191a7348895668dfff93fcc73c0ed5c1df102bb12ef24e09e985d9",
+      "line": 196,
+      "relation": "increases",
+      "source": 2,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "During heme exposure the Hmox1 (−/ −) cells show a dose-dependent decrease in mitochondrial function as indicated by decreased cellular ATP (Figure 1c) and parallel induction of caspase 3/7 activity (Figure 1d) as well as nuclear condensation (Figure 1e) that occurred at heme concentrations exceeding 10 μM.",
+      "key": "ba97c78155764662a0bbe5f8bec7e744c76a6b7029c8e60940f33e2bfa8d1bc152bdd2648be97a86a1b342bdaf6624a9be24703c8c2974bf22cfd07cf0437519",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 24,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "During heme exposure the Hmox1 (−/ −) cells show a dose-dependent decrease in mitochondrial function as indicated by decreased cellular ATP (Figure 1c) and parallel induction of caspase 3/7 activity (Figure 1d) as well as nuclear condensation (Figure 1e) that occurred at heme concentrations exceeding 10 μM.",
+      "key": "77a63264905df66d9bacb479cb1a14041960bc21643c8fee40f8f5fa019709f1d7946c9638bc3674ed503c752045636bbeb6b46289c7d62b2e95cb180d094836",
+      "line": 105,
+      "relation": "negativeCorrelation",
+      "source": 24,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "This result strongly supports that high cellular heme concentration impairs degradation of Sqstm1 by the homeostatic protein degradation pathways.",
+      "key": "61277a27d8fdd65208264e409142bd202fa0a897016f3da8c12155761b86164cd5a264621a4c6b806214eb03fb1472ffd7898b3488d06e7d2db3e3f14bdc174f",
+      "line": 155,
+      "relation": "negativeCorrelation",
+      "source": 21,
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "target": 2
+    },
+    {
+      "key": "601ef2b66cc8bc10d1e401ca6ca972862a411dbf0f721cdcff60040b731c5da887a1ee5ca9b364296c13bad75812e05085a67ab72af680f0d5246173789539e1",
+      "relation": "hasComponent",
+      "source": 8,
+      "target": 15
+    },
+    {
+      "key": "2f676b2e6421c8bcc734e3041790e030234820995ef38d300b0577e587adffc6dc57d264ca485c75269342b2e8d1f40d502f45204fe95f098d5ea633ea8b40ba",
+      "relation": "hasComponent",
+      "source": 8,
+      "target": 16
+    },
+    {
+      "key": "56610a421b1e4e6fa055a3e228e49f93a1d1e92cfcce319f9a8080c37b0febba4407cbc40acbb2ec3a3c48d07614539a7aca3b84458fe15c7fb5cb25406537c0",
+      "relation": "hasComponent",
+      "source": 8,
+      "target": 17
+    },
+    {
+      "key": "604f38ca96a485cea8dff19d218b4df2cfac498cba95da664945d7c98dde3f7777e038ccbc54985dc7d243e7c52ce8771b8a2d84410299182f12694ff1d0f29c",
+      "relation": "hasComponent",
+      "source": 8,
+      "target": 18
+    },
+    {
+      "key": "4a39a274742477bbb1c26533debb91d5283e7c82bc9849643802723f3feb09a1b0c585ccafc04c125d4282eaf20749ad38e095347a4663211e2359a5c97aaf0b",
+      "relation": "hasComponent",
+      "source": 8,
+      "target": 19
+    },
+    {
+      "key": "5186e044c5c6524bc0219173f5a7002baf2b1537b5e8b07e17d02f0f098729bbe20e0edec95808670a51bb82c16c9d346699c284ad73a055bd0f421a87a97fed",
+      "relation": "hasComponent",
+      "source": 8,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "These data, in addition to older biochemical studies that empirically used heme to inhibit proteasome function in biochemical assays, led us to the hypothesis that excessive intracellular heme could disrupt cellular protein homeostasis by an inhibitory action on the proteasome.",
+      "key": "4431d13261cd58dc54de1d7ff6211f14c78e41bff3deb06d2d3fdd3e0e387f9fd19c8cd10268071119d5dae9a32322ea30cb7b92caf29148d6b00765286b0a9b",
+      "line": 164,
+      "relation": "negativeCorrelation",
+      "source": 5,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "The proteasome is the principal pathway to remove senescent and damaged proteins, and intact proteasome function is essential to preserve and repair cellular homeostasis during oxidative stress, such as that triggered by heme exposure.27",
+      "key": "2894053df1bac0169dd09f82c907add919b54907ec91561d9a9644e828dd600548d4173a78cde2465d287f292c581e834801cd5d584775cbf09cd10eb6eafcc1",
+      "line": 226,
+      "relation": "negativeCorrelation",
+      "source": 5,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "The proteasome is the principal pathway to remove senescent and damaged proteins, and intact proteasome function is essential to preserve and repair cellular homeostasis during oxidative stress, such as that triggered by heme exposure.27",
+      "key": "f15b0bdbe773eef862bb0e8f7ac995898b015df06db384c5cb6b59a3e253c104fab9d139f8ecb20ed9cfe079b0f903d9ea70deccc9e3b868415a75b51889a136",
+      "line": 227,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "The proteasome is the principal pathway to remove senescent and damaged proteins, and intact proteasome function is essential to preserve and repair cellular homeostasis during oxidative stress, such as that triggered by heme exposure.27",
+      "key": "2b2b279d32dc19f09fe850f042346a3a38903035170344b5cf70e125a78c9886a8a5f43bf3ca1137706e9d2f05d96cd3b704689c1a92f9aba1870245d84286af",
+      "line": 227,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Accordingly, higher levels of lipid peroxide-protein adducts were detected in heme-treated Hmox1 (− /−) than in Hmox1 (+/+) MEF cells when the cells were heme exposed in the presence of an alkyne-tagged analog of linoleic acid, which is an unsaturated, heme-reactive fatty acid (Supplementary Figure 3).",
+      "key": "f7ff3865e7ae8563b916bdaf34130f5c69462e5470b9a03505a3330a869dfe0110ec1cf64b849a96923b87ede9720b73f99af8d1e165c6944bfdb26135274828",
+      "line": 187,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Accordingly, higher levels of lipid peroxide-protein adducts were detected in heme-treated Hmox1 (− /−) than in Hmox1 (+/+) MEF cells when the cells were heme exposed in the presence of an alkyne-tagged analog of linoleic acid, which is an unsaturated, heme-reactive fatty acid (Supplementary Figure 3).",
+      "key": "29e9f2c6d4f03d213f5a6c16e19fee9bcaef77a150fb3ecf069517061accbf208681165d42f5b2e6bd4879b0427f8db44801c21cb3463e59153cdd256d8e3bbb",
+      "line": 188,
+      "relation": "negativeCorrelation",
+      "source": 3,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "In contrast, at an equal antioxidant concentration, Trolox completely blocked heme-triggered lipid peroxidation (measured as production of thiobarbituric acid reactive substances (TBARS)) in soybean lecithin micelles (Figure 7g).",
+      "key": "c9d3335e4b43e87f94ccd43eb85cf4c6c1855e48cec4751259712c981f6af2dcd6476a1b4cc4446bafad18b208d204a7da381c661be9e27b129e04f86903cfd7",
+      "line": 197,
+      "relation": "decreases",
+      "source": 1,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Identical results were obtained with the antioxidant dithiothreitol (DTT) (data not shown).",
+      "key": "5c0c79048912cbef4c9ce3ecac75f9b255a326f4c975bc1c2393dc8118a6e725a8a16e9b2784e62e84a558295649785e4a1206155f0ce74b35eb1c64ff3a1268",
+      "line": 203,
+      "relation": "decreases",
+      "source": 0,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Proteasome inhibition promotes accumulation of damaged proteins and may thereby critically enhance the cellular injury that is triggered by oxidative heme effects.",
+      "key": "c54011c1e676eff72dc703b434e64351843b0a10f21fab82ad97dde4e46c45704762acf193d64fd5a83d0ba0d123f28e06c92f40322ed60d29b54ab060ac3c5c",
+      "line": 211,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Engelsberger W",
+          "Karnaukhova E",
+          "Lönn M",
+          "Opitz L",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Schauer S",
+          "Spahn DR",
+          "Stocker R",
+          "Vallelian F"
+        ],
+        "date": "2015-04-01",
+        "first": "Vallelian F",
+        "last": "Schaer DJ",
+        "name": "Cell death and differentiation",
+        "pages": "597-611",
+        "reference": "25301065",
+        "title": "Proteasome inhibition and oxidative reactions disrupt cellular homeostasis during heme stress.",
+        "type": "PubMed",
+        "volume": "22"
+      },
+      "evidence": "Proteasome inhibition promotes accumulation of damaged proteins and may thereby critically enhance the cellular injury that is triggered by oxidative heme effects.",
+      "key": "4437c5c4e0c9f3e9987fd355255b9d11c11f081da72d5aca4cd6f43019b31af3cfadf2191299a09dc336f5f0018755b1414b73f041fe12055bd04e36ec0b97df",
+      "line": 211,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 4
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"D-1,4-dithiothreitol\")",
+      "function": "Abundance",
+      "id": "238067055869f0d16978ac0d98bcad99138cf770fc6290e84bf607c28b9fcbc53433629acf034d9f5dad7f1687f4cc35703ace8776bfc17ed9f3d004ffc94c2f",
+      "name": "D-1,4-dithiothreitol",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:Trolox)",
+      "function": "Abundance",
+      "id": "6d52e2aabbd1866ec8f3c99223dc0b27a112218407456b32d19f58ed39b1630ec3550888c5696b919a27a8046985e89f18c2655b81e100f83e870cc1b69e2b22",
+      "name": "Trolox",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(MESH:\"Lipid Peroxides\")",
+      "function": "Abundance",
+      "id": "cf739fba7a2f0ca8a6b10327ef1f60dddd6675cdbff7be5d50226a53c266a3a4d7cf4bbc42081f1f3966d17fa4cc498ab5488b161dc02805c2990c96ba6dbdea",
+      "name": "Lipid Peroxides",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Proteasome Inhibitors\")",
+      "function": "Abundance",
+      "id": "a0156c4727906a2b57b282c446c2593e42f66e8a02ac1722779f34cb696dd050d3a1a2ff05b9cb85deac0bd95536dc36f967897fe7ddd1cf71e9f7e94f8269aa",
+      "name": "Proteasome Inhibitors",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(GO:\"cellular homeostasis\")",
+      "function": "BiologicalProcess",
+      "id": "7209f7ce26683468aca76761cf299a3284794959fb32b550b526fb435eedf41b142657d93d437ca416cd4080c1af6d9bf6cc31b278ab812390d51be44a030f4a",
+      "name": "cellular homeostasis",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"cellular response to oxidative stress\")",
+      "function": "BiologicalProcess",
+      "id": "131e5b2a2ef7b53956420fef58edd417d38f366f1304a2be310e83a00d1359ba32d1d63893a2926280797f529d2fc154b3e0426906954d155b42afe862da13f0",
+      "name": "cellular response to oxidative stress",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Lipid Peroxidation\")",
+      "function": "BiologicalProcess",
+      "id": "200d0f8dcc2deed3eae3e73e1ad1fecf13fdaff9aefe30936075f390afe344a7b841c8b5e7edef7a1cafc377c66bea8ff57806e4c027474403279f36c76c18bd",
+      "name": "Lipid Peroxidation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "complex(p(MGI:Prdx1), p(MGI:Prdx2), p(MGI:Prdx3), p(MGI:Prdx4), p(MGI:Prdx5), p(MGI:Prdx6))",
+      "function": "Complex",
+      "id": "c093678333e4522c992dbc4550371a27a4ca66add82b92c5ca6838539041ba48ac9c111dd4f31765237767bb3e3908561ae0c60f63237bfab5013c298ca45d56",
+      "members": [
+        {
+          "bel": "p(MGI:Prdx1)",
+          "function": "Protein",
+          "id": "97b57086114ea12fa8ac92d82831314b67843232b9d7647e3c16f37113b0171f3c13a2c52d7ea8e866df5a010d810c0d44a5b71057116ca1c0723288ee319d40",
+          "name": "Prdx1",
+          "namespace": "MGI"
+        },
+        {
+          "bel": "p(MGI:Prdx2)",
+          "function": "Protein",
+          "id": "6abf852f4d933aba9c9f0e25bff602283b9e6aa1d31a165c32cd836ebb455edefaffa21ab9b1579d25b33f02077fa13e7b55c7b839143125d1704f3b2418dc0b",
+          "name": "Prdx2",
+          "namespace": "MGI"
+        },
+        {
+          "bel": "p(MGI:Prdx3)",
+          "function": "Protein",
+          "id": "a2c2cf8ccc4f191551ac569cc66c1c906117ca355bb8a0efe7e04fcc9ddc21cffb4afaeb6b9ad0bf49449bb1b70d0edfb38f135b78a3028b22c24afe3e9b8158",
+          "name": "Prdx3",
+          "namespace": "MGI"
+        },
+        {
+          "bel": "p(MGI:Prdx4)",
+          "function": "Protein",
+          "id": "041b8fd6848fbf19b67541581d78ecd78db536f4bf1ba377eb829a17dd82659041378d6d3c9a142036d9432f5d130420a4528bff16b33959709629ff6bc16d40",
+          "name": "Prdx4",
+          "namespace": "MGI"
+        },
+        {
+          "bel": "p(MGI:Prdx5)",
+          "function": "Protein",
+          "id": "2860efa95867e7e0b14562e51483932b4edaf6bab372eeda2bfe61b6cc8e5654b7f282c7f6ad9bf42bb4482300cc210c088caa982754ca0d1a936dfdb9693cf3",
+          "name": "Prdx5",
+          "namespace": "MGI"
+        },
+        {
+          "bel": "p(MGI:Prdx6)",
+          "function": "Protein",
+          "id": "9bac00c66ac39147a378d83fa27900fcd0615a214b479b7c0a0d8dfe632bddfa548770182f59c3a07458bf6a235be8d57fd3ccb2ccac83c45d0a0ee620d35ebc",
+          "name": "Prdx6",
+          "namespace": "MGI"
+        }
+      ]
+    },
+    {
+      "bel": "p(INTERPRO:\"Glutathione Transferase family\")",
+      "function": "Protein",
+      "id": "fa9d17401e28ee42a136c654c0305a1a408e9146ec9f2b127658117fd33057078c46856c533f76597eeaae5d9da7c58075c37f1a7b679cb200e3652c92697a5b",
+      "name": "Glutathione Transferase family",
+      "namespace": "INTERPRO"
+    },
+    {
+      "bel": "p(INTERPRO:\"Thioredoxin reductase\")",
+      "function": "Protein",
+      "id": "c8bcfb998a2484b6e62080d399ab959267a5e6d369392d65d329b09bbaa2d4802928c53df3e5298deef9296ab4e1435fc4a8273a62fb16b6398f94ac60b2f222",
+      "name": "Thioredoxin reductase",
+      "namespace": "INTERPRO"
+    },
+    {
+      "bel": "p(MGI:Col1a1)",
+      "function": "Protein",
+      "id": "d4e9c1fc0a79afd2abc611e0bfcf0105d6fbcdf941b2fb98be2881097cc7fe0140c002bc1fb4efc3e33d6c8a3428071cf438bc92781f69e39ab3d79c567ad2f0",
+      "name": "Col1a1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Ftl1)",
+      "function": "Protein",
+      "id": "9f80e58345625c9e16419489361a4aa8c6989b2834569a14c03a753931114a12fb97d8b6e599861b1e21e9d5d60f488c1eaae5aaa546813a54e0dc1a562c7f26",
+      "name": "Ftl1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Hmox1)",
+      "function": "Protein",
+      "id": "8beffeed00e14a5c3c1432b49c64dd54603d509fa46333b37a0723447f7f90446ee1e4a2cfb3bb6646705515f1b0fab7318108466dbdad0781a8af61c7ae1d2e",
+      "name": "Hmox1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Hspa2)",
+      "function": "Protein",
+      "id": "0f5fb8d85b98140a8fdf8419dcec5880f7c0018c7a36436ae89def0ae24fa5e13328cf1762ff813c3bb49dc94d101388031059a554fca6c68c378c536bb542d1",
+      "name": "Hspa2",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Prdx1)",
+      "function": "Protein",
+      "id": "97b57086114ea12fa8ac92d82831314b67843232b9d7647e3c16f37113b0171f3c13a2c52d7ea8e866df5a010d810c0d44a5b71057116ca1c0723288ee319d40",
+      "name": "Prdx1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Prdx2)",
+      "function": "Protein",
+      "id": "6abf852f4d933aba9c9f0e25bff602283b9e6aa1d31a165c32cd836ebb455edefaffa21ab9b1579d25b33f02077fa13e7b55c7b839143125d1704f3b2418dc0b",
+      "name": "Prdx2",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Prdx3)",
+      "function": "Protein",
+      "id": "a2c2cf8ccc4f191551ac569cc66c1c906117ca355bb8a0efe7e04fcc9ddc21cffb4afaeb6b9ad0bf49449bb1b70d0edfb38f135b78a3028b22c24afe3e9b8158",
+      "name": "Prdx3",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Prdx4)",
+      "function": "Protein",
+      "id": "041b8fd6848fbf19b67541581d78ecd78db536f4bf1ba377eb829a17dd82659041378d6d3c9a142036d9432f5d130420a4528bff16b33959709629ff6bc16d40",
+      "name": "Prdx4",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Prdx5)",
+      "function": "Protein",
+      "id": "2860efa95867e7e0b14562e51483932b4edaf6bab372eeda2bfe61b6cc8e5654b7f282c7f6ad9bf42bb4482300cc210c088caa982754ca0d1a936dfdb9693cf3",
+      "name": "Prdx5",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Prdx6)",
+      "function": "Protein",
+      "id": "9bac00c66ac39147a378d83fa27900fcd0615a214b479b7c0a0d8dfe632bddfa548770182f59c3a07458bf6a235be8d57fd3ccb2ccac83c45d0a0ee620d35ebc",
+      "name": "Prdx6",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Sqstm1)",
+      "function": "Protein",
+      "id": "8831ea29e5392b1b9f38227f7382f7059e6d4509aea7de213411feba5e1f28105552756a6f5cd696b216291f0d98f06ca514771e378ac602b41425d771f7dcaa",
+      "name": "Sqstm1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(PFAM:Proteasome)",
+      "function": "Protein",
+      "id": "3b61bfa7709bbcd523819741c24be72aa0cdf043d69b4ca5ca50b5d8f9c50e2fa9ba9de8378b0f229e30240f934eaf1ea9152aa1af94716c6c306fbcbfa82a91",
+      "name": "Proteasome",
+      "namespace": "PFAM"
+    },
+    {
+      "bel": "p(PFAM:ubiquitin)",
+      "function": "Protein",
+      "id": "4ab5375b96fad4bfeebffe5ef94c4732fee6d369c3f917216f1da918a9ae769c697f187a14067fc7467fe09b7cbda388e61bf717125052a45f6e745147de8a35",
+      "name": "ubiquitin",
+      "namespace": "PFAM"
+    },
+    {
+      "bel": "path(MESH:\"Mitochondrial Diseases\")",
+      "function": "Pathology",
+      "id": "7a72935fbef0909b17c026d84e0f03f846adc2ec0f06b2f15bacce1a01f8192ed847b2460bf3c4dca44f464d0622202c443194b942e303437fe5ef811701e046",
+      "name": "Mitochondrial Diseases",
+      "namespace": "MESH"
+    }
+  ]
+}

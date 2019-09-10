@@ -1,0 +1,449 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_24553061.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_24553061.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "McCulloch JC",
+          "Nielsen VG",
+          "Redford DT",
+          "Thompson JL"
+        ],
+        "date": "2014-09-01",
+        "first": "Redford DT",
+        "last": "Nielsen VG",
+        "name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
+        "pages": "621-4",
+        "reference": "24553061",
+        "title": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
+      "key": "5fa7dc795fb4b24ef9a36fa009a2cba16be41a8d7b727aff02c30d9fbadc09c50b5ad5181d4867051613b3022ce8b83965143bf61dd4770ca78b47d8458bd225",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "McCulloch JC",
+          "Nielsen VG",
+          "Redford DT",
+          "Thompson JL"
+        ],
+        "date": "2014-09-01",
+        "first": "Redford DT",
+        "last": "Nielsen VG",
+        "name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
+        "pages": "621-4",
+        "reference": "24553061",
+        "title": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
+      "key": "a1d9d0afd988d7a682d615244a4d3bd1bd7033d4199fbf5dea26786d6a2f7ea0c1c72a11c6c78d0b69bb2941cc61768ec3474f1b2d7146b2f6e038c6ca76e609",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "McCulloch JC",
+          "Nielsen VG",
+          "Redford DT",
+          "Thompson JL"
+        ],
+        "date": "2014-09-01",
+        "first": "Redford DT",
+        "last": "Nielsen VG",
+        "name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
+        "pages": "621-4",
+        "reference": "24553061",
+        "title": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
+      "key": "7b826f33acc167f78e20af6b26646183626b654b7f8939294d61205c367c8c021aa879d2141ca3fb9b0ab1ca4f424ff0e31849a8b0a09303160b115824dae083",
+      "line": 96,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "McCulloch JC",
+          "Nielsen VG",
+          "Redford DT",
+          "Thompson JL"
+        ],
+        "date": "2014-09-01",
+        "first": "Redford DT",
+        "last": "Nielsen VG",
+        "name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
+        "pages": "621-4",
+        "reference": "24553061",
+        "title": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
+      "key": "19b72761bd220921f411a09d2177891b9be19c4bed4a314cb3435a92b1ea37bafbee1347057cafd491febd9c805e0ea0e214a71f2e7b2fe186d9b0daffd2e468",
+      "line": 96,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "McCulloch JC",
+          "Nielsen VG",
+          "Redford DT",
+          "Thompson JL"
+        ],
+        "date": "2014-09-01",
+        "first": "Redford DT",
+        "last": "Nielsen VG",
+        "name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
+        "pages": "621-4",
+        "reference": "24553061",
+        "title": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
+      "key": "87b669e3739780b5dd85de97581a86ff916e3a0b92e7d0b8356cb38002266d0ee612c9c8ac0df9afb739645446ae07a3d532435ba21e86616ef30a018c448493",
+      "line": 97,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 3
+    },
+    {
+      "key": "ddb1728cb7f8d60a3fc928bc31829ecd8381db8b47608875c0ab0f3be010eb20e7a67777c0b3385ad4e81d9c482522181f7fd2933f3b417e5ead8f5bb87255af",
+      "relation": "hasComponent",
+      "source": 3,
+      "target": 0
+    },
+    {
+      "key": "dd61ba09d4cf75b063174204b76807826980c1e0e7663a31cd459aa1eace0833f9a1c5af7dc4822ed91eb9763577915713b8def8f830bb09a6d9df1974510e38",
+      "relation": "hasComponent",
+      "source": 3,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "McCulloch JC",
+          "Nielsen VG",
+          "Redford DT",
+          "Thompson JL"
+        ],
+        "date": "2014-09-01",
+        "first": "Redford DT",
+        "last": "Nielsen VG",
+        "name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
+        "pages": "621-4",
+        "reference": "24553061",
+        "title": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
+      "key": "b5e8131c2ba3c87c1c9f9e0ab808aa8e2471b3851cf7d8ca0aac1bd32953f117c87d9cfc7370ae7b2f74c2471d400804a70e12e5e09178fd46e84e629540a115",
+      "line": 97,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 6
+    },
+    {
+      "key": "6bd109a7e6c66230821f6b7af30b5edb3c9b17aa2a34b2c34aba554347994694df8fbfdedbda0ffa4d0ecd611a08da740d3a62d4f0cb38132724b890c02c30be",
+      "relation": "hasComponent",
+      "source": 2,
+      "target": 0
+    },
+    {
+      "key": "ea8a8c094e31a3de80117736dec10590659e36454281426fe7f6a260534d79e239673fc12d2160a2b45f2b877534a717f1d566f77eed49b83abfe7aca7e24a31",
+      "relation": "hasComponent",
+      "source": 2,
+      "target": 1
+    },
+    {
+      "key": "1deb897fdb422e4fda511109f417cec872f83ecdf96d31ed0ee89ee3e7889012e12915fe805854c52755409244eaaf2dc23bcccaeb8a1a35223aa4dd56f3a5c7",
+      "relation": "hasComponent",
+      "source": 2,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "McCulloch JC",
+          "Nielsen VG",
+          "Redford DT",
+          "Thompson JL"
+        ],
+        "date": "2014-09-01",
+        "first": "Redford DT",
+        "last": "Nielsen VG",
+        "name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
+        "pages": "621-4",
+        "reference": "24553061",
+        "title": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "It was determined that the patient’s plasmatic hypercoagulability was in part due to carboxyhemefibrinogen formation via a thrombelastographic method.",
+      "key": "a27730fb7b5787bcce97cae090cda319edf5be9326c59a35882c0c4a0a74ae0e81f00e2cf0333bcf4d099cd6c9ca262dbaa10f5edf5d07f67b67d0ab0e18f046",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "McCulloch JC",
+          "Nielsen VG",
+          "Redford DT",
+          "Thompson JL"
+        ],
+        "date": "2014-09-01",
+        "first": "Redford DT",
+        "last": "Nielsen VG",
+        "name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
+        "pages": "621-4",
+        "reference": "24553061",
+        "title": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "It was determined that the patient’s plasmatic hypercoagulability was in part due to carboxyhemefibrinogen formation via a thrombelastographic method.",
+      "key": "d83233390cde2b1495798c74ea128e3e34b1ed7a26135d4b6870e0bb9e79105c66d2eea893430e77bcdef1c6e7033f32808de4092631c444b6f6102cdf9c0264",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 2
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"carbon monoxide\")",
+      "function": "Abundance",
+      "id": "f9a3abc538e60a3026dee8cad1fc1437008be2a35790de8c753ee79bbbcc228bb80f6053c1170690621df714e7420bc4d4144d1883eca1753cffae3c0b1a99b4",
+      "name": "carbon monoxide",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "complex(a(CHEBI:\"carbon monoxide\"), a(CHEBI:heme), p(HGNC:FGA))",
+      "function": "Complex",
+      "id": "f01c9c20283051a3e3dffb544076eaf28eafad5756f21032915256895ec8efd4e8f2871b292281d1a5cfd471aa28bf9af8fb0458c36dc4471f8dbbc73424db00",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"carbon monoxide\")",
+          "function": "Abundance",
+          "id": "f9a3abc538e60a3026dee8cad1fc1437008be2a35790de8c753ee79bbbcc228bb80f6053c1170690621df714e7420bc4d4144d1883eca1753cffae3c0b1a99b4",
+          "name": "carbon monoxide",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:heme)",
+          "function": "Abundance",
+          "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+          "name": "heme",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "p(HGNC:FGA)",
+          "function": "Protein",
+          "id": "b362af68ccd8bbd2834ef66d58629a25c43ee134f111b8de3c4cac0b09663897b7292896f3ba2f8bb33602e7be5282e20de24fbe6f1a549290e772eac082873b",
+          "name": "FGA",
+          "namespace": "HGNC"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(CHEBI:\"carbon monoxide\"), p(HGNC:HBB))",
+      "function": "Complex",
+      "id": "ae2f7698761a915940cc24177e2f7f73fbfb887bc31eef83f7c1a9fea312d2f9b8df27b9249655819e10b2a83aadb68a7c0dd1d4e7e4742d848a5103fede242c",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"carbon monoxide\")",
+          "function": "Abundance",
+          "id": "f9a3abc538e60a3026dee8cad1fc1437008be2a35790de8c753ee79bbbcc228bb80f6053c1170690621df714e7420bc4d4144d1883eca1753cffae3c0b1a99b4",
+          "name": "carbon monoxide",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "p(HGNC:HBB)",
+          "function": "Protein",
+          "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+          "name": "HBB",
+          "namespace": "HGNC"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:FGA)",
+      "function": "Protein",
+      "id": "b362af68ccd8bbd2834ef66d58629a25c43ee134f111b8de3c4cac0b09663897b7292896f3ba2f8bb33602e7be5282e20de24fbe6f1a549290e772eac082873b",
+      "name": "FGA",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HMOX1)",
+      "function": "Protein",
+      "id": "c4981e9d3903b58471e749e0a1e38277c2729152c5582926243649d5c266ea44d831061cf916b7c6334634d357628b16c015a7ce07c97084f06b2c3f3cc94d5c",
+      "name": "HMOX1",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Thrombophilia)",
+      "function": "Pathology",
+      "id": "a89751b63dc8baa53057776a979154777dc207f3f044a71e3620e824c83506ff10e8f984bad566b6c003201f2d1210eb329ba3e516757acf746c4d4890b96d2b",
+      "name": "Thrombophilia",
+      "namespace": "MESH"
+    }
+  ]
+}

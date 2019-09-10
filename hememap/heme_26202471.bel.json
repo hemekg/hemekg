@@ -1,0 +1,1372 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_26202471.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_26202471.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Prx-2 has emerged as the key antioxidant protein that protects RBCs against biologically relevant concentrations of H2O2 produced endogenously (via hemoglobin autoxidation) or exogenously by inflammatory cells25,26.",
+      "key": "24945d106624bf48f9e47d6d0591669063406f7719694e8f014a0b4e9b095f14fc8199c6814a0a78ebfcb73609cbd6d5beca6fbba84eaf1802f0149a5d44ddb4",
+      "line": 96,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Prx-2 has emerged as the key antioxidant protein that protects RBCs against biologically relevant concentrations of H2O2 produced endogenously (via hemoglobin autoxidation) or exogenously by inflammatory cells25,26.",
+      "key": "bb1b84e3ea583979f58b89ca89e1fbae57158492097c75a3a5e51b13aec2713405ed12a8655365a984df408d2a00b5d577155222c22760c4fd2d7e3c4a1319cd",
+      "line": 96,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "We have also shown that older RBCs oxidize nitrite with faster rates compared to younger RBCs, which may account for decreased circulating nitrite levels in trauma patients receiving older RBCs14.",
+      "key": "b3d4e21441981d4b1ccf2601fe679bb033d759df46e9370106df57b3a64e82d577051c67ca17fa25a88157343ec4860be599e10fe2a30379a86fa0db5d4c23d6",
+      "line": 103,
+      "relation": "negativeCorrelation",
+      "source": 6,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 2A-F show changes in oxyhemoglobin, methemoglobin and free heme in both the intraerythrocytic and supernatant fractions in both d7 and d35 RBC. Significant storage-dependent increases for all species in the cell-free fraction were observed, with no storage-dependent differences observed in the erythrocyte.",
+      "key": "fa3eec3150fa402d53607c59c971ee01265141baa1a9592f0ffedd96ff5599d8c3c553ec7f85b2760f6d882c68e6fe78d7c13da5942d40297e674df146bd635e",
+      "line": 116,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 2A-F show changes in oxyhemoglobin, methemoglobin and free heme in both the intraerythrocytic and supernatant fractions in both d7 and d35 RBC. Significant storage-dependent increases for all species in the cell-free fraction were observed, with no storage-dependent differences observed in the erythrocyte.",
+      "key": "3f02580b65edcd29ae3f977206396e19dfeb3553804337198a8502a6242fb4270d21a05f0bcb0dc66c2bed5e86c8b3e82ba47feeabb44028adfb6e48462645c3",
+      "line": 117,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 2A-F show changes in oxyhemoglobin, methemoglobin and free heme in both the intraerythrocytic and supernatant fractions in both d7 and d35 RBC. Significant storage-dependent increases for all species in the cell-free fraction were observed, with no storage-dependent differences observed in the erythrocyte.",
+      "key": "0fca9528c044526a92e6dc43cdc3b61eced4fbea90a21a42da5614406d9fc4aa0c11d96e8a3655b19191c929406550c87c8ef7503edd2f2b4a72db3af7eb943c",
+      "line": 118,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "More recently, we have also shown that free heme is also released during storage and may mediate further inflammation28",
+      "key": "cba3e50250b0e4f57a1b2fe0fe98af925f8acf80046efcb4908fc902b3e6251fc11e63c57721a78c938d3e2ff7715cf96a44b45f66c8c2e651228cacf3af8300",
+      "line": 170,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figure 2G shows storage also resulted in a significant increase in Prx-2 oxidation.",
+      "key": "058ff432160673c3c61966c8f30513f9ed805675e9e462868af71467d1be0e6aa3ce818f45b48389bbb88011180ca17ea3b4fd70606413a49911b9a598fa1f4a",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "The higher the basal (d7) level of Prx-2 oxidation, the higher the level of Prx-2 oxidation in the same RBC after 35 days of storage.",
+      "key": "0a62b3999ccac9c3ec32e62ec9de0d423e71b0e6cb49748130f6953010791ade05e4e90d28e37c7e2512567a43a14e661932f4b1ce7e1210c8d4022a6d27a77f",
+      "line": 177,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Storage is known to result in increased hemolysis which in turn results in loss of NO-signaling, oxidative stress and inflammation post-transfusion.",
+      "key": "ca0aa0580641b5ad147aa690bd8b61824e9fd4dc0a8bfd359f12acca1541522b9e2f38591b2ab6c99b3fa028fb9fbf3fadb76dc5e347976e4a19fec88df2bcd1",
+      "line": 162,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Storage is known to result in increased hemolysis which in turn results in loss of NO-signaling, oxidative stress and inflammation post-transfusion.",
+      "key": "196fdd5f45f274852a50f1cd6e7119e1e756073897982e0283dea7d10cbf6590ce37f456ab1eba3f59dbbcd1403b1076381e5c0981b1c4f15242784c066d3945",
+      "line": 163,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Storage is known to result in increased hemolysis which in turn results in loss of NO-signaling, oxidative stress and inflammation post-transfusion.",
+      "key": "a0a9ad96675171f5d471d408be66ac89d027ac34811a0edeb229d72982af47f37c859ba730b08a7154869c44d60da30da7883a46b890d9ff2453a46c8b4f0ead",
+      "line": 164,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Storage is known to result in increased hemolysis which in turn results in loss of NO-signaling, oxidative stress and inflammation post-transfusion.",
+      "key": "f81ff6fe8d26e55b3b846fd61503a631cb39ae48449dd78343b6794a53bc40e40d06c5e8bba8e5fc5ced3bf190486a225c004d11478d13a13f6e1fc9cc4b46b0",
+      "line": 165,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "We have also shown that older RBCs oxidize nitrite with faster rates compared to younger RBCs, which may account for decreased circulating nitrite levels in trauma patients receiving older RBCs14.",
+      "key": "e7c561c1c98b7afdc13b2b413ae5fd5452de30a75cbc7595a7ac336f178de22c8546be8963f9699d0d394f5fb5014d3438dad21df4e0630ac30bba0835bd4d92",
+      "line": 103,
+      "relation": "negativeCorrelation",
+      "source": 3,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 2A-F show changes in oxyhemoglobin, methemoglobin and free heme in both the intraerythrocytic and supernatant fractions in both d7 and d35 RBC. Significant storage-dependent increases for all species in the cell-free fraction were observed, with no storage-dependent differences observed in the erythrocyte.",
+      "key": "0abbda842dea694b73011bea58d156c97bf0627624e90629232e86a647e683d4504b4bc29ddb34e76f22140ce29487ea2c332a0b196badccd3ab7805c91b6d12",
+      "line": 116,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 5C-5D show that d7 propagation rates for nitrite oxidation correlate with both d7 and d35 cell-free oxyhemoglobin.",
+      "key": "ff8d6e75ef59234ecc308f23ab3d55ee826b28997036441242dccc1b86752dbd23049fc78eef0dcd181d2ac131300502df2e7a37a5014ddb0437198495c9f54d",
+      "line": 146,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 2A-F show changes in oxyhemoglobin, methemoglobin and free heme in both the intraerythrocytic and supernatant fractions in both d7 and d35 RBC. Significant storage-dependent increases for all species in the cell-free fraction were observed, with no storage-dependent differences observed in the erythrocyte.",
+      "key": "3fe4290b8e8dd968db4c9f488540534677fc83d4ab38601cd610b835bca3f292f00f52c931bb467eba09286b886a6feeb07f22adf2f966de94ba52ed4d84d89d",
+      "line": 117,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 2A-F show changes in oxyhemoglobin, methemoglobin and free heme in both the intraerythrocytic and supernatant fractions in both d7 and d35 RBC. Significant storage-dependent increases for all species in the cell-free fraction were observed, with no storage-dependent differences observed in the erythrocyte.",
+      "key": "4ff32471d5e76d25a195555f5144cd86a80625e99622fcc861a765e0dbc4e9448119c32e0a9d8259118e2a5728bb7bda45d55d8aaffbac8f5970db7729c4f15a",
+      "line": 118,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "More recently, we have also shown that free heme is also released during storage and may mediate further inflammation28",
+      "key": "04cc71728f4a3701a3e18cf8f081e94dfbc92d27919356349436491771a487f646cc356fc4e1a6dac520308c3dc54b540943abb31678cd5edeebfab056a62e81",
+      "line": 170,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 5A-5B, show that at d7, faster rates for nitrite oxidation in the lag phase were positively associated with higher concentrations of extracellular free heme at d7 and d35.",
+      "key": "517040e39c7bf531e25672cf1bbb3a602c77a86d82bfed86473eaac6f1553ba9482b9f326ef10f0de988c2e10f9207b03e3d6ffc2995ad82325589113c4dabb6",
+      "line": 139,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "More recently, we have also shown that free heme is also released during storage and may mediate further inflammation28",
+      "key": "5fe44a513894accc5f7f8597d1c68d4ba4744cf5ceade9d6cae3af24b644b9c6a69f1f37f24f64db2c30d53e00025ebd9ddc16142372761da8879415655364b8",
+      "line": 171,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figure 2G shows storage also resulted in a significant increase in Prx-2 oxidation.",
+      "key": "962469877c9313c3167a85a5f242b86bbf87543790b4abb4c7768f312702ac4edffbc07e15e5d9ba213aaf56f63b127f7e934088b794a0164134c1ee05a550ee",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "The higher the basal (d7) level of Prx-2 oxidation, the higher the level of Prx-2 oxidation in the same RBC after 35 days of storage.",
+      "key": "dc059fed96645ebb64cb62f3ae3a1a820283d748a3643cc36947da27b5be05fb5dd5f95b2af5fcfe8d63c1b6f816dca907494fde75b92a12f2e7e02defda8f55",
+      "line": 177,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 4B-D shows that d7 Prx-2 oxidation correlates positively with nitrite oxidation kinetics in the lag phase (i.e. inversely with lag time, positively with lag rates, Figures 4B-C respectively).",
+      "key": "88d382ee184621677d48e6c407cab321ab48a2c829b477582c6613dfe0cf62de52e1138f03f4adfe9e680f4e9b0971d11fa115e9d92d6307f9de526655cc9af7",
+      "line": 131,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figure 5E shows that d7 nitrite oxidation propagation rates also positively correlate with the extent of Prx-2 oxidation that occurred during storage (i.e. d35 – d7 Prx-2 oxidation in RBC).",
+      "key": "8b0e3bf5d469d81d6546b9e813ac2b29f2a0791967ab77c926678b2c554c3eb0ed642f317390fb6172e8d489b8438b599745a6db1dadcdac5452a5e688f57190",
+      "line": 154,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 4B-D shows that d7 Prx-2 oxidation correlates positively with nitrite oxidation kinetics in the lag phase (i.e. inversely with lag time, positively with lag rates, Figures 4B-C respectively).",
+      "key": "adbc2e33da613f0e9983dcbf91c21eb57e910a9ecb9282bdc53d6db455d898e884e301a76818c1848eca4cee6a6ebb95bbc630cee88fc7a8132d3e4b0170c92b",
+      "line": 131,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figure 5E shows that d7 nitrite oxidation propagation rates also positively correlate with the extent of Prx-2 oxidation that occurred during storage (i.e. d35 – d7 Prx-2 oxidation in RBC).",
+      "key": "0234931da2eabaf40fa63c384da3e4614b74d5609a6e1db90d2d5d702ef4f47f06c0683062adcb505c5f6a3cb5b134366aa616076afb22a43060587337b293d3",
+      "line": 154,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 5A-5B, show that at d7, faster rates for nitrite oxidation in the lag phase were positively associated with higher concentrations of extracellular free heme at d7 and d35.",
+      "key": "c0cb897d4a9ac5c9763058ca800a1a19e1bcc25f620d13779d32d6b747677a1e94a615d88f7ddc6815d091100b96431d268757b18009db2e9f3fbee256c2ee29",
+      "line": 139,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Figures 5C-5D show that d7 propagation rates for nitrite oxidation correlate with both d7 and d35 cell-free oxyhemoglobin.",
+      "key": "ae06ab6858777908275f3f05f8e4ec942bbed1334373dd5a7adb94a4d8e8f1506fc0807f514cbf8749991c297f70d274e132a4930a2a2835083cbd1460ba4b9a",
+      "line": 146,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "In other words, the faster rate of d7 nitrite oxidation predicted greater extents of oxidative damage incurred by the RBCs during storage.",
+      "key": "8c3515cbdcb2d87b0ab0f051306e5dd9bd32988f6f1de6e95662a511b76a0305f7fd12a533d50325ac20656b1cea19eaa4382e8105052aa6da1f417c0c0b58a0",
+      "line": 183,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Storage is known to result in increased hemolysis which in turn results in loss of NO-signaling, oxidative stress and inflammation post-transfusion.",
+      "key": "b488b19e98d44ccaabc7a9b6ce2a82518b399648d5c9ce147b3d15ba54ccae067f9248265e189559fa4e12abe741bb0609ff1716ff65df5c9fff9116c6341fdf",
+      "line": 162,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Storage is known to result in increased hemolysis which in turn results in loss of NO-signaling, oxidative stress and inflammation post-transfusion.",
+      "key": "1c9a5a5cf94530a050ddc76f4a6893e7e1885704ce2562cbd8a5c070dd54107076034fa56459c126bafcc7762a8d162f0e58a7e672c40a9e34bfa8188dfba9f5",
+      "line": 163,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Storage is known to result in increased hemolysis which in turn results in loss of NO-signaling, oxidative stress and inflammation post-transfusion.",
+      "key": "508bad230431d5f7d71670c1c7879a1514d0a49e8193b016f4e496c027b55a38e2a49107058c804dbd070c8f45d9effc3b774522c5045ab3e5df4e024dd5d1a0",
+      "line": 164,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "In other words, the faster rate of d7 nitrite oxidation predicted greater extents of oxidative damage incurred by the RBCs during storage.",
+      "key": "594caef579a0257185b2edff4f91040ece501e0ea1736da03af56482a2a5e9e30d397cf99c10dbdd0b1124f2efb036caebef7d3d451e264734b75601ea084867",
+      "line": 183,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "Storage is known to result in increased hemolysis which in turn results in loss of NO-signaling, oxidative stress and inflammation post-transfusion.",
+      "key": "30409656cb59ad9099e71d0240c3b46039d08ed5747ad0ba8fff5df909ac4402399d3416b9702b34a2cdd4171d8b967823cf2546e8ad27a6f87a988e81ff27df",
+      "line": 165,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "1 week": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Harper V",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R"
+        ],
+        "date": "2015-12-01",
+        "first": "Oh JY",
+        "last": "Patel RP",
+        "name": "Transfusion",
+        "pages": "2967-78",
+        "reference": "26202471",
+        "title": "Predicting storage-dependent damage to red blood cells using nitrite oxidation kinetics, peroxiredoxin-2 oxidation, and hemoglobin and free heme measurements.",
+        "type": "PubMed",
+        "volume": "55"
+      },
+      "evidence": "More recently, we have also shown that free heme is also released during storage and may mediate further inflammation28",
+      "key": "817c6a0368919e4bf6060a4f5e2eaabfc60c515f5908c3d09b722f5c09b569662975d651603b65ee1ed0d5767dabf4456f25efdb40ec1144006cd9731e63a39d",
+      "line": 171,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 1
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"hydrogen peroxide\")",
+      "function": "Abundance",
+      "id": "4d65b5d180890b98afe0bc10614fde44ee750b2d1af6fdd925fc31ead7ee9a7248bda3d67c52aebf220b8c048d999f2d878a97a70b0e027a7294cbd3c7bf61bf",
+      "name": "hydrogen peroxide",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:methemoglobin)",
+      "function": "Abundance",
+      "id": "7805bca22642b820fb0a026eb5c67eb4512f0a021ec5c97c5f505f5706c0ef4cb986edf806c547d40110c084b98e15c3520dd558cb96c5071b4dd9709e641130",
+      "name": "methemoglobin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:nitrite)",
+      "function": "Abundance",
+      "id": "37ca0fec42d62d553e650f035def665a1a03fccb0493c69e30533b62f3ebdd47d84da6f214fbef5b2ddd172dafe8b8a1fb46672804acf8afa3381b9b93c78e4c",
+      "name": "nitrite",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:oxyhemoglobin)",
+      "function": "Abundance",
+      "id": "677a833ae4fd83a2eee771c3529252a0f789ecb0921b0280d7be9d4410ecb8c1e3cd3cd1612d062efc6d614205c2bc09aae5743250de566a0a23651affc7956a",
+      "name": "oxyhemoglobin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:\"nitrite oxidation\")",
+      "function": "Abundance",
+      "id": "b1350323c6cad04815200b467283e24d9bc1bf6729e51401b6e4e6381c3a517bc6f92d5d429e2ed3902f01f5a390ade5b8f546ae852de5f684a143366a72cc80",
+      "name": "nitrite oxidation",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"stored erythrocytes\")",
+      "function": "Abundance",
+      "id": "c5f07faa52d39663c7bfb6346590680850cdc80f5daec0a27d13d0b987d98745781c6e81ce6edb50f375981a5345c5027325348c3907f71521d30ab0b54f60c4",
+      "name": "stored erythrocytes",
+      "namespace": "HM"
+    },
+    {
+      "bel": "bp(GO:\"nitric oxide mediated signal transduction\")",
+      "function": "BiologicalProcess",
+      "id": "957989011ee4dfd7d200cb5998e41fad5a8373f5b1d62b68ecaf65758b345908a9c0752350e942ab2678a5cf014b4333490522914e21d02e88baf2600965d479",
+      "name": "nitric oxide mediated signal transduction",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Oxidative Stress\")",
+      "function": "BiologicalProcess",
+      "id": "32bd3ab5e8a3a26be3209856c88741f0f0e2dff98d2587599a6a21b0f4793c5d8feb1194ea2166cf3cece076e7095530b116270e6655bc8feb35a437fda42cf6",
+      "name": "Oxidative Stress",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "p(HGNC:PRDX2)",
+      "function": "Protein",
+      "id": "34dd62847ba52146f32a362545f1b31ad0b1292e0971989cd8c78b142b3904cf5fdf98e11b96ea112ee85082e3b69b3fb5383956d6ef500be45788e7387f4d2a",
+      "name": "PRDX2",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(MGI:Prdx2)",
+      "function": "Protein",
+      "id": "6abf852f4d933aba9c9f0e25bff602283b9e6aa1d31a165c32cd836ebb455edefaffa21ab9b1579d25b33f02077fa13e7b55c7b839143125d1704f3b2418dc0b",
+      "name": "Prdx2",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "function": "Pathology",
+      "id": "3196cc4c6a20279c822cae925a9b271d0224f2c8d468e3069a3ee460662be286b61db2f144c550686a9c624e58af4ffa7570f4f2384e1cb8ee40496f8cb3fa5e",
+      "name": "Inflammation",
+      "namespace": "MESH"
+    }
+  ]
+}

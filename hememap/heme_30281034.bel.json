@@ -1,0 +1,1304 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_30281034.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_30281034.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "There is a clear need for, and medical benefit from, blood transfusions; nonetheless, administration of red blood cells (RBCs) does result in exposure to toxicants specific to hemoglobin (Hb) and its degradation components, hemin and iron.",
+      "key": "d26429f61de5379654536090162baa39155c136b43c0ed73c618ebbead49ed8c9ab60d7907dff5c1f370d371c47b193389ad6b25ab721f33fa9b21b5849cb610",
+      "line": 96,
+      "relation": "increases",
+      "source": 9,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "There is a clear need for, and medical benefit from, blood transfusions; nonetheless, administration of red blood cells (RBCs) does result in exposure to toxicants specific to hemoglobin (Hb) and its degradation components, hemin and iron.",
+      "key": "5506b77a2c46d8ec9fbc177d01d5240cc21d0a021b9bd74192f631be8fa4329fe78f9e383b417c4ac8e7f2f2a857bd92dd20eff7e8dc5cd64cc50400b3c8fcfa",
+      "line": 97,
+      "relation": "increases",
+      "source": 9,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "There is a clear need for, and medical benefit from, blood transfusions; nonetheless, administration of red blood cells (RBCs) does result in exposure to toxicants specific to hemoglobin (Hb) and its degradation components, hemin and iron.",
+      "key": "3b1b56ad971f323755cb114f479896f6b60269312bf2479a40bf4c27c1ba5df983e91aedd36748d74a6012dc9569af03657c97c4000c045599469ce70767b225",
+      "line": 98,
+      "relation": "increases",
+      "source": 9,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "In diseases of intravascular hemolysis, Hp is often not detectable and lower Hp levels are associated with transfusion.",
+      "key": "b8f9226d7b321ec6649cd800bda77739d886ef0bab870bb206af072a2e54c1cecb1ebc2d3773b4ad1a46214f08c0905c8d97fe040c2d38dc83e2b8ace9e29fed",
+      "line": 236,
+      "relation": "decreases",
+      "source": 9,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "In mice, this response was attenuated after administration of the TLR-4 inhibitor, TAK-242, suggesting hemin potentiates pulmonary macrophage activation and inflammation through hemin-induced TLR-4 receptor binding [27].",
+      "key": "205901a543bdf82a55665282d8301574512479e9ead168f17225003771bc9fbabc8a5338da0681ffd8486254062f98dbe0ad5de70ce2a26ca8c30eea41bfaf36",
+      "line": 219,
+      "relation": "increases",
+      "source": 2,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "In mice, this response was attenuated after administration of the TLR-4 inhibitor, TAK-242, suggesting hemin potentiates pulmonary macrophage activation and inflammation through hemin-induced TLR-4 receptor binding [27].",
+      "key": "052055450d81864cfab149ad84608b614c6260d14592aac934e337aeb6b9a945475fd2b47bcdce3d9e896b2c086b27694e55e2e61d98de211bf5e21bec57c19e",
+      "line": 220,
+      "relation": "increases",
+      "source": 2,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "In mice, this response was attenuated after administration of the TLR-4 inhibitor, TAK-242, suggesting hemin potentiates pulmonary macrophage activation and inflammation through hemin-induced TLR-4 receptor binding [27].",
+      "key": "6e4d9d44d9a74a725d028660b73639bb2687dc70aae15d9ccc635c93738857f33ab0f5540f8349d21038c288357dd5b9f7a5d3cfce06c7e6c97417aaca795444",
+      "line": 221,
+      "relation": "increases",
+      "source": 2,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "The causes for RBC-based toxicant exposures are multifactorial; however, following acute transfusion, the most common occurs during the processes of extravascular hemolysis, which includes macrophage erythrophagocytosis followed by macrophage death [1&&], release of iron, transferrin (Tf) saturation and, finally, accumulation of labile plasma iron (LPI) [2].",
+      "key": "b5ec1932f8df2263ae5d4ed73cb71cb0339f6236008c4ef5742228c76c2c4e7b19e5a4e0b399256bc9058056dc78cc62d3e26a6911fee3ea743dcb642e062c56",
+      "line": 110,
+      "relation": "increases",
+      "source": 4,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Acute large volume blood transfusion or administration of blood units at later stages of storage causes elevation of bilirubin, Tf saturation and LPI in animals [18&&] and humans [19&&].",
+      "key": "a0718bc3ccfb04b80893a386938b95411170f6ea452fe0698696cf7c17d25c8f63e7eeb6c29970088b18640ad58e8c432c0824fedabb61892e8b91dfe00fdf3f",
+      "line": 149,
+      "relation": "increases",
+      "source": 4,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Acute large volume blood transfusion or administration of blood units at later stages of storage causes elevation of bilirubin, Tf saturation and LPI in animals [18&&] and humans [19&&].",
+      "key": "ac1f03a22869caae83750200199fbd1b26b92f06b1690c92cc9bbf606a96a8b8b548946e6c37b7afa9bc516e4a963b6e9a8d106fd5bd60662e9e3c06b31f814f",
+      "line": 150,
+      "relation": "increases",
+      "source": 4,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Acute large volume blood transfusion or administration of blood units at later stages of storage causes elevation of bilirubin, Tf saturation and LPI in animals [18&&] and humans [19&&].",
+      "key": "e3f5a845fc806f5c245cf54a404c73f33bfbedc3d929d38eb6fe62c51dda4a245723bf3a1a4c44663095588445c09d08f632a7b710030559faa6fe75b57e0441",
+      "line": 151,
+      "object": {
+        "location": {
+          "name": "Plasma",
+          "namespace": "MESH"
+        }
+      },
+      "relation": "increases",
+      "source": 4,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "The causes for RBC-based toxicant exposures are multifactorial; however, following acute transfusion, the most common occurs during the processes of extravascular hemolysis, which includes macrophage erythrophagocytosis followed by macrophage death [1&&], release of iron, transferrin (Tf) saturation and, finally, accumulation of labile plasma iron (LPI) [2].",
+      "key": "65d12009d54428dbf6593ae54e606718d1ce8acca99873bf2f7407475f12f7c6ccb2c4310201c6204665ef28237dace80c346b7cdd24ef8539f193d8ce70a3c2",
+      "line": 111,
+      "relation": "increases",
+      "source": 17,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "The causes for RBC-based toxicant exposures are multifactorial; however, following acute transfusion, the most common occurs during the processes of extravascular hemolysis, which includes macrophage erythrophagocytosis followed by macrophage death [1&&], release of iron, transferrin (Tf) saturation and, finally, accumulation of labile plasma iron (LPI) [2].",
+      "key": "4798503d1739722bb4060471a851027b71c02d778bb586d4aaa6a21ef2b1f844af08c7f970e4fc126b35b61af2288f1a7109dd7af85352c3488cf532d21fb96c",
+      "line": 112,
+      "relation": "increases",
+      "source": 17,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "The causes for RBC-based toxicant exposures are multifactorial; however, following acute transfusion, the most common occurs during the processes of extravascular hemolysis, which includes macrophage erythrophagocytosis followed by macrophage death [1&&], release of iron, transferrin (Tf) saturation and, finally, accumulation of labile plasma iron (LPI) [2].",
+      "key": "a106b4ce219c5bd94c865b7642957c44e1c56edab79342af688df633673d161121f799ed253caff722275ee5f7688912e7e6269111bd22280d44645226bd3127",
+      "line": 113,
+      "relation": "increases",
+      "source": 17,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "The causes for RBC-based toxicant exposures are multifactorial; however, following acute transfusion, the most common occurs during the processes of extravascular hemolysis, which includes macrophage erythrophagocytosis followed by macrophage death [1&&], release of iron, transferrin (Tf) saturation and, finally, accumulation of labile plasma iron (LPI) [2].",
+      "key": "9e6ebae542930b7c3674e0650ed885ce8fa29e02dd614edae723a8174ab467482f0911c2adfb17fd52609a4843b0c47e56832798ca383e00694fe07d9a3668e2",
+      "line": 114,
+      "object": {
+        "location": {
+          "name": "Plasma",
+          "namespace": "MESH"
+        }
+      },
+      "relation": "increases",
+      "source": 17,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Conversely, chronic transfusions associated with b-thalassemia major and sickle cell disease lead to hemochromatosis with end organ injury.",
+      "key": "f37171d43453085ede5a52893ef8892e698dbf29d9c90cf237ef4666fafc3710ef699e2de3a8865995d8c22b32d6cc3a363cfb4e449f74bd80c5ed096666846b",
+      "line": 120,
+      "relation": "increases",
+      "source": 5,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Accumulation of iron in tissue parenchyma with subsequent hemochromatosis is a well-known problem in chronic transfusion-dependent diseases such as b-thalassemia major, and in sickle cell disease patients when stroke prevention is indicated.",
+      "key": "dd6de623bb01b32faf36cdde799654ee5819c4a9e665a159a2e7d0332822e1f9a78d1b187e51637b8921205d4d63f9c038fedc325b211e2727a029b6d80d7950",
+      "line": 160,
+      "relation": "increases",
+      "source": 5,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "For example, cardiac iron accumu -lation is more common in transfused thalassemia patients, whereas liver iron accumulation is most common in transfused sickle cell disease patients.",
+      "key": "3ad67a7924d93d5b89058e36f9e253cecf6224e8384dd3d8c76aaf01f16089c792fa295a2bf63f7694ba2afe7d5da888c0ae97f0c69317c839e5edb110a87f4c",
+      "line": 168,
+      "object": {
+        "location": {
+          "name": "Heart",
+          "namespace": "MESH"
+        }
+      },
+      "relation": "increases",
+      "source": 5,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "For example, cardiac iron accumu -lation is more common in transfused thalassemia patients, whereas liver iron accumulation is most common in transfused sickle cell disease patients.",
+      "key": "7e5043903a103913b09190ac7ac918eac192541f631d6f6131e248c0821d6084c29624d0eeef16de65c22d0129067b9dc5d17de9bcf5504914f1bcc538ddb83e",
+      "line": 170,
+      "object": {
+        "location": {
+          "name": "Liver",
+          "namespace": "MESH"
+        }
+      },
+      "relation": "increases",
+      "source": 5,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "For example, Hb and subsequently, hemin accumulate during storage of human blood as RBC membrane integrity decreases [4].",
+      "key": "497931fc96b9494427841f42fe5dbe910112eca010a3b1f72055ee5cc98059bf691ba17eb1e857ef4a534caf818528eb930c0b4fdc1178d5c31c983d93b29ef4",
+      "line": 127,
+      "relation": "increases",
+      "source": 8,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Tf is an abundant plasma glycoprotein that normally circulates at a high concentration (2–4mg/ml) to prevent accumulation of LPI.",
+      "key": "fe4ffe41f40a38d781ea34208c5593f367d2635709ab1b058bfe158d3bb73012fda167b58ddfed45d96ff6b46f6feffc9eec932c8045b1c7d0525af454151941",
+      "line": 134,
+      "object": {
+        "location": {
+          "name": "Plasma",
+          "namespace": "MESH"
+        }
+      },
+      "relation": "decreases",
+      "source": 23,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Sequestration of LPI and prevention of pro-oxidative effects by the administration of apo-Tf may have clinical relevance following acute and chronic transfusion iron overload.",
+      "key": "67abd6ac8b1018f8ed0348a6b1dbd5f3d881f2f61e8671de35724e7572fb54e7bd2b091f03052f2a219f4480458fa0ff81a63bc3f8f9bc039e82c569bd26cbfa",
+      "line": 186,
+      "object": {
+        "location": {
+          "name": "Plasma",
+          "namespace": "MESH"
+        }
+      },
+      "relation": "decreases",
+      "source": 23,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "These studies do begin to suggest that apo-Tf administration could attenuate acute iron overload and hemochromatosis progression following chronic RBC transfusions.",
+      "key": "4dfeb5c1661d2e7f2362c2e0950026f113e118699e353ad9552bb81fb01afe38e9b04118ae4399396bd67faf6697a265971f9d6ae62f53b84f0a7a3426e8a0d7",
+      "line": 193,
+      "relation": "decreases",
+      "source": 23,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "These studies do begin to suggest that apo-Tf administration could attenuate acute iron overload and hemochromatosis progression following chronic RBC transfusions.",
+      "key": "70e1a373f5afc2674a649d3ff1dc42d6f409f91f041973a7cf1958606c9898957efaca806074c64449ccc6e45a6c9fc6c0cb17607b008fa4ed6f849aa10e60cc",
+      "line": 194,
+      "relation": "decreases",
+      "source": 23,
+      "target": 27
+    },
+    {
+      "key": "1bd1d241e0206dcb53b2c04c1c6bff8886999db0e0aaf1e3c13809007f147dd61b19655389a0576980f79ac16db7511eff3f42ea160f53fb0faabf10ad8117e3",
+      "relation": "hasComponent",
+      "source": 19,
+      "target": 11
+    },
+    {
+      "key": "fab482983b37b07c7cccaad66c21679f10efdff4607055f29a6b97c576fff677c6ed988574e31bdb9e4fc4ad3b7dbc8688b2384ced56ef4136da43c6aa535153",
+      "relation": "hasComponent",
+      "source": 19,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "The pool of di-ferric Tf binds to erythroid cell transferrin receptor 1 (TfR1) and contributes to erythropoiesis [16].",
+      "key": "ba16e29dc446c5acdd3672dba9d8b950decfe6dde3b6136233a5cafc92aa35ea89fd0710dbd164efc93848a1af6693502b90e9936307316b33fc4aabcac2e64a",
+      "line": 141,
+      "relation": "increases",
+      "source": 19,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Because of large exposures to iron that occur in both disorders following transfusion, patients are inevitably prescribed small molecule iron chelation and the concomitant monitoring that is required.",
+      "key": "01c5df67e0de2a506294d98eb856c5e7ea66e0bce0c126397b9bf3e14b7c2a3366e4ea7f021b3720a7343e2c0e7572e6f456b8cb63efc2652facfbc30c2b4b30",
+      "line": 179,
+      "relation": "decreases",
+      "source": 10,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Of the biological components known to bind hemin, Hpx is by far the most efficient with a dissociation constant (Kd) lower than 1 x 10–13 M; as a result, after binding, the transfer of hemin from Hpx to other proteins or lipids is not possible [24].",
+      "key": "29965a1a0da6b9980ad72200a0f741c9cfdd69a23c8b84f2fa8c8535bb8e18f0fa5fea151d78c7578454f7e23fec5591428bb9f9d5298801825d093b59300a10",
+      "line": 202,
+      "relation": "decreases",
+      "source": 22,
+      "target": 2
+    },
+    {
+      "key": "94ae39cd9d8ece3296da00a4f96a1bbf911adbc60c37640d8c8494ffdacfc41eeec5e11396d51e16433bf17ae7e145df10cdd4eb0bf9d5b372b4f37bae2e9cdd",
+      "relation": "hasComponent",
+      "source": 18,
+      "target": 3
+    },
+    {
+      "key": "3d3b69d3cbedae4ac0de14eb21e214eac9ef4b3ce1d166d1a36a4e8b2665afd5a014b8ab7140b13bea1dfb68fcbeade569936a6935d6034786f2ac7d2d7c0c3b",
+      "relation": "hasComponent",
+      "source": 18,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Once bound to hemin, the Hpx-hemin complex prevents oxidative reactions and facilitates clearance of the complex through macrophage CD91, also referred to as lowdensity lipoprotein receptor-related protein 1.",
+      "key": "710adfdc21b99cfc4ccf881c680a97d9109915672214d455e73ed7ac5fb82c34c0fe91ec43d52714825d482b7e26bfba737356b6fb7f9a830d37924d25826c25",
+      "line": 210,
+      "relation": "decreases",
+      "source": 18,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Karnaukhova E"
+        ],
+        "date": "2018-11-01",
+        "first": "Buehler PW",
+        "last": "Karnaukhova E",
+        "name": "Current opinion in hematology",
+        "pages": "452-458",
+        "reference": "30281034",
+        "title": "When might transferrin, hemopexin or haptoglobin administration be of benefit following the transfusion of red blood cells?",
+        "type": "PubMed",
+        "volume": "25"
+      },
+      "evidence": "Hp is a plasma glyco-protein that normally circulates in within a concentration range of 0.3–2mg/ml and is the putative scavenger of cell-free Hb with a high affinity (KD¼10–12M) for Hb dimers (Fig. 1 A,B and Fig. 2 C [31]).",
+      "key": "699aa162c7b418e02cf41881a7a243af5a2cce295a7b3f24860bca1084170c3dbeeb711fc83d4d203c494ec06f854b1c41fae2242b4448ee889fe370cc68fbfe",
+      "line": 230,
+      "relation": "decreases",
+      "source": 21,
+      "target": 20
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "function": "Abundance",
+      "id": "e426e7ad4ee4d8eb3c018acb75625d794a96811eb659d39bd8f25c4b30632fc8a938eca8397887738ecc384ec5df867e2026de113f002e5cc4490177de0905cd",
+      "name": "iron(2+)",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:bilirubin)",
+      "function": "Abundance",
+      "id": "8ab7efc0236c3a907b27b0e2a04a28b086162b711cee23f6cbd3e1ba4c08a4d19dd949b63a398214843d900f380bc0f8b7ef9f78d436d952ff9f878ed4eeeaae",
+      "name": "bilirubin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:hemin)",
+      "function": "Abundance",
+      "id": "1a5539813113f4756705ebef4b6b2d9231a850264f80d4b58dfdb2ca21c217de46c6eace3a1750835bc3f6d9d9997d99396983f3a5f1d0369a8532a78cac3c82",
+      "name": "hemin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:\"Blood Transfusion, Acute\")",
+      "function": "Abundance",
+      "id": "c0067cb217acc1cd7020f5cc52e0206856a7e145d7d1bd57fcc77c6d5449282ee17feb5a99e9e0a7de6e05af909e3eff6bf833f0e9bccd7cf1bbfcbd8308b23b",
+      "name": "Blood Transfusion, Acute",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"Blood Transfusion, Chronic\")",
+      "function": "Abundance",
+      "id": "ff3fb868d6f5541dcd2652b425cd69918bc8ca99ea6fc82e453e2d9590722245370474b1ca0be3af797a900a8c1e9e9773786ecc1801befad6d7b1bff45b4b3c",
+      "name": "Blood Transfusion, Chronic",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"Labile iron\")",
+      "function": "Abundance",
+      "id": "eee1566b9c91ec8d05a742d16ebfe9362c00406bcb78a2a3193b893cc6676c2228cacf7ea0320a7c5d11b40e624c7abf0807bc36860fd11782fb6bd9855eb225",
+      "name": "Labile iron",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"oxidative reactions\")",
+      "function": "Abundance",
+      "id": "424bc8c5ee95b5a9ac077c96ec0fdd63901bb2f7bd11a22842ae879e021f4b04cae5a4564feea644a1e45a1220947f7269f7b5cb8b6ff9347c965f4a9fd7dcf6",
+      "name": "oxidative reactions",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"stored erythrocytes\")",
+      "function": "Abundance",
+      "id": "c5f07faa52d39663c7bfb6346590680850cdc80f5daec0a27d13d0b987d98745781c6e81ce6edb50f375981a5345c5027325348c3907f71521d30ab0b54f60c4",
+      "name": "stored erythrocytes",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(MESH:\"Blood Transfusion\")",
+      "function": "Abundance",
+      "id": "b3b4ac2f07a0f5e6df3abd5f7bd0d6f120776202f4c3e417c4082961f2f3ece07bc3d7e231b573dd19b6eb0e1fdbed451fb1370fbdac4a1e42d8262b7565070f",
+      "name": "Blood Transfusion",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Iron Chelating Agents\")",
+      "function": "Abundance",
+      "id": "47979a94a419895a2075f0f9b6b70e81e22ce452d775dfc3916f27473a857822e422d9d71dc320327b353ceec363ee26e2d62fce76acddef41167c4d5a99e2eb",
+      "name": "Iron Chelating Agents",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"diferric transferrin\")",
+      "function": "Abundance",
+      "id": "4236afd0499d31f338aa37d87add4f4f4bb23e1a3e8fd6f047501e98d968e23ae1aea1549ccb42d3c5898eb1c69470f1a417ecfcefea6be3506941c9c2fbda44",
+      "name": "diferric transferrin",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Iron)",
+      "function": "Abundance",
+      "id": "48707938d210a7f56d4b2422be8b616b03d9faba25e5303e076437a1021c5536eb2d26284104f8965b6a4d9bbd4a77b3a3e78056ea24bb97247fbe965abc765c",
+      "name": "Iron",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(GO:\"macrophage apoptotic process\")",
+      "function": "BiologicalProcess",
+      "id": "e91cbb48830e224af6bf781cca8dd37c20897ab58fd85c01b88f05c42542fc18cb946f67dfa60f6f77d67d7644d1a400a8db1f2a080763b79feadb7f7945d22b",
+      "name": "macrophage apoptotic process",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Erythrocyte Deformability\")",
+      "function": "BiologicalProcess",
+      "id": "aafe5f8fc07e6abe467e9e2c47e0be8c08012664bc30134675ce5df8b3ab3ccc93ed0cdec5627fb8e8ab4f5e2cc991a6fb0ce0adfe41fe8358ea8c37ac60816d",
+      "name": "Erythrocyte Deformability",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Macrophage Activation\")",
+      "function": "BiologicalProcess",
+      "id": "aca3e7d03cc03a45def692b9938d6860f782a079161854ac16ebe99c59574f73b58ab786bb080c3d20673e9bfb19e3e1d81ae2b60a648f7278cadb5903cf82fe",
+      "name": "Macrophage Activation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Erythropoiesis)",
+      "function": "BiologicalProcess",
+      "id": "1f410f4bf7671d89c8432dc20f30df10561e6da24e4215a4dadca1a33ebcd91316fa9c0c8f99535a0814195bde46ebf980e75a1dff29a9b233db6851556d409e",
+      "name": "Erythropoiesis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Phagocytosis)",
+      "function": "BiologicalProcess",
+      "id": "24a222f2ff316c1e82d9d6384fa23bcf65146b96e43cad2dc483dbb7b91380d0503cf56322a6472aa8b8fe74fde67a96f94aca55fb98bca131743ae81c45a68d",
+      "name": "Phagocytosis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "complex(a(CHEBI:hemin), p(HGNC:HPX))",
+      "function": "Complex",
+      "id": "92e4bc2d03b4b02b92f30fd8f7abd4583122b44ebbf498a9c190bb506adc24be69b850eee370ccfcbb581b1e600963ce4ac791ad4703a506d70170d1f5c2291a",
+      "members": [
+        {
+          "bel": "a(CHEBI:hemin)",
+          "function": "Abundance",
+          "id": "1a5539813113f4756705ebef4b6b2d9231a850264f80d4b58dfdb2ca21c217de46c6eace3a1750835bc3f6d9d9997d99396983f3a5f1d0369a8532a78cac3c82",
+          "name": "hemin",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "p(HGNC:HPX)",
+          "function": "Protein",
+          "id": "903fb55a7cb538b12d22305b73d01f90a340e7fd5622711c4b41d1538af80cbb1ed5bc2f065f360c8bdc8d377993c9b55bd06633323591ed22f54741612c3775",
+          "name": "HPX",
+          "namespace": "HGNC"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(MESH:\"diferric transferrin\"), p(HGNC:TFRC))",
+      "function": "Complex",
+      "id": "33ad7cd51d63cf9a08a91f2d523a79625698f261b4aef9ebf244e2209aa017c5605a6efc6c471eda8cc013fb8e1a32ac16ef2135904acd0354529f0ce5995d09",
+      "members": [
+        {
+          "bel": "a(MESH:\"diferric transferrin\")",
+          "function": "Abundance",
+          "id": "4236afd0499d31f338aa37d87add4f4f4bb23e1a3e8fd6f047501e98d968e23ae1aea1549ccb42d3c5898eb1c69470f1a417ecfcefea6be3506941c9c2fbda44",
+          "name": "diferric transferrin",
+          "namespace": "MESH"
+        },
+        {
+          "bel": "p(HGNC:TFRC)",
+          "function": "Protein",
+          "id": "9164a6e77759b38ac17dc6083260bd29422b5e18f9718ce0040128f7bc91818731cc046e9df7f4fcf161d27735d2371ea416e7459d194eef29f4b27a4661935c",
+          "name": "TFRC",
+          "namespace": "HGNC"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HP)",
+      "function": "Protein",
+      "id": "0052c8eac45d6228dca9f6db302e8c98c9d2292c20e1bf791ca8fd0749fa28c163d424e0faa9a8dfa46a882f85d0967fc41819b18763a7abd987d07b8cbec1c3",
+      "name": "HP",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HPX)",
+      "function": "Protein",
+      "id": "903fb55a7cb538b12d22305b73d01f90a340e7fd5622711c4b41d1538af80cbb1ed5bc2f065f360c8bdc8d377993c9b55bd06633323591ed22f54741612c3775",
+      "name": "HPX",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:TF)",
+      "function": "Protein",
+      "id": "8807ddcda3e1c46ef96d8f7be2bcd9d3e18ba9b0dfefc812d5f86b77cd596d7bc2c7f876f12425ec476c4081bab190d64d3cee4d6839e888f14ad1cc35f5c012",
+      "name": "TF",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:TFRC)",
+      "function": "Protein",
+      "id": "9164a6e77759b38ac17dc6083260bd29422b5e18f9718ce0040128f7bc91818731cc046e9df7f4fcf161d27735d2371ea416e7459d194eef29f4b27a4661935c",
+      "name": "TFRC",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:TLR4)",
+      "function": "Protein",
+      "id": "78baff0fa37f42a32cb911fcb85a347d217c0cb39fc58b19343a2a831d87febb268c4e159670cd621d3a7e29526bc3acfb79ac387aadea33a00624d7024e6701",
+      "name": "TLR4",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "path(HP:\"Elevated transferrin saturation\")",
+      "function": "Pathology",
+      "id": "ed6d6b3a63978ebc076dcc0aeecc092ca93aa1b64a9af39462536281c5af992511dd1520b44ad45c35cabf16d9994e484d16267f22503d79abef9b417a5916a8",
+      "name": "Elevated transferrin saturation",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(MESH:Hemochromatosis)",
+      "function": "Pathology",
+      "id": "cbfc07b88619910f79055d63a4e640503f9cbabbd01d39d16a0dfc07d212505c675e74fc6522d4dd55f32d4a403b1f319922a9af86f10d0142f01fec58a81298",
+      "name": "Hemochromatosis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "function": "Pathology",
+      "id": "3196cc4c6a20279c822cae925a9b271d0224f2c8d468e3069a3ee460662be286b61db2f144c550686a9c624e58af4ffa7570f4f2384e1cb8ee40496f8cb3fa5e",
+      "name": "Inflammation",
+      "namespace": "MESH"
+    }
+  ]
+}

@@ -1,0 +1,4469 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_29694434.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_29694434.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "22db0ca0b99e932e05ffd521f00004e50944770f3eb7b2a8adc81caf00e73ceb63449ee9a09686e09d04362489fa564c9c90181be8f50abfaca296ee1ecc76f9",
+      "line": 91,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "fa04fe63380d8ff4abeb1a7c96f3cb116f73e7193530f9721a16710ab66bcde1397c60150318f473f61ddb7d9ee6e225efc733d8e211543c430ee852b284a1fb",
+      "line": 92,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Plasma haptoglobin and hemopexin levels are often depleted in SCD patients and mice due to chronic intravascular hemolysis [21±24].",
+      "key": "f55e0fb89d833e11bf2efc727e556cd4652983ef75f9736024b6099e899b5d36225be861c632cd3ed6d4a32b581d5f06e05dbc80060408bb15cf16ea5140f348",
+      "line": 117,
+      "relation": "negativeCorrelation",
+      "source": 22,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Plasma haptoglobin and hemopexin levels are often depleted in SCD patients and mice due to chronic intravascular hemolysis [21±24].",
+      "key": "8ba992bd6d420322d738129bb43a1038f122c4f44f2331abce8c22ae9eca47de6d3c9152c23bcdb4cc0a36cb151e38fb3cb769509811c22351878b41efa481a4",
+      "line": 118,
+      "relation": "negativeCorrelation",
+      "source": 22,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "a8c3e8c1847f0bb9ffb044e655b994105d33c69b92cad9c68590a9b2858a15b9604284db222e09b096ca4014b33ca9b306ceac25898c97b0887f90866aadc746",
+      "line": 91,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "775218834e933121d8c3edf95574e5de3930d7881c2c9562b2649d36a800edc27c3eb0117a864869e4123c18ccff65263f997571381348bf42779cc0402aa0ab",
+      "line": 93,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "153013c845684349d22187503e256ea0652db89822da30546383ff546d8505c411010c968cbe4f174cfc1932a9223ec3965a5c93d652a18d9fef2369efc7f82a",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "40aa6f722505a7362e23910a55fa86916bbd1138ab5e56519d7f1c226cb4c46737d5b521f0cdb5c742d53462111d058e533ebcd854873b430e8a4196fe6aeb4f",
+      "line": 97,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "48 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Infusion of exogenous hemoglobin into SS-mice can markedly increase stasis compared to the amount of spontaneous stasis [5].",
+      "key": "4c0f821a1c483550624981f9fb7112fc8d1ca0fe342fdf73f95b34d6caf98a3d9b87e26596d3868c582b316d210be01e238210fb5945561fefd9735a44a5914c",
+      "line": 133,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "c36fae74af5995124148e27f7462f4dde25226aed598a2e892b719ec538f8db83350c72ddf1717a07114acf483f36d1f6f07cfa1d65891c44f0dfe75ab1dd939",
+      "line": 92,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "951d9bc6c67ed90d981d822bf61e9e0584779f2381f3f9f921e09abcc06f3efc189a171b345f23137daf08890c4e527f03bfb8967f4615373566486aae1566af",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "712c47371ec10fa93fdb6848a45f4f5a53752344730b8f5fb433c2d4ee187cad07b32040e8d36477dffa7eb695e23c67a3fd52efc9048382b416c53233cc6e13",
+      "line": 96,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "0461d990f4d7cb21c7bef646e4d213332e0a82fc7e5618919d09d283b3c28d11cd6633fc774152b728cc97e3acb82dd6471230dbd8f184655aea712c564f1ec1",
+      "line": 98,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The released heme can activate the innate immune pattern recognition receptor toll-like receptor 4 (TLR4) on inflammatory cells, platelets and endothelium, promoting a pro-inflammatory and pro-coagulant phenotype, ultimately leading to vaso-occlusion, ischemia-reperfusion physiology, tissue injury, and pain in murine models of SCD [5, 7±10].",
+      "key": "abc6f1b243efbd101d5137d996f04c3657d371b970d0a2644c150f8f860e844c07dbe400e97509570be0c39d647208ce00bbe5630ca63867c1eace0e85a690d3",
+      "line": 107,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The released heme can activate the innate immune pattern recognition receptor toll-like receptor 4 (TLR4) on inflammatory cells, platelets and endothelium, promoting a pro-inflammatory and pro-coagulant phenotype, ultimately leading to vaso-occlusion, ischemia-reperfusion physiology, tissue injury, and pain in murine models of SCD [5, 7±10].",
+      "key": "0240f6b249de65d9d22252ef9890214ea69212b34988cc26c6aff84e42452b5a99cce1ccd2155a242e1b88df753429604d4826d0c4204db256d308b8ddb61b6d",
+      "line": 109,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The released heme can activate the innate immune pattern recognition receptor toll-like receptor 4 (TLR4) on inflammatory cells, platelets and endothelium, promoting a pro-inflammatory and pro-coagulant phenotype, ultimately leading to vaso-occlusion, ischemia-reperfusion physiology, tissue injury, and pain in murine models of SCD [5, 7±10].",
+      "key": "02da0573cbbebae73ce17afda01fcf80f21506a558dc5662a3139b10c718848e6b4ef362505cabbbaa3d29127528478de5b785503fe885cac88b990085011f19",
+      "line": 110,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The released heme can activate the innate immune pattern recognition receptor toll-like receptor 4 (TLR4) on inflammatory cells, platelets and endothelium, promoting a pro-inflammatory and pro-coagulant phenotype, ultimately leading to vaso-occlusion, ischemia-reperfusion physiology, tissue injury, and pain in murine models of SCD [5, 7±10].",
+      "key": "061705fb10ba819fd1f986bf1deda836c5aba37630abc7b41dfd1c6d9fe68236b9f29272d95b95b21d0d27b6b3b5d398b33857a1823a3e51975e8d358daafa95",
+      "line": 111,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "7a0edf24d5843fa55dcbf72d98c0fc47e3034fdbf9a16b4930c99711b38fb05813c854d648048f709362c72b0ae852a6bebd52515aef6fe15144244340f4c548",
+      "line": 93,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "ca29f9ef8e88cf95a7af17db904d0ae27e492553f3b1b550ac366d469219ca39bfb8b23a4adf0279a5a58ef2b9b8b436024f263125cc71a6a9348c9da33e059a",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hepatic 4-hydroxynonenol (4-HNE), a marker of oxidative stress, was significantly lower in the liver microsomes of SSmice 24 hours after infusion of Hp or Hpx compared to vehicle-treated SS-mice (Fig 2G).",
+      "key": "d94d3a3c489207feb6425259cd68a246650a99816be56b9a93c3b090b9d13d2616e2e69ae3a8c408070f4089b7affe384765972e1e77f149d62645523ac00384",
+      "line": 177,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "225e8f2c8aefd8ce92b62792dcb5f748d0ea9c9457e0d367d9d851fa03cde63acb757440bc8a0975d6fecc1c1abc2e975644fa88d7a2b31a95d165d18cd5a3f2",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 24,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "13ad8635b9c3c7fce9c83db263cafd0450dbd71aae10d2745dda1cff3308d6bc3e158078d0b9f9e2189d13d57543ca696c4036817f43f807f871a40b9ac31676",
+      "line": 96,
+      "relation": "positiveCorrelation",
+      "source": 24,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "e874a2f3ea0e40407da8b121e02e51049e30f6827b1fb42b2755b9d2dadf9d61ff2f0baa752b76e6ddf67df3eac912d2f4d9afb8c49c8927aa9cd3797e5f8c70",
+      "line": 97,
+      "relation": "positiveCorrelation",
+      "source": 26,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "During hemolysis, hemoglobin and heme released from red blood cells promote oxidative stress, inflammation and thrombosis.",
+      "key": "5311ea97250e43f099d7ca1531da18d96947b5a7ffe13abb4ac9803cca1155234b1e60a9f56e4538a7f60ddc838b16d21a1581135cf60c1c6f1691a23cc092f3",
+      "line": 98,
+      "relation": "positiveCorrelation",
+      "source": 26,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The released heme can activate the innate immune pattern recognition receptor toll-like receptor 4 (TLR4) on inflammatory cells, platelets and endothelium, promoting a pro-inflammatory and pro-coagulant phenotype, ultimately leading to vaso-occlusion, ischemia-reperfusion physiology, tissue injury, and pain in murine models of SCD [5, 7±10].",
+      "key": "e4fb6938c390d9b31d5d8a6bcd34c4f185cc46a72d59a224e3eaa8d37684a359f640a14e82c0eb8b3e6df4ca8a7166c417079c89d9f21f3563a4e88a111c9316",
+      "line": 107,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The released heme can activate the innate immune pattern recognition receptor toll-like receptor 4 (TLR4) on inflammatory cells, platelets and endothelium, promoting a pro-inflammatory and pro-coagulant phenotype, ultimately leading to vaso-occlusion, ischemia-reperfusion physiology, tissue injury, and pain in murine models of SCD [5, 7±10].",
+      "key": "701f3ab849f031bd922e51e62e0aec4cbd5a74601e528861970339558d70f24a1b3b7bf06b5d7274dcb055f12cddd5500d3b2c8e353e14d32b0e068d2d600975",
+      "line": 108,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The released heme can activate the innate immune pattern recognition receptor toll-like receptor 4 (TLR4) on inflammatory cells, platelets and endothelium, promoting a pro-inflammatory and pro-coagulant phenotype, ultimately leading to vaso-occlusion, ischemia-reperfusion physiology, tissue injury, and pain in murine models of SCD [5, 7±10].",
+      "key": "3abcc0df6c7906dd7ee646af11f7136df36c0ec4fb5a62036d2fb1f597a1828c829420485be0c41530d33c5d0e55a551406c381ebebd85a6aa0e8588e6076844",
+      "line": 108,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The released heme can activate the innate immune pattern recognition receptor toll-like receptor 4 (TLR4) on inflammatory cells, platelets and endothelium, promoting a pro-inflammatory and pro-coagulant phenotype, ultimately leading to vaso-occlusion, ischemia-reperfusion physiology, tissue injury, and pain in murine models of SCD [5, 7±10].",
+      "key": "f1c422434c5009648d51644250a33a5aea0f700e917757866a7b610641f493c15b24a2d071481701c7cd420067eeab59b984e9ff81a6a0e3603d28e59d4c84e7",
+      "line": 109,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The released heme can activate the innate immune pattern recognition receptor toll-like receptor 4 (TLR4) on inflammatory cells, platelets and endothelium, promoting a pro-inflammatory and pro-coagulant phenotype, ultimately leading to vaso-occlusion, ischemia-reperfusion physiology, tissue injury, and pain in murine models of SCD [5, 7±10].",
+      "key": "dd34553c7a00070157ce186bcb6e86ec13dc7efd8db3bfbb84c94f62ea6d657b32d316d38dedab0dc6abfee8a4ee998406873edfc1c896ab815e0f2b1b926c79",
+      "line": 110,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The released heme can activate the innate immune pattern recognition receptor toll-like receptor 4 (TLR4) on inflammatory cells, platelets and endothelium, promoting a pro-inflammatory and pro-coagulant phenotype, ultimately leading to vaso-occlusion, ischemia-reperfusion physiology, tissue injury, and pain in murine models of SCD [5, 7±10].",
+      "key": "34bbda91d8973f088c12a4f9fb0bd19415cac5bd6959a044fbadd916c0aed1870d25e37184be08870866da4236185bb9890fcf6ac199c85b3c2cca55559578ac",
+      "line": 111,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "48 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Thus a single infusion of Hp or Hpx inhibited stasis for 48h.",
+      "key": "3015e1a5cad7d0e06fe2ef35b989c06000303fec2cb99c00f2b2d7f2e6865109892533088b4171f12b3ecde88c3fc85ca0ccb8e9d2c19f0c82467e846b9fcedd",
+      "line": 127,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "60 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Sickle mice co-infused with Hb + Hp, Hb + Hpx or Hb + Hp + Hpx had less stasis 1h after infusion than mice infused with Hb + albumin or Hb (Fig 1B).",
+      "key": "08d1a82859bda7eb1f5bafd3bf48eebbd467f38ce3e26ec9fb03fee598125b37bedb3a9ff5595ba0ff2229e86a7b51b5b6cb540d4bd3fe952efe88b4c3e86675",
+      "line": 140,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hp and Hpx significantly inhibited stasis in response H/R or LPS (Fig 5).",
+      "key": "c953185b1dcad17242b8f32bc11965102ba08ea1ad455e143949c3eb2940d3abdeb08073b213282864f8b0ee3c8c732562091bdb46e47c7731cfdd387de54caa",
+      "line": 203,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "48 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Thus a single infusion of Hp or Hpx inhibited stasis for 48h.",
+      "key": "926d764820e2af8b6ac23711db7a2fe69077300e31f4fbb131a896eb7dd2eb4991a5b72eb2cf82542055cf9c5c0cba6aa8b71b2974ff4c57472274dfdf023baa",
+      "line": 128,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "60 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Sickle mice co-infused with Hb + Hp, Hb + Hpx or Hb + Hp + Hpx had less stasis 1h after infusion than mice infused with Hb + albumin or Hb (Fig 1B).",
+      "key": "db182ad156c2418fa60974f500437a9269d2794d1b346b14b27bcf18af184eb5fbd8925d3e97670cafd5d10ffafb9ba9d200b3ac963cb197a9c78204b03aa7c8",
+      "line": 141,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hp and Hpx significantly inhibited stasis in response H/R or LPS (Fig 5).",
+      "key": "4dd0d37288c9ddc22a1c0fef71098012ade4b681316cad11e063f62b12f5c27e71e430a85cc9102cdd557deb1df8979a196885e4230688cb5a890131f38c2a67",
+      "line": 204,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "48 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Infusion of exogenous hemoglobin into SS-mice can markedly increase stasis compared to the amount of spontaneous stasis [5].",
+      "key": "cdeb591274a1b6910f831f8a568cc259f564da173e98e003b61c6b709e005b89e2a0e7ca46c8355be8964cfa8a983f6c71e91c397c8e0ec9b5c5d58ce004fa9e",
+      "line": 133,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "We have previously shown that induction of HO-1 expression or liver-directed HO-1 gene therapy inhibits stasis in sickle mice exposed to H/R [38, 45].",
+      "key": "c102a871283222a75acdf86ad0fbce197b69bd6cb439f9557fcfe0bd6c189ee85dea1e97b666699645c8349fc8a6ecec586248b7bbe7b2016435b4b485f7a02f",
+      "line": 185,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "CO also inhibited stasis in mice treated with SnPP + Hb without Hp or Hpx.",
+      "key": "9efba918b13d3d998a0d9f53652e8aa88f30c468ab50e2af64a248789e7a422ae9574d57253c344a2cc7d506a4396ce57952a9a2f1926569feece8db23e4622a",
+      "line": 190,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hp and Hpx significantly inhibited stasis in response H/R or LPS (Fig 5).",
+      "key": "a11f3b4daf7d229a39079e4136a073caf4641a4e762bdccc54a153f99463c512d997af5defda95be2f77b13386ee2e036223f5c64567770c0663d4489e2b78b9",
+      "line": 202,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Plasma haptoglobin and hemopexin levels are often depleted in SCD patients and mice due to chronic intravascular hemolysis [21±24].",
+      "key": "2bc491dc23308623ae0a39dc04adb11c25218dcdb0f8662af5ebc23f7594d9f91326d9befc3049f3f1d4ab697264bf5d106dce74754b25d081d0d64cf50f66b8",
+      "line": 117,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Plasma haptoglobin and hemopexin levels are often depleted in SCD patients and mice due to chronic intravascular hemolysis [21±24].",
+      "key": "0b61b1b091c5a70b268ec033f83c62e4cea97b0fdbbd59d938c94766a274e4fb8b76cce0aa22b3a98b0a521a3cbe7f7b5116e1de8d2b5d0bdccf67854a617d79",
+      "line": 118,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "48 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Thus a single infusion of Hp or Hpx inhibited stasis for 48h.",
+      "key": "be6b7fa0c8895d246dd268c75cf49b9561805525c0f845cf24ed807bacab6cccfc61c0766979ae9685ca547baf8b27a344ac62bb00e293b5c7f4198b095bf6bf",
+      "line": 127,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "60 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Sickle mice co-infused with Hb + Hp, Hb + Hpx or Hb + Hp + Hpx had less stasis 1h after infusion than mice infused with Hb + albumin or Hb (Fig 1B).",
+      "key": "fa709224ded3100f66b1e05dfcd7ff1dedd07c5a5dfeed663fab7d979fe1991d7a5401d1ace1d7b5d9f1fd74386ac2eb5dd2ffe3a5c8b03720a4259d8bff9bbe",
+      "line": 140,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hp and Hpx significantly inhibited stasis in response H/R or LPS (Fig 5).",
+      "key": "31f13ec876c5229a1c69594febabb25da7e3d602178ec559f53d5197b4fe3839c80c75ba29099b67cfdc393a9f77d05762a2b18d59d4ceb7157a6ca6475aeb4e",
+      "line": 203,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Compared to Hb alone or Hb + albumin infused animals, sickle mice co-infused with Hb + Hp, Hb + Hpx, or Hb + Hp + Hpx had markedly diminished hepatic NF-κB activation 4h after infusion as evidenced by nuclear NF- κB phospho-p65 levels (Fig 2A).",
+      "key": "84384b54d1aa22d261a2d94ea901206216f8c58bb02b87ee8d6f5321295f91f514ee95024e6000ca5c7e007828e1303a83b7bb13e31c595ebe7c7451e7ea45e2",
+      "line": 150,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Immunofluorescence staining of VCAM-1 and ICAM-1 was decreased in the dorsal skin of SS-mice 4h after infusion of Hb+Hp and Hb+Hpx compared to SS-mice infused with vehicle or Hb (Fig 2B and 2C).",
+      "key": "bd4d6959d2310673eaa66dbbd49e5a351ff44013030eac85fdaeed1060b7048b3b81461c8b2b16ba61c878707bcef7342337d0a128c36a17d073ba9cb09a7b4e",
+      "line": 158,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Immunofluorescence staining of VCAM-1 and ICAM-1 was decreased in the dorsal skin of SS-mice 4h after infusion of Hb+Hp and Hb+Hpx compared to SS-mice infused with vehicle or Hb (Fig 2B and 2C).",
+      "key": "20459e9cc765d4c0928a081be568e00edf23dc5bdb3be71ae3aeea08c546545cbbb55b49ae85f4b851d4a071b5b813425470d364c1f50336c3e6e0c801e904f3",
+      "line": 160,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Pro-inflammatory cytokine RANTES (chemokine ligand 5 or CCL5), which recruits leukocytes to pro-inflammatory sites, was lower in the plasma of SS-mice 24 hours after infusion of Hp or Hpx compared to vehicle-treated SS-mice (Fig 2F).",
+      "key": "b125954bed23eb22b8c71246cea1a472a80c7e185fa4c6f073d5ec7ff929fdbb7c1d314b40ab3654e1b9b6559d0568e5b5e6e4c4d57c357f0f0f80ecfa0caa47",
+      "line": 168,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hepatic 4-hydroxynonenol (4-HNE), a marker of oxidative stress, was significantly lower in the liver microsomes of SSmice 24 hours after infusion of Hp or Hpx compared to vehicle-treated SS-mice (Fig 2G).",
+      "key": "aac55c9c20dcc0684b6de909011055152176d88c1d0f22c38c43b0d64ee82d482cee3226ac33cb4736b4509cc740745bcee4161770d6321d1b71742c55085f00",
+      "line": 178,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The beneficial effects of Hp and Hpx were lost by inhibition of HO with SnPP, but could be restored by CO administration.",
+      "key": "74832152706cf49f1efe192d1ff2552ddaf05b90171036d2a7ac31ae26db940cb9ea677bacb45581b937fd87e1f0f23c459e9d4a4ba012b625ff44d2d2972e08",
+      "line": 211,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The beneficial effects of Hp and Hpx were lost by inhibition of HO with SnPP, but could be restored by CO administration.",
+      "key": "57f4b3176cc42eb9324ae6f1da70b7f71d810d81d84e9b1b88db7fd10a6453bf50579c351866a8c6f97fbd397535d8335086ad68bbcfb8b44ed5232fe520c59e",
+      "line": 213,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "48 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Thus a single infusion of Hp or Hpx inhibited stasis for 48h.",
+      "key": "fdeb11e16b9b08241d32d38ee29eac6c8badb82b65b134d2c0ee368c4a49d5fcde4f7a43f482f0da0180825a9eebbce9c246f359f2a311b869e249d5d45ec5a6",
+      "line": 128,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood Platelets": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "60 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Sickle mice co-infused with Hb + Hp, Hb + Hpx or Hb + Hp + Hpx had less stasis 1h after infusion than mice infused with Hb + albumin or Hb (Fig 1B).",
+      "key": "40b108c2c381d9b9ade52decad0dac8f0075a59998b773d4d63124d27ce3d8e00d4ae5dfb61b72d2b39906619816eb9ee9376cfdc27ab3a8d90d016e5cbb92f0",
+      "line": 141,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hp and Hpx significantly inhibited stasis in response H/R or LPS (Fig 5).",
+      "key": "ea695f3b27688177e688f1059cbafe736cf7e6e0f8e7ff2349a944bddeea665c6c2325ad5c1e07056fda9795fec5bd74c7b6140201173712376d65358290c5aa",
+      "line": 204,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Compared to Hb alone or Hb + albumin infused animals, sickle mice co-infused with Hb + Hp, Hb + Hpx, or Hb + Hp + Hpx had markedly diminished hepatic NF-κB activation 4h after infusion as evidenced by nuclear NF- κB phospho-p65 levels (Fig 2A).",
+      "key": "b6ec1cfe5a06cacb2c40e33bd0aba33e1ea5b816837d38fb79d8b7554bd598ae56c69120568df573c5944dea795ffe991300a1853216098b0cdc3e9184e0b52e",
+      "line": 151,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Immunofluorescence staining of VCAM-1 and ICAM-1 was decreased in the dorsal skin of SS-mice 4h after infusion of Hb+Hp and Hb+Hpx compared to SS-mice infused with vehicle or Hb (Fig 2B and 2C).",
+      "key": "1abb1777d3dbaed8e8804137300936deb57c8c60ad7e8737413bb9eb31f6e05c51929ec5ecd1fba283a1cc431a7496072b0f46c59eb3d86ed65954846c66f71c",
+      "line": 159,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Immunofluorescence staining of VCAM-1 and ICAM-1 was decreased in the dorsal skin of SS-mice 4h after infusion of Hb+Hp and Hb+Hpx compared to SS-mice infused with vehicle or Hb (Fig 2B and 2C).",
+      "key": "47d6139db60b14991bd29c068e77f30d367ba8ac738f604a9dd07fcab0fa7e9f5cbf4c024af080ce9c792674de3b0aef577b23b66630655998a4209f361c883c",
+      "line": 161,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Pro-inflammatory cytokine RANTES (chemokine ligand 5 or CCL5), which recruits leukocytes to pro-inflammatory sites, was lower in the plasma of SS-mice 24 hours after infusion of Hp or Hpx compared to vehicle-treated SS-mice (Fig 2F).",
+      "key": "a67f59a43f3f9a68b6845c174e2a96952f4ef61175d70c6907e7c114137213c3372f9148c06382b063ad6b2de928251cdd060d5501769e89e4da1b29354cee44",
+      "line": 169,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hepatic 4-hydroxynonenol (4-HNE), a marker of oxidative stress, was significantly lower in the liver microsomes of SSmice 24 hours after infusion of Hp or Hpx compared to vehicle-treated SS-mice (Fig 2G).",
+      "key": "880adfa61f92f4bab1c9dfd880fc7cb99fc215831c7ced7bfb992a70482b3860b6c525606b51f681e7ebbdedce00809d004b8edff986d8a40626f34ea79b6614",
+      "line": 179,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The beneficial effects of Hp and Hpx were lost by inhibition of HO with SnPP, but could be restored by CO administration.",
+      "key": "e4e90760b128afa37460fff32218758e9fd8030b24fff8451c562ff58d799358d68ae4adc40df9840ab66ddfacc516dfff38dc31153029b43e1835ad06e29d6d",
+      "line": 212,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The beneficial effects of Hp and Hpx were lost by inhibition of HO with SnPP, but could be restored by CO administration.",
+      "key": "8428950b72ea2ed35b55ac709841b438218b3c60675a0a150bbd4f6809dbdc945ea1ad28a71b1a6ec41a87ae352d0eb6a6dac8a92dc814fc5c552bea85b07c3e",
+      "line": 214,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Compared to Hb alone or Hb + albumin infused animals, sickle mice co-infused with Hb + Hp, Hb + Hpx, or Hb + Hp + Hpx had markedly diminished hepatic NF-κB activation 4h after infusion as evidenced by nuclear NF- κB phospho-p65 levels (Fig 2A).",
+      "key": "f386d885305c9dc27d396012593bedd4eb14ba1d3595e9da0558cd1a7a32b4f98a2cda71985d42182253278a7f15d62623c19ec4645d04b109c9bfe0761cd920",
+      "line": 150,
+      "relation": "negativeCorrelation",
+      "source": 18,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Compared to Hb alone or Hb + albumin infused animals, sickle mice co-infused with Hb + Hp, Hb + Hpx, or Hb + Hp + Hpx had markedly diminished hepatic NF-κB activation 4h after infusion as evidenced by nuclear NF- κB phospho-p65 levels (Fig 2A).",
+      "key": "abf2692b855a499d33273ab92a54b8e7f95438350e8d8b050fbb8d8b29c347cd84d470d3bc02a22317889742fe3b3f0f8d22d049a41f26e12fd523f61d45c1cf",
+      "line": 151,
+      "relation": "negativeCorrelation",
+      "source": 18,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "SnPP and CO had similar inhibitory effects on NF-kB activation in the liver (data not shown).",
+      "key": "a177a9abad1a2d7ac6b253045dd52c05479adac62c4d73da65204e9d1cb1b044b631c66783e2594dc4e29c0b628d0a3d5f3e9d941257d2b367a5bd225a66edc8",
+      "line": 196,
+      "relation": "negativeCorrelation",
+      "source": 18,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "SnPP and CO had similar inhibitory effects on NF-kB activation in the liver (data not shown).",
+      "key": "289ce900cae0da9f9ebc6bc54860f7227dd23273aa89630d7d5010f8c5da853320618a0a0ecaddabaf92748df4f2cc59cd818a1bc5ec69a4e34f6f1580d1d2a0",
+      "line": 197,
+      "relation": "negativeCorrelation",
+      "source": 18,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Immunofluorescence staining of VCAM-1 and ICAM-1 was decreased in the dorsal skin of SS-mice 4h after infusion of Hb+Hp and Hb+Hpx compared to SS-mice infused with vehicle or Hb (Fig 2B and 2C).",
+      "key": "bec2a1724c6569f524c70cec593c5da4750676994554f196b7b3c2ee123fa91e191af433b37e72e876e441232f91548dc3f63b3923c2b0fae9aeeef1ffd100ec",
+      "line": 158,
+      "relation": "negativeCorrelation",
+      "source": 19,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Immunofluorescence staining of VCAM-1 and ICAM-1 was decreased in the dorsal skin of SS-mice 4h after infusion of Hb+Hp and Hb+Hpx compared to SS-mice infused with vehicle or Hb (Fig 2B and 2C).",
+      "key": "9ec4ad36a815a2cbde78271ef216e311c0a2dbc5069027fb4772708396bca77c6081fd25b4582b0908f184f107042b4a3388fdaff805931d63cc86a89c85cf52",
+      "line": 159,
+      "relation": "negativeCorrelation",
+      "source": 19,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Immunofluorescence staining of VCAM-1 and ICAM-1 was decreased in the dorsal skin of SS-mice 4h after infusion of Hb+Hp and Hb+Hpx compared to SS-mice infused with vehicle or Hb (Fig 2B and 2C).",
+      "key": "69f529c811e1af821033e5e4e7713eea9b9755ae5c44e4ae65b550b09f2cd84588fe156168357fe7e210e1f0ff7b1fd4a1acf09a3b06418dad721d24baa0e66d",
+      "line": 160,
+      "relation": "negativeCorrelation",
+      "source": 17,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "4 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Immunofluorescence staining of VCAM-1 and ICAM-1 was decreased in the dorsal skin of SS-mice 4h after infusion of Hb+Hp and Hb+Hpx compared to SS-mice infused with vehicle or Hb (Fig 2B and 2C).",
+      "key": "4b13d13651ca79c1150144b738d4a38103ab881bc3ca4e123d26eedce2c8fe7fe07d3729334595f7bd07847f08a78cd5b8a730c85791527af9a0125cbbe51d58",
+      "line": 161,
+      "relation": "negativeCorrelation",
+      "source": 17,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Pro-inflammatory cytokine RANTES (chemokine ligand 5 or CCL5), which recruits leukocytes to pro-inflammatory sites, was lower in the plasma of SS-mice 24 hours after infusion of Hp or Hpx compared to vehicle-treated SS-mice (Fig 2F).",
+      "key": "136d8a090677b974f767cbcd6fe40cdcfd1f2ac6ad8409c4145dcbbbf498455fa2f23c32a59fec3a17a1fc546794ecef1ea90eef97c5b1a592f6281a6d632ade",
+      "line": 168,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Pro-inflammatory cytokine RANTES (chemokine ligand 5 or CCL5), which recruits leukocytes to pro-inflammatory sites, was lower in the plasma of SS-mice 24 hours after infusion of Hp or Hpx compared to vehicle-treated SS-mice (Fig 2F).",
+      "key": "e074aeb2a42765cd5489353b8a6628593639e58195dc0d749eb36e7fe55952717d816340c86da3bb1683f65b84dec50ac8e9c2802dd58bf092b795662ed1bf6a",
+      "line": 169,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hepatic 4-hydroxynonenol (4-HNE), a marker of oxidative stress, was significantly lower in the liver microsomes of SSmice 24 hours after infusion of Hp or Hpx compared to vehicle-treated SS-mice (Fig 2G).",
+      "key": "ccc4ce5cfc6b68c6eab4f12c991ffae9e3c2a83cad93c660ea36702b5be237f35d8b695a646abf6681908869ea1851c3304a61e35437bad271591d4e0f9bfa22",
+      "line": 177,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hepatic 4-hydroxynonenol (4-HNE), a marker of oxidative stress, was significantly lower in the liver microsomes of SSmice 24 hours after infusion of Hp or Hpx compared to vehicle-treated SS-mice (Fig 2G).",
+      "key": "4cccd37100ed2667ddbf5c85c8815b0fc350760e7e9a204ff2ba97b333bc9d8c2dd6b012c3741c4148e397707c0ad5a0138639699cc4876424390d6b3cc824e0",
+      "line": 178,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hepatic 4-hydroxynonenol (4-HNE), a marker of oxidative stress, was significantly lower in the liver microsomes of SSmice 24 hours after infusion of Hp or Hpx compared to vehicle-treated SS-mice (Fig 2G).",
+      "key": "42823117a43601b310dd5091cd7c0ac165e197f864e33fe9defdd07b6800d7019e96cf1acf6a30a3687ca230e1da41610f81312ca6c8e49f1e9e676aa5aea80f",
+      "line": 179,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "We have previously shown that induction of HO-1 expression or liver-directed HO-1 gene therapy inhibits stasis in sickle mice exposed to H/R [38, 45].",
+      "key": "4300b645895e56db50e1c6d66ed169f7ce241f4f4559d22cf6b9d3bbed352b874e1d6ff1ee62919de4e1431b59d1d5783f31014341a8944fe286079a70dbf9db",
+      "line": 185,
+      "relation": "negativeCorrelation",
+      "source": 14,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "CO also inhibited stasis in mice treated with SnPP + Hb without Hp or Hpx.",
+      "key": "b40d471070ac3226c887adf5c454688a5524c1cd24ca0fe5f777c7374efaf2d8bcbade3f5e8c8cb5961fcf6ad360d586197ec625d156c204bb282a974adceb2c",
+      "line": 190,
+      "relation": "negativeCorrelation",
+      "source": 1,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "SnPP and CO had similar inhibitory effects on NF-kB activation in the liver (data not shown).",
+      "key": "66b925b63b5d26a7f98c58a68b8dd3c3033b6a7db4f3366fe2f824c5c694b322ecfa063a005ce729ed579b89bc0baf758330f8d7ee65ff90cfe987c136da7dc9",
+      "line": 196,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "negativeCorrelation",
+      "source": 1,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The beneficial effects of Hp and Hpx were lost by inhibition of HO with SnPP, but could be restored by CO administration.",
+      "key": "c86b7fb1f5bb9f39d36cabd240247c4918d0cc0066041b2ef9a3884597e59a50a0132762b93df2ad0735d717f63b0d5088a5ccbe88e22f4da4e82178b8861f68",
+      "line": 213,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The beneficial effects of Hp and Hpx were lost by inhibition of HO with SnPP, but could be restored by CO administration.",
+      "key": "0db0296d2f368a48e52bd009741d897ae5de47c30ad1491cdaea6e5ad6f199f6b6c9cceb9936510c9a31fdd6476738a513f5cbb08256e6be593dee2062a0f8a4",
+      "line": 214,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 16
+    },
+    {
+      "key": "fa51bf69e1cee44c2d46076dcc22f9de3d5924415ea7498c1f9559eb7fad0e1086e2ac2e62dadc58626388dd3951e1f50654d4e60ce959bcdd0e7ff84159a92c",
+      "relation": "hasComponent",
+      "source": 7,
+      "target": 2
+    },
+    {
+      "key": "b628b5747992875c4a5db04899e94a724e0794cf0f976afde305b9777c9fd1daca25df36ea43c75c75424cbe4995a959094a6f8a4e0771c472cb2a8d66571e1c",
+      "relation": "hasComponent",
+      "source": 7,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "SnPP and CO had similar inhibitory effects on NF-kB activation in the liver (data not shown).",
+      "key": "8edfba3b1c292cb0407ee8f4a4d66dd4fff34f0284140bc1a0a048f02b6cfbc79e436ec2eae7500971d4aee9796f279e82ec13e676afa4ba202b7ed410e56ddd",
+      "line": 197,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The beneficial effects of Hp and Hpx were lost by inhibition of HO with SnPP, but could be restored by CO administration.",
+      "key": "a052cb8516fbb24a803bb237a9817a5d6792dd8d19815efa67e135d7d7cc09da26f2fd9b23e0782100a884ace7bf8f649bd4c038517efde5cf73d6d730bddcf1",
+      "line": 211,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "The beneficial effects of Hp and Hpx were lost by inhibition of HO with SnPP, but could be restored by CO administration.",
+      "key": "8283ab5186f5ed32a6a45f6e551edc101649c51d86fa3bebc1f4877f1df39fbc511285ac8d89d916a8225f56063f6fb3b187842d0da1a1b2dd6ad663636140d4",
+      "line": 212,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "Hp and Hpx significantly inhibited stasis in response H/R or LPS (Fig 5).",
+      "key": "037e9d5c2c1b965fc755ec66e59aad590b488461dfe8f6d404f6095107589bc2eb90ad3da0ca3c3a1702ae08957f605d0a15ebe2f2167a74db5191b402688606",
+      "line": 202,
+      "relation": "positiveCorrelation",
+      "source": 23,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "In contrast, albumin did not induce HO-1 or inhibit stasis and NF- κB.",
+      "key": "5f6260d1a2e677b0ec88d357ba3f0705cd13abaf276a69c73ab616ff09c4a8366913d7fb7f30f9986095b73bd352907ee22835d97a458b2cb096cbc174cafd4d",
+      "line": 219,
+      "relation": "causesNoChange",
+      "source": 12,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "Species": {
+          "Mus musculus": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Abdulla F",
+          "Belcher JD",
+          "Brinkman N",
+          "Chen C",
+          "Killeen T",
+          "Miescher SM",
+          "Nath KA",
+          "Nguyen H",
+          "Nguyen J",
+          "Nguyen P",
+          "Steer CJ",
+          "Vercellotti GM",
+          "Zhang P"
+        ],
+        "date": "2018-01-01",
+        "first": "Belcher JD",
+        "last": "Vercellotti GM",
+        "name": "PloS one",
+        "pages": "e0196455",
+        "reference": "29694434",
+        "title": "Haptoglobin and hemopexin inhibit vaso-occlusion and inflammation in murine sickle cell disease: Role of heme oxygenase-1 induction.",
+        "type": "PubMed",
+        "volume": "13"
+      },
+      "evidence": "In contrast, albumin did not induce HO-1 or inhibit stasis and NF- κB.",
+      "key": "4601df91bc46f8c0232f26df4af0c79588c6500af1b95636c326140f6f9a3373cd4a5c9ae89c3d76f146cd183fd0726aa2e88cda4374de1ed7e40271067efbbd",
+      "line": 220,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "causesNoChange",
+      "source": 12,
+      "target": 18
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"4-hydroxynon-2-enal\")",
+      "function": "Abundance",
+      "id": "301a738298b0505c62ce476e3b24dad81dad54c20d52fd530c73957ce018d665ade7b69d49d5af1e1a737bb59644c8e5cb81d7c6d4c970e14f6f87b874ba8451",
+      "name": "4-hydroxynon-2-enal",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"carbon monoxide\")",
+      "function": "Abundance",
+      "id": "f9a3abc538e60a3026dee8cad1fc1437008be2a35790de8c753ee79bbbcc228bb80f6053c1170690621df714e7420bc4d4144d1883eca1753cffae3c0b1a99b4",
+      "name": "carbon monoxide",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"tin atom\")",
+      "function": "Abundance",
+      "id": "efef2f06ff795b0f30cfc810b1c3eab2ba4e2bb732aa3ac5942ddca6473baf424a9fa551203598b76522b4fcb69663889fac9d85f9d0031f62c0b88f8b973e04",
+      "name": "tin atom",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:protoporphyrin)",
+      "function": "Abundance",
+      "id": "429e9bada2fbbcb3646b72434923d6994f0d82f26507b76f1e7d35440ca98efac39eeae4d55cbd561dc3d140ebe993543d0eae9192b460a68d6e0a9b4e9efdbe",
+      "name": "protoporphyrin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "bp(GO:\"inflammatory response\")",
+      "function": "BiologicalProcess",
+      "id": "422dfc2db00b1d942862470cbabe1e8312bf97b25050190db5ae19636adae95f4fa18c512574526825bd377b16c2278899435eb759e951ba850ad476e14f9900",
+      "name": "inflammatory response",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Oxidative Stress\")",
+      "function": "BiologicalProcess",
+      "id": "32bd3ab5e8a3a26be3209856c88741f0f0e2dff98d2587599a6a21b0f4793c5d8feb1194ea2166cf3cece076e7095530b116270e6655bc8feb35a437fda42cf6",
+      "name": "Oxidative Stress",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "complex(a(CHEBI:\"tin atom\"), a(CHEBI:protoporphyrin))",
+      "function": "Complex",
+      "id": "48f362de69d75d4c70e3568c313ce38d315e080502692b542fb54aca798b6501dd5d063745d794a1c0e395c5571831383922929f9b093e71697f515bb57445e8",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"tin atom\")",
+          "function": "Abundance",
+          "id": "efef2f06ff795b0f30cfc810b1c3eab2ba4e2bb732aa3ac5942ddca6473baf424a9fa551203598b76522b4fcb69663889fac9d85f9d0031f62c0b88f8b973e04",
+          "name": "tin atom",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:protoporphyrin)",
+          "function": "Abundance",
+          "id": "429e9bada2fbbcb3646b72434923d6994f0d82f26507b76f1e7d35440ca98efac39eeae4d55cbd561dc3d140ebe993543d0eae9192b460a68d6e0a9b4e9efdbe",
+          "name": "protoporphyrin",
+          "namespace": "CHEBI"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HP)",
+      "function": "Protein",
+      "id": "0052c8eac45d6228dca9f6db302e8c98c9d2292c20e1bf791ca8fd0749fa28c163d424e0faa9a8dfa46a882f85d0967fc41819b18763a7abd987d07b8cbec1c3",
+      "name": "HP",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HPX)",
+      "function": "Protein",
+      "id": "903fb55a7cb538b12d22305b73d01f90a340e7fd5622711c4b41d1538af80cbb1ed5bc2f065f360c8bdc8d377993c9b55bd06633323591ed22f54741612c3775",
+      "name": "HPX",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:TLR4)",
+      "function": "Protein",
+      "id": "78baff0fa37f42a32cb911fcb85a347d217c0cb39fc58b19343a2a831d87febb268c4e159670cd621d3a7e29526bc3acfb79ac387aadea33a00624d7024e6701",
+      "name": "TLR4",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(MGI:Alb)",
+      "function": "Protein",
+      "id": "cd5261842e80d489daec82231b57bf29e0a4bea4a25d4af7a40c4d62d0a689daac3a9020ab8c40f68bcd6436873e640f2062cbd41e82dbce5c116fb7ebb61cbd",
+      "name": "Alb",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Ccl5)",
+      "function": "Protein",
+      "id": "76fe383f5c8786b2811b981670c7d35c435df5ccff755586449d569ff2d2eb592a399054108ff178b0b17e459e98b41c76326ad0151983f8bcd0ac2cabb54d05",
+      "name": "Ccl5",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Hmox1)",
+      "function": "Protein",
+      "id": "8beffeed00e14a5c3c1432b49c64dd54603d509fa46333b37a0723447f7f90446ee1e4a2cfb3bb6646705515f1b0fab7318108466dbdad0781a8af61c7ae1d2e",
+      "name": "Hmox1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Hp)",
+      "function": "Protein",
+      "id": "ef6b27651769abfe3e0b315e005cda4bbf0d64e50c65cb3ec3a5605a08018dd0bb6b8b25ca42f8ea3ccc0630388908ccd832178ba97d5ffa830e6aff4f9c9092",
+      "name": "Hp",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Hpx)",
+      "function": "Protein",
+      "id": "ccdc2439745a084dbbe73e6559429f702bfbdd9823ad4837b3232123b8c4a6c91ffd44740d989f368c570e462c58632040fcfa2d5e947abff06413ab3ce7ec44",
+      "name": "Hpx",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Icam1)",
+      "function": "Protein",
+      "id": "dd5b1c57e87e7982ca688adebb4f4ce73a1f8275f4653f10fe19afd7050ddfa46e10d2b1e257a88cc2502380dabc264afadb49b1de06a3b9fda3aa33ba15448c",
+      "name": "Icam1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Nfkb1)",
+      "function": "Protein",
+      "id": "bd873db5e5e6862601a7b692d3b86b346ab6cf369e62988abcb6c1dabc91dd6497b19fe113634e8886545c2f3fd675b8cdc4a6d58f29af2db5f49ff3d19126c5",
+      "name": "Nfkb1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Vcam1)",
+      "function": "Protein",
+      "id": "62d6c0f4655d1127057475e640ea4834772f0850b827c82f8088f0b7e4feabbae5c5cf8ceb6c56557e6bd4ffee465846f97ec69b8bfd57d9e614f06f9c4b9b31",
+      "name": "Vcam1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "path(HM:\"vaso-occlusive crisis\")",
+      "function": "Pathology",
+      "id": "7007ee304406d4320c9dcbefa93caf0b8ca48c68e148031ff1268674b1581667e2815de7ed2d14f5ac673c886c0493c40b8b821f94db58cf6f8ac9093dca5a48",
+      "name": "vaso-occlusive crisis",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(MESH:\"Reperfusion Injury\")",
+      "function": "Pathology",
+      "id": "dbad6279f7d2dc927ad3faf3349552c0c7089af0c6b97b825e2b755ba1b23e12e508eebdffc14fad5cdfc66af6f409136f7f68dc9b09f9ec4c6423633828ea30",
+      "name": "Reperfusion Injury",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hypoxia)",
+      "function": "Pathology",
+      "id": "fc2c9bedd0c62ffbd4fb1303ba3bf063881eb2b4ec7e3e9cab410ced5b1025f1624066dbb0c9b1d2de6db576f66367b9956407baf3ec647fbb60fd953b149949",
+      "name": "Hypoxia",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "function": "Pathology",
+      "id": "3196cc4c6a20279c822cae925a9b271d0224f2c8d468e3069a3ee460662be286b61db2f144c550686a9c624e58af4ffa7570f4f2384e1cb8ee40496f8cb3fa5e",
+      "name": "Inflammation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Pain)",
+      "function": "Pathology",
+      "id": "7c892602ec0888a53b7e5325e40732d94a33e4074ea60461ff7fd223bd15bf9b1565c0b2069497dc15ce86e489f9ddf69baa3101578567cae0fb9f81dbaa8e1a",
+      "name": "Pain",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Thrombosis)",
+      "function": "Pathology",
+      "id": "b8739fcb57aeef4e74a351a9a6298e8d50bd9a172d37973c9c286907a2c6f131a06ff7070db9641962cc62043cd6e64ab2361b9c3e0adde501b1f69294ea5490",
+      "name": "Thrombosis",
+      "namespace": "MESH"
+    }
+  ]
+}

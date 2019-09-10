@@ -1,0 +1,2609 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_19276082.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_19276082.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Interestingly elevated levels of body iron stores are associated with an increased risk of myocardial infarction, and carriers of the hemochromatosis gene have an increased risk of myocardial infarction and cardiovascular death (20, 21).",
+      "key": "79f1fa38eeb71eb8c9722e5c8ef874b1bc2027addc60144bb265446f44e79cc90ee26ff75b0b6ceebd082bb4d9ccb25d60a58262f7f801447f28404890e2fdc6",
+      "line": 97,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Interestingly elevated levels of body iron stores are associated with an increased risk of myocardial infarction, and carriers of the hemochromatosis gene have an increased risk of myocardial infarction and cardiovascular death (20, 21).",
+      "key": "199e78ed615045c3ee2f4e9f7cf39869b352428677f3ffaaedf1ef1329990c59529fdef37b2f794a1160368a0c5d720cc26d0dbf4409a2b810ab3932d0ef2cbb",
+      "line": 97,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "High concentrations of FeCl3 induce profound injury to the vasculature, leading to endothelial denudation, and collagen and tissue factor exposure, leading to the rapid formation of vaso-occlusive thrombi.",
+      "key": "62ffe554ab0d37d9dc4331ebb11656f0a6ecc6b3eca38576c28ab651628dbeffb16b5d66a215232888f918b4e8f117e7b722d5d8438d7313973a366be8a894b5",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "As demonstrated in Fig. 1, topically exposing aorta in vivo (Fig. 1A) or ex vivo (Fig. 1B) to 6% FeCl3 resulted in major vascular injury as evidenced by endothelial denudation, collagen exposure, and the subsequent formation of arterial thrombi (Fig. 1D and supplemental Video 1).",
+      "key": "b3c53ddd7a8c138c32ac71cf17b383b17154c9d136b4f0217585d2044d0b118d350a458e6d93e3541116013bcd91ff5cb2756a498d9a2e97264c556105a6ede3",
+      "line": 112,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Analysis of the time course of hemolysis in whole blood revealed a rapid linear increase in Hb levels, peaking 10 min after FeCl3 addition (Fig. 2B), a time course consistent with the rapid hemolysis and vascular injury observed in the ex vivo aortic thrombosis model.",
+      "key": "72481eedaa85d99a5bc5f70b6160aac881263cc994c61372198e55e220f4421aa989998c8e18ea72e2b8c0b4c8afc625414ff517cd9de0e9aa8511fc2d246479",
+      "line": 177,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "To investigate the direct effects of FeCl3 on aortic endothelium, FeCl3 was perfused through isolated aorta independently of flowing blood. Strikingly no endothelial denudation or collagen exposure was evident following prolonged exposure to FeCl3 (6%) (Fig. 1C).",
+      "key": "d0fa4130871856c15026dec6ee7a34dc990af39c14262e0ce0d7a88eabb4fceeb221d4c299835376d2df815a10c358e15895ce206f911915d55be7a3c5c68807",
+      "line": 133,
+      "relation": "negativeCorrelation",
+      "source": 2,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Subsequent perfusion of anticoagulated whole blood through FeCl3-pretreated vessels was associated with an increase in leukocyte and platelet adhesion to the vessel wall (Fig. 1E and supplemental Video 2); however, relative to untreated aorta (Fig. 1F and supplemental Video 3) and treatment in the presence of flowing blood (Fig. 1D and supplemental Video 1), thrombus formation was not observed.",
+      "key": "fb33b7b89fa206f684748a19e8954db10d6535e317d70e2cee3e5283ef0ae5e3c8c34e154fde03ec7166efc2965518b51786c48d1a08dd0353e85ab45453d3bb",
+      "line": 144,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "In contrast, selectively removing RBCs prevented endothelial denudation and collagen exposure, resulting in a relatively mild perturbation of endothelial function similar to that observed with FeCl3 alone (data not shown).",
+      "key": "15848c345b287e7281a513bfcaa8c6c44290d6db6dc3077cd3c6e9375b72fe782207dab867b0c0a85f50824e4b223799a6770e62b02d1c46c222d4fe9bb3389b",
+      "line": 155,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Subsequent perfusion of anticoagulated whole blood through FeCl3-pretreated vessels was associated with an increase in leukocyte and platelet adhesion to the vessel wall (Fig. 1E and supplemental Video 2); however, relative to untreated aorta (Fig. 1F and supplemental Video 3) and treatment in the presence of flowing blood (Fig. 1D and supplemental Video 1), thrombus formation was not observed.",
+      "key": "fb856d7da553f44a4ef02131ed9447d59828c12b9a788655af4cc6d5b1c5c8122e123e021d6a89c9af36b035a1f772183c0d1f956328922824e384bb3a7a88c6",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Subsequent perfusion of anticoagulated whole blood through FeCl3-pretreated vessels was associated with an increase in leukocyte and platelet adhesion to the vessel wall (Fig. 1E and supplemental Video 2); however, relative to untreated aorta (Fig. 1F and supplemental Video 3) and treatment in the presence of flowing blood (Fig. 1D and supplemental Video 1), thrombus formation was not observed.",
+      "key": "41e7e4b592e58d31e5d6fed9c12cf48048ffbfd726a315e9b3c67e623bc1b66181636dd0491fde978b6eea0fb888c1c9e909ddf1ad792786dfad6537142ef01b",
+      "line": 146,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Analysis of Hb release from ex vivo vessel chamber experiments revealed a significant (p \u0003 0.05; n \u0006 4) increase in Hb levels following FeCl3 treatment of isolated aorta in the presence of flowing blood (157 \u0005 45 \u0001g/ml), whereas FeCl3 pretreatment of vessels prior to blood perfusion caused no hemolysis (Fig. 2A).",
+      "key": "a4454fdf22f459c7d467ac7a2b49f38ad0c73536a9bbdeab5fdb52806e1a4a23c428a1636fc201a4c5ed45bd4de401045d829f584aa5f1255f5a1bc52c4a8c8a",
+      "line": 165,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Analysis of the time course of hemolysis in whole blood revealed a rapid linear increase in Hb levels, peaking 10 min after FeCl3 addition (Fig. 2B), a time course consistent with the rapid hemolysis and vascular injury observed in the ex vivo aortic thrombosis model.",
+      "key": "f686df9a68195197def442d8f3a59275465fdf5d0322f25afcf162ff62f5a4205bbae2f53dc00e73051aaab919c4b089a9515a361f3c4c796f795d6a724fce58",
+      "line": 175,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Analysis of the time course of hemolysis in whole blood revealed a rapid linear increase in Hb levels, peaking 10 min after FeCl3 addition (Fig. 2B), a time course consistent with the rapid hemolysis and vascular injury observed in the ex vivo aortic thrombosis model.",
+      "key": "c4f8a9002ece395b87155ea40c7d49c2620375e0f7ac076ecee8ceedbdabf34b392940d46a4b0266957c2e0af3243f1bd01b73c66cf11875be760bc6812ff6f4",
+      "line": 176,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "FeCl3 treatment resulted in a dose- (Fig. 3) and timedependent (data not shown) increase inRBClipid peroxidation, which correlated closely with hemolysis (Fig. 2B).",
+      "key": "f555a5097dffdfb3b707cf0814afd54456c45ac04b6a3c3db4b796ed659f1b3b8ec63fa8baf4acd9ec7347827d44d8e3029c4bd23c32726fcf997baef5428425",
+      "line": 184,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Pretreating anticoagulated whole blood with tricarbonyldichlororuthenium(II) dimer, a CO donor, significantly reduced collagen exposure (Fig. 5A) and thrombus formation (Fig. 5B) induced by FeCl3.",
+      "key": "bb6d8b43892a0cd8b24c4ed742841256a8c160eae59934ca88f8a50e35bcbc344f1a7d8dffcfea8df5f15a1ae9f881f8cb867b6b758ff2850d44b1e2d7317aee",
+      "line": 211,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "High concentrations of FeCl3 induce profound injury to the vasculature, leading to endothelial denudation, and collagen and tissue factor exposure, leading to the rapid formation of vaso-occlusive thrombi.",
+      "key": "5e9a5e87660ab89233fccbc04b04c18c090f643d042748115bd8e1e7b436471023d3bc7c4ce0c29fc245b0e5d27f602ef5aa12f720987f5bbdb97053feb79676",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "As demonstrated in Fig. 1, topically exposing aorta in vivo (Fig. 1A) or ex vivo (Fig. 1B) to 6% FeCl3 resulted in major vascular injury as evidenced by endothelial denudation, collagen exposure, and the subsequent formation of arterial thrombi (Fig. 1D and supplemental Video 1).",
+      "key": "63e72a7970cc85e69c668c5d27b980f910f8ae19f24e22d4339b5522f72550d637d178266c0104909a1884c4779c195d24e44f281923b88e3040323fb760f171",
+      "line": 112,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Analysis of the time course of hemolysis in whole blood revealed a rapid linear increase in Hb levels, peaking 10 min after FeCl3 addition (Fig. 2B), a time course consistent with the rapid hemolysis and vascular injury observed in the ex vivo aortic thrombosis model.",
+      "key": "53b908efa0a4f907d32d619e23ea26641873a7e5b68a25b034f350d70d7859ff46f5f89a469fd71b02a1a0d07c0d5c627adf2427dee790d86a3e1c033454f6ec",
+      "line": 177,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "By-products of heme and iron metabolism, such as heme oxygenase-dependent generation of carbon monoxide (CO), have antioxidant and anti-inflammatory protective functions against iron-induced vascular damage (33); therefore we examined the impact of CO donors on collagen exposure and thrombus formation in the ex vivo vascular injury model.",
+      "key": "8e979c60245a3e016dc82e1c8cd83e8f6445f27c414bdbd292a96925b7ecfb59b45520c3fbf2caba2a38e4a2eae84c9ed854023a3d783db691a708bead6986b2",
+      "line": 203,
+      "relation": "negativeCorrelation",
+      "source": 21,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Moreover they have demonstrated that released Hb plays an important role in exacerbating RBC hemolysis, establishing a damaging hemolysis/ oxidative cycle that drives further red cell damage, vascular injury, and thrombosis.",
+      "key": "94b69ef373e3f4d9edfa86d107c6d2da2be1c1f0b5954687d984922a698857900470a55da6df61fb7d23423541c51b2252baa9bf09fb6e97c4e258952ac819fa",
+      "line": 222,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Furthermore superoxide can react with Hb to produce hydrogen peroxide (H2O2), a well defined prooxidative molecule that causes vascular injury (1).",
+      "key": "795787ac52e5d4041c5d6e66a4551886069cc67661e2a129a953fd435f15211820fc95b963593cea37b48c4485b0308002b9ae13f1c0bd3075d1eaa175d87501",
+      "line": 253,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Clinical studies have confirmed endothelial dysfunction and vasculopathy in a patient with HO-1 deficiency, and similarly, mice lacking HO-1 have increased vascular injury and thrombotic complications (43, 44).",
+      "key": "f8cb6a4fe18f97e3a3c9d5f887cebc816040907d1bacffea64d8d7ffdf878cd46deafb9e7c03b86caad29a36ecf7535d3da7e17eb79b31ddce09c5856bf9fe14",
+      "line": 260,
+      "relation": "negativeCorrelation",
+      "source": 21,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Platelet thrombus formation in the ex vivo model occurred in the presence of hirudin (Fig. 1B); however, it was critically dependent on collagen activation of platelets as thrombus formation failed to develop using platelets deficient in the major collagen receptor GPVI/FcR \u0002-chain (FcR \u0002\u0007/\u0007 mice) (data not shown).",
+      "key": "8c0866b316fa34d4fb14b70d350a0c9fa5fa5b9c4e229251e3b69537cdb0e8a6b4e9b8449d4da72edda0371af71a94050dad73683a7711d847c9ddf704143b09",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Platelet thrombus formation in the ex vivo model occurred in the presence of hirudin (Fig. 1B); however, it was critically dependent on collagen activation of platelets as thrombus formation failed to develop using platelets deficient in the major collagen receptor GPVI/FcR \u0002-chain (FcR \u0002\u0007/\u0007 mice) (data not shown).",
+      "key": "0fff2a05db38c845bd1d29153616a6af34594e815e4dce944948c5afc22729d014f72518e419043389c61052f7e4e00b5a89c267b48c45c680de90d942dda15f",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Pretreating anticoagulated whole blood with tricarbonyldichlororuthenium(II) dimer, a CO donor, significantly reduced collagen exposure (Fig. 5A) and thrombus formation (Fig. 5B) induced by FeCl3.",
+      "key": "3bf2f5f56f9040c8821e321be615b43eac3ee8f1438c74bacb9130a90dda0465de9cf863fcefe3138b23438928e21dde696aa781a55c0dd467d81f4f7b18c571",
+      "line": 210,
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Pretreating anticoagulated whole blood with tricarbonyldichlororuthenium(II) dimer, a CO donor, significantly reduced collagen exposure (Fig. 5A) and thrombus formation (Fig. 5B) induced by FeCl3.",
+      "key": "08919732a4e1e8ec2d97db97f0ed40d0cd1c8d3cc981c278c543340ed298e4c42795e5e792efa40d48f83b35303501dc342d21b6da38084c18395d11a7f41023",
+      "line": 211,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "To investigate the direct effects of FeCl3 on aortic endothelium, FeCl3 was perfused through isolated aorta independently of flowing blood. Strikingly no endothelial denudation or collagen exposure was evident following prolonged exposure to FeCl3 (6%) (Fig. 1C).",
+      "key": "c9b74321e8ba8794b860604554a4f074af18484e67e77cc59db13d7e24d8394a0995541f228e8d28b51806d698d86c719e2cf98c248fc0b299c4688def2d1a14",
+      "line": 133,
+      "relation": "negativeCorrelation",
+      "source": 19,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Subsequent perfusion of anticoagulated whole blood through FeCl3-pretreated vessels was associated with an increase in leukocyte and platelet adhesion to the vessel wall (Fig. 1E and supplemental Video 2); however, relative to untreated aorta (Fig. 1F and supplemental Video 3) and treatment in the presence of flowing blood (Fig. 1D and supplemental Video 1), thrombus formation was not observed.",
+      "key": "00b1ad4ad708036e7051304030e1aa02eb908834fd1bd54e99b5b16e1b59be85a2d2cb724f78a3b74cc4ab5825010b68b8a63eb09fa94265a5bd05080ca82271",
+      "line": 144,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "In contrast, selectively removing RBCs prevented endothelial denudation and collagen exposure, resulting in a relatively mild perturbation of endothelial function similar to that observed with FeCl3 alone (data not shown).",
+      "key": "cafc754fca447f84cb553ecf316983d16b16d6e0b7b3a68616007daf1cfd6f1325e837e2e5ba0ab6534ec9cefdc43d80611615bbceb212a9728f6fee22a06022",
+      "line": 155,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Topical treatment with 6% FeCl3 with hemin (1mM) perfusions caused no greater endothelial injury than FeCl3 or hemin (1 mM) alone (data not shown), whereas FeCl3 in the presence of low concentrations of metHb (0.38 mg/ml) induced extensive vascular injury similar to that observed with FeCl3 in the presence of whole blood (Figs. 4 and 1D, respectively).",
+      "key": "304f8c5549455f22dac8b1cda65ba950a2f3d70ff8d2c83939d5876dc8ac44559868495b7a192da3338c2345c7eb9aef67992ce41e0423f42a43764802be4c8a",
+      "line": 193,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Third, reintroduction of washed RBCs or purified metHb in the presence of FeCl3 led to a similar level of vascular injury as observed with whole blood, whereas isolated RBC membranes and heme, even in the presence of FeCl3, produced relatively mild injury.",
+      "key": "85745b03bf0e12f15d0d0749254a08e430888232b0aef033ae98bde67bfcc8791f0a983a003a19be971d223b32cf0960693c5452277328b29279bcf92ce023f9",
+      "line": 231,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Subsequent perfusion of anticoagulated whole blood through FeCl3-pretreated vessels was associated with an increase in leukocyte and platelet adhesion to the vessel wall (Fig. 1E and supplemental Video 2); however, relative to untreated aorta (Fig. 1F and supplemental Video 3) and treatment in the presence of flowing blood (Fig. 1D and supplemental Video 1), thrombus formation was not observed.",
+      "key": "08863baef3fe8f6ce075693bda75f2345f3d316bdff7e48acd87172d27b3dbfd95a29c894e1560215dad9c0cf7bc24cc52f5857f5656efdee49e219a29c608ee",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "As a consequence, infused heme (hemin) has been demonstrated to enhance leukocyte adhesion to the vessel wall (17, 18), a finding confirmed in the current study.",
+      "key": "95749c624d342fecb07ca4b694eafbbc302108959fb7d86ad414085db957c3ba73214e446070d820497a6a038b5fba9d0083d07695fdec3b763b5c9e0c38df6d",
+      "line": 247,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "platelet": true
+        },
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Subsequent perfusion of anticoagulated whole blood through FeCl3-pretreated vessels was associated with an increase in leukocyte and platelet adhesion to the vessel wall (Fig. 1E and supplemental Video 2); however, relative to untreated aorta (Fig. 1F and supplemental Video 3) and treatment in the presence of flowing blood (Fig. 1D and supplemental Video 1), thrombus formation was not observed.",
+      "key": "3693fc742268e833e823bd01d36d727a7b1649dda171695d18510f0b2fd26a57d25b3a9fe55dea84b969be09e329e2c71c82d6d21f47349117c18cae8eeb0331",
+      "line": 146,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Analysis of Hb release from ex vivo vessel chamber experiments revealed a significant (p \u0003 0.05; n \u0006 4) increase in Hb levels following FeCl3 treatment of isolated aorta in the presence of flowing blood (157 \u0005 45 \u0001g/ml), whereas FeCl3 pretreatment of vessels prior to blood perfusion caused no hemolysis (Fig. 2A).",
+      "key": "198340075d425c62568c9fafdb4f62fc9b76779bff19f32c64b33ff9a2f25dcd853076571e91c77b26103b18244b4c494108f198bab570f4a71c7635e726edc0",
+      "line": 165,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Analysis of the time course of hemolysis in whole blood revealed a rapid linear increase in Hb levels, peaking 10 min after FeCl3 addition (Fig. 2B), a time course consistent with the rapid hemolysis and vascular injury observed in the ex vivo aortic thrombosis model.",
+      "key": "a94ad666bedfefcbef0488296c8d52131b37828892cbc7bcb2a9b18e8283c43c4d9fbaa570e8a52215aaf1548791eb82409a9fe174e311af25eed55f0489cf23",
+      "line": 175,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Moreover they have demonstrated that released Hb plays an important role in exacerbating RBC hemolysis, establishing a damaging hemolysis/ oxidative cycle that drives further red cell damage, vascular injury, and thrombosis.",
+      "key": "cef75b47038e741c173d140c48487e11749e9323620350a511549af3bd5b1cc8d34cd1511df7669d920856739ebbd77f4d96caf83c748e72d26c7f4d635284a8",
+      "line": 221,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Analysis of the time course of hemolysis in whole blood revealed a rapid linear increase in Hb levels, peaking 10 min after FeCl3 addition (Fig. 2B), a time course consistent with the rapid hemolysis and vascular injury observed in the ex vivo aortic thrombosis model.",
+      "key": "2a49e53e9d5c95af7169ca37fd4bd793a357d84a12ca8a1cd3abe6254c9993905420cd176da96336ee724362658cc5d04760ecff084410fa1675c3c1c5b0973b",
+      "line": 176,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Moreover they have demonstrated that released Hb plays an important role in exacerbating RBC hemolysis, establishing a damaging hemolysis/ oxidative cycle that drives further red cell damage, vascular injury, and thrombosis.",
+      "key": "0fbfe68078f996e74e9af1133c838009894cdbcfa378e8854bd08eeee7931404699339c9ceb9eb16430c2aa54fde647cf2634c83cd7e2dde1ed01320081c337d",
+      "line": 221,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Moreover they have demonstrated that released Hb plays an important role in exacerbating RBC hemolysis, establishing a damaging hemolysis/ oxidative cycle that drives further red cell damage, vascular injury, and thrombosis.",
+      "key": "8f7cf5ce3f9fd3afb3aa65554bb9864e94124068aeff45f54ee94748a083cefdafd610392dc6c4bb1b788ba433b6c0a7d822d390053a30947027b4f06efc1cbd",
+      "line": 222,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Moreover they have demonstrated that released Hb plays an important role in exacerbating RBC hemolysis, establishing a damaging hemolysis/ oxidative cycle that drives further red cell damage, vascular injury, and thrombosis.",
+      "key": "05754b0b60dca377cfe310270557e4aa14b0f6b326a4aac51b97bd279c85382b26c788ec122211fe368ca0b84ceb6b8009622dcee7a25db328964634b68f2202",
+      "line": 223,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "FeCl3 treatment resulted in a dose- (Fig. 3) and timedependent (data not shown) increase inRBClipid peroxidation, which correlated closely with hemolysis (Fig. 2B).",
+      "key": "ab37bffe27aa15337bf8da5e5fa3b879fb9fe9e3a3283a06bf0f5521b93980b1fdd297381ee0e628f6f7e2f3d20f19ec1df23f9454677e32e4900dbbf8f14002",
+      "line": 184,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 2
+    },
+    {
+      "key": "d5afdded055aa519d975c1a1889680888cf89ba9ead2a67a68fc2faec837176df04e507408d8fcd7d1a955e304e29db6884a5d42c108cd3017bd8e8bbfc4221d",
+      "relation": "hasComponent",
+      "source": 12,
+      "target": 2
+    },
+    {
+      "key": "990445e68aaf59aa50bd3a7c45d4760f21efc260540ebc46a73cd1fb920a6b06433fa58a24a76b5bfc23ad2a84c9e40b4b33051fca724afe966b9e71c5b3129c",
+      "relation": "hasComponent",
+      "source": 12,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Topical treatment with 6% FeCl3 with hemin (1mM) perfusions caused no greater endothelial injury than FeCl3 or hemin (1 mM) alone (data not shown), whereas FeCl3 in the presence of low concentrations of metHb (0.38 mg/ml) induced extensive vascular injury similar to that observed with FeCl3 in the presence of whole blood (Figs. 4 and 1D, respectively).",
+      "key": "362792358b4d671ea61c5861f9472eff276b9f76906abb0bd370d69645ee3da772001baa9a2d2568b8eb7d4cff72bab8a5361e73a0158302f3898c552510441d",
+      "line": 193,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Third, reintroduction of washed RBCs or purified metHb in the presence of FeCl3 led to a similar level of vascular injury as observed with whole blood, whereas isolated RBC membranes and heme, even in the presence of FeCl3, produced relatively mild injury.",
+      "key": "7412bac3a4d53967e249775e5cc708d38a1cead3d7451870f4ab5c188d97fdc26fbe8499d2e038d981998f50ab39fd78c844d9c983a572ed5a112b2c473bb150",
+      "line": 231,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "By-products of heme and iron metabolism, such as heme oxygenase-dependent generation of carbon monoxide (CO), have antioxidant and anti-inflammatory protective functions against iron-induced vascular damage (33); therefore we examined the impact of CO donors on collagen exposure and thrombus formation in the ex vivo vascular injury model.",
+      "key": "f9b15ad82fc1a160573b8c5fe1b86c785977e2d1ddc6c51bf530711ad503e4fcf1df85e7a9ac0940588e122d6c0420f74f0a0dc1212554174a6ecedd13606a2a",
+      "line": 203,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Pretreating anticoagulated whole blood with tricarbonyldichlororuthenium(II) dimer, a CO donor, significantly reduced collagen exposure (Fig. 5A) and thrombus formation (Fig. 5B) induced by FeCl3.",
+      "key": "beb37f50d53c6ecad7a747f8eb189b2d3dfaa3d88b8bf2354d273c271aa151ef7480b04f67b14b0a5aa45f0f2fb08adb58248996eb436153868c5a68608e1abd",
+      "line": 210,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Moreover they have demonstrated that released Hb plays an important role in exacerbating RBC hemolysis, establishing a damaging hemolysis/ oxidative cycle that drives further red cell damage, vascular injury, and thrombosis.",
+      "key": "29ab8fe26282f2e73e37be9e44bb79a925171df1565dd62bce4c2fbdd2ff92d9f65b87f4bc906daa90d286b85b7c5da63ecce31ff671cfb1f115bad947dc0f9f",
+      "line": 223,
+      "relation": "positiveCorrelation",
+      "source": 23,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Clinical studies have confirmed endothelial dysfunction and vasculopathy in a patient with HO-1 deficiency, and similarly, mice lacking HO-1 have increased vascular injury and thrombotic complications (43, 44).",
+      "key": "c23ad047e37e602dfe983205258598f778f6322e10c33dd1cc428a6522b792147840a7aa29a3e7a8ab71a2ba453e44ece3232e41204cbb037314abb939d0e23b",
+      "line": 261,
+      "relation": "negativeCorrelation",
+      "source": 23,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Free heme is lipophilic and intercalates into the membrane of endothelial cells increasing vascular permeability and ICAM-1, VCAM-1, and E-selectin expression (19).",
+      "key": "1714b2cb7bdcc8f3eff1d2d03a30de4866581671aa92623840f62a397dd921be46b29d58e61f334c6139f7048f29fc165664afef74899bb371e320d9ffec9bd0",
+      "line": 237,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Free heme is lipophilic and intercalates into the membrane of endothelial cells increasing vascular permeability and ICAM-1, VCAM-1, and E-selectin expression (19).",
+      "key": "366dbece9588d08e1306ec568398e78a773f30e39a4363fbe18300a9065d61b3bf21217b787a7847a2566db302bb7a46d8a10d7df4beecd0f3231b0ddf99d783",
+      "line": 238,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Free heme is lipophilic and intercalates into the membrane of endothelial cells increasing vascular permeability and ICAM-1, VCAM-1, and E-selectin expression (19).",
+      "key": "f3520ed340663a2325fc402a512f666c7f6ddc2dcdd095342663af4c1a16317fa0cc50de510030f83350a7f178225879ce73ec109b451374e281cd9dfcbcc26f",
+      "line": 239,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Free heme is lipophilic and intercalates into the membrane of endothelial cells increasing vascular permeability and ICAM-1, VCAM-1, and E-selectin expression (19).",
+      "key": "4513875495c4a12af7eba68c3576d810ac10b4764f9becd235cd9579e2d60c36c83813a4318ba1284c58e576c040aeb4ee36a6e0a7663ba71f5f4755b7cf550a",
+      "line": 240,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "As a consequence, infused heme (hemin) has been demonstrated to enhance leukocyte adhesion to the vessel wall (17, 18), a finding confirmed in the current study.",
+      "key": "bc2462ca0d520674f35d25474a6bd9dee78ee1fb44eb839034aa5129b2a623e96398c5b2b28f4dadacb75886f5b40eadd659a6e3e7971d4899a59b94b1ec888a",
+      "line": 247,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Free heme is lipophilic and intercalates into the membrane of endothelial cells increasing vascular permeability and ICAM-1, VCAM-1, and E-selectin expression (19).",
+      "key": "f1f5df7627352420bf2dbe88eb5b92ab9457594bdc8a8c883cdbd398d6b8a2c7e2cecea99f6e99557db37a0007d6811b797a73ad46ddb53fed12681d16bfaedf",
+      "line": 237,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Free heme is lipophilic and intercalates into the membrane of endothelial cells increasing vascular permeability and ICAM-1, VCAM-1, and E-selectin expression (19).",
+      "key": "183245f97ab9af05b426e19dcda531e021bea9ecd529292895de1f146d3a201b097bc5b6dfe48c498e93c8d322b060bb5f1e4f940001ccfdb9652f2acf78efcf",
+      "line": 238,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Free heme is lipophilic and intercalates into the membrane of endothelial cells increasing vascular permeability and ICAM-1, VCAM-1, and E-selectin expression (19).",
+      "key": "64efc15c436e6f38faaf7a201dd9f9e686ef4b0e2e4da68b39236ef5690e7f7452291d04833a8c89d6dad49e9a2a02e276a4cc306f62136f436cb2c8170a6244",
+      "line": 239,
+      "relation": "positiveCorrelation",
+      "source": 18,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Free heme is lipophilic and intercalates into the membrane of endothelial cells increasing vascular permeability and ICAM-1, VCAM-1, and E-selectin expression (19).",
+      "key": "2d2fb2607c46a734066238d6884a8e770de62857b9edb976e16f8bbaf922c98db2ce9bdd97356398f9632b99d20875538ff9fde26a21e8159607381f79764c95",
+      "line": 240,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 4
+    },
+    {
+      "key": "5b9aa2ffb6ab5fc4398763ee70cfb44628cafe82ad31ca63f5c3b6bc3f0f24441ae1166fc74b97a84a8c2a602d10635f375427baa4e94be0e62fb623d472eb14",
+      "relation": "hasReactant",
+      "source": 24,
+      "target": 6
+    },
+    {
+      "key": "c1156a12a375b0824de39bbdd0172baa7020d29664a30e9abe078dcf0138c643d2a24e977b2458e8812d122f388f101b179db345652a37e4c8dfea9f229e2f99",
+      "relation": "hasReactant",
+      "source": 24,
+      "target": 13
+    },
+    {
+      "key": "84a5559a2f2e2547fd9957655724abc48f4750b183ab3c75ceac8955c049ac47861c10a8f64c5f1d2a0127173bd444c143b5add2340de3888e52b8f7adb3062f",
+      "relation": "hasProduct",
+      "source": 24,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Furthermore superoxide can react with Hb to produce hydrogen peroxide (H2O2), a well defined prooxidative molecule that causes vascular injury (1).",
+      "key": "07fd8ebc03e4f8cd22c19c3fde16f30e20f9d2921d814ed49a4acdd0d2b5e81411e01b52663a42be5926659e624b8fdc4ffa7f248b9a02b7687d089f7fa4cbad",
+      "line": 253,
+      "relation": "positiveCorrelation",
+      "source": 24,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Clinical studies have confirmed endothelial dysfunction and vasculopathy in a patient with HO-1 deficiency, and similarly, mice lacking HO-1 have increased vascular injury and thrombotic complications (43, 44).",
+      "key": "ab86d2c561579589ee066996e015070724eb359031f802da37673352edbb50a9824ed9009ed200ada2cbfd93e58da09d86b034c5865f7f5f40579e1ba2205876",
+      "line": 260,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Aorta": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "10 min": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Chin-Dusting JP",
+          "Jackson SP",
+          "Salem HH",
+          "Sturgeon S",
+          "Woollard KJ"
+        ],
+        "date": "2009-05-08",
+        "first": "Woollard KJ",
+        "last": "Jackson SP",
+        "name": "The Journal of biological chemistry",
+        "pages": "13110-8",
+        "reference": "19276082",
+        "title": "Erythrocyte hemolysis and hemoglobin oxidation promote ferric chloride-induced vascular injury.",
+        "type": "PubMed",
+        "volume": "284"
+      },
+      "evidence": "Clinical studies have confirmed endothelial dysfunction and vasculopathy in a patient with HO-1 deficiency, and similarly, mice lacking HO-1 have increased vascular injury and thrombotic complications (43, 44).",
+      "key": "c5441b30601744c74daa9068530eb6cc151e826a08dea6ef99b10e1f5da57ed4f2c653162f6fbd2efdc85fd7c64485aa2455cd36cadd326ae6c9efc07e010560",
+      "line": 261,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 23
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"carbon monoxide\")",
+      "function": "Abundance",
+      "id": "f9a3abc538e60a3026dee8cad1fc1437008be2a35790de8c753ee79bbbcc228bb80f6053c1170690621df714e7420bc4d4144d1883eca1753cffae3c0b1a99b4",
+      "name": "carbon monoxide",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"hydrogen peroxide\")",
+      "function": "Abundance",
+      "id": "4d65b5d180890b98afe0bc10614fde44ee750b2d1af6fdd925fc31ead7ee9a7248bda3d67c52aebf220b8c048d999f2d878a97a70b0e027a7294cbd3c7bf61bf",
+      "name": "hydrogen peroxide",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"iron trichloride\")",
+      "function": "Abundance",
+      "id": "97d134ae11a676af4acc7abd3ac66fdec87154e053df231ae9d227cb782194f8abd1fe5175870825e679d77603d229df5943df7859a0f197fe01cbcb06f0a49e",
+      "name": "iron trichloride",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "function": "Abundance",
+      "id": "e426e7ad4ee4d8eb3c018acb75625d794a96811eb659d39bd8f25c4b30632fc8a938eca8397887738ecc384ec5df867e2026de113f002e5cc4490177de0905cd",
+      "name": "iron(2+)",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:methemoglobin)",
+      "function": "Abundance",
+      "id": "7805bca22642b820fb0a026eb5c67eb4512f0a021ec5c97c5f505f5706c0ef4cb986edf806c547d40110c084b98e15c3520dd558cb96c5071b4dd9709e641130",
+      "name": "methemoglobin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:superoxide)",
+      "function": "Abundance",
+      "id": "ed3ac1e9301fd508195472cf5c9e0ffe33baed921bb114f59f003bda692d466b1b57b05211ca84118e55ea8dfd5855f1ff5c8cc781ae4a76bb62202fe55a9124",
+      "name": "superoxide",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:Thrombus)",
+      "function": "Abundance",
+      "id": "6336558e5712497de9f40c3029535182ec1f5ec15bdfce1a1bb339a4e7ab31181c7885be286060f140b4cce4d0beb75bfd17416949bc26aacde0e1f07c607c54",
+      "name": "Thrombus",
+      "namespace": "HM"
+    },
+    {
+      "bel": "bp(GO:\"leukocyte adhesion to vascular endothelial cell\")",
+      "function": "BiologicalProcess",
+      "id": "dc107d3b8bd9348cfa7a3e954b72e7a7885724eb8468eef29c50911d78c03ce1bac9c51560c00f7454b22d3b9b750ef6c4d4409812af024a38f544c28c4d90e5",
+      "name": "leukocyte adhesion to vascular endothelial cell",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"regulation of vascular permeability\")",
+      "function": "BiologicalProcess",
+      "id": "fe20d9a2f6e3c48766fc02a7ca56428d7d1a42a2f0558521665c67a63a34862697e47db021f5c271be4c815bf88668084b644985e0e7b2d667ceed1a9b7f71f3",
+      "name": "regulation of vascular permeability",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Lipid Peroxidation\")",
+      "function": "BiologicalProcess",
+      "id": "200d0f8dcc2deed3eae3e73e1ad1fecf13fdaff9aefe30936075f390afe344a7b841c8b5e7edef7a1cafc377c66bea8ff57806e4c027474403279f36c76c18bd",
+      "name": "Lipid Peroxidation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Platelet Adhesiveness\")",
+      "function": "BiologicalProcess",
+      "id": "7a1c41bac747bf1e144b7b85b27071909290d36d3e625e46be009d34071882d3cc29b524ff3636ebb025b6495560397360fbe19cb684abf9aa0143601d4d3d9c",
+      "name": "Platelet Adhesiveness",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "complex(a(CHEBI:\"iron trichloride\"), a(CHEBI:methemoglobin))",
+      "function": "Complex",
+      "id": "bbf688d694c964b200b243aae1a6346b769ae178f86e5f79101a96fd5816fc2204fb085b90368423f03fee1e6ef949c1f9deb64ce6581dec2c1d2524c21e3ac2",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"iron trichloride\")",
+          "function": "Abundance",
+          "id": "97d134ae11a676af4acc7abd3ac66fdec87154e053df231ae9d227cb782194f8abd1fe5175870825e679d77603d229df5943df7859a0f197fe01cbcb06f0a49e",
+          "name": "iron trichloride",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:methemoglobin)",
+          "function": "Abundance",
+          "id": "7805bca22642b820fb0a026eb5c67eb4512f0a021ec5c97c5f505f5706c0ef4cb986edf806c547d40110c084b98e15c3520dd558cb96c5071b4dd9709e641130",
+          "name": "methemoglobin",
+          "namespace": "CHEBI"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(MGI:Gp6)",
+      "function": "Protein",
+      "id": "63ad8a5635717d55f7dbc07d1927f49711988595add1337fe02f89d7d67ff402973652e0647d854f88147a5e44c306c6cfcff0f5cd444b17f556f795f729073d",
+      "name": "Gp6",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Hmox1)",
+      "function": "Protein",
+      "id": "8beffeed00e14a5c3c1432b49c64dd54603d509fa46333b37a0723447f7f90446ee1e4a2cfb3bb6646705515f1b0fab7318108466dbdad0781a8af61c7ae1d2e",
+      "name": "Hmox1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Icam1)",
+      "function": "Protein",
+      "id": "dd5b1c57e87e7982ca688adebb4f4ce73a1f8275f4653f10fe19afd7050ddfa46e10d2b1e257a88cc2502380dabc264afadb49b1de06a3b9fda3aa33ba15448c",
+      "name": "Icam1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Sele)",
+      "function": "Protein",
+      "id": "336af199ff1c2f454f19c26455b22367035a4bf6c2ab24ee4b050ef7805a227103d53359c22968709e4a64baff00eca73e75c6695704ce0ff1c28eebb0ad4e22",
+      "name": "Sele",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Vcam1)",
+      "function": "Protein",
+      "id": "62d6c0f4655d1127057475e640ea4834772f0850b827c82f8088f0b7e4feabbae5c5cf8ceb6c56557e6bd4ffee465846f97ec69b8bfd57d9e614f06f9c4b9b31",
+      "name": "Vcam1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "path(HM:\"Endothelial dysfunction\")",
+      "function": "Pathology",
+      "id": "ba355c40850732135df8a8e2fceef540c13552d0ffab3462ba9be91fa66aabfb3940a0b3c185ce8847f989680db80258c3443327d36fd591a32da92a8abcc8c7",
+      "name": "Endothelial dysfunction",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(HP:\"Myocardial infarction\")",
+      "function": "Pathology",
+      "id": "f0fe6e368a615ad411a91f3574daff3b305f5937612e11e5a4c8eff09f291ea9532b729d4e99178ddb6832fa8790e04e7fbac101a8bd48109dbc616922956e18",
+      "name": "Myocardial infarction",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(MESH:\"Vascular System Injuries\")",
+      "function": "Pathology",
+      "id": "2c1dc10562090ab803cf25bbb0eaa83a64b75c8750bd549df2e66f6f3545a54bd009fd5c1a689c5489abb49876de701c8542c0c371e00e4420f455faa8fff57a",
+      "name": "Vascular System Injuries",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Thrombosis)",
+      "function": "Pathology",
+      "id": "b8739fcb57aeef4e74a351a9a6298e8d50bd9a172d37973c9c286907a2c6f131a06ff7070db9641962cc62043cd6e64ab2361b9c3e0adde501b1f69294ea5490",
+      "name": "Thrombosis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "rxn(reactants(a(CHEBI:superoxide), p(HGNC:HBB)), products(a(CHEBI:\"hydrogen peroxide\")))",
+      "function": "Reaction",
+      "id": "28f7622284b7128db37454f6676d6ab4cefc9a10b2e0a2cd340c9d4f2dd5826ae7d4f4a11d41df6929f906d13df68358c66a3f855aa093d74e8d3802ff28a49b",
+      "products": [
+        {
+          "bel": "a(CHEBI:\"hydrogen peroxide\")",
+          "function": "Abundance",
+          "id": "4d65b5d180890b98afe0bc10614fde44ee750b2d1af6fdd925fc31ead7ee9a7248bda3d67c52aebf220b8c048d999f2d878a97a70b0e027a7294cbd3c7bf61bf",
+          "name": "hydrogen peroxide",
+          "namespace": "CHEBI"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(CHEBI:superoxide)",
+          "function": "Abundance",
+          "id": "ed3ac1e9301fd508195472cf5c9e0ffe33baed921bb114f59f003bda692d466b1b57b05211ca84118e55ea8dfd5855f1ff5c8cc781ae4a76bb62202fe55a9124",
+          "name": "superoxide",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "p(HGNC:HBB)",
+          "function": "Protein",
+          "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+          "name": "HBB",
+          "namespace": "HGNC"
+        }
+      ]
+    }
+  ]
+}

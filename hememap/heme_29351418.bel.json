@@ -1,0 +1,2122 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_29351418.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_29351418.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Moderate anemia is associated with increased mortality and morbidity, including acute kidney injury (AKI), in surgical patients.",
+      "key": "c00f2ce4e7d29768268d1e1c2bc5982535665cfce7ddd560f79ca0761a475d8f994c876f5e0b3d79a9fea463ed1f46ae08bb4fbba4b9d56b4a7f66d017a657d2",
+      "line": 93,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Anemia has been associated with an increased risk of acute kidney injury (AKI) (17, 18, 20, 27, 28), stroke (17, 20, 27), myocardial events (6, 11, 20, 28, 47), and mortality (1, 2, 10, 11, 17, 20, 27, 28, 36, 45, 47) in patients undergoing surgery.",
+      "key": "7dec197cd731c53e92e3811d33ff2d012bdbb7533d9b2d0aac6b38c73b6bf726a8611360144f9013b51dd0e06dbdde9bd8b4f6697463cee0fa75585b7612b0bc",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Moderate anemia is associated with increased mortality and morbidity, including acute kidney injury (AKI), in surgical patients.",
+      "key": "5cc5ada50d6fc626e9537c76a24ca718bca7b4faf4720b293ce3420ac922c8392f0098d5b8cfbf9b6a276b3a22666e3a1fcef8a44d2980e37fc6ea6b1e2d3de2",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Moderate anemia is associated with increased mortality and morbidity, including acute kidney injury (AKI), in surgical patients.",
+      "key": "4491509b16673ea751aeb2a70bb42123c340c624e6c6b62d384c318a7f14407d198d0245456243518ef8bc29ba07f513914b956e2e5aaff7d6f015754fcfbdf3",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Anemia has been associated with an increased risk of acute kidney injury (AKI) (17, 18, 20, 27, 28), stroke (17, 20, 27), myocardial events (6, 11, 20, 28, 47), and mortality (1, 2, 10, 11, 17, 20, 27, 28, 36, 45, 47) in patients undergoing surgery.",
+      "key": "3bc41f37ab63ad0762f180e407ef041edf0e5cf3f5764636e160fe97f58a390f06a9f05c0a755a9777dbbf004968c6fa3a27003b9839fb9a74862e2c793079c1",
+      "line": 105,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Surprisingly, even moderate levels of preoperative anemia [hemoglobin (Hb) concentrations between 80 and 100 g/l] have been associated with an increased risk of renal injury {odds ratio (OR): 1.38 [95% confidence interval (CI) 1.18 –1.62], P \u0004 0.05} (28).",
+      "key": "e3b1d8accb482fee5e2edf9c593238df10fb1d445b59c3458d2cf7ba98ebe88f4a941add338c80964b40e16c8ab25c16fbf13264d5b76754ec4c2d5ccf8eaa69",
+      "line": 114,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "In perioperative medicine, there is a clear association between preoperative anemia and AKI in noncardiac and cardiac surgery (17, 18, 20, 28).",
+      "key": "b89ecb9fb2ce3d9fef17064adb45d02782643db901018207acf9fa7110e6c1f67e2551798e851512e40536aa77cfc17026337a99ce2b32cf86593ae9fbe7819e",
+      "line": 262,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Anemia has been associated with an increased risk of acute kidney injury (AKI) (17, 18, 20, 27, 28), stroke (17, 20, 27), myocardial events (6, 11, 20, 28, 47), and mortality (1, 2, 10, 11, 17, 20, 27, 28, 36, 45, 47) in patients undergoing surgery.",
+      "key": "0b80d1f928eda7bfea67c99956964968e2e15ff618762bad5a67da493ec4dc87c40ea6c9dd86797588ae7f4e7b30bbc7100e9db99b475a8f0e19c38dbdae0858",
+      "line": 106,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "By day 1 following injection, plasma Hb concentrations in the anemia group were reduced to 0.5 \u0003 0.3 g/l, which was not significantly different from the control value of 0.5 \u0003 0.3 g/l (n \u0005 6, unadjusted P \u0005 0.93; Fig. 3A).",
+      "key": "5e75b98baea35d573940852f92dc03baf2998198c497812e79c8717ac29c50905ec5a638cbdd5c7b43b03f425dd192372bab8c94a071f7af0082fd6a46bf4a61",
+      "line": 136,
+      "relation": "decreases",
+      "source": 17,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "SpO2 values increased in anemic mice (n \u0005 6) from a baseline value of 97.1 \u0003 0.6% to a day 3 value of 98.1 \u0003 0.2 and a day 4 value of 97.8 \u0003 0.4% (n \u0005 6, unadjusted P \u0005 0.02, adjusted P \u0004 0.05; Fig. 4). Day 4 SpO2 values were higher than a control value of 97.0 \u0003 0.8% (n \u0005 6; unadjusted P \u0005 0.01, adjusted P \u0004 0.05).",
+      "key": "8c37a9c5151a482c4b39373ccb4ef0bb2eccacfffadb815dd816784d224f34e6702b4deebc14bc22f5b175212fa550883ddffb1e7b5ef86e70014d6d2ed45071",
+      "line": 145,
+      "relation": "increases",
+      "source": 17,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Internal carotid artery flow increased from a baseline value of 0.3 \u0003 0.1 ml/min to 0.6 \u0003 0.1 ml/min during anemia (unadjusted P \u0004 0.001, adjusted P \u0004 0.001; Fig. 5).",
+      "key": "075fea059da6403ff3a43710760a0442934595be79b38c48696983dfe2a20d543fbeba5b00b9506a34f76c064d3cde75b26e52f69aa924863b23056b56b0a2d7",
+      "line": 152,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "increases",
+      "source": 17,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "During anemia, kidney PtO2 was reduced to a value of 13.1 \u0003 4.3 mmHg (n \u0005 10) compared with a control value of 20.8 \u0003 3.7 mmHg (n \u0005 14; P \u0004 0.001; Fig. 6).",
+      "key": "33071a6b2e16116d1256f7fb2f55d151e17af6117322f159db9b501bf0040035313314d77758b89053e00d98c9b2d0b0d6bf1c1db6ab3778fed07cee49401f1b",
+      "line": 159,
+      "relation": "decreases",
+      "source": 17,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Brain": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Brain PtO2 of anemic mice was 22.7 \u0003 5.2 mmHg (n \u0005 13), which was not significantly different from a control value of 23.4 \u0003 9.8 mmHg (n \u0005 14, P \u0005 0.59).",
+      "key": "04e9dab7f85a438da2aafd07fcf2b0daeabe7c49025bf271a8101a07ee3849319cfd3b9c8597cd50336eab05bcb5e0ebf1a84cb44ebb44e8e7353a79ab0b700f",
+      "line": 167,
+      "relation": "causesNoChange",
+      "source": 17,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true,
+          "Liver": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "D). “Right kidney \u0006 liver region” HIF/luciferase radiance increased from a baseline value of 5.30 107 \u0003 1.23 107 p/s to a day 4 value of 6.72 107 \u0003 1.63 107 p/s (unadjusted P \u0005 0.01, adjusted P \u0005 0.04; Fig. 7E).",
+      "key": "eb2f14079ad6728e4f21c64c8cf006a13aed9998d9c65570f17d560dc19d9549ba6136ca6b0558aff9e06a131378f82fbd043064a6cb1cc88ebbcaf57646b912",
+      "line": 179,
+      "relation": "increases",
+      "source": 17,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true,
+          "Liver": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "“Gut region” HIF/luciferase radiance at the day 4 time point was 4.38 108 \u0003 4.00 108 p/s, which was higher than a control value of 2.36 108 \u0003 0.93 108 p/s (unadjusted P \u0004 0.001, adjusted P \u0004 0.001; Fig. 8E).",
+      "key": "15b04fe46b859be7ae708b6045f22aa4b209c8b82c7f48ea7011809c79dd8eea9b543e7751fb4f46f883606611d7027158b03ff7292fc9db86cffc0ea63b710d",
+      "line": 190,
+      "relation": "increases",
+      "source": 17,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true,
+          "Liver": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "In addition, change in day 4 gut region HIF/luciferase radiance values from baseline in anemic mice was 1.68 108 \u0003 3.48 108 p/s, which was higher than a control value of       1.08 108 \u0003 1.28 108 p/s (P \u0005 0.02).",
+      "key": "597cda7b2448b6e04d1de3a301dde23e0b76a83c6cede2d7e67418abe531d7f10fe176377f2da7e0b2447a6411c384fc93c550c577fcb2ce9d592af5bc7a996d",
+      "line": 202,
+      "relation": "increases",
+      "source": 17,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "During anemia (n \u0005 6), kidney EPO mRNA transcription increased 20-fold relative to control mice (n \u0005 5, P \u0004 0.001; Fig. 9A).",
+      "key": "615132df36abb0e3792558e37db824681b910303308ffec8b4e84504f320f1acc2ada27d3b599d7aa133b7913d5412e20034de6d667653ffdca5e53b0b2a7305",
+      "line": 209,
+      "object": {
+        "effect": {
+          "name": "tscript",
+          "namespace": "bel"
+        },
+        "modifier": "Activity"
+      },
+      "relation": "increases",
+      "source": 17,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Heart": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Heart EPO mRNA transcription was not significantly different in anemic mice relative to control mice (P \u0005 0.35).",
+      "key": "a93be44db1e68e6d7a01cc3bf889d359995b1ece300295757cef74d4028560cd31dbd07ed8839dd20b4d813bbc8a84024d759ba33b42c635f522a15f92519a09",
+      "line": 215,
+      "object": {
+        "effect": {
+          "name": "tscript",
+          "namespace": "bel"
+        },
+        "modifier": "Activity"
+      },
+      "relation": "causesNoChange",
+      "source": 17,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Brain": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Despite the preserved tissue PO2 level during subacute anemia, we demonstrated an increase in HIF-dependent mRNA levels of EPO, HO-1, and GAPDH. This finding is consistent with other experimental studies that have also demonstrated increases in HIF-dependent mRNA expression in the absence of a clear reduction in brain PtO2 (12, 23).",
+      "key": "93d5a0728920fec84a5912a93bb56b10c8605bf176a5c3ac44493d01c7ec5d4657dd6c63466b7ad94c927e1c7c5c53f166290230a31a9ce04efc4f57ea66a3a1",
+      "line": 290,
+      "relation": "increases",
+      "source": 17,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Brain": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Brain HO-1 mRNA levels increased by 38% in anemic mice relative to control mice (P \u0005 0.01), and GAPDH mRNA levels increased by 18% in anemic mice relative to control mice (P \u0005 0.002; Fig. 9B).",
+      "key": "a9ea263c27330646e10b50b230854a24f5ff73d14ba15c90204f595adb2aa3378dfce79a8e23a55ff0464558ef6e76d4fd97578a4bdc857032257bbbafb2b6dc",
+      "line": 224,
+      "relation": "increases",
+      "source": 17,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Brain": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Despite the preserved tissue PO2 level during subacute anemia, we demonstrated an increase in HIF-dependent mRNA levels of EPO, HO-1, and GAPDH. This finding is consistent with other experimental studies that have also demonstrated increases in HIF-dependent mRNA expression in the absence of a clear reduction in brain PtO2 (12, 23).",
+      "key": "f781be9c500236ab1d50daf3ea2bf4585d34a1e9fcc52688ec61cf14a7963e55967208ce6e5f379de236baf212f59b2173a9c90e951005cc2f9e7677d3316319",
+      "line": 291,
+      "relation": "increases",
+      "source": 17,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Brain": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Brain HO-1 mRNA levels increased by 38% in anemic mice relative to control mice (P \u0005 0.01), and GAPDH mRNA levels increased by 18% in anemic mice relative to control mice (P \u0005 0.002; Fig. 9B).",
+      "key": "57e908fd0b048709095a3d4c3b9dbb831c45e3173ee5780d0437241c4e1fd27ea888c6eadc3c3aa74b2242fdd530f73a24df72f5d2cf37369d366d0a2fb8bae8",
+      "line": 225,
+      "relation": "increases",
+      "source": 17,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Brain": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Despite the preserved tissue PO2 level during subacute anemia, we demonstrated an increase in HIF-dependent mRNA levels of EPO, HO-1, and GAPDH. This finding is consistent with other experimental studies that have also demonstrated increases in HIF-dependent mRNA expression in the absence of a clear reduction in brain PtO2 (12, 23).",
+      "key": "f78cb54470f6d90fae76d88e3f085daa03bd4eb7c3d95ee9917bc7cba1d92b21815a496db315413aaf5e77bea631c9bd415949cc26534795c04af9dc0b3beb5b",
+      "line": 292,
+      "relation": "increases",
+      "source": 17,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Our experimental data provided clear evidence that moderate subacute anemia resulted in a profound level of renal tissue hypoxia, as characterized by a reduction in kidney PtO2, an increase in regional HIF/luciferase radiance in vivo, and a substantial increase in EPO mRNA level at a Hb concentration consistent with moderate anemia (90 g/l).",
+      "key": "9a9f05274d6c341a1352f44263f694cdd098bc5315e7b20be1b10173b54284af7756dad0a08c6db5e7404b73d09b97ba92f6ab0c17e95e2538a745623a680351",
+      "line": 238,
+      "relation": "increases",
+      "source": 17,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Moderate anemia is associated with increased mortality and morbidity, including acute kidney injury (AKI), in surgical patients.",
+      "key": "80642088fb192ac50f7d1791b3424e04a015a00580d3df6be0e966c48db62d4f321bbee85372e51ac6890518bf6c4b759c6dc8db726090b95d58f3e716c3de4a",
+      "line": 93,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Anemia has been associated with an increased risk of acute kidney injury (AKI) (17, 18, 20, 27, 28), stroke (17, 20, 27), myocardial events (6, 11, 20, 28, 47), and mortality (1, 2, 10, 11, 17, 20, 27, 28, 36, 45, 47) in patients undergoing surgery.",
+      "key": "391c1db4269ab75827d87807c4f481771b0b9e8c6d88ea1dad3665a1afa69ec5e63aeb0869f4bda764893ab9f040ecf5fb462cb02b967acda2f570539a338ab1",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Moderate anemia is associated with increased mortality and morbidity, including acute kidney injury (AKI), in surgical patients.",
+      "key": "4029770fda6c5434edc47f9cf33138069eebbf665ef58e7ba9ee05d1389760ef042346640d20ec7c2a419f759f868bc8d446a5e2518c597bfb7b0d5252125b7e",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Moderate anemia is associated with increased mortality and morbidity, including acute kidney injury (AKI), in surgical patients.",
+      "key": "a4058346b8943570736e2e8d011b76efe2a21410eec22385af735fe973ac9dc20295f5e152cf37e3178246e3a7626e64f107fd7c8461fdc0ea7e39e33c459e11",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Anemia has been associated with an increased risk of acute kidney injury (AKI) (17, 18, 20, 27, 28), stroke (17, 20, 27), myocardial events (6, 11, 20, 28, 47), and mortality (1, 2, 10, 11, 17, 20, 27, 28, 36, 45, 47) in patients undergoing surgery.",
+      "key": "bc7e8971fe5d4150db4b26142e44ede1af1f80eecb5949bd1b282034ec8b40b242ab7f39417a4a6a04b4bd3a43962e734d0f5c98c6ff43aee97465aed131fe29",
+      "line": 105,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Surprisingly, even moderate levels of preoperative anemia [hemoglobin (Hb) concentrations between 80 and 100 g/l] have been associated with an increased risk of renal injury {odds ratio (OR): 1.38 [95% confidence interval (CI) 1.18 –1.62], P \u0004 0.05} (28).",
+      "key": "fb997053ab60b81241587442ae21bf97faedb57c396655e3894bb91fcd81909c3257f8f9d4da90f75d648901fd671603610c73a11f2ff1885127c8f15f6e108d",
+      "line": 114,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "In perioperative medicine, there is a clear association between preoperative anemia and AKI in noncardiac and cardiac surgery (17, 18, 20, 28).",
+      "key": "59b4dc5967ab8b4773035e204ef99a0ff0b643950c711fe483e40fce5c00e255e1564ab4a4cd01c9754f3d675fc6fa772ace44e2a0657eeab87db5826385568d",
+      "line": 262,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Anemia has been associated with an increased risk of acute kidney injury (AKI) (17, 18, 20, 27, 28), stroke (17, 20, 27), myocardial events (6, 11, 20, 28, 47), and mortality (1, 2, 10, 11, 17, 20, 27, 28, 36, 45, 47) in patients undergoing surgery.",
+      "key": "a0cc4b9322893c3379cf384bc7f3e2a46658c45a736d3075457e3caf447bad4c57a31e98bfc76e1af8754e85b04da670073b356380412528643301465a35007b",
+      "line": 106,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "By contrast, no or limited increases in renal blood flow are observed during acute hemodilution (15, 42), leading to earlier and more severe renal tissue hypoxia (5, 38), and an increase in the magnitude of hypoxia signaling responses, including stabilization of the transcription factor hypoxia- inducible factor-\u0002 (HIF-\u0002) (42, 43).",
+      "key": "3682f4d5e3c264530b11c9d4ae57b3026544c415c9c8fb693ad015196b9c0409cf500f72139803ab960590d8037d2a029376e5592b5db7e104383dfb0954f8ff",
+      "line": 124,
+      "relation": "increases",
+      "source": 6,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "The absent or relatively small increase in renal blood flow likely contributed to the occurrence of renal tissue hypoxia in both models.",
+      "key": "9ba0cc0d985c1e99c20c0b2c7386bdcd964375c945b2667c5d25810ef4f14791a518268b9666ae32956bb9a0bb3667dea1e6388e91f1f2756ed66c6beff3c321",
+      "line": 245,
+      "relation": "increases",
+      "source": 6,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "The renal blood flow response to anemia is proportionally much smaller than the increase observed in cerebral blood flow (50–100%). This relative difference in organ blood flow likely explains why the kidney becomes profoundly hypoxic, whereas brain oxygenation is largely preserved during anemia (12, 32, 42).",
+      "key": "27f271402726f731f29f133dc91c2722ac6e9b490c25885ca1e1b271bf6bde7850e6d99682f1e6f0ef563bf6a6e42af83be1bd04ec22c80f17753cb14b438bbc",
+      "line": 256,
+      "relation": "increases",
+      "source": 6,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "Our data provided clear evidence of renal tissue hypoxia, which was in part due to a lack of increase in renal blood flow.",
+      "key": "8032cc5f01ebe4c722506258b2bf0903dfbe328e02ecb6ad9599e91cee9d88d77d66a59b6d25534d59cc7deb6e58567bd2a6a292c427cefe2fa89c2496725d17",
+      "line": 305,
+      "relation": "increases",
+      "source": 6,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "By contrast, no or limited increases in renal blood flow are observed during acute hemodilution (15, 42), leading to earlier and more severe renal tissue hypoxia (5, 38), and an increase in the magnitude of hypoxia signaling responses, including stabilization of the transcription factor hypoxia- inducible factor-\u0002 (HIF-\u0002) (42, 43).",
+      "key": "128d6da1ac332182bfe6fe69be1d1f1407aa1c5e219988992890cf9c10600507c8a0711579bcfe6b6479146fedb0bdbe73db7398c13c74c06bf6d1aef9140400",
+      "line": 125,
+      "relation": "increases",
+      "source": 6,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "However, as reviewed above, several experimental tal studies and our new data have demonstrated that both acute and subacute anemia are associated with renal tissue hypoxia (5, 38, 41, 43).",
+      "key": "0f708f75cc6e3acc68eaf5c4dbe6dda36e6ec4bfa088623498c817d58e0d97409655fb41de87e0c46ab72c0840c4201942d1b281044962f2ea84e9dc2a879c7d",
+      "line": 270,
+      "relation": "positiveCorrelation",
+      "source": 18,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "However, as reviewed above, several experimental tal studies and our new data have demonstrated that both acute and subacute anemia are associated with renal tissue hypoxia (5, 38, 41, 43).",
+      "key": "2ad49af8bbdd92ed2e21bf1286e5a3020d44dc4ae98cf0789fbca895cde0303b41816f693b92c22a4b878b3d88a8c7bf45e3f7529497bfecaca0fbf57d33e550",
+      "line": 271,
+      "relation": "positiveCorrelation",
+      "source": 18,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "We observed a mild degree of plasma hypoxia could lead to organ injury.",
+      "key": "b7f2d6b3eb5d41971b9c0882a8d28233dbbfb70c2425509410c02ac92dd2794a460e0aa7b71a55f98418e4d7cbc6930be4765137fb15aed7f6d44611fbbcfbd5",
+      "line": 298,
+      "relation": "increases",
+      "source": 18,
+      "target": 14
+    },
+    {
+      "key": "6e36045033f6d65ef4d310351afad690fdcb73ee71d1e9d7a0951945b10f14e4789e4c111b9bb1edc80e0bc2b05b1513bd67f9382942f9225779d671e9a94d87",
+      "relation": "hasComponent",
+      "source": 8,
+      "target": 3
+    },
+    {
+      "key": "a81c258b2755fb83a291e6f347b0e95235034df466cba8c6569f32896fe2e1a496e6e538a66774e96233c564bbd6c5df101a5d2a19b81c308f2a7a2e9fe7c5ca",
+      "relation": "hasComponent",
+      "source": 8,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "However, as reviewed above, several experimental tal studies and our new data have demonstrated that both acute and subacute anemia are associated with renal tissue hypoxia (5, 38, 41, 43).",
+      "key": "acd8d9349d1dcf65127241c9134590c9358e67db1039513a8246aef2feb4a023709ac943813797389a18a0440045335066ebbe4a1b343078b6a72148c3b8f92f",
+      "line": 270,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Kidney": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "However, as reviewed above, several experimental tal studies and our new data have demonstrated that both acute and subacute anemia are associated with renal tissue hypoxia (5, 38, 41, 43).",
+      "key": "10467b6d8bc6971eccc78e1e32ae953c4d258837b7ce25a049b2882cc59bce9fed37a18430cd542ead837800970f23851d30398d6de173cacb4db167ddf99340",
+      "line": 271,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Cerebrum": true
+        },
+        "MeSHDisease": {
+          "Anemia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brunt KR",
+          "Cahill LS",
+          "Doctor A",
+          "Fisher JA",
+          "Hare AGM",
+          "Hare GMT",
+          "Lazarus AH",
+          "Mazer CD",
+          "Mistry N",
+          "Romanova N",
+          "Simpson JA",
+          "Sled JG",
+          "Solish M",
+          "Zhou YQ"
+        ],
+        "date": "2018-04-01",
+        "first": "Mistry N",
+        "last": "Hare GMT",
+        "name": "American journal of physiology. Regulatory, integrative and comparative physiology",
+        "pages": "R611-R622",
+        "reference": "29351418",
+        "title": "Red blood cell antibody-induced anemia causes differential degrees of tissue hypoxia in kidney and brain.",
+        "type": "PubMed",
+        "volume": "314"
+      },
+      "evidence": "The preferential adaptive increase in cerebral blood flow has also been demonstrated in other models of anemia, including acute hemodilution and chronic sickle cell anemia (3, 41).",
+      "key": "35b083aab998cea530b98305534e759a0accd075b9ab149d544bff6bdb324d48a48710a7a9bc42c4d675d7f51a17aad983f4170605f19bce184f68c5f858e815",
+      "line": 279,
+      "relation": "increases",
+      "source": 16,
+      "target": 7
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(MESH:\"Blood Gas Monitoring, Transcutaneous\")",
+      "function": "Abundance",
+      "id": "ffcb13884b0fae0c442359bbd17a22fc582d3e0c4b9935040c1c1be2c188f8707b16132c58b62c6fee36481c09babd8f0a2ba87b24301cfa5feb3ad5061f55e4",
+      "name": "Blood Gas Monitoring, Transcutaneous",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Carotid Artery, Internal\")",
+      "function": "Abundance",
+      "id": "d07482c0ae2c324aaf7b431bc5b41dbbff73e6bab8c8b9e5fe94aee5b33e1c28b0d59aeaaf1ba31d5c9c3a5ace7086abbc82f6b602e7de4a5e5116a5fa1244a1",
+      "name": "Carotid Artery, Internal",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Partial Pressure\")",
+      "function": "Abundance",
+      "id": "52bd6ce7bf7e472bba9cfbb139c4b687a0b23ce4d5d1aedf45d9215208ee916b7c3033c97a3dc35f934830f6b3295f86fe87248d217f41037363a7862114be66",
+      "name": "Partial Pressure",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Luciferases)",
+      "function": "Abundance",
+      "id": "795572baa30f3bb8b83da3a53e87b876ab7561d90361902f8d6e12d8e7d2a3c41e526f4a815d33ecb2f5e47ea74a3b196359aa42cd8d14df128eac7b666fbab1",
+      "name": "Luciferases",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Morbidity)",
+      "function": "Abundance",
+      "id": "070639d2c49b2a6275ff2612a41ad7d7c0aa46a62d814a8bb8c6956b76c5295040510f479a8d6882b8e98eb3993d1581c50acc26cea0acc6c6512cb8138bf507",
+      "name": "Morbidity",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Mortality)",
+      "function": "Abundance",
+      "id": "1f4c6dc63d196b6c618e0b3d081471d4e45c8b2a5e3620ef75e7e45d0daae2bc23a408e7e0019e9c809de18a1c0dbda7c8ae872dc892fbaa8b33d8e266919eda",
+      "name": "Mortality",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(HM:\"Renal Blood Flow, limited\")",
+      "function": "BiologicalProcess",
+      "id": "0d7959e38fa00e1757a08011813c30f9991d52647d9dea3f75862c1a3e9070a4c07ec91d1ab58d10d50db4df8871371e3121ffff59af934a89ec4bcdc7e5e11c",
+      "name": "Renal Blood Flow, limited",
+      "namespace": "HM"
+    },
+    {
+      "bel": "bp(MESH:\"Regional Blood Flow\")",
+      "function": "BiologicalProcess",
+      "id": "8a465c6813b2fa94b1b8ef4c20f3c7dd8805a41ee3e164ebd1c3c6605555d7dcb440630f3d10a0fbaa66fdd0a763dc2b79d6b8cb894f767b79a3e9fb3a9ebe95",
+      "name": "Regional Blood Flow",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "complex(a(MESH:Luciferases), p(MGI:Hif1a))",
+      "function": "Complex",
+      "id": "8b525ea0cc0f0404289968c890c18f81d92120b626d555297f1afd89256245d3f0b130623bf5d3aa149fdccaf2838767bf32386b9d3b9f67531f489689b550d7",
+      "members": [
+        {
+          "bel": "a(MESH:Luciferases)",
+          "function": "Abundance",
+          "id": "795572baa30f3bb8b83da3a53e87b876ab7561d90361902f8d6e12d8e7d2a3c41e526f4a815d33ecb2f5e47ea74a3b196359aa42cd8d14df128eac7b666fbab1",
+          "name": "Luciferases",
+          "namespace": "MESH"
+        },
+        {
+          "bel": "p(MGI:Hif1a)",
+          "function": "Protein",
+          "id": "3637703f3410343338309da05d6904a85523490c1f8a214a9df4d88499e4ee385d5ea024769ad3918a55b91341358628b1ded61d2517705d63c02c61c51dc9d5",
+          "name": "Hif1a",
+          "namespace": "MGI"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HIF1A)",
+      "function": "Protein",
+      "id": "f9c611a1f6fb273e7e230b824b28f6e2db9c0695eb0cdef83f6203f283eac055f6775e9c9a8d7404df7753eb9be775dbe87f0bcf44be60365d03987dd22d990b",
+      "name": "HIF1A",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(MGI:Hif1a)",
+      "function": "Protein",
+      "id": "3637703f3410343338309da05d6904a85523490c1f8a214a9df4d88499e4ee385d5ea024769ad3918a55b91341358628b1ded61d2517705d63c02c61c51dc9d5",
+      "name": "Hif1a",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "path(HM:\"Anemia, acute\")",
+      "function": "Pathology",
+      "id": "413dec6d46b7ef142ece8f7fb68561f06b1ed115b3a29ece920c0f7bca809ae94581838464d9667331bf6e6a642ae31b05ab390a22f23ffff11ce16ea083f08e",
+      "name": "Anemia, acute",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(HM:\"Anemia, subacute\")",
+      "function": "Pathology",
+      "id": "341b454915f90649fdd63cc515105f7c1dea1002f18a06b34a19066ad78b64d1ec79eb257cfed44825bc2e7396205d26ccb26f2636890af01babb54e7aab6cef",
+      "name": "Anemia, subacute",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(HM:\"Organ Dysfunction\")",
+      "function": "Pathology",
+      "id": "e56bd065c667ea40e13e757883457e0b0e8ac7735714921d1f953d6d270de0a4f8f6a1308b5172ff5bc3c481491eb25a40664edf5b74e87a7ff7b81566b68589",
+      "name": "Organ Dysfunction",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(MESH:\"Acute Kidney Injury\")",
+      "function": "Pathology",
+      "id": "ceb5d050086a580ed32495afbc5cf4c4ce723f0ea5ef95dd84871b5872a9f6ef15e59ad7ca9c102b3571006fef03926e656ebc78e07934b1ab539c8d5d6b7b90",
+      "name": "Acute Kidney Injury",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Anemia, Sickle Cell\")",
+      "function": "Pathology",
+      "id": "edec8b7dad84d51e332f9eadc2a53b392a4a9b5a362b9cbe0276afc5a2618ad33d944f511fe99ba7d9be1b08a451229d57e7aa4606f64d46c1900e28980d0c79",
+      "name": "Anemia, Sickle Cell",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Anemia)",
+      "function": "Pathology",
+      "id": "912b35fb5957bc2375ac505209e5d02b092ce92555ebd2b0a077a97723ef9a373ed7b3954ab9031f2cdfbf7f0d8e0f833c9c9ded55ae4090d23a7ab163fbc6f4",
+      "name": "Anemia",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hypoxia)",
+      "function": "Pathology",
+      "id": "fc2c9bedd0c62ffbd4fb1303ba3bf063881eb2b4ec7e3e9cab410ced5b1025f1624066dbb0c9b1d2de6db576f66367b9956407baf3ec647fbb60fd953b149949",
+      "name": "Hypoxia",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Stroke)",
+      "function": "Pathology",
+      "id": "891ab955a87bc07f1aca17a8812fdb154648daf1fd922711f2b3ce7825285f2b5d94f7fa3bd825edd47463578b3269c30eacdafa276ffdb595f10127366aa95d",
+      "name": "Stroke",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "r(MGI:Epo)",
+      "function": "RNA",
+      "id": "8ebbfeb23dd16681aad134361781cdfefd50b35ff560e778237fc8804a02fc44214607620655af92bf233470c11502de0a02435b6d08119bb22aaddf26afbf9a",
+      "name": "Epo",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "r(MGI:Gapdh)",
+      "function": "RNA",
+      "id": "3658c7a3c9528e8896e6848d9782f822bcbcee67ad506a2286a5dfca774012b718b252013e56057fb640d97d288a767a74445202a83da22a52f01097aee81b40",
+      "name": "Gapdh",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "r(MGI:Hmox1)",
+      "function": "RNA",
+      "id": "2428a92597c8a319f08d1e8742a3da445addd86bdbb87214f0d9045d03e48dac5c9d46c0ca216cfd60961af413f530c21ff1f1650ad7282ad49c47afe9464fd6",
+      "name": "Hmox1",
+      "namespace": "MGI"
+    }
+  ]
+}

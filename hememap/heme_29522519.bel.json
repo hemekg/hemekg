@@ -1,0 +1,1685 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_29522519.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_29522519.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "20 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "However, mortality significantly increased in mice resuscitated with stored RBCs (median survival 8 h, n = 9), with all mice dying within 20 h of PAK instillation (Fig 1C).",
+      "key": "b47f027e6b29117075cf6f51d9441dea3f11edca8b41d883b0c1ef5116fa98eae0ac619f347648fc44c2c77c32d96b72c6492036aa04b5531f157f296a30536d",
+      "line": 92,
+      "relation": "increases",
+      "source": 4,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "20 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Pulmonary edema approximately doubled (Fig 1D), and lung bacterial CFUs significantly increased (Fig 1E) in mice resuscitated with stored RBCs compared to those that received fresh RBCs.",
+      "key": "e09f1fca49912107b58d5c736f1ed5e48a76db50a2c672ccd85c3fc684488c4a9246db3347415d53dae029fdb7bec727d4a2885f8157e380509756e0cebc3ad2",
+      "line": 98,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "TH and resuscitation with stored compared to fresh RBCs not only caused increased mortality but also significantly increased the severity of pulmonary edema induced by P. aeruginosa pneumonia (Fig 1D).",
+      "key": "e985e5036b19409556d9ed6baea1d4fe722fe233981290f9ad897335dfa2e92a7bb88ba1b47e28f65f8d30c60b248c5bc5320943475c6dace85b1032a128ddcf",
+      "line": 141,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "20 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Pulmonary edema approximately doubled (Fig 1D), and lung bacterial CFUs significantly increased (Fig 1E) in mice resuscitated with stored RBCs compared to those that received fresh RBCs.",
+      "key": "8fc3a2fb73223d43b891b08819f449a21d8c676b03353237f7b7455008f6bf01e392bf71f44da90e55a72a65e251337f6db6ce970f7ef8f587db95610c546987",
+      "line": 99,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Consistent with our previous studies [25,36], free oxyHb, metHb, and heme levels were increased after 14 d of RBC storage, being 930 ± 125 μM, 40.3 ± 8.8 μM, and 168 ± 44.7 μM, respectively (mean ± SEM, n = 7).",
+      "key": "eaafe7b92db21e71eaaa6a5acfeaead8fb85428236be04b6707ba37a75cd0bccd49e693e94c56cf008512891cecb6065b1e7ba6cb7120188e57328df84c11d3a",
+      "line": 106,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Fig 2 shows that free hemoglobin and free heme were higher 4 h after resuscitation with stored RBCs compared to fresh RBCs (n = 3±7 as indicated); NTBI level was also higher, but this difference did not reach statistical significance (p = 0.07).",
+      "key": "e1e7a63958a29cf126113fb1cb4b0a91f4c724f20d0e53a22cdfe41926d52e425c11a3e0b240831013d478240d8f3be6a289b918153f7f56e980433f34cea8e2",
+      "line": 115,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Consistent with our previous studies [25,36], free oxyHb, metHb, and heme levels were increased after 14 d of RBC storage, being 930 ± 125 μM, 40.3 ± 8.8 μM, and 168 ± 44.7 μM, respectively (mean ± SEM, n = 7).",
+      "key": "7f43efdd1369477588c711ae06c6210e9d123de9a326f9983ad1a77be05d948163d8f99fc4070469717f253580198a56d4094cc971b322a90912b74c8d462b50",
+      "line": 107,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Consistent with our previous studies [25,36], free oxyHb, metHb, and heme levels were increased after 14 d of RBC storage, being 930 ± 125 μM, 40.3 ± 8.8 μM, and 168 ± 44.7 μM, respectively (mean ± SEM, n = 7).",
+      "key": "e79d8675fc631533153b75f81a7be20809eb80ea1287685f84a57c790b56ac1778054d8b91d80112822972ad1842291a6058f1b05efc6321aa426d1dbfe1e68e",
+      "line": 108,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Fig 2 shows that free hemoglobin and free heme were higher 4 h after resuscitation with stored RBCs compared to fresh RBCs (n = 3±7 as indicated); NTBI level was also higher, but this difference did not reach statistical significance (p = 0.07).",
+      "key": "4bc445e98214eded667aecdbcbfca3a8b068e73629c3de98493588cfc2474f0aaace9ff3c5fc408f5db6e60703a2e65e4437a850ef21604d1893a6afd3a1eda3",
+      "line": 116,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Fig 2 shows that free hemoglobin and free heme were higher 4 h after resuscitation with stored RBCs compared to fresh RBCs (n = 3±7 as indicated); NTBI level was also higher, but this difference did not reach statistical significance (p = 0.07).",
+      "key": "2582ff892d6be67e3696df6cfd9901609984ca21df91a81076064e2d6c26370c37de3fc3747ea535cd400098aa3f68704371b2dbd06a822fb826bd6a526f5be9",
+      "line": 117,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Fig 5A shows that extracellular serum levels of HMGB1 were approximately 5-fold higher in mice (n = 3) resuscitated with stored RBCs compared to mice resuscitated fresh RBCs.",
+      "key": "a5aea3d3db3c18c1904860d3a6e9886ebbed65a05f3411f5cc2eabd515e12772a8634d53fd854ae48e85529456a58baed4caef7976486b837e2452a470eb7f20",
+      "line": 147,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Our findings using a mouse model of trauma and hemorrhagic shock with stored blood transfusion and subsequent PAK instillation demonstrate that transfusion with older stored RBCs increases the severity of bacterial pneumonia.",
+      "key": "39cf54f0aebc08e79b95823bd0057d1e4316cab1e9d4ef09d0f73ade84eedd2bb52cd2b14e7de9f9060fb8b0944f79974e8d4127e012c0998ba9a2dd1ff7c7c8",
+      "line": 169,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "20 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Pulmonary edema approximately doubled (Fig 1D), and lung bacterial CFUs significantly increased (Fig 1E) in mice resuscitated with stored RBCs compared to those that received fresh RBCs.",
+      "key": "1ccb7029f1698cf78f596dbd10e82257d826c3450bfe222cab404dfddc488cb34e2e83886f8b2474a7a3863eb53bf6087fdbcb001721997cedbe8df95edec769",
+      "line": 98,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "TH and resuscitation with stored compared to fresh RBCs not only caused increased mortality but also significantly increased the severity of pulmonary edema induced by P. aeruginosa pneumonia (Fig 1D).",
+      "key": "0e97beb2cb9991a966f47cefd05b44f51147bd36920e694d4e6e2b84cc3dfc68ec8343482b2e6cdb331fc361eae5726d0dee88492136a54dd29d5b7f0aa9e8ae",
+      "line": 141,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "20 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Pulmonary edema approximately doubled (Fig 1D), and lung bacterial CFUs significantly increased (Fig 1E) in mice resuscitated with stored RBCs compared to those that received fresh RBCs.",
+      "key": "fe2afab571247d7edf6c8c198590bab609b6f6a8658318c2e9608e801dfc92bc13fe9b4bca90ada8353a448bce5d5134c56e66d7497ba4a75bd648ff4d19f923",
+      "line": 99,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Consistent with our previous studies [25,36], free oxyHb, metHb, and heme levels were increased after 14 d of RBC storage, being 930 ± 125 μM, 40.3 ± 8.8 μM, and 168 ± 44.7 μM, respectively (mean ± SEM, n = 7).",
+      "key": "00f1e36250681941d40c1cc5e445ce70964a9cab6415dc0e3d14c292e38bd2ba558a41a72510f7e49ecbf9ec0a0a66279123ebfbc5b1bdd37e382c68abb361d1",
+      "line": 106,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Fig 2 shows that free hemoglobin and free heme were higher 4 h after resuscitation with stored RBCs compared to fresh RBCs (n = 3±7 as indicated); NTBI level was also higher, but this difference did not reach statistical significance (p = 0.07).",
+      "key": "a36a858cb997ecb525609b0ff51c7fd56e478e06d61ccc0c10a1d94264f56bc99090b3498c554009832ba61cc4ba6e0c9d08265855f413cfb32ebd83d07cb5e2",
+      "line": 115,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "These data indicate that the increased severity of bacterial lung injury secondary to massive resuscitation with stored RBCs is heme-dependent.",
+      "key": "4f022d1dcb29ba45d15e0e9f38a12165572064cf70410dc19508e99aae466248e249a3d88c673c7cde714d8c9a3d0a53573db43f12a63074f3c3380c0443af94",
+      "line": 129,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Furthermore, free heme also induced extracellular release of HMGB1 from RMVECs compared to vehicle control (Fig 5B).",
+      "key": "006af7dbdec86123cc756b10d99d61149d3e70f60a3e8afe9922ea4a5b593df8b424460278b42df5d672dccf7866f31a3b750bb8c188ad695de829120543d631",
+      "line": 152,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "In summary, these results indicate that heme from resuscitation with stored RBCs increases extracellular release of HMGB1, which inhibits macrophage phagocytosis of P. aeruginosa, leading to increased mortality.",
+      "key": "fbf1bc162df5d902073b5239cafc77fb46c0b41ddb14549213becdd1d2ffc2cc91a4082f403e1c87ceae810583e1add117bdff128a7cf9cb13b05e643bc1be36",
+      "line": 159,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Consistent with our previous studies [25,36], free oxyHb, metHb, and heme levels were increased after 14 d of RBC storage, being 930 ± 125 μM, 40.3 ± 8.8 μM, and 168 ± 44.7 μM, respectively (mean ± SEM, n = 7).",
+      "key": "853ef120ceb0e02a338d0d938ca9568b4a28841ee3d63d792465be20fd54f862f59687bdd99a504a23f8fcd724fe5cf6cbbff8de884167c46d289159be1369cc",
+      "line": 107,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Consistent with our previous studies [25,36], free oxyHb, metHb, and heme levels were increased after 14 d of RBC storage, being 930 ± 125 μM, 40.3 ± 8.8 μM, and 168 ± 44.7 μM, respectively (mean ± SEM, n = 7).",
+      "key": "35c8b629fa90cd4c7e5f8f7998ce9ee1e24ff3831e966a95000452ffc4ca9fd933c0bc2e6bb9dd0d2359e61ee795f2b58ea128768779a84ead01f341ba3e8392",
+      "line": 108,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Fig 2 shows that free hemoglobin and free heme were higher 4 h after resuscitation with stored RBCs compared to fresh RBCs (n = 3±7 as indicated); NTBI level was also higher, but this difference did not reach statistical significance (p = 0.07).",
+      "key": "9a4c4357029b3191e6fd856c2648568595135c566a3d71ee2b2150bb96b1c48430c39844941b2ed5e2dd37aa471a68e015c19542512b8412b0df3c6c1df65426",
+      "line": 116,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Fig 2 shows that free hemoglobin and free heme were higher 4 h after resuscitation with stored RBCs compared to fresh RBCs (n = 3±7 as indicated); NTBI level was also higher, but this difference did not reach statistical significance (p = 0.07).",
+      "key": "9a38fcf4c9513c3c821ac5ae100c9ebab031a885f0f62abbcc4df886bce8baffe9e8278b27f458b3fcbd4bc6cde40222206380dea47844efa63aeeb23a7eae3e",
+      "line": 117,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Hemopexin improved post-pneumonia survival in mice that underwent massive resuscitation with stored RBCs (Fig 3A).",
+      "key": "7c9575d7d0ad9e7770ef02100ece5a17b869d611de037bc079ffb712d8f45f39a098d646f882ce35cba79bedf408c294c509068d790e26d2dc566c5dad205db0",
+      "line": 123,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Hemopexin improved post-pneumonia survival in mice that underwent massive resuscitation with stored RBCs (Fig 3A).",
+      "key": "d292e5c3d9805e653f5b883f1aab146e1d4030de23463a4b2532676b301d5f38e7deb26816ebb231124ff8d8d6c0f99ff961dd116f91f04dc88720848946dd63",
+      "line": 123,
+      "relation": "negativeCorrelation",
+      "source": 14,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Our findings using a mouse model of trauma and hemorrhagic shock with stored blood transfusion and subsequent PAK instillation demonstrate that transfusion with older stored RBCs increases the severity of bacterial pneumonia.",
+      "key": "d52708c16abe109f29c710a5e99e8cf2549e9d6a104a21ebda83925f6e74eecdc5e0319caa9da9abd6916fd0e3c62eeb53bbfde487aa5b8fda1693a7e81d40f4",
+      "line": 169,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "These data indicate that the increased severity of bacterial lung injury secondary to massive resuscitation with stored RBCs is heme-dependent.",
+      "key": "8ee840589a9faeac45262b83320f53df1a3e8a9ad1ff8c61f95d399fa409f5610e83a204c37cb6b825b5aeac53088876a0a37d9dafd0d365136e2b2c016a247e",
+      "line": 129,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "These data demonstrate that TLR4 signaling plays a role in heme-induced exacerbation of lung bacterial infection secondary to TH followed by massive resuscitation with stored RBCs.",
+      "key": "cc6e01f4c0f1a1b760943e63fcbde26430dc3dc2e35b5b001e016fbe60695307a0409afd30349577d47adea8ba8d543791c32494a748f5897d5e391b977c78a6",
+      "line": 135,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "negativeCorrelation",
+      "source": 12,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "These data demonstrate that TLR4 signaling plays a role in heme-induced exacerbation of lung bacterial infection secondary to TH followed by massive resuscitation with stored RBCs.",
+      "key": "59cb0603e69b30eb2e5d8b8d242e15835758237ae83eb8389fc769d76b0470eb90abf24e1539896a2bd66b8ca9b7ed9fc49aa02a797c4a4686d67c96245babd6",
+      "line": 135,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 12
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Fig 5A shows that extracellular serum levels of HMGB1 were approximately 5-fold higher in mice (n = 3) resuscitated with stored RBCs compared to mice resuscitated fresh RBCs.",
+      "key": "08a352716190db226da989dfea86204bf3690b1e8e73aea2729e20ee7222f2e1309c829d0c15f9b7c97cdacd66e2b0b87ce5f96df387b9d9736cba9aa034ac29",
+      "line": 147,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "Furthermore, free heme also induced extracellular release of HMGB1 from RMVECs compared to vehicle control (Fig 5B).",
+      "key": "cfa68b55bc29eed3f55f441f511d9204040c28bc5506f66ae1a09539f8e53d29671acab4fdf9b37ce6c8550afe5623f3e70cc5166786b6412ed1d060b7dcbc6a",
+      "line": 152,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "In summary, these results indicate that heme from resuscitation with stored RBCs increases extracellular release of HMGB1, which inhibits macrophage phagocytosis of P. aeruginosa, leading to increased mortality.",
+      "key": "237a27e93330ad57b66376d6e488531199657c8043fe34b17f903372e5d580e29ff8522fa543ba233623de2917ec2b78859a7e6f6718021dac2f8392fa7a2de8",
+      "line": 159,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "macrophage": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "14 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Brandon AP",
+          "Creighton J",
+          "Dull RO",
+          "Evans CA",
+          "Honavar J",
+          "Hu PJ",
+          "Kerby JD",
+          "Marques MB",
+          "Morgan C",
+          "Oh JY",
+          "Patel RP",
+          "Pittet JF",
+          "Richter JR",
+          "Stephens SW",
+          "Wagener BM"
+        ],
+        "date": "2018-03-01",
+        "first": "Wagener BM",
+        "last": "Patel RP",
+        "name": "PLoS medicine",
+        "pages": "e1002522",
+        "reference": "29522519",
+        "title": "Role of heme in lung bacterial infection after trauma hemorrhage and stored red blood cell transfusion: A preclinical experimental study.",
+        "type": "PubMed",
+        "volume": "15"
+      },
+      "evidence": "In summary, these results indicate that heme from resuscitation with stored RBCs increases extracellular release of HMGB1, which inhibits macrophage phagocytosis of P. aeruginosa, leading to increased mortality.",
+      "key": "c352546966700546e7d886f89bc3323b2762792f53c01d8e8193ab212b2bdec02ff22d03372713335af7b69047554aa106ccae5fa9c66174a5d7b0a8d3de7ae0",
+      "line": 161,
+      "relation": "decreases",
+      "source": 9,
+      "target": 6
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "function": "Abundance",
+      "id": "e426e7ad4ee4d8eb3c018acb75625d794a96811eb659d39bd8f25c4b30632fc8a938eca8397887738ecc384ec5df867e2026de113f002e5cc4490177de0905cd",
+      "name": "iron(2+)",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:methemoglobin)",
+      "function": "Abundance",
+      "id": "7805bca22642b820fb0a026eb5c67eb4512f0a021ec5c97c5f505f5706c0ef4cb986edf806c547d40110c084b98e15c3520dd558cb96c5071b4dd9709e641130",
+      "name": "methemoglobin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:oxyhemoglobin)",
+      "function": "Abundance",
+      "id": "677a833ae4fd83a2eee771c3529252a0f789ecb0921b0280d7be9d4410ecb8c1e3cd3cd1612d062efc6d614205c2bc09aae5743250de566a0a23651affc7956a",
+      "name": "oxyhemoglobin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:\"stored erythrocytes\")",
+      "function": "Abundance",
+      "id": "c5f07faa52d39663c7bfb6346590680850cdc80f5daec0a27d13d0b987d98745781c6e81ce6edb50f375981a5345c5027325348c3907f71521d30ab0b54f60c4",
+      "name": "stored erythrocytes",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(MESH:Mortality)",
+      "function": "Abundance",
+      "id": "1f4c6dc63d196b6c618e0b3d081471d4e45c8b2a5e3620ef75e7e45d0daae2bc23a408e7e0019e9c809de18a1c0dbda7c8ae872dc892fbaa8b33d8e266919eda",
+      "name": "Mortality",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(GO:phagocytosis)",
+      "function": "BiologicalProcess",
+      "id": "282cf3d95ec8594baa33b41507754e23762ae93716831821d779781c842eba4047f64edf8a503ac9c4df904d6fe3cdc026f57c52e8fda16c59e4ec47c5498b7c",
+      "name": "phagocytosis",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Bacterial Load\")",
+      "function": "BiologicalProcess",
+      "id": "3fc2f7e396e9553ae5e09290108371ed24150274e9ab8ae0eda905079afec8d4489273f5921257eb5a15b038bdffde8a77f8cdfe2fb9b444b42ea08c91a4c361",
+      "name": "Bacterial Load",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "p(MGI:\"Hbb-b1\")",
+      "function": "Protein",
+      "id": "dd74512e08755f5c05c0438fc71449126507eb00272b859c1ff2dceedefa72ebbb1b4669eb91a86b7a70fc1dc5c5e58aae4471eeef4cfbb1f088031e4440520c",
+      "name": "Hbb-b1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Hmgb1)",
+      "function": "Protein",
+      "id": "23d59e1ef474f78f13412346d628fc6fa7def71aea280910ef74ab7b1c85e3d17c492ac0da9caa796af8236fde9f11bbcbb8b9cde747728d56138e900927c60e",
+      "name": "Hmgb1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Hpx)",
+      "function": "Protein",
+      "id": "ccdc2439745a084dbbe73e6559429f702bfbdd9823ad4837b3232123b8c4a6c91ffd44740d989f368c570e462c58632040fcfa2d5e947abff06413ab3ce7ec44",
+      "name": "Hpx",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Tlr4)",
+      "function": "Protein",
+      "id": "3ed0d387c1898f210a01623e8881069555cd5a7ab7389c889536d0ba941377a7debe9b7dc290afb4645e225eb41c3bedf6b78126afaafafd605bc1500b1a39c5",
+      "name": "Tlr4",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "path(MESH:\"Lung Injury\")",
+      "function": "Pathology",
+      "id": "cb60ab765008f041b75677f0a0b22bce5920543b9193b65603649bb2f4b2f683553055605b64c94d67998742a0ee436d4211d0d7029cc8c7b0f15f53d955b6ff",
+      "name": "Lung Injury",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Pulmonary Edema\")",
+      "function": "Pathology",
+      "id": "7ae14089964b4a2c369f458733205f503786d8c77653baf871efa254440d8506f02b25c2fd6257bf4f090205faf762e49f2ad6aed14e3396fa462476387b425f",
+      "name": "Pulmonary Edema",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Pneumonia)",
+      "function": "Pathology",
+      "id": "928af46e81998338b2b6585ab5611a7825d0cdce2c71347e01e437d5e113af6067c9cdc4ae5a66e45d2f7957e6a0a9b752d46106c6d25ab46a97c045a4e71808",
+      "name": "Pneumonia",
+      "namespace": "MESH"
+    }
+  ]
+}

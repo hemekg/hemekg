@@ -1,0 +1,2725 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_30505280.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_30505280.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Knee osteoarthritis (OA) is the most common joint disease and is a major cause of pain and disability in the older population worldwide (Liu et al., 2015).",
+      "key": "2e916c39fcadc643305f580fa6620d615c5127b094e7e62bf35701874001330607bdeaf2836748e287b5fa9a025543185dd352a891af29824b09077103895df2",
+      "line": 93,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Obesity, genetic factors, and aging are some of the most prominent risk factors (Sharma et al., 2006), and in the younger population, previous knee injury is an important contributor to increased prevalence of knee OA – as much as half of those sustaining a knee injury in their 20s had developed posttraumatic knee OA in the following 12 to 14 years (Lohmander et al., 2004, 2007; von Porat et al., 2004).",
+      "key": "9ed2faecb45683db83c2cdc0e63f386b43cd515841fdd7462caf80d0dae36270daf91ad664064e8d02540a6e7e85f9102ed1fb217bd6a276c281e23784ed032a",
+      "line": 103,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Obesity, genetic factors, and aging are some of the most prominent risk factors (Sharma et al., 2006), and in the younger population, previous knee injury is an important contributor to increased prevalence of knee OA – as much as half of those sustaining a knee injury in their 20s had developed posttraumatic knee OA in the following 12 to 14 years (Lohmander et al., 2004, 2007; von Porat et al., 2004).",
+      "key": "e774fefb580c63366b53b0511658c93fe86984e98ca8cda23dc8d056e8104e51066b25da4fdf82dd5341517ac06ecd46a2fc93ec68ad61960af7f6a3a889096a",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Obesity, genetic factors, and aging are some of the most prominent risk factors (Sharma et al., 2006), and in the younger population, previous knee injury is an important contributor to increased prevalence of knee OA – as much as half of those sustaining a knee injury in their 20s had developed posttraumatic knee OA in the following 12 to 14 years (Lohmander et al., 2004, 2007; von Porat et al., 2004).",
+      "key": "b076975edd9ad4eb6939832eed5935c03ec6ef0c50479f29b02ae5fa10f17eedd9f6797d86b6a0c8e186cd2f39e88aea6f40c4ed4077f21b39f898044578d2f6",
+      "line": 105,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Obesity, genetic factors, and aging are some of the most prominent risk factors (Sharma et al., 2006), and in the younger population, previous knee injury is an important contributor to increased prevalence of knee OA – as much as half of those sustaining a knee injury in their 20s had developed posttraumatic knee OA in the following 12 to 14 years (Lohmander et al., 2004, 2007; von Porat et al., 2004).",
+      "key": "f5c70fe062b3592db7f339ff9b3d8b8d6b1bf7708f2f8c57b7e47f84399ad02db4ad3fa207fbfa8651ef74b9a1c7819e6963d54c5c0a23fca5166205d23781f1",
+      "line": 106,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "In similarity with both studies, we found detectable concentrations of A1M in synovial fluid in subjects with knee OA.",
+      "key": "bb9155c15b33cc5675fdef93aed7148a3aa39fa012cec5a53f0bde6c1fa6385c102a4d6892d9ce7637c609bac3c2eb321a0b9c1fa5b75ef5f00199110d5220c3",
+      "line": 251,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Finally, we note that in AIA A1M is increased both locally in the joint fluid and systemically in serum, whereas in knee injury A1M is increased only in the joint fluid.",
+      "key": "bc90e4eb718444ea202539388e6b10f8dd8aaf91754c0cc0737c43aea545ca389f7c46c1b0f1c0c57d992162daf78ad962f1e42f084ffd177d39643c6916033d",
+      "line": 295,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Knee osteoarthritis (OA) is the most common joint disease and is a major cause of pain and disability in the older population worldwide (Liu et al., 2015).",
+      "key": "339ea5a367f0937c1d78fe0b7898f7962b15e9ec2e251a38170ad30c73265e6761114c6d4b656f5764fd5f88e1731519e5ceb74ee1142c80ae2d65d3a3d0a0d3",
+      "line": 93,
+      "relation": "positiveCorrelation",
+      "source": 26,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Obesity, genetic factors, and aging are some of the most prominent risk factors (Sharma et al., 2006), and in the younger population, previous knee injury is an important contributor to increased prevalence of knee OA – as much as half of those sustaining a knee injury in their 20s had developed posttraumatic knee OA in the following 12 to 14 years (Lohmander et al., 2004, 2007; von Porat et al., 2004).",
+      "key": "5c635956c419d60a5c28d4a3d5ce3c091cca82fad1ed6c41282e6fb81564dcc373789662fa12ee32e6110cd055a62deb46f2592c09addc96501cd767157efc64",
+      "line": 103,
+      "relation": "positiveCorrelation",
+      "source": 24,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Obesity, genetic factors, and aging are some of the most prominent risk factors (Sharma et al., 2006), and in the younger population, previous knee injury is an important contributor to increased prevalence of knee OA – as much as half of those sustaining a knee injury in their 20s had developed posttraumatic knee OA in the following 12 to 14 years (Lohmander et al., 2004, 2007; von Porat et al., 2004).",
+      "key": "dc32b557e542ff7e827bf6065cdc93dc3fa38b972053c731febe65fb79d376c436cc05bd1a0e64eca996585644acabfc4674883ecf07d6476c47b4e170b600ad",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Obesity, genetic factors, and aging are some of the most prominent risk factors (Sharma et al., 2006), and in the younger population, previous knee injury is an important contributor to increased prevalence of knee OA – as much as half of those sustaining a knee injury in their 20s had developed posttraumatic knee OA in the following 12 to 14 years (Lohmander et al., 2004, 2007; von Porat et al., 2004).",
+      "key": "2144fbb0ef4309ed9a0ccb1d73e2ff5dbd72e5c0c0e8dcd55b5bbf7a2ece46b24939e1f7954b0206b4102092c1dfc470242c0f5caf9ba2648c4d714276e2c74d",
+      "line": 105,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Obesity, genetic factors, and aging are some of the most prominent risk factors (Sharma et al., 2006), and in the younger population, previous knee injury is an important contributor to increased prevalence of knee OA – as much as half of those sustaining a knee injury in their 20s had developed posttraumatic knee OA in the following 12 to 14 years (Lohmander et al., 2004, 2007; von Porat et al., 2004).",
+      "key": "c3686c0759a84230a5c09c398e047b388cc6e51d9feebadc015aea0d5bcb5036e5c80327f9d85807a067ba0eb7abf496b10922fd9d819e0b54270af7389ff551",
+      "line": 106,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Lately, much evidence has emerged to support a central role for participation of local inflammatory pathways in the disease processes (Scanzello, 2017), particularly so after knee injury (Goldring and Otero, 2011).",
+      "key": "d67b8b3b53388d09de2f5b67a94c2621ff6f2dfaa3ba4415d23884dc7d0f687ec178779a29f653260206599b82ebd81abf4ab75acf381bc6fa916d0a022c1112",
+      "line": 115,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Altogether, our best interpretation of these data is that increased levels of cell-free Hb and heme in synovial fluid early after injury triggered an increase in the synovial fluid A1M concentration that appeared to be protective of oxidative damage.",
+      "key": "b19be92badb5169b3d114672868c39a41a42fe8ea66e541a3cecf7ccca286fd058383df95c40339a5c9a61249112fc240dca6991a0ce26786110d07ceaa38dd7",
+      "line": 225,
+      "relation": "increases",
+      "source": 19,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Altogether, our best interpretation of these data is that increased levels of cell-free Hb and heme in synovial fluid early after injury triggered an increase in the synovial fluid A1M concentration that appeared to be protective of oxidative damage.",
+      "key": "889c09c236dcbb5bb1233b6b7e70537970e0e00bdc814170966d28a5718eef5e22d467aaa473ccc8191ebcec8b4c4ed693e3758ca9ddacbca7fc511970d82cc7",
+      "line": 226,
+      "relation": "increases",
+      "source": 19,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Altogether, our best interpretation of these data is that increased levels of cell-free Hb and heme in synovial fluid early after injury triggered an increase in the synovial fluid A1M concentration that appeared to be protective of oxidative damage.",
+      "key": "14f994ae3a54d26b8255ee9f6994cbccb01495dfadcc8046cdbec34c0ab5bde90bdf2442e70d16c0a2baa55b76f9c4093eb386c1bad49faaeeca844998998388",
+      "line": 227,
+      "relation": "increases",
+      "source": 19,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Lately, much evidence has emerged to support a central role for participation of local inflammatory pathways in the disease processes (Scanzello, 2017), particularly so after knee injury (Goldring and Otero, 2011).",
+      "key": "819f36c53bc1faefda3910fd88c0c2d1e9d0ac8092749835475a5da50ba52a2706a91b759562f3c5b87d6c1277b47edb840591f76b9d587b3140a55dd8ded8bf",
+      "line": 115,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "As a part of the inflammatory response after injury, oxidative stress due to formation of reactive oxygen species (ROS) is involved both in direct damage of cartilage components and as integral factors in cell signaling leading to cartilage degradation (Henrotin et al., 2003).",
+      "key": "ab80dbd2902325012a2a27328b85026a851f3d860c435f389955fbaee3f2cbb7587500425186ef3d909928470c7920d8443d5e251f91dfed49ac9c328404eca5",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "As a part of the inflammatory response after injury, oxidative stress due to formation of reactive oxygen species (ROS) is involved both in direct damage of cartilage components and as integral factors in cell signaling leading to cartilage degradation (Henrotin et al., 2003).",
+      "key": "12985f90d19574b7253cbafbfe72907a0461f35afc5c9e84e776e8b15d4472d6e3ff4718ccfa3e2bdc0b1de0f5f2ffb6a868dbf907dad4fd92ad0d93d67dc163",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "As a part of the inflammatory response after injury, oxidative stress due to formation of reactive oxygen species (ROS) is involved both in direct damage of cartilage components and as integral factors in cell signaling leading to cartilage degradation (Henrotin et al., 2003).",
+      "key": "9633c6109f15b91e4a5a469f1a18e5e8a7eccaa0f97c0790c5ac2937d596e13ca764d4080403b9c246f2202cab7145aa5edec08c4884f7d2435ae6871393b32b",
+      "line": 124,
+      "relation": "increases",
+      "source": 2,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Expression and synthesis of A1M has been shown to be upregulated in cells after exposure to heme and ROS (Olsson et al., 2007, 2011).",
+      "key": "2ef43ede9789406680f79254a150cb873658aade70e0263a42978405698a267fc95a18f3057c50e20a7fb2e56cf83d4aed44d0efcc884279527e87fcf31e7a92",
+      "line": 258,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "As a part of the inflammatory response after injury, oxidative stress due to formation of reactive oxygen species (ROS) is involved both in direct damage of cartilage components and as integral factors in cell signaling leading to cartilage degradation (Henrotin et al., 2003).",
+      "key": "49b0dc6ceb48a93e957f381c77244b0ec00226e8a5baa5ce3aa33213055843a93c156ef02ce8b9bfe7632d22e4458f63e1b0f96db5743afada77c7a108dba244",
+      "line": 125,
+      "relation": "increases",
+      "source": 8,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "In addition to inflammation, cell-free hemoglobin (Hb) released via hemolysis is a potent inducer of oxidative stress.",
+      "key": "f74712aecdd73964ee3ab77dca17e982c64e0296799281dc0e1276d76529a39589f90d8ad0574b283e8945dc0296f0073bda042b257d7accc12d8d3c093e1cb4",
+      "line": 132,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Oxidation of proteins result in stable carbonyl groups on amino acid side chains, and protein carbonyl content is one of the most widely used marker of protein oxidation and a general indicator of oxidative stress (Dalle-Donne et al., 2003).",
+      "key": "4580b833c9a3bf8fcbd34d79697d802816d3bd38fe2622e4ef92b8ad5434421fa7c867c59d97cd16d2e100eb590f19f0c934a638f77c856777ed248bf0793feb",
+      "line": 163,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "In addition to inflammation, cell-free hemoglobin (Hb) released via hemolysis is a potent inducer of oxidative stress.",
+      "key": "7512ea5bb9336e950162573bf7d91a30beaed4830d361dc399eb52146a5b3f6283eba9b2854e2c7779ac929ea2ce673f56c0b2d9179b35efca123d2aa8a1ef48",
+      "line": 131,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "In addition to inflammation, cell-free hemoglobin (Hb) released via hemolysis is a potent inducer of oxidative stress.",
+      "key": "1961c010b327e0db8f9678551a04b6760ec8395a9183bfa2a8b69f98a06ea289c9b1f0223121e45f4a6a83ad2cce46e8dc12b71eefb72a13fce9afe8a5d748d9",
+      "line": 131,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "In addition to inflammation, cell-free hemoglobin (Hb) released via hemolysis is a potent inducer of oxidative stress.",
+      "key": "94ad8a9ef151c70683b1c9c98e70b50ca0a938a9f5a68ace69ae326654196f6c44bab64b1d70acb83772a66efc5f94707c125cc386d727a5e95228ea79e420a4",
+      "line": 132,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Spontaneous decomposition of Hb via auto-oxidation leads to the formation of ROS, free heme groups and free iron, which are highly reactive and have the ability to damage lipids, proteins, and DNA (Olsson et al., 2012).",
+      "key": "ae9e00133e250ffec7d8de2f183d860e355d904e262b5a69dce72b722a3a8c054d942a7462c54a2440060db8312dda34b8d764f6207a133b3632451c32ab1c46",
+      "line": 140,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "These novel data support a role for A1M in the protection against oxidative damage due to extracellular Hb and heme in the joint in various knee arthropathies.",
+      "key": "409f807b8f07de2d3461036d5d7fdc62b30f7b8ec953f3543e0f57106ccecbe7c708818e2281a8d80ff5edbb40fe6ca46df2730bcdf16b7109bb201ab0ded0cf",
+      "line": 215,
+      "relation": "increases",
+      "source": 12,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "This is consistent with our findings here that both heme and Hb were associated with increased levels of synovial fluid A1M.",
+      "key": "1637c6776d589b4cb4974e444697e2b3fe62a6ae6288e953c1f3bf6c4be69758cb505ed5510338795d6cb59c6a125597ce8eed94105df6ab5dfed201f0612a9e",
+      "line": 266,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 11
+    },
+    {
+      "key": "3aab727800293e6cf6e3bf60c19f181c47bb2b57536aaf9232c1557f3ec2a97414a8482833f0831807e8fc88015f5310e4278cf49c5a8b8594c0f28c87fdf2d1",
+      "relation": "hasComponent",
+      "source": 10,
+      "target": 0
+    },
+    {
+      "key": "84c257c98c33a908efaded2da5f24b53b20b18cc7e9be71d44965988f9be9def0b7f442d9d834202eb722691917d5a8ea57987e4799b2757e3be57a03076d935",
+      "relation": "hasComponent",
+      "source": 10,
+      "target": 1
+    },
+    {
+      "key": "c0368258b3d04ab069e056283422f7c5ffd356c5602212114e1a8d2b12a92f375f8893a6a606070e963e7e7329750d7a12af36a13916ea40f29e91e05646cbad",
+      "relation": "hasComponent",
+      "source": 10,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Spontaneous decomposition of Hb via auto-oxidation leads to the formation of ROS, free heme groups and free iron, which are highly reactive and have the ability to damage lipids, proteins, and DNA (Olsson et al., 2012).",
+      "key": "4cf5d15ba92e18069a85a26d68b678f63a8747cd3ebd65be0a6b843938c79dd766bca05bc01706e00d12c30c675f0c048588263fa8d840ef3dad70376a094dff",
+      "line": 140,
+      "object": {
+        "modifier": "Degradation"
+      },
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "These novel data support a role for A1M in the protection against oxidative damage due to extracellular Hb and heme in the joint in various knee arthropathies.",
+      "key": "7733b42b473ca82d240fa33ee59f4393a84ff04f77768ba7be54a58c8c6b3b5d7770e7ecf5830697599246d355c24cdc7f82a0b489fb28db44263f2f2aaa1117",
+      "line": 216,
+      "relation": "increases",
+      "source": 1,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Expression and synthesis of A1M has been shown to be upregulated in cells after exposure to heme and ROS (Olsson et al., 2007, 2011).",
+      "key": "0c7bb907f10c4c6bdf8f8fd55afec08bd66870a1c6ea7e8eeb8a3e0e43d9bd99aadb1240de62c9b2a377621a5627d10ad32bcb7577278f104c8c3a024a4e8f6d",
+      "line": 257,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "This is consistent with our findings here that both heme and Hb were associated with increased levels of synovial fluid A1M.",
+      "key": "01434cfcd644f72aa5993471658b702f0728f612bbf6f29f9d11ae8186cff74ba9f957916f39ae7637b3fbf3fbab1efe373d79afaae0fd345f73bddd1ff8bc7f",
+      "line": 265,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "On the extracellular level, within the circulation, haptoglobin (Hp) and hemopexin (Hpx) are two of the most prominent scavenger proteins, with antioxidative properties through their capacity to remove cell-free Hb (by Hp) and heme (by Hpx).",
+      "key": "7ad1b983dba4ae2cc71e6b596f8be34cc71eaef40711a047231e8d406ec7f757c52307a847c71e771f4ab220f0dded1a33018f8986727bdd13db56ad2a83cf15",
+      "line": 148,
+      "relation": "decreases",
+      "source": 14,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "On the extracellular level, within the circulation, haptoglobin (Hp) and hemopexin (Hpx) are two of the most prominent scavenger proteins, with antioxidative properties through their capacity to remove cell-free Hb (by Hp) and heme (by Hpx).",
+      "key": "ccb0fc4fc21369b16cab160985c3eb99b02c8ece8d68f963987ab99c9e5fe1689c55a918cc359886e24a21ec27f2df7bb506073a34f5807084cb973fc0b53aeb",
+      "line": 149,
+      "relation": "decreases",
+      "source": 15,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "A major intracellular antioxidant is heme oxygenase-1 (HO-1) which, through its heme-degrading activity, plays a critical role in the protection of cells.",
+      "key": "91fb48238c17df3341bccd51aef32fb8b49ebea4cc519aeb096e7db49c74efeb8d1e01bfe3d25ea57a4dc1c70b451045dd2950ed1e3b5150505118dbe13751f8",
+      "line": 155,
+      "object": {
+        "modifier": "Degradation"
+      },
+      "relation": "increases",
+      "source": 13,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Oxidation of proteins result in stable carbonyl groups on amino acid side chains, and protein carbonyl content is one of the most widely used marker of protein oxidation and a general indicator of oxidative stress (Dalle-Donne et al., 2003).",
+      "key": "6279e46730a8870f6ad451767d65b92a1fa05931c8a2f3cf4f425716046507d44064695b590c6dc9db24511a951a56e2794a74c7e74d45ba2a608dc067ea274c",
+      "line": 163,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Another protein that in the last decade has been shown to play a central role as a protective protein against oxidative stress is a1-microglobulin (A1M) (Åkerström and Gram, 2014).",
+      "key": "a16ae915cb8bcbe21ddffe4c6e156d13fd5d902936ef7376a1dea02bbe715ba84543a3be4f0ca287ad20ce8928e788e012b2f5c155bb33e1a30712e1e916d43c",
+      "line": 169,
+      "relation": "decreases",
+      "source": 11,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Of particular interest for this investigation is that the expression of A1M has been shown to be up-regulated in several cells and tissues during oxidative stress conditions in response to elevated levels of ROS, Hb, and free heme (Olsson et al., 2007, 2011).",
+      "key": "2ce093cb91c038973035bdfed2c68207dd36c9d5970936445faa27874787339db37d3c232261c0612cac730936a2002aacad954ca87fe26494c838f97fe8b1a2",
+      "line": 177,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "When adjusted for their respective absolute concentrations, the higher the proportion sf-A1M to sf-heme or sf-Hb, the less oxidative damage measured as protein carbonyl groups in synovial fluid.",
+      "key": "d46b09ff3dbf2bb9d41a22d5d420345cbc77d93e9bc7c489fd237cb5be42354c799a03f758f938a2ab3f0ff2f5846a7bb40bd77a17a518cc0ea6ab6baaa4248e",
+      "line": 207,
+      "relation": "decreases",
+      "source": 11,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "These novel data support a role for A1M in the protection against oxidative damage due to extracellular Hb and heme in the joint in various knee arthropathies.",
+      "key": "ca4ea0402e63377534aa924bbc8133a985d2d59ca083fcdaafcbd4169d4059515b9dde57a571542fa2ebb9fed8879f1ef4c8f7a56e4dfda7ff4a5725bc2cb197",
+      "line": 217,
+      "relation": "decreases",
+      "source": 11,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Altogether, our best interpretation of these data is that increased levels of cell-free Hb and heme in synovial fluid early after injury triggered an increase in the synovial fluid A1M concentration that appeared to be protective of oxidative damage.",
+      "key": "ef14106d5ad8e6e6b4b8f9ad404b5628729a9e047b666d323abd475963d366ba9083c747376bcbf9353d4acd359a7b2aa60424d8c9fa4959e32d3b0d5c3b9d21",
+      "line": 228,
+      "relation": "decreases",
+      "source": 11,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "The highest concentrations of A1M, both in synovial fluid and serum, were found in the AIA (Figure 1A).",
+      "key": "1e45b0cb3c8221948e906e192af10a81e55958d394866452a709509a58b85d00ee98ca16f5c3a2adec2e83a9962cdd1564af3d8f4612f613b252e18b9f363593",
+      "line": 185,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Our study extends those findings to include elevated A1M in both serum and synovial fluid as a biomarker of AIA, as suggested by the ROC-curves with AUCs close to 0.8.",
+      "key": "039c9e72f73e0c09c7f7a81766b235879bc9a8dc75016447fabbcc54c377561df1af13cfe8a06a2654b383f755cc6ef91e0b06bd0a9b4797e7e524da8f7c7ac8",
+      "line": 244,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Finally, we note that in AIA A1M is increased both locally in the joint fluid and systemically in serum, whereas in knee injury A1M is increased only in the joint fluid.",
+      "key": "b58425a6e0a9d620d32856d65d4a9e209130866ae2c4e8aa336ee431f340f424c263d3a154d918a4e324a49930f5274b9cd79bcaa73519b0fc6e727d89d5cbb6",
+      "line": 292,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "In serum, the A1M concentration in the AIA group was between 1.3- and 1.4-fold higher compared to the injury and osteoarthritis groups (p = 0.035 and 0.030, respectively), whereas the 1.2-fold higher mean concentration compared to the reference group was not statistically significan (p = 0.15; Figure 1A).",
+      "key": "e4ca8911142002a2831d8d53645195c37eeac13973eea61fe2ffa99281f2b8d5ba6d276d69dbba6f858a7ac7cface150070051be7eb0926c4558a5f7d00f8aac",
+      "line": 197,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "There are many examples of studies that have shown increased A1M in serum or urine to be a biomarker of diseases such as preeclampsia (Anderson et al., 2011, 2016; Gram et al., 2015), and kidney failure (Terzi et al., 2014; Kang et al., 2015).",
+      "key": "d9baaa5df0533f47e5b480c8a885c4e847647458bc17f86a745a868b2e4640680c685ee33c9c1b1f38d49ea667e123b9e97ab783395ca8deaa179965b60ed2e6",
+      "line": 236,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "There are many examples of studies that have shown increased A1M in serum or urine to be a biomarker of diseases such as preeclampsia (Anderson et al., 2011, 2016; Gram et al., 2015), and kidney failure (Terzi et al., 2014; Kang et al., 2015).",
+      "key": "4a51a3df3aa86cfdbb5884e41239d99e169a61e17f3e49f23c6e2f554bfdd6351f975bc4656488c8be28c4b3e7351b553210ddf72d8a69abb2eb15f4f7028698",
+      "line": 237,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "In similarity with both studies, we found detectable concentrations of A1M in synovial fluid in subjects with knee OA.",
+      "key": "ba4ddc1055692b8d733de3399139b84747f7afa01e46c2e3d89e2300b19fe06dd643d8c7b3a8dada73fbda97fce25e0ec8a15c270265779e1a548b9a0fddb857",
+      "line": 251,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Finally, we note that in AIA A1M is increased both locally in the joint fluid and systemically in serum, whereas in knee injury A1M is increased only in the joint fluid.",
+      "key": "2efe69a538134d802ec410f1b104e85e50b0b157675376ec41d2103435f08878090465f2082faf3c9c5997a6685882aead2330dc8dd453d0032fc10091a57a64",
+      "line": 295,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Expression and synthesis of A1M has been shown to be upregulated in cells after exposure to heme and ROS (Olsson et al., 2007, 2011).",
+      "key": "e4ed9656d849aa6c5275c1cb5088d56bae18e57ffc12eef669a2109d27400f108c6b7b1209b789ff8422b90787c93b0abea7179009b333420ae280bab8657f19",
+      "line": 257,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "This is consistent with our findings here that both heme and Hb were associated with increased levels of synovial fluid A1M.",
+      "key": "e79217835575d098fc315e272f1fe421fa4117b2ef85902a0fdc7c405b447888b00164c9656392e78e233fa2ec846f43dc0e310b4c6d9d5e317d8400cd420836",
+      "line": 265,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Expression and synthesis of A1M has been shown to be upregulated in cells after exposure to heme and ROS (Olsson et al., 2007, 2011).",
+      "key": "e9e68d2b6a0808b4b0b97d0dae18b2cd8cb992ff3babcbc9e5a14dc5b6ee9eebdd5148cc722f4022c88b41794b2195ff9241c5830986fb978ddd10ba3e5225da",
+      "line": 258,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "This is consistent with our findings here that both heme and Hb were associated with increased levels of synovial fluid A1M.",
+      "key": "3406aaa6b99113e557e59313650f05cc12706bf5c57c7444c75463e0884590b47a1810cf5d08fa73cdd60755ff2c9a0d00182bb267f5c14fd1ca6c09d9324d73",
+      "line": 266,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "However, with A1M increased in both synovial fluid and serum in AIA, the present study further suggests that, in addition to heme and ROS, A1M may be regulated by inflammatory cytokines.",
+      "key": "0cd4af6293cea5ae8cea9965799f646ffe13e672d441501cf8fa6d73d4ed352c82960b7e49d00e234872c4942fdf77de73ce75f6df0f3c5caf442047b3625934",
+      "line": 274,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "In addition to the obvious protective benefit of exogenous A1M binding and neutralizing cell-free Hb and heme, it may also be beneficial as a repair mechanism in already damaged cartilage, since in vitro studies showed that collagen fibrils were restored to normal by addition of recombinant A1M after destruction already had begun (Olsson et al., 2011).",
+      "key": "4fddf48b0cdf43798f839a4f72dc750cd6c477033590fa387e871bb6ad7c693107c2562a298f2cda595c4a48e4611886732e895d25fd963917a14d49c4ed3d82",
+      "line": 285,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Of particular interest for this investigation is that the expression of A1M has been shown to be up-regulated in several cells and tissues during oxidative stress conditions in response to elevated levels of ROS, Hb, and free heme (Olsson et al., 2007, 2011).",
+      "key": "a40c8153efe6bd6c5777d715804e674d0e30b7a1f103a4743bfdc4b54db05540fb217d0deacc583217e8056d94e6ad160d0ca6917abb1548de4aec9d05b08fbc",
+      "line": 177,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "The highest concentrations of A1M, both in synovial fluid and serum, were found in the AIA (Figure 1A).",
+      "key": "7805e19b76dc73e3e9087553b080126aaa9fd98b2e21d6eb083e16936210b582f4429383e5aa676748a6d6ae4d78529d1eb9ce6e1401c62003396b20e915c519",
+      "line": 185,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Our study extends those findings to include elevated A1M in both serum and synovial fluid as a biomarker of AIA, as suggested by the ROC-curves with AUCs close to 0.8.",
+      "key": "ce04ee2c8dc7e897f8152082e5417ab10111daebcfacbf2de7ba83f3c663f8cd55055210cd180ffefd424b6e2ea1b13aec5e556fd8220f00774547d277c2e313",
+      "line": 244,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "Finally, we note that in AIA A1M is increased both locally in the joint fluid and systemically in serum, whereas in knee injury A1M is increased only in the joint fluid.",
+      "key": "2c8272dab973df2b0e5df549c4946e101ed643917b2f7392cc93a09a7338cf28f8223d4ea97666b38c575b60ce04921e0341c5965d7f2c983cd9c8ea35fb8f5a",
+      "line": 292,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "In serum, the A1M concentration in the AIA group was between 1.3- and 1.4-fold higher compared to the injury and osteoarthritis groups (p = 0.035 and 0.030, respectively), whereas the 1.2-fold higher mean concentration compared to the reference group was not statistically significan (p = 0.15; Figure 1A).",
+      "key": "a74c44257abaecdd2846a2ed3835d6846d23c4e35d6010999c535e6a2388f625d6e47b097a85980b3655375ebfe950a1c7d890d57874f8a7f4e7ceb8fa67ed5d",
+      "line": 195,
+      "relation": "increases",
+      "source": 23,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "In serum, the A1M concentration in the AIA group was between 1.3- and 1.4-fold higher compared to the injury and osteoarthritis groups (p = 0.035 and 0.030, respectively), whereas the 1.2-fold higher mean concentration compared to the reference group was not statistically significan (p = 0.15; Figure 1A).",
+      "key": "706757caa7eecfaace71ab602d0323e253cb148cf8b3e577a5b4f3eec25946d0ed428105bde126bd7e7b77dfac774543a250b3f5216a78a39e36aecfeb56c881",
+      "line": 197,
+      "relation": "positiveCorrelation",
+      "source": 23,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "There are many examples of studies that have shown increased A1M in serum or urine to be a biomarker of diseases such as preeclampsia (Anderson et al., 2011, 2016; Gram et al., 2015), and kidney failure (Terzi et al., 2014; Kang et al., 2015).",
+      "key": "6d641ec085e89b4ffcc9ec5cb7fe685831ee44f72c327947e42d56bb786599b2bc9402cf6ce0f5f97847521df4f16de3834ee5e0962968cefe30577c5b16a8b6",
+      "line": 236,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "There are many examples of studies that have shown increased A1M in serum or urine to be a biomarker of diseases such as preeclampsia (Anderson et al., 2011, 2016; Gram et al., 2015), and kidney failure (Terzi et al., 2014; Kang et al., 2015).",
+      "key": "99ec9f326c7e7fac10f1b28a4dd68093847988d34626fb1d28fee27c1341f674ff201b69f98ad7848d4eb1f0599ef424f523bbb3a536014627403ebc89c506e3",
+      "line": 237,
+      "relation": "positiveCorrelation",
+      "source": 18,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Synovial Fluid": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "However, with A1M increased in both synovial fluid and serum in AIA, the present study further suggests that, in addition to heme and ROS, A1M may be regulated by inflammatory cytokines.",
+      "key": "58a31f5ad7d432ab069c8728a70b996f3a339523d47ece43195e9383a47b23173be3023704480923558a0f7b836e6ee4caf22d275b38f09d29463e975b7a60d1",
+      "line": 274,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Knee": true
+        },
+        "MeSHDisease": {
+          "Osteoarthritis, Knee": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Gram M",
+          "Larsson S",
+          "Lohmander LS",
+          "Struglics A",
+          "Åkerström B"
+        ],
+        "date": "2018-01-01",
+        "first": "Larsson S",
+        "last": "Struglics A",
+        "name": "Frontiers in physiology",
+        "pages": "1596",
+        "reference": "30505280",
+        "title": "α&lt;sub&gt;1&lt;/sub&gt;-Microglobulin Protects Against Bleeding-Induced Oxidative Damage in Knee Arthropathies.",
+        "type": "PubMed",
+        "volume": "9"
+      },
+      "evidence": "In addition to the obvious protective benefit of exogenous A1M binding and neutralizing cell-free Hb and heme, it may also be beneficial as a repair mechanism in already damaged cartilage, since in vitro studies showed that collagen fibrils were restored to normal by addition of recombinant A1M after destruction already had begun (Olsson et al., 2011).",
+      "key": "5ca0a898649edcf05011ae1e33b3d99f4853ca4b67a910f4755b8d366ac3e5758fc1138f69f1041c178d4d9d243301cc325b7e3e0f0493b88eceb327a01a542f",
+      "line": 285,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 11
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "function": "Abundance",
+      "id": "e426e7ad4ee4d8eb3c018acb75625d794a96811eb659d39bd8f25c4b30632fc8a938eca8397887738ecc384ec5df867e2026de113f002e5cc4490177de0905cd",
+      "name": "iron(2+)",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(MESH:\"Reactive Oxygen Species\")",
+      "function": "Abundance",
+      "id": "431216f8a4f002a0fa83666bebdbd0cd49a0ffe231e9273c5f429fb234b0cb494c5d4db9d46d631375f41adc4b09f76693b427348a2f18e6a281f770c25d338a",
+      "name": "Reactive Oxygen Species",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Cytokines)",
+      "function": "Abundance",
+      "id": "b212e0151b8087a85aaf17315ce4d0ca06e7fa2700f3e41b10ea54a20d2484f11b545e768089b4d2b117a4feb6c7438ffd569bfaecfc5b5667807e6c2d637f93",
+      "name": "Cytokines",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(GO:\"inflammatory response\")",
+      "function": "BiologicalProcess",
+      "id": "422dfc2db00b1d942862470cbabe1e8312bf97b25050190db5ae19636adae95f4fa18c512574526825bd377b16c2278899435eb759e951ba850ad476e14f9900",
+      "name": "inflammatory response",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"protein oxidation\")",
+      "function": "BiologicalProcess",
+      "id": "42ef667d91d690e55ffda87c5a07630feaf7568c986c086ba354f81ae7e700010711b80789b1375cb147d2426e5ebf15d04678a5db1e083d9a3016b54e3e931e",
+      "name": "protein oxidation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:aging)",
+      "function": "BiologicalProcess",
+      "id": "e656a7a9b8877eca28efc8bcece0149b9f17b643e48c2ae605fb3977fb925968220ed9a29a1649919bd2bdbfd43e6cd082182ead002a6eb840cd3f1e4f57d213",
+      "name": "aging",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Genetic Markers\")",
+      "function": "BiologicalProcess",
+      "id": "4f084d40a2ffb2838eec05b4d37e62a09883e48e2c9746173a5c5072b5c53193460489c13145802acfaa0da9c83ebe5ad6ffb1154a2e549c3dac7b1e23dceefc",
+      "name": "Genetic Markers",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Oxidative Stress\")",
+      "function": "BiologicalProcess",
+      "id": "32bd3ab5e8a3a26be3209856c88741f0f0e2dff98d2587599a6a21b0f4793c5d8feb1194ea2166cf3cece076e7095530b116270e6655bc8feb35a437fda42cf6",
+      "name": "Oxidative Stress",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Wound Healing\")",
+      "function": "BiologicalProcess",
+      "id": "a732d79f94316d0f783896f9faca678e919feeb21cb9cc8c3671a0e5dadd1988330b7721fd005b55c7ce85895350b992a7286ae590470b606e743a69ccef82f0",
+      "name": "Wound Healing",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "complex(a(CHEBI:\"iron(2+)\"), a(CHEBI:heme), a(MESH:\"Reactive Oxygen Species\"))",
+      "function": "Complex",
+      "id": "35843759a3a9e6359e27de5d6381398b80ee600ec57904b643cce5ac29f9a08c17efd3ec15bd264a9d7988aa77672dc66a20c983983a6f23f88da36a469885ad",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"iron(2+)\")",
+          "function": "Abundance",
+          "id": "e426e7ad4ee4d8eb3c018acb75625d794a96811eb659d39bd8f25c4b30632fc8a938eca8397887738ecc384ec5df867e2026de113f002e5cc4490177de0905cd",
+          "name": "iron(2+)",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:heme)",
+          "function": "Abundance",
+          "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+          "name": "heme",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(MESH:\"Reactive Oxygen Species\")",
+          "function": "Abundance",
+          "id": "431216f8a4f002a0fa83666bebdbd0cd49a0ffe231e9273c5f429fb234b0cb494c5d4db9d46d631375f41adc4b09f76693b427348a2f18e6a281f770c25d338a",
+          "name": "Reactive Oxygen Species",
+          "namespace": "MESH"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:AMBP)",
+      "function": "Protein",
+      "id": "0b37d3c803f2d3c4918b4a254f486462ee5463ebf252e088a50a228332537b2d84e8c9bb1089a9b40a9c5730af5bf8de5574c7f3391b5de4f28b518acb1bdd79",
+      "name": "AMBP",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HMOX1)",
+      "function": "Protein",
+      "id": "c4981e9d3903b58471e749e0a1e38277c2729152c5582926243649d5c266ea44d831061cf916b7c6334634d357628b16c015a7ce07c97084f06b2c3f3cc94d5c",
+      "name": "HMOX1",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HP)",
+      "function": "Protein",
+      "id": "0052c8eac45d6228dca9f6db302e8c98c9d2292c20e1bf791ca8fd0749fa28c163d424e0faa9a8dfa46a882f85d0967fc41819b18763a7abd987d07b8cbec1c3",
+      "name": "HP",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HPX)",
+      "function": "Protein",
+      "id": "903fb55a7cb538b12d22305b73d01f90a340e7fd5622711c4b41d1538af80cbb1ed5bc2f065f360c8bdc8d377993c9b55bd06633323591ed22f54741612c3775",
+      "name": "HPX",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "path(HM:\"Oxidative damage\")",
+      "function": "Pathology",
+      "id": "bd52b47fabf42bb9720fe4c8b34ad233cbc13ff4dee7e2072649ec001c30a8d6f07897f65fc094d6050fa04e982622015d46efa56d0b945495fc4e794cdf7e00",
+      "name": "Oxidative damage",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(HP:Preeclampsia)",
+      "function": "Pathology",
+      "id": "0ccf7b2d1c081934d40bcdaf9c50fbe0950c54869220b16d9eed7c8266e8f40f20079099215438d767ffaba0dd1cc41b18117b261cc8e174a3758e2ab11865e5",
+      "name": "Preeclampsia",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(MESH:\"Kidney Failure, Chronic\")",
+      "function": "Pathology",
+      "id": "bad16cd497d2c9ac3ebb016c71ebd9da448441b62ae8a25d9c2749c409f25bfbacdbf10477e7ffbc5fd485747230f4358e8c896d95ac79b35df2533d0b0ac899",
+      "name": "Kidney Failure, Chronic",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Knee Injuries\")",
+      "function": "Pathology",
+      "id": "497f92a9e805c1dbc4a671f562f5d4cf59f83ca78d5472dc6e8d150d191756bb002075d87895b03582f82bb01efd7a240ea6fcfa90bb3e61597e393e4fff768f",
+      "name": "Knee Injuries",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Osteoarthritis, Knee\")",
+      "function": "Pathology",
+      "id": "17ec754afa404723d4b303862e54979ee0a1c90d1e5deec56730eb3c7c3f863ee9b1d208b98fd6f7024ef433a9cb7d5ca7e8793f8ee1cf07114c3a35cc9373a8",
+      "name": "Osteoarthritis, Knee",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Arthritis)",
+      "function": "Pathology",
+      "id": "e69dba8af65cf6c7c94dae7108354223b731c91782b83a9ea58ba86c2c20dc46fd7ea8db293a2fe70dbc874a886961cdff55387136c87530846f4a0a6b7cd7f1",
+      "name": "Arthritis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemorrhage)",
+      "function": "Pathology",
+      "id": "34268cd774d8279f6025ac85b81638a3a76c464b88c3f8a2c2c069203746c0d45a0a3624e42023b89af5089cf997eaa27c5b2332868920cdf4187a3f00196214",
+      "name": "Hemorrhage",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Obesity)",
+      "function": "Pathology",
+      "id": "b2e87d3a1242616a6655d9a23aef852c3710f3b6fcb8e6f2f7d5a7ac6b3d43cd973675c42b4adbbf6ccc37c4791831bdae6fe806e0cb243db64294c97094ac2c",
+      "name": "Obesity",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Osteoarthritis)",
+      "function": "Pathology",
+      "id": "f4d735d47ec42354e51691b048a04df610fd7a57a56f979cde9c1033aa1d6c12836f951ff24d4f4557e2660d5f77953a4af8860b7da349fa8724fbe6b51d31f9",
+      "name": "Osteoarthritis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Pain)",
+      "function": "Pathology",
+      "id": "7c892602ec0888a53b7e5325e40732d94a33e4074ea60461ff7fd223bd15bf9b1565c0b2069497dc15ce86e489f9ddf69baa3101578567cae0fb9f81dbaa8e1a",
+      "name": "Pain",
+      "namespace": "MESH"
+    }
+  ]
+}

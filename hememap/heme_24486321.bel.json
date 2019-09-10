@@ -1,0 +1,1278 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_24486321.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_24486321.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Haptoglobin (Hp) is an abundant and conserved plasma glycoprotein, which binds acellular adult hemoglobin (Hb) dimers with high affinity and facilitates their rapid clearance from circulation following hemolysis.",
+      "key": "17baf55a8b30b101b30206a95b72d4f2d137feaf8dd702fc6ee30066431068e8b719f21d8de57eda35485264a46ad5c5e88503633bfa0d1b7d396cc160eb75a2",
+      "line": 96,
+      "relation": "decreases",
+      "source": 11,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Haptoglobin (Hp) is a Hb-scavenging plasma glycoprotein which binds non-covalently to hemoglobin dimers that are generated by dissociation of acellular Hb tetramers after hemolysis [6].",
+      "key": "0d7e07bf4130febe362ae72f2146018ea18e4022b2df250ddd533fbda2e7d1870017cd7adb695ce41b2bc1e449e57b8035512e7f3723d1115ccf7a3e9d194959",
+      "line": 116,
+      "relation": "decreases",
+      "source": 11,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Hp is the first-line scavenger that binds and accelerates the clearance of Hb in the circulation, although the macrophage CD163 receptor has also been the focus of several recent investigations [66– 68].",
+      "key": "47ae39c2a05e32e89ded7e4a9576b2b0b15bd161aad593384012a39d15716ae413ca6f0b04704fc63f5b68c3272e2babda0e5960d7b762de8f51d5c7b7bb4f68",
+      "line": 153,
+      "relation": "decreases",
+      "source": 11,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Probably the most important Hp-mediated abrogation of Hb toxicity is stabilization of heme within the central cavity of the Hb subunits, which almost completely prevents its dissociation and subsequent free heme-mediated oxidative reactions and inflammatory responses.",
+      "key": "04c494681a7d0c77858e4f34a8d6aa0d60a121a85377e9571de640c7d879d51b74489d6754103059aa624a2766324853bbce5d63c5f9225e8791853e2ec2760d",
+      "line": 160,
+      "relation": "decreases",
+      "source": 11,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Probably the most important Hp-mediated abrogation of Hb toxicity is stabilization of heme within the central cavity of the Hb subunits, which almost completely prevents its dissociation and subsequent free heme-mediated oxidative reactions and inflammatory responses.",
+      "key": "181d0775a043e38690e9450498eedf2808d8cca47725afb9750a138af6b32510f39bfb27f4e11c985188b87c238b76e4901b7815e4ab4e3469786ed485ab89b9",
+      "line": 161,
+      "relation": "decreases",
+      "source": 11,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "First, addition of exogenous Hp both markedly inhibits heme loss and second, as a result of this inhibition, globin precipitation is prevented.",
+      "key": "8ffb37aa1bbd352ece1ce66cdb9f6ff9279ae77b0af74c71313ff4a2b1510615cc746bfc955c4f3961e4c48f8014f27626536a7470f6ceb6d062b93e09c42229",
+      "line": 167,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Hemolysis and the transfusion of banked blood or Hb-based therapeutics can result in varying quantities of circulating acellular Hb which can induce life threatening radical generating reactions in patients with a compromised vascular system [60].",
+      "key": "fe19e77e5eb11ca9ff1cd6f17fa7979cca57a6f490caec69c95e7049416b21521aa346471a033502abd79b74b607767cd02503a6d95aa94f5d3b8e932c6c8ac9",
+      "line": 132,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Hemolysis and the transfusion of banked blood or Hb-based therapeutics can result in varying quantities of circulating acellular Hb which can induce life threatening radical generating reactions in patients with a compromised vascular system [60].",
+      "key": "aca66d9abea27698cc88a137354c537435ac6cea8d476857d793f27eb35dc8309b42b6874f4f70405cd2b3f9c9d49cba42cfe96d436e99f09940a0a5799556fb",
+      "line": 133,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Third, exposure to extracellular Hb, in the form of oxygen therapeutics or when Hb is released from old red blood cells, have also been reported to induce oxidative toxicity in kidney and brain tissues [65].",
+      "key": "212a3ab53f57db0ac63a079b989fea67e79b8123b9208040e9aaa4e733c0c6a29a8b27171f9b8ae1462c2477ccfd4846e553075a72ae0f55767f0629c7ccab6f",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Third, exposure to extracellular Hb, in the form of oxygen therapeutics or when Hb is released from old red blood cells, have also been reported to induce oxidative toxicity in kidney and brain tissues [65].",
+      "key": "bd28735dd5d1af5b93d2a01f2e02c093776b5a290a0570dd399c7b9b82f6bc4503163dab02a2cdb8562eec8d4969f90616ccbf281d6e053daa9db718ef1df3e4",
+      "line": 146,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "In that study, heme was shown to specifically bind to endothelial Toll-like receptors (TLR4) and trigger a cascade of inflammatory responses, which could be attributed to oxidation and degradation of cell-free Hb [73].",
+      "key": "754dd8c3236704bdbf2b00b2d5cfdf9250b59c6d1dcdc249528a2826877df4d38531c56d420e92c4fa5a6476a5dd26aa2a2ede942a82d867aa0db0f6fdb84819",
+      "line": 181,
+      "relation": "increases",
+      "source": 10,
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "target": 3
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "For example, autooxidation of oxyhemoglobin (HbO2) or oxymyoglobin (MbO2) produces met-Hb or met-Mb, respectively, and superoxide radicals (O2•−, HO2•) via electron transfer [3,4].",
+      "key": "9c6d731b6eec8e8015d64c02c057bd5633c42ebce2c7bcddeb49e0216edd9addc126b16411640fcff646ff1bcca4f5b7c1404049a70cb34dd1a3208982b93384",
+      "line": 104,
+      "relation": "increases",
+      "source": 5,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Hp bound metHb and prevented heme loss and hemopexin captures any free heme released from metHb during its denaturation.",
+      "key": "05130f102ae2b73e20f5cdffd9e30c9e149c875b705dcaa9df717019e52474517c912810ca50928bb53df57c88915f697befb7c6058683df19cf99d16029b183",
+      "line": 188,
+      "relation": "increases",
+      "source": 4,
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "target": 3
+    },
+    {
+      "key": "4e0807bbeff08d950595f4d4c55ce1961a718446a07c4a3bd3bbc011e7c6d122a08935f7b53a2ab1fee6ab50843cd7ae51a9a8cdc60650a63bc13dde6e9a9aca",
+      "relation": "hasReactant",
+      "source": 21,
+      "target": 0
+    },
+    {
+      "key": "e976411681bc2dc5cbed7ab37366f7820485d81638d377379e826bccec524699862ee406e1f4dd229325e4b5907bedf8bd7392d4520b761fea55a0a713f289b6",
+      "relation": "hasReactant",
+      "source": 21,
+      "target": 1
+    },
+    {
+      "key": "de6367e1103a8ec36c63f720a7fa01fd7bec9a3884f12a88eb6bd3c359afd977622518c1e1b088d3af785c9ed99c21000b2d859bd5aeacd81bdaafb87a840ab7",
+      "relation": "hasReactant",
+      "source": 21,
+      "target": 2
+    },
+    {
+      "key": "152a1251a0bac9febd2e2414912f5fb386f9a3174236d6d0210bf15d8462de33ab0ed40a31903cd62cdb6f7a63c67acd2c3da6302643894bea0f457bf847f794",
+      "relation": "hasProduct",
+      "source": 21,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "For example, Hp 2-2 has been associated with an increased susceptibility to diabetic cardiovascular disease; uptake of Hb-Hp(1-1) complexes by CD163 receptors is reportedly faster and its binding results in increased concentrations of anti-inflammatory mediators than Hb-Hp(2-2) complexes; and the angiogenic potency of Hp 2-2 is reportedly greater than that of Hp 1-1 [18].",
+      "key": "2ab10ea99b15079a5e0175e4171a91bfd1626ac3352fc85f275a1a509d648c2795653e9eec563ab448a850e2ea7253fc63ea417747d376c0acb38e492d2af939",
+      "line": 124,
+      "relation": "decreases",
+      "source": 7,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "This result is in accord with recent work, which showed that Hp binding to Hb prevents oxidative damage to the globin.",
+      "key": "46905890ccbf7fb79a99d53dffd245c4cc3ebe7d2c3fac49df2e6e05e669e6f3de4be3327883eb5a15809a4561c3ae4d557f561008b8b5a143c58b34683ae5b5",
+      "line": 195,
+      "relation": "decreases",
+      "source": 7,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "In that study, heme was shown to specifically bind to endothelial Toll-like receptors (TLR4) and trigger a cascade of inflammatory responses, which could be attributed to oxidation and degradation of cell-free Hb [73].",
+      "key": "b504376c7a7a6b3361678a113813993d25e0ce0ec1eb3e3e5c7f6e32cbae7eb3b5e3754f9e2068cac290af470fdfa87137e5644f69f0fcb5508aee624d93c735",
+      "line": 182,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Hemolysis and the transfusion of banked blood or Hb-based therapeutics can result in varying quantities of circulating acellular Hb which can induce life threatening radical generating reactions in patients with a compromised vascular system [60].",
+      "key": "080adbcb96a3c3bf2f23c2cfea827525f5801ef3757e1314b6324c18be37f3e1182de5b27c1240c508b520b1f1d0d44605fd2eec9e706950b9cf7dff57559c3f",
+      "line": 132,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Hemolysis and the transfusion of banked blood or Hb-based therapeutics can result in varying quantities of circulating acellular Hb which can induce life threatening radical generating reactions in patients with a compromised vascular system [60].",
+      "key": "fa570e2291de5f8d322ea9adb792cf8a0c74517ff98c5076d5ac69bd95dbb1bb07b3e763b588e547236e39c2b13de80089d5327b1f74f3e0277e967966407a34",
+      "line": 133,
+      "relation": "positiveCorrelation",
+      "source": 18,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Ferryl heme and associated protein radicals with high redox potentials (~1.0 V) can induce a wide variety of oxidative reactions that affect the protein and nearby molecules [2].",
+      "key": "614984244855083c368b78815aa12249d8990801d4994fe40e776ce7a79dd64e7a1743bffe39c35e334b996a69ee295591ca496490b61b252058c34fe7e011e8",
+      "line": 139,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "First, addition of exogenous Hp both markedly inhibits heme loss and second, as a result of this inhibition, globin precipitation is prevented.",
+      "key": "a8736354d0b5489ebd008780d1f83a10ec0e02ee2879d246350414b839b5e89fa27822c69f69aff0acc0f4fd0fdaacc012a8542bfbd0c4a2a1876bae0c5427b7",
+      "line": 167,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Ferryl heme and associated protein radicals with high redox potentials (~1.0 V) can induce a wide variety of oxidative reactions that affect the protein and nearby molecules [2].",
+      "key": "43e3894fa3578b36683a514e7657f74a92b9c5a8dcb0afbb597901c823379943fc42f5e52cc7118eee7112bfb451a5cbda63bcbadadd6d313d22645f8d7a842a",
+      "line": 139,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Third, exposure to extracellular Hb, in the form of oxygen therapeutics or when Hb is released from old red blood cells, have also been reported to induce oxidative toxicity in kidney and brain tissues [65].",
+      "key": "9850553ed85beee12222a792352153635b4c9d7ed7a17e2f2e006f193ae804366483de60648d273849672bd7f172ca77a7b485d5581b06efc4961bd114ecdf93",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Third, exposure to extracellular Hb, in the form of oxygen therapeutics or when Hb is released from old red blood cells, have also been reported to induce oxidative toxicity in kidney and brain tissues [65].",
+      "key": "f47088810f893800e72d31a30ab77b893b1887d98a3598496d43fe804ada51eff943eb31ccf234fb6f81858c4f1308c5f316e65e96e2f7863382747315588757",
+      "line": 146,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "These findings are consistent with a recent study which showed that both Hp and hemopexin (heme scavenger) were equally effective in preventing vasoocclusion in a sickle cell mouse model infused with Hb [73].",
+      "key": "c0178ced48bcc7ab242896892d30fd3e4d98124d54e8244248eee91c7d1a3ae7daeda5b7ad478f1928ff4a6c8ecb5f2bbb68af329beb2245e78a8bf86a45496c",
+      "line": 174,
+      "relation": "decreases",
+      "source": 12,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "These findings are consistent with a recent study which showed that both Hp and hemopexin (heme scavenger) were equally effective in preventing vasoocclusion in a sickle cell mouse model infused with Hb [73].",
+      "key": "94ba73c8b06c43e8c09a23fe94fa7c1a7e4a9b2e92ec0271cdd4e06da478d09a029e564a5eb25c2bbe9f84d59883dc0f9a711c4d4ab110cd9416aa7e54eb14b7",
+      "line": 175,
+      "relation": "decreases",
+      "source": 13,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "Hp bound metHb and prevented heme loss and hemopexin captures any free heme released from metHb during its denaturation.",
+      "key": "f7b8e5d27e9d7de0309588959493eb3d2ca14080b7cecace621bb41c3a4e8716b4928f1694822a8fc890701ac9dfc18a58b30f10402a0f24b404b24dacae0f1e",
+      "line": 189,
+      "relation": "decreases",
+      "source": 13,
+      "target": 3
+    },
+    {
+      "key": "e966b22a40f70b5b1cf34a1130e6ed54bb1ea7bc3b5d7142c2cc26ed995cc63be90127b6e64d111e8b15a179feeb44593a216d849d68ffc06aaac4e7912f9595",
+      "relation": "hasComponent",
+      "source": 9,
+      "target": 3
+    },
+    {
+      "key": "b1a3f593ea6289f94054eafc777e2535c0f08ac19b41b8dcc7b7b68b83273287afdc654de07eafa95966a243935cf5324572b9495a221319ba574442134c78c8",
+      "relation": "hasComponent",
+      "source": 9,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alayash AI",
+          "Banerjee S",
+          "Crumbliss AL",
+          "Jia Y",
+          "Kreulen RT",
+          "Mollan TL",
+          "Olson JS",
+          "Tsai AL",
+          "Wu G"
+        ],
+        "date": "2014-04-01",
+        "first": "Mollan TL",
+        "last": "Alayash AI",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "265-77",
+        "reference": "24486321",
+        "title": "Redox properties of human hemoglobin in complex with fractionated dimeric and polymeric human haptoglobin.",
+        "type": "PubMed",
+        "volume": "69"
+      },
+      "evidence": "In that study, heme was shown to specifically bind to endothelial Toll-like receptors (TLR4) and trigger a cascade of inflammatory responses, which could be attributed to oxidation and degradation of cell-free Hb [73].",
+      "key": "1130cfbb36f906fa4d2039c45b6c6263225dc8d564b9e0b8cce3b0b622aa151ce0e5f74816977205b798d22670829f8cf7f8839fe1c89ddc98112da3851b4373",
+      "line": 182,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 20
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"hydrogen peroxide\")",
+      "function": "Abundance",
+      "id": "4d65b5d180890b98afe0bc10614fde44ee750b2d1af6fdd925fc31ead7ee9a7248bda3d67c52aebf220b8c048d999f2d878a97a70b0e027a7294cbd3c7bf61bf",
+      "name": "hydrogen peroxide",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "function": "Abundance",
+      "id": "e426e7ad4ee4d8eb3c018acb75625d794a96811eb659d39bd8f25c4b30632fc8a938eca8397887738ecc384ec5df867e2026de113f002e5cc4490177de0905cd",
+      "name": "iron(2+)",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:dioxygen)",
+      "function": "Abundance",
+      "id": "39bcb3f4ef9061b09ca7bc9d8743db0a61f29039c41b916efa5846da000487a0a1b7be88756b8def2e3c7fc977193aa5365838f148c64cfbe577f42d9e96a1c5",
+      "name": "dioxygen",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:methemoglobin)",
+      "function": "Abundance",
+      "id": "7805bca22642b820fb0a026eb5c67eb4512f0a021ec5c97c5f505f5706c0ef4cb986edf806c547d40110c084b98e15c3520dd558cb96c5071b4dd9709e641130",
+      "name": "methemoglobin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:oxyhemoglobin)",
+      "function": "Abundance",
+      "id": "677a833ae4fd83a2eee771c3529252a0f789ecb0921b0280d7be9d4410ecb8c1e3cd3cd1612d062efc6d614205c2bc09aae5743250de566a0a23651affc7956a",
+      "name": "oxyhemoglobin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:\"oxidative reactions\")",
+      "function": "Abundance",
+      "id": "424bc8c5ee95b5a9ac077c96ec0fdd63901bb2f7bd11a22842ae879e021f4b04cae5a4564feea644a1e45a1220947f7269f7b5cb8b6ff9347c965f4a9fd7dcf6",
+      "name": "oxidative reactions",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(MESH:\"haptoglobin-hemoglobin complex\")",
+      "function": "Abundance",
+      "id": "7b476fba9ca00d6770b2810f62ba5e0e75b4fec95d72ab7ad83b8c6055a4c8bb7d2c730747aeac851ef5213165f4cadb35d7b625570a7d35056e3d9f97f7d9c3",
+      "name": "haptoglobin-hemoglobin complex",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:ferrylhemoglobin)",
+      "function": "Abundance",
+      "id": "e9e7ab9bd7169afff944c21b3a5bfdd5d540f139d70efbb74aa6469f05128eec6a113dfd0c957fb11568801c62722ed4b2b11d972a64ffd74fa8406be0bbcaeb",
+      "name": "ferrylhemoglobin",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "complex(a(CHEBI:heme), p(MGI:Tlr4))",
+      "function": "Complex",
+      "id": "55180a6bd78e333b4d2fe0bd31cd4f2529c19c89a358707c9646aa6f08577894f68d7274bfc9371cb8d537714da60767a06f7d553a21083eaa7faea41707d69c",
+      "members": [
+        {
+          "bel": "a(CHEBI:heme)",
+          "function": "Abundance",
+          "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+          "name": "heme",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "p(MGI:Tlr4)",
+          "function": "Protein",
+          "id": "3ed0d387c1898f210a01623e8881069555cd5a7ab7389c889536d0ba941377a7debe9b7dc290afb4645e225eb41c3bedf6b78126afaafafd605bc1500b1a39c5",
+          "name": "Tlr4",
+          "namespace": "MGI"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HP)",
+      "function": "Protein",
+      "id": "0052c8eac45d6228dca9f6db302e8c98c9d2292c20e1bf791ca8fd0749fa28c163d424e0faa9a8dfa46a882f85d0967fc41819b18763a7abd987d07b8cbec1c3",
+      "name": "HP",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(MGI:Hp)",
+      "function": "Protein",
+      "id": "ef6b27651769abfe3e0b315e005cda4bbf0d64e50c65cb3ec3a5605a08018dd0bb6b8b25ca42f8ea3ccc0630388908ccd832178ba97d5ffa830e6aff4f9c9092",
+      "name": "Hp",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Hpx)",
+      "function": "Protein",
+      "id": "ccdc2439745a084dbbe73e6559429f702bfbdd9823ad4837b3232123b8c4a6c91ffd44740d989f368c570e462c58632040fcfa2d5e947abff06413ab3ce7ec44",
+      "name": "Hpx",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Tlr4)",
+      "function": "Protein",
+      "id": "3ed0d387c1898f210a01623e8881069555cd5a7ab7389c889536d0ba941377a7debe9b7dc290afb4645e225eb41c3bedf6b78126afaafafd605bc1500b1a39c5",
+      "name": "Tlr4",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "path(HM:\"vaso-occlusive crisis\")",
+      "function": "Pathology",
+      "id": "7007ee304406d4320c9dcbefa93caf0b8ca48c68e148031ff1268674b1581667e2815de7ed2d14f5ac673c886c0493c40b8b821f94db58cf6f8ac9093dca5a48",
+      "name": "vaso-occlusive crisis",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(MESH:\"Brain Diseases\")",
+      "function": "Pathology",
+      "id": "4eab84fbd2d0218c8b658ffffdae20ccb80aed44e3c9786db51cf360a5f76769241d83ce5c8704263412982a088c914a8327d22c2c1928de07ba44790eee3223",
+      "name": "Brain Diseases",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Kidney Diseases\")",
+      "function": "Pathology",
+      "id": "090cb22d86a27f3804ff751411e89b61b7e9af0658df070a82697d3c44d300938b5f2db8e112e56b8c85ea4ffab841fe561ec850c9ec50e9fdb0864a3928f058",
+      "name": "Kidney Diseases",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Vascular System Injuries\")",
+      "function": "Pathology",
+      "id": "2c1dc10562090ab803cf25bbb0eaa83a64b75c8750bd549df2e66f6f3545a54bd009fd5c1a689c5489abb49876de701c8542c0c371e00e4420f455faa8fff57a",
+      "name": "Vascular System Injuries",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "function": "Pathology",
+      "id": "3196cc4c6a20279c822cae925a9b271d0224f2c8d468e3069a3ee460662be286b61db2f144c550686a9c624e58af4ffa7570f4f2384e1cb8ee40496f8cb3fa5e",
+      "name": "Inflammation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "rxn(reactants(a(CHEBI:\"hydrogen peroxide\"), a(CHEBI:\"iron(2+)\"), a(CHEBI:dioxygen)), products(a(MESH:ferrylhemoglobin)))",
+      "function": "Reaction",
+      "id": "c227fd83677089585dff75073613da47c8469c1c1b6faaaee88d9cba8dc92b595c471542475bd4282e071476322f8e5ef79a84e17e2fdfec2085fd28c38e3c17",
+      "products": [
+        {
+          "bel": "a(MESH:ferrylhemoglobin)",
+          "function": "Abundance",
+          "id": "e9e7ab9bd7169afff944c21b3a5bfdd5d540f139d70efbb74aa6469f05128eec6a113dfd0c957fb11568801c62722ed4b2b11d972a64ffd74fa8406be0bbcaeb",
+          "name": "ferrylhemoglobin",
+          "namespace": "MESH"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(CHEBI:\"hydrogen peroxide\")",
+          "function": "Abundance",
+          "id": "4d65b5d180890b98afe0bc10614fde44ee750b2d1af6fdd925fc31ead7ee9a7248bda3d67c52aebf220b8c048d999f2d878a97a70b0e027a7294cbd3c7bf61bf",
+          "name": "hydrogen peroxide",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:\"iron(2+)\")",
+          "function": "Abundance",
+          "id": "e426e7ad4ee4d8eb3c018acb75625d794a96811eb659d39bd8f25c4b30632fc8a938eca8397887738ecc384ec5df867e2026de113f002e5cc4490177de0905cd",
+          "name": "iron(2+)",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:dioxygen)",
+          "function": "Abundance",
+          "id": "39bcb3f4ef9061b09ca7bc9d8743db0a61f29039c41b916efa5846da000487a0a1b7be88756b8def2e3c7fc977193aa5365838f148c64cfbe577f42d9e96a1c5",
+          "name": "dioxygen",
+          "namespace": "CHEBI"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4497 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_28458720.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_28458720.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "However, in the past few decades there has been increasing evidence that RBCs have a variety of active functions in hemostasis and thrombosis that are significant and need to be taken into account in assessing health and disease.",
+      "key": "b1c3f631646969e3d1cba94ca10bec98a46b81a578be5756b4274b0264291a501049c26bedaa68180f0809548f5ac6bae1cb47c385295537889bb35085c03241",
+      "line": 92,
+      "relation": "association",
+      "source": 17,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "However, in the past few decades there has been increasing evidence that RBCs have a variety of active functions in hemostasis and thrombosis that are significant and need to be taken into account in assessing health and disease.",
+      "key": "df29662b810b597946cbef55493b3d8690761ff984626d514acb9c4b7e374c2a125f99543b0b562aa876db82e78eb82a57535577d1de23f6d1f8fac6fd42536d",
+      "line": 93,
+      "relation": "association",
+      "source": 17,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "A remarkable rheological effect of RBCs that affects platelets in hemostasis and thrombosis is that RBCs preferentially move down the center of blood vessel, causing margination of platelets, so that they are poised to adhere preferentially to the site of vessel-wall injury [10].",
+      "key": "b495c2bbf32601b2e8ffede3b44e4065ffaaa2b7beea8eee3a231233cad80a97fa28c3fc6088816872838f1ccc85130f3c303585c04ea52d8c4be30d868f4fce",
+      "line": 126,
+      "relation": "increases",
+      "source": 17,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "A remarkable rheological effect of RBCs that affects platelets in hemostasis and thrombosis is that RBCs preferentially move down the center of blood vessel, causing margination of platelets, so that they are poised to adhere preferentially to the site of vessel-wall injury [10].",
+      "key": "475c4c396062b4bdbd313b51a751e514e49ea7670c0f86460add738b03f230bca167408ccdcbe9f3f7eeff93f64ca455fe3196dc938d9f7e8924a15f595a4cba",
+      "line": 127,
+      "relation": "increases",
+      "source": 17,
+      "target": 34
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "RBCs can modulate platelet reactivity directly through either chemical signaling or adhesive RBC-platelet interactions. RBCs promote platelet aggregation and degranulation by releasing ATP and ADP under low pO2, low pH and in response to mechanical deformation [27, 28].",
+      "key": "cc0e9181ffa291deea5e8ab04d2b7e1eb06667caae0d72204fd107734739ca48bc2702a9f82e444258481f44661583823dfc414b618d4110f180c95501d4403c",
+      "line": 195,
+      "relation": "increases",
+      "source": 17,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "RBCs can modulate platelet reactivity directly through either chemical signaling or adhesive RBC-platelet interactions. RBCs promote platelet aggregation and degranulation by releasing ATP and ADP under low pO2, low pH and in response to mechanical deformation [27, 28].",
+      "key": "714d5a9d6e1455c41186b6835772705912f70584f3c706014d2f40a177a84c5033a9c3a2277035ebbc37e0d0cedca1737e3a27397e8b0be18920b8ad2d036ffe",
+      "line": 196,
+      "relation": "increases",
+      "source": 17,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "However, in the past few decades there has been increasing evidence that RBCs have a variety of active functions in hemostasis and thrombosis that are significant and need to be taken into account in assessing health and disease.",
+      "key": "034881ca97116a9d3f25cc4aff81867736210cc4fda7a0faa6d3b9b254b1a438c04d81481f9ea7b3829eccdbb6026f03e42fdda0b1514007855b1d1ee3fbd6df",
+      "line": 92,
+      "relation": "association",
+      "source": 41,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thus the volume fraction of red cells may have a significant impact on hemostasis and thrombosis, with the nature of the effect related to the flow conditions [9].",
+      "key": "506a06789e299a2778bf542d79c8f309ff128c61cb6dab230f54821c50b2c225c2c936dc6ebd0f840338c6c38a44ac2fb46d34bb1ba0c472bb8fb050cadd786a",
+      "line": 119,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 30
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The ability of cells to generate MPs in vivo is an important regulatory mechanism of physiologic reactions, a means for intercellular communications and a pathogenic component in many diseases that impact hemostasis and thrombosis [50, 51].",
+      "key": "0b0a14809dd8a12f200e845074db95b4a9f04722fb27b9ca20acb25830ebf477e02cf43133be57e9deefe914e9d141041bf14c2d0cede345332c19530a4c31c1",
+      "line": 277,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "However, in the past few decades there has been increasing evidence that RBCs have a variety of active functions in hemostasis and thrombosis that are significant and need to be taken into account in assessing health and disease.",
+      "key": "00255b421e1fc3c058f88c782ce7575de43630b015a0e29d9c6d17273092c1652c477e4f5a5d8a203e4bd8f15ee86a0f5abfe254d5ac15c48b8bd4341c623075",
+      "line": 93,
+      "relation": "association",
+      "source": 61,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "On the other hand, an abnormally high hematocrit is associated with thrombosis, and patients with polycythemia vera or taking erythropoietin are more susceptible to thrombosis and thromboembolism [4, 5].",
+      "key": "1fbb460bf168fff623aab6f085be9099ee85c152f469142b12ea8f2aecab3f80ae357b1ce7d6f5fe4165f0c5808eba2d19295fe64482a75beef4ac021ac18979",
+      "line": 99,
+      "relation": "association",
+      "source": 61,
+      "target": 39
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "On the other hand, an abnormally high hematocrit is associated with thrombosis, and patients with polycythemia vera or taking erythropoietin are more susceptible to thrombosis and thromboembolism [4, 5].",
+      "key": "2c9564efe62024018d5f1f121414b3a0827baaa79a710d744ff1bfc8b51758d589d477421c90c77792f50ea420d488287f922c37d1eff3c829fdaf64ce0029f1",
+      "line": 100,
+      "relation": "positiveCorrelation",
+      "source": 61,
+      "target": 54
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "On the other hand, an abnormally high hematocrit is associated with thrombosis, and patients with polycythemia vera or taking erythropoietin are more susceptible to thrombosis and thromboembolism [4, 5].",
+      "key": "8e5a24764f08306707d81d68f7cc41ad81444fb7ec22f717be5f5d81a417b44d3ce44d2d928f54703ad24fd607c87d79c3000c4a632e5724ce339342ccd6ab74",
+      "line": 101,
+      "relation": "positiveCorrelation",
+      "source": 61,
+      "target": 42
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thus the volume fraction of red cells may have a significant impact on hemostasis and thrombosis, with the nature of the effect related to the flow conditions [9].",
+      "key": "c3fd3e73e687154682b8403e4d78ede5ebc1d91f45f2d2589bb10c438918a7cd4ba0bbb1b2aa28e2f1784063228f478d48ce0fa0ffcc1cc0008e371aa03910e4",
+      "line": 120,
+      "relation": "positiveCorrelation",
+      "source": 61,
+      "target": 30
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Some diseases, such as diabetes, hypertension, lower limb vein thrombosis, coronary heart disease, can secondarily alter the properties of RBCs, making them stiffer and prothrombotic [24].",
+      "key": "d9df28f04451b73d5bea55d5036008b24a78ddabd9f0822519dcbc493435251939860872efac4109f2754cd21b3fba37288d65603a47fb63461db4f196df12e0",
+      "line": 181,
+      "relation": "negativeCorrelation",
+      "source": 61,
+      "target": 29
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Because of the large numbers of RBCs present in the blood, even a small fraction of RBCs with phosphatidylserine exposure can result in prothrombotic conditions.",
+      "key": "d7b43424b41ff9899eeb7d8770af16c2e9a3fb989b353fb8e4ec9ba27af95a189ba4e3e80ebd8099ca49350f2837cdd89467e413993df07e73d93ff177519222",
+      "line": 257,
+      "relation": "positiveCorrelation",
+      "source": 61,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The ability of cells to generate MPs in vivo is an important regulatory mechanism of physiologic reactions, a means for intercellular communications and a pathogenic component in many diseases that impact hemostasis and thrombosis [50, 51].",
+      "key": "d3e8fef0438f915b64c4274c74b8465a8ac03436dd6f849048dcb7f3768b79a3a6b34bb55c864485581825ad2b7a2f35a387bfa5ceda8e067d6513636b4535d6",
+      "line": 278,
+      "relation": "positiveCorrelation",
+      "source": 61,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "An increase of fibrinogen concentration can result in greater RBC aggregation, which is associated with a higher incidence of thrombosis.",
+      "key": "ad1adea623745ed896daa50ea87cd1d32ae67d73eca5e7024787c6a94a03ad9bd22ca0619ea5685d51dc05d6189ed14eb6d5123e75390db19fb4708c4963359f",
+      "line": 344,
+      "relation": "positiveCorrelation",
+      "source": 61,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "On the other hand, an abnormally high hematocrit is associated with thrombosis, and patients with polycythemia vera or taking erythropoietin are more susceptible to thrombosis and thromboembolism [4, 5].",
+      "key": "04d1d0f4590760906306581be86e6e3ce99e761e4f4363a518410270a8e2d57b6999acccd19d3436e7a526101850c2be63bd0bcc028e255bad37256e7452085a",
+      "line": 99,
+      "relation": "association",
+      "source": 39,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "High hematocrit results in an increase in blood viscosity that impedes the blood flow [6, 7].",
+      "key": "ab3c9d6e88aa83f8cde8e496ed2d402b350e2173e8f49466bb7b4215dc5d7d117319b34a631e4b733cb71c4718786e99c5e4899f8f31ba3321b16ce919e7f61e",
+      "line": 106,
+      "relation": "increases",
+      "source": 39,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "High hematocrit results in an increase in blood viscosity that impedes the blood flow [6, 7].",
+      "key": "99d83335283e9787dbb033705369e6a3d438af1609d2d20f1567f866230b8d8ef2651f1537a683fdb8b8a2515568f3dfb924fb8bc7466fbd3047f2257a323d59",
+      "line": 107,
+      "relation": "decreases",
+      "source": 39,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The hematocrit-related blood viscosity may have physical effects on the interaction between platelets and blood vessel surfaces.Under flow conditions, platelet adhesion increases greatly with hematocrit.",
+      "key": "4694d721d51e530ce73b91e32c001bfab99a008de3296172e17c66173f0df54451fb44b8c477bcb62064db7e5601150bb1beba26e0c3d183dee30450f59b6d8c",
+      "line": 113,
+      "relation": "increases",
+      "source": 39,
+      "target": 34
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "On the other hand, an abnormally high hematocrit is associated with thrombosis, and patients with polycythemia vera or taking erythropoietin are more susceptible to thrombosis and thromboembolism [4, 5].",
+      "key": "6792cda0048353775f21f8ed11ee6d3449693a20eb1c5820e58393fdbcbc6276fee3f673f3749c62296bea56dac6c420cf338e173f3da05efa5b6fa21e5d3705",
+      "line": 100,
+      "relation": "positiveCorrelation",
+      "source": 54,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "On the other hand, an abnormally high hematocrit is associated with thrombosis, and patients with polycythemia vera or taking erythropoietin are more susceptible to thrombosis and thromboembolism [4, 5].",
+      "key": "270916b5f91d4f3d79bd1fd3e25502943f14ff2e42d72b58393f64ab7b6c232d41f234beb0b2e9ddf0e89e3e53131465920a9a05ba1ea70a99901b32c8d79b22",
+      "line": 101,
+      "relation": "positiveCorrelation",
+      "source": 42,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "On the other hand, an abnormally high hematocrit is associated with thrombosis, and patients with polycythemia vera or taking erythropoietin are more susceptible to thrombosis and thromboembolism [4, 5].",
+      "key": "f54ef66503a7204f0ef59d4acffc370e2ad5954b95ba96006e75b489310c00bca12a405820e488024e4361f2bdad61270fa9301272b9b1b07b7c48c690973ef4",
+      "line": 102,
+      "relation": "positiveCorrelation",
+      "source": 42,
+      "target": 60
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "On the other hand, an abnormally high hematocrit is associated with thrombosis, and patients with polycythemia vera or taking erythropoietin are more susceptible to thrombosis and thromboembolism [4, 5].",
+      "key": "c4338de59abaf2797ac3c077adbf13c432c627fde1ab0fc5ebc40ab2d2c14aa146c1a851ca88c725ec18568c11473a3d6ff18f8b5335b0ee80b50215acf3ea11",
+      "line": 102,
+      "relation": "positiveCorrelation",
+      "source": 60,
+      "target": 42
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thus the volume fraction of red cells may have a significant impact on hemostasis and thrombosis, with the nature of the effect related to the flow conditions [9].",
+      "key": "e3573cd5df5962847a49f23d021c2c7340314b4eb2c9e4e06d125e2d882c01dbdfe8924f3ec02c023ed15ca87c0bb20df78705c7ec31adea4df90759ae53d637",
+      "line": 119,
+      "relation": "positiveCorrelation",
+      "source": 30,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thus the volume fraction of red cells may have a significant impact on hemostasis and thrombosis, with the nature of the effect related to the flow conditions [9].",
+      "key": "a0dab3717e404f92f9521388b91ab2b8a025d57eb2f1064c5b7b2675548b7ae629e9ce3d5ce2ea813647da61fb1dad787b3585999fe12025ba6609407749aa3a",
+      "line": 120,
+      "relation": "positiveCorrelation",
+      "source": 30,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "More rigid RBCs may be less able to squeeze through the capillaries and they also increase platelet margination described above, both of which increase the susceptibility to thrombosis [18].",
+      "key": "5e4c48f6b47b6d99a9613f5059290f8b3a05683a934614b876335ea313fa85b141dc4df9a938f7e8442f7922a57ad4f6b31a9496787496857b88d925179674ee",
+      "line": 167,
+      "relation": "increases",
+      "source": 4,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Another consequence of the axial RBC accumulation followed by reduction in local viscosity is a decrease of the wall shear stress causing a lesser local release of nitric oxide [15].",
+      "key": "eef7832720793606fd9166b8b1a2abb79e5eee747ed39cc5ad6c2a87717e42540580132c0304a78fa2b3a33bc5eec163ccd4c7c92df79fa52b9ea2a5d0724f74",
+      "line": 133,
+      "relation": "decreases",
+      "source": 28,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Such aggregates are difficult to disperse and they tend to increase the blood viscosity and hydrodynamic resistance in larger blood vessels with low shear, such as the veins in the lower limbs.",
+      "key": "e785ddb5e1ddb97fac30fb9c13131bb1e9970a238ccb55b1b0851b030d44b4eb39a678868fe59e83978e86a7c7d2d2ddcbacb8005108d738f19a280ea4782559",
+      "line": 151,
+      "relation": "increases",
+      "source": 28,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Another consequence of the axial RBC accumulation followed by reduction in local viscosity is a decrease of the wall shear stress causing a lesser local release of nitric oxide [15].",
+      "key": "b1d1c8bd7a1bda26f13fbcdffd60e59d5266936632b30d8b2502b0975bda4e708d311e9aa7e4b87874a393484cb208e55e1a4f92297016e3f455981cc47a0789",
+      "line": 134,
+      "relation": "decreases",
+      "source": 28,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "At low shear rates or with stasis of blood, RBCs tend to form linear arrays of stacked cells (roleaux) or three-dimensional aggregates [16].",
+      "key": "6267b8b97ea0d600f1de1a691fce177037e8e29de87d5f6de0687b6cf7b36ecfc3def6d90803ea14ef2f3ac3f6ca75942265139e1e81d300000db3ded551cd52",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 28,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "RBC aggregation promotes thrombosis in veins, confirming the pathogenic importance of locally altered blood rheology in the development of venous thrombosis [17].",
+      "key": "986a66f9658d8c9b285cc55d68557faecc84b2728ead6947324469682aaeb6cf33781eae976f70d97b8abd8b76cd17e6c76683ece3852bc256654eaa3b023348",
+      "line": 158,
+      "relation": "increases",
+      "source": 28,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "An increase of fibrinogen concentration can result in greater RBC aggregation, which is associated with a higher incidence of thrombosis.",
+      "key": "4ff237bfd6e610b6daa773aa85c462e3029b32500bb4f1262e0d9d077693c19c01aa695fd4f6794492a7153fe25eebd978fce0a92df9825dc886163e011f3561",
+      "line": 344,
+      "relation": "positiveCorrelation",
+      "source": 28,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "RBC aggregation promotes thrombosis in veins, confirming the pathogenic importance of locally altered blood rheology in the development of venous thrombosis [17].",
+      "key": "64b151ba93dd99fbc989ff8870e8f53f9907e0904d5468d83a3d4d268123693581a6bac528a3422f120d22a8c4c0bb4df2ebb7d396d21ef3d95b8c6d8c09bf2a",
+      "line": 159,
+      "relation": "increases",
+      "source": 28,
+      "target": 55
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Because nitric oxide is known to prevent activation of endothelial cells and platelets, this nitric oxide deficiency promotes cellular activation.",
+      "key": "9b234f9a1dd48bdd6bdfb70b36a3e6856ae292ea89d7347c85f19ceba4b5404045779afaa1f58954709811f54fee075db0b4f22da1721bba14cba3cc32bc9ae9",
+      "line": 140,
+      "relation": "decreases",
+      "source": 1,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Another mechanism for platelet activation by RBC lysate is extracellular hemoglobin, which enhances platelet activation by lowering NO bioavailability [ 29].",
+      "key": "9bde7101e7526842240625dd77a716624594afbc76b4fce1110ad3995fa63a1797ffeeaec57446223f38949cdfe8fa23cac65fdac3549fbd24abfcf96e4a475b",
+      "line": 203,
+      "relation": "decreases",
+      "source": 1,
+      "target": 33
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "At low shear rates or with stasis of blood, RBCs tend to form linear arrays of stacked cells (roleaux) or three-dimensional aggregates [16].",
+      "key": "2e185aaa07847008176a4a78566a718a4a20e295c30bd6660920b726dc2ad162af32e7d3121acda1ab24fc64cc2f335368d5f666145335ba5f7d8e630f4ebdfb",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Under conditions of apoptosis or RBC damage, such as high shear rates, inflammation, or oxidative stress, RBCs can lose membrane asymmetry and expose phosphatidylserine [43].",
+      "key": "924979d639da5c37bc05fef1fb8127f152f413e59eb161a83813c8ceef68d0fcad355d52298ee71052cfdbbd0b153f793ca7ac88f16ee6788617ec5cc5d4cd3f",
+      "line": 242,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "More rigid RBCs may be less able to squeeze through the capillaries and they also increase platelet margination described above, both of which increase the susceptibility to thrombosis [18].",
+      "key": "f6c49df3f8ef422fc85110da4c2431426e13e532784edd176d5914a6c6fc64d4bf3b677e93c57a503ba503b719a950a82e5bdca000985109f0eb3b91a0104fae",
+      "line": 165,
+      "relation": "decreases",
+      "source": 29,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "More rigid RBCs may be less able to squeeze through the capillaries and they also increase platelet margination described above, both of which increase the susceptibility to thrombosis [18].",
+      "key": "902f0901a0cc091556ee735b1f64b310c1347f92fbb76c461df7f46ff9e2292c5c0236864949cd9fa333e4329582417bfd79d8ecffc972b5b55fedc627a7487f",
+      "line": 166,
+      "relation": "decreases",
+      "source": 29,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Some diseases, such as diabetes, hypertension, lower limb vein thrombosis, coronary heart disease, can secondarily alter the properties of RBCs, making them stiffer and prothrombotic [24].",
+      "key": "b1abe64519a995493c7378de044bf51b5831138b26e0e9b10193f5bc829b0c4b8ae2e1656a1b3e6b22e45968e52db6d1a51728e25990f0ca78c7ac9bbb326d82",
+      "line": 181,
+      "relation": "negativeCorrelation",
+      "source": 29,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Other diseases, including -thalassemia, hemolytic anemias caused by RBC antibodies, and hereditary stomatocytosis, also commonly have RBCs with stiff membranes [23].",
+      "key": "f869bc2dceb4bde4b1bb90d81b2d62d05504bb10c4eeee8e3d7e32c8b3e940fa294914430805c8134aaf7b01a81ea1a3c2b50fc3cdc05047ae1721c439ddf785",
+      "line": 173,
+      "relation": "decreases",
+      "source": 59,
+      "target": 29
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Other diseases, including -thalassemia, hemolytic anemias caused by RBC antibodies, and hereditary stomatocytosis, also commonly have RBCs with stiff membranes [23].",
+      "key": "70cd54e72a42e9af351f5cb5157c2b0eb69a4c43cffd5475b5835fb7616f596a8b93c325b6652138200d4c0ee7cc6351e8cad30e6df36d4c7a1b8a623941c06a",
+      "line": 174,
+      "relation": "decreases",
+      "source": 51,
+      "target": 29
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Some diseases, such as diabetes, hypertension, lower limb vein thrombosis, coronary heart disease, can secondarily alter the properties of RBCs, making them stiffer and prothrombotic [24].",
+      "key": "9e172a741f4d60510cd7c0504d2d72113dc44770400b4e6e9d8f822171fc28cf1c2f8aa93f88426741fb56c4fd0bd4e79add703b31e441b750c30ee3f3742458",
+      "line": 180,
+      "relation": "decreases",
+      "source": 50,
+      "target": 29
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The most common pathological states in which RBCs interact with the endothelium include sickle cell disease [39], malaria [40], and diabetes [41].",
+      "key": "5b55d6922a0d3002fc82a88f451cfc54cd8f0aa8be913316f9105df6d12af36cc1902ab84f765683b5806fe86e2d68e77cf19368ded2501301f6d4c88139c022",
+      "line": 236,
+      "relation": "positiveCorrelation",
+      "source": 50,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Stored RBCs exhibit altered biophysical characteristics, including higher cell rigidity that accounts in part for impaired blood flow hemodynamics and adverse effects of RBC transfusion [26].",
+      "key": "ec2c1138da9971f080d55b3412f10235d5638b55ccc11012e5db3a1c0bd699c500d86379d1e8327277dbed59233bb354fddbbb6c089445d56f72bd56db7c94df",
+      "line": 187,
+      "relation": "decreases",
+      "source": 9,
+      "target": 29
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Stored RBCs exhibit altered biophysical characteristics, including higher cell rigidity that accounts in part for impaired blood flow hemodynamics and adverse effects of RBC transfusion [26].",
+      "key": "66d24b49eb97611b303a69774d96288019decb7dde0632e48a92e4de48c9d621d6763ae2440767978367e96f901d5a834142cc4583d50f0b7464916018701fc2",
+      "line": 188,
+      "relation": "decreases",
+      "source": 9,
+      "target": 40
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Stored RBCs undergo a complex structural and metabolic impairment that includes leakage of hemoglobin from the cells and hemolysis, reduced energy and NO production, formation of toxic products, such as lysophospholipids and free iron, phosphatidylserine exposure and shedding MPs [59].",
+      "key": "f9aa633ea05801061d0e1598a2bc71d312cae59d7d59d312d169c7b97fe250efb80487e0224fc04124244ef2f3334e83b4b03a8f3a2ced8ef5c5736da21c60af",
+      "line": 307,
+      "relation": "increases",
+      "source": 9,
+      "target": 56
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Stored RBCs undergo a complex structural and metabolic impairment that includes leakage of hemoglobin from the cells and hemolysis, reduced energy and NO production, formation of toxic products, such as lysophospholipids and free iron, phosphatidylserine exposure and shedding MPs [59].",
+      "key": "3de27bf25e8c3d3d7c814f7b63bdf522b2edd6cb751a3f5aad17b6f5586656ccc588a4edd2685e8b9980ed6607ec172036649bfd692cc5f0064bed9f781e4ddd",
+      "line": 308,
+      "relation": "decreases",
+      "source": 9,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Stored RBCs undergo a complex structural and metabolic impairment that includes leakage of hemoglobin from the cells and hemolysis, reduced energy and NO production, formation of toxic products, such as lysophospholipids and free iron, phosphatidylserine exposure and shedding MPs [59].",
+      "key": "1230f00027661bdd740441e003cbaf281a3461f54dc099e1ea6df5e9e44644458b54dd2afb94d1a6752b03b21d0be4466744fa1b7b18e17415ba59c61e41ae35",
+      "line": 309,
+      "relation": "increases",
+      "source": 9,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Stored RBCs undergo a complex structural and metabolic impairment that includes leakage of hemoglobin from the cells and hemolysis, reduced energy and NO production, formation of toxic products, such as lysophospholipids and free iron, phosphatidylserine exposure and shedding MPs [59].",
+      "key": "534e5502ba5a2d857d0df4ca8dc63c301b3fd2be0f88d4e7dd169240afe82d83204097819e7368af83a39531cd44739d241226f80d7e0f3f81df971910a08371",
+      "line": 310,
+      "relation": "increases",
+      "source": 9,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Stored RBCs undergo a complex structural and metabolic impairment that includes leakage of hemoglobin from the cells and hemolysis, reduced energy and NO production, formation of toxic products, such as lysophospholipids and free iron, phosphatidylserine exposure and shedding MPs [59].",
+      "key": "29ec66c2f7b378fc6dafea3cacef8e55333f2b577c178e352f3e24a5cf22a3f35a9576a6735812d74b254a1bff117a4f2a005b6fcc55c8ec21b5e768b0f3bee9",
+      "line": 311,
+      "relation": "increases",
+      "source": 9,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Stored RBCs undergo a complex structural and metabolic impairment that includes leakage of hemoglobin from the cells and hemolysis, reduced energy and NO production, formation of toxic products, such as lysophospholipids and free iron, phosphatidylserine exposure and shedding MPs [59].",
+      "key": "7420648448578536d0fdc6e24df64f2a15f97addead1ad575016b58e3c707c6e85813e3eb535fa7e603690bcf121e1cc806dfeb5418f6b53aaae49ff65040d0b",
+      "line": 312,
+      "relation": "increases",
+      "source": 9,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Acute Coronary Syndrome": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "When RBCs are damaged by high shear in continuous flow ventricular assist devices, free hemoglobin induces platelet aggregation, contributing to high risk of thrombotic complications [33].",
+      "key": "628daf20bb5e07394c4e7aceaf2ec2f922d91a00d8ddaba19b3ff169ee9bfdcd6b5d0757fe2d6955585de99556479bff946ab46092e609d81ddeef9b8d15c0e5",
+      "line": 222,
+      "relation": "increases",
+      "source": 35,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Another mechanism for platelet activation by RBC lysate is extracellular hemoglobin, which enhances platelet activation by lowering NO bioavailability [ 29].",
+      "key": "fd4fb652dff0f6901144c7a86180834f9f4c7b148363cdf0cf1910d99d4ed7213a8b8424ca5649050ccb439dc37b29ae568e684d696c113abc2bda79f90f620a",
+      "line": 201,
+      "relation": "increases",
+      "source": 44,
+      "target": 33
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Another mechanism for platelet activation by RBC lysate is extracellular hemoglobin, which enhances platelet activation by lowering NO bioavailability [ 29].",
+      "key": "63899d21bb284e396a1f531a9830f3ed7c1ffcfc5c2f1c082d2599540b26457412ddf790b4376cf9e02ec1353bcf845f200e3631aa84cb6d3b451dcbd288dc92",
+      "line": 202,
+      "relation": "decreases",
+      "source": 44,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Extracellular hemoglobin sequesters NO and thus promotes activation of endothelial cells and adhesion/aggregation of platelets [64].",
+      "key": "2a867b637019eaccbbce896d26de9db095969b81b75fee7ef9cdd7bff782183dbbe77be32693f72ab15a531de9f76bb24b43627a315300b34de0c56244f15d02",
+      "line": 317,
+      "relation": "decreases",
+      "source": 44,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Acute Coronary Syndrome": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "When RBCs are damaged by high shear in continuous flow ventricular assist devices, free hemoglobin induces platelet aggregation, contributing to high risk of thrombotic complications [33].",
+      "key": "14cdeec87f254abf7125cf11f86758def9c43eb355d52fc7232f0df1e50cbe7e3dd7d60f9aa194dbf8c820df1a25c419d7e007088dd1858918f3a1e573d3bd99",
+      "line": 221,
+      "relation": "increases",
+      "source": 44,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Extracellular hemoglobin sequesters NO and thus promotes activation of endothelial cells and adhesion/aggregation of platelets [64].",
+      "key": "9b9f1f212c76744b97012d54a0115ec09382ac8f0ca6402b8bdf658268a93469e9c1a879dbdb29218a260503e37540c78296bb5112e459313b4f88c0e0e9b2f8",
+      "line": 319,
+      "relation": "increases",
+      "source": 44,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Extracellular hemoglobin sequesters NO and thus promotes activation of endothelial cells and adhesion/aggregation of platelets [64].",
+      "key": "44fbb9b5419020e2bb609ad44eb1e39ca66325b30cfe9b9ba8d77276fd3eb96275d723f730b302e9aba469427f0b419931b0ae83f5975b87525ae9cfe7ee00e2",
+      "line": 318,
+      "relation": "increases",
+      "source": 44,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Besides the effects of intact RBCs, free extracellular hemoglobin prolongs clotting time of fibrinogen due to impaired polymerization [73].",
+      "key": "1113bb771759feb333db077cd9dd309022cfe91036509cc13aa3c8043a30edfd1ce33e847b2f827acb84aa295f7c0d83755289fc41b6e1fe760d7660c40d0c2f",
+      "line": 350,
+      "relation": "increases",
+      "source": 44,
+      "target": 36
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Damaged RBCs also release arginase that cleaves L-arginine, a substrate for NO production [29].",
+      "key": "0d71c14edae8eeb6850a26ba726ed22aaf049459deb61394c9838eda0045437d8ca41501c8f53a5e63c37d59e05fb66fcfd1fe597b4f285ee58a98446b5f7597",
+      "line": 208,
+      "relation": "increases",
+      "source": 13,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Acute Coronary Syndrome": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "When RBCs are damaged by high shear in continuous flow ventricular assist devices, free hemoglobin induces platelet aggregation, contributing to high risk of thrombotic complications [33].",
+      "key": "adcdb4b1b80d285faa5f2eacbfae5c3b5609721b1178ee4d1173660edde6f0f9477dc2d4abbc90e28ddda5f6bcb3c16d7e36a1f5070f483c1795e70ec5e096aa",
+      "line": 220,
+      "relation": "increases",
+      "source": 13,
+      "target": 44
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Under conditions of apoptosis or RBC damage, such as high shear rates, inflammation, or oxidative stress, RBCs can lose membrane asymmetry and expose phosphatidylserine [43].",
+      "key": "6f84d90ed7f8e89a3810c7d678f8e353a39949020f8435f44f33c317a3db66bc6f42ecfb33b591686d1c5e170f0045d42f3b2f55f8b73928d6cb8e3eb7f12a7d",
+      "line": 242,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Under conditions of apoptosis or RBC damage, such as high shear rates, inflammation, or oxidative stress, RBCs can lose membrane asymmetry and expose phosphatidylserine [43].",
+      "key": "db414303a2aa9f25b466e797994814144e5a107a9120164b3dcaa3eb0015cf7b36e0d8a45a539bfa542b78a6f57bd315418cf0ca24c6d726a8826f1044d73c8d",
+      "line": 243,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 32
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Under conditions of apoptosis or RBC damage, such as high shear rates, inflammation, or oxidative stress, RBCs can lose membrane asymmetry and expose phosphatidylserine [43].",
+      "key": "6c7a337a83f63e17d9fa485837c768154c62c7de4b5ae6914fc427894520d64a78b90cc72e63bac7749c3d0889fc222bab70eb65c31fa9d76a6821e6b022d7a6",
+      "line": 244,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 57
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Under conditions of apoptosis or RBC damage, such as high shear rates, inflammation, or oxidative stress, RBCs can lose membrane asymmetry and expose phosphatidylserine [43].",
+      "key": "a891e9a01e8f1e88a595a10cf7cc189ab1e3843929ca36cdc430fd23b1f2fc71c47583fed56ce55728ab56a636d9dea0ee38bbf355b62082b8509899e03dcebc",
+      "line": 245,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Phosphatidylserine externalization and shedding are mediated by increased cellular Ca-flux and play an important role in natural RBC senescence [44].",
+      "key": "d3ba327978b713d8079f9ecd7162ff1d93413e33f1ac4f2907200f60a127f437edfba437458feb079c1dbcace8c74c1a9dd9914c324cae032b4adc4964b182e3",
+      "line": 252,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "As a generality, incorporation of RBCs increases the lytic resistance and decreases the permeability of fibrin in a dose-dependent manner [79, 80].",
+      "key": "00b45727a534e6513ce16aea6237b4104aa2794b3eb751368c152c2a7a0b2f2379ff69b3a8b56de57ad5e18c0295d604caf3e27335040a053eba60eb694df2d5",
+      "line": 355,
+      "relation": "decreases",
+      "source": 13,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "In contrast, RBCs impair contraction and reduce stiffness, while increasing the overall contractile stress generated by the platelet-fibrin meshwork [75, 76, 85].",
+      "key": "01ff6bec5f87fc42ec6b7d9a39f90c68f15e9a4bcd8c5ff26ccd998a78fe7bb7ee70d629a6f44061c03e5aa3ea1f9bff4dcc013d5e647bd97d2124354905608c",
+      "line": 378,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Acute Coronary Syndrome": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "In acute coronary syndrome, RBC transfusion increases platelet reactivity [31].",
+      "key": "8261df03dbb7d79e86d11c07d57985c43902025b0bcfd27f393016fe1cf962cc93f11aa3619877eab64340e8af3918c1cf21edbf257d881120346d140ed188a7",
+      "line": 214,
+      "relation": "increases",
+      "source": 11,
+      "target": 33
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The RBC-platelet adhesive interaction may be important in pathological conditions associated with a high incidence of thrombosis, such as thalassemia [36] or sickle cell disease [37].",
+      "key": "d8329a4084efb395f30b308f6c8c1e94fdfcdd70e769f6c6d3d9c9e84026061a519eb317cdc8d380b8084bd08557f0f50b5f240f6882e80512ccf22ae32b4f9c",
+      "line": 229,
+      "relation": "increases",
+      "source": 6,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The most common pathological states in which RBCs interact with the endothelium include sickle cell disease [39], malaria [40], and diabetes [41].",
+      "key": "a43da6bf6936a459bb466ff4dcd48b0993f513a1d9e4e90f25dc251c10fa72adb163fceb4937528c2e89968ba93918b7a569387ec7f80419a3f0752cce499988",
+      "line": 234,
+      "relation": "positiveCorrelation",
+      "source": 53,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The most common pathological states in which RBCs interact with the endothelium include sickle cell disease [39], malaria [40], and diabetes [41].",
+      "key": "beae37feae4bf50656f6a3e6bb6387b3e0eeda34a5102c1c9b21540ecc78884cbb9ad0ab733f65ffe7cdf28ffd4de6dacfd846ccdebabad509bed8fedff6ac71",
+      "line": 234,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 53
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The most common pathological states in which RBCs interact with the endothelium include sickle cell disease [39], malaria [40], and diabetes [41].",
+      "key": "976f202742bb6c13d2997bca29fb6a3c0d52deba9596d2834c4bde85d7cbb3055c8193b18e5b19273f3998ed69633fb526bae79270690be84c6d112ea6475757",
+      "line": 235,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 58
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The most common pathological states in which RBCs interact with the endothelium include sickle cell disease [39], malaria [40], and diabetes [41].",
+      "key": "d55ad79a11faa6bd069434874ca55d4c9e3ef04f0ded9d9571518a4db5ca1153043dc29174a90f60630212b9528e6ff8065fd3fdfea0db1096327fc48917c191",
+      "line": 236,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 50
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The most common pathological states in which RBCs interact with the endothelium include sickle cell disease [39], malaria [40], and diabetes [41].",
+      "key": "e14c2f983252f2a0d68fe9b58798f83ec3cf7284352e68c68f1756c91c01695dff7da81e6544ba69b797c7dc2d976af8e05da847a4c327143dab5d29b1d3adda",
+      "line": 235,
+      "relation": "positiveCorrelation",
+      "source": 58,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Under conditions of apoptosis or RBC damage, such as high shear rates, inflammation, or oxidative stress, RBCs can lose membrane asymmetry and expose phosphatidylserine [43].",
+      "key": "525b1090439075ee74cd9fe16e5c6c76eab182277f99930e03786f25b3edca42af49d09a487ffa5222a273bbb093749f26a575ec4149b26aae78a153418b20a0",
+      "line": 243,
+      "relation": "positiveCorrelation",
+      "source": 32,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Under conditions of apoptosis or RBC damage, such as high shear rates, inflammation, or oxidative stress, RBCs can lose membrane asymmetry and expose phosphatidylserine [43].",
+      "key": "0e492f09f2721fd92ac0f8c4110787e4f9a9eedf33c90eb00908145c057737dce8d6de19502b5caa5744bc98fca19667473acdd1ac084aa6c3728f525b649dab",
+      "line": 244,
+      "relation": "positiveCorrelation",
+      "source": 57,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Under conditions of apoptosis or RBC damage, such as high shear rates, inflammation, or oxidative stress, RBCs can lose membrane asymmetry and expose phosphatidylserine [43].",
+      "key": "d66424103b966bc62208dc20e892de9a327799212c7ffaef05738211458281c543dbb333886568f428ba9d737d3d6b94f87bde1c1013652b6ba3a06353fb5f97",
+      "line": 245,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Phosphatidylserine externalization and shedding are mediated by increased cellular Ca-flux and play an important role in natural RBC senescence [44].",
+      "key": "b9e802877e2f30805edb4c23f5746e2d37ee8411399f0287d497e79206a073b1882428fc5f8b450850e21fb36b7089cc8e34f90d4668b704734b083f7f84a641",
+      "line": 252,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Because of the large numbers of RBCs present in the blood, even a small fraction of RBCs with phosphatidylserine exposure can result in prothrombotic conditions.",
+      "key": "85795278dea2ee699abf1bcce77726c894b5f7ddbc54894b736ce6e21d7afe7066678a5eafb7721714f16b29f9d0029f5ce0e8d4e99f27c0ed54889413b5ebda",
+      "line": 257,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "An increase in RBC phosphatidylserine exposure in -thalassemia patients has been shown to be connected with eryptosis, the suicidal death of RBCs [49].",
+      "key": "aad98cd4c43c6189162986de970cb04c6fd891bd911f15e519b8a38c1c5b2a5326885e10fb0d5654947a2a08cc9aecc6d21181317d885a8d1e10aacfd2fedd8f",
+      "line": 264,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 38
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true,
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Phosphatidylserine externalization and shedding are mediated by increased cellular Ca-flux and play an important role in natural RBC senescence [44].",
+      "key": "bd1be8c69bab8c410de16f5da28cdf6a650c95e29b99077af05a8b245ef2aeba38b74d7b49f9ce8daeaf7ed795f5206c7243685622f2a2ab7cc312a7b9ced13b",
+      "line": 251,
+      "relation": "increases",
+      "source": 25,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "An increase in RBC phosphatidylserine exposure in -thalassemia patients has been shown to be connected with eryptosis, the suicidal death of RBCs [49].",
+      "key": "cf4ab091d4513c1b101f4642dc6c9493c7973c32c82a3a5c0745c9cd4f2c7d8fde4e1a9ea88117c28a9415268c4f826adb144c3ffcbd2b48f46e597501c159db",
+      "line": 264,
+      "relation": "positiveCorrelation",
+      "source": 38,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Activation, aging, and apoptosis of various cells, including RBCs, are accompanied by formation of microscopic extracellular membranous structures named microvesicles or microparticles (MPs).",
+      "key": "318b63288df23d958e72418e82f5766c7fb92edeaf414113f29f3433a473f2bee5c4eaed01fd7353796d278ef77034693e06c71540d1406bdc762d43f5fe8e72",
+      "line": 271,
+      "relation": "increases",
+      "source": 37,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The ability of cells to generate MPs in vivo is an important regulatory mechanism of physiologic reactions, a means for intercellular communications and a pathogenic component in many diseases that impact hemostasis and thrombosis [50, 51].",
+      "key": "c65dca65673fc25bef7e43220d947f03efea5f9e2971f0a1ee190bce0e5144b30eff9cc749e70a92e3c2aa936a25f322e1524192bd167530a47e2bb2697d0461",
+      "line": 277,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The ability of cells to generate MPs in vivo is an important regulatory mechanism of physiologic reactions, a means for intercellular communications and a pathogenic component in many diseases that impact hemostasis and thrombosis [50, 51].",
+      "key": "99b1044ed90a71abf56a8da78595efbc62d15a6f3097b42f0641731e413c01eb9c3405f820c2251a315e35a70d401895dfa8442a25b7b68819a8d8ae1850d552",
+      "line": 278,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 61
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Formation of RBC-derived MPs is typical during the ex vivo storage of whole blood [52] and accumulation of MPs is thought to be responsible for an increased incidence of deep vein thrombosis after transfusion of “old” red cells [53].",
+      "key": "583e53b73bf2045e80ba78f43c76acb821d13798d085e0c5c9bc871b089ef06982634fc9741f55c71a3f76e47bd309348570968560ad13bb249b22ce258a01f9",
+      "line": 285,
+      "relation": "increases",
+      "source": 12,
+      "target": 49
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Irrespective of their source, elevated plasma levels of MPs are associated with a reduced clotting time and a dose- and time-dependent increase in thrombin generation, suggesting that the MPs enhance hypercoagulability.",
+      "key": "7102f1271cadb2b74f59f66ee35747ef4a8b8804fc19c81eef0029365931adef82207dc96356ff55bf0b7603ff810240f5706f754c3915ffa791a912c1c00c25",
+      "line": 291,
+      "relation": "decreases",
+      "source": 12,
+      "target": 36
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Irrespective of their source, elevated plasma levels of MPs are associated with a reduced clotting time and a dose- and time-dependent increase in thrombin generation, suggesting that the MPs enhance hypercoagulability.",
+      "key": "e0a44c03ecb3ee842d7d5ae990008e47a6a0668747b0d6f6c9a37d5047c8c364dd0936a95969c29506ff76efbf9fa270e5aef3bce321918d12d9ec7f36f7cad8",
+      "line": 292,
+      "relation": "increases",
+      "source": 12,
+      "target": 52
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The circulating MPs can internalize free heme and transfer it to vascular endothelium, promoting vaso-occlusion, or amplify systemic inflammation via thrombin mediated activation of the complement system [57].",
+      "key": "8cff53235c795740484cd36a4e14112307f98f7b70921b535c64ace928615a6ad53a195abb77fdc37bda7cd501f12326a270e97c05e9db5a362eff7e834434f3",
+      "line": 298,
+      "relation": "increases",
+      "source": 12,
+      "target": 48
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The circulating MPs can internalize free heme and transfer it to vascular endothelium, promoting vaso-occlusion, or amplify systemic inflammation via thrombin mediated activation of the complement system [57].",
+      "key": "0fd797e469231ffb911210308fd7055ff936b52f05ca4cdabc0856723492064be3666df490784d4a891f8908fc888826517c5023c2cb2e9091185d9980be8c45",
+      "line": 299,
+      "relation": "increases",
+      "source": 12,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "The circulating MPs can internalize free heme and transfer it to vascular endothelium, promoting vaso-occlusion, or amplify systemic inflammation via thrombin mediated activation of the complement system [57].",
+      "key": "b0bae7b1652d50a964e55a492cc0fc578f54c173568d0a23f0453606ff062924c657ee44db82f2fd413690e7dc297d19382a53c7f8fb0d11ad3cbe021155ef5a",
+      "line": 300,
+      "relation": "increases",
+      "source": 21,
+      "target": 57
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Second, immune hemolysis is accompanied by production of TNF- which induces tissue factor expression in endothelial cells and also decreases the endothelial expression of thrombomodulin, a potent modulator of thrombin activity [62].",
+      "key": "451c69caaba70e98fe7654049e38ff14c53c5a803a898cd94232f1ac28d7a1e0dbef2e063332b4dbafe6f1a164ba1e05664e564ae06cfc0d285337fdca6cf1c8",
+      "line": 332,
+      "relation": "increases",
+      "source": 56,
+      "target": 47
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Third, hemolysis results in a massive release of procoagulant RBC-derived MPs [66].",
+      "key": "8d8965085a26cc04c1183dd37e417d66ff0079f9e44d3aaae619c5ba9fef1de173aaca849ab1490ccf8328d4be8bc62a960638d33c1255469090bf786d94baa8",
+      "line": 338,
+      "relation": "increases",
+      "source": 56,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Free heme upregulates heme oxygenase activity, generates reactive oxygen species, and activates endothelial cells and macrophages directly[65].",
+      "key": "7d3a6f16d8fb41ed08dc4eb871ac24f6093ea1746495fa0bc264d15b60683db600a5e05f566c11893f547e0209ad8cd88f96376af2e2102bf05f47095b444025",
+      "line": 324,
+      "relation": "increases",
+      "source": 3,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Free heme upregulates heme oxygenase activity, generates reactive oxygen species, and activates endothelial cells and macrophages directly[65].",
+      "key": "8ab16fe2c1d431bf63fa5dd5f81cda7091b68d4a8e406dd8f890f84abd2b5bc71ae7df26f6a1b70cb5a4af67afe8b2add6e71cc098dd07f804a77dd361787364",
+      "line": 325,
+      "relation": "increases",
+      "source": 3,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Free heme upregulates heme oxygenase activity, generates reactive oxygen species, and activates endothelial cells and macrophages directly[65].",
+      "key": "486ec3cdc7b14bdec1fb274836b5ebddf80c93050e6e5145cea5714aa522dc61d70530509b2be23152b2d04b3987ddaccf6a2b8e77c073e9eec9bc52e4f01dd5",
+      "line": 326,
+      "relation": "increases",
+      "source": 3,
+      "target": 31
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "An increase of fibrinogen concentration can result in greater RBC aggregation, which is associated with a higher incidence of thrombosis.",
+      "key": "7dc59b22ffe025289487b8311ceae7883a958d90f97791b452968dc7081faf6f5ba290c00bc8690680b0c119f4ec6f0df6f71a871580893044091a5389ce040b",
+      "line": 343,
+      "relation": "increases",
+      "source": 18,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Clot contraction requires platelets and fibrin or fibrinogen.",
+      "key": "127da501bcbca918d9957a557a19d330f2153b222fe75a0f70f5a8ffd3bb507ac69cda8c88a8a3ed21924ca9cb92ef17b9c2bbd6d8757093eb2e1a6a6edf9854",
+      "line": 361,
+      "relation": "positiveCorrelation",
+      "source": 18,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Clot contraction requires platelets and fibrin or fibrinogen.",
+      "key": "9a2f701d129c7de2f0f703c7b38059ae10f88e9b4b7bd891f6811d055b390a278ae465368e02eea0303afdeaa4c2bdacddf801779e385144efaf75bdb2d7ab69",
+      "line": 360,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "52a15a019888714eb1afccbf34789a83d5e952e4bd98166c6621494f5a300b1e1c593f4faa2693c2e35c31407c3e5eb9a04816fb8cdf9e2e9193513dee2925f7",
+      "line": 372,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Clot contraction requires platelets and fibrin or fibrinogen.",
+      "key": "f477f6ea3b66bd36a37e98ce8eab7f1fa5fd6d19a2ea3e2e062806fc5753830248f23fe1d85a0424a4ff332692f788d18057efacfdf472680c715141348dad11",
+      "line": 360,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "14d64afe17887c36f9b528f63bdca596bdaad7080022d7ce1f5998e570580f0d984ef82546beaba16bc6615225a11c14688bf8cc6830be09bbc04eb84a9bbc0f",
+      "line": 372,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Clot contraction requires platelets and fibrin or fibrinogen.",
+      "key": "6f96702cfe57c79d0f6386c227c580d57e0c27ff37655ff3edd1addddc12ebc0ef72c697e8d47065e987024e6e97bb4f4086ffe1825ee910f6466030020808b4",
+      "line": 361,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "c0a4b381c2a2aae80a00fed59f36302f520a547def0fe029383b88a6d87c0ee530cdeeab8f0122ec6b18f9304107cf521553a6996fc79a455fe6207b8299e297",
+      "line": 367,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "090c82cd2f0b008f8051c805f0a2fb6a21c2a5be0875df329f5aee985ae4d0f4a191ea167d67bcf38273b0ad0defa21aed076f45a506f394ce3204351cab9a05",
+      "line": 368,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "362556097a37cffc61354cfb86a2f77b8174adaacd2b1ad36c020f826f121bbd7f767719646b732e95c99cd55ff120bd401d0dc35446c50799db82204380f2b6",
+      "line": 369,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 45
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "15dfc8ec024420b5b329566975aedf3f43997abffa904ce9aabb5efb82f6342a484d6a85fa7c987800bb713624559dde9225a1c49fbd32c1b4283f926d0ea842",
+      "line": 370,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 46
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "3bb23a17678adab2b9fc40e911198a5aeb3868c120a44edca6706a84ae473ac5f9e7793a1eb05c76e8151bd77a3afa9f46a90dcd46aa13dac7d76f9d52149f9d",
+      "line": 371,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 43
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "In contrast, RBCs impair contraction and reduce stiffness, while increasing the overall contractile stress generated by the platelet-fibrin meshwork [75, 76, 85].",
+      "key": "e14afab69b3016205acded2cd1780a898d5d6f8c1823a79c6489f7989d33444c191ac72ecc5006c92daed1a6455202ac8113ce3d5ea9922bf876df2a747c95fa",
+      "line": 378,
+      "relation": "negativeCorrelation",
+      "source": 27,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "5799acc649e40a4b40e7601458b9834e3b2b2a1281d13335853319f5d00d99eb4be287341a698308c1a6f9be032c565e6aa98cf696871092d760c971b2de57d4",
+      "line": 367,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "7008a43cf58cae81d6da7ccff1fb2035a41da2aa41dd4a48a573a97a80a5e72ed132653b4df934becf80de2731fd17dc634b637247ca4b1cceaa787b84f6ed5c",
+      "line": 368,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "be0c4fed08372c54b8bdbe3c6951437af2ce0eb3fb3c56af460f60a11d2467425dfdd0147a879836eaae4ef73a45329f92f0daf9cc46332028243584e25593a2",
+      "line": 369,
+      "relation": "positiveCorrelation",
+      "source": 45,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "fefdfc8821dba97dbf78d5fef75c11868e1c9fc6d1960c90694eebb9014395a14d6b96c98c162d1df0a75375ab37843b3588a689078b224b47eefd78d641e418",
+      "line": 370,
+      "relation": "positiveCorrelation",
+      "source": 46,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Veins": true
+        },
+        "MeSHDisease": {
+          "beta-Thalassemia": true
+        },
+        "TextLocation": {
+          "Review": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Litvinov RI",
+          "Weisel JW"
+        ],
+        "date": "2017-02-01",
+        "first": "Litvinov RI",
+        "last": "Weisel JW",
+        "name": "ISBT science series",
+        "pages": "176-183",
+        "reference": "28458720",
+        "title": "Role of red blood cells in haemostasis and thrombosis.",
+        "type": "PubMed",
+        "volume": "12"
+      },
+      "evidence": "Thrombin, calcium ions, the integrin IIb 3, non-muscle myosin IIa, factor XIIIa crosslinking, and platelet count all promote one or more phases of the clot contraction process.",
+      "key": "39254dcfd39fc2452893182e2909f1df4aac8349e4a6b443715ee0f6588d6dab910e69b67fdd92b5bb4f17ebc15a86238db758654c8641d1894551eda3ce83f7",
+      "line": 371,
+      "relation": "positiveCorrelation",
+      "source": 43,
+      "target": 27
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "function": "Abundance",
+      "id": "e426e7ad4ee4d8eb3c018acb75625d794a96811eb659d39bd8f25c4b30632fc8a938eca8397887738ecc384ec5df867e2026de113f002e5cc4490177de0905cd",
+      "name": "iron(2+)",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"nitric oxide\")",
+      "function": "Abundance",
+      "id": "fd0dcffbd4e00c161d74c931890123439e35f86a92cbcf20c1efaed0bb8b8469434bbafd8364de8822b9af6368de418ed1728b1534bb8eeb47320d5a9c895548",
+      "name": "nitric oxide",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"phosphatidyl-L-serine\")",
+      "function": "Abundance",
+      "id": "0e0dfe47aa48b6ed4dd6495792927789ad27b91117203b58482a6b0668bf4576c567a6c2c41f452169ea3294f583f76a38c77d3c1840aebc8746b17f45767f5b",
+      "name": "phosphatidyl-L-serine",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:\"Platelet margination\")",
+      "function": "Abundance",
+      "id": "bac59777391cb5c588cbed6f2a85a5426d0550ca4ff33717dec2f610fcebc1b60af89d2f8fc83e9cfe5bdd812f50f706b5b5364be7b577ec6db82c5234c1c84a",
+      "name": "Platelet margination",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"erythrocyte-endothelium adhesion\")",
+      "function": "Abundance",
+      "id": "f477fec1d960fdb6825a2ca793f3044c08512b3bb2ac8cbbc006f4a76799083aa06a57d17af7e9dec3a368e0d1e207ca91212143e2d480d975e3b90f1c12f50b",
+      "name": "erythrocyte-endothelium adhesion",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"erythrocyte-platelet adhesion\")",
+      "function": "Abundance",
+      "id": "8555a0fbc6ea422b10a6d9f3c2931fa8bc2fb8a545829d68e5a642db45d3e9ad20980d711132333c3e331be1e13e653d754e7b6665fae045259fe1b5dd01f605",
+      "name": "erythrocyte-platelet adhesion",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"permeability of fibrin\")",
+      "function": "Abundance",
+      "id": "c1c9781bc6a37406a3f3ccb8bb200707416f1299b6c71f8c80034c3f0b42d53e75df15efd52aac377a2225ebf82634fc07ca88663c6378b544056c3a6a584f3f",
+      "name": "permeability of fibrin",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"shear stress\")",
+      "function": "Abundance",
+      "id": "97ff40b88188e6879fcbfaaa88bd2aa1860c3b7001c7ccac724b07ca3f431415746e73bc063c0a670647b84c62d9db6de27141dafca2a1272027fae214005f1b",
+      "name": "shear stress",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"stored erythrocytes\")",
+      "function": "Abundance",
+      "id": "c5f07faa52d39663c7bfb6346590680850cdc80f5daec0a27d13d0b987d98745781c6e81ce6edb50f375981a5345c5027325348c3907f71521d30ab0b54f60c4",
+      "name": "stored erythrocytes",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(MESH:\"Blood Platelets\")",
+      "function": "Abundance",
+      "id": "4ef3c39d1945781e5636329d898811d36ef7945b8c67447e4f6687d3fa953a612c7c6436ea0001dae30115838f397421e08f49072ad21ae452f002840d0be859",
+      "name": "Blood Platelets",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Blood Transfusion\")",
+      "function": "Abundance",
+      "id": "b3b4ac2f07a0f5e6df3abd5f7bd0d6f120776202f4c3e417c4082961f2f3ece07bc3d7e231b573dd19b6eb0e1fdbed451fb1370fbdac4a1e42d8262b7565070f",
+      "name": "Blood Transfusion",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Cell-Derived Microparticles\")",
+      "function": "Abundance",
+      "id": "cbdd1c0e96832ed2dc8166dd4de0db4724d8bf06ba0c5e7b8f6720cf04d7c50fcf8abc5cc8cc27228f47b8b422592d1084bb0e832c29fb932d57b70741c4413d",
+      "name": "Cell-Derived Microparticles",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Erythrocytes, Abnormal\")",
+      "function": "Abundance",
+      "id": "6dad8acde77b2f2b3d1f925131b538f11dd3f5b936b9e970595b5e8116ab366ced3d9d729a666bc1822c3e6c6921e8d7233fdf64546b8a67ad0e4951848716cd",
+      "name": "Erythrocytes, Abnormal",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Reactive Oxygen Species\")",
+      "function": "Abundance",
+      "id": "431216f8a4f002a0fa83666bebdbd0cd49a0ffe231e9273c5f429fb234b0cb494c5d4db9d46d631375f41adc4b09f76693b427348a2f18e6a281f770c25d338a",
+      "name": "Reactive Oxygen Species",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Arginase)",
+      "function": "Abundance",
+      "id": "99f67056503b499e72a650337bbc859b98323535c79850b87d6d47a3dcee67b024cb7f8ad5ac2beeec7d33d33826a4986cf4c84e52ee58930f5ba9e900060fe5",
+      "name": "Arginase",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Calcium)",
+      "function": "Abundance",
+      "id": "a501c7ae8a0a7b9b11267f70cd4a4b4cb88fb4c0a99a91ab9dbc45d7adf5c431418cfc6dbba99b15cfa53a834f4e941e5c548ead8a8306e36e7c0b6787f015ac",
+      "name": "Calcium",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Erythrocytes)",
+      "function": "Abundance",
+      "id": "f1ae8bfd0b1d90489a0ec83ae8321f1b74945a47d0f876bdd7890757d90c2bd28c6abd380f82208f2fed3dfebefeb075fe3984415a39289b68ebcb7e2989368c",
+      "name": "Erythrocytes",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Fibrinogen)",
+      "function": "Abundance",
+      "id": "d593fb2ebe7ffad9f18d0ed716174e86017d3b6f8719538af7442b7afa927ef7d9d153ce95eaba3cdd36c2a307d935cedd41f1d539c118871869befb768df07f",
+      "name": "Fibrinogen",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Lysophospholipids)",
+      "function": "Abundance",
+      "id": "89227010c84e389e12e3d93c113c216ddee86630be75ddd92ee82c52f15f8858d8c91e6dede09b1c82245e612c9b8698da0fa1464065683c47abecfe4c3129aa",
+      "name": "Lysophospholipids",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Thrombin)",
+      "function": "Abundance",
+      "id": "a6c9ba3ed3f1f64b2270eabda5a6eb7c53fc8ac16e4028386f1501e2b1d2fb6ad275e81f90f9614b4130ebc288c67a6e2b4270310d45ef45a2c09f9383bc5e7a",
+      "name": "Thrombin",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(GO:\"complement activation\")",
+      "function": "BiologicalProcess",
+      "id": "7dffe42517c3d74ef8db1b8f29a0be191ff33eb743bcb3f274446e3e4e0af75347a0294e3d14b50508fa8f0e46b076f844f664d7f93566c31246a2f841df1316",
+      "name": "complement activation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"endothelial cell activation\")",
+      "function": "BiologicalProcess",
+      "id": "c894e9d33edfed940a51b6b3c296739792fd65fa6d722a79d7adc2bb71d574d2b29d8567e118c9c88d2447f6fd8b362ac1ae9361950533cd5069ee34104f7689",
+      "name": "endothelial cell activation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Blood Flow Velocity\")",
+      "function": "BiologicalProcess",
+      "id": "689cfc14d0a6f9d1bbcb62cb16f1fc011c445caf9e36843b35dd80fa0f971bdbce54898828dea1d8923fef450592eae76b7bfafea499be03d81e72b3c635bef3",
+      "name": "Blood Flow Velocity",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Blood Viscosity\")",
+      "function": "BiologicalProcess",
+      "id": "2e87194b86dd70f993c39f99d5f5e7a026bd36403d739684b454a20b6fa5c171625cd9f31d5ccac3308e7a9d592bbb406a2576df3076a49fbcdf9545e1387093",
+      "name": "Blood Viscosity",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Calcium Signaling\")",
+      "function": "BiologicalProcess",
+      "id": "79e1af17bb384fbcd93dc9aa93b4164e54290f9c35e7a16ff00d6ba1aec84831bfb81c7a75feed333bd9e119d31f6f0ce87415cb30a54a7e69c1333f3955bc46",
+      "name": "Calcium Signaling",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Cell Degranulation\")",
+      "function": "BiologicalProcess",
+      "id": "13f6ebce2e53b6a453017e8a6a848a4be2c9519a90deefa3f9635c84543455364d5abef9326fde41b24dc34ce0e0b183bac5691b89324c2790d8ceb57ab54e53",
+      "name": "Cell Degranulation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Clot Retraction\")",
+      "function": "BiologicalProcess",
+      "id": "09c5709ccc827789cb38df4f116d5636eb68d302f2c9b85897c7ea94d25986a5ffd565f0eaf61776e674c22a62e4f3f829dc616afb798a32996c505b3a320f0a",
+      "name": "Clot Retraction",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Erythrocyte Aggregation\")",
+      "function": "BiologicalProcess",
+      "id": "37e965e243346eeb0987a27e17daec0bc1f89f62b4cb098c2beb95622d1d51d31f16c3d63f53eee350a056a8e39f554273da536c04e9af7b5545c949d196dcaf",
+      "name": "Erythrocyte Aggregation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Erythrocyte Deformability\")",
+      "function": "BiologicalProcess",
+      "id": "aafe5f8fc07e6abe467e9e2c47e0be8c08012664bc30134675ce5df8b3ab3ccc93ed0cdec5627fb8e8ab4f5e2cc991a6fb0ce0adfe41fe8358ea8c37ac60816d",
+      "name": "Erythrocyte Deformability",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Erythrocyte Volume\")",
+      "function": "BiologicalProcess",
+      "id": "8217bb35f13b4d0498087e2261f7fe3b53aaf940a603e2a40ba4f61e3c33330761b02177cea1a2049ffa6b81b6e4b0a98645fbb7c51e62b76e27b6813a72e4e6",
+      "name": "Erythrocyte Volume",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Macrophage Activation\")",
+      "function": "BiologicalProcess",
+      "id": "aca3e7d03cc03a45def692b9938d6860f782a079161854ac16ebe99c59574f73b58ab786bb080c3d20673e9bfb19e3e1d81ae2b60a648f7278cadb5903cf82fe",
+      "name": "Macrophage Activation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Oxidative Stress\")",
+      "function": "BiologicalProcess",
+      "id": "32bd3ab5e8a3a26be3209856c88741f0f0e2dff98d2587599a6a21b0f4793c5d8feb1194ea2166cf3cece076e7095530b116270e6655bc8feb35a437fda42cf6",
+      "name": "Oxidative Stress",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Platelet Activation\")",
+      "function": "BiologicalProcess",
+      "id": "bc3ac5ceee11548085c1a7e0d96d4010c7e723996372d0d939fcf3692d8c2e70ca67a0cb96b5e091f3c69e850885005c1f2765ff9cbd2a675bfcce404bddda86",
+      "name": "Platelet Activation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Platelet Adhesiveness\")",
+      "function": "BiologicalProcess",
+      "id": "7a1c41bac747bf1e144b7b85b27071909290d36d3e625e46be009d34071882d3cc29b524ff3636ebb025b6495560397360fbe19cb684abf9aa0143601d4d3d9c",
+      "name": "Platelet Adhesiveness",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Platelet Aggregation\")",
+      "function": "BiologicalProcess",
+      "id": "026950aa67d966b0562d40da4c1a06acbb77aacf83d7fd29ac0f546d1cf200c9c4f588431ca9e719d2bdc1c8ed8962fdf947ffad69d21bbdccd0362f529ef5bf",
+      "name": "Platelet Aggregation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Whole Blood Coagulation Time\")",
+      "function": "BiologicalProcess",
+      "id": "02ab90754a57c4143f4c053e44e8180cc2a3f5abf2437512f3fd415b0c2caab17d55585ee57d50496bbb296b1ea42281900503c348ca1d163c44868e3c9fd31a",
+      "name": "Whole Blood Coagulation Time",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Apoptosis)",
+      "function": "BiologicalProcess",
+      "id": "39c21a5bf990cacd109cd022171f1f8d53f15707601351a2acf509f4f1a1c21650a3be4e5ddc8df4e09a2d236cc4cc03242239c0b4cde5940d3950792f6b9449",
+      "name": "Apoptosis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Eryptosis)",
+      "function": "BiologicalProcess",
+      "id": "ffbf53403f946cfd9921d613f7acf5d1eaa8bfbef19b2e41549c17b09bebc9a91596a261988e5e713c51594a9a2084324a6fe2c2adb7a78954b510ae93630e93",
+      "name": "Eryptosis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Hematocrit)",
+      "function": "BiologicalProcess",
+      "id": "e544750f0e182cb2a78fe8109524cf89f67917b43a0d2a0998b0e90cc067715bc1e04437394e804a9ab49017e2f6dd0bce9e53363cacea6fdf8326729c1c7e33",
+      "name": "Hematocrit",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Hemodynamics)",
+      "function": "BiologicalProcess",
+      "id": "0334277359c005a8a32f09d42bf84080ec448310de673f2bc1630385fd94b95ea7f276437d47decd0e5c221d3fdf894e6aa2de466a8f6f38bb3da5b7454cd827",
+      "name": "Hemodynamics",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Hemostasis)",
+      "function": "BiologicalProcess",
+      "id": "39971f238507c6db6f4eaedaa774ebd16438e7c7ef1516eeb59982e95a41ed04db788a2181a49de811930fdf73aa452ffe608495eb2855d7c4daccf9abc94c2c",
+      "name": "Hemostasis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "p(HGNC:EPO)",
+      "function": "Protein",
+      "id": "f663c74c4830bc9e83175066fc12a871055028e267129df7a9c8c31da1b018a579d138088b9b939d061258dbfd2c03f087897ce08564c846462ce2ddf0bd0ad4",
+      "name": "EPO",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:F13A1)",
+      "function": "Protein",
+      "id": "57305bedbd0ce2b309b60cc96c5f1a1f95e67633b9253f5871f2dfae85772a6e16c38149c2de7c933380a6d56579d1467d50bea9ff1b7fb05244cfc921539d1b",
+      "name": "F13A1",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:ITGB3)",
+      "function": "Protein",
+      "id": "770b7e5069f775286e43acd376fad6010c017c391cdd600d49a8f34f2a7c8dfc18c06097df832fe9346c5898aa69e626b18cf346a2939d7fb3ade14c42af4bf3",
+      "name": "ITGB3",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:MYH9)",
+      "function": "Protein",
+      "id": "be8a2d2519f2ac0fe0049bc90c627d2cbf0866b856f9b387c22c0a3a1cb2e2f008ca4b621448519bbe7ac57f7bb0f9d18306d04d082c17a49a407c60233c93b7",
+      "name": "MYH9",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:TNF)",
+      "function": "Protein",
+      "id": "a262f5edbfb734dd0ec9696a3b78644fccfb4054a9cf9225beb17c33ef416a75809ff59ec1646e29a3cccc804c9294f8d2c48120af9f5ee98e764a584626426d",
+      "name": "TNF",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "path(HM:\"vaso-occlusive crisis\")",
+      "function": "Pathology",
+      "id": "7007ee304406d4320c9dcbefa93caf0b8ca48c68e148031ff1268674b1581667e2815de7ed2d14f5ac673c886c0493c40b8b821f94db58cf6f8ac9093dca5a48",
+      "name": "vaso-occlusive crisis",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(HP:\"Deep venous thrombosis\")",
+      "function": "Pathology",
+      "id": "6fcf24a36e91ccabf9f76eeafb6119635b721f249b0d1a282b9f47632b893725c4b7d38d06214376d606e39e86dd1b37613845b7acb66767b8d41e8b4e5b536d",
+      "name": "Deep venous thrombosis",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(HP:\"Diabetes mellitus\")",
+      "function": "Pathology",
+      "id": "a4c015405314de25879b58a07848751805666d52c14eb32066b406c499a2ae621fe466cd059b91ef73fbbca760998ef51bd6ed2f887b2eb9e8c32cb9089acd02",
+      "name": "Diabetes mellitus",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(HP:\"autoimmune hemolytic anemia\")",
+      "function": "Pathology",
+      "id": "6a75130ad86229c2fb84aa92d7bced26a59b70a97aa0198f7a6fcef2dad8691499523ac08e0f3c983f5e927694fb39b5601112dd95eb7933d9d1a46e6e995e1a",
+      "name": "autoimmune hemolytic anemia",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(HP:Hypercoagulability)",
+      "function": "Pathology",
+      "id": "07f44daf89394689b3d3282f04d404d98952885ac12c8a0369700c0a806350240bb6444411c054bc1caa0135e7573d2f7f45ba42e66d3c8af49ea8355cd9ea3d",
+      "name": "Hypercoagulability",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(MESH:\"Anemia, Sickle Cell\")",
+      "function": "Pathology",
+      "id": "edec8b7dad84d51e332f9eadc2a53b392a4a9b5a362b9cbe0276afc5a2618ad33d944f511fe99ba7d9be1b08a451229d57e7aa4606f64d46c1900e28980d0c79",
+      "name": "Anemia, Sickle Cell",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Polycythemia Vera\")",
+      "function": "Pathology",
+      "id": "b0c4c5618c758b704366337b22104255c8c9a9f139a4e4aebc8ef09ad3eb9b5dae632dc3fc3c17767c17cf7433873adc761655af2402245d3ace33e22ecee16e",
+      "name": "Polycythemia Vera",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Venous Thrombosis\")",
+      "function": "Pathology",
+      "id": "fd8518d1263cb0b7f3bc7b982d1cbd325f0397910d319c2269f58e9cd4a184d8b4b4e7a7ab7129677705352ca35f8e85e226f531baf0dd0a393a5987ecaa1ff1",
+      "name": "Venous Thrombosis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "function": "Pathology",
+      "id": "3196cc4c6a20279c822cae925a9b271d0224f2c8d468e3069a3ee460662be286b61db2f144c550686a9c624e58af4ffa7570f4f2384e1cb8ee40496f8cb3fa5e",
+      "name": "Inflammation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Malaria)",
+      "function": "Pathology",
+      "id": "6b20b7391c3b35f2b029a5af26e188cba4855d5b8cf0f88547f6d679928d738f03c46b5b6f289877f0f8c5fb28fd0f4c6cac5bfe3d8830375260b1eceae968c5",
+      "name": "Malaria",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Thalassemia)",
+      "function": "Pathology",
+      "id": "5581efe20bbe98bf5d884a5183bab82808fb5df0810106df52399d551f3ecf6525656c341fb04f17819e6fe69768ae812ffaa76d7ad6319bc29204e091262f19",
+      "name": "Thalassemia",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Thromboembolism)",
+      "function": "Pathology",
+      "id": "4a2c4c8f356703f5c56eadf32f5a521f13ba758a73ac49cd1099f3f85415ed439b53daa4496cd19321cb8a6df98d98dd403824509efff4a909d032d4382c802a",
+      "name": "Thromboembolism",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Thrombosis)",
+      "function": "Pathology",
+      "id": "b8739fcb57aeef4e74a351a9a6298e8d50bd9a172d37973c9c286907a2c6f131a06ff7070db9641962cc62043cd6e64ab2361b9c3e0adde501b1f69294ea5490",
+      "name": "Thrombosis",
+      "namespace": "MESH"
+    }
+  ]
+}

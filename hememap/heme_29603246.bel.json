@@ -1,0 +1,2929 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_29603246.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_29603246.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Increased circulating cell-free Hb, heme, and iron and decreased haptoglobin concentrations have been associated with morbidity and mortality in both animal models and patients.4,5",
+      "key": "2e62eb6a3b8ececeafa79df5f5f36f7ac01f720e5a911d456b85b4df958755c6bfddaf4f3ce67ac073a22fd29a7cb297d24a8aaf70c765b2784637b47803cf37",
+      "line": 96,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Increased circulating cell-free Hb, heme, and iron and decreased haptoglobin concentrations have been associated with morbidity and mortality in both animal models and patients.4,5",
+      "key": "ac11bbb093a16b101690bd65d994261cd25b2f9fabdcdcf03f10bbaaf7206b53310dadd4e1020c3c47a4ca1022415a214290577d8954fbff0cb4106e2239d461",
+      "line": 97,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "However, patients who died had significantly higher plasma cell-free Hb and lower haptoglobin concentrations at all time points, preoperatively and immediately postoperatively and 6 and 12 hours postoperatively (Fig. 1 shows the 12-hr postoperative data).",
+      "key": "de5dd68b4eb2caa607faf160dac191d55df55fbf6135ec744f054d84e14ec1c62c8825bee581141782c2b56b4819afbcd5cc80cb8ef766236dcca1433162f319",
+      "line": 140,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Postoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Children undergoing open heart surgery experience a progressively increasing risk of postoperative infection and thrombosis, increasing need for mechanical ventilation and inotropes, increasing Day 1 through Day 2 peak blood lactate, and decreased nadir mean arterial pressure as the levels of free Hb increase and the levels of haptoglobin decrease.",
+      "key": "7601114b4a5498b39ad9abc5492d7167553c7e81303a52adc64b0e3054a39f8eee5ad1e2c684123ef7f567e40969cf8da45635c2d2c391d1d1a557ceda79f62f",
+      "line": 216,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "25-38 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Adult normal levels of preoperative haptoglobin were associated with a substantially, but not significantly lower rate of infection than lower levels (Table 1, second row).",
+      "key": "a9e71d42d58e2f7c01e249e82710b23748dcecc7502d129be758c5189474801ff9e32df58859a1186c10b6333964f0b0e923e83e25f5b9fd0ed0bdea36286433",
+      "line": 156,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Adult normal levels of preoperative haptoglobin were associated with a substantially and significantly lower incidence of thrombosis than lower levels of haptoglobin (Table 1; row 3).",
+      "key": "ce02ecca8f6f06dbd2df710517d20c0d8675677b4037596add058e5239f89c707821295706e5779f524843343601da9bb9eeec165d7b52baac7b642eba99c7d7",
+      "line": 172,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Preoperative adult normal haptoglobin levels, compared with lower preoperative haptoglobin levels, were associated with significantly lower Day 1 peak blood lactate levels and higher nadir mean arterial pressures on day one (Figs. S1 and S2, available as supporting information in the online version of this paper) as well as on the first and second days postoperatively (data not shown).",
+      "key": "ce3cc2512642ac9ca3d80da5dc28305c884620b9750a231603c09839e1eadfaf0ff7db8b72cc5f38f0e53d3e391e6999cab5391f7701218ec54b901dd9837d75",
+      "line": 184,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Preoperative adult normal haptoglobin levels, compared with lower preoperative haptoglobin levels, were associated with significantly lower Day 1 peak blood lactate levels and higher nadir mean arterial pressures on day one (Figs. S1 and S2, available as supporting information in the online version of this paper) as well as on the first and second days postoperatively (data not shown).",
+      "key": "944a5d345659056269db5fee58353fb69858b2100e8ea3674b2c38233b9fa3a186d93f917ef68bfd9c910a859dbea3e4761232c8ed1b47cfb4b711879fe87edb",
+      "line": 185,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Lower haptoglobin levels are associated with poor outcomes, immunomodulation, and unfavorable changes in physiologic measures.12,13,26,27",
+      "key": "e55113fb128cbecefa6f290f3c83446e30f57e8b8e618a118346a4abf9f9010199552ad8f1713565fe8ee78e7ffa7ff4c2d635e3e8a2b51b58cf22b60eafc0dc",
+      "line": 205,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Increased circulating cell-free Hb, heme, and iron and decreased haptoglobin concentrations have been associated with morbidity and mortality in both animal models and patients.4,5",
+      "key": "13efe455236897648e0bf99048e70bd8451be0ea31e41be754e78751149b9d3b4ab31195adadac7e618a60b5a26d8aea9479d6474ea36714e82a166acdb4dfb3",
+      "line": 96,
+      "relation": "negativeCorrelation",
+      "source": 4,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Increased circulating cell-free Hb, heme, and iron and decreased haptoglobin concentrations have been associated with morbidity and mortality in both animal models and patients.4,5",
+      "key": "e65f75e460b067b7b1ddd2076242c7d3ccafaa1cc98f18e7694a1fd50b38ddfbdd9a7b438df74aa1d70d0f5a32996e30a6d9edb22efb07c3dd7798591688c390",
+      "line": 97,
+      "relation": "negativeCorrelation",
+      "source": 5,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "088b606848ff77a7a94358a490dacbb1f5fbb09a7e687365efcfda9610821dfadf8f96a0eb46f9ed18a4aded5e122279ea503273806ea7c2e31f39af68388381",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Our findings in the complex setting of critically ill pediatric cardiac surgery patients demonstrate that higher levels of free Hb and lower levels of haptoglobin are associated with serious postoperative clinical complications (infection, thrombosis, death), immunomodulation, and inflammation.",
+      "key": "2cf2fd869a77fea975ed4687df4e107714e4cd174905f91a5974d997320bd294fc6e1cbaccd0cbf25658dd1938140f554441635dda0b0d61878569a473f13b1c",
+      "line": 198,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "2f0d4a164a02e9d113c1107f6a559d4f8000c753a8785211999d67d0b4f69d1cbe044fa64deb60909e53d6f4e4bcaa1bbda4dd7dfc454b8d0bb62d7f8a51ba73",
+      "line": 108,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "394cb82b98b6ad19938ba5440be78c0d8e64b924eba0cec4bd90e6bcfe869db8b0fc4f946056196b40cbe6235d30c531b11b7208bd9ce6a99c0ea91f1e514d11",
+      "line": 112,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "3d512aa7e1e4f12c1d0cd628ae8012f39532b88c1887c39782f3527e6f5ad475083dbeac899e244143232b2557f6e6d9060c30937f535ce815754db2355ee0ee",
+      "line": 116,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "25-38 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "The median (and mean—data not shown) free Hb levels preoperatively and at all postoperative time points (immediately and 6 and 12 hr postoperatively) were higher (p50.057) in those who later developed a proven thrombosis (Fig. 3 displays the 12-hr data).",
+      "key": "09f228106efe2a6cfeed803a3f4c35e46db70fcc27c7eb83966b83ac0e9779c389076a32cdc12dc661cb6c99da03211d7187b3c77f59132bd4829f7782df2c96",
+      "line": 164,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Our findings in the complex setting of critically ill pediatric cardiac surgery patients demonstrate that higher levels of free Hb and lower levels of haptoglobin are associated with serious postoperative clinical complications (infection, thrombosis, death), immunomodulation, and inflammation.",
+      "key": "00d67fc7c49362bf5ec7a88117bd03f4d98fab62dd12a235d13fa4825874385ea22af74270e319971cf635df9bd899f943d2d842df71b903a3c54a25f6418625",
+      "line": 196,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Postoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Children undergoing open heart surgery experience a progressively increasing risk of postoperative infection and thrombosis, increasing need for mechanical ventilation and inotropes, increasing Day 1 through Day 2 peak blood lactate, and decreased nadir mean arterial pressure as the levels of free Hb increase and the levels of haptoglobin decrease.",
+      "key": "3f18bc390a07cd1a5bbcfd6a0b5dc7324e6652a094b367eb219221e551311e7e1bc267efacf7052d79ea71d6e19b794baac4dc9de6155fb09977f9d18dfbcc2b",
+      "line": 217,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "However, patients who died had significantly higher plasma cell-free Hb and lower haptoglobin concentrations at all time points, preoperatively and immediately postoperatively and 6 and 12 hours postoperatively (Fig. 1 shows the 12-hr postoperative data).",
+      "key": "e6e177f1411b93b0484a0566f39f83cba0ae2e302d3a28313b186620be23eeb1b5114ab587b14df32491fd66773f2ec0cb1b2e91de0914f2c79f411144485ac5",
+      "line": 140,
+      "relation": "negativeCorrelation",
+      "source": 8,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Postoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Children undergoing open heart surgery experience a progressively increasing risk of postoperative infection and thrombosis, increasing need for mechanical ventilation and inotropes, increasing Day 1 through Day 2 peak blood lactate, and decreased nadir mean arterial pressure as the levels of free Hb increase and the levels of haptoglobin decrease.",
+      "key": "f4270c04da0b8f13aa48effae3971d352fecde7c0b8ca58f17e43cbecdd9f9ff2fd4385fa22e3c63d47385d5d5a5ee8bcbf7dd368e5cf06acf7cf5d29efa36a6",
+      "line": 216,
+      "relation": "negativeCorrelation",
+      "source": 8,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Our findings in the complex setting of critically ill pediatric cardiac surgery patients demonstrate that higher levels of free Hb and lower levels of haptoglobin are associated with serious postoperative clinical complications (infection, thrombosis, death), immunomodulation, and inflammation.",
+      "key": "c19f89183e4aec7b91fd02a17f1f8ddb3750fae1ed28a6353ee4d280ed3bcaf45b09441447104074f021fab4fbaf903a44b5f09bccaa1f40eb7e3de1b85a3966",
+      "line": 197,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Postoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Children undergoing open heart surgery experience a progressively increasing risk of postoperative infection and thrombosis, increasing need for mechanical ventilation and inotropes, increasing Day 1 through Day 2 peak blood lactate, and decreased nadir mean arterial pressure as the levels of free Hb increase and the levels of haptoglobin decrease.",
+      "key": "b53ecf23fb94b4747981613533b4e62b1a8f16be3a6fdbd70b7de65ca927fb78094da05d6661e888cedfa275adcb1a820636d596fc9c4e187f4439a62c0068bb",
+      "line": 219,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Postoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Children undergoing open heart surgery experience a progressively increasing risk of postoperative infection and thrombosis, increasing need for mechanical ventilation and inotropes, increasing Day 1 through Day 2 peak blood lactate, and decreased nadir mean arterial pressure as the levels of free Hb increase and the levels of haptoglobin decrease.",
+      "key": "5d6c140faad49a157f136451b50ae915638f2a648bc7fea9bb953d5fb607018c20f02a6a64399f62cb6d0daaf56f5bdf7e1e5aae31ca203ee3b7e258fa032c9e",
+      "line": 220,
+      "relation": "negativeCorrelation",
+      "source": 8,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "159169da28c182a25b3db158455151a7e7ea79f35022f8e5610f3eb9a440de89de5b079dcdee505948e2740193d058c444cfca232a1f76c2fb11d84e44e66664",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Our findings in the complex setting of critically ill pediatric cardiac surgery patients demonstrate that higher levels of free Hb and lower levels of haptoglobin are associated with serious postoperative clinical complications (infection, thrombosis, death), immunomodulation, and inflammation.",
+      "key": "0e6ec75f973fb5bf1626b0cd9b8c4b25a5a28e289ca9d4e6b3841d0d7973eb8978fe9e0fcf0d241eb8fd72c74f4c167205b03e1d7d769b3112d26653b1e787a8",
+      "line": 198,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "b6cd0f0cbc209e817a4725912cad8ab066f957c28f75087be5bfb43869f7b41a82bd30d2668756b95fccb55097fd5819bea99207325bab7d934a73dfa81e8f86",
+      "line": 105,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "1a2ab57b1766b4226880fabe382bc8c5ab2400fe004a80851ea141973f83d85840a529664f44dc9b817084fe041a13837d51c5d2f5e005c41afd8083915485d6",
+      "line": 106,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Furthermore, experiments of nature that lead to increased levels of chronic hemolysis, such as sickle cell anemia and paroxysmal nocturnal hemoglobinuria, provide evidence that low levels of hemolysis may be harmful, and contribute to inflammation, thrombosis, vasculopathy, and impaired host defenses against infection.1,11",
+      "key": "4e8663146be8bc85a355cbdd4cbe844f38a3a5de039a141b8a0677f9bc2456fc5427823901f6ad8c28a761068fd219e5070d280e4354fdc257f10ed402bfd822",
+      "line": 128,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "e4ce7e7c22cce7628c8b728e7f0917ef59b1969c342d45e463046348f8a3d95dd590408490a252004efe6626bcc8995539ef476475691691504f3317252ade97",
+      "line": 105,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "56da27ea23dc544a8435c340f345c131b1355cd63bf7f2376df5490df1ed5401c7ddbb03e9892620b9346e5af8747a7308b50604d73edcf1cc5244bdb3247967",
+      "line": 109,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "f945c680525050c60f10ce4ffdf4f591ccabeadf7fd423dfad7fac58b542b57e6605889dd2d32d57af57b49b309a8afa8d3edac44c11b0cea18282607796f52a",
+      "line": 113,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "789ca36598b54ef679ab37260e5904ee7c070dcdbfbdbcb6b1261c2fe00db1473262688f7f4d2aa09e85e202147fd3e93793868b26a112ce6bff75f21836a8d0",
+      "line": 117,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "c0739f271c4eff1c62b10f2cd097a6cc2cbfe8eead9b54915fa5a81d007aaa3af1fe125d23736547cca37885364272f2d6131d8caf41dd585a6130dbd79f8c08",
+      "line": 106,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "beb30c6a6431cc2de9fb1c10f2f6b955de9fdd4bfca203a40c3159e9f684277a57780f4e8a94e6147838fb5ad5fa8e1cd9ae222d293bbabfbe7af8697c59f850",
+      "line": 110,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "17bac9e552387e009bd1350a864bb70f156c485f266f51a664ef61c6ce0632d87a77bb79d19321e97c47887a6d5eeea2e76e68c34c2285a1eae0a3ad4988508e",
+      "line": 114,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "294327c80813eb9694b584cdcf84e7720e0745f9eb6d51e8dc22db03acf41557a3ed3afed02d03ccbca3ab00bd299f9c29233753f4c388d676940083232c9a24",
+      "line": 118,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "d6e3cc9dcc0045cdf83e7426afc0900738ef493a155982bc3217d0b1934429db26995219d9df81633c780676e1b453965b2252f457f706817162b70d5aee7f8a",
+      "line": 108,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "4100337d4ad28c94f04ffe3558bf822e94c8af109c079c082e23492ef79624da005b290a5cc308ea3c3c17247632b2f1498beca635d99df58f916c97837cd83b",
+      "line": 109,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "b6161dfddc39261459fb74bee5ac4e0ec50aaec58819658794ffdbb72bb95df207938dafb3de10d7bbb9bdc3579e241b0f8973a635d86d12365c2d55885969e4",
+      "line": 110,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "94cb18fbbd93844c3c89af76e5f36097d4fbe44cbf57d483029736c81a81cfc673018e4166a67d4e7910af6c1187a5dd3506a3b9a21d8d9e769da2b9f2a9068e",
+      "line": 112,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "734c45d2ec696f19a0c60bfb38fddb8b3fd164113dd4993c12830efec8c24fb9d56e0a90bc0c173366d9c88ef54f7d7623b4e29193838f9829762b445f01c746",
+      "line": 113,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "06503bf77ef9cab252c363d34ec2dae6a24d8195c7c9a606bd9c0c12fdceb8348dd0e99f89766f2e9635b294e0822e28357fa63a412d42c744bfc41c0cbbffbd",
+      "line": 114,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Furthermore, experiments of nature that lead to increased levels of chronic hemolysis, such as sickle cell anemia and paroxysmal nocturnal hemoglobinuria, provide evidence that low levels of hemolysis may be harmful, and contribute to inflammation, thrombosis, vasculopathy, and impaired host defenses against infection.1,11",
+      "key": "d1bff7493789d4cc52b1e0c8e32d79ca2f5c8a0ac1533b435c93e47fecc601463103907c67b1ec05ba0249839c8beaaf77b130d2942aedc9434bbc474e63ef47",
+      "line": 129,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "9ba59cedeb61aa697f77ba68c1812d92e8b9cee3184cf0903e0457659608da47dac17717f0e4b6f622e06075cca3dce42e79abcbc6bc21cafb37199334651f4d",
+      "line": 116,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "25-38 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "The median (and mean—data not shown) free Hb levels preoperatively and at all postoperative time points (immediately and 6 and 12 hr postoperatively) were higher (p50.057) in those who later developed a proven thrombosis (Fig. 3 displays the 12-hr data).",
+      "key": "26432ea088e96b17601fdeefeb7eca624d976bc1b8e1e9230517579c6dfa4d29984b325a0436e93bcad8cae1da700160df8c41e36c1c039b074a200ac32784d9",
+      "line": 164,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Our findings in the complex setting of critically ill pediatric cardiac surgery patients demonstrate that higher levels of free Hb and lower levels of haptoglobin are associated with serious postoperative clinical complications (infection, thrombosis, death), immunomodulation, and inflammation.",
+      "key": "9a393f1886911e28a594a2a99c7b33df5eb41d9b6c6c537736f2df54cf82365ad55909ef8c221a360f7187c76754b1a0b1883921e1910b653dec25b05e39bda7",
+      "line": 196,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Postoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Children undergoing open heart surgery experience a progressively increasing risk of postoperative infection and thrombosis, increasing need for mechanical ventilation and inotropes, increasing Day 1 through Day 2 peak blood lactate, and decreased nadir mean arterial pressure as the levels of free Hb increase and the levels of haptoglobin decrease.",
+      "key": "93585a2fa8677851981163e8e352060853381b46afe09bd473ca5e20a6dbb369a987942aea0792d8f6dfd29f4aebe6c8ff0b0a71be2101a93423e1f78af07936",
+      "line": 217,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "4203211b62cd3cdbc50a161d0d516a306addbfb046f98bf540856c5506c1f83e058011e0b4b3ca42e72ad5e871b595c26fc541cec3a44caa9bad2a587925614c",
+      "line": 117,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "There are in vitro and animal model data linking increased free Hb, heme, and iron to inflammation, 6 infection,7 platelet (PLT) activation,8,9 vasculopathy, 10 and thrombosis.",
+      "key": "35aa5122c7c3779e7b8893f6699c08aec8479eef93a5651ad4cff9030086eaa791daad8f92b21a7a56ac51af796456c3a9fe5e6167d38ba26d2950f5cbeba8c8",
+      "line": 118,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Furthermore, experiments of nature that lead to increased levels of chronic hemolysis, such as sickle cell anemia and paroxysmal nocturnal hemoglobinuria, provide evidence that low levels of hemolysis may be harmful, and contribute to inflammation, thrombosis, vasculopathy, and impaired host defenses against infection.1,11",
+      "key": "2847ba0d80f72b8d181ccf66c68c9a2390c3e81dfc327252b61bd6b208360fe9c4b9c3a360ddbb51a3182e7ab7fb0b1745223e8b25b94314323d2df0dab98ab9",
+      "line": 130,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Adult normal levels of preoperative haptoglobin were associated with a substantially and significantly lower incidence of thrombosis than lower levels of haptoglobin (Table 1; row 3).",
+      "key": "7e3a0856adb441a7bd71a3d6bec6d93df3f4ca704f28dc40ecbc89b43c5ac58ce071a2babd1352a3f5149d08ac84d18e47cb40c1f581af875b51424ecff25a26",
+      "line": 172,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Furthermore, experiments of nature that lead to increased levels of chronic hemolysis, such as sickle cell anemia and paroxysmal nocturnal hemoglobinuria, provide evidence that low levels of hemolysis may be harmful, and contribute to inflammation, thrombosis, vasculopathy, and impaired host defenses against infection.1,11",
+      "key": "49257c0627d1acb9a130801c2d4080e0bee4e2ef9c6bdf46563b3b924ea8de23bfb282bca9212ecc21eeee19b3b5aa3fea7f4cb37d6cf11ec621146283e09c26",
+      "line": 128,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Furthermore, experiments of nature that lead to increased levels of chronic hemolysis, such as sickle cell anemia and paroxysmal nocturnal hemoglobinuria, provide evidence that low levels of hemolysis may be harmful, and contribute to inflammation, thrombosis, vasculopathy, and impaired host defenses against infection.1,11",
+      "key": "476286316e39f084b9f81eb541b5256627b51c5f5b2b5b7a297f0b423693fe644d166acdfa556c5ca8f9ee8120b870c17be5fc2f91a927e485a5a53c96b263c1",
+      "line": 129,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Furthermore, experiments of nature that lead to increased levels of chronic hemolysis, such as sickle cell anemia and paroxysmal nocturnal hemoglobinuria, provide evidence that low levels of hemolysis may be harmful, and contribute to inflammation, thrombosis, vasculopathy, and impaired host defenses against infection.1,11",
+      "key": "c8f860a5d02b0f0e760bca92e44fe8daacc755c1237ba1c043be400537398b6a06c7921323bfe918b4e00c00a9d1658dd61c1e5fc70e3ae5d7d42a3fdca77804",
+      "line": 130,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "25-38 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "The postoperative infection rate was significantly higher in children receiving the oldest blood (third tertile, 25-38 days) compared to those receiving the freshest RBCs (first tertile, 7-15 days) (34% vs. 7%; p50.004).",
+      "key": "2fab8bf561bbc2595c4c0de5eb2f2f4c41bb144c2e03a67a3b24389ae0274a42492f19ce0514e4661491fa6c06a5de02fa20dcfa050e9895b80c7a860ead2a4a",
+      "line": 149,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "25-38 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "The postoperative infection rate was significantly higher in children receiving the oldest blood (third tertile, 25-38 days) compared to those receiving the freshest RBCs (first tertile, 7-15 days) (34% vs. 7%; p50.004).",
+      "key": "8e82d77116feedf16896afdbf863010bf4b2708c5d018cc0317da17d4fdf38773bedd1e5e87e4958b96274d9c2da136ab1ae16832f8419766b5e55ea5d4135e3",
+      "line": 149,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "25-38 days": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Adult normal levels of preoperative haptoglobin were associated with a substantially, but not significantly lower rate of infection than lower levels (Table 1, second row).",
+      "key": "cda885a5d2c6d9f3ffa1bb1d1b331cee73c81660fb85f3bf1059ec0f7983745e2d2b5505f1cfb5fcb19eed1dc559ccf21301250736add524023b65c0d5a119f5",
+      "line": 156,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Preoperative adult normal haptoglobin levels, compared with lower preoperative haptoglobin levels, were associated with significantly lower Day 1 peak blood lactate levels and higher nadir mean arterial pressures on day one (Figs. S1 and S2, available as supporting information in the online version of this paper) as well as on the first and second days postoperatively (data not shown).",
+      "key": "87ea2fdb5eb5069c527d8cd26dd97acb6c285320a02c6dac39f6a47aab6a4f20dbbed81b97c170477116ab80abcc78a0f3ee8cd386154811fbcd8b4dcf19b4f3",
+      "line": 184,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Postoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Children undergoing open heart surgery experience a progressively increasing risk of postoperative infection and thrombosis, increasing need for mechanical ventilation and inotropes, increasing Day 1 through Day 2 peak blood lactate, and decreased nadir mean arterial pressure as the levels of free Hb increase and the levels of haptoglobin decrease.",
+      "key": "5b9b46a96f667f8cef82554f772de453ff0e91d84c4db47a9188db8d1f47305ca38986113b74a51898ede3ee6a60df854a721deef42f5180961e74c34c602304",
+      "line": 219,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Preoperative adult normal haptoglobin levels, compared with lower preoperative haptoglobin levels, were associated with significantly lower Day 1 peak blood lactate levels and higher nadir mean arterial pressures on day one (Figs. S1 and S2, available as supporting information in the online version of this paper) as well as on the first and second days postoperatively (data not shown).",
+      "key": "6998a415205b26475d604fe966531a69e6d4008ca152cbca383b75185ab0273403b23be1b0a3ca56a06b980e59e4f226bf47b4b8285f1b4bd1bbe31d2b5a028e",
+      "line": 185,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Postoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Children undergoing open heart surgery experience a progressively increasing risk of postoperative infection and thrombosis, increasing need for mechanical ventilation and inotropes, increasing Day 1 through Day 2 peak blood lactate, and decreased nadir mean arterial pressure as the levels of free Hb increase and the levels of haptoglobin decrease.",
+      "key": "7a77bd7c56eec3e4c3aac972758956ebdb955f092e8d7dd114884063c44f5d801dcce05f0dfee7f445cf274431141df292839eb53e0cedbe25f8982684c7a3a2",
+      "line": 220,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Our findings in the complex setting of critically ill pediatric cardiac surgery patients demonstrate that higher levels of free Hb and lower levels of haptoglobin are associated with serious postoperative clinical complications (infection, thrombosis, death), immunomodulation, and inflammation.",
+      "key": "064667ec80066235550d3a145a8feadfd9dba0a90725285a015a093d86a2cf1cfa7f26760cd5e26ece483e1a136db034f460474afee69a9c9286f8795b03dc3c",
+      "line": 197,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Blood": true
+        },
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "Preoperative": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Alfieris GM",
+          "Blumberg N",
+          "Cholette JM",
+          "Eaton MP",
+          "Gensini F",
+          "Henrichs KF",
+          "Phipps R",
+          "Pietropaoli AP",
+          "Powers KS",
+          "Refaai MA",
+          "Rubenstein JS",
+          "Spinelli SL",
+          "Sweeney D"
+        ],
+        "date": "2018-07-01",
+        "first": "Cholette JM",
+        "last": "Blumberg N",
+        "name": "Transfusion",
+        "pages": "1631-1639",
+        "reference": "29603246",
+        "title": "Elevated free hemoglobin and decreased haptoglobin levels are associated with adverse clinical outcomes, unfavorable physiologic measures, and altered inflammatory markers in pediatric cardiac surgery patients.",
+        "type": "PubMed",
+        "volume": "58"
+      },
+      "evidence": "Lower haptoglobin levels are associated with poor outcomes, immunomodulation, and unfavorable changes in physiologic measures.12,13,26,27",
+      "key": "6308b65b94700c3a68d87256ea3c1cdeb33bfa28b82e48278eb0db604649a63578507e1545bf2771d44254555ef595f4379e248b266ceb544469e4c8d1652a95",
+      "line": 205,
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 9
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "function": "Abundance",
+      "id": "e426e7ad4ee4d8eb3c018acb75625d794a96811eb659d39bd8f25c4b30632fc8a938eca8397887738ecc384ec5df867e2026de113f002e5cc4490177de0905cd",
+      "name": "iron(2+)",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:lactate)",
+      "function": "Abundance",
+      "id": "51ad155eee54dc2b0c44186624da8b282d098623e1303feecc8f795a2cc82f58fc3f5f0fbc2b0151b7160a119d25e9aac166f98cde9c05d268ab860d15ebef37",
+      "name": "lactate",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:\"stored erythrocytes\")",
+      "function": "Abundance",
+      "id": "c5f07faa52d39663c7bfb6346590680850cdc80f5daec0a27d13d0b987d98745781c6e81ce6edb50f375981a5345c5027325348c3907f71521d30ab0b54f60c4",
+      "name": "stored erythrocytes",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(MESH:Morbidity)",
+      "function": "Abundance",
+      "id": "070639d2c49b2a6275ff2612a41ad7d7c0aa46a62d814a8bb8c6956b76c5295040510f479a8d6882b8e98eb3993d1581c50acc26cea0acc6c6512cb8138bf507",
+      "name": "Morbidity",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Mortality)",
+      "function": "Abundance",
+      "id": "1f4c6dc63d196b6c618e0b3d081471d4e45c8b2a5e3620ef75e7e45d0daae2bc23a408e7e0019e9c809de18a1c0dbda7c8ae872dc892fbaa8b33d8e266919eda",
+      "name": "Mortality",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Platelet Activation\")",
+      "function": "BiologicalProcess",
+      "id": "bc3ac5ceee11548085c1a7e0d96d4010c7e723996372d0d939fcf3692d8c2e70ca67a0cb96b5e091f3c69e850885005c1f2765ff9cbd2a675bfcce404bddda86",
+      "name": "Platelet Activation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Immunomodulation)",
+      "function": "BiologicalProcess",
+      "id": "6d878eed04012466b883dbf2a409a1bd438d176bc2093e048f6c4add60ff6be3bfa51a660ba515ac15172e6ecfeeffd7c904b41a825a0009d5432b5c52838f78",
+      "name": "Immunomodulation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HP)",
+      "function": "Protein",
+      "id": "0052c8eac45d6228dca9f6db302e8c98c9d2292c20e1bf791ca8fd0749fa28c163d424e0faa9a8dfa46a882f85d0967fc41819b18763a7abd987d07b8cbec1c3",
+      "name": "HP",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "path(HP:\"Elevated mean arterial pressure\")",
+      "function": "Pathology",
+      "id": "f6a332aea7fd4e0554aaaee9ebd33eba5b97b0e421fd3de0d8ac0cfa8bebc126ed13f29d632209cc0ec4d1ab49abce062f6dfb710cb1982e9cf71863bbaddf5d",
+      "name": "Elevated mean arterial pressure",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(MESH:\"Vascular Diseases\")",
+      "function": "Pathology",
+      "id": "ce091dc04570084e2b728b46cb56349db1241447bf122a9be809c1cc5dfb911c7bd086753ac6e471825bfa801065a31091ee847d482f4f615b6c3abe09ef75b3",
+      "name": "Vascular Diseases",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Infection)",
+      "function": "Pathology",
+      "id": "603116f3eb3f47930c74ae0ffa6a064be8bc795af381d8fb932f651e43710541ecc95680a1935d91c9c6f00816f13dc67f4ee7ebfd797c4cdbed06c4a75b37ac",
+      "name": "Infection",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "function": "Pathology",
+      "id": "3196cc4c6a20279c822cae925a9b271d0224f2c8d468e3069a3ee460662be286b61db2f144c550686a9c624e58af4ffa7570f4f2384e1cb8ee40496f8cb3fa5e",
+      "name": "Inflammation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Thrombosis)",
+      "function": "Pathology",
+      "id": "b8739fcb57aeef4e74a351a9a6298e8d50bd9a172d37973c9c286907a2c6f131a06ff7070db9641962cc62043cd6e64ab2361b9c3e0adde501b1f69294ea5490",
+      "name": "Thrombosis",
+      "namespace": "MESH"
+    }
+  ]
+}

@@ -1,0 +1,2573 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_25411909.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_25411909.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "In other words, Hri is necessary for erythroid differentiation and survival under oxidative stress.",
+      "key": "439d64759cd5b245a66fa0a345cb4bec312c08433bc04150442cafdec09695fa711a961785801d1232d9531a8b60927fe16c4f92358c10c62f5ee5c0064f09eb",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "In other words, Hri is necessary for erythroid differentiation and survival under oxidative stress.",
+      "key": "68600968984754ab4655294c084bde7f629090ae23669f652655f9ab815a1f2a69668a2bae57f96e6b58eb11b64e63afca1c8201c5a52f844f59d2025197ac55",
+      "line": 95,
+      "relation": "negativeCorrelation",
+      "source": 21,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "In other words, Hri is necessary for erythroid differentiation and survival under oxidative stress.",
+      "key": "0f3e52bda3a59b5191b4e71bc229537deddc2544a3f682fcb9be594b630fad5e72110165cafa2cea6876cc76d9a205d091a766f9d670ebf85d54520790689a60",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These results also indicated that, in spite of enforced extramedullary and medullary erythropoiesis in Ko + Pb mice, erythroid cells did not robustly survive and differentiate under Pb exposure as shown in Table 1, analogous to the observations in cadmium-treated mice.22",
+      "key": "9f347a3c5f904d7601bd91d4facddda146a88933a92c0e78ae163286323f2efbe11b01b39a81a0e484bb521922f6c0df9b9d7b6ae38a4f99a539f054d1b84189",
+      "line": 186,
+      "relation": "negativeCorrelation",
+      "source": 12,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These results also indicated that, in spite of enforced extramedullary and medullary erythropoiesis in Ko + Pb mice, erythroid cells did not robustly survive and differentiate under Pb exposure as shown in Table 1, analogous to the observations in cadmium-treated mice.22",
+      "key": "eb510be5056b944257ba2254ae65349b15966bc8991271164c7a384fd0dc4c0bac574225bcd700fb777ef8b8c553747a733b4b19eb457c8cf9a0344f2d281e08",
+      "line": 187,
+      "relation": "negativeCorrelation",
+      "source": 12,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These findings together led us to postulate that there could be disordered differentiation and survival for Hri-deficient erythroid cells upon Pb exposure.",
+      "key": "9dd44ed02bd1ccbea6c394f296b65dfc9967e819adadc0e77be7278fa0bd8902ebe64d953b3a79b10e6d31d7bf9e4fcc76394c23943856a16e757665ddd59601",
+      "line": 195,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These results are similar to our findings in an earlier study where Hri deficiency resulted in the blockade of erythroid differentiation of FL cells from early and late basophilic erythroblasts into chromatophilic and orthochromatophilic erythroblasts.19",
+      "key": "3d7913a81d9c193d90ec907d44a218b634af167fde1e7877c7d6325338d948f5f13291da3dcc74bb4f5916bd6b46681964e55fc6f971e6721b559e227b47444b",
+      "line": 203,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These results suggest that Pb elicits direct inhibition of erythroid cell differentiation and that more importantly Hri takes a crucial role in promoting erythroid differentiation in response to Pb-induced toxicity.",
+      "key": "1f50336db7b1eb2a942cd89acc667b8d47e4f52ad001883a817a6253b9d0ed3c0429f99a1e9c82f68d34698cf180a30ec426a019e64a3df7774006dd5e42ca57",
+      "line": 211,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These data together demonstrated that Pb caused the inhibition of erythroid enucleation and that Hri seemingly surveilled the terminal differentiation of erythroblasts for appropriate hemoglobin production and final maturation before enucleation.",
+      "key": "27c326bd2576c0689ea76f38a073851bc2b900904e2e6c8d03932415fedf43edb094774dfc9258fd9983531d6cc0eab90828fd8919389d06749d5cb918577770",
+      "line": 225,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Our combined results revealed that Hri functions to protect erythroid cells from Pb-induced toxicity through enhancing erythroid differentiation, enforcing cell survival, and orchestrating iron homeostasis.",
+      "key": "06299a2acca7b44ffb8640b0a6beee070a23c0a4d789da3c6354f223817a35c6c8a0f07c2ec3b1cdde1bbf6ecdc496667a9a17e114d8c3f71601b285ea613c1a",
+      "line": 295,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "In other words, Hri is necessary for erythroid differentiation and survival under oxidative stress.",
+      "key": "7d8971b22c844519338a5fb6e01acf39dc290e950f57f6229fd6258f70c81c684b7f96c3f23f9ff57c940fac34d66e3ed59398a6d3f50a4d3451bd2d97d44e06",
+      "line": 95,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "In contrast, Ko mice administrated with Pb(NO3)2 (Ko + Pb) developed significant anemia, evidenced by a great reduction of RBC count and hemoglobin concentration, compared to those of untreated Hri Ko mice (Ko − Pb) and Wt + Pb mice (Table 1; P < 0.05).",
+      "key": "65598d537aeeff0fb371d5a81b3a5696f927bbe9bda1c0a04bd335e8753a94c46bac613e4dcdc42a68979a603b53b6d1f083b1c1cec65c115eec8a26a6ed1f7c",
+      "line": 105,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Analogous to phenotypic observations of anemia, the percentage of reticulocytes in peripheral blood of Ko + Pb mice was greatly induced by more than 2-fold relative to Ko − Pb mice (P < 0.05) and Wt + Pb mice (P < 0.001) (Figure 2A and B).",
+      "key": "49f22a8dc2e1c62d411b25d74842252babd4298b4e10499ddeae2142a200ba44fbc4a66c5c4b4eac93ba72d63a661b5b2f5d8400db8d3857dc3ff30fc0ff833f",
+      "line": 113,
+      "relation": "increases",
+      "source": 1,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "The serum levels of direct bilirubin (DBil) and total bilirubin (TBil) were significantly increased in Ko + Pb mice, compared to those in Ko − Pb mice and Wt + Pb mice (Figure 2C and D; P < 0.05).",
+      "key": "b9022a4fbb58a1243494158683602eb2ee0d3db13551a4e3b144e3a57acca1b37ab1cb43d94471c167cf5b6395356876054061467c020600f9cedf337cd63d93",
+      "line": 126,
+      "relation": "increases",
+      "source": 1,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Furthermore, the level of hematocrit (HCT) was also diminished by roughly 15% in Ko + Pb mice, compared to that in Wt + Pb mice (Table 1), and the mean corpuscular volume (MCV) in Ko + Pb mice was elevated by approximately 15% and 21%, compared to that in Ko − Pb mice and Wt + Pb mice, respectively (Table 1; P < 0.05).",
+      "key": "b6b2402b5f83a736ef3dfe02c42c9f683141334844bd61096f13d2f020535a895dea4d69e3bfaa2cc401f99169c75304be2675d8953114a32fdf8f8cf94f3f80",
+      "line": 135,
+      "relation": "decreases",
+      "source": 1,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Furthermore, the level of hematocrit (HCT) was also diminished by roughly 15% in Ko + Pb mice, compared to that in Wt + Pb mice (Table 1), and the mean corpuscular volume (MCV) in Ko + Pb mice was elevated by approximately 15% and 21%, compared to that in Ko − Pb mice and Wt + Pb mice, respectively (Table 1; P < 0.05).",
+      "key": "dd8420573bd7ebe0c7cf49e71d9c5d2dd01f6b02e894bc571695c5145028e0e7417876cc8f531ef91f00a16a2e05fb984fa94a13c565170f3582a033099e013a",
+      "line": 136,
+      "relation": "increases",
+      "source": 1,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "In stark contrast to Wt mice, there was an exuberant increase (57.9%) in Ter119+ cells in Ko + Pb mice, compared to that in Ko − Pb mice (Figure 3A; P = 0.01), suggesting enhanced medullary erythropoiesis in Ko mice upon Pb(NO3)2 administration.",
+      "key": "31b86d741b23d1d16b52e3a958e221bc9ec27c78489e6b723ecea1326402d082b444a069d157b7654eefa1cebc79c84e201e505fb0cdebca5977f6206f6c8e06",
+      "line": 144,
+      "relation": "increases",
+      "source": 1,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "As shown in Figure 4B, Pb treatment resulted in an induction of splenic Ter119+ erythroid cells in Ko + Pb mice, compared to that in Wt + Pb mice (59.6% vs 36.5%, P < 0.001; Figure 4B).",
+      "key": "516f9bb464ca2b853d1de8c93e63a340dd0b754ee22c6b17ccfae1d2afef7b8088c3ea209633394fe92c9e588a34b02b52c1ed5643c530028c59f2b1286f688a",
+      "line": 170,
+      "relation": "increases",
+      "source": 1,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "In stark contrast to Wt mice, there was an exuberant increase (57.9%) in Ter119+ cells in Ko + Pb mice, compared to that in Ko − Pb mice (Figure 3A; P = 0.01), suggesting enhanced medullary erythropoiesis in Ko mice upon Pb(NO3)2 administration.",
+      "key": "eb23b186e5a98eff623c579c19eaf3de2d5e71ee0fa3ca7b8ef8cb532f22fdb48c6b1c95b55b6c385ce06783a368f69fe8766c753c1fa46a4acfee9af8ab5340",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Bone Marrow": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Consistent with the FACS analysis results, abundant production of erythroblast and megakaryocytes in the sections of BM from Ko + Pb mice was observed, indicting enhanced medullary erythropoiesis (Figure 3C).",
+      "key": "6b06303e985c6cfb650b81c43c3f92ff508d9a0c715bfc5094f020b9d76c02e0fe76b2993853b9435f34f74cde4a89510117cc6a391a8f532b2070772cc3ec8e",
+      "line": 153,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Examination of histological sections of spleens showed a dramatic expansion of erythroblasts in the red pulp of the spleens of Hri-null mice upon Pb administration (Figure 4C).",
+      "key": "567b0b832f978cd6a1f1ed69b426cb4af1f514eda32773526b630a0b414f4d28bc833e8e99303d7da81a920a0e2c861fd2bc9399f6d4790ef8270d2c7972fe46",
+      "line": 178,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Bone Marrow": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Consistent with the FACS analysis results, abundant production of erythroblast and megakaryocytes in the sections of BM from Ko + Pb mice was observed, indicting enhanced medullary erythropoiesis (Figure 3C).",
+      "key": "601beb29fb0b817d8370479b4ad71e6e8912e7615457f4b97aa86d43fb0d82fed72a9db908fac4572007deeede3dfd844fc53e32e7156ebaff97326a821952fc",
+      "line": 154,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These results also indicated that, in spite of enforced extramedullary and medullary erythropoiesis in Ko + Pb mice, erythroid cells did not robustly survive and differentiate under Pb exposure as shown in Table 1, analogous to the observations in cadmium-treated mice.22",
+      "key": "b6c06ca671c869a2d26ff21de00cf3e08fdce223369d38356506b2f4f44bc3630b96d964e9381aa96342346288c70ef5c5e86c65a13b15d36af17e944416af02",
+      "line": 186,
+      "relation": "negativeCorrelation",
+      "source": 1,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Pb treatment has been demonstrated to reduce heme availability for globin assembly.38 ",
+      "key": "885c963b4065a9ad14bbdc0a36046e363fedfb1ad380c262358fd732027cda649ca75d663d61038686222c546802e57d1fa52a809cfd0a8733e202b417fb5a08",
+      "line": 217,
+      "relation": "decreases",
+      "source": 1,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Bone Marrow": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "In Ko + Pb mice, apoptotic cells were increased by a greater degree, 79.4% in BM erythrocytes, compared to those in Ko − Pb mice (Figure 7B; P = 0.012).",
+      "key": "d20edc755d008d4a3e080824429d414c6c9a67b237bb3c2b90096841ccf169a56bcd7c1afd8211c42c0f69214d3694c5442cf1a7c45b9ae8bd510ad5f3cc8116",
+      "line": 233,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Apoptosis of splenic erythrocytes in Ko + Pb mice was enhanced by 19.0%, compared to that in Ko − Pb mice and by 55.4% in comparison to that in Wt + Pb mice (Figure 7C; P = 0.019).",
+      "key": "c2ed584970658f392463a9587491816df6f7552c36035ed2d54c6bbb2694134561b9912311576e625ee29dad717aac4dbe975014e281b4995ba5ad0ca5be983e",
+      "line": 241,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "With respect to the absence of Hri, there were slightly greater serum iron concentrations, total splenic iron content, and hepatic hepcidin expression level in Hri-deficient mice, relative to those in Wt mice (Figure 8A−C).",
+      "key": "c7a55e50a558728704f629757b1a3bf1d3bd3883c443d2cdf146ab43a36ae2978a32d403a22fd829d137aba71099bd3d59bcf6d3d597ca461c30dfd5102ec9a4",
+      "line": 258,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "However, Pb exposure induced hepatic hepcidin expression by nearly 2- fold in Ko + Pb mice with a resultant significant increase of total splenic iron, compared to that in Ko − Pb mice (Figure 8 B and C; P < 0.05).",
+      "key": "6078b055e25a073822c6961600830c93cb4ba870528a83d9b193c3cc3a843a03e7c872fbacb9f155890004391e9913277ac488e582d60a35cd66c060ec5d21a4",
+      "line": 273,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "With respect to the absence of Hri, there were slightly greater serum iron concentrations, total splenic iron content, and hepatic hepcidin expression level in Hri-deficient mice, relative to those in Wt mice (Figure 8A−C).",
+      "key": "73cc2df53993aa6747f8a6a14138f32605cfd7df9d703de46ac17ba6935379925e22f6feb4da3a3d3abfab538ce33178b9f3ad166702c2df9885b880de84a711",
+      "line": 261,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "However, Pb exposure induced hepatic hepcidin expression by nearly 2- fold in Ko + Pb mice with a resultant significant increase of total splenic iron, compared to that in Ko − Pb mice (Figure 8 B and C; P < 0.05).",
+      "key": "5de172a6b1ad2bcc206bfcba99806287f673c0b5d3093378646b2937384d20f9b9d57be950c39c16cc8a93fb5de5aaa0f15f53ad76b90d349a066d37445880fc",
+      "line": 270,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Extramedullary and medullary erythropoiesis was enhanced in Hri-null mice upon Pb treatment.",
+      "key": "9313cbf382c753de905460cf0d4dc7baf03da6bf301489b4de6ae2fb5bbc70eed29582b88d92d1dd25271d34740d33375aac5a422dc1202dc0baac02a37d654b",
+      "line": 317,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "In contrast, Ko mice administrated with Pb(NO3)2 (Ko + Pb) developed significant anemia, evidenced by a great reduction of RBC count and hemoglobin concentration, compared to those of untreated Hri Ko mice (Ko − Pb) and Wt + Pb mice (Table 1; P < 0.05).",
+      "key": "fa25e54dc618b86b3b42c06fb0fb7c85ba8b3a04cb34a8c4bef30a6d3d3ab7a8644bae28fbebcd7261028e0c9e3e79f18583382b4411f954144baddad9215521",
+      "line": 105,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Bone Marrow": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Extramedullary erythropoiesis is often switched on upon anemia, as characterized by splenomegaly.31",
+      "key": "c21e99cab0d5c6bdcf5433bfd727218616b59375cef8b18426d024616dcde239258661a70f93183871cde67a8fae807f771a1259fe3dd648820c3a4fcde08846",
+      "line": 161,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Under Pb administration, Wt mice did not develop phenotypes of anemia; however, Hri-deficient mice developed severe anemia.",
+      "key": "35c8064fd51f6487c67046e6b12ee78800b4f24d2c15de510b9e91784581bbd56b38a07e9fe12085da86af7bb91d8d9373bc0bc7f3d26d3753b3f79fd97fd292",
+      "line": 288,
+      "relation": "negativeCorrelation",
+      "source": 25,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Elevated reticulocytes indicated markedly increased erythropoiesis in Ko mice challenged with Pb.29",
+      "key": "eb4d213ca23e8b29009293992c414dad83dd4c2501ef18f6b0f0607eb9d0eba8168bf461b8298aa6a3e8f0152759fbfa47709445a8ee80397839c7fffb179bef",
+      "line": 118,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Elevated reticulocytes indicated markedly increased erythropoiesis in Ko mice challenged with Pb.29",
+      "key": "d9fd937c9b5a564e95dbe69abe6030683c5f175a14b71286b0421a2749bc3e71d2cfe992c338b955c5fe1c02b7d7057547f1a7f59d0f67bf3cf60c751fa0b6f6",
+      "line": 118,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "In stark contrast to Wt mice, there was an exuberant increase (57.9%) in Ter119+ cells in Ko + Pb mice, compared to that in Ko − Pb mice (Figure 3A; P = 0.01), suggesting enhanced medullary erythropoiesis in Ko mice upon Pb(NO3)2 administration.",
+      "key": "bb8a25c4a352839f0d66e657bb21b77593feb885ec55cdb4e1ea04b8ff98d52b5647438f3aee3c2db121ea07b8962750c8f27bea9d1fcb9c98303904a935a563",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Bone Marrow": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Consistent with the FACS analysis results, abundant production of erythroblast and megakaryocytes in the sections of BM from Ko + Pb mice was observed, indicting enhanced medullary erythropoiesis (Figure 3C).",
+      "key": "10fec91e23664422e8d49fb24a1f30bab060d745580d09da37a62227880c19e0c428953cbfcd99963213d053f5182a4241884e13e4c21ee7ced2beed341eedd8",
+      "line": 153,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Examination of histological sections of spleens showed a dramatic expansion of erythroblasts in the red pulp of the spleens of Hri-null mice upon Pb administration (Figure 4C).",
+      "key": "25649881b738af846f4418f0d08953823a22c35e07c12ffb0e26ed49dc7546966b0c32a4e1d25a2e25df95e0ef7a7c3fd46a711f36d9805a3321993acb531486",
+      "line": 178,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Bone Marrow": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Consistent with the FACS analysis results, abundant production of erythroblast and megakaryocytes in the sections of BM from Ko + Pb mice was observed, indicting enhanced medullary erythropoiesis (Figure 3C).",
+      "key": "8a751b1825ee9fb1febda4bfe732c841fcaff7878ea7ccf259dbff3525d4f0db252fdd5a0771be0d10360b0df6b1680811508dcfad8fffa581bac2b5e30ad6c1",
+      "line": 154,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Bone Marrow": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Extramedullary erythropoiesis is often switched on upon anemia, as characterized by splenomegaly.31",
+      "key": "d44fe3863dc0a6a6a5f1ef784c3ed2f58236818a77fed624dd2f94113bae2d03334d3d784ae0386a4cc475f7bc0338a17ed4ee0e0e4b059c7794f7de4515b29c",
+      "line": 161,
+      "relation": "positiveCorrelation",
+      "source": 24,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Extramedullary and medullary erythropoiesis was enhanced in Hri-null mice upon Pb treatment.",
+      "key": "14dcc013ffea8e55d625f6c7aa510c689fac1e52d5b290147c08215e8254d821bd07fe16fb7811a752b91b91c1d77452435420792dd71b1d1f5a051294169181",
+      "line": 317,
+      "relation": "positiveCorrelation",
+      "source": 24,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These results also indicated that, in spite of enforced extramedullary and medullary erythropoiesis in Ko + Pb mice, erythroid cells did not robustly survive and differentiate under Pb exposure as shown in Table 1, analogous to the observations in cadmium-treated mice.22",
+      "key": "0fe18dc70e986d34fdf14fe1caa8a43faa0871ab58187eeb9a5888d980718b09a7f2e7a34e4b7666b57a6ac5e44fd86128bf0fd922a926b3ff4a2e6fe2e2c0dc",
+      "line": 187,
+      "relation": "negativeCorrelation",
+      "source": 4,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These findings together led us to postulate that there could be disordered differentiation and survival for Hri-deficient erythroid cells upon Pb exposure.",
+      "key": "e30741b34a7afa6cda7b34975ce9cac18074acde59dbd984d975456b2d9100a5f3064f1cccef2164b9b5d3665fcd8c3f18e6668b7cdd3ef693f8b65e4a44d8ce",
+      "line": 195,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These results are similar to our findings in an earlier study where Hri deficiency resulted in the blockade of erythroid differentiation of FL cells from early and late basophilic erythroblasts into chromatophilic and orthochromatophilic erythroblasts.19",
+      "key": "495109087d28446c9c4fbf684e81c87663e4a86d5a08bb49dab6d6f35f04e9e181a4bc166e3579c721a44c93dea67adca90d02b0480b0ae4cbfac5d63b39de1e",
+      "line": 203,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These results suggest that Pb elicits direct inhibition of erythroid cell differentiation and that more importantly Hri takes a crucial role in promoting erythroid differentiation in response to Pb-induced toxicity.",
+      "key": "48298d427f9cae5f0214f76868266e310d07bfc0de1aaeab86c48dc22d6941a001198d5157f88cb547aa7da93fea934366f40a3f966706fccf6a0dc0e7d3cd90",
+      "line": 211,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These data together demonstrated that Pb caused the inhibition of erythroid enucleation and that Hri seemingly surveilled the terminal differentiation of erythroblasts for appropriate hemoglobin production and final maturation before enucleation.",
+      "key": "1b2047e18aca13b32d94a8e1ddac1f13c6f5e1bc3b7f2d49255eeb45263be63dca01d4a6f8cc71b1b2c3c6e036ec33ff6fe9f3b4d965ce041c5d3e208d429acd",
+      "line": 225,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Our combined results revealed that Hri functions to protect erythroid cells from Pb-induced toxicity through enhancing erythroid differentiation, enforcing cell survival, and orchestrating iron homeostasis.",
+      "key": "07ed482023e0082bd07f5e78c7206413d8162719673ed969c2f46c44b85c6d15e643a74ac61abf7d700051c7b94d4e18a9a847128d5cd63491797e7a72332005",
+      "line": 295,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These data suggested that Pb-induced anemia should be ascribed to (at least partially) Pbinduced death of erythrocytes, and also stressed the critical role of Hri in assuring the survival of BM and spleen erythroid cells under Pb exposure.",
+      "key": "6b99eaddbc555acc73b94e78b602134cf1470d507428a1e247479e21c0b468d45068c795181b4596e54b15a40a988671de2ca4a97dcb19a57da64b25cf70f5b3",
+      "line": 250,
+      "relation": "negativeCorrelation",
+      "source": 22,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Hri is activated to protect cells from oxidative stress-provoked apoptosis upon arsenic, cadmium, and iron deficiency.18,19,22",
+      "key": "ce7816495fe1dcce7a649260567b17824a8ea034da7c388f80af55daf0c39370963458cbf70d9c6dc506dd9c688f4c8f5823aa73c1ad26378789f2e11bd26c4a",
+      "line": 301,
+      "relation": "negativeCorrelation",
+      "source": 22,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Under Pb administration, Wt mice did not develop phenotypes of anemia; however, Hri-deficient mice developed severe anemia.",
+      "key": "caeca478b83d29d1d9541d4446604664be99773f291d41a972cf1f97232a8459b670046028512bbfdd87015bfa497b2d365d6e6d4fd876d62fddf7e2dc98303d",
+      "line": 288,
+      "relation": "negativeCorrelation",
+      "source": 22,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Moreover, in the current study, we identified a crucial role of Hri in protecting erythroid precursors during differentiation by promoting terminal maturation including enucleation, preventing cell death, and increasing iron availability for erythropoiesis.",
+      "key": "ba7d81eab5ad93df133bc338030680a372c60313cbbd57491abc8d3e50511dea8477e41f1505c753f1fc3ea74a3c184a816c6b30c2dd6931d4e8b5b40229f9b9",
+      "line": 309,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Moreover, in the current study, we identified a crucial role of Hri in protecting erythroid precursors during differentiation by promoting terminal maturation including enucleation, preventing cell death, and increasing iron availability for erythropoiesis.",
+      "key": "900e14bb71ba53873f285a527b61484d7df49a347b74c9682ae59dda77e914af7851d7bc19d573581b0daa91c27284cfbfeada20d7071a54d17f307294da2f1f",
+      "line": 310,
+      "relation": "negativeCorrelation",
+      "source": 22,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Moreover, loss of Hri gave rise to hepatic hepcidin induction, associated with iron retention in spleens.",
+      "key": "b39555c8d88fa510e41faa87014aa760704077db8891df5e0474d6d9ed2c3aa349f71d39563553b1a76517182fc8ba9ce3ef99e6a5539316b22b06b991f16334",
+      "line": 322,
+      "relation": "negativeCorrelation",
+      "source": 22,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These results suggest that Pb elicits direct inhibition of erythroid cell differentiation and that more importantly Hri takes a crucial role in promoting erythroid differentiation in response to Pb-induced toxicity.",
+      "key": "1d7e553ceecb3d4e200d8a60b7b10af845176b501754ddd0ed52d052dd7aeeec46216afe1293b97b632c6fcc33b5ce7e4e9b8ec3bc28f34eb31189f745a0c01c",
+      "line": 210,
+      "relation": "decreases",
+      "source": 2,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These data together demonstrated that Pb caused the inhibition of erythroid enucleation and that Hri seemingly surveilled the terminal differentiation of erythroblasts for appropriate hemoglobin production and final maturation before enucleation.",
+      "key": "caf044940a3ed04b63da3c7427dd6a72044b53e50e145bd9c12300ff42d57f2942ba7ffd84e4d50687cddfa7a82ee48d10d09c56be8d1902bf8710a6cdd54d2f",
+      "line": 224,
+      "relation": "decreases",
+      "source": 2,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Moreover, in the current study, we identified a crucial role of Hri in protecting erythroid precursors during differentiation by promoting terminal maturation including enucleation, preventing cell death, and increasing iron availability for erythropoiesis.",
+      "key": "9d16c34dca207458af4d4b2a3ecb13b98d487f9e5484b44cd7d786d089438226864fcbe9ca0909cbe874c59189ba5136c2f4a5d4f1b70450f408b62d04614605",
+      "line": 309,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Bone Marrow": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "In Ko + Pb mice, apoptotic cells were increased by a greater degree, 79.4% in BM erythrocytes, compared to those in Ko − Pb mice (Figure 7B; P = 0.012).",
+      "key": "c6655baada08e8bb09c2e63031e1e5ac70f86d9c222923269ba4d809de2fde66f00495c1527565cb710ea1e6fad06f9b90a6f430f3be5ded1a0aeb3316d2be22",
+      "line": 233,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Apoptosis of splenic erythrocytes in Ko + Pb mice was enhanced by 19.0%, compared to that in Ko − Pb mice and by 55.4% in comparison to that in Wt + Pb mice (Figure 7C; P = 0.019).",
+      "key": "c146512b9a4ebaf8922e9e10081aaab0c4154575d682a706c5d7e4081f3db10fbc15a1a70a397e52c38f1be2cedcbbb68b65cbbc655870818d0c3bc2fca4fcd0",
+      "line": 241,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "These data suggested that Pb-induced anemia should be ascribed to (at least partially) Pbinduced death of erythrocytes, and also stressed the critical role of Hri in assuring the survival of BM and spleen erythroid cells under Pb exposure.",
+      "key": "b6a3ddcbc5f12d33f75dd1b7e7fac64d0fd73f00ba66f6507f9b24c3c9b009ff6a67f92e501f151caa552190e6b035e9af1fdd1c4a3ad2263d0e2a1be3ba8a6b",
+      "line": 250,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Hri is activated to protect cells from oxidative stress-provoked apoptosis upon arsenic, cadmium, and iron deficiency.18,19,22",
+      "key": "0362114c014ec509da6cceb84e9e89ef807edef84afc9f64075299e0c2159490f506707b54d71ddd759099c0c17d2fe1bf5eeb40e376a6c27824a5d5beadcd39",
+      "line": 301,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Serum": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "With respect to the absence of Hri, there were slightly greater serum iron concentrations, total splenic iron content, and hepatic hepcidin expression level in Hri-deficient mice, relative to those in Wt mice (Figure 8A−C).",
+      "key": "461b704119c49d285ada0afd2793bda1c3ebfed84db697e462764564ac05b517be20703b9f56b68e0569da85f7d4de1a02595adf07e3720f4bf5d9e13f58f494",
+      "line": 258,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "However, Pb exposure induced hepatic hepcidin expression by nearly 2- fold in Ko + Pb mice with a resultant significant increase of total splenic iron, compared to that in Ko − Pb mice (Figure 8 B and C; P < 0.05).",
+      "key": "89940c457e27af3fe4ed54995438923b0fc5ee2552fa50a336a9a88b6f0151502ed49ac01d237870bf13fae3a22cf20ff5e4540c2e9648d7bcfab71456a03ae2",
+      "line": 273,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "With respect to the absence of Hri, there were slightly greater serum iron concentrations, total splenic iron content, and hepatic hepcidin expression level in Hri-deficient mice, relative to those in Wt mice (Figure 8A−C).",
+      "key": "fab0ad6df3de54ed86b535e124ab77ee402eb06838ad806898dd2b22cc18fc3fdd56b77bad7201c9183d7fca91d888c408652f2d9269ef90bfd14c69366e0b13",
+      "line": 261,
+      "relation": "positiveCorrelation",
+      "source": 23,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Liver": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "However, Pb exposure induced hepatic hepcidin expression by nearly 2- fold in Ko + Pb mice with a resultant significant increase of total splenic iron, compared to that in Ko − Pb mice (Figure 8 B and C; P < 0.05).",
+      "key": "1d7a9414c13f0085404523e3b3418158f6abcff7e0effaadbc42f56de9f0cb6f7648996971c1643102c7d894353b566651417aeb53cd3181d78e295f537ace15",
+      "line": 270,
+      "relation": "positiveCorrelation",
+      "source": 23,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythrocyte": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Moreover, loss of Hri gave rise to hepatic hepcidin induction, associated with iron retention in spleens.",
+      "key": "59edca943a2922d2a1fc5758636caeb0c15b7bea4c040cfbbaea8bf7ac16fdf60f8ca23fd386669b4bfaeefd5b456186f5d46e4592f09025989a3ec48161e559",
+      "line": 322,
+      "relation": "negativeCorrelation",
+      "source": 23,
+      "target": 22
+    },
+    {
+      "key": "4e39e7373d6f6633f5c37aaa92e838396183c693221807cee9ab3352d37746d7cfcc7d180c842bec57e74705118c35620c4b35e4ab28ec0cd94f791a2e78e1e3",
+      "relation": "hasComponent",
+      "source": 18,
+      "target": 2
+    },
+    {
+      "key": "405376b3c485638ecb873c53a7f73d45be78a2d0fc905005b3ce9ec7ef9d0d097d0266d09195f0595b86b60c780284f5701862b1e951013d805007f1327ff1e3",
+      "relation": "hasComponent",
+      "source": 18,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "For example, the binding of Pb2+ to protein sulfydryl groups would result in inhibition of ALA-D activity, leading to heme deficiency, and reduction of heme supply is a known reason for lead-related pathology.10,11",
+      "key": "3e98d18d4acc1e8213050b7f91fbb2a1869edfa9eeddbf1b07a1ef528a8dcc194afaf7af2a76d55f1a8cef2b9b6efba082575aa8bf0f3d7c7f8b8e5702a71cce",
+      "line": 282,
+      "relation": "decreases",
+      "source": 18,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": {
+          "erythroid progenitor cell": true
+        },
+        "MeSHAnatomy": {
+          "Spleen": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Liu S",
+          "Wang L",
+          "Wang X"
+        ],
+        "date": "2015-03-16",
+        "first": "Wang X",
+        "last": "Liu S",
+        "name": "Chemical research in toxicology",
+        "pages": "460-9",
+        "reference": "25411909",
+        "title": "Heme-regulated eIF2α kinase plays a crucial role in protecting erythroid cells against Pb-induced hemolytic stress.",
+        "type": "PubMed",
+        "volume": "28"
+      },
+      "evidence": "Moreover, in the current study, we identified a crucial role of Hri in protecting erythroid precursors during differentiation by promoting terminal maturation including enucleation, preventing cell death, and increasing iron availability for erythropoiesis.",
+      "key": "7f99e6498403a1e3fc364e2dad25763d9d4e58aa4d589431a3358f3e437a5305226a43045bf937451c6c6c7ce26a45aedfb1f0dbe78454afcbcbdcc27e0deada",
+      "line": 310,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 22
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "function": "Abundance",
+      "id": "e426e7ad4ee4d8eb3c018acb75625d794a96811eb659d39bd8f25c4b30632fc8a938eca8397887738ecc384ec5df867e2026de113f002e5cc4490177de0905cd",
+      "name": "iron(2+)",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"lead nitrate\")",
+      "function": "Abundance",
+      "id": "d04fc97361d422611a38e99f7354f091533972ccc52c8e878911c6b9dfc3d15b0ff2456c1b3fc2261345b31e1b3f9735fc1f145327228b9d461660da26972644",
+      "name": "lead nitrate",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"lead(2+)\")",
+      "function": "Abundance",
+      "id": "5ff1b7d1d596170f722abd291ea0cd30067313a05acd1aeeef0ce314790769be8994e96938d128e20be1dd551b52e415de4170384d54865613db8a540e4266b8",
+      "name": "lead(2+)",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:bilirubin)",
+      "function": "Abundance",
+      "id": "8ab7efc0236c3a907b27b0e2a04a28b086162b711cee23f6cbd3e1ba4c08a4d19dd949b63a398214843d900f380bc0f8b7ef9f78d436d952ff9f878ed4eeeaae",
+      "name": "bilirubin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:cadmium)",
+      "function": "Abundance",
+      "id": "2d3a6707bf4fee2f8d2f4c8433e5b946e61040265a82df91a49c50eeab7e3bb42056e7b030ba40056f2e614a616cb9887c3ce9d37a75de284b04f6d31e7f0d3e",
+      "name": "cadmium",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:thiol)",
+      "function": "Abundance",
+      "id": "763783410a0fca5b8f4b719cb97af5c8bba7006164cc4cc4dc2397922b479b4a3e0f151e8730e36f4598409532088ef01f4ce4dad2f0820ee9f168250b738fce",
+      "name": "thiol",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(MESH:Erythroblasts)",
+      "function": "Abundance",
+      "id": "beda88a56a14fb3bb5a0d9f72a6be926f56e4bd7ff8d5ff341a59cfb3303e6e909daa6b5bb58b77eef8db3dd91d9000fdb542fa0fc004026802a4b3c49a7f694",
+      "name": "Erythroblasts",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Megakaryocytes)",
+      "function": "Abundance",
+      "id": "ef0296df8d327e25b31d9226e8fa53725f5a2fec8a395bfedf8fcead6405eb305aca8f761380e2a09b26da149193b7df6a5d34549dcac43fd64f3dd664bd5f3d",
+      "name": "Megakaryocytes",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Reticulocytes)",
+      "function": "Abundance",
+      "id": "e928ae06c9076f5a2ca0278d10fc6aa3bb8d792a75c44a48fc9eccf4dfc783fc854310011b0f676f8717d4f33379c52be6983f2491c8b008bf1fba98a1c4d76e",
+      "name": "Reticulocytes",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(GO:\"cell death\")",
+      "function": "BiologicalProcess",
+      "id": "b2ecb9d87645a0a7d5efbe2c9eeeaa14a705a36b6cdf787e071ba334fdd12b4caaf12b88508b99a8974005549b3c8123c9481c5d969630df072082b07e4dc586",
+      "name": "cell death",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"erythrocyte apoptotic process\")",
+      "function": "BiologicalProcess",
+      "id": "564a0191c9b6f16ce5b80d8db66a715af51c09bd568e2b0056e2a6f54ed367bade07eb68f6f851c77ec9c0b3409a4523bd5b220f35ac6c5495290356b079bbc7",
+      "name": "erythrocyte apoptotic process",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"erythrocyte differentiation\")",
+      "function": "BiologicalProcess",
+      "id": "ab8e06e405a2553b8d3dd3e312ca275e5e9e70a99e8d47cb55b6a7fe01bbdfdb285c2c5a6b35e5aaa7de58119ac13e8cd864975bbc4e7b4d45d7c3fe8284cff2",
+      "name": "erythrocyte differentiation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:\"erythrocyte enucleation\")",
+      "function": "BiologicalProcess",
+      "id": "9dc0c3e1769d1edf09c68b97f163aa93e8c492a0822f21951abb0a7e4fa9120f8246899f5d5c85494445bf0bc5dbb090533320541df01dc49df72b19221e14ce",
+      "name": "erythrocyte enucleation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Erythrocyte Volume\")",
+      "function": "BiologicalProcess",
+      "id": "8217bb35f13b4d0498087e2261f7fe3b53aaf940a603e2a40ba4f61e3c33330761b02177cea1a2049ffa6b81b6e4b0a98645fbb7c51e62b76e27b6813a72e4e6",
+      "name": "Erythrocyte Volume",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Oxidative Stress\")",
+      "function": "BiologicalProcess",
+      "id": "32bd3ab5e8a3a26be3209856c88741f0f0e2dff98d2587599a6a21b0f4793c5d8feb1194ea2166cf3cece076e7095530b116270e6655bc8feb35a437fda42cf6",
+      "name": "Oxidative Stress",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Erythropoiesis)",
+      "function": "BiologicalProcess",
+      "id": "1f410f4bf7671d89c8432dc20f30df10561e6da24e4215a4dadca1a33ebcd91316fa9c0c8f99535a0814195bde46ebf980e75a1dff29a9b233db6851556d409e",
+      "name": "Erythropoiesis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Hematocrit)",
+      "function": "BiologicalProcess",
+      "id": "e544750f0e182cb2a78fe8109524cf89f67917b43a0d2a0998b0e90cc067715bc1e04437394e804a9ab49017e2f6dd0bce9e53363cacea6fdf8326729c1c7e33",
+      "name": "Hematocrit",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "complex(a(CHEBI:\"lead(2+)\"), a(CHEBI:thiol))",
+      "function": "Complex",
+      "id": "0d740cc2e2fa8d381302746c44a191e4f6f14fe0edd828f5481298e8892b38fe4b9a0717ea7e705e93147fca1754ab711ccc1c332b441645440ebbc235baa81a",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"lead(2+)\")",
+          "function": "Abundance",
+          "id": "5ff1b7d1d596170f722abd291ea0cd30067313a05acd1aeeef0ce314790769be8994e96938d128e20be1dd551b52e415de4170384d54865613db8a540e4266b8",
+          "name": "lead(2+)",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:thiol)",
+          "function": "Abundance",
+          "id": "763783410a0fca5b8f4b719cb97af5c8bba7006164cc4cc4dc2397922b479b4a3e0f151e8730e36f4598409532088ef01f4ce4dad2f0820ee9f168250b738fce",
+          "name": "thiol",
+          "namespace": "CHEBI"
+        }
+      ]
+    },
+    {
+      "bel": "g(MGI:Ly76)",
+      "function": "Gene",
+      "id": "10178d06facb317e933088b0b29919d9206da18d9f8dbaa281afb7451ae3857644500df91eb981a709ff8649fa4d1897cdf6d86b29669579e8b34f304ad9ff5c",
+      "name": "Ly76",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(HGNC:ALAD)",
+      "function": "Protein",
+      "id": "6e37c84f2538b114602582545c5c16d5a8385d4231c40533d220e64c8e6204b03132a5d6ce9c36f16bbe8ea8856a176804e011e42cd52f2d2bf8fe9a7afcba10",
+      "name": "ALAD",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:EIF2AK1)",
+      "function": "Protein",
+      "id": "271081ec3499dbe1037aeff33f2ed35e62365d2cdbfdf54c1a76b59be45cb3f5a8456418f6a89c9f1148100ce9d0f0fb4db9c4867c85861df0b7d54f99caa180",
+      "name": "EIF2AK1",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(MGI:Eif2ak1)",
+      "function": "Protein",
+      "id": "7fdeb2f408b6218506bf8cdb52276acec49aff96a3f1f8229c5199f14423b6014e53fd1aeb713d4168999d7963b26bf95f47fd3d4c30709fdaef050c0d9760ae",
+      "name": "Eif2ak1",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "p(MGI:Hamp)",
+      "function": "Protein",
+      "id": "b2783254faca5424c624c2070252c4df59164ac17ce017d25cc846948368bf10fe4b331facac74fb11cce88a0f31f21686e366439b9fc14685f089ed5b4ef3f1",
+      "name": "Hamp",
+      "namespace": "MGI"
+    },
+    {
+      "bel": "path(MESH:\"Hematopoiesis, Extramedullary\")",
+      "function": "Pathology",
+      "id": "9941eef9c89e9ee76e53e9b1fa180d507eded72cd06d2cfeae5ccb4b5b0ced0dd4ca1424a23d7f95a0c7f55b93d5548165c5c31231062361cffeb176db1ed743",
+      "name": "Hematopoiesis, Extramedullary",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Anemia)",
+      "function": "Pathology",
+      "id": "912b35fb5957bc2375ac505209e5d02b092ce92555ebd2b0a077a97723ef9a373ed7b3954ab9031f2cdfbf7f0d8e0f833c9c9ded55ae4090d23a7ab163fbc6f4",
+      "name": "Anemia",
+      "namespace": "MESH"
+    }
+  ]
+}

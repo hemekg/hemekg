@@ -1,0 +1,1318 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_24667910.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_24667910.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "In addition, iron and ferritin deposition are found in ependymal or subependymal location after neonatal IVH.7–9",
+      "key": "9bea9615130c736eafce22c007ecbb4e3153c18726e7e2a6b98edcb5251b5bf104f84a5b6f59549403659d1d54c3aab56d261d835eaf83937f39d9e207134cfc",
+      "line": 96,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "In addition, iron and ferritin deposition are found in ependymal or subependymal location after neonatal IVH.7–9",
+      "key": "1e17b2d5a6fb93789a23bfe55bd7f510de63b5e3d7c2b78d28ada59f17352c38030100432465f3a5f9bdc80e95e66481402a8df2c43e2b9334012fc833305285",
+      "line": 97,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "In addition, iron and ferritin deposition are found in ependymal or subependymal location after neonatal IVH.7–9",
+      "key": "5e8c467764185f009a42c64e33b23ae8c8b2660228bf8da5fe3fba61b18da0da5235348666d8eb7ca37b80990c83009cd0aca124852c84be030f5f529230e5bb",
+      "line": 96,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Twenty-four hours after injection, T2 MRI showed a significant bilateral ventricular enlargement in the iron-injected group (17.9±5.7mm3) compared with salineinjected rats (9.2±5.7mm3, Po0.01, Figure 4).",
+      "key": "c7daaedd765eb4f643149c37b53efab4d09b5ef9a29496594ce08bf4c06cfabdad3340684760dcf27f2299ecee875b1e25958a574f441b16a12a046f1c89ce64",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "The major findings of this study are (1) intraventricular injection of lysed RBCs but not packed RBCs resulted in hydrocephalus; (2) lysed RBCs upregulated brain HO-1 and ferritin levels; (3) intraventricular injection of iron also caused hydrocephalus; and (4) iron chelation with deferoxamine reduced lysed RBC-induced hydrocephalus.",
+      "key": "b9d381b364f6c92c63dd5cfb090273941c80f534444dc86164260389c95e608a13e505c9ad215845dc3f6a92a2be9a79b72cdeda8fa47399d8143bb1a62f010b",
+      "line": 173,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "In addition, iron and ferritin deposition are found in ependymal or subependymal location after neonatal IVH.7–9",
+      "key": "01c18bb3edb46bdf304bdb6baadd2d0fd6104d851278295001ddcef69410e3aa3b5c11815b25e5ce36ffda43925813ad30b2b394c0398c80579a42da1d65b8f6",
+      "line": 97,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "There was a marked increase in periventricular ferritin immunoreactivity after injection of lysed RBCs (Figure 3A) compared with saline or packed RBC injection.",
+      "key": "3ba5b2da942a46c35aa1dc09443d4fa07080a4b84c933fea70369fd3079c93b91801f80a8b8e0669a84fef6b2a793c3acbd9e873f7868cbbcb0ebaac164075c5",
+      "line": 129,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "subject": {
+        "modifier": "Activity"
+      },
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "The major findings of this study are (1) intraventricular injection of lysed RBCs but not packed RBCs resulted in hydrocephalus; (2) lysed RBCs upregulated brain HO-1 and ferritin levels; (3) intraventricular injection of iron also caused hydrocephalus; and (4) iron chelation with deferoxamine reduced lysed RBC-induced hydrocephalus.",
+      "key": "c8fe985caced82476e40270a5b8ec7233a02a41255a68f8b0ef87da87b507db1c529b0bade0f926ea4cc9d3048c9af83b7f5c5cf008ae4ba663db1d1b6225ca4",
+      "line": 172,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Injection of lysed RBCs resulted in significantly larger ventricular volumes (lateral ventricle volume 67.9±10.0mm3) compared with injection of packed RBCs (24.1±6.2mm3, Po0.01) and saline (Po0.01) at 24 hours (Figure 1).",
+      "key": "8b0218acc90821ef178dc6d0b4d11e71a7f9ed360a4002407c3c1feb3cb49d8f7e524f6578a193874e45fb0f073d3404cb3529212774168599ad328d19333e5e",
+      "line": 108,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "The major findings of this study are (1) intraventricular injection of lysed RBCs but not packed RBCs resulted in hydrocephalus; (2) lysed RBCs upregulated brain HO-1 and ferritin levels; (3) intraventricular injection of iron also caused hydrocephalus; and (4) iron chelation with deferoxamine reduced lysed RBC-induced hydrocephalus.",
+      "key": "c5c05691892a33757f48fd7ad0b140d8aa061f78d9eec557ae508354d35794e26d92aaf94c0f39b2a5fa4aadb60e2c53ed75e46bc5e2443104e44b78fff7cbc3",
+      "line": 170,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "There were many more periventricular HO-1-positive cells after injection of lysed RBCs than after saline or packed RBC injection.",
+      "key": "ea3700d70bf14bcf26495440266685b77bf133e01e2ecfd6252962e06f409a3296de2177cc517611bfa81e71eed7889e255c0a1099485ba5f0a9ac3b81704dc4",
+      "line": 114,
+      "relation": "increases",
+      "source": 2,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "HO-1 protein levels in the periventricular area were significantly increased in rats receiving lysed RBCs (3,566±2,481 pixels vs. 115±141 pixels in saline group and 295±311 pixels in the packed RBC group, Po0.05, Figure 2).",
+      "key": "315947e81c67eca5ad9449560d8729004b1003ef6a4ec03023a90882d478fe73eeaba90e4d186db3776e0c008635670fae5c5b3b167796daf1d7852c5d1ac4d3",
+      "line": 122,
+      "relation": "increases",
+      "source": 2,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "The major findings of this study are (1) intraventricular injection of lysed RBCs but not packed RBCs resulted in hydrocephalus; (2) lysed RBCs upregulated brain HO-1 and ferritin levels; (3) intraventricular injection of iron also caused hydrocephalus; and (4) iron chelation with deferoxamine reduced lysed RBC-induced hydrocephalus.",
+      "key": "5f1666cf3ae13ab5e57c6154d4a3420790e5d5c238afbf6d006748f3f8cfcd4315c1a5d47cb02b1e9435d2d28c69145b449690f110454ffb3a260a4fb67249d4",
+      "line": 171,
+      "relation": "increases",
+      "source": 2,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "There was a marked increase in periventricular ferritin immunoreactivity after injection of lysed RBCs (Figure 3A) compared with saline or packed RBC injection.",
+      "key": "b7790aadc6254e698d6aa6031eaa3f51a9a48384ca32ab2fa6f83ef9b00af026f73e724ceb5b280b85f15d715173b1753b2855cbac636cd56b3b5ee4afda0f4e",
+      "line": 129,
+      "object": {
+        "modifier": "Activity"
+      },
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "The major findings of this study are (1) intraventricular injection of lysed RBCs but not packed RBCs resulted in hydrocephalus; (2) lysed RBCs upregulated brain HO-1 and ferritin levels; (3) intraventricular injection of iron also caused hydrocephalus; and (4) iron chelation with deferoxamine reduced lysed RBC-induced hydrocephalus.",
+      "key": "75f41df93e1f762067dd6ad9bfaa8eef4448341b3c8c7ed0b17c6db01a5b4614c06da0579cb610beba7a7f00745c713a383b11c6f00c656929dc63285d0d9267",
+      "line": 172,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Injection of lysed RBCs resulted in higher protein levels of ferritin heavy chain (2,350±429 pixels vs. 800±326 pixels in packed RBC group, Po0.01, Figure 3B) and ferritin light chain (Po0.01, Figure 3C), compared with saline or packed RBCs.",
+      "key": "5b4bf2ccd3c61078b01ab8198e907cee499c0f5f1946e7e3eebea9ea1973b4489edb2ecec99cbd4cffe1c01c92eaec692281492bf5aa59253a307ff3b6398a7f",
+      "line": 136,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Injection of lysed RBCs resulted in higher protein levels of ferritin heavy chain (2,350±429 pixels vs. 800±326 pixels in packed RBC group, Po0.01, Figure 3B) and ferritin light chain (Po0.01, Figure 3C), compared with saline or packed RBCs.",
+      "key": "3ce451a13e7e58ea1e8c6fa820434870b860bc22ae3d27af6019189c90460d01ca415ddfbc163394975be17c714d98f3cc5b47ad18a95e3661a386a1f3898642",
+      "line": 137,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Injection of lysed RBCs resulted in significantly larger ventricular volumes (lateral ventricle volume 67.9±10.0mm3) compared with injection of packed RBCs (24.1±6.2mm3, Po0.01) and saline (Po0.01) at 24 hours (Figure 1).",
+      "key": "d7736787b971b15d9d8d67f7d0dccbe9a890bc31e6810f11dd0c8dd36260183a4e82e619d5d4b68dae45e6faa1f3307cc41e589195af20cf02f10cce0709e8a5",
+      "line": 108,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "The major findings of this study are (1) intraventricular injection of lysed RBCs but not packed RBCs resulted in hydrocephalus; (2) lysed RBCs upregulated brain HO-1 and ferritin levels; (3) intraventricular injection of iron also caused hydrocephalus; and (4) iron chelation with deferoxamine reduced lysed RBC-induced hydrocephalus.",
+      "key": "97965af644ffd2e6fce7d03af61102732727829b0d83eff1c4a9919666dcb743488c6044677118f5f6e25be8b75f10a3f9256e325ae2b5759bd1f3401aacb0a5",
+      "line": 170,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Twenty-four hours after injection, T2 MRI showed a significant bilateral ventricular enlargement in the iron-injected group (17.9±5.7mm3) compared with salineinjected rats (9.2±5.7mm3, Po0.01, Figure 4).",
+      "key": "0c315962a4cfdb481ec38b1a29f564c8eeafb4776bce7db11d4fed91582d6c7ec9fd7ae1a10f05c96380620b5454717823d361c024fb65694bd184a2ddddda0c",
+      "line": 145,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "The major findings of this study are (1) intraventricular injection of lysed RBCs but not packed RBCs resulted in hydrocephalus; (2) lysed RBCs upregulated brain HO-1 and ferritin levels; (3) intraventricular injection of iron also caused hydrocephalus; and (4) iron chelation with deferoxamine reduced lysed RBC-induced hydrocephalus.",
+      "key": "102b3dd43ace217ddf1506f275ce5700e82020d8131c8d3f08948e3a47f3a530a1fd24c28628544fdb99441fd5444a26e9f6cc981bd34d33e5551ee7a510f947",
+      "line": 173,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Coinjection of deferoxamine with lysed RBC reduced ventricular enlargement (47.8±17.8 vs. 59.9±15.7mm3 in saline coinjection group, Po0.05, Figure 6).",
+      "key": "e309734843ece337fca2c71ab0ca40a29a5d88d61817053063bd1bda463f00c96cb9c59c5b537573bc721ed8c6496336f3637d5b75b17122dd43f090ff34b42f",
+      "line": 151,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "The major findings of this study are (1) intraventricular injection of lysed RBCs but not packed RBCs resulted in hydrocephalus; (2) lysed RBCs upregulated brain HO-1 and ferritin levels; (3) intraventricular injection of iron also caused hydrocephalus; and (4) iron chelation with deferoxamine reduced lysed RBC-induced hydrocephalus.",
+      "key": "30d1a6fc6e937e20271f4ded5c6c5135fbd1cb09b9befdcd523c2e6156b7a95777500da751b42570a296d646e7f26765e3ab4145f971f667552a02793ab1e935",
+      "line": 174,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Our most recent study has shown that thrombin and thrombin receptor are involved in IVH-induced hydrocephalus.",
+      "key": "5628eb46acd3f2667ff87d500972bcb92c528a7013301a9fe583ba2b07ddde38d9c12deb0d85b080ba01d76081f147ee47922dcd085eaa4c2c644c3466fa07ae",
+      "line": 180,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Injection of lysed RBCs resulted in higher protein levels of ferritin heavy chain (2,350±429 pixels vs. 800±326 pixels in packed RBC group, Po0.01, Figure 3B) and ferritin light chain (Po0.01, Figure 3C), compared with saline or packed RBCs.",
+      "key": "52904fee8796e976484b7a0b7a9a5993787c3f3a4959d3697a09463bfcd23b502507eedd4ae8b865aa42b0e6ee88eddf24f72cae907ccb0f0a502edec127b679",
+      "line": 136,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Injection of lysed RBCs resulted in higher protein levels of ferritin heavy chain (2,350±429 pixels vs. 800±326 pixels in packed RBC group, Po0.01, Figure 3B) and ferritin light chain (Po0.01, Figure 3C), compared with saline or packed RBCs.",
+      "key": "8df2069dc2a3b707d3b9b519ff955fedd25608659d1067ef3c5e418f000499395547d9720631001a22a480982be291ce74f6dc1e899cb80fa1c5721f98862592",
+      "line": 137,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Coinjection of deferoxamine with lysed RBC reduced ventricular enlargement (47.8±17.8 vs. 59.9±15.7mm3 in saline coinjection group, Po0.05, Figure 6).",
+      "key": "e22b98cec7efe0e07cb43f4d490bffece7937211d5a64872ed78f27558cb15199dcf04181a448eaf048d1dee058b8b9229b0da1ab856ddc91ebf1720b35024ec",
+      "line": 151,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "The major findings of this study are (1) intraventricular injection of lysed RBCs but not packed RBCs resulted in hydrocephalus; (2) lysed RBCs upregulated brain HO-1 and ferritin levels; (3) intraventricular injection of iron also caused hydrocephalus; and (4) iron chelation with deferoxamine reduced lysed RBC-induced hydrocephalus.",
+      "key": "4d384c9ae4fd03c35e6a6f19d0ed242f389d7175e0d422135d02e22af8efc499a6247db3fb5b03e664b3d1fd49b20d264c6c1e97b92b4d72cb18840ef2618537",
+      "line": 174,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "There was a tendency that lysed RBC-induced brain edema was less in deferoxamine-treated group (brain water content in the ipsilateral hemisphere: 79.8±0.6% vs. 80.5±0.7% in the saline coinjection group, n¼6, P40.05).",
+      "key": "4e7f375348c345399d79bc43ff82d38ad6d7da9f5d038e18098a79ddb4ea0fcb8d08066ee2d4bfb0de72b4cd8717f964f754ac5c331938f2d1e407d5de75ce91",
+      "line": 159,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Results": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "There was a tendency that lysed RBC-induced brain edema was less in deferoxamine-treated group (brain water content in the ipsilateral hemisphere: 79.8±0.6% vs. 80.5±0.7% in the saline coinjection group, n¼6, P40.05).",
+      "key": "619e01e43eac00df8e31a5b4e7b1000274e0a753657813a292a267e5f964558c1942eeb0a7a8c2d6993c8f7ff59e2bc0ab3d483efdcea414dfafe2d3bf4d09fc",
+      "line": 159,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Ependyma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "TimePoint": {
+          "24 hours": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Du H",
+          "Gao C",
+          "Hua Y",
+          "Keep RF",
+          "Strahle J",
+          "Xi G"
+        ],
+        "date": "2014-06-01",
+        "first": "Gao C",
+        "last": "Xi G",
+        "name": "Journal of cerebral blood flow and metabolism : official journal of the International Society of Cerebral Blood Flow and Metabolism",
+        "pages": "1070-5",
+        "reference": "24667910",
+        "title": "Role of red blood cell lysis and iron in hydrocephalus after intraventricular hemorrhage.",
+        "type": "PubMed",
+        "volume": "34"
+      },
+      "evidence": "Our most recent study has shown that thrombin and thrombin receptor are involved in IVH-induced hydrocephalus.",
+      "key": "4a82d039d36f55d8184265fa7e2eb492eb4347d15b21da2ebb2a47b1871f6b4f1a331450130b02a205b3c3a358444c1bca37223de98a36b5d9e49edabef0bbf0",
+      "line": 180,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 10
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"desferrioxamine B\")",
+      "function": "Abundance",
+      "id": "a49da19b69084c675adbb4db4b674aeafc2a35181871492ccfa7c50ce64a6c4abfc8c89f61961fa7652afabff064cadb1f06bd26635ec5728404604b321f72b9",
+      "name": "desferrioxamine B",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "function": "Abundance",
+      "id": "e426e7ad4ee4d8eb3c018acb75625d794a96811eb659d39bd8f25c4b30632fc8a938eca8397887738ecc384ec5df867e2026de113f002e5cc4490177de0905cd",
+      "name": "iron(2+)",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:\"Erythrocytes, lysed\")",
+      "function": "Abundance",
+      "id": "fe735c846dc4403ede1d163b79403c0a0e1959f278d26beab76325dc998870ac60beae3656ee3bd98af5e6723c6712138ab48b80ca83c8cb9faf51e0fba311b7",
+      "name": "Erythrocytes, lysed",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(MESH:Thrombin)",
+      "function": "Abundance",
+      "id": "a6c9ba3ed3f1f64b2270eabda5a6eb7c53fc8ac16e4028386f1501e2b1d2fb6ad275e81f90f9614b4130ebc288c67a6e2b4270310d45ef45a2c09f9383bc5e7a",
+      "name": "Thrombin",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "p(PFAM:Ferritin)",
+      "function": "Protein",
+      "id": "a999c4fca0b3f43ad21391d7b39d71e234d268c53779815a4f19acf7c732044cf82cce24c68b1b0225ddde66b01f22c84a183affe995040e1ce4961ab5962019",
+      "name": "Ferritin",
+      "namespace": "PFAM"
+    },
+    {
+      "bel": "p(RGD:Fth1)",
+      "function": "Protein",
+      "id": "7d12ab933c733aae2696034ffbeeee7b90dcfe91fa6ad414723d47c1d916f9b4eea3240c0c33d6fe8befaff97d021d3b24da483fe27d08e94eb0c722a532a967",
+      "name": "Fth1",
+      "namespace": "RGD"
+    },
+    {
+      "bel": "p(RGD:Ftl1)",
+      "function": "Protein",
+      "id": "6d17b5d80a644e4d9eb7b3934f81ea7d009df484f19f9de3fe321be8cae16571025af6d40f432cd474ec5899c3684ecbe98bf4363a1990ff55a9db6d649623a9",
+      "name": "Ftl1",
+      "namespace": "RGD"
+    },
+    {
+      "bel": "p(RGD:Hmox1)",
+      "function": "Protein",
+      "id": "69ccbc77b33544ccfa0d88d8f53b4623887ef3d5dd940a974c9226dc1e0e6a7d96af8798e3f013b8f057bc3d37ad30c111ed23a22fee1ea635e7a92cc570872b",
+      "name": "Hmox1",
+      "namespace": "RGD"
+    },
+    {
+      "bel": "path(HP:\"Intraventricular hemorrhage\")",
+      "function": "Pathology",
+      "id": "b0ef851dd5eecdb4e707eb63f994b5827aa8fb5e0d43f8df9c5fcb82d6172ccc4295261261f6e32438ca88f158cc0aa0eac46d0774f8bed3a4bd7a354eb098ca",
+      "name": "Intraventricular hemorrhage",
+      "namespace": "HP"
+    },
+    {
+      "bel": "path(MESH:\"Brain Edema\")",
+      "function": "Pathology",
+      "id": "c3bdad023455029800950166f687761800d1fad85ac9885402c305207a8975f5a36a02d4ca1fd66eca2dce6668b46cdc290fc18d48cd06581fea7eff3768e06c",
+      "name": "Brain Edema",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hydrocephalus)",
+      "function": "Pathology",
+      "id": "aea880bd7e611b57e3241d3a3cacf9bd6927ed92e76eea04c18fb94d1f666091146c4330e8dd35913744f94e21907d91821d7c109ad7fdfe1537b9f14949c8a5",
+      "name": "Hydrocephalus",
+      "namespace": "MESH"
+    }
+  ]
+}

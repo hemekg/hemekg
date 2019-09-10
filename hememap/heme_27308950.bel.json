@@ -1,0 +1,1704 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_27308950.bel",
+      "version": "1.0.1"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_27308950.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Free Hb and Hb present in microvesicles oxidize vascular nitric oxide (NO) much faster than RBC-encapsulated Hb to form nitrate.14,15",
+      "key": "01ba8bfd53ba7e50f55aabaefeb55d3faaae7ba6d10cfd3e9859baefbd73728ddf21939efe439c4ab4bf572864e4a3640653bb7a29b29c4901ad0ea2927ec511",
+      "line": 99,
+      "relation": "increases",
+      "source": 20,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Arteries": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Presence of any cell-free Hb limits NO diffusion from endothelium to smooth muscle cells for activation of guanylyl cyclase; as a consequence, mean arterial blood pressure increases.12,15",
+      "key": "106e6641626122621c253a8123edafb36f6d3c3e2ba384f6ca38d4bb585920d005569f5bd3964641d835e392ecdf86ea2e7e300abd01bbb3c175e7ea205b3120",
+      "line": 107,
+      "relation": "increases",
+      "source": 20,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Arteries": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Several studies in animals have supported the idea that infusion of free Hb, stored RBC supernatant (preservation solution + plasma), and Hb-containing microvesicles causes vasoconstriction, vascular dysfunction, and vascular injury.12,16–18",
+      "key": "a668158b35ef629fd1c0ed449fa7e2f08f85c61320142165244f2c8e9387ac3607ca71701c2a4305086fb395b68c40229b8c0906ec3b6d9860396d3c3197e677",
+      "line": 115,
+      "relation": "increases",
+      "source": 20,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Arteries": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Several studies in animals have supported the idea that infusion of free Hb, stored RBC supernatant (preservation solution + plasma), and Hb-containing microvesicles causes vasoconstriction, vascular dysfunction, and vascular injury.12,16–18",
+      "key": "57316efd58face226f821fe6ef9f3e44cc996f6807e4bdf6df6332ffc916e8354d289dcd325e16411cbcfc8e465df5dd99052b77a1abe27b8652be207187178d",
+      "line": 116,
+      "relation": "increases",
+      "source": 20,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Endothelium, Vascular": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "In addition to cell-free Hb, membrane structural modification, externalization of phosphatidylserine,21 decreased cell membrane deformability,22,23 and increased endothelial adherence24 could alter vascular NO homeostasis.",
+      "key": "0a625223b0d8c621ec2a9ce812c16f31a3d36b6563d2d45e0dd76b58122d608174030563ab77910cbdc91b7ca92e4e3319019c3e0a8291ffa98702640a15405d",
+      "line": 131,
+      "relation": "decreases",
+      "source": 20,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "MeSHDisease": {
+          "Hypoxia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "The cell-free Hb in stored RBCs should actually increase nitrate by oxidizing NO to nitrate.",
+      "key": "f905c50e69081d01da2352cb5fee4322891ebe7b06569c6a39bfa6663e842873a70099986d2f7ed8f3ff39ff9902093431e621eee5957a93f1ee580daea1f951",
+      "line": 256,
+      "relation": "increases",
+      "source": 20,
+      "target": 6
+    },
+    {
+      "key": "a84747765486183b652c7c71abfd5cc4fd721a49ad553345fe7a923521793931b7e1ee4282c9a62f441c6441bba8f59288dbb081c7ce030740ad53fdd7ce88b6",
+      "relation": "hasReactant",
+      "source": 25,
+      "target": 0
+    },
+    {
+      "key": "d1351ec5046293db1d9335916172bdfc5d624830cd5a2574dd8ab0d6138d751399c0fc06d81c2cf41ce0c2284d2b802ef1c09f64645f8e98032dcdcf28f8a3c6",
+      "relation": "hasProduct",
+      "source": 25,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Arteries": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "In humans, infusion of RBCs stored for longer durations has been shown to significantly reduce brachial artery flow-mediated dilation12 and acetylcholine-stimulated forearm blood flow compared with fresher blood.19,20",
+      "key": "a0fd698b0d58909239e14b5497b160a18e3bf84c2bb44f147da84d7b818254f4a6673af357f8ef368a387b5f978cde36379f488a5d33074df9b5cfb6b5cb4b7d",
+      "line": 123,
+      "relation": "decreases",
+      "source": 9,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Endothelium, Vascular": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "In the current observational study in patients undergoing multilevel spinal fusion surgery, we tested the hypothesis that moderate doses of stored RBC transfusions increase intravascular cell-free Hb and decrease NO availability in surgical patients.",
+      "key": "4ff189beb02acebb7498fffb59150db1dc263d866b5a8f947209aeb8267a3e59bf6977a911c2cbc1af0d7cea29a03ee611cf3ce54a22d75c5602b86a458aae3d",
+      "line": 141,
+      "relation": "increases",
+      "source": 9,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Endothelium, Vascular": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "In the current observational study in patients undergoing multilevel spinal fusion surgery, we tested the hypothesis that moderate doses of stored RBC transfusions increase intravascular cell-free Hb and decrease NO availability in surgical patients.",
+      "key": "e48c587295b0904169eec89c962be98ad6e9eef45da77009137751f1595cbaba3f59bd28e77afaef7a8ac616c2a23facb813a1dac3b9ccaacd3c829d892d8adc",
+      "line": 142,
+      "relation": "decreases",
+      "source": 9,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Endothelium, Vascular": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "The stored RBCs had approximately 7 times the hemolysis of fresh blood.",
+      "key": "a77cbf2cb5b8cc824a9f69570154f5075f246172bd27b9770723f13962d0dfc26593175eaf3acc0094f98b06f1f47cbf7e8d477f3426bb77d10d6b55e62188f0",
+      "line": 147,
+      "relation": "increases",
+      "source": 9,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Any increase in hemolysis after transfusion of stored RBCs can be attributed to lysis of RBCs during storage or after transfusion (Figure 1B).",
+      "key": "45ccaf8b276304dd4eb819fed36c50a0222e2f5bcf1ee96238a5f6396942f23f8d40d16853c04de8611f092602ce691d33411886129a95169a5ac10f2cd8b001",
+      "line": 198,
+      "relation": "increases",
+      "source": 9,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Endothelium, Vascular": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "In addition to cell-free Hb, membrane structural modification, externalization of phosphatidylserine,21 decreased cell membrane deformability,22,23 and increased endothelial adherence24 could alter vascular NO homeostasis.",
+      "key": "e506deaf076ead39ae563e8df8be8ca5d0d9d68633119b4ebd200e98eed6075abc1d7cb37b8310f92ded9c5396dacfb5dfca315040ba63fe26e571b443e06dad",
+      "line": 132,
+      "relation": "decreases",
+      "source": 1,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Endothelium, Vascular": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "In addition to cell-free Hb, membrane structural modification, externalization of phosphatidylserine,21 decreased cell membrane deformability,22,23 and increased endothelial adherence24 could alter vascular NO homeostasis.",
+      "key": "fd5d586a12318fd59f445771d34c0391f3e6543412ae25844482e2034d3006a3c1dcd9d7aac3d5841409b44d31d6ff44db4c20a3692d475ad491dc77c05f2084",
+      "line": 133,
+      "relation": "decreases",
+      "source": 15,
+      "target": 0
+    },
+    {
+      "key": "d41251bbbffd15a0de4d14659d4f09e6c3bcbc720d397b6701fb67837ebadeadb91c027b543a4470db8344180f0abae75447a67d6052a39f3355054af55fb79d",
+      "relation": "hasReactant",
+      "source": 26,
+      "target": 2
+    },
+    {
+      "key": "bb7ffa1ed1a44e4c1949794ee9f76af32e2849d7c436602a6e62d65923ea11662f46aa210bdb20197b32921bddf4329eaa9b7abfe96ded63ac4c5b233da69ac5",
+      "relation": "hasReactant",
+      "source": 26,
+      "target": 7
+    },
+    {
+      "key": "ae9fed0eeeb19d27a66cc27a14d860c3da950f09787a1c6b4aeb3c1a451cb31b2a555d551dcebcc5005af596dd0f7c8cf449e4621362e58d1e3fb4bea43c6d9a",
+      "relation": "hasProduct",
+      "source": 26,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Thus, we hypothesized that loss of blood during surgery and hemodilution from crystalloid administration might contribute to the observed decrease in plasma NOx levels.",
+      "key": "f03464e2089a32a9819e22c3b4069252715d87d7263627da883bbf712d63bfd7611c65d5e1197b96a66fbcefcface922dc5086d1c959dab3b2d9a3d8c3f95732",
+      "line": 167,
+      "relation": "decreases",
+      "source": 22,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Thus, it was apparent that blood loss and hemodilution from IV fluids rather than stored RBC transfusion likely played a role in the transient decrease of these NO metabolites.",
+      "key": "5a0016567c0c625ac2605e5e7c7e0c6df6de866a5593c9ddaaefee0a59d9a7b7cc8ac750c11694e226e7e2f837ef46cd4143389e6a59074ec5deaacc8d65db53",
+      "line": 189,
+      "relation": "decreases",
+      "source": 22,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Thus, we hypothesized that loss of blood during surgery and hemodilution from crystalloid administration might contribute to the observed decrease in plasma NOx levels.",
+      "key": "b88e45b8b95870cb729bffd0cf72a09cc886435b849344891767d0d4a287a22aa6344c037cb0fdb5af1dba46ab4b6e6d941be76ddeead22d4b650d686132b01f",
+      "line": 168,
+      "relation": "decreases",
+      "source": 22,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Thus, it was apparent that blood loss and hemodilution from IV fluids rather than stored RBC transfusion likely played a role in the transient decrease of these NO metabolites.",
+      "key": "fd157013d308c335f5a431a36cec7acaac8cece94e22a942cecc180f7510c742d4cc5da571131386fbd41cafb20ddb57a12a406407c3eb6debf0974357da042d",
+      "line": 190,
+      "relation": "decreases",
+      "source": 22,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "MeSHDisease": {
+          "Hypoxia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "The alternate explanation for a postoperative decrease in nitrate may be related to blood loss during and after surgery as well as hemodilution.",
+      "key": "ea8a4298c46edbab28510b7748bec8fee42e9ab35253d12b23fbb0a8f4a94e46aad2d7a9b2d278a0fe9e3721d928e4e1f90df80f39bfd109be83e7b9a9f162e8",
+      "line": 262,
+      "relation": "decreases",
+      "source": 22,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Thus, we hypothesized that loss of blood during surgery and hemodilution from crystalloid administration might contribute to the observed decrease in plasma NOx levels.",
+      "key": "dfdc172489febcfaad3e7e26d1730e11168ed86b5c9f49ef728f571ddeeead2f5223104cb8a2a2f6a32fb8b52bc19fccb1ff4e827a67bf6fc00211aa7e37f9d3",
+      "line": 169,
+      "relation": "decreases",
+      "source": 14,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Thus, it was apparent that blood loss and hemodilution from IV fluids rather than stored RBC transfusion likely played a role in the transient decrease of these NO metabolites.",
+      "key": "63bf47bd4d1feb4b4be051c2bb1bf21ff6d33b794110bc565876d715b914fd7c18cecf8f47b1ddfba20edea81ef97750eef32a8060c173f2dc3fd8dd47fd29c8",
+      "line": 191,
+      "relation": "decreases",
+      "source": 14,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Thus, we hypothesized that loss of blood during surgery and hemodilution from crystalloid administration might contribute to the observed decrease in plasma NOx levels.",
+      "key": "2f894cfc0c173bf31939347ea2ea1f1a42da52190288c6f9ecf3687a7568928e2fdb6fc3c7bc738d0d8b1a8b7289a74f7ca782920f97a08814ae97101366fd12",
+      "line": 170,
+      "relation": "decreases",
+      "source": 14,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Thus, it was apparent that blood loss and hemodilution from IV fluids rather than stored RBC transfusion likely played a role in the transient decrease of these NO metabolites.",
+      "key": "f27993c275633ef0682017a13a1c2afbd4b2f41b9f8a2b0e7c949db1c1dac445f91bfce92a8da26562e6d4bb172e5c1f5fdc2e68764cdfdfce6f65e212b02c31",
+      "line": 192,
+      "relation": "decreases",
+      "source": 14,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "MeSHDisease": {
+          "Hypoxia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "The alternate explanation for a postoperative decrease in nitrate may be related to blood loss during and after surgery as well as hemodilution.",
+      "key": "1fb7019bd0c714ff30862429a834ed94a127bf99524b28c51a6c43614418862a58e57c047921b9442ab4682c54f2255458cee146a2a9be3bfc774ed8ac5ae28a",
+      "line": 263,
+      "relation": "decreases",
+      "source": 14,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "We calculated the loss of blood and extent of hemodilution during and after surgery based on the Hct levels for nontransfused patients (Table 1). Hct was significantly decreased (by approximately 20%, P = 0.0087) and hemodilution was significantly increased (P = 0.007) in these patients.",
+      "key": "ea827919b696c18eee2cff40af281b045acae6d175d9f82fd8d873a13aa5b06605a30ebff45d37f564bf5f3eaa62022c434c6ff4508bc3a8e504c6e99b444d4d",
+      "line": 178,
+      "relation": "increases",
+      "source": 18,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "We calculated the loss of blood and extent of hemodilution during and after surgery based on the Hct levels for nontransfused patients (Table 1). Hct was significantly decreased (by approximately 20%, P = 0.0087) and hemodilution was significantly increased (P = 0.007) in these patients.",
+      "key": "7fb8a2ba3cd8c45bec57a8e5d5fee58f41128a9c731bbc1b4f6082f736af0d8f50f3cfd26db45d36cca30ec4bd8b00bbf7ab641c14eb1b80c5af4382e1008267",
+      "line": 179,
+      "relation": "decreases",
+      "source": 18,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Any increase in hemolysis after transfusion of stored RBCs can be attributed to lysis of RBCs during storage or after transfusion (Figure 1B).",
+      "key": "3e72e24472aefc6098b7ca261da572255043b715b8a8c41e78f57c1d5e7fbb57eeabe4a143ec6cfc9dbdd70d430b5ce6654793de014bf4025273e4c5f5900d88",
+      "line": 199,
+      "relation": "increases",
+      "source": 18,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "An increase in plasma cell-free Hb and vascular dysfunction also has been shown after transfusion of autologous RBCs with long storage duration to healthy human subjects.19,20,37",
+      "key": "489f118928809e88292c13f0bb11c78953becb8e658583e93d51d81bd859420fd3c32c86b4d484b1d86dec159bbadbb4ef728d9e14182a19741f10342c5eecce",
+      "line": 206,
+      "relation": "increases",
+      "source": 18,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "An increase in plasma cell-free Hb and vascular dysfunction also has been shown after transfusion of autologous RBCs with long storage duration to healthy human subjects.19,20,37",
+      "key": "9a4bc9382678c62085d57cf7d08642dda6d5c0337687c12acf6755c0520f3a9ad72d3c1907dcb0d430fedd64926f82d08d0062f4489a940decbe333c22e06299",
+      "line": 207,
+      "relation": "increases",
+      "source": 18,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "It is unlikely that loss of nitrite through surgically shed blood and hemodilution would produce a decrease of 50% from baseline because continuous synthesis of NO by eNOS should replenish the loss of nitrite.",
+      "key": "c7f39755261cd8f3ca0afbe97bb33f27b417bd6151a7865811a05b39af09685ece7aa102a4c936d8e40152dbfb51f4629ea197e742593abfeece9487937bb3d1",
+      "line": 216,
+      "relation": "increases",
+      "source": 21,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "In vitro, direct exposure of vascular strips,38,39 brain tissue,40 polymorphoneutrophils, 41 and thoracic aorta42 to volatile anesthetic agents such as enflurane, isoflurane, and halothane has been shown to reversibly inhibit NOS activity.",
+      "key": "a10bc2a78c31afd2980be5526d160df8b3a5098ccc95978819ebfe931024a7e40fa2967930b8fe8f65a525d562e997297ed4be8d4c690f3307604062ab864da7",
+      "line": 224,
+      "relation": "decreases",
+      "source": 3,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "In vitro, direct exposure of vascular strips,38,39 brain tissue,40 polymorphoneutrophils, 41 and thoracic aorta42 to volatile anesthetic agents such as enflurane, isoflurane, and halothane has been shown to reversibly inhibit NOS activity.",
+      "key": "491abf367417a2b335ba2dfc6f7397e2c01c4a29557204fb08d8710b69ba8233214c9ccadb1f0d9e65935f9cde5b043df54cb42e0b63511f1658cdd078125257",
+      "line": 225,
+      "relation": "decreases",
+      "source": 5,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "In vitro, direct exposure of vascular strips,38,39 brain tissue,40 polymorphoneutrophils, 41 and thoracic aorta42 to volatile anesthetic agents such as enflurane, isoflurane, and halothane has been shown to reversibly inhibit NOS activity.",
+      "key": "32ba0b0663960732e22c91ff4c163526539a19784f76477215fd4fd209c26dec227c0082a67d19981d80fbcd25e7f09e5b92c0b5cc0d078ae40395e47d3e72ab",
+      "line": 226,
+      "relation": "decreases",
+      "source": 4,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Third, during surgery, patients were intratracheally intubated, which prevented swallowing of saliva, which may have interrupted the nitrate-tonitrite pathway, thus contributing to the observed decrease in nitrite.",
+      "key": "0283f5c68569d16758fb8c7b2b774ee5f9edeed8ba65615fb5e2dbb9d63163e06627ece344ae5814b03988155379314b572dc4d3b56cdd7a246c9cbaac5a3d97",
+      "line": 234,
+      "relation": "increases",
+      "source": 11,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Saliva": true
+        },
+        "MeSHDisease": {
+          "Hypoxia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Studies have shown that nitrate concentrates in saliva and is reduced to nitrite by mouth commensal bacterial nitrate reductase and then nitrite is reduced to NO under acidic conditions of the stomach. 28,51,52",
+      "key": "c2118448eb8a4da76c8d2213f7e1c60a65701b71e0ab721b83bf09b6df07de28bcb2c418c096e9c531ecd5b985e8b46e6b92dfc6c051d7a3cd74779cf1d089ab",
+      "line": 272,
+      "relation": "increases",
+      "source": 11,
+      "target": 27
+    },
+    {
+      "key": "7cc55d20d864aefa65900bd6263b6825945ff58c8d5c0ef5d36cdc48e9abe3e51ae6c6414f29254e0e624ada8544ff026317e8f7050b0f572a04940d4ee2d99d",
+      "relation": "hasReactant",
+      "source": 27,
+      "target": 6
+    },
+    {
+      "key": "5674dd35197e22f9696a1e0650d8bc4718b38524bbe1cb7d562adaa7250f0340988569fb8399b284c5f60717b9d0136f552771b70f270e3111f95110a0edcdd9",
+      "relation": "hasProduct",
+      "source": 27,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": {
+          "Plasma": true
+        },
+        "MeSHDisease": {
+          "Hypoxia": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Barodka VM",
+          "Berkowitz DE",
+          "Frank SM",
+          "Goyal A",
+          "Johnson DJ",
+          "Lipsitz JA",
+          "Nagababu E",
+          "Scott AV"
+        ],
+        "date": "2016-08-01",
+        "first": "Nagababu E",
+        "last": "Frank SM",
+        "name": "Anesthesia and analgesia",
+        "pages": "274-82",
+        "reference": "27308950",
+        "title": "The Impact of Surgery and Stored Red Blood Cell Transfusions on Nitric Oxide Homeostasis.",
+        "type": "PubMed",
+        "volume": "123"
+      },
+      "evidence": "Several studies have shown that nitrite is reduced to NO by several heme proteins under hypoxic conditions, providing an eNOS-independent source of NO in the vasculature.28,47,48.",
+      "key": "adf6af1093ac6516d37c2532a70e8cb11fabf99c0c44fc5cfd003a72fddeaa50e17d454a73c79b01c4c103fedd4778552c03a95c7078ead999fa12e8358a37c2",
+      "line": 242,
+      "relation": "increases",
+      "source": 13,
+      "target": 28
+    },
+    {
+      "key": "583a3f1d5de0981cd1a7dd3bf6c918108ac86eddcae6c0e06f78667b3ae33f3106b37a270356330d769465d7c9da5be1844087241aaf65df9681dddf21f1ee26",
+      "relation": "hasReactant",
+      "source": 28,
+      "target": 7
+    },
+    {
+      "key": "48fcf4f6682372182d35b5a1d66821406eff98c2f782c927921aa1327368774cbd4a17b299b2173678d3abac37b1190dec31d764079373139a883bc7dc10b4ae",
+      "relation": "hasProduct",
+      "source": 28,
+      "target": 0
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"nitric oxide\")",
+      "function": "Abundance",
+      "id": "fd0dcffbd4e00c161d74c931890123439e35f86a92cbcf20c1efaed0bb8b8469434bbafd8364de8822b9af6368de418ed1728b1534bb8eeb47320d5a9c895548",
+      "name": "nitric oxide",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:\"phosphatidyl-L-serine\")",
+      "function": "Abundance",
+      "id": "0e0dfe47aa48b6ed4dd6495792927789ad27b91117203b58482a6b0668bf4576c567a6c2c41f452169ea3294f583f76a38c77d3c1840aebc8746b17f45767f5b",
+      "name": "phosphatidyl-L-serine",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:deoxyhemoglobin)",
+      "function": "Abundance",
+      "id": "89ed66f54dafca0bee2f310948f4ccadd1ec1dee85ded97ad1a2e850d33d3e14aaa4f050ae8bbe9e90b9b145d12f1a859800614459648fcfb10a050d99a6f084",
+      "name": "deoxyhemoglobin",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:enflurane)",
+      "function": "Abundance",
+      "id": "6cf1a545af588b86351c0f36219056fe11be29e3a6f416164bcdb292e9dc1a1b57eaeaec0a3236e4afe7a6a6bc232010a17c19a03a66a514b34606f97cc9b6a6",
+      "name": "enflurane",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:halothane)",
+      "function": "Abundance",
+      "id": "521d6ed98bcb459314c4fb5f0ae7bb933654317ad086862a430ff4ebb3f7553edb2dea90ba0a6f1f9d56f9aecf19e976edb80cb0fa0f7646d41516955d8306a3",
+      "name": "halothane",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:isoflurane)",
+      "function": "Abundance",
+      "id": "8f483b2b3224bd79df6643b67b784c20229953564bbc3cc750e888f1caccb2e488c4127a76606040bf1bfeed70a784aa2d950ab7c942a62a0d45a1e755351300",
+      "name": "isoflurane",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:nitrate)",
+      "function": "Abundance",
+      "id": "170cd192d0720c603c4deb0840ff56840e94603eed24f8678372bf2c3af3c25c96e67b8e1c4e27c8d54606c9a465586d1bcbce79f6c5b3c014a6c4b08d63a62c",
+      "name": "nitrate",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:nitrite)",
+      "function": "Abundance",
+      "id": "37ca0fec42d62d553e650f035def665a1a03fccb0493c69e30533b62f3ebdd47d84da6f214fbef5b2ddd172dafe8b8a1fb46672804acf8afa3381b9b93c78e4c",
+      "name": "nitrite",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(HM:\"heme-NO species\")",
+      "function": "Abundance",
+      "id": "25540d08cca620dd9f97f1e82bfd50195e14a329b78ac57d17fd1f5ffda46ea4fe95fbfce2ca4ad88cd4726d60e7768769bae85e8629652418db5830eeec7d0a",
+      "name": "heme-NO species",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(HM:\"stored erythrocytes\")",
+      "function": "Abundance",
+      "id": "c5f07faa52d39663c7bfb6346590680850cdc80f5daec0a27d13d0b987d98745781c6e81ce6edb50f375981a5345c5027325348c3907f71521d30ab0b54f60c4",
+      "name": "stored erythrocytes",
+      "namespace": "HM"
+    },
+    {
+      "bel": "a(MESH:\"Nitric Oxide Synthase\")",
+      "function": "Abundance",
+      "id": "690a2d114c645883aad7f4ff46617578a6584e448cabf69999fd8601e760b94b66dbca38d9b019e877c3a7726168cbbb4ed7e2838a006aeae2f88f0b6481288d",
+      "name": "Nitric Oxide Synthase",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:\"Salivary Glands\")",
+      "function": "Abundance",
+      "id": "4e42ba71074cce7759cab98428b360b92ae6028fc42e4692d0b98ea20c96cbac9d14042bdd1f639ee454288611eb1c8bd7f2668029ad6a02602a6ee9801ba8c2",
+      "name": "Salivary Glands",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Dilatation)",
+      "function": "Abundance",
+      "id": "c9efb4e8fb9b003eb1f1b4eac675aa18f214fcab5682b01fb4aca762e94ec11d849b674485e0661089fde1a9737656842fdeb74ae8032228b47d4b671549bf1f",
+      "name": "Dilatation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Hemeproteins)",
+      "function": "Abundance",
+      "id": "f573c3b35192933d3f0855794a43cfa5bce9a49d7767d9cd25febe42ae03a6b1c10e24437402b758ccaf0005f1bd6143344bc8b53b07d20a5f78d65f5c42aa98",
+      "name": "Hemeproteins",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "a(MESH:Hemodilution)",
+      "function": "Abundance",
+      "id": "845f3883ac464c7db402cfae3480e038ae117608ba045fdfe857799549bf1b3969043182b79ab1321da0595db0e6a311a7ec9275191d0c2ffd0162ffcb1b2aef",
+      "name": "Hemodilution",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(GO:\"endothelial cell activation\")",
+      "function": "BiologicalProcess",
+      "id": "c894e9d33edfed940a51b6b3c296739792fd65fa6d722a79d7adc2bb71d574d2b29d8567e118c9c88d2447f6fd8b362ac1ae9361950533cd5069ee34104f7689",
+      "name": "endothelial cell activation",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(GO:vasoconstriction)",
+      "function": "BiologicalProcess",
+      "id": "524930170ed4a456528dfd5c981805252dbdca3f421758e03206a3490c43def5280ccf8e278dd56ae7d789ec63aaedc3d7d4a1245cfdb69835285d967cfa7bf5",
+      "name": "vasoconstriction",
+      "namespace": "GO"
+    },
+    {
+      "bel": "bp(MESH:\"Blood Pressure\")",
+      "function": "BiologicalProcess",
+      "id": "23b5ecdb66cb0efda0b71b91cb908401ee80b6fe49d5bdbf65fdbb17a54997d02e597573b451a8f483554e3edea3e20e3872e042a8e7c9de1bcf12724b3af4c2",
+      "name": "Blood Pressure",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:\"Blood Transfusion\")",
+      "function": "BiologicalProcess",
+      "id": "48ad02cced3faecee586ab9fe1d00a5757b8db085c5ca9cf274924aa3a735f9c2e52db6fdf985501df9f2b05a9d8571bd590384c177e7453cde99d3d83c3c345",
+      "name": "Blood Transfusion",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "bp(MESH:Hematocrit)",
+      "function": "BiologicalProcess",
+      "id": "e544750f0e182cb2a78fe8109524cf89f67917b43a0d2a0998b0e90cc067715bc1e04437394e804a9ab49017e2f6dd0bce9e53363cacea6fdf8326729c1c7e33",
+      "name": "Hematocrit",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:NOS3)",
+      "function": "Protein",
+      "id": "2159af27c1d21c15c5ec937d85fa0152277cfdec68a47f8de90053e0c070507225eb69da0edfff2dccdfeef3fbfd04e6e8c2b5f412867a21608eb60285cae910",
+      "name": "NOS3",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "path(MESH:\"Blood Loss, Surgical\")",
+      "function": "Pathology",
+      "id": "f6891d327d535fef915c0cf34c6e793e6d3ddfd2f406572a07df4a243c18ba59539843be767910fec7b09f207445650711302b79b128281c3c23a299d5b16786",
+      "name": "Blood Loss, Surgical",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Vascular System Injuries\")",
+      "function": "Pathology",
+      "id": "2c1dc10562090ab803cf25bbb0eaa83a64b75c8750bd549df2e66f6f3545a54bd009fd5c1a689c5489abb49876de701c8542c0c371e00e4420f455faa8fff57a",
+      "name": "Vascular System Injuries",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "rxn(reactants(a(CHEBI:\"nitric oxide\")), products(a(CHEBI:nitrate)))",
+      "function": "Reaction",
+      "id": "49187fe3038889ec384ee2c0e05e173bf2a90e339c9df140f4eba0e76a500af2d4597534bb078f5d87d414f3eda3eb7c15a1f9c3df60d34a71e84ead54971ddd",
+      "products": [
+        {
+          "bel": "a(CHEBI:nitrate)",
+          "function": "Abundance",
+          "id": "170cd192d0720c603c4deb0840ff56840e94603eed24f8678372bf2c3af3c25c96e67b8e1c4e27c8d54606c9a465586d1bcbce79f6c5b3c014a6c4b08d63a62c",
+          "name": "nitrate",
+          "namespace": "CHEBI"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(CHEBI:\"nitric oxide\")",
+          "function": "Abundance",
+          "id": "fd0dcffbd4e00c161d74c931890123439e35f86a92cbcf20c1efaed0bb8b8469434bbafd8364de8822b9af6368de418ed1728b1534bb8eeb47320d5a9c895548",
+          "name": "nitric oxide",
+          "namespace": "CHEBI"
+        }
+      ]
+    },
+    {
+      "bel": "rxn(reactants(a(CHEBI:deoxyhemoglobin), a(CHEBI:nitrite)), products(a(HM:\"heme-NO species\")))",
+      "function": "Reaction",
+      "id": "f8c44a803d9652bf5a675553363746d72267274df43edecc3a9ac0009dc518489f5831785be56f3c0852a97d26931676b19f16c00befbe683e9eac51b345ece6",
+      "products": [
+        {
+          "bel": "a(HM:\"heme-NO species\")",
+          "function": "Abundance",
+          "id": "25540d08cca620dd9f97f1e82bfd50195e14a329b78ac57d17fd1f5ffda46ea4fe95fbfce2ca4ad88cd4726d60e7768769bae85e8629652418db5830eeec7d0a",
+          "name": "heme-NO species",
+          "namespace": "HM"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(CHEBI:deoxyhemoglobin)",
+          "function": "Abundance",
+          "id": "89ed66f54dafca0bee2f310948f4ccadd1ec1dee85ded97ad1a2e850d33d3e14aaa4f050ae8bbe9e90b9b145d12f1a859800614459648fcfb10a050d99a6f084",
+          "name": "deoxyhemoglobin",
+          "namespace": "CHEBI"
+        },
+        {
+          "bel": "a(CHEBI:nitrite)",
+          "function": "Abundance",
+          "id": "37ca0fec42d62d553e650f035def665a1a03fccb0493c69e30533b62f3ebdd47d84da6f214fbef5b2ddd172dafe8b8a1fb46672804acf8afa3381b9b93c78e4c",
+          "name": "nitrite",
+          "namespace": "CHEBI"
+        }
+      ]
+    },
+    {
+      "bel": "rxn(reactants(a(CHEBI:nitrate)), products(a(CHEBI:nitrite)))",
+      "function": "Reaction",
+      "id": "c7aee8a79b3e856bfce2e01edf98d360da7c7019981006d9c8fe2b53cf5ff31da2cb50ebe04111702abd72db9948e1c105117cc74feda94ac05258838cb08573",
+      "products": [
+        {
+          "bel": "a(CHEBI:nitrite)",
+          "function": "Abundance",
+          "id": "37ca0fec42d62d553e650f035def665a1a03fccb0493c69e30533b62f3ebdd47d84da6f214fbef5b2ddd172dafe8b8a1fb46672804acf8afa3381b9b93c78e4c",
+          "name": "nitrite",
+          "namespace": "CHEBI"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(CHEBI:nitrate)",
+          "function": "Abundance",
+          "id": "170cd192d0720c603c4deb0840ff56840e94603eed24f8678372bf2c3af3c25c96e67b8e1c4e27c8d54606c9a465586d1bcbce79f6c5b3c014a6c4b08d63a62c",
+          "name": "nitrate",
+          "namespace": "CHEBI"
+        }
+      ]
+    },
+    {
+      "bel": "rxn(reactants(a(CHEBI:nitrite)), products(a(CHEBI:\"nitric oxide\")))",
+      "function": "Reaction",
+      "id": "c7f4a7a9f80efdc4e1e2eb2e6ff457253e7c37fe39d303b76fdba1ad3d445bba23f05079bb90b4f2192d0c4684aa490685609d5ee30fc5066e43f1e49c2b4ec8",
+      "products": [
+        {
+          "bel": "a(CHEBI:\"nitric oxide\")",
+          "function": "Abundance",
+          "id": "fd0dcffbd4e00c161d74c931890123439e35f86a92cbcf20c1efaed0bb8b8469434bbafd8364de8822b9af6368de418ed1728b1534bb8eeb47320d5a9c895548",
+          "name": "nitric oxide",
+          "namespace": "CHEBI"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(CHEBI:nitrite)",
+          "function": "Abundance",
+          "id": "37ca0fec42d62d553e650f035def665a1a03fccb0493c69e30533b62f3ebdd47d84da6f214fbef5b2ddd172dafe8b8a1fb46672804acf8afa3381b9b93c78e4c",
+          "name": "nitrite",
+          "namespace": "CHEBI"
+        }
+      ]
+    }
+  ]
+}

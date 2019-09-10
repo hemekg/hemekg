@@ -1,0 +1,608 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_list": {},
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_26475040.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespaces_uncached": [],
+    "path": "heme_26475040.bel",
+    "pybel_version": "0.13.2"
+  },
+  "links": [
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "Free hemoglobin (Hb) triggered vascular damage occurs in many hemolytic diseases, such as sickle cell disease, with an unmet need for specific therapeutic interventions.",
+      "key": "76f1b1741e6eccefefb0ed38dbd6f26b62442296c39f0e70a4eb273f6a61d4a707bcd581a72f1baeeda5f5560f8419bca2060807dc45160b0a9c92ae0f0d231f",
+      "line": 94,
+      "relation": "increases",
+      "source": 3,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "Depending on the scale, rate, and site of hemolysis, the primary adverse effects triggered by free Hb are vascular dysfunction, oxidative tissue damage, and altered inflammatory response [1], ",
+      "key": "b491de88e53163ba6ebd82a6103e7ca82e800fa442d1c6cf10fbafd954ebdf50f727ec5e3d01da0f0ef6c9678d9f1a48896dc8c7691a16dcc68139e2fae66b07",
+      "line": 118,
+      "relation": "increases",
+      "source": 3,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "Depending on the scale, rate, and site of hemolysis, the primary adverse effects triggered by free Hb are vascular dysfunction, oxidative tissue damage, and altered inflammatory response [1], ",
+      "key": "d6b69129b1576642b012efab4623cd5050845bad2c8df2cfdfe1de19fa9aed3c2cb8c67faaea65b0b1622057eedc54b67e6931a1fa0ff68625c07c509ee09428",
+      "line": 119,
+      "relation": "increases",
+      "source": 3,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "Depending on the scale, rate, and site of hemolysis, the primary adverse effects triggered by free Hb are vascular dysfunction, oxidative tissue damage, and altered inflammatory response [1], ",
+      "key": "43c96921a56255494a281e7af6fb1a061a1562a1a1a3a9a12d1baa9b5388fa954fd01bc2abce654e8151ec4bfd544cd89dd7906c5e8588c1e817ec0c8dee6569",
+      "line": 120,
+      "relation": "increases",
+      "source": 3,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "Many studies have explored basic mechanisms of Hb or heme triggered endothelial damage and have suggested that oxidative reactions of Hb generate multiple toxic species such as free heme that is released from ferric Hb, iron, free radicals, and globin aggregation products [15],[16],[17],[18],[19],[20],[21],[22],[23],[24],[25].",
+      "key": "b56af214405f54ed66e2ad7294793fbf17f1b45196cb91b04f223502c6b6e94edd176f4f41999ec68023fd59d2e0e0ca7b42666744a4a28b2e43f0533e2c2a24",
+      "line": 137,
+      "relation": "increases",
+      "source": 3,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "Based on clinical observations the Hb and heme scavenger proteins haptoglobin (Hp) and hemopexin (Hx) have been characterized as a sequential defense system with Hp as the primary protector and Hx as a backup when all Hp is depleted during more severe intravascular hemolysis.",
+      "key": "d883383b18307ee41ffc771b657baecec0f9f61b1e781d0051ae926d5865b3cdcbfee923f11c354369fc15accb4a3c068deaa9cd8e338036aa1ffad92020dd02",
+      "line": 103,
+      "relation": "decreases",
+      "source": 5,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "Many studies have explored basic mechanisms of Hb or heme triggered endothelial damage and have suggested that oxidative reactions of Hb generate multiple toxic species such as free heme that is released from ferric Hb, iron, free radicals, and globin aggregation products [15],[16],[17],[18],[19],[20],[21],[22],[23],[24],[25].",
+      "key": "ef65dff8c1b192f10ffef29ed46bc304ac9d8273c2c03cf509db948520741b26763cf9e388a1f9bd2fd10213125c391d9ce732319e621f9eb4422390532214bc",
+      "line": 138,
+      "relation": "increases",
+      "source": 1,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "Based on clinical observations the Hb and heme scavenger proteins haptoglobin (Hp) and hemopexin (Hx) have been characterized as a sequential defense system with Hp as the primary protector and Hx as a backup when all Hp is depleted during more severe intravascular hemolysis.",
+      "key": "7f3ab43e58cf48c390b77a0b30c71fb37df7a4b91a2a34d483df961fee5f8ebd55639c7f4dfca7dab17e252f2eaeff318c3849596221b51e681792db049855ae",
+      "line": 104,
+      "relation": "decreases",
+      "source": 4,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "However, in patients with hemolysis Hp depletes early in the course of the disease while levels of Hx remain within the physiologic range for prolonged periods of sustained hemolytic disease [12].",
+      "key": "73b9cb9aa57f6c70018d4325e2920c7752112328bfdf5c54b96597c4733b7123b8ba67d2bf4071b68e808d4a48b857d0ab803c93c230691b9384eb5b21f65395",
+      "line": 127,
+      "relation": "negativeCorrelation",
+      "source": 4,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "Systemic hemolysis occurs during certain genetic and acquired anemia, such as in sickle cell disease and malaria. ",
+      "key": "c0c3a218caa9db6f46ee7907877f8979e0e1a8dba1008ed65680d8fe4090807fdd62f5b1c62d1f6afc56ab8e13230af797fde2d8d018bcebc3376bdba8dad583",
+      "line": 109,
+      "relation": "increases",
+      "source": 7,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "However, in patients with hemolysis Hp depletes early in the course of the disease while levels of Hx remain within the physiologic range for prolonged periods of sustained hemolytic disease [12].",
+      "key": "04d2419765c7f72499c22c0a483db6fdd6b355d4fed2b8a727d8923b73120bf5dd5681e218450ad4d3eb381297d623c33e1922ce1a44502e60fca979d05d7ac5",
+      "line": 127,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "Systemic hemolysis occurs during certain genetic and acquired anemia, such as in sickle cell disease and malaria. ",
+      "key": "235b63543dad47a67a590441397e37c5d75ebf557d48835b57c141796c7a9610ff9bcbf35be8497ba14f87331863f1efb93f45d9214acca20952dcccf58d04cd",
+      "line": 110,
+      "relation": "increases",
+      "source": 11,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": {
+          "Anemia, Sickle Cell": true
+        },
+        "TextLocation": {
+          "Abstract": true
+        }
+      },
+      "citation": {
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Puglia M",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2015-12-01",
+        "first": "Deuel JW",
+        "last": "Schaer DJ",
+        "name": "Free radical biology &amp; medicine",
+        "pages": "931-43",
+        "reference": "26475040",
+        "title": "Different target specificities of haptoglobin and hemopexin define a sequential protection system against vascular hemoglobin toxicity.",
+        "type": "PubMed",
+        "volume": "89"
+      },
+      "evidence": "Oxidized LP(ox- LP) then induces toxic effects in endothelial cells [6].",
+      "key": "324fc8662615dd3a3a12507c0903215832601bc041c9a542f989418009ee42438dc0cbe598a4c30a3edf07b12b5b7d25ff381cf657cc6ae39b5335fbde7d6052",
+      "line": 143,
+      "relation": "increases",
+      "source": 0,
+      "target": 6
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"oxidised LDL\")",
+      "function": "Abundance",
+      "id": "81088973cd145ab2d16e8ed913d4677da5f359fcd1b811bb137ae1ded2126921e5e6211a8596647e4737ad3ce6632578c6da5ad0a78bc12e04bea57e69c15d10",
+      "name": "oxidised LDL",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "function": "Abundance",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "name": "heme",
+      "namespace": "CHEBI"
+    },
+    {
+      "bel": "bp(MESH:\"Oxidative Stress\")",
+      "function": "BiologicalProcess",
+      "id": "32bd3ab5e8a3a26be3209856c88741f0f0e2dff98d2587599a6a21b0f4793c5d8feb1194ea2166cf3cece076e7095530b116270e6655bc8feb35a437fda42cf6",
+      "name": "Oxidative Stress",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "function": "Protein",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "name": "HBB",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HP)",
+      "function": "Protein",
+      "id": "0052c8eac45d6228dca9f6db302e8c98c9d2292c20e1bf791ca8fd0749fa28c163d424e0faa9a8dfa46a882f85d0967fc41819b18763a7abd987d07b8cbec1c3",
+      "name": "HP",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "p(HGNC:HPX)",
+      "function": "Protein",
+      "id": "903fb55a7cb538b12d22305b73d01f90a340e7fd5622711c4b41d1538af80cbb1ed5bc2f065f360c8bdc8d377993c9b55bd06633323591ed22f54741612c3775",
+      "name": "HPX",
+      "namespace": "HGNC"
+    },
+    {
+      "bel": "path(HM:\"Endothelial dysfunction\")",
+      "function": "Pathology",
+      "id": "ba355c40850732135df8a8e2fceef540c13552d0ffab3462ba9be91fa66aabfb3940a0b3c185ce8847f989680db80258c3443327d36fd591a32da92a8abcc8c7",
+      "name": "Endothelial dysfunction",
+      "namespace": "HM"
+    },
+    {
+      "bel": "path(MESH:\"Anemia, Sickle Cell\")",
+      "function": "Pathology",
+      "id": "edec8b7dad84d51e332f9eadc2a53b392a4a9b5a362b9cbe0276afc5a2618ad33d944f511fe99ba7d9be1b08a451229d57e7aa4606f64d46c1900e28980d0c79",
+      "name": "Anemia, Sickle Cell",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:\"Vascular System Injuries\")",
+      "function": "Pathology",
+      "id": "2c1dc10562090ab803cf25bbb0eaa83a64b75c8750bd549df2e66f6f3545a54bd009fd5c1a689c5489abb49876de701c8542c0c371e00e4420f455faa8fff57a",
+      "name": "Vascular System Injuries",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "function": "Pathology",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "name": "Hemolysis",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "function": "Pathology",
+      "id": "3196cc4c6a20279c822cae925a9b271d0224f2c8d468e3069a3ee460662be286b61db2f144c550686a9c624e58af4ffa7570f4f2384e1cb8ee40496f8cb3fa5e",
+      "name": "Inflammation",
+      "namespace": "MESH"
+    },
+    {
+      "bel": "path(MESH:Malaria)",
+      "function": "Pathology",
+      "id": "6b20b7391c3b35f2b029a5af26e188cba4855d5b8cf0f88547f6d679928d738f03c46b5b6f289877f0f8c5fb28fd0f4c6cac5bfe3d8830375260b1eceae968c5",
+      "name": "Malaria",
+      "namespace": "MESH"
+    }
+  ]
+}
