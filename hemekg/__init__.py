@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Heme curation repository."""
+"""HemeKG."""
 
 import os
 
@@ -27,13 +27,12 @@ AUTHORS = [
 
 # All metadata is grouped here
 metadata = BELMetadata(
-    name='Heme Curation',
+    name='HemeKG',
     version=VERSION,
     authors=serialize_authors(AUTHORS),
     contact='daniel.domingo.fernandez@scai.fraunhofer.de',
-    description="Mechanistic knowledge surrounding heme",
-    license='MIT License',
-    copyright='',
+    description="Mechanistic knowledge surrounding heme and hemolytic disorders.",
+    license='CC BY 4.0',
 )
 
 repository = BELRepository(
