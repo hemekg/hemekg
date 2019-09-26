@@ -1,0 +1,36 @@
+CHEBI:heme	activityDirectlyPositivelyRegulatesActivityOf	HGNC:TLR4
+CHEBI:heme	decreasesAmountOf	HGNC:NFKBIA
+CHEBI:heme	increasesAmountOf	HGNC:TNF
+CHEBI:heme	increasesAmountOf	p(HGNC:MAPK1, pmod(Ph))
+CHEBI:heme	increasesAmountOf	p(HGNC:MAPK14, pmod(Ph))
+CHEBI:heme	increasesAmountOf	p(HGNC:MAPK3, pmod(Ph))
+CHEBI:heme	partOf	complex(a(CHEBI:heme), p(HGNC:TLR4))
+CHEBI:heme	partOf	complex(a(CHEBI:heme), p(MGI:Tlr4))
+CHEBI:heme	positiveCorrelation	MGI:Ccl2
+HGNC:CD14	positiveCorrelation	complex(a(CHEBI:heme), p(HGNC:TLR4))
+HGNC:CXCL10	positiveCorrelation	HGNC:IFNB1
+HGNC:IFNB1	positiveCorrelation	HGNC:CXCL10
+HGNC:IL12A	partOf	complex(p(HGNC:IL12A), p(HGNC:IL12B))
+HGNC:IL12B	partOf	complex(p(HGNC:IL12A), p(HGNC:IL12B))
+HGNC:IRF3	increasesAmountOf	HGNC:CXCL10
+HGNC:IRF3	increasesAmountOf	HGNC:IFNB1
+HGNC:MAPK1	hasVariant	p(HGNC:MAPK1, pmod(Ph))
+HGNC:MAPK14	hasVariant	p(HGNC:MAPK14, pmod(Ph))
+HGNC:MAPK3	hasVariant	p(HGNC:MAPK3, pmod(Ph))
+HGNC:MYD88	activityDirectlyPositivelyRegulatesActivityOf	HGNC:NFKB1
+HGNC:NFKB1	increasesAmountOf	HGNC:IL6
+HGNC:NFKB1	increasesAmountOf	HGNC:TNF
+HGNC:NFKB1	increasesAmountOf	MESH:"keratinocyte-derived chemokines"
+HGNC:NFKB1	increasesAmountOf	complex(p(HGNC:IL12A), p(HGNC:IL12B))
+HGNC:NFKBIA	activityDirectlyPositivelyRegulatesActivityOf	HGNC:NFKB1
+HGNC:TICAM1	activityDirectlyPositivelyRegulatesActivityOf	HGNC:IRF3
+HGNC:TLR4	activityDirectlyPositivelyRegulatesActivityOf	HGNC:MYD88
+HGNC:TLR4	activityDirectlyPositivelyRegulatesActivityOf	HGNC:TICAM1
+HGNC:TLR4	increasesAmountOf	HGNC:CXCL10
+HGNC:TLR4	increasesAmountOf	HGNC:CXCL8
+HGNC:TLR4	partOf	complex(a(CHEBI:heme), p(HGNC:TLR4))
+MGI:Ccl2	positiveCorrelation	CHEBI:heme
+MGI:Cd14	positiveCorrelation	complex(a(CHEBI:heme), p(MGI:Tlr4))
+MGI:Tlr4	partOf	complex(a(CHEBI:heme), p(MGI:Tlr4))
+complex(a(CHEBI:heme), p(HGNC:TLR4))	positiveCorrelation	HGNC:CD14
+complex(a(CHEBI:heme), p(MGI:Tlr4))	positiveCorrelation	MGI:Cd14
