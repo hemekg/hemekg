@@ -19,6 +19,8 @@ Commands
 --------
 To see all the commands, simply run:
 
+.. code-block:: sh
+
     $ hemekg
     
 Usage
@@ -27,10 +29,9 @@ To get the BEL graph, use the following code:
 
 .. code-block:: python
 
-    import hemekg
-    graph = hemekg.get_graph()
-    graph.summarize()
-
+    >>> import hemekg
+    >>> graph = hemekg.get_graph()
+    >>> graph.summarize()
 
 Annotations
 ~~~~~~~~~~~
