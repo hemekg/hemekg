@@ -4,8 +4,7 @@
 
 import os
 
-from bel_repository import BELMetadata, BELRepository
-from bel_repository.utils import serialize_authors
+from pybel.repository import BELMetadata, BELRepository
 
 __all__ = [
     'repository',
@@ -29,7 +28,7 @@ AUTHORS = [
 metadata = BELMetadata(
     name='HemeKG',
     version=VERSION,
-    authors=serialize_authors(AUTHORS),
+    authors=' and '.join(AUTHORS),
     contact='daniel.domingo.fernandez@scai.fraunhofer.de',
     description="Mechanistic knowledge surrounding heme and hemolytic disorders.",
     license='CC BY 4.0',
