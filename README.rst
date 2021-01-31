@@ -55,3 +55,9 @@ These include:
 1. TimePoint.
 2. Species.
 3. Concentration.
+
+More BEL Content
+----------------
+See `A Listing of Publicly Available Content in the Biological Expression Language (BEL)
+<https://cthoyt.com/2020/04/30/public-bel-content.html>`_ on Charles Tapley Hoyt's blog
+for more BEL content.
