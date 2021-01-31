@@ -1,7 +1,9 @@
 {
   "directed": true,
   "graph": {
+    "annotation_curie": [],
     "annotation_list": {},
+    "annotation_miriam": [],
     "annotation_pattern": {
       "Concentration": ".*",
       "Species": ".*",
@@ -58,19 +60,26 @@
       "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
     },
     "path": "heme_30248094.bel",
-    "pybel_version": "0.14.6"
+    "pybel_version": "0.15.0"
   },
   "links": [
     {
       "annotations": {
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -80,16 +89,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "When RBCs become senescent or the number of damaged RBCs increases in the circulation, macrophages from the reticuloendothelial system (RES, spleen and liver) contribute to RBC clearance and subsequently promote heme-iron recycling through erythrophagocytosis (EP).",
-      "key": "971b19c204ec45206e18e7aed1184b27",
+      "key": "4b5c30a2b3ac2d21479f81f1642ac846",
       "line": 95,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -97,20 +107,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Cytoplasm": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Cytoplasm",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -120,16 +143,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "HRG1 mRNA is upregulated during erythrophagocytosis (EP) in mouse bone marrow derived macrophages (BMDMs) and HRG1 protein is strongly expressed in macrophages of the reticuloendothelial system (RES) and specifically localizes to the phagolysosomal membranes [11].",
-      "key": "f7c7c7350f365762452a2fc2a0dc9fdb",
+      "key": "ad6564aff4fd67dae0af0dfc7635cd2d",
       "line": 111,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -137,20 +161,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Cytoplasm": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Cytoplasm",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -160,16 +197,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "HRG1 mRNA is upregulated during erythrophagocytosis (EP) in mouse bone marrow derived macrophages (BMDMs) and HRG1 protein is strongly expressed in macrophages of the reticuloendothelial system (RES) and specifically localizes to the phagolysosomal membranes [11].",
-      "key": "baffdd7133a77bf089050120bf2e98b2",
+      "key": "11f9e26e48a786a758d32026e92472df",
       "line": 112,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -177,14 +215,21 @@
     },
     {
       "annotations": {
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -194,16 +239,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "When RBCs become senescent or the number of damaged RBCs increases in the circulation, macrophages from the reticuloendothelial system (RES, spleen and liver) contribute to RBC clearance and subsequently promote heme-iron recycling through erythrophagocytosis (EP).",
-      "key": "116bd394a53d20c888cd80369815925b",
+      "key": "3d4b9fb38020c6b16e7f65ed667900a3",
       "line": 95,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -211,14 +257,21 @@
     },
     {
       "annotations": {
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -228,34 +281,42 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "Upon degradation of RBCs in the erythrophagosome, heme is imported into the cytoplasm for degradation by the heme-degrading enzyme heme oxygenase-1 (HMOX1) [7].",
-      "key": "57a89432dafa22156c4988481896b16b",
+      "key": "1abbade3d58c9d719a9124f7b076d497",
       "line": 101,
       "relation": "positiveCorrelation",
       "source": 1,
-      "subject": {
+      "source_modifier": {
         "modifier": "Degradation"
       },
       "target": 0
     },
     {
       "annotations": {
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -265,40 +326,54 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "Upon degradation of RBCs in the erythrophagosome, heme is imported into the cytoplasm for degradation by the heme-degrading enzyme heme oxygenase-1 (HMOX1) [7].",
-      "key": "d31fd72279e0703dc9475f893491228d",
+      "key": "7c544956a5e44b9e7e6f883535bff9b2",
       "line": 101,
-      "object": {
-        "modifier": "Degradation"
-      },
       "relation": "positiveCorrelation",
       "source": 0,
-      "target": 1
+      "target": 1,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -308,16 +383,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "It has been reported that an increase in extracellular heme activates NLRP3 expression, triggering inflammasome activation [28].",
-      "key": "e7d4b61177b721163efbecaacca8c969",
+      "key": "26d31d6011ed5a0811015e865eece39c",
       "line": 142,
       "relation": "positiveCorrelation",
       "source": 0,
@@ -325,17 +401,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Cytoplasm": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Cytoplasm",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -345,40 +431,54 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "Upon degradation of RBCs in the erythrophagosome, heme is imported into the cytoplasm for degradation by the heme-degrading enzyme heme oxygenase-1 (HMOX1) [7].",
-      "key": "ff04bb8facd8fbfd8b80fb9416c01b90",
+      "key": "e8685e9cc677409710d9834c28aed768",
       "line": 103,
-      "object": {
-        "modifier": "Degradation"
-      },
       "relation": "increases",
       "source": 7,
-      "target": 0
+      "target": 0,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Cytoplasm": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Cytoplasm",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -388,16 +488,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "HRG1 mRNA is upregulated during erythrophagocytosis (EP) in mouse bone marrow derived macrophages (BMDMs) and HRG1 protein is strongly expressed in macrophages of the reticuloendothelial system (RES) and specifically localizes to the phagolysosomal membranes [11].",
-      "key": "7b9cbf49ea1726d0b35591e39a9901bc",
+      "key": "19ac2e3dc4b0536337bae2446a52ffc8",
       "line": 111,
       "relation": "positiveCorrelation",
       "source": 12,
@@ -405,20 +506,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Cytoplasm": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Cytoplasm",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -428,16 +542,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "HRG1 mRNA is upregulated during erythrophagocytosis (EP) in mouse bone marrow derived macrophages (BMDMs) and HRG1 protein is strongly expressed in macrophages of the reticuloendothelial system (RES) and specifically localizes to the phagolysosomal membranes [11].",
-      "key": "2288c2aea4805188613dd345e00f6d33",
+      "key": "93d8190302ede1fe23154c88724723ab",
       "line": 112,
       "relation": "positiveCorrelation",
       "source": 10,
@@ -445,20 +560,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Cytoplasm": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Cytoplasm",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -468,16 +596,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "Expression of zebrafish hrg1a and hrg1b rescued growth of hem1Δ yeast at heme concentrations as low as 0.25 μM, comparable to the established heme transporters CeHRG-4 and CeHRG-1, demonstrating that Hrg1a and Hrg1b are heme transporters (Fig 1G) [10].",
-      "key": "4b52a837e114bb79e398e864d4c85f39",
+      "key": "32c1a8bfacee8a75e8d510b4246a469e",
       "line": 121,
       "relation": "positiveCorrelation",
       "source": 9,
@@ -485,20 +614,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -508,16 +650,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "We show that the zebrafish kidney is the primary organ for heme-iron recycling during EP and that zebrafish Hrg1a and Hrg1b are heme transporters that are expressed and upregulated in kidney macrophages after PHZ-induced hemolysis.",
-      "key": "8eb7d8f928cf4b20c0873709a9d191a3",
+      "key": "e806c139fabfa1595db0886a6ff69e05",
       "line": 130,
       "relation": "positiveCorrelation",
       "source": 9,
@@ -525,20 +668,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -548,16 +704,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "We show that the zebrafish kidney is the primary organ for heme-iron recycling during EP and that zebrafish Hrg1a and Hrg1b are heme transporters that are expressed and upregulated in kidney macrophages after PHZ-induced hemolysis.",
-      "key": "7f190a3ff693b4f48fb4ff64d6941f65",
+      "key": "06c31f66d75dc59e3af7aa3094fc7209",
       "line": 131,
       "relation": "positiveCorrelation",
       "source": 9,
@@ -565,20 +722,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Cytoplasm": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Cytoplasm",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -588,16 +758,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "Expression of zebrafish hrg1a and hrg1b rescued growth of hem1Δ yeast at heme concentrations as low as 0.25 μM, comparable to the established heme transporters CeHRG-4 and CeHRG-1, demonstrating that Hrg1a and Hrg1b are heme transporters (Fig 1G) [10].",
-      "key": "f06377ee9a80f5f0f0521e75b96fd868",
+      "key": "b22e7dc5831a27fb5c2a538dd448f03d",
       "line": 121,
       "relation": "positiveCorrelation",
       "source": 3,
@@ -605,20 +776,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -628,16 +812,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "We show that the zebrafish kidney is the primary organ for heme-iron recycling during EP and that zebrafish Hrg1a and Hrg1b are heme transporters that are expressed and upregulated in kidney macrophages after PHZ-induced hemolysis.",
-      "key": "e99d5b8438c65f02cee659458084f0b6",
+      "key": "8db750352bfb4c0d590509a9fabed1ac",
       "line": 130,
       "relation": "positiveCorrelation",
       "source": 3,
@@ -645,20 +830,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -668,16 +866,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "We show that the zebrafish kidney is the primary organ for heme-iron recycling during EP and that zebrafish Hrg1a and Hrg1b are heme transporters that are expressed and upregulated in kidney macrophages after PHZ-induced hemolysis.",
-      "key": "1499462eb43af1ecfcaadb80e396b328",
+      "key": "dace5827a80614e98914f70e78cf2dd8",
       "line": 131,
       "relation": "positiveCorrelation",
       "source": 11,
@@ -685,20 +884,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -708,16 +920,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "Our results show that hamp1 levels are significantly elevated in the presence of PHZ but is equivalent in both, WT and DKO fish (S6 Fig).",
-      "key": "4db284a9144a7d672b5e32b9c5326ca6",
+      "key": "76e69610d7d4d0b642e213eeac221e78",
       "line": 137,
       "relation": "positiveCorrelation",
       "source": 11,
@@ -725,20 +938,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -748,16 +974,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "Our results show that hamp1 levels are significantly elevated in the presence of PHZ but is equivalent in both, WT and DKO fish (S6 Fig).",
-      "key": "6e5148a7f055575a61daf5f1961e8682",
+      "key": "1fafb67b71e348a3615e55a6acbc3c72",
       "line": 137,
       "relation": "positiveCorrelation",
       "source": 6,
@@ -765,20 +992,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -788,16 +1028,17 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "It has been reported that an increase in extracellular heme activates NLRP3 expression, triggering inflammasome activation [28].",
-      "key": "01808abf2fd5bb66942a86066d62a545",
+      "key": "75fdf725275d4685b1a0e41afc9813a5",
       "line": 142,
       "relation": "positiveCorrelation",
       "source": 8,
@@ -805,20 +1046,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Danio rerio": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Danio rerio",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Chambers I",
           "Hamza I",
@@ -828,23 +1082,24 @@
           "Zhang J"
         ],
         "date": "2018-09-01",
-        "db": "PubMed",
-        "db_id": "30248094",
-        "db_name": "PLoS genetics",
         "first": "Zhang J",
+        "identifier": "30248094",
+        "journal": "PLoS genetics",
         "last": "Hamza I",
+        "name": "Hrg1 promotes heme-iron recycling during hemolysis in the zebrafish kidney.",
+        "namespace": "pubmed",
         "pages": "e1007665",
         "volume": "14"
       },
       "evidence": "It has been reported that an increase in extracellular heme activates NLRP3 expression, triggering inflammasome activation [28].",
-      "key": "13ab4196672ade1492a99a7b80bbf760",
+      "key": "35591b1ac92db0bca439e0b883dace3c",
       "line": 143,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "increases",
       "source": 8,
-      "target": 2
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     }
   ],
   "multigraph": true,

@@ -1,7 +1,9 @@
 {
   "directed": true,
   "graph": {
+    "annotation_curie": [],
     "annotation_list": {},
+    "annotation_miriam": [],
     "annotation_pattern": {
       "Concentration": ".*",
       "Species": ".*",
@@ -58,19 +60,26 @@
       "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
     },
     "path": "heme_29544683.bel",
-    "pybel_version": "0.14.6"
+    "pybel_version": "0.15.0"
   },
   "links": [
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -82,31 +91,39 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Eryptosis is the apoptotic-like suicidal process of erythrocytes, and is characterized by cell shrinkage and phosphatidylserine (PS) expression on the outer membrane.",
-      "key": "24033c6114585e97e47e96a6587f6d84",
+      "key": "c3e743e5c0e5eeef12d7fcae16a4f3bc",
       "line": 94,
       "relation": "positiveCorrelation",
-      "source": 1,
+      "source": 2,
       "target": 7
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -118,31 +135,39 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Eryptosis is the apoptotic-like suicidal process of erythrocytes, and is characterized by cell shrinkage and phosphatidylserine (PS) expression on the outer membrane.",
-      "key": "0e706feee4bcc997f43011bcda7c2544",
+      "key": "f9b0e4e03ee9d03f197d8ddd657767d5",
       "line": 94,
       "relation": "positiveCorrelation",
       "source": 7,
-      "target": 1
+      "target": 2
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -154,16 +179,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "In 2007, Kempe10 et al. reported that erythrocytes showed an apoptotic tendency in septic patients.",
-      "key": "30966566041a6453534e7b9f2faa9aad",
+      "key": "483002d35f094b2883b29377c01e5a34",
       "line": 100,
       "relation": "positiveCorrelation",
       "source": 7,
@@ -171,14 +197,21 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -190,16 +223,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "In 2007, Kempe10 et al. reported that erythrocytes showed an apoptotic tendency in septic patients.",
-      "key": "c3d05a487ae83aab8ba59e588da1c30e",
+      "key": "36db5f66707fce15eca9c2dfe32a85f4",
       "line": 100,
       "relation": "positiveCorrelation",
       "source": 15,
@@ -207,17 +241,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -229,16 +273,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Although neutrophils, platelets and vascular endothelial cells are the main effector cells involved in immunothrombosis, abnormal aggregation of erythrocytes under septic conditions may also contribute to immunothrombosis in sepsis.",
-      "key": "6dcb188fa14deca5fa35d0901f47e57d",
+      "key": "b56656ac756f7099b27e422b6ffafcbd",
       "line": 109,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -246,17 +291,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -268,16 +323,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Although neutrophils, platelets and vascular endothelial cells are the main effector cells involved in immunothrombosis, abnormal aggregation of erythrocytes under septic conditions may also contribute to immunothrombosis in sepsis.",
-      "key": "3ad63ee3e44e392529e4191736664779",
+      "key": "11e6bad0ee9fa410e96c66a9ca78a8a7",
       "line": 109,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -285,20 +341,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -310,16 +379,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "The cascade of immunothrombosis includes platelet activation and secretion, which may result in a local increase in Zn2þ concentration because of the presence of Zn2þ in platelet dense granules.",
-      "key": "c7476a04dac1f96a9f6e16fd92d4cfa8",
+      "key": "52c17adc5c695462e8757dc049da44cb",
       "line": 214,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -327,17 +397,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -349,37 +429,51 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Stimulation with 20 mM Zn2þ resulted in aggregation of washed human erythrocytes 1 h after incubation.",
-      "key": "b950aa6dbfc652071fc6bbc9ee1bd4f8",
+      "key": "d5366e37c9aead6893b5271df9a301e1",
       "line": 116,
       "relation": "increases",
-      "source": 2,
+      "source": 1,
       "target": 5
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -391,37 +485,51 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Thus focusing on Zn2þ-stimulated erythrocytes might be an important new approach that could ultimately reveal the mechanism of immunothrombus formation in sepsis.",
-      "key": "77072b8ead5ae10a1503057efd1c5827",
+      "key": "6ce31e6452304978550f13437f34b3dc",
       "line": 221,
       "relation": "increases",
-      "source": 2,
+      "source": 1,
       "target": 5
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -433,37 +541,51 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "The Zn2þ (20 mM)-induced expression of PS on erythrocytes, which was inhibited by TPEN, was not observed by other divalent cations, including Mg2þ and Ca2þ (Fig. 2A).",
-      "key": "8aea6eca7f7a4e4017fcd9ba430dd7bb",
+      "key": "70b3cd4a4024f47d7ba50e5999a48c44",
       "line": 157,
       "relation": "increases",
-      "source": 2,
-      "target": 1
+      "source": 1,
+      "target": 2
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -475,37 +597,51 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "We found that a considerable number of erythrocytes were attached to the EA.hy926 cells after Zn2þ-stimulation (Fig. 4A).",
-      "key": "ccb8876affc446d4e4dd8a53732fcda7",
+      "key": "fb8f430cc7f469a026da91e1eb4d5ed4",
       "line": 178,
       "relation": "increases",
-      "source": 2,
+      "source": 1,
       "target": 3
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -517,34 +653,45 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "In addition, we observed that Zn2þ induced the adhesion of erythrocytes to endothelial cells, and this effect was not inhibited by 100 mg/mL of HSA (Fig. 4), suggesting a specific interaction between erythrocytes and HRG.",
-      "key": "37a2fd0eb53d2c5ffab6a0c68783c233",
+      "key": "867cab581d339e4d7b8f6cc33b70b14a",
       "line": 230,
       "relation": "increases",
-      "source": 2,
+      "source": 1,
       "target": 3
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -556,40 +703,54 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "TPEN (20 mM), a chelator for Zn2þ, Fe2þ and Mn2þ, abolished the effects of Zn2þ (Fig. 1A).",
-      "key": "854db481fd25147fd69ab2cba6742ceb",
+      "key": "7510a90e56b7ed13f95f83d280f7f0c0",
       "line": 122,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "decreases",
       "source": 0,
-      "target": 2
+      "target": 1,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -601,40 +762,54 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "The Zn2þ (20 mM)-induced expression of PS on erythrocytes, which was inhibited by TPEN, was not observed by other divalent cations, including Mg2þ and Ca2þ (Fig. 2A).",
-      "key": "88eba8a1a034c796d7c1eecd13fd5470",
+      "key": "a765a235730bab560d55b931c7ca8157",
       "line": 158,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "decreases",
       "source": 0,
-      "target": 2
+      "target": 1,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -646,37 +821,51 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "The Zn2þ (20 mM)-induced expression of PS on erythrocytes, which was inhibited by TPEN, was not observed by other divalent cations, including Mg2þ and Ca2þ (Fig. 2A).",
-      "key": "982fb01e7c3ce3933e2b4b4f3432d163",
+      "key": "51bd2f035e10b0ce1c503262e066e92c",
       "line": 159,
       "relation": "decreases",
       "source": 0,
-      "target": 1
+      "target": 2
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -688,16 +877,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "TPEN also inhibited erythrocyte adhesion, but the effect at 20 mM was weaker compared to that in the HRG (100 mg/mL)- treatment group.",
-      "key": "2f0d85c9b0fe6797892de9d91ac69b9d",
+      "key": "06858ed351162f94be6f647096c562a1",
       "line": 193,
       "relation": "decreases",
       "source": 0,
@@ -705,20 +895,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "1 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "1 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -730,16 +933,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "HRG strongly inhibited the aggregation at a concentration of 1 mg/mL, whereas the same concentration of HSA showed no effect (Fig. 1B).",
-      "key": "8508fd14e4b46656a42f8e8f5c08ad9b",
+      "key": "f9464122ab58f803eb78e1301a505c81",
       "line": 129,
       "relation": "decreases",
       "source": 11,
@@ -747,20 +951,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -772,16 +989,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "HRG and HSA both strongly inhibited aggregation when the concentration was increased to 100 mg/mL (Supplementary Fig. 1).",
-      "key": "594ca46a890a5e40b693b7b343df8281",
+      "key": "09f1adca80f998ade683301f58c05ffb",
       "line": 137,
       "relation": "decreases",
       "source": 11,
@@ -789,20 +1007,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -814,37 +1045,51 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "HRG and HSA both inhibited PS expression when their concentrations were increased to 10 and 100 mg/mL (Fig. 2B).",
-      "key": "8c36db93ed116db97a5d25f2ef105ebe",
+      "key": "4429512c2e3d0bf476e51242b2053a44",
       "line": 166,
       "relation": "decreases",
       "source": 11,
-      "target": 1
+      "target": 2
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -856,37 +1101,51 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Surprisingly, HRG at high concentration (100 mg/mL) significantly decreased PS expression on erythrocytes.",
-      "key": "b4c2714d977660628daf06115aab1303",
+      "key": "4f1d3fef6bfc90fe329451f52f56b06e",
       "line": 173,
       "relation": "decreases",
       "source": 11,
-      "target": 1
+      "target": 2
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -898,16 +1157,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "HRG treatment significantly inhibited the attachment of erythrocytes to the vascular endothelial cell monolayer in a concentration dependent manner (Fig. 4A and B), while HSA did not affect the adhesion.",
-      "key": "6acb7b8f832ac7816ff2c7fd80643f6a",
+      "key": "cf0038243c370b33a0ba2afef933a3a1",
       "line": 186,
       "relation": "decreases",
       "source": 11,
@@ -915,20 +1175,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -940,40 +1213,54 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "The decrease was due to the reduction in HRG gene expression, deposition of HRG on immunothrombi and degradation of HRG by thrombin.",
-      "key": "c4e0b19567eccf9b297e9bba5a16b200",
+      "key": "54b5030adb54cbb263542713579a662e",
       "line": 236,
       "relation": "positiveCorrelation",
       "source": 11,
-      "subject": {
+      "source_modifier": {
         "modifier": "Degradation"
       },
       "target": 10
     },
     {
       "annotations": {
-        "Concentration": {
-          "1 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "1 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -985,16 +1272,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "HRG strongly inhibited the aggregation at a concentration of 1 mg/mL, whereas the same concentration of HSA showed no effect (Fig. 1B).",
-      "key": "109f83b5b50d08153a0f44c641d5fe8b",
+      "key": "f182d226d55c50e20b03e74ca50b3d6b",
       "line": 130,
       "relation": "causesNoChange",
       "source": 8,
@@ -1002,20 +1290,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1027,16 +1328,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "HRG and HSA both strongly inhibited aggregation when the concentration was increased to 100 mg/mL (Supplementary Fig. 1).",
-      "key": "c7fac4c65cf0d19ae2cb4de08ae4637d",
+      "key": "6330da3945687d4313772cc61ea7f2ee",
       "line": 138,
       "relation": "decreases",
       "source": 8,
@@ -1044,20 +1346,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1069,37 +1384,51 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "HRG and HSA both inhibited PS expression when their concentrations were increased to 10 and 100 mg/mL (Fig. 2B).",
-      "key": "19b8c6919f3be807cebe84df310cc6f3",
+      "key": "ed4de7b168998d3d9fbe09694aa40aa8",
       "line": 167,
       "relation": "decreases",
       "source": 8,
-      "target": 1
+      "target": 2
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1111,16 +1440,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "HRG treatment significantly inhibited the attachment of erythrocytes to the vascular endothelial cell monolayer in a concentration dependent manner (Fig. 4A and B), while HSA did not affect the adhesion.",
-      "key": "8ba514ed39dba412864dd7866ee5a110",
+      "key": "1f7e1cc1d73b5d104f4ebec8cf11daac",
       "line": 187,
       "relation": "causesNoChange",
       "source": 8,
@@ -1128,20 +1458,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1153,37 +1496,51 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "To determine the role of PS in the Zn2þ-induced aggregation of erythrocytes, we used Annexin V to block PS expression on the erythrocyte membrane.",
-      "key": "56a3f863e7b48d9f333c90a3c3312722",
+      "key": "dfd6b598885999bf81a76ec1bc0029d4",
       "line": 145,
       "relation": "decreases",
       "source": 9,
-      "target": 1
+      "target": 2
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1195,16 +1552,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Annexin V (100 nM) completely inhibited the Zn2þ-induced aggregation (Fig. 1E).",
-      "key": "9f3fbf2c14bbb822fbc57710bd7f6b8d",
+      "key": "84fa53a44e571fb6ce1057b8f182fa1c",
       "line": 150,
       "relation": "decreases",
       "source": 9,
@@ -1212,20 +1570,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1237,37 +1608,51 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Although a significant difference in PS expressionwas not observed among the CLP groups treated with PBS, HSA or HRG, incubation of erythrocytes for 4 h enabled the observation of beneficial effects of HRG on PS expression on erythrocytes (Fig. 5B).",
-      "key": "1a03b0cc97ae0d8da40eca1f965a5083",
+      "key": "f63da944a7290c04e4e1845497669922",
       "line": 200,
       "relation": "decreases",
       "source": 12,
-      "target": 1
+      "target": 2
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1279,16 +1664,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Hemin-induced hemolysis was also inhibited by HRG and HRGderived peptide (amino acid sequence in the Histidine-rich domain of HRG: HHPHGHHPHG) (Fig. 6A and B).",
-      "key": "4e93cb0e7542fd0bddd91dcd660b43d1",
+      "key": "fd63945e586c65998148fc8fe93d38a0",
       "line": 206,
       "relation": "decreases",
       "source": 12,
@@ -1296,20 +1682,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Lung": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Lung",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1321,16 +1720,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Supplementary treatment of septic mice with purified HRG from human plasma remarkably suppressed immunothrombosis in the lungs as well as the associated inflammation.",
-      "key": "2198f2779d361cad425d9387c3b596af",
+      "key": "1947fd16426ff67d5a30dd21ba683e8d",
       "line": 243,
       "relation": "decreases",
       "source": 12,
@@ -1338,20 +1738,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Lung": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Lung",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1363,16 +1776,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "Supplementary treatment of septic mice with purified HRG from human plasma remarkably suppressed immunothrombosis in the lungs as well as the associated inflammation.",
-      "key": "865d58db7f7f2e41b1a890c5ca2086eb",
+      "key": "145a0764ef1d8b9119d15393704c79f1",
       "line": 244,
       "relation": "decreases",
       "source": 12,
@@ -1380,20 +1794,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1405,16 +1832,17 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "The cascade of immunothrombosis includes platelet activation and secretion, which may result in a local increase in Zn2þ concentration because of the presence of Zn2þ in platelet dense granules.",
-      "key": "eeb0a253eb94475f7da041f4153607f8",
+      "key": "1f2d639d450ae4e334dc9afee2469f57",
       "line": 214,
       "relation": "positiveCorrelation",
       "source": 6,
@@ -1422,20 +1850,33 @@
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1447,37 +1888,51 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "The cascade of immunothrombosis includes platelet activation and secretion, which may result in a local increase in Zn2þ concentration because of the presence of Zn2þ in platelet dense granules.",
-      "key": "482c2773d13fa7e3653f86e0e7899fcd",
+      "key": "fcf275a0138989e3c216d42d36c090cd",
       "line": 215,
       "relation": "increases",
       "source": 6,
-      "target": 2
+      "target": 1
     },
     {
       "annotations": {
-        "Concentration": {
-          "100 mg/mL": true
-        },
-        "MeSHAnatomy": {
-          "Erythrocyte Membrane": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Concentration": [
+          {
+            "identifier": "100 mg/mL",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocyte Membrane",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Gao Y",
           "Liu K",
@@ -1489,23 +1944,24 @@
           "Zhong H"
         ],
         "date": "2018-03-01",
-        "db": "PubMed",
-        "db_id": "29544683",
-        "db_name": "Journal of pharmacological sciences",
         "first": "Zhong H",
+        "identifier": "29544683",
+        "journal": "Journal of pharmacological sciences",
         "last": "Nishibori M",
+        "name": "Effects of Histidine-rich glycoprotein on erythrocyte aggregation and hemolysis: Implications for a role under septic conditions.",
+        "namespace": "pubmed",
         "pages": "97-106",
         "volume": "136"
       },
       "evidence": "The decrease was due to the reduction in HRG gene expression, deposition of HRG on immunothrombi and degradation of HRG by thrombin.",
-      "key": "aa59e238a297e7b512fceb1b88d0456f",
+      "key": "f41ff58e6787161e6086daefe31b9248",
       "line": 236,
-      "object": {
-        "modifier": "Degradation"
-      },
       "relation": "positiveCorrelation",
       "source": 10,
-      "target": 11
+      "target": 11,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
     }
   ],
   "multigraph": true,
@@ -1520,15 +1976,6 @@
       "id": "31325d8fe36fa325aee8c854db998e45"
     },
     {
-      "bel": "a(CHEBI:\"phosphatidyl-L-serine\")",
-      "concept": {
-        "name": "phosphatidyl-L-serine",
-        "namespace": "CHEBI"
-      },
-      "function": "Abundance",
-      "id": "d1aebf1bee268721ae9e7793529947c3"
-    },
-    {
       "bel": "a(CHEBI:\"zinc(2+)\")",
       "concept": {
         "name": "zinc(2+)",
@@ -1536,6 +1983,15 @@
       },
       "function": "Abundance",
       "id": "367064d7652079b87c47f3f5b95bdab2"
+    },
+    {
+      "bel": "a(CHEBI:phosphatidyl-L-serine)",
+      "concept": {
+        "name": "phosphatidyl-L-serine",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "980df99015409a120ff5aed7d300be71"
     },
     {
       "bel": "a(HM:\"erythrocyte-endothelium adhesion\")",

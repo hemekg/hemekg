@@ -1,7 +1,9 @@
 {
   "directed": true,
   "graph": {
+    "annotation_curie": [],
     "annotation_list": {},
+    "annotation_miriam": [],
     "annotation_pattern": {
       "Concentration": ".*",
       "Species": ".*",
@@ -58,16 +60,20 @@
       "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
     },
     "path": "heme_24553061.bel",
-    "pybel_version": "0.14.6"
+    "pybel_version": "0.15.0"
   },
   "links": [
     {
       "annotations": {
-        "TextLocation": {
-          "Discussion": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "McCulloch JC",
           "Nielsen VG",
@@ -75,16 +81,17 @@
           "Thompson JL"
         ],
         "date": "2014-09-01",
-        "db": "PubMed",
-        "db_id": "24553061",
-        "db_name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
         "first": "Redford DT",
+        "identifier": "24553061",
+        "journal": "Blood coagulation & fibrinolysis : an international journal in haemostasis and thrombosis",
         "last": "Nielsen VG",
+        "name": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "namespace": "pubmed",
         "pages": "621-4",
         "volume": "25"
       },
       "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
-      "key": "9919011662b9188096619e3aa2203785",
+      "key": "94a541076b93ba9173c8ee0851970317",
       "line": 95,
       "relation": "positiveCorrelation",
       "source": 7,
@@ -92,11 +99,15 @@
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Discussion": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "McCulloch JC",
           "Nielsen VG",
@@ -104,16 +115,17 @@
           "Thompson JL"
         ],
         "date": "2014-09-01",
-        "db": "PubMed",
-        "db_id": "24553061",
-        "db_name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
         "first": "Redford DT",
+        "identifier": "24553061",
+        "journal": "Blood coagulation & fibrinolysis : an international journal in haemostasis and thrombosis",
         "last": "Nielsen VG",
+        "name": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "namespace": "pubmed",
         "pages": "621-4",
         "volume": "25"
       },
       "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
-      "key": "547bcccd7db43c9a4308699797286c24",
+      "key": "0c7d11c3cced59060f14ef0236ba0159",
       "line": 95,
       "relation": "positiveCorrelation",
       "source": 1,
@@ -121,11 +133,15 @@
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Discussion": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "McCulloch JC",
           "Nielsen VG",
@@ -133,37 +149,42 @@
           "Thompson JL"
         ],
         "date": "2014-09-01",
-        "db": "PubMed",
-        "db_id": "24553061",
-        "db_name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
         "first": "Redford DT",
+        "identifier": "24553061",
+        "journal": "Blood coagulation & fibrinolysis : an international journal in haemostasis and thrombosis",
         "last": "Nielsen VG",
+        "name": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "namespace": "pubmed",
         "pages": "621-4",
         "volume": "25"
       },
       "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
-      "key": "170fc8afa837b04d479629c84563d9ef",
+      "key": "4fba439ee0471c1c701c235dd27c839e",
       "line": 96,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "positiveCorrelation",
       "source": 1,
-      "target": 6
+      "target": 6,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
-      "key": "202ff747726b074744a0037dd24d5f64",
+      "key": "de7f19b9fec4b43710ef40446be31a26",
       "relation": "partOf",
       "source": 1,
       "target": 2
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Discussion": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "McCulloch JC",
           "Nielsen VG",
@@ -171,31 +192,36 @@
           "Thompson JL"
         ],
         "date": "2014-09-01",
-        "db": "PubMed",
-        "db_id": "24553061",
-        "db_name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
         "first": "Redford DT",
+        "identifier": "24553061",
+        "journal": "Blood coagulation & fibrinolysis : an international journal in haemostasis and thrombosis",
         "last": "Nielsen VG",
+        "name": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "namespace": "pubmed",
         "pages": "621-4",
         "volume": "25"
       },
       "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
-      "key": "b2eaa3d4b7e2667a5a8108c2ed12913e",
+      "key": "55a14c49e74c4044ca765dad41ff278f",
       "line": 96,
       "relation": "positiveCorrelation",
       "source": 6,
-      "subject": {
+      "source_modifier": {
         "modifier": "Activity"
       },
       "target": 1
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Discussion": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "McCulloch JC",
           "Nielsen VG",
@@ -203,31 +229,36 @@
           "Thompson JL"
         ],
         "date": "2014-09-01",
-        "db": "PubMed",
-        "db_id": "24553061",
-        "db_name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
         "first": "Redford DT",
+        "identifier": "24553061",
+        "journal": "Blood coagulation & fibrinolysis : an international journal in haemostasis and thrombosis",
         "last": "Nielsen VG",
+        "name": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "namespace": "pubmed",
         "pages": "621-4",
         "volume": "25"
       },
       "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
-      "key": "fbe105a6d219048e18bad4e42e789bed",
+      "key": "878fbf9df9230b96ad8a93cc63e099e9",
       "line": 97,
       "relation": "positiveCorrelation",
       "source": 6,
-      "subject": {
+      "source_modifier": {
         "modifier": "Activity"
       },
       "target": 3
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Discussion": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "McCulloch JC",
           "Nielsen VG",
@@ -235,49 +266,54 @@
           "Thompson JL"
         ],
         "date": "2014-09-01",
-        "db": "PubMed",
-        "db_id": "24553061",
-        "db_name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
         "first": "Redford DT",
+        "identifier": "24553061",
+        "journal": "Blood coagulation & fibrinolysis : an international journal in haemostasis and thrombosis",
         "last": "Nielsen VG",
+        "name": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "namespace": "pubmed",
         "pages": "621-4",
         "volume": "25"
       },
       "evidence": "Lysis of red blood cells with consequent increases in free heme most likely caused the increase in HO-1 activity responsible for increased COHb concentrations, which is similar to that observed with circulatory devices [6].",
-      "key": "573accaa439772eb8021b428244c9e01",
+      "key": "0f94fba634d99a4c67eb0943abe2aa46",
       "line": 97,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "positiveCorrelation",
       "source": 3,
-      "target": 6
+      "target": 6,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
-      "key": "da071d698b39b8638b668190f9adf2df",
+      "key": "ac97d2c2ca9a1dcd4952c15d883e922c",
       "relation": "partOf",
       "source": 0,
       "target": 3
     },
     {
-      "key": "46320914d89d21047f552d66390435b6",
+      "key": "a0b50eda8e1354c7dd104c2572d73ba2",
       "relation": "partOf",
       "source": 0,
       "target": 2
     },
     {
-      "key": "883c24f0daa3cd60bda82eacd9f0f25b",
+      "key": "3ab27b0f9d580af6c0fd3933cbb5de7c",
       "relation": "partOf",
       "source": 5,
       "target": 3
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Discussion": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "McCulloch JC",
           "Nielsen VG",
@@ -285,34 +321,39 @@
           "Thompson JL"
         ],
         "date": "2014-09-01",
-        "db": "PubMed",
-        "db_id": "24553061",
-        "db_name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
         "first": "Redford DT",
+        "identifier": "24553061",
+        "journal": "Blood coagulation & fibrinolysis : an international journal in haemostasis and thrombosis",
         "last": "Nielsen VG",
+        "name": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "namespace": "pubmed",
         "pages": "621-4",
         "volume": "25"
       },
       "evidence": "It was determined that the patient’s plasmatic hypercoagulability was in part due to carboxyhemefibrinogen formation via a thrombelastographic method.",
-      "key": "d3578a8fae2d9fa2360fe3b4e21cee4d",
+      "key": "7c0366bc6a9796ef7b0eaa4c2b7be2e3",
       "line": 104,
       "relation": "positiveCorrelation",
       "source": 2,
       "target": 8
     },
     {
-      "key": "20894968a663fbf653ca9b45976e4ce3",
+      "key": "bbec251e850592eb9a138692d426dfd0",
       "relation": "partOf",
       "source": 4,
       "target": 2
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Discussion": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "McCulloch JC",
           "Nielsen VG",
@@ -320,16 +361,17 @@
           "Thompson JL"
         ],
         "date": "2014-09-01",
-        "db": "PubMed",
-        "db_id": "24553061",
-        "db_name": "Blood coagulation &amp; fibrinolysis : an international journal in haemostasis and thrombosis",
         "first": "Redford DT",
+        "identifier": "24553061",
+        "journal": "Blood coagulation & fibrinolysis : an international journal in haemostasis and thrombosis",
         "last": "Nielsen VG",
+        "name": "Left atrial myxoma presenting as pulmonary embolism: potential role of heme oxygenase-1.",
+        "namespace": "pubmed",
         "pages": "621-4",
         "volume": "25"
       },
       "evidence": "It was determined that the patient’s plasmatic hypercoagulability was in part due to carboxyhemefibrinogen formation via a thrombelastographic method.",
-      "key": "6deb556a6bfa3ec4998c39fbc996b8dd",
+      "key": "c5132b4870b449be178a73f1ccf2420f",
       "line": 104,
       "relation": "positiveCorrelation",
       "source": 8,

@@ -1,7 +1,9 @@
 {
   "directed": true,
   "graph": {
+    "annotation_curie": [],
     "annotation_list": {},
+    "annotation_miriam": [],
     "annotation_pattern": {
       "Concentration": ".*",
       "Species": ".*",
@@ -58,19 +60,26 @@
       "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
     },
     "path": "heme_27798618.bel",
-    "pybel_version": "0.14.6"
+    "pybel_version": "0.15.0"
   },
   "links": [
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -102,37 +111,48 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Macrophages are crucial for the removal of excess heme resulting from hemolysis via the uptake and degradation of heme by HO-1 (ref. 23), encoded by Hmox1.",
-      "key": "c5313da19a90e489f1c9e755826b20a9",
+      "key": "21c15616fabe7399e6ced80e534441b3",
       "line": 96,
-      "object": {
-        "modifier": "Degradation"
-      },
       "relation": "increases",
       "source": 14,
-      "target": 1
+      "target": 1,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Plasma": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -164,16 +184,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Following i.p. E. coli infection, we observed a significant increase in plasma heme levels in LysM-Cre+/−Hmox1fl/fl mice (Fig. 1e and Supplementary Fig. 1c), which was accompanied by increased bacterial numbers in blood and liver (Fig. 1f and Supplementary Fig. 1d) and impaired survival (Fig. 1g) when compared with LysM-Cre−/−Hmox1fl/fl controls.",
-      "key": "49fe9335381122fb21fd9fcfb33de3b7",
+      "key": "2f305d74a395a86759c6c2db2260869c",
       "line": 108,
       "relation": "positiveCorrelation",
       "source": 1,
@@ -181,20 +202,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Plasma": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -226,16 +260,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Thus, enhanced levels of plasma heme, induced by either exogenous heme administration or a lack of HO-1 expression in macrophages, resulted in an increased susceptibility to E. coli sepsis.",
-      "key": "4c49c0abf48652a4985031a87fb065d4",
+      "key": "b15d27633551b79e96a62a2cf6670770",
       "line": 116,
       "relation": "positiveCorrelation",
       "source": 1,
@@ -243,20 +278,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -288,16 +336,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Plasma heme amounts were comparable in mice pretreated with Fe3+ or PBS (Fig. 2d), and despite the similarly increased availability of iron in both heme- and Fe3+-treated mice (Fig. 2e), only heme-treated mice presented a significantly higher bacterial burden in the blood and liver compared with PBS- or Fe3+-treated mice (Fig. 2f).",
-      "key": "05a1cdc58f58260cb8e633bcdc3d28b7",
+      "key": "41512c1d145beca519bd740bc3119c30",
       "line": 133,
       "relation": "positiveCorrelation",
       "source": 1,
@@ -305,20 +354,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -350,16 +412,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "These results indicate that increased heme concentrations directly lead to increased bacterial counts during sepsis and that bacterial iron requirements are met via heme-independent mechanisms.",
-      "key": "c8ac242af57a93fa8889af1a49e204bf",
+      "key": "354b016460cb611c21a5f4ddd09578ef",
       "line": 141,
       "relation": "positiveCorrelation",
       "source": 1,
@@ -367,20 +430,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -412,16 +488,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "We focused on macrophage effector functions and found that heme pretreatment (15 min, 3–30 μM unless otherwise indicated) led to a strong, dose-dependent reduction of phagocytosis of E. coli by RAW264.7 macrophages compared with DMSO-treated controls (Fig. 3a,b and Supplementary Fig. 2a).",
-      "key": "5db432aabe29ec748fb0cf0f39087b95",
+      "key": "30230e98b2ef287944f87dec0855f8b5",
       "line": 150,
       "relation": "negativeCorrelation",
       "source": 1,
@@ -429,23 +506,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -477,16 +570,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Induction of hemolysis with phenylhydrazine or addition of heme to whole blood at concentrations mimicking the physiological range of plasma heme in hemolytic patients (5–50 μM)6 led to a dose-dependent impairment of E. coli phagocytosis by neutrophils and monocytes, as compared with DMSO controls (Fig. 3g and Supplementary Fig. 2n,o), indicating that our mouse model was reflective of human hemolytic conditions.",
-      "key": "e01ece4e07a4ad9378c585acce4cc751",
+      "key": "fed57b8092cee68c14addf156457fc84",
       "line": 172,
       "relation": "negativeCorrelation",
       "source": 1,
@@ -494,20 +588,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -539,16 +646,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "In addition, we observed that heme treatment of RAW264.7 macrophages led to a dose-dependent inhibition of apoptotic cell uptake (Supplementary Fig. 2m).",
-      "key": "92a5c3efaf5f381348838dfdbb5b767c",
+      "key": "b40f371c74171a782220fe1d67887c6d",
       "line": 157,
       "relation": "negativeCorrelation",
       "source": 1,
@@ -556,23 +664,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -604,16 +728,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "We quantified these changes by automatic image analysis and found that heme-induced cytoskeleton rearrangement led to a significant increase in cell area and perimeter, as well as a decrease in circularity (form factor) (Fig. 4d,e and Supplementary Fig. 3b–d), indicating that the heme-induced defective phagocytic response was likely tied to cytoskeleton rearrangements.",
-      "key": "7d2e8de6eb261575d994b1ae403b4c5e",
+      "key": "8330be117895f4ca5a6047c2cc9d358f",
       "line": 179,
       "relation": "positiveCorrelation",
       "source": 1,
@@ -621,23 +746,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -669,16 +810,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Heme is an amphipathic molecule that can promote the generation of reactive oxygen species (ROS) via Fenton chemistry, thereby leading to membrane damage.",
-      "key": "5fd3d197ca731dac303a259e9f1b76cc",
+      "key": "ed97c273fe54aea06c8e703b5e3b37e5",
       "line": 192,
       "relation": "positiveCorrelation",
       "source": 1,
@@ -686,23 +828,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -734,43 +892,54 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Heme stimulation of RAW264.7 macrophages induced immediate Cdc42 activation for up to 30 min after stimulation (Fig. 6d), without inducing changes in total Cdc42 protein amounts (Supplementary Fig. 6b).",
-      "key": "a879d0a88cd28c29c0822a53ec99a2c1",
+      "key": "13abda95139ba33f533b43809a850009",
       "line": 208,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "increases",
       "source": 1,
-      "target": 11
+      "target": 11,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
-      "key": "37b0c9f8af54dabca275c78cc25310e4",
+      "key": "e223f0cef2414aab1ed783eb7262b964",
       "relation": "partOf",
       "source": 1,
       "target": 10
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Plasma": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -802,16 +971,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Following i.p. E. coli infection, we observed a significant increase in plasma heme levels in LysM-Cre+/−Hmox1fl/fl mice (Fig. 1e and Supplementary Fig. 1c), which was accompanied by increased bacterial numbers in blood and liver (Fig. 1f and Supplementary Fig. 1d) and impaired survival (Fig. 1g) when compared with LysM-Cre−/−Hmox1fl/fl controls.",
-      "key": "95a1a1c4b77add32ce08b76834435988",
+      "key": "7098226d2c5cabb895591eb910babea3",
       "line": 108,
       "relation": "positiveCorrelation",
       "source": 7,
@@ -819,20 +989,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Plasma": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -864,16 +1047,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Thus, enhanced levels of plasma heme, induced by either exogenous heme administration or a lack of HO-1 expression in macrophages, resulted in an increased susceptibility to E. coli sepsis.",
-      "key": "da00bac76426b258cb5a0df8028b9910",
+      "key": "a746e40a94dc785639b0cd04e1d432c0",
       "line": 116,
       "relation": "positiveCorrelation",
       "source": 7,
@@ -881,20 +1065,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -926,16 +1123,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Plasma heme amounts were comparable in mice pretreated with Fe3+ or PBS (Fig. 2d), and despite the similarly increased availability of iron in both heme- and Fe3+-treated mice (Fig. 2e), only heme-treated mice presented a significantly higher bacterial burden in the blood and liver compared with PBS- or Fe3+-treated mice (Fig. 2f).",
-      "key": "50191ef7dd79db586cd05a41d71307c0",
+      "key": "6b2f2a621697c6781cd5feb1058b2e56",
       "line": 133,
       "relation": "positiveCorrelation",
       "source": 7,
@@ -943,20 +1141,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -988,16 +1199,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "These results indicate that increased heme concentrations directly lead to increased bacterial counts during sepsis and that bacterial iron requirements are met via heme-independent mechanisms.",
-      "key": "8edb1544715cac6ebad8eab7d442cc54",
+      "key": "6c2ea5a52e695caad02eca32287c8931",
       "line": 141,
       "relation": "positiveCorrelation",
       "source": 7,
@@ -1005,23 +1217,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1053,16 +1281,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Following induction of E. coli peritonitis in wild-type mice, quinine treatment did not affect plasma heme levels, but did lead to a reduction in bacterial counts in blood and liver (Fig. 8f,g and Supplementary Fig. 8g,h), thereby restoring the bacterial clearance capacity of heme-treated mice.",
-      "key": "bf0d5b8eccd38b9fb42e72f6abc4d0d2",
+      "key": "19d56608c0718400e15fab099bfeccee",
       "line": 260,
       "relation": "negativeCorrelation",
       "source": 7,
@@ -1070,20 +1299,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Plasma": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1115,16 +1357,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Chelation of growth-medium iron with deferoxamine (DFO, 10 μM) led to a reduction in bacterial growth, as compared with non-chelated controls (Fig. 2a).",
-      "key": "0f728e9e96fe0597092ed39b49d3f07d",
+      "key": "e61da3b7e82f720c404af8c73aa8458e",
       "line": 122,
       "relation": "decreases",
       "source": 0,
@@ -1132,20 +1375,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1177,16 +1433,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "We focused on macrophage effector functions and found that heme pretreatment (15 min, 3–30 μM unless otherwise indicated) led to a strong, dose-dependent reduction of phagocytosis of E. coli by RAW264.7 macrophages compared with DMSO-treated controls (Fig. 3a,b and Supplementary Fig. 2a).",
-      "key": "fe0794ec4c210898735211870d500b46",
+      "key": "c937be5368b7428fc5bcff13390d34c1",
       "line": 150,
       "relation": "negativeCorrelation",
       "source": 9,
@@ -1194,23 +1451,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1242,16 +1515,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Induction of hemolysis with phenylhydrazine or addition of heme to whole blood at concentrations mimicking the physiological range of plasma heme in hemolytic patients (5–50 μM)6 led to a dose-dependent impairment of E. coli phagocytosis by neutrophils and monocytes, as compared with DMSO controls (Fig. 3g and Supplementary Fig. 2n,o), indicating that our mouse model was reflective of human hemolytic conditions.",
-      "key": "3010117b38114a732ded52e0886ad3fb",
+      "key": "8c75ae9cf654513425ea162529622a05",
       "line": 172,
       "relation": "negativeCorrelation",
       "source": 9,
@@ -1259,23 +1533,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1307,16 +1597,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "We quantified these changes by automatic image analysis and found that heme-induced cytoskeleton rearrangement led to a significant increase in cell area and perimeter, as well as a decrease in circularity (form factor) (Fig. 4d,e and Supplementary Fig. 3b–d), indicating that the heme-induced defective phagocytic response was likely tied to cytoskeleton rearrangements.",
-      "key": "bf3814a163295d2a273403d4f705c577",
+      "key": "437152ade18aadc64ed48682a0b1eb4a",
       "line": 180,
       "relation": "negativeCorrelation",
       "source": 9,
@@ -1324,23 +1615,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1372,16 +1679,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Together, these data indicate that heme induces extensive actin cytoskeleton alterations, which results in defective phagocytosis and inflammatory cell migration.",
-      "key": "138464b5e08cc0196c8b1f629a0c5909",
+      "key": "7d937cb9c23b758fbcde5e92bf3ad8a8",
       "line": 186,
       "relation": "negativeCorrelation",
       "source": 9,
@@ -1389,23 +1697,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1437,16 +1761,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Cdc42 is involved in cell motility and phagocytosis, but is mainly recognized as being a central node in the formation of lamellipodia and filopodia at the leading edge3",
-      "key": "2e89d44813f2a470ea274accbd1c66af",
+      "key": "68227f64dce75c663edc0020d4ca5310",
       "line": 200,
       "relation": "positiveCorrelation",
       "source": 9,
@@ -1454,23 +1779,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1502,16 +1843,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "The top performing drug identified was the antimalarial compound quinine, which fully restored phagocytosis in the presence of heme, without affecting baseline phagocytosis (Fig. 8a and Supplementary Fig. 8b,c).",
-      "key": "02ee27bfac306b2974174c18e69bc174",
+      "key": "1477cd35f5da759d339eb38327acc397",
       "line": 232,
       "relation": "positiveCorrelation",
       "source": 9,
@@ -1519,23 +1861,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1567,16 +1925,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Quinine pretreatment protected RAW264.7 macrophages (Fig. 8b and Supplementary Fig. 8c,d) and human macrophages (Fig. 8c) from heme-induced inhibition of phagocytosis and actin cytoskeleton changes (Supplementary Fig. 8e,f) compared with DMSO-treated cells.",
-      "key": "14c318889cf1dddc4f5fd5bcba6f092a",
+      "key": "d696d682a8d99f1c45c74b26d22679cb",
       "line": 241,
       "relation": "positiveCorrelation",
       "source": 9,
@@ -1584,23 +1943,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1632,16 +2007,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Our finding that DOCK8 is necessary for the cytoskeleton changes and disruption of bacterial phagocytosis by heme is consistent with recent studies showing that DOCK8 regulates dendritic cell migration via Cdc42 (refs. 37,44).",
-      "key": "8a35aace3b15d9ca53778656b5108809",
+      "key": "c5877cac9d0510697112ea233845a683",
       "line": 272,
       "relation": "negativeCorrelation",
       "source": 9,
@@ -1649,20 +2025,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1694,16 +2083,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "In addition, we observed that heme treatment of RAW264.7 macrophages led to a dose-dependent inhibition of apoptotic cell uptake (Supplementary Fig. 2m).",
-      "key": "b1cbcfab6511e7f369e8fa8d2c2d723b",
+      "key": "70b78386875ee40e05775dbe694566c6",
       "line": 157,
       "relation": "negativeCorrelation",
       "source": 6,
@@ -1711,23 +2101,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1759,16 +2165,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "We quantified these changes by automatic image analysis and found that heme-induced cytoskeleton rearrangement led to a significant increase in cell area and perimeter, as well as a decrease in circularity (form factor) (Fig. 4d,e and Supplementary Fig. 3b–d), indicating that the heme-induced defective phagocytic response was likely tied to cytoskeleton rearrangements.",
-      "key": "c5327154200d496f667e831ae3346b5c",
+      "key": "7bf88eb241556b8a7900049e2e1d8398",
       "line": 179,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -1776,23 +2183,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1824,16 +2247,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "We quantified these changes by automatic image analysis and found that heme-induced cytoskeleton rearrangement led to a significant increase in cell area and perimeter, as well as a decrease in circularity (form factor) (Fig. 4d,e and Supplementary Fig. 3b–d), indicating that the heme-induced defective phagocytic response was likely tied to cytoskeleton rearrangements.",
-      "key": "b2c560cbd80cfbbf53af894cd3ddfda1",
+      "key": "ef4166506d86c895f297d8e8a53946ad",
       "line": 180,
       "relation": "negativeCorrelation",
       "source": 5,
@@ -1841,23 +2265,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1889,16 +2329,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Together, these data indicate that heme induces extensive actin cytoskeleton alterations, which results in defective phagocytosis and inflammatory cell migration.",
-      "key": "11dc6464b4d672a24a0fe19b09f55472",
+      "key": "0192d618479ed76bd69d413e65afa0c6",
       "line": 186,
       "relation": "negativeCorrelation",
       "source": 5,
@@ -1906,23 +2347,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -1954,16 +2411,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Quinine pretreatment protected RAW264.7 macrophages (Fig. 8b and Supplementary Fig. 8c,d) and human macrophages (Fig. 8c) from heme-induced inhibition of phagocytosis and actin cytoskeleton changes (Supplementary Fig. 8e,f) compared with DMSO-treated cells.",
-      "key": "0c55cc0a0cfb2da76ba1aeb76b9b3ad9",
+      "key": "ce610e55418e124890b6e5a1a7c01328",
       "line": 242,
       "relation": "negativeCorrelation",
       "source": 5,
@@ -1971,23 +2429,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2019,16 +2493,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Our finding that DOCK8 is necessary for the cytoskeleton changes and disruption of bacterial phagocytosis by heme is consistent with recent studies showing that DOCK8 regulates dendritic cell migration via Cdc42 (refs. 37,44).",
-      "key": "80be17e16b16ff8bcde39a29eb15e7ed",
+      "key": "184d2bf989a8bc9a4f476f725d78417b",
       "line": 271,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -2036,23 +2511,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2084,16 +2575,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Heme is an amphipathic molecule that can promote the generation of reactive oxygen species (ROS) via Fenton chemistry, thereby leading to membrane damage.",
-      "key": "b9230fec028f1903888545e0730f95ee",
+      "key": "2a9a6ff0c92b69ce83abe53b01d1aa43",
       "line": 192,
       "relation": "positiveCorrelation",
       "source": 3,
@@ -2101,23 +2593,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2149,16 +2657,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Cdc42 is involved in cell motility and phagocytosis, but is mainly recognized as being a central node in the formation of lamellipodia and filopodia at the leading edge3",
-      "key": "6d7811428fa9203e6e9b6dce37221401",
+      "key": "d3ed79724baf476abdd5f812725703d2",
       "line": 199,
       "relation": "positiveCorrelation",
       "source": 11,
@@ -2166,23 +2675,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2214,16 +2739,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Cdc42 is involved in cell motility and phagocytosis, but is mainly recognized as being a central node in the formation of lamellipodia and filopodia at the leading edge3",
-      "key": "9196ac9083162e0c8ea2452f3205b38b",
+      "key": "49b062243b1a946fc2faa3c451e69688",
       "line": 200,
       "relation": "positiveCorrelation",
       "source": 11,
@@ -2231,23 +2757,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2279,16 +2821,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Cdc42 is involved in cell motility and phagocytosis, but is mainly recognized as being a central node in the formation of lamellipodia and filopodia at the leading edge3",
-      "key": "2aa31921f5dadf1933afc8b9a0c5baad",
+      "key": "85dc5e410492c72162de6b92a8948bba",
       "line": 201,
       "relation": "positiveCorrelation",
       "source": 11,
@@ -2296,23 +2839,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2344,16 +2903,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "In contrast with wild-type ER-HoxB8 BMDMs, Dock8−/− ER-HoxB8 BMDM did not spread or extend filopodia (Fig. 7a,b), and failed to activate Cdc42 following treatment with heme (Fig. 7c), indicating that DOCK8 was essential for heme-induced activation of Cdc42.",
-      "key": "787fe83ea6c1ec6e8490c5a9fe6b1855",
+      "key": "a3827ae7293034fbb3230c7efdd675a9",
       "line": 224,
       "relation": "positiveCorrelation",
       "source": 11,
@@ -2361,23 +2921,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2409,16 +2985,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Cdc42 is involved in cell motility and phagocytosis, but is mainly recognized as being a central node in the formation of lamellipodia and filopodia at the leading edge3",
-      "key": "ac7e92685db1648acce7149b1e9d0a1c",
+      "key": "66eda9182e9c684d41035800ed17d922",
       "line": 199,
       "relation": "positiveCorrelation",
       "source": 8,
@@ -2426,23 +3003,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2474,16 +3067,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Cdc42 is involved in cell motility and phagocytosis, but is mainly recognized as being a central node in the formation of lamellipodia and filopodia at the leading edge3",
-      "key": "d2a6309fae76d26f54b8a58beec3b937",
+      "key": "49ee8544d47bcaccd5b9325c3abad0dc",
       "line": 201,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -2491,23 +3085,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2539,16 +3149,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Inhibiting mDIA2 using its specific inhibitor, K216-0385, fully abrogated heme-induced filopodia extension (Fig. 6g,h and Supplementary Fig. 6c).",
-      "key": "974e2c2e56bef49bc83ffb4b18e5ddb9",
+      "key": "70db9063a99e0d1010bf32c7a68f3b58",
       "line": 215,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -2556,23 +3167,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2604,16 +3231,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Inhibiting mDIA2 using its specific inhibitor, K216-0385, fully abrogated heme-induced filopodia extension (Fig. 6g,h and Supplementary Fig. 6c).",
-      "key": "549697370a99f54b626f040bf5e87a92",
+      "key": "9112bd010e5646e03abf6719f56cb948",
       "line": 215,
       "relation": "positiveCorrelation",
       "source": 12,
@@ -2621,23 +3249,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2669,46 +3313,63 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "In contrast with wild-type ER-HoxB8 BMDMs, Dock8−/− ER-HoxB8 BMDM did not spread or extend filopodia (Fig. 7a,b), and failed to activate Cdc42 following treatment with heme (Fig. 7c), indicating that DOCK8 was essential for heme-induced activation of Cdc42.",
-      "key": "d93ead8c05f190724807ffaf9ba4a928",
+      "key": "e35a049b259d0056b741484dfd10fd6a",
       "line": 224,
       "relation": "positiveCorrelation",
       "source": 13,
       "target": 11
     },
     {
-      "key": "f60fb9f98e511a43002a56d8358d5d8b",
+      "key": "7cf33e42009722e8b8d050299147ead5",
       "relation": "partOf",
       "source": 13,
       "target": 10
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2740,16 +3401,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Our finding that DOCK8 is necessary for the cytoskeleton changes and disruption of bacterial phagocytosis by heme is consistent with recent studies showing that DOCK8 regulates dendritic cell migration via Cdc42 (refs. 37,44).",
-      "key": "ad04eb43d71145d9d581b657710bece8",
+      "key": "afdabd111a5220ed1b91058ff3bba1ae",
       "line": 271,
       "relation": "positiveCorrelation",
       "source": 13,
@@ -2757,23 +3419,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2805,16 +3483,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Our finding that DOCK8 is necessary for the cytoskeleton changes and disruption of bacterial phagocytosis by heme is consistent with recent studies showing that DOCK8 regulates dendritic cell migration via Cdc42 (refs. 37,44).",
-      "key": "12adb5c1028da67093933d383a2e8cec",
+      "key": "65bb7c8f169011618e5480da0d0df47a",
       "line": 272,
       "relation": "negativeCorrelation",
       "source": 13,
@@ -2822,23 +3501,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2870,16 +3565,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "The top performing drug identified was the antimalarial compound quinine, which fully restored phagocytosis in the presence of heme, without affecting baseline phagocytosis (Fig. 8a and Supplementary Fig. 8b,c).",
-      "key": "1d7db8b8076e9367f8c6ff880f90eff9",
+      "key": "3dc7c7ebd2ab5898c9b9181ad97c7c39",
       "line": 232,
       "relation": "positiveCorrelation",
       "source": 2,
@@ -2887,23 +3583,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -2935,16 +3647,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Quinine pretreatment protected RAW264.7 macrophages (Fig. 8b and Supplementary Fig. 8c,d) and human macrophages (Fig. 8c) from heme-induced inhibition of phagocytosis and actin cytoskeleton changes (Supplementary Fig. 8e,f) compared with DMSO-treated cells.",
-      "key": "8ef093145db8dc662822eeea43b3ff8c",
+      "key": "07f22f5197d82a5c755bc8310a16e968",
       "line": 241,
       "relation": "positiveCorrelation",
       "source": 2,
@@ -2952,23 +3665,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -3000,16 +3729,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Quinine pretreatment protected RAW264.7 macrophages (Fig. 8b and Supplementary Fig. 8c,d) and human macrophages (Fig. 8c) from heme-induced inhibition of phagocytosis and actin cytoskeleton changes (Supplementary Fig. 8e,f) compared with DMSO-treated cells.",
-      "key": "152c83948c002ce4a0d6e12f9857eaef",
+      "key": "93d2f0da1c9e32a8a67ba65785a007be",
       "line": 242,
       "relation": "negativeCorrelation",
       "source": 2,
@@ -3017,23 +3747,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -3065,16 +3811,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Notably, quinine diminished the association of heme with DOCK8 without affecting the association of heme with MPP1 or LGALS3 in RAW264.7 macrophages (Fig. 8d), suggesting that quinine exerted its protective effect by specifically disrupting the heme-DOCK8 association.",
-      "key": "29ef091cc3ec1521032ea45667ed311e",
+      "key": "9ba363ab1a5d4090c22317071a1236f4",
       "line": 250,
       "relation": "decreases",
       "source": 2,
@@ -3082,23 +3829,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "monocyte": true
-        },
-        "MeSHAnatomy": {
-          "Blood": true
-        },
-        "MeSHDisease": {
-          "Sepsis": true
-        },
-        "Species": {
-          "Escherichia coli": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "monocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Blood",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Sepsis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Escherichia coli",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Aichinger MC",
           "Bennett KL",
@@ -3130,16 +3893,17 @@
           "Vaahtomeri K"
         ],
         "date": "2016-12-01",
-        "db": "PubMed",
-        "db_id": "27798618",
-        "db_name": "Nature immunology",
         "first": "Martins R",
+        "identifier": "27798618",
+        "journal": "Nature immunology",
         "last": "Knapp S",
+        "name": "Heme drives hemolysis-induced susceptibility to infection via disruption of phagocyte functions.",
+        "namespace": "pubmed",
         "pages": "1361-1372",
         "volume": "17"
       },
       "evidence": "Following induction of E. coli peritonitis in wild-type mice, quinine treatment did not affect plasma heme levels, but did lead to a reduction in bacterial counts in blood and liver (Fig. 8f,g and Supplementary Fig. 8g,h), thereby restoring the bacterial clearance capacity of heme-treated mice.",
-      "key": "3f10996eb4606077914e7eff16f00a8c",
+      "key": "49b4e197ce0bfb0f8006828df5d9eedf",
       "line": 260,
       "relation": "negativeCorrelation",
       "source": 2,

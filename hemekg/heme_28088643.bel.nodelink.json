@@ -1,7 +1,9 @@
 {
   "directed": true,
   "graph": {
+    "annotation_curie": [],
     "annotation_list": {},
+    "annotation_miriam": [],
     "annotation_pattern": {
       "Concentration": ".*",
       "Species": ".*",
@@ -58,22 +60,32 @@
       "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
     },
     "path": "heme_28088643.bel",
-    "pybel_version": "0.14.6"
+    "pybel_version": "0.15.0"
   },
   "links": [
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Abstract": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Abstract",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -81,16 +93,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Red blood cell hemolysis in sickle cell disease (SCD) releases free hemoglobin.",
-      "key": "db6f6458e7d64b913f833306ccc09bc7",
+      "key": "2f57ca623097460c5e82a2203d9a3a1b",
       "line": 95,
       "relation": "positiveCorrelation",
       "source": 12,
@@ -98,17 +111,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Abstract": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Abstract",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -116,16 +139,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Red blood cell hemolysis in sickle cell disease (SCD) releases free hemoglobin.",
-      "key": "831810d9d43fc4767437ad0e22db2d16",
+      "key": "aee5f196c97b2e68b1c085a814ee509d",
       "line": 95,
       "relation": "positiveCorrelation",
       "source": 8,
@@ -133,17 +157,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Abstract": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Abstract",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -151,16 +185,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Extracellular hemoglobin and its degradation products, free heme and iron, are highly toxic due to oxidative stress induction and decrease in nitric oxide availability.",
-      "key": "3a3d17ad50a882b682df17fbca1772d7",
+      "key": "589d88e37fab7101be2885e54493944f",
       "line": 101,
       "relation": "increases",
       "source": 8,
@@ -168,17 +203,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Abstract": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Abstract",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -186,16 +231,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Extracellular hemoglobin and its degradation products, free heme and iron, are highly toxic due to oxidative stress induction and decrease in nitric oxide availability.",
-      "key": "d2a669c830d353e62f8cccc125e73126",
+      "key": "f7d2fddb7c25b185cbce294400be30fa",
       "line": 102,
       "relation": "increases",
       "source": 8,
@@ -203,17 +249,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Abstract": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Abstract",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -221,16 +277,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Extracellular hemoglobin and its degradation products, free heme and iron, are highly toxic due to oxidative stress induction and decrease in nitric oxide availability.",
-      "key": "e3b42c6f42fad219cba3ba72b76c3ea8",
+      "key": "a0decd62c7807fc7f6be0d954f3d77dc",
       "line": 103,
       "relation": "increases",
       "source": 8,
@@ -238,17 +295,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Abstract": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Abstract",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -256,16 +323,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Extracellular hemoglobin and its degradation products, free heme and iron, are highly toxic due to oxidative stress induction and decrease in nitric oxide availability.",
-      "key": "603d6b98caa68c6b146bfff309e681d8",
+      "key": "8bc1cb63aead692c5e748699b74d03ea",
       "line": 104,
       "relation": "decreases",
       "source": 8,
@@ -273,17 +341,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -291,16 +369,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Extracellular Hb exhibits a highly toxic nature by scavenging Nitric Oxide (NO) that reduces its bioavailability [1].",
-      "key": "ee5ae572b7435661353f047f80605f6f",
+      "key": "56f0b23e4191f83e0fc23c609bc6c6b1",
       "line": 115,
       "relation": "decreases",
       "source": 8,
@@ -308,17 +387,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Abstract": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Abstract",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -326,16 +415,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Extracellular hemoglobin and its degradation products, free heme and iron, are highly toxic due to oxidative stress induction and decrease in nitric oxide availability.",
-      "key": "21ac98bda457c46dcfbe912a058ae2d4",
+      "key": "6f392bd7e66b9838866bd887a3f7fa84",
       "line": 105,
       "relation": "increases",
       "source": 3,
@@ -343,17 +433,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -361,16 +461,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Hb and its degradation products – free heme and iron - perpetuate oxidative stress, and together with decreased NO availability promote many SCD complications.",
-      "key": "b1a0ddf0a4f8eae9aaec2e1023af0d7a",
+      "key": "844218d932b6c7a42690beed9abb0aa7",
       "line": 122,
       "relation": "increases",
       "source": 3,
@@ -378,17 +479,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Abstract": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Abstract",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -396,16 +507,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Extracellular hemoglobin and its degradation products, free heme and iron, are highly toxic due to oxidative stress induction and decrease in nitric oxide availability.",
-      "key": "a51c0676a5d047bdb7ca0cc3f1fe6a0d",
+      "key": "bd8d28f5c044bb0b85b6c7a9c9627e8d",
       "line": 107,
       "relation": "decreases",
       "source": 3,
@@ -413,17 +525,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -431,16 +553,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Hb and its degradation products – free heme and iron - perpetuate oxidative stress, and together with decreased NO availability promote many SCD complications.",
-      "key": "b5a8e7dbce4b22ed61c4889604239517",
+      "key": "f94c9d06aadeb61d247e2da1a182585a",
       "line": 124,
       "relation": "decreases",
       "source": 3,
@@ -448,18 +571,31 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -467,43 +603,54 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "It is well known that in the presence of H2O2 hemoglobin exhibits a peroxidase-like activity, catalyzed by the heme moiety.",
-      "key": "45290d77eb108aee574bf5b76060a0d5",
+      "key": "9e6c7a92ccc7e656a3abf9ea8b30dd0e",
       "line": 144,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "increases",
       "source": 3,
-      "target": 2
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
-      "key": "ecb5e914be179eed27be20a61cd31899",
+      "key": "6bda32969a210abab48f1bbb71b7910f",
       "relation": "partOf",
       "source": 3,
       "target": 6
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Abstract": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Abstract",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -511,16 +658,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Extracellular hemoglobin and its degradation products, free heme and iron, are highly toxic due to oxidative stress induction and decrease in nitric oxide availability.",
-      "key": "9c69eb95bb7d9f3800bf5a8fa85d43d9",
+      "key": "35ddfe79984f2abfc511b91f80334a65",
       "line": 106,
       "relation": "positiveCorrelation",
       "source": 0,
@@ -528,17 +676,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -546,16 +704,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Hb and its degradation products – free heme and iron - perpetuate oxidative stress, and together with decreased NO availability promote many SCD complications.",
-      "key": "79913883448719ddfe3e39e6f311d54a",
+      "key": "fedb98baf6690a5e9d15928919afda2e",
       "line": 123,
       "relation": "positiveCorrelation",
       "source": 0,
@@ -563,17 +722,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Abstract": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Abstract",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -581,16 +750,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Extracellular hemoglobin and its degradation products, free heme and iron, are highly toxic due to oxidative stress induction and decrease in nitric oxide availability.",
-      "key": "9a9a7bf27eabe3fd66338577707effcd",
+      "key": "d53be05657bffe2abb8894b5f8dda5ad",
       "line": 108,
       "relation": "decreases",
       "source": 0,
@@ -598,17 +768,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -616,16 +796,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Hb and its degradation products – free heme and iron - perpetuate oxidative stress, and together with decreased NO availability promote many SCD complications.",
-      "key": "3ebcd0c16144e12289c0cdb9688230e3",
+      "key": "9132807883202a9cb9742f82356f0053",
       "line": 125,
       "relation": "decreases",
       "source": 0,
@@ -633,17 +814,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Abstract": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Abstract",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -651,16 +842,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Extracellular hemoglobin and its degradation products, free heme and iron, are highly toxic due to oxidative stress induction and decrease in nitric oxide availability.",
-      "key": "d60bdf862fd01a6d01b4bdb1940924ba",
+      "key": "bd080ba2322eb8750da1a3bb9defb3f3",
       "line": 106,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -668,17 +860,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Erythrocytes": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Erythrocytes",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -686,16 +888,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Hb and its degradation products – free heme and iron - perpetuate oxidative stress, and together with decreased NO availability promote many SCD complications.",
-      "key": "82e90c4744e42def319f311dabfac1d6",
+      "key": "0d17fcda81acc52b436fe83c7e527b80",
       "line": 123,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -703,18 +906,31 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -722,16 +938,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Macrophages and liver cells capture large HP-Hb complexes clearing the plasma from free hemoglobin.",
-      "key": "0a2e9ad3bf2fdb3c04c90ea2c5fbd0de",
+      "key": "8304c93a7e94700f5b9b32739e8800c7",
       "line": 131,
       "relation": "decreases",
       "source": 4,
@@ -739,18 +956,31 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -758,16 +988,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "It is seen in Fig. 2 that after incubation with NEAT-HP, Hb has decreased the heme content by 85%, which confirms heme removal ability of NEAT-HP construct.",
-      "key": "c8b8b8c8c3659b57586cbaa83f51f200",
+      "key": "fdc7e1364b03f7fe22f3b6991478efa8",
       "line": 139,
       "relation": "decreases",
       "source": 7,
@@ -775,18 +1006,31 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -794,44 +1038,58 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Moreover, heme scavenging by NEAT-HP markedly decreased hemoglobin-mediated peroxidase activity (Fig. 2), whereas haptoglobin was capable of only a small attenuation of peroxidase activity and hemopexin did not affect it at all.",
-      "key": "49e095834c05b875a73f12a9b25c8497",
+      "key": "2261beb4276d5039c378fc1de9686403",
       "line": 186,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "decreases",
       "source": 7,
-      "target": 2
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
-      "key": "0120063a5d599816d53a72c0e166bb8b",
+      "key": "8221efd667c9d840f4345aeb29f0bef4",
       "relation": "partOf",
       "source": 9,
       "target": 7
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -839,50 +1097,64 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "However, no changes in peroxidase activity were observed after incubation with haptoglobin or hemopexin (Fig. 2).",
-      "key": "dd649114604125ca6b6a973883f30348",
+      "key": "d9d8611092ea53a97df25182f680f196",
       "line": 163,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "causesNoChange",
       "source": 9,
-      "target": 2
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
-      "key": "4b0c6c3dea262a25011f8c9e9c8e8ff9",
+      "key": "39b7ba0e6dac4241fcb9c6cba536fdba",
       "relation": "partOf",
       "source": 11,
       "target": 7
     },
     {
-      "key": "94310bd0a6305827ab6a6fd4c37ecc43",
+      "key": "61557507fe8ed1fba25bc6795c156c61",
       "relation": "partOf",
       "source": 11,
       "target": 6
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -890,38 +1162,52 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Our data demonstrate a significant decrease in peroxidase activity of hemoglobin incubated with NEATHP, indicating heme transfer.",
-      "key": "ece77ce024b369fb439ba148a6ab5cad",
+      "key": "e815e515b6138ebb8528a3f302ee5872",
       "line": 156,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "decreases",
       "source": 11,
-      "target": 2
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -929,38 +1215,52 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Therefore, we demonstrated that an active scavenging of heme by NEAT can reduce peroxidase activity of hemoglobin, whereas passive scavengers cannot.",
-      "key": "ad92bd5260605fab3e9ffbe16586aa17",
+      "key": "7e4ba5fee49639b41d704c3488e8dd53",
       "line": 170,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "decreases",
       "source": 11,
-      "target": 2
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -968,16 +1268,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "Therefore, we demonstrated that an active scavenging of heme by NEAT can reduce peroxidase activity of hemoglobin, whereas passive scavengers cannot.",
-      "key": "91ad5956dd1593d07dec387f468e742b",
+      "key": "85e826bc8243d3b676aaa91a7651b0ce",
       "line": 169,
       "relation": "decreases",
       "source": 11,
@@ -985,18 +1286,31 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -1004,38 +1318,52 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "At the same time, heme bound to NEAT does not catalyze the peroxidase reaction due to inability to interact with H2O2.",
-      "key": "edd36896efddcd05d33ab45faf56a819",
+      "key": "e7e63ba78dcbe5c7af1ed569020b3092",
       "line": 150,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "decreases",
       "source": 6,
-      "target": 2
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -1043,16 +1371,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "This ability of NEAT can decrease the level of NO scavenging and oxidative stress in SCD.",
-      "key": "f25533623adaea540163b50da0168e6e",
+      "key": "36a96e5ae0fc01b72ff7c2750a5751cc",
       "line": 178,
       "relation": "increases",
       "source": 6,
@@ -1060,18 +1389,31 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -1079,16 +1421,17 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "This ability of NEAT can decrease the level of NO scavenging and oxidative stress in SCD.",
-      "key": "a6e8b8deaf4b3525ed4bfd6ad16bf037",
+      "key": "5111ec73de7a1c51b4363ca50bab2fb6",
       "line": 179,
       "relation": "decreases",
       "source": 6,
@@ -1096,18 +1439,31 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true,
-          "Macrophages": true
-        },
-        "MeSHDisease": {
-          "Anemia, Sickle Cell": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          },
+          {
+            "identifier": "Macrophages",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Anemia, Sickle Cell",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Kurnikova MG",
           "Rafikov R",
@@ -1115,23 +1471,24 @@
           "Sakipov S"
         ],
         "date": "2017-04-01",
-        "db": "PubMed",
-        "db_id": "28088643",
-        "db_name": "Redox biology",
         "first": "Sakipov S",
+        "identifier": "28088643",
+        "journal": "Redox biology",
         "last": "Rafikov R",
+        "name": "Molecular mechanisms of bio-catalysis of heme extraction from hemoglobin.",
+        "namespace": "pubmed",
         "pages": "516-523",
         "volume": "11"
       },
       "evidence": "However, no changes in peroxidase activity were observed after incubation with haptoglobin or hemopexin (Fig. 2).",
-      "key": "edbb25aeab8498f3568124ea5bfca756",
+      "key": "abd27a318391e786232d2f73c250bf7f",
       "line": 162,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "causesNoChange",
       "source": 10,
-      "target": 2
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     }
   ],
   "multigraph": true,

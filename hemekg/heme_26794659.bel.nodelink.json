@@ -1,7 +1,9 @@
 {
   "directed": true,
   "graph": {
+    "annotation_curie": [],
     "annotation_list": {},
+    "annotation_miriam": [],
     "annotation_pattern": {
       "Concentration": ".*",
       "Species": ".*",
@@ -58,19 +60,26 @@
       "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
     },
     "path": "heme_26794659.bel",
-    "pybel_version": "0.14.6"
+    "pybel_version": "0.15.0"
   },
   "links": [
     {
       "annotations": {
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -83,16 +92,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Free heme is a potent trigger of lipid peroxidation and a promoter of inflammation.4–6",
-      "key": "2e218aa0f20ecd7165492f6a4ea4751c",
+      "key": "e2d14a447a0ed3c29fd15da4e94e16a4",
       "line": 94,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -100,14 +110,21 @@
     },
     {
       "annotations": {
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -120,16 +137,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Free heme is a potent trigger of lipid peroxidation and a promoter of inflammation.4–6",
-      "key": "20798a60d1c8aa5fc278a4abc60cd473",
+      "key": "ef3bac82abaa9c49347d6b6e0ceaca8b",
       "line": 95,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -137,14 +155,21 @@
     },
     {
       "annotations": {
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -157,16 +182,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "At high concentrations, heme can act as an endogenous inhibitor of the proteasome and as a trigger of the response to unfolded proteins in vitro.7",
-      "key": "0d738be3d8f4c9edfded71731525122f",
+      "key": "37762cbfb031f761c2a11d5f84f42eed",
       "line": 101,
       "relation": "decreases",
       "source": 4,
@@ -174,23 +200,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -203,16 +245,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Accordingly, heme exposures of more than 10 μM caused the significant and progressive depletion of cellular ATP, which was measured after an 8-h exposure period.",
-      "key": "2f08e7ce486422bfbf92e2f4fd84a35a",
+      "key": "71978fa587c1f11ffb4fbbb69cc11b0f",
       "line": 195,
       "relation": "decreases",
       "source": 4,
@@ -220,23 +263,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -249,16 +308,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Reduced glutathione (GSH) was also depleted after 4 h of heme exposure, indicating that heme induces oxidative stress in exposed cells (Figure 5c).",
-      "key": "21b0cfd73dbf7f8e32ddbb6078ee8f8c",
+      "key": "6004718efbbe5c3ab6630225f7619ef2",
       "line": 208,
       "relation": "decreases",
       "source": 4,
@@ -266,23 +326,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -295,16 +371,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Reduced glutathione (GSH) was also depleted after 4 h of heme exposure, indicating that heme induces oxidative stress in exposed cells (Figure 5c).",
-      "key": "6827a0bdbe777116308029e492243ae7",
+      "key": "c20d15d5b7fe2bda843d0476da4c333e",
       "line": 210,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -312,23 +389,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -341,16 +434,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "These data suggest that the estimated free heme concentrations that occur in the renal tubular system during severe intravascular hemolysis are in the range of heme concentrations that could trigger oxidative stress and cell damage to the renal epithelium.",
-      "key": "0d0a29f966cea81db54d3bdffc031c11",
+      "key": "0beeab9ab686ef363cea3d5552aff16e",
       "line": 221,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -358,26 +452,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "10 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "10 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -390,16 +503,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "In agreement with the electrical cell–substrate impedance sensing data described above, the proteome changes triggered by 10 μM heme were indicative of an adaptive response with prominent induction of HMOX1 and ferritin light (FTL) and heavy (FTH1) chains (Figure 5d,left panel).",
-      "key": "5178be9131da92525c9f10efbc67292c",
+      "key": "f08c3862ba457bc0963b6bdaa45eda28",
       "line": 230,
       "relation": "increases",
       "source": 4,
@@ -407,26 +521,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "10 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "10 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -439,16 +572,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "In agreement with the electrical cell–substrate impedance sensing data described above, the proteome changes triggered by 10 μM heme were indicative of an adaptive response with prominent induction of HMOX1 and ferritin light (FTL) and heavy (FTH1) chains (Figure 5d,left panel).",
-      "key": "f9998a66031a4b5af76ec7e375aa7a0c",
+      "key": "4f7c5fe76489a2150242c739109f58c5",
       "line": 231,
       "relation": "increases",
       "source": 4,
@@ -456,26 +590,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "10 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "10 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -488,16 +641,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "In agreement with the electrical cell–substrate impedance sensing data described above, the proteome changes triggered by 10 μM heme were indicative of an adaptive response with prominent induction of HMOX1 and ferritin light (FTL) and heavy (FTH1) chains (Figure 5d,left panel).",
-      "key": "3f053c9e8a5541e159b245e2ca13d9d1",
+      "key": "cf9b2b5de283305b675721c0ef6c9a91",
       "line": 232,
       "relation": "increases",
       "source": 4,
@@ -505,26 +659,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -537,16 +710,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "However, in the presence of 40 μM heme, the toxic response was characterized by the strong induction of heat shock proteins, namely HSP70 (HSPA1B, HSPA4, HSPA5, DNAJB1), HSP72 (HSPA1A), HSP105 (HSPH1), and HSP10 (HSPE1), as well as the proteasome adaptor protein sequestosome.",
-      "key": "572f5d013ed4da72bfbd0b31c1ffd9f0",
+      "key": "a970d7d50b98e060ea46dbd5876c6419",
       "line": 242,
       "relation": "increases",
       "source": 4,
@@ -554,26 +728,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -586,16 +779,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "However, in the presence of 40 μM heme, the toxic response was characterized by the strong induction of heat shock proteins, namely HSP70 (HSPA1B, HSPA4, HSPA5, DNAJB1), HSP72 (HSPA1A), HSP105 (HSPH1), and HSP10 (HSPE1), as well as the proteasome adaptor protein sequestosome.",
-      "key": "139bb13248a838d724ed47aa5f390e01",
+      "key": "1e7022e4f12896ab64cb17fdc66871a1",
       "line": 243,
       "relation": "increases",
       "source": 4,
@@ -603,26 +797,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -635,16 +848,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "However, in the presence of 40 μM heme, the toxic response was characterized by the strong induction of heat shock proteins, namely HSP70 (HSPA1B, HSPA4, HSPA5, DNAJB1), HSP72 (HSPA1A), HSP105 (HSPH1), and HSP10 (HSPE1), as well as the proteasome adaptor protein sequestosome.",
-      "key": "87490eaac60300f906f378aff68e6c2e",
+      "key": "cdc85322d080f0199d699fe150453144",
       "line": 244,
       "relation": "increases",
       "source": 4,
@@ -652,26 +866,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -684,16 +917,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "However, in the presence of 40 μM heme, the toxic response was characterized by the strong induction of heat shock proteins, namely HSP70 (HSPA1B, HSPA4, HSPA5, DNAJB1), HSP72 (HSPA1A), HSP105 (HSPH1), and HSP10 (HSPE1), as well as the proteasome adaptor protein sequestosome.",
-      "key": "3399bb4212b5599766c670e8c0ce7524",
+      "key": "1af8327af150add23febd33dab5fbe70",
       "line": 245,
       "relation": "increases",
       "source": 4,
@@ -701,26 +935,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -733,16 +986,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "However, in the presence of 40 μM heme, the toxic response was characterized by the strong induction of heat shock proteins, namely HSP70 (HSPA1B, HSPA4, HSPA5, DNAJB1), HSP72 (HSPA1A), HSP105 (HSPH1), and HSP10 (HSPE1), as well as the proteasome adaptor protein sequestosome.",
-      "key": "266c2fc13251355512180155eb7b3e0f",
+      "key": "0416cbfa012a477891885dc83b76f9d4",
       "line": 246,
       "relation": "increases",
       "source": 4,
@@ -750,26 +1004,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -782,16 +1055,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "However, in the presence of 40 μM heme, the toxic response was characterized by the strong induction of heat shock proteins, namely HSP70 (HSPA1B, HSPA4, HSPA5, DNAJB1), HSP72 (HSPA1A), HSP105 (HSPH1), and HSP10 (HSPE1), as well as the proteasome adaptor protein sequestosome.",
-      "key": "c3c64528d9581ee0c212860ef87ae9c1",
+      "key": "8ab5980052ae47d526c47978080dc38f",
       "line": 247,
       "relation": "increases",
       "source": 4,
@@ -799,26 +1073,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -831,16 +1124,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "However, in the presence of 40 μM heme, the toxic response was characterized by the strong induction of heat shock proteins, namely HSP70 (HSPA1B, HSPA4, HSPA5, DNAJB1), HSP72 (HSPA1A), HSP105 (HSPH1), and HSP10 (HSPE1), as well as the proteasome adaptor protein sequestosome.",
-      "key": "a8506e67f1fe0d8c33fc0d345d314c21",
+      "key": "cc5d9a27fcc17a6d7051c098b3c2af81",
       "line": 248,
       "relation": "increases",
       "source": 4,
@@ -848,26 +1142,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -880,16 +1193,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "In the presence of both 10 and 40 μM, the transferrin receptor was identified as the most suppressed protein.",
-      "key": "d95c81f46c0bb37ccc271936a31276bf",
+      "key": "5c4144a1e50b361ebfa5a299fc183c7d",
       "line": 254,
       "relation": "decreases",
       "source": 4,
@@ -897,26 +1211,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -929,16 +1262,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "The ratio of spliced XBP1 to either total XBP1 or unspliced XBP1 was strongly increased by 40 μM heme for 4 and 8 h.",
-      "key": "12cd52a92884a47825cc0b3ed2f34007",
+      "key": "b659b65888207505059c39bb27d7ce2f",
       "line": 260,
       "relation": "increases",
       "source": 4,
@@ -946,26 +1280,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -978,16 +1331,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Ultimately, we found that uncontrolled cellular heme levels can activate the response to unfolded proteins and associated apoptosis pathways in mouse embryonic fibroblast cells.",
-      "key": "de28114b4ab82261554fe02bfda7f029",
+      "key": "728338409e573cddb16ade171aed310d",
       "line": 268,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -995,26 +1349,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1027,16 +1400,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Other studies demonstrated that heme can trigger the activation of Toll-like receptor 4 and inflammasomes, thus leading to inflammatory reactions.5,35–37",
-      "key": "6002793a6499f308f4ad803eebaf082d",
+      "key": "f51694af43a09f999325a32690131e9b",
       "line": 274,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -1044,26 +1418,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1076,16 +1469,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "The above-discussed findings provide strong in vivo evidence that high concentrations of ferric Hb(Fe3+) and free heme can accumulate in the renal cortex during hemolysis.",
-      "key": "c95bb8a5076367132e012213ba8d67f7",
+      "key": "92a6cb432206b6a0353e8ebec56d1e9e",
       "line": 293,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -1093,26 +1487,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "20 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "20 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1125,16 +1538,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "However, at higher heme concentrations (20 and 40 μM), we observed a cytotoxic response with the irreversible breakdown of the epithelial barrier.",
-      "key": "52e05ebbb6d53b11720d94f3883fcfd6",
+      "key": "e56dab492290fb9d87a3df80116038c9",
       "line": 300,
       "relation": "negativeCorrelation",
       "source": 4,
@@ -1142,14 +1556,21 @@
     },
     {
       "annotations": {
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1162,16 +1583,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Free heme is a potent trigger of lipid peroxidation and a promoter of inflammation.4–6",
-      "key": "19334f08bd8c98ac3f8b49abe686d6b8",
+      "key": "ac718ad2239393a60ca64071cccb148f",
       "line": 94,
       "relation": "positiveCorrelation",
       "source": 10,
@@ -1179,14 +1601,21 @@
     },
     {
       "annotations": {
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1199,16 +1628,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Free heme is a potent trigger of lipid peroxidation and a promoter of inflammation.4–6",
-      "key": "fd75620ef6cc8b51edfa4fcdfe129f69",
+      "key": "6099745f397869e19ae61d2f0d9df86e",
       "line": 95,
       "relation": "positiveCorrelation",
       "source": 33,
@@ -1216,17 +1646,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1239,16 +1679,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Free Hb is bound by the plasma protein haptoglobin, and the large molecular size Hb: Hp complexes are ultimately cleared by spleen and liver macrophages expressing the Hb scavenger receptor CD163.8",
-      "key": "1f863f3104d8d3216ca4549bbd590c53",
+      "key": "e5920f92374432a53d9fba65048b7f57",
       "line": 109,
       "relation": "decreases",
       "source": 18,
@@ -1256,23 +1697,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Tubules": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Tubules",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1285,16 +1742,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Hp treatment prevented renal Hb exposure.",
-      "key": "73b32607b3a4b882591c41b960ba5e04",
+      "key": "1ba98d0f919d91ff0bd046cf8467df1f",
       "line": 176,
       "relation": "decreases",
       "source": 18,
@@ -1302,29 +1760,51 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "20 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "MeSHDisease": {
-          "Hemoglobinuria": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "20 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemoglobinuria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1337,16 +1817,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "The prevention of renal Hb filtration by Hp may be a therapeutic strategy to block renal Hb exposure and to rescue renal function in patients with severe hemoglobinuria.",
-      "key": "16aefdc8a8da811178c29ef595c08bb2",
+      "key": "344d6d746a6524243cd1f01965e292f2",
       "line": 309,
       "relation": "decreases",
       "source": 18,
@@ -1354,23 +1835,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1383,16 +1880,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "No high-spin ferric Hb was present in the control tissues or renal tissues of old blood-transfused, Hp-treated guinea pigs.",
-      "key": "f167df27df4cb881d433f71cc1fe817a",
+      "key": "5a790b32796f37b6ef033330ca2049e5",
       "line": 162,
       "relation": "negativeCorrelation",
       "source": 18,
@@ -1400,23 +1898,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1429,37 +1943,51 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "In control, new blood-transfused, and old bloodtransfused, Hp-treated animals, 4-HNE was not detected.",
-      "key": "0bb316840e524d0437c7f3af46b3efb2",
+      "key": "cae477aad4f68ed108fe46d9989c69a9",
       "line": 188,
       "relation": "decreases",
       "source": 18,
-      "target": 0
+      "target": 1
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1472,16 +2000,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Old blood transfusion resulted in systemic free Hb total exposure (AUC0–∞) of 4600 μmol heme-h/l, which was primarily cleared by the kidney within 24 h.",
-      "key": "fdc9588f9faed73e6bc809d2a0baaffa",
+      "key": "02fcb276b779d3c9a1ac9598f8d179b4",
       "line": 137,
       "relation": "positiveCorrelation",
       "source": 16,
@@ -1489,23 +2018,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Tubules": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Tubules",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1518,16 +2063,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "In old blood-transfused animals, strong Hb and iron deposition was observed in the tubule lumen and epithelial cells, respectively.",
-      "key": "8c1b758a4c06504789aa41f7cec5e91d",
+      "key": "6a786fe2857dd35207c164b0fc3910f2",
       "line": 170,
       "relation": "positiveCorrelation",
       "source": 16,
@@ -1535,20 +2081,33 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1561,16 +2120,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Old blood transfusion resulted in systemic free Hb total exposure (AUC0–∞) of 4600 μmol heme-h/l, which was primarily cleared by the kidney within 24 h.",
-      "key": "2cb1880c6079254aa1442f9d06c001d5",
+      "key": "312408bd3eb9bcbee529d3342e5c1dee",
       "line": 138,
       "relation": "negativeCorrelation",
       "source": 16,
@@ -1578,23 +2138,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1607,16 +2183,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Immunofluorescence confirmed that renal Hb exposure triggered overexpression of HMOX1 and the unfolded protein response (UPR) chaperone HSP70 in tubule epithelial cells (Figure 2d).",
-      "key": "e2b99f2b26258288e4b1ff31ad587f23",
+      "key": "9cee48332512ac3c2a2ed90f44bf3827",
       "line": 147,
       "relation": "increases",
       "source": 16,
@@ -1624,23 +2201,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1653,16 +2246,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Immunofluorescence confirmed that renal Hb exposure triggered overexpression of HMOX1 and the unfolded protein response (UPR) chaperone HSP70 in tubule epithelial cells (Figure 2d).",
-      "key": "852ed09bd1bffa39c390c25a59d1a47d",
+      "key": "2a9fb8438b7f56141219cc40af9c208f",
       "line": 148,
       "relation": "increases",
       "source": 16,
@@ -1670,17 +2264,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1693,16 +2297,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Therefore, acute kidney injury (AKI) remains an important complication of acute and severe intravascular hemolysis.",
-      "key": "ed87f4e70ee988c4ece507bfbc26a15a",
+      "key": "d1dc640faef1c7f3fc2619532b3ed23c",
       "line": 115,
       "relation": "positiveCorrelation",
       "source": 32,
@@ -1710,26 +2315,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1742,16 +2366,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "The above-discussed findings provide strong in vivo evidence that high concentrations of ferric Hb(Fe3+) and free heme can accumulate in the renal cortex during hemolysis.",
-      "key": "8d60cc7a951e4132310c9684ae0808a6",
+      "key": "bdee4c7af1a009e3fe622a56e719295a",
       "line": 292,
       "relation": "positiveCorrelation",
       "source": 32,
@@ -1759,26 +2384,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1791,16 +2435,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "The above-discussed findings provide strong in vivo evidence that high concentrations of ferric Hb(Fe3+) and free heme can accumulate in the renal cortex during hemolysis.",
-      "key": "ddf0b6b3f62f26163a504c4d8d588e68",
+      "key": "c28c401f2d64b52c9e5651206e6a8370",
       "line": 293,
       "relation": "positiveCorrelation",
       "source": 32,
@@ -1808,17 +2453,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1831,16 +2486,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Therefore, acute kidney injury (AKI) remains an important complication of acute and severe intravascular hemolysis.",
-      "key": "8e3695f32a843015b6c73d47c2249966",
+      "key": "a31cdc8cf645af63c4f8ae7d36c8e5ee",
       "line": 115,
       "relation": "positiveCorrelation",
       "source": 30,
@@ -1848,17 +2504,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1871,16 +2537,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Renal damage has also been reported to occur throughout many other acute hemolytic conditions associated with hemoglobinuria.",
-      "key": "3944c57a8a96002eeb8d6703c9b99619",
+      "key": "1326ade3e5cf56fc01d337f02bf0b3ea",
       "line": 121,
       "relation": "association",
       "source": 30,
@@ -1888,17 +2555,27 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1911,16 +2588,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Renal damage has also been reported to occur throughout many other acute hemolytic conditions associated with hemoglobinuria.",
-      "key": "ec2906030065bda90deafea2754f1b20",
+      "key": "cb9cf33f7a239cbbf517c7d7f9b68751",
       "line": 121,
       "relation": "association",
       "source": 31,
@@ -1928,20 +2606,33 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1954,16 +2645,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Isovolemic transfusion of guinea pigs with 10-unit equivalents of old blood, which consisted of red blood cells that were stored for 28 days, led to moderate hemoglobinuria.",
-      "key": "236d983b6647f150b1212540cf611030",
+      "key": "dbf3595d67f82ea18cadee543ed5a57f",
       "line": 131,
       "relation": "positiveCorrelation",
       "source": 31,
@@ -1971,20 +2663,33 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -1997,16 +2702,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Isovolemic transfusion of guinea pigs with 10-unit equivalents of old blood, which consisted of red blood cells that were stored for 28 days, led to moderate hemoglobinuria.",
-      "key": "ce0b472c91a988da2a6634de6642a189",
+      "key": "7c188f0c93bb8bd5f03b899e8d5e3354",
       "line": 131,
       "relation": "positiveCorrelation",
       "source": 6,
@@ -2014,20 +2720,33 @@
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2040,16 +2759,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Old blood transfusion resulted in systemic free Hb total exposure (AUC0–∞) of 4600 μmol heme-h/l, which was primarily cleared by the kidney within 24 h.",
-      "key": "67a4e2cce626c00e0dd19b76b904413c",
+      "key": "26c353e9488fc112774c122e1abef02b",
       "line": 137,
       "relation": "positiveCorrelation",
       "source": 6,
@@ -2057,23 +2777,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Tubules": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Tubules",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2086,16 +2822,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "In old blood-transfused animals, strong Hb and iron deposition was observed in the tubule lumen and epithelial cells, respectively.",
-      "key": "b4091bafd8e4b0cc149999f5c43fbb17",
+      "key": "c4537b06607b71b2f33dfe617f21f600",
       "line": 170,
       "relation": "positiveCorrelation",
       "source": 6,
@@ -2103,23 +2840,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2132,16 +2885,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Electron paramagnetic resonance (EPR) spectra of renal tissues from old blood-transfused animals were recorded at 6K and showed a strong signal around g=6, which is indicative of high-spin ferric Hb(Fe3+) (Figure 3a).",
-      "key": "f184ab4ff4facc4585dcc0ab8afa66a0",
+      "key": "3bbd5c83aa13f484025534c1d2bf0f39",
       "line": 156,
       "relation": "positiveCorrelation",
       "source": 6,
@@ -2149,26 +2903,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2181,16 +2954,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "First, quantification of high-spin ferric Hb(Fe3+), which is the initial Hb oxidation product resulting from the oxidation of ferrous oxyHb(Fe2+), in the kidneys of the old blood-transfused guinea pigs suggests very high concentrations of ferric Hb can accumulate in renal tissues at 24 h after old blood transfusion.",
-      "key": "a5c1ffeadec8a6fa599139748003d1f4",
+      "key": "e49fcf7c79f65cfa7c7a94b8691f3695",
       "line": 285,
       "relation": "positiveCorrelation",
       "source": 6,
@@ -2198,23 +2972,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Tubules": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Tubules",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2227,83 +3017,57 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "In old blood-transfused animals, strong Hb and iron deposition was observed in the tubule lumen and epithelial cells, respectively.",
-      "key": "720609dd50473c397a34fb424c5b9479",
+      "key": "843ec25b4485c5cfca3f6b8345463090",
       "line": 171,
-      "relation": "positiveCorrelation",
-      "source": 6,
-      "target": 1
-    },
-    {
-      "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
-      },
-      "citation": {
-        "authors": [
-          "Baek JH",
-          "Boretti FS",
-          "Buehler PW",
-          "Deuel JW",
-          "Garcia-Rubio I",
-          "Opitz L",
-          "Schaer CA",
-          "Schaer DJ",
-          "Spahn DR"
-        ],
-        "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
-        "first": "Deuel JW",
-        "last": "Schaer DJ",
-        "pages": "e2064",
-        "volume": "7"
-      },
-      "evidence": "Renal tissues from old blood-transfused animals exhibited 4-HNE-positive staining.",
-      "key": "b0722bec86d15dc190d05a8b21086c61",
-      "line": 183,
       "relation": "positiveCorrelation",
       "source": 6,
       "target": 0
     },
     {
       "annotations": {
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2316,16 +3080,74 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
+        "pages": "e2064",
+        "volume": "7"
+      },
+      "evidence": "Renal tissues from old blood-transfused animals exhibited 4-HNE-positive staining.",
+      "key": "e487bc3d7e62b04d0d6b6fbc453307d5",
+      "line": 183,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Baek JH",
+          "Boretti FS",
+          "Buehler PW",
+          "Deuel JW",
+          "Garcia-Rubio I",
+          "Opitz L",
+          "Schaer CA",
+          "Schaer DJ",
+          "Spahn DR"
+        ],
+        "date": "2016-01-21",
+        "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
+        "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Old blood transfusion resulted in systemic free Hb total exposure (AUC0–∞) of 4600 μmol heme-h/l, which was primarily cleared by the kidney within 24 h.",
-      "key": "483f2f4aca51ffd6df5cd69e6cc1d3fe",
+      "key": "dea2f9ef3c247e16ec0cbb76d18869f9",
       "line": 138,
       "relation": "negativeCorrelation",
       "source": 8,
@@ -2333,23 +3155,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2362,16 +3200,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Electron paramagnetic resonance (EPR) spectra of renal tissues from old blood-transfused animals were recorded at 6K and showed a strong signal around g=6, which is indicative of high-spin ferric Hb(Fe3+) (Figure 3a).",
-      "key": "d6553c43f84176be3ceec4a8a6e46b75",
+      "key": "280ddb2621a3a33cc4270b75a7666441",
       "line": 156,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -2379,26 +3218,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2411,16 +3269,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "First, quantification of high-spin ferric Hb(Fe3+), which is the initial Hb oxidation product resulting from the oxidation of ferrous oxyHb(Fe2+), in the kidneys of the old blood-transfused guinea pigs suggests very high concentrations of ferric Hb can accumulate in renal tissues at 24 h after old blood transfusion.",
-      "key": "6ad23856fe75056eda5b1fd9b283e6b8",
+      "key": "8ae6a3b48479586ef7c1a767a312136c",
       "line": 285,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -2428,23 +3287,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2457,16 +3332,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "No high-spin ferric Hb was present in the control tissues or renal tissues of old blood-transfused, Hp-treated guinea pigs.",
-      "key": "73b795f86034cc42dae05f7281cf9e41",
+      "key": "83f8f193aeae94ecfe3dda33e4ba2486",
       "line": 162,
       "relation": "negativeCorrelation",
       "source": 5,
@@ -2474,26 +3350,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2506,16 +3401,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "The above-discussed findings provide strong in vivo evidence that high concentrations of ferric Hb(Fe3+) and free heme can accumulate in the renal cortex during hemolysis.",
-      "key": "1a7b3ff87c0ebf27f48bb2cb4efeb8bb",
+      "key": "864db3275f3b6eb1ba61f3d9608ccfa1",
       "line": 292,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -2523,23 +3419,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Tubules": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Tubules",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2552,86 +3464,57 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "In old blood-transfused animals, strong Hb and iron deposition was observed in the tubule lumen and epithelial cells, respectively.",
-      "key": "cba8652e7cc0ab59085648321c0147ca",
+      "key": "98ce4b6bf0bd1b8e0ec271672cc82b97",
       "line": 171,
-      "relation": "positiveCorrelation",
-      "source": 1,
-      "target": 6
-    },
-    {
-      "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
-      },
-      "citation": {
-        "authors": [
-          "Baek JH",
-          "Boretti FS",
-          "Buehler PW",
-          "Deuel JW",
-          "Garcia-Rubio I",
-          "Opitz L",
-          "Schaer CA",
-          "Schaer DJ",
-          "Spahn DR"
-        ],
-        "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
-        "first": "Deuel JW",
-        "last": "Schaer DJ",
-        "pages": "e2064",
-        "volume": "7"
-      },
-      "evidence": "Renal tissues from old blood-transfused animals exhibited 4-HNE-positive staining.",
-      "key": "6fa7e8b33b471ee4bc8b38f637d4061f",
-      "line": 183,
       "relation": "positiveCorrelation",
       "source": 0,
       "target": 6
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2644,16 +3527,80 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
+        "pages": "e2064",
+        "volume": "7"
+      },
+      "evidence": "Renal tissues from old blood-transfused animals exhibited 4-HNE-positive staining.",
+      "key": "96ce02159c536ac966e500efcb779e1a",
+      "line": 183,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Baek JH",
+          "Boretti FS",
+          "Buehler PW",
+          "Deuel JW",
+          "Garcia-Rubio I",
+          "Opitz L",
+          "Schaer CA",
+          "Schaer DJ",
+          "Spahn DR"
+        ],
+        "date": "2016-01-21",
+        "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
+        "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "This ATP depletion was prevented by the addition of the heme scavenger, hemopexin (Figure 5b).",
-      "key": "a6bf1b54a5e7186b8bf2d182786cea5d",
+      "key": "8658c1f7db0a5a9234d5feebfcb821e5",
       "line": 201,
       "relation": "positiveCorrelation",
       "source": 2,
@@ -2661,23 +3608,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "28 days": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "28 days",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2690,16 +3653,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "This ATP depletion was prevented by the addition of the heme scavenger, hemopexin (Figure 5b).",
-      "key": "0454bc8a05aa802b4b75e7dbcc4a46f3",
+      "key": "4ec6019d3d1fd7a40d201919be14b11c",
       "line": 201,
       "relation": "positiveCorrelation",
       "source": 19,
@@ -2707,23 +3671,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2736,16 +3716,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Reduced glutathione (GSH) was also depleted after 4 h of heme exposure, indicating that heme induces oxidative stress in exposed cells (Figure 5c).",
-      "key": "bbe94a53a6c8a1facfebc400b0a11f48",
+      "key": "50c963ba82d43e752ac97b5d795b36b4",
       "line": 209,
       "relation": "negativeCorrelation",
       "source": 3,
@@ -2753,23 +3734,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2782,16 +3779,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Reduced glutathione (GSH) was also depleted after 4 h of heme exposure, indicating that heme induces oxidative stress in exposed cells (Figure 5c).",
-      "key": "1157d1784c565a7ebef3acbc98f04ebf",
+      "key": "1ffb3b635efd5cf4c055535f84ff19f1",
       "line": 209,
       "relation": "negativeCorrelation",
       "source": 11,
@@ -2799,23 +3797,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2828,16 +3842,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Reduced glutathione (GSH) was also depleted after 4 h of heme exposure, indicating that heme induces oxidative stress in exposed cells (Figure 5c).",
-      "key": "d45dd275860490c21287477e9bc0e996",
+      "key": "3dd15b5e93d5d910da60da725e349da0",
       "line": 210,
       "relation": "positiveCorrelation",
       "source": 11,
@@ -2845,23 +3860,39 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Results": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2874,16 +3905,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "These data suggest that the estimated free heme concentrations that occur in the renal tubular system during severe intravascular hemolysis are in the range of heme concentrations that could trigger oxidative stress and cell damage to the renal epithelium.",
-      "key": "8421cf7093d9666c3be9300aee88f21d",
+      "key": "8c7dcdfd1cd0187bc173d1bb9ce4c1a6",
       "line": 221,
       "relation": "positiveCorrelation",
       "source": 11,
@@ -2891,26 +3923,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2923,16 +3974,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Ultimately, we found that uncontrolled cellular heme levels can activate the response to unfolded proteins and associated apoptosis pathways in mouse embryonic fibroblast cells.",
-      "key": "9d317bd6c010d7c66688961b31ab950e",
+      "key": "f13e70327936d1aa01290cbf18175eaa",
       "line": 268,
       "relation": "positiveCorrelation",
       "source": 12,
@@ -2940,26 +3992,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -2972,16 +4043,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Other studies demonstrated that heme can trigger the activation of Toll-like receptor 4 and inflammasomes, thus leading to inflammatory reactions.5,35–37",
-      "key": "a2d7e25d34ab2279c771b262ed92d837",
+      "key": "827efd5899c9794c04d703ad74448766",
       "line": 274,
       "relation": "positiveCorrelation",
       "source": 27,
@@ -2989,26 +4061,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -3021,16 +4112,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Other studies demonstrated that heme can trigger the activation of Toll-like receptor 4 and inflammasomes, thus leading to inflammatory reactions.5,35–37",
-      "key": "11e8eca0f622c4e755926406662271b7",
+      "key": "876a5e03d278518a004ef41e15c7ac40",
       "line": 275,
       "relation": "positiveCorrelation",
       "source": 27,
@@ -3038,26 +4130,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "40 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "40 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -3070,16 +4181,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "Other studies demonstrated that heme can trigger the activation of Toll-like receptor 4 and inflammasomes, thus leading to inflammatory reactions.5,35–37",
-      "key": "381555be65a0d69078a414257d1523b1",
+      "key": "54bb57e8d35f27820d0578d48867c5ed",
       "line": 275,
       "relation": "positiveCorrelation",
       "source": 9,
@@ -3087,26 +4199,45 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "epithelial cell": true
-        },
-        "Concentration": {
-          "20 μM": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "Species": {
-          "Cavia porcellus": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        },
-        "TimePoint": {
-          "4 hours": true
-        }
+        "Cell": [
+          {
+            "identifier": "epithelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "Concentration": [
+          {
+            "identifier": "20 μM",
+            "namespace": "Concentration"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Cavia porcellus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Baek JH",
           "Boretti FS",
@@ -3119,16 +4250,17 @@
           "Spahn DR"
         ],
         "date": "2016-01-21",
-        "db": "PubMed",
-        "db_id": "26794659",
-        "db_name": "Cell death &amp; disease",
         "first": "Deuel JW",
+        "identifier": "26794659",
+        "journal": "Cell death & disease",
         "last": "Schaer DJ",
+        "name": "Hemoglobinuria-related acute kidney injury is driven by intrarenal oxidative reactions triggering a heme toxicity response.",
+        "namespace": "pubmed",
         "pages": "e2064",
         "volume": "7"
       },
       "evidence": "However, at higher heme concentrations (20 and 40 μM), we observed a cytotoxic response with the irreversible breakdown of the epithelial barrier.",
-      "key": "1816cf617f622a4a2076c6aaa1c557ee",
+      "key": "d2004237151717bd84b937ad21dafce5",
       "line": 300,
       "relation": "negativeCorrelation",
       "source": 7,
@@ -3138,15 +4270,6 @@
   "multigraph": true,
   "nodes": [
     {
-      "bel": "a(CHEBI:\"4-hydroxynon-2-enal\")",
-      "concept": {
-        "name": "4-hydroxynon-2-enal",
-        "namespace": "CHEBI"
-      },
-      "function": "Abundance",
-      "id": "5214ee51eb5785e43a57c9aad6887b27"
-    },
-    {
       "bel": "a(CHEBI:\"iron(2+)\")",
       "concept": {
         "name": "iron(2+)",
@@ -3154,6 +4277,15 @@
       },
       "function": "Abundance",
       "id": "be7ed197cc239803fafad58c7dc415ba"
+    },
+    {
+      "bel": "a(CHEBI:4-hydroxynon-2-enal)",
+      "concept": {
+        "name": "4-hydroxynon-2-enal",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "4696d87f7d2f60d6dba0d595533e5cf3"
     },
     {
       "bel": "a(CHEBI:ATP)",

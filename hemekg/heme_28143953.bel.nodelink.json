@@ -1,7 +1,9 @@
 {
   "directed": true,
   "graph": {
+    "annotation_curie": [],
     "annotation_list": {},
+    "annotation_miriam": [],
     "annotation_pattern": {
       "Concentration": ".*",
       "Species": ".*",
@@ -58,16 +60,20 @@
       "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
     },
     "path": "heme_28143953.bel",
-    "pybel_version": "0.14.6"
+    "pybel_version": "0.15.0"
   },
   "links": [
     {
       "annotations": {
-        "TextLocation": {
-          "Introduction": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -87,16 +93,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "The major regulator of iron homeostasis is hepcidin (reviewed by Ganz1), which is directly down-regulated by stimulated activity of erythropoiesis.2",
-      "key": "a67cb0f925af523c17bdc8d8274682e6",
+      "key": "e617413c5a0fd314365ad26b3444601a",
       "line": 94,
       "relation": "positiveCorrelation",
       "source": 10,
@@ -104,11 +111,15 @@
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Introduction": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -128,16 +139,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "The major regulator of iron homeostasis is hepcidin (reviewed by Ganz1), which is directly down-regulated by stimulated activity of erythropoiesis.2",
-      "key": "bd83dadb344d8e6d7274f0757920eb5f",
+      "key": "780d4ceea66c7a5528a02f14d79c967d",
       "line": 94,
       "relation": "positiveCorrelation",
       "source": 7,
@@ -145,11 +157,15 @@
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Introduction": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -169,16 +185,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "The major regulator of iron homeostasis is hepcidin (reviewed by Ganz1), which is directly down-regulated by stimulated activity of erythropoiesis.2",
-      "key": "b415f5eb54300633243170ef619fffe7",
+      "key": "77b1321a7fff3cde48f3c6d796673d77",
       "line": 95,
       "relation": "decreases",
       "source": 9,
@@ -186,20 +203,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Spleen": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -219,16 +249,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Therefore, hemolytic anemia in CEP mice activates a compensatory stress erythropoiesis with no sign of ineffective erythropoiesis.",
-      "key": "aec673899f02b5450a408189692ca6e5",
+      "key": "dfbae8d8214b1d3c74671d6686892c73",
       "line": 172,
       "relation": "positiveCorrelation",
       "source": 9,
@@ -236,17 +267,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Urine": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Urine",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -266,16 +307,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Type I porphyrins (Uro and Copro) were increased in urine and feces (data not shown) and in RBCs of CEP mice (Table 1).",
-      "key": "8b7dcd586d34fb80c9ce8d9b35823e79",
+      "key": "3520be82d5f86ee5e28bb2ba63c395aa",
       "line": 106,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -283,17 +325,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Urine": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Urine",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -313,16 +365,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Type I porphyrins (Uro and Copro) were increased in urine and feces (data not shown) and in RBCs of CEP mice (Table 1).",
-      "key": "1d9ce951a251a36ea8400d025786b4e1",
+      "key": "4f21c5377f3141d5df85f4eb926ed87d",
       "line": 107,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -330,17 +383,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -360,16 +423,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Congenital erythropoietic porphyria mice showed increased serum bilirubin and LDH levels (Table 1), with almost undetectable levels of Hp and Hpx (Figure 1A and B, respectively), which was strongly indicative of hemolytic anemia.",
-      "key": "a824415371f0a132a3cad6ad1b5e1418",
+      "key": "ec8d9566591bb3cb368b82524d533119",
       "line": 116,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -377,17 +441,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -407,16 +481,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Congenital erythropoietic porphyria mice showed increased serum bilirubin and LDH levels (Table 1), with almost undetectable levels of Hp and Hpx (Figure 1A and B, respectively), which was strongly indicative of hemolytic anemia.",
-      "key": "81e020b2ef47ad5badf6d16e1ef9986f",
+      "key": "6fb2bee1147784bde0dca0b60af0e643",
       "line": 117,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -424,17 +499,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -454,16 +539,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Congenital erythropoietic porphyria mice showed increased serum bilirubin and LDH levels (Table 1), with almost undetectable levels of Hp and Hpx (Figure 1A and B, respectively), which was strongly indicative of hemolytic anemia.",
-      "key": "7b1cf33a9c06fb7383e3b346096843c9",
+      "key": "bc4afba38b46df746d66b53642418317",
       "line": 118,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -471,17 +557,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -501,16 +597,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Congenital erythropoietic porphyria mice showed increased serum bilirubin and LDH levels (Table 1), with almost undetectable levels of Hp and Hpx (Figure 1A and B, respectively), which was strongly indicative of hemolytic anemia.",
-      "key": "55d2a076768402af025db68fa38a093f",
+      "key": "582c325873aff2f6387b2f5541fad315",
       "line": 119,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -518,20 +615,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -551,16 +661,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "The Hp plasma concentration was very low in CEP mice (Figure 1A), probably because of an increased rate of its endocytosis and subsequent lysosomal degradation.",
-      "key": "f19b9fb3b949cd7884f94e15782b1e6b",
+      "key": "c683f3dd532dcbb65fd7fdb1746ac936",
       "line": 236,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -568,20 +679,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -601,40 +725,54 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "These data suggest that erythrocytes surviving in the circulation are more resistant to in vitro hemolysis: they are likely to correspond to reticulocytes and could explain the increased G6PD activity in CEP erythrocytes (Table 1).",
-      "key": "73f88179c4634779f6d4be505dcffb3b",
+      "key": "f98a46ea77ec5e8b2706d72aba146b29",
       "line": 139,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "positiveCorrelation",
       "source": 26,
-      "target": 12
+      "target": 12,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Spleen": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -654,16 +792,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Indeed, in this organ, there was a strong increase in the total number of erythroblasts at all stages of differentiation (Figure 2C).",
-      "key": "9f91c183d04cef65ec6fbe4bf1d4641a",
+      "key": "b0869e0d9835ec2aa51a4fe41b34e66d",
       "line": 146,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -671,20 +810,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Spleen": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -704,16 +856,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "However, in contrast to the bone marrow, there was no significant decrease between intermediate and late erythroblasts (Figure 2C) and we observed decreased rather than increased apoptosis, as usually observed in ineffective erythropoiesis22,23 (Figure 2D).",
-      "key": "acd153e23bf22cbf46ab7074fb35a1a3",
+      "key": "e8de1353717d88cdf078bea5f303850d",
       "line": 155,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -721,20 +874,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Spleen": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -754,16 +920,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "We thus analyzed BMP4 expression level in CEP mice and show its strong increase in the red pulp of the spleen (Figure 2E), likely contributing to the rapid formation of stress burst-forming unit erythroid progenitors (BFU-Es) as a consequence of the high levels of erythropoietin (Epo) in these mice (Table 1).",
-      "key": "daddce458990e6ae622d1f3e7de5fb1d",
+      "key": "8b7db1468d49d1812ec4310537add6bc",
       "line": 165,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -771,20 +938,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -804,16 +984,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "As expected, hepcidin was markedly reduced, both in the liver (at the mRNA level) and in the serum (Figure 3A and B).",
-      "key": "d7b7b7d10e4c4120288dfa66f40b45d4",
+      "key": "003d2108a3f2a4f38faaafb470be714f",
       "line": 179,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -821,20 +1002,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -854,16 +1048,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Fam132b mRNA expression in bone marrow cells was significantly increased (30-fold compared to WT mice) (Figure 3C).",
-      "key": "7a5d39b64501cccd2ca9ccf551ba9d88",
+      "key": "f132fde2c1bec029b4ec2d5dfb4d3918",
       "line": 186,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -871,20 +1066,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Duodenum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Duodenum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -904,16 +1112,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Using isolated duodenal loops to measure the transepithelial iron transport, we found that CEP mice presented a higher rate of iron absorption than the WT mice, although the differences between the area under the curves did not reach statistical significance (Figure 3D).",
-      "key": "397826958a9ec8fe9b2f8047bb974b9c",
+      "key": "e985332a967710f17fbe4b0570cc497d",
       "line": 196,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -921,20 +1130,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -954,16 +1176,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Serum iron was also increased in CEP mice, but this did not lead to elevated Tf saturation because Tf was also significantly increased, which is reminiscent of iron deficiency anemia and facilitates iron delivery to a larger number of erythroblasts (Table 1 and Figure 3G).",
-      "key": "26e9c5c263ca28d5f679f3c6372550aa",
+      "key": "fb20342de161fc79ff59877568371c98",
       "line": 213,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -971,20 +1194,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1004,16 +1240,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Iron was also detected in the macrophages of the red pulp of CEP mice, while almost no iron deposit was observed in the spleen of Hjv–/– mice (Figure 4B), confirming that Hb and “free” heme are the likely source of macrophage iron accumulation.",
-      "key": "fc9e379e8dc46801cc30dc0b094aeec5",
+      "key": "841ce47418fdce2f8dd4dfed0b0ff722",
       "line": 228,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -1021,20 +1258,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1054,16 +1304,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "As expected, Perl’s staining of CEP kidneys showed significant accumulation of iron in the renal cortical part, particularly in the proximal tubules (Figure 6A).",
-      "key": "13b96ebe3cf2f3e188cd437ea6b97abf",
+      "key": "a37a845260411e013ffe218c719e9cb2",
       "line": 285,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -1071,20 +1322,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Duodenum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Duodenum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1104,16 +1368,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "In addition, we observed an increase of ferroportin protein expression in duodenal enterocytes (Figure 3E and F).",
-      "key": "0411bddafcb3ff634ec24d5fe4269744",
+      "key": "afc3b78fa851a42f03a9b91f43e406a1",
       "line": 203,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -1121,20 +1386,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1154,16 +1432,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "In addition, despite an increase in ferritin expression, ferroportin expression was also induced in the liver of CEP mice (Figure 4E), suggesting an increase of iron release in the circulation to satisfy the high iron demand.",
-      "key": "2b4ee773e793c54fb515bdaa54ff77ef",
+      "key": "c8cfa2e41bf675d6f1ee8c1acf78540c",
       "line": 269,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -1171,20 +1450,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1204,16 +1496,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Serum iron was also increased in CEP mice, but this did not lead to elevated Tf saturation because Tf was also significantly increased, which is reminiscent of iron deficiency anemia and facilitates iron delivery to a larger number of erythroblasts (Table 1 and Figure 3G).",
-      "key": "5a9e2c5b40cf7a77b4c4a13fe9f5b875",
+      "key": "24802b6f6a2934490b8ab7f36bfe9339",
       "line": 214,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -1221,20 +1514,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1254,16 +1560,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "As expected, serum ferritin was significantly increased in CEP mice (Figure 3H).",
-      "key": "7c963bcedd2c0ac3295e56f33d805b7d",
+      "key": "31dac13d947ffdd477e4e27dc881a985",
       "line": 219,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -1271,20 +1578,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1304,16 +1624,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Ferritin protein level was significantly increased in the cortex but not in the medulla of CEP mice, confirming exclusive iron handing in the proximal renal tubules in these mice (Figure 6B); no change in the mRNA-expression of ferritin was observed (Figure 6B).",
-      "key": "68f22bb84eb1c137771ae42df9105ef1",
+      "key": "ea1ac424d68672cae5b76292887c68d8",
       "line": 294,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -1321,20 +1642,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1354,16 +1688,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Interestingly, in both liver and spleen, the expression of the Hb-Hp receptor (CD163)29 was found to be fully suppressed at both the mRNA and protein levels (Figure 4C and D and Online Supplementary Figure S1B), suggesting a slowdown of Hb uptake in macrophages which may prevent excess iron overload.",
-      "key": "19774635334503c75128fc8ceb6f09e0",
+      "key": "8f244a8d581d33a1cfc66c667ad1d4ec",
       "line": 246,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -1371,20 +1706,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1404,16 +1752,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Interestingly, in both liver and spleen, the expression of the Hb-Hp receptor (CD163)29 was found to be fully suppressed at both the mRNA and protein levels (Figure 4C and D and Online Supplementary Figure S1B), suggesting a slowdown of Hb uptake in macrophages which may prevent excess iron overload.",
-      "key": "f91144b6bf1d87796639b2feba689c40",
+      "key": "e941adce3aed54067a8dc220c753e190",
       "line": 247,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -1421,20 +1770,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1454,16 +1816,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "The mRNA level of CD91 was significantly reduced in the liver and was fully suppressed in the spleen (Online Supplementary Figure S1A and B).",
-      "key": "8f8969f14547796abc9784738447b628",
+      "key": "07c270932a61e9219414f760f4137cfe",
       "line": 254,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -1471,20 +1834,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1504,16 +1880,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Moreover, HO-1 was highly expressed in the liver of CEP compared to WT mice (Figure 4E), confirming that residual heme uptake is rapidly degraded in the liver.",
-      "key": "1299b15302ddc84d643d1c334d0816cb",
+      "key": "ab9e9e45c4fdcdf961db4d06a61005e0",
       "line": 260,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -1521,20 +1898,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1554,16 +1944,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Interestingly, in contrast with the preserved mRNA levels (data not shown), the immunostaining of the endocytic receptor megalin/cubilin complexes revealed evidence of increased cubilin protein expression (Figure 5B) with no significant changes in megalin protein abundance (data not shown).",
-      "key": "9fc881decdef409edc90db99e2530af6",
+      "key": "6c79d12411a6ba1b75dabc96f469a5c5",
       "line": 278,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -1571,20 +1962,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1604,16 +2008,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "However, the mRNA and protein expression of both TFR1 and DMT1 responsible for iron entry into renal cells were slightly decreased, although not reaching statistical significance (Online Supplementary Figure S4).",
-      "key": "bc41117d86aac97799478aaa1c92a433",
+      "key": "a172436c75a9744f09b7bc9bbd3db4a0",
       "line": 303,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -1621,20 +2026,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1654,16 +2072,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "However, the mRNA and protein expression of both TFR1 and DMT1 responsible for iron entry into renal cells were slightly decreased, although not reaching statistical significance (Online Supplementary Figure S4).",
-      "key": "97ee8276425dfabe9650ffa049e55c1d",
+      "key": "ce5765b1941d9e65181e3ae1724ca6e4",
       "line": 304,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -1671,20 +2090,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1704,16 +2136,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "However, the mRNA and protein expression of both TFR1 and DMT1 responsible for iron entry into renal cells were slightly decreased, although not reaching statistical significance (Online Supplementary Figure S4).",
-      "key": "a9767965c5de82e42977b226f7d26e75",
+      "key": "313f4aa1db8f7b17cf3d42b86ec6e4f6",
       "line": 305,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -1721,20 +2154,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1754,16 +2200,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "However, the mRNA and protein expression of both TFR1 and DMT1 responsible for iron entry into renal cells were slightly decreased, although not reaching statistical significance (Online Supplementary Figure S4).",
-      "key": "ac08c329b6ff442ec4a6df32cf746633",
+      "key": "2bc04948a9dc909cbb895a22e51146a7",
       "line": 306,
       "relation": "negativeCorrelation",
       "source": 26,
@@ -1771,20 +2218,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1804,16 +2264,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Interestingly, the mRNA expression levels of HO-1 and ferroportin, which are both induced transcriptionally by free heme, were enhanced significantly in the cortex, but not in the medulla, of CEP mice, resulting in large increases in their protein abundance (Figure 6).",
-      "key": "f251fb654c7f8399c297371e05f0a890",
+      "key": "0dda55905710bff529d4c8596f18520a",
       "line": 315,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -1821,20 +2282,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1854,16 +2328,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Interestingly, the mRNA expression levels of HO-1 and ferroportin, which are both induced transcriptionally by free heme, were enhanced significantly in the cortex, but not in the medulla, of CEP mice, resulting in large increases in their protein abundance (Figure 6).",
-      "key": "e8dd941e586a409f24405d21a2b6592f",
+      "key": "78940ace1a2c1dc044ac5b5dc9bd6c9a",
       "line": 316,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -1871,17 +2346,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Urine": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Urine",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1901,16 +2386,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Type I porphyrins (Uro and Copro) were increased in urine and feces (data not shown) and in RBCs of CEP mice (Table 1).",
-      "key": "8f48f003326bc75d8a4c42d03fdfab8b",
+      "key": "279ba4d3d50f4a87ecc412a6e276e538",
       "line": 106,
       "relation": "positiveCorrelation",
       "source": 4,
@@ -1918,17 +2404,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Urine": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Urine",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1948,16 +2444,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Type I porphyrins (Uro and Copro) were increased in urine and feces (data not shown) and in RBCs of CEP mice (Table 1).",
-      "key": "05ca234c496283ad798c3336d74a8a6b",
+      "key": "a01436998f4ba05abcb2a0c9b15b5131",
       "line": 107,
       "relation": "positiveCorrelation",
       "source": 2,
@@ -1965,17 +2462,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -1995,16 +2502,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Congenital erythropoietic porphyria mice showed increased serum bilirubin and LDH levels (Table 1), with almost undetectable levels of Hp and Hpx (Figure 1A and B, respectively), which was strongly indicative of hemolytic anemia.",
-      "key": "194c9d7bf4b829e4aafed23e2ef1f0f8",
+      "key": "fba62d087a9a3bcde0e64a5cba27f604",
       "line": 116,
       "relation": "positiveCorrelation",
       "source": 1,
@@ -2012,17 +2520,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2042,16 +2560,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Congenital erythropoietic porphyria mice showed increased serum bilirubin and LDH levels (Table 1), with almost undetectable levels of Hp and Hpx (Figure 1A and B, respectively), which was strongly indicative of hemolytic anemia.",
-      "key": "11b12a54f93af1ca8d611e02807f6b94",
+      "key": "42ca546f66060a1202dcb850b10a767c",
       "line": 117,
       "relation": "positiveCorrelation",
       "source": 13,
@@ -2059,17 +2578,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2089,16 +2618,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Congenital erythropoietic porphyria mice showed increased serum bilirubin and LDH levels (Table 1), with almost undetectable levels of Hp and Hpx (Figure 1A and B, respectively), which was strongly indicative of hemolytic anemia.",
-      "key": "b651d1d8b6d19119c8dc5d8f53100f3a",
+      "key": "8baf0b9735f51e6070f14d02fdf7c5d3",
       "line": 118,
       "relation": "negativeCorrelation",
       "source": 20,
@@ -2106,17 +2636,27 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2136,16 +2676,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Congenital erythropoietic porphyria mice showed increased serum bilirubin and LDH levels (Table 1), with almost undetectable levels of Hp and Hpx (Figure 1A and B, respectively), which was strongly indicative of hemolytic anemia.",
-      "key": "bc2209c077ba21dda1a4d2fe09dc608d",
+      "key": "985a6d6c90f5e84090c57ac741214c72",
       "line": 119,
       "relation": "negativeCorrelation",
       "source": 19,
@@ -2153,20 +2694,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2186,16 +2740,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "The Hp plasma concentration was very low in CEP mice (Figure 1A), probably because of an increased rate of its endocytosis and subsequent lysosomal degradation.",
-      "key": "a1dce48e8a1710e5a3597e43be92d946",
+      "key": "096a84053c0e16ec361fad8887e6df62",
       "line": 236,
       "relation": "negativeCorrelation",
       "source": 19,
@@ -2203,20 +2758,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2236,16 +2804,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "The anemia in CEP mice was severe with significant reduction of Hb levels and RBC number (Table 1), regenerative with marked reticulocytosis (28.8±4.2%) (Table 1), and microcytic and hypochromic with reduced mean cell Hb content (9.95±0.64 pg in CEP vs. 14.5±0.18 in WT mice) (Table 1).",
-      "key": "a33d7eb92c81b9f88d77fe31cb7140d3",
+      "key": "ab25c212f9eeb97dad585564a4e5808c",
       "line": 129,
       "relation": "negativeCorrelation",
       "source": 27,
@@ -2253,20 +2822,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2286,16 +2868,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "The anemia in CEP mice was severe with significant reduction of Hb levels and RBC number (Table 1), regenerative with marked reticulocytosis (28.8±4.2%) (Table 1), and microcytic and hypochromic with reduced mean cell Hb content (9.95±0.64 pg in CEP vs. 14.5±0.18 in WT mice) (Table 1).",
-      "key": "8afc6ff57c70e96ba0851348e1d1c650",
+      "key": "f4e2227f7b7bd01c800475a226190913",
       "line": 130,
       "relation": "negativeCorrelation",
       "source": 27,
@@ -2303,20 +2886,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2336,16 +2932,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "The anemia in CEP mice was severe with significant reduction of Hb levels and RBC number (Table 1), regenerative with marked reticulocytosis (28.8±4.2%) (Table 1), and microcytic and hypochromic with reduced mean cell Hb content (9.95±0.64 pg in CEP vs. 14.5±0.18 in WT mice) (Table 1).",
-      "key": "0cdce0962e465ec54b79f3783bb78719",
+      "key": "615061ac676c2d49569dbab295df0584",
       "line": 129,
       "relation": "negativeCorrelation",
       "source": 11,
@@ -2353,20 +2950,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2386,16 +2996,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Iron was also detected in the macrophages of the red pulp of CEP mice, while almost no iron deposit was observed in the spleen of Hjv–/– mice (Figure 4B), confirming that Hb and “free” heme are the likely source of macrophage iron accumulation.",
-      "key": "c4a96e6054656a066b5faec692b05ca7",
+      "key": "b24b62a2be0d3b83d6a53f420bd30792",
       "line": 229,
       "relation": "increases",
       "source": 11,
@@ -2403,20 +3014,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2436,16 +3060,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "The anemia in CEP mice was severe with significant reduction of Hb levels and RBC number (Table 1), regenerative with marked reticulocytosis (28.8±4.2%) (Table 1), and microcytic and hypochromic with reduced mean cell Hb content (9.95±0.64 pg in CEP vs. 14.5±0.18 in WT mice) (Table 1).",
-      "key": "aea19c8dd7bbb90ce568c1614050dfaa",
+      "key": "c2bca5ee09599f74300b34b0060c44f4",
       "line": 130,
       "relation": "negativeCorrelation",
       "source": 8,
@@ -2453,20 +3078,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2486,40 +3124,54 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "These data suggest that erythrocytes surviving in the circulation are more resistant to in vitro hemolysis: they are likely to correspond to reticulocytes and could explain the increased G6PD activity in CEP erythrocytes (Table 1).",
-      "key": "2186db9d308a885b796d84c1093b9525",
+      "key": "36edfa0735231450dba98246e38ab8d8",
       "line": 139,
       "relation": "positiveCorrelation",
       "source": 12,
-      "subject": {
+      "source_modifier": {
         "modifier": "Activity"
       },
       "target": 26
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Spleen": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2539,16 +3191,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Indeed, in this organ, there was a strong increase in the total number of erythroblasts at all stages of differentiation (Figure 2C).",
-      "key": "afc310bf84ba0e439a19bda0a4ef963b",
+      "key": "5b0f266b347c9414b12918406919c47d",
       "line": 146,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -2556,20 +3209,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Spleen": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2589,16 +3255,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "However, in contrast to the bone marrow, there was no significant decrease between intermediate and late erythroblasts (Figure 2C) and we observed decreased rather than increased apoptosis, as usually observed in ineffective erythropoiesis22,23 (Figure 2D).",
-      "key": "4dd3ba6f188855f094aea38bbfbaeb3c",
+      "key": "b5dfa659f83157b88335d8a59883f78c",
       "line": 155,
       "relation": "negativeCorrelation",
       "source": 6,
@@ -2606,20 +3273,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Spleen": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2639,16 +3319,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "We thus analyzed BMP4 expression level in CEP mice and show its strong increase in the red pulp of the spleen (Figure 2E), likely contributing to the rapid formation of stress burst-forming unit erythroid progenitors (BFU-Es) as a consequence of the high levels of erythropoietin (Epo) in these mice (Table 1).",
-      "key": "c0d6012fcd6f06fc92b9a8c754a5d4f3",
+      "key": "506f60c9b5e266cb9258d4b162e9aca0",
       "line": 165,
       "relation": "positiveCorrelation",
       "source": 14,
@@ -2656,20 +3337,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Spleen": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2689,16 +3383,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Therefore, hemolytic anemia in CEP mice activates a compensatory stress erythropoiesis with no sign of ineffective erythropoiesis.",
-      "key": "01cc24e843519a3b8c6495a94475e0fc",
+      "key": "04599cfa232f26ccab1c225d91773b8f",
       "line": 172,
       "relation": "positiveCorrelation",
       "source": 25,
@@ -2706,20 +3401,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "erythrocyte": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2739,16 +3447,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "As expected, hepcidin was markedly reduced, both in the liver (at the mRNA level) and in the serum (Figure 3A and B).",
-      "key": "fb73124627824654f019597ab4c712b5",
+      "key": "8cbd5f79d0effb2c9ee9a5bd28ebaf6b",
       "line": 179,
       "relation": "negativeCorrelation",
       "source": 31,
@@ -2756,20 +3465,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2789,16 +3511,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Fam132b mRNA expression in bone marrow cells was significantly increased (30-fold compared to WT mice) (Figure 3C).",
-      "key": "5f94e061a2c8de3a891fddb5ed5b5899",
+      "key": "1ce471778421b95dad1ea32c161deddf",
       "line": 186,
       "relation": "positiveCorrelation",
       "source": 29,
@@ -2806,20 +3529,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Duodenum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Duodenum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2839,16 +3575,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Using isolated duodenal loops to measure the transepithelial iron transport, we found that CEP mice presented a higher rate of iron absorption than the WT mice, although the differences between the area under the curves did not reach statistical significance (Figure 3D).",
-      "key": "c6da06b34e24db9b274b62d4663c0467",
+      "key": "91c898f16c048ccb7fecf454c83ff289",
       "line": 196,
       "relation": "positiveCorrelation",
       "source": 0,
@@ -2856,20 +3593,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2889,16 +3639,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Serum iron was also increased in CEP mice, but this did not lead to elevated Tf saturation because Tf was also significantly increased, which is reminiscent of iron deficiency anemia and facilitates iron delivery to a larger number of erythroblasts (Table 1 and Figure 3G).",
-      "key": "43bb29c18cd5374b8e7ed499e51bbb51",
+      "key": "29a9ffe75efa04ef00002fdc3e886a58",
       "line": 213,
       "relation": "positiveCorrelation",
       "source": 0,
@@ -2906,20 +3657,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2939,16 +3703,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Iron was also detected in the macrophages of the red pulp of CEP mice, while almost no iron deposit was observed in the spleen of Hjv–/– mice (Figure 4B), confirming that Hb and “free” heme are the likely source of macrophage iron accumulation.",
-      "key": "01019536a3ee7876e16ada1902078a32",
+      "key": "785c40ba14ed2d057c392f89ca8778c9",
       "line": 228,
       "relation": "positiveCorrelation",
       "source": 0,
@@ -2956,20 +3721,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -2989,16 +3767,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "As expected, Perl’s staining of CEP kidneys showed significant accumulation of iron in the renal cortical part, particularly in the proximal tubules (Figure 6A).",
-      "key": "ebb26e8d1f10c11deaa302d03ff4caf2",
+      "key": "b5ec04040a2d9174697293d76dffa9cb",
       "line": 285,
       "relation": "positiveCorrelation",
       "source": 0,
@@ -3006,20 +3785,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Duodenum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Duodenum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3039,16 +3831,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "In addition, we observed an increase of ferroportin protein expression in duodenal enterocytes (Figure 3E and F).",
-      "key": "842c0620e572da045b5a6c9b716211d3",
+      "key": "4fd6aab1fbb8a3eb0aa69a9120094986",
       "line": 203,
       "relation": "positiveCorrelation",
       "source": 22,
@@ -3056,20 +3849,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3089,16 +3895,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "In addition, despite an increase in ferritin expression, ferroportin expression was also induced in the liver of CEP mice (Figure 4E), suggesting an increase of iron release in the circulation to satisfy the high iron demand.",
-      "key": "b6109dd731a951892f997ff6d8ad0a71",
+      "key": "cf6cfb43649af2ed33652e783e6bff82",
       "line": 269,
       "relation": "positiveCorrelation",
       "source": 22,
@@ -3106,20 +3913,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3139,16 +3959,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Serum iron was also increased in CEP mice, but this did not lead to elevated Tf saturation because Tf was also significantly increased, which is reminiscent of iron deficiency anemia and facilitates iron delivery to a larger number of erythroblasts (Table 1 and Figure 3G).",
-      "key": "6acdae07651130afaf897bc0e313b36c",
+      "key": "0c827059b64308784a89fa6b442016b3",
       "line": 214,
       "relation": "positiveCorrelation",
       "source": 24,
@@ -3156,20 +3977,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "bone marrow cell": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "bone marrow cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3189,16 +4023,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "As expected, serum ferritin was significantly increased in CEP mice (Figure 3H).",
-      "key": "29a917c0918b2714504a97414227a796",
+      "key": "92c9788ce38bcf84e11d92e2359bb8d5",
       "line": 219,
       "relation": "positiveCorrelation",
       "source": 17,
@@ -3206,20 +4041,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3239,16 +4087,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Ferritin protein level was significantly increased in the cortex but not in the medulla of CEP mice, confirming exclusive iron handing in the proximal renal tubules in these mice (Figure 6B); no change in the mRNA-expression of ferritin was observed (Figure 6B).",
-      "key": "1fe5e109e22a1aabaa4e25b2f1608e75",
+      "key": "85d464266cbc7082ade9339e9a1cf8da",
       "line": 294,
       "relation": "positiveCorrelation",
       "source": 17,
@@ -3256,20 +4105,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Serum": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3289,16 +4151,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Iron was also detected in the macrophages of the red pulp of CEP mice, while almost no iron deposit was observed in the spleen of Hjv–/– mice (Figure 4B), confirming that Hb and “free” heme are the likely source of macrophage iron accumulation.",
-      "key": "84d6920182afd99340a2a10e4a943c27",
+      "key": "cd715c0f0441ebd61949dc1f8334940e",
       "line": 230,
       "relation": "increases",
       "source": 3,
@@ -3306,20 +4169,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3339,16 +4215,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Interestingly, in both liver and spleen, the expression of the Hb-Hp receptor (CD163)29 was found to be fully suppressed at both the mRNA and protein levels (Figure 4C and D and Online Supplementary Figure S1B), suggesting a slowdown of Hb uptake in macrophages which may prevent excess iron overload.",
-      "key": "0d33eb3426b9a47b455dc8e08f9d9ddc",
+      "key": "1ab829455839292f4712c8b1e4e5b305",
       "line": 246,
       "relation": "negativeCorrelation",
       "source": 28,
@@ -3356,20 +4233,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3389,16 +4279,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Interestingly, in both liver and spleen, the expression of the Hb-Hp receptor (CD163)29 was found to be fully suppressed at both the mRNA and protein levels (Figure 4C and D and Online Supplementary Figure S1B), suggesting a slowdown of Hb uptake in macrophages which may prevent excess iron overload.",
-      "key": "c10540789ac95d40591f29fbefab5752",
+      "key": "245a8242fa031d55f5b90a2aa3e4dffb",
       "line": 247,
       "relation": "negativeCorrelation",
       "source": 15,
@@ -3406,20 +4297,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3439,16 +4343,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "The mRNA level of CD91 was significantly reduced in the liver and was fully suppressed in the spleen (Online Supplementary Figure S1A and B).",
-      "key": "fdc855c8a9a7123c87851d8cd4e7f44e",
+      "key": "c56ddf56563341fb4b405ffb217a6dea",
       "line": 254,
       "relation": "negativeCorrelation",
       "source": 33,
@@ -3456,20 +4361,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3489,16 +4407,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Moreover, HO-1 was highly expressed in the liver of CEP compared to WT mice (Figure 4E), confirming that residual heme uptake is rapidly degraded in the liver.",
-      "key": "833469feb61620097bd199c7ef480c57",
+      "key": "a1e1230f8eae14e999af4bda196a0805",
       "line": 260,
       "relation": "positiveCorrelation",
       "source": 18,
@@ -3506,20 +4425,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "macrophage": true
-        },
-        "MeSHAnatomy": {
-          "Liver": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3539,16 +4471,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Interestingly, in contrast with the preserved mRNA levels (data not shown), the immunostaining of the endocytic receptor megalin/cubilin complexes revealed evidence of increased cubilin protein expression (Figure 5B) with no significant changes in megalin protein abundance (data not shown).",
-      "key": "ea5bff9b2cc5dd69db3b0f85cf8bccca",
+      "key": "70c8c32f9d533e5916b891081f8d2685",
       "line": 278,
       "relation": "positiveCorrelation",
       "source": 16,
@@ -3556,20 +4489,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3589,16 +4535,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "However, the mRNA and protein expression of both TFR1 and DMT1 responsible for iron entry into renal cells were slightly decreased, although not reaching statistical significance (Online Supplementary Figure S4).",
-      "key": "1d53065e64d4922f11e863cca12b95ec",
+      "key": "a7f31d9646ac29ffda5767dffe4c0b4f",
       "line": 303,
       "relation": "negativeCorrelation",
       "source": 35,
@@ -3606,20 +4553,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3639,16 +4599,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "However, the mRNA and protein expression of both TFR1 and DMT1 responsible for iron entry into renal cells were slightly decreased, although not reaching statistical significance (Online Supplementary Figure S4).",
-      "key": "95f8e8d03b9708718f739791bee89ef2",
+      "key": "886e76023f5ec38640e1699f18427425",
       "line": 304,
       "relation": "negativeCorrelation",
       "source": 34,
@@ -3656,20 +4617,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3689,16 +4663,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "However, the mRNA and protein expression of both TFR1 and DMT1 responsible for iron entry into renal cells were slightly decreased, although not reaching statistical significance (Online Supplementary Figure S4).",
-      "key": "568eae34d8bd53f61f6a0c347eecc78a",
+      "key": "6a07f1db149f8ece98f348b2db83539a",
       "line": 305,
       "relation": "negativeCorrelation",
       "source": 23,
@@ -3706,20 +4681,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3739,16 +4727,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "However, the mRNA and protein expression of both TFR1 and DMT1 responsible for iron entry into renal cells were slightly decreased, although not reaching statistical significance (Online Supplementary Figure S4).",
-      "key": "0044fbdd22ceabadffa350c741ef9035",
+      "key": "c7a1b44d94918ebccda806aba6d519e7",
       "line": 306,
       "relation": "negativeCorrelation",
       "source": 21,
@@ -3756,20 +4745,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3789,16 +4791,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Interestingly, the mRNA expression levels of HO-1 and ferroportin, which are both induced transcriptionally by free heme, were enhanced significantly in the cortex, but not in the medulla, of CEP mice, resulting in large increases in their protein abundance (Figure 6).",
-      "key": "bd92897311b4a3deeae87c5d21a1335e",
+      "key": "440ceb6fde9d7b20a6487323e4464ee5",
       "line": 315,
       "relation": "positiveCorrelation",
       "source": 30,
@@ -3806,20 +4809,33 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "inner renal cortex cell": true
-        },
-        "MeSHAnatomy": {
-          "Kidney Cortex": true
-        },
-        "MeSHDisease": {
-          "Porphyria, Erythropoietic": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "inner renal cortex cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Porphyria, Erythropoietic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Beaumont C",
           "De Verneuil H",
@@ -3839,16 +4855,17 @@
           "de Franceschi L"
         ],
         "date": "2017-02-01",
-        "db": "PubMed",
-        "db_id": "28143953",
-        "db_name": "Haematologica",
         "first": "Millot S",
+        "identifier": "28143953",
+        "journal": "Haematologica",
         "last": "Karim Z",
+        "name": "Hemolytic anemia repressed hepcidin level without hepatocyte iron overload: lesson from Günther disease model.",
+        "namespace": "pubmed",
         "pages": "260-270",
         "volume": "102"
       },
       "evidence": "Interestingly, the mRNA expression levels of HO-1 and ferroportin, which are both induced transcriptionally by free heme, were enhanced significantly in the cortex, but not in the medulla, of CEP mice, resulting in large increases in their protein abundance (Figure 6).",
-      "key": "83d5502591eab0a98755d83e72aabce6",
+      "key": "358c43d0760afa5dcace9e315338ca01",
       "line": 316,
       "relation": "positiveCorrelation",
       "source": 32,

@@ -1,7 +1,9 @@
 {
   "directed": true,
   "graph": {
+    "annotation_curie": [],
     "annotation_list": {},
+    "annotation_miriam": [],
     "annotation_pattern": {
       "Concentration": ".*",
       "Species": ".*",
@@ -58,16 +60,20 @@
       "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
     },
     "path": "heme_28400318.bel",
-    "pybel_version": "0.14.6"
+    "pybel_version": "0.15.0"
   },
   "links": [
     {
       "annotations": {
-        "TextLocation": {
-          "Introduction": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -86,16 +92,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Excess production of reactive oxygen species (ROS) has been implicated in progression of chronic heart failure as well as in other cardiovascular disorders including ischemia-reperfusion injury and cardiovascular complications of hemolytic diseases [2-7].",
-      "key": "c832906ec82f9010a76cd688f45ec634",
+      "key": "6e5f1f8bb50addfd989c1b3fc7643ec5",
       "line": 93,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -103,11 +110,15 @@
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Introduction": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -126,16 +137,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Excess production of reactive oxygen species (ROS) has been implicated in progression of chronic heart failure as well as in other cardiovascular disorders including ischemia-reperfusion injury and cardiovascular complications of hemolytic diseases [2-7].",
-      "key": "ffcca54bdbb0598287e90c738d91c922",
+      "key": "e9166750944c2fd97d273cec0e7432b8",
       "line": 94,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -143,14 +155,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "smooth muscle cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "smooth muscle cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -169,16 +188,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, heme-derived ROS induce the proliferation of smooth muscle cells, that participate in vasculopathy associated with atherosclerosis and hypertension [15].",
-      "key": "9cb71d5303ce06af162e54cdddb496e1",
+      "key": "c73a980e5b7582d78702504d078a9990",
       "line": 112,
       "relation": "increases",
       "source": 5,
@@ -186,14 +206,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "smooth muscle cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "smooth muscle cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -212,16 +239,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, heme-derived ROS induce the proliferation of smooth muscle cells, that participate in vasculopathy associated with atherosclerosis and hypertension [15].",
-      "key": "52237a25a1c7b284349f7745f34a67bf",
+      "key": "503eb07a63b7aa02d8b86812821b3be1",
       "line": 113,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -229,14 +257,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "smooth muscle cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "smooth muscle cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -255,16 +290,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, heme-derived ROS induce the proliferation of smooth muscle cells, that participate in vasculopathy associated with atherosclerosis and hypertension [15].",
-      "key": "3e403b276931bc101a8bf688f0dede43",
+      "key": "b94ac83e4dcaf076f2c8718d1534a5e7",
       "line": 114,
       "relation": "positiveCorrelation",
       "source": 5,
@@ -272,14 +308,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -298,31 +341,36 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Mechanistically, heme-derived ROS may directly modify Ca2+ handling proteins (such as the RyR2 or SERCA2a) [35, 57], and may also activate intracellular stress kinases, such as CaMKII [58], which in turn phosphorylate the same Ca2+ effectors and ultimately exacerbate Ca2+ mishandling.",
-      "key": "bd0f8c0d1554a592b1a741f7bc052700",
+      "key": "4183673abefb5e4ee725ea1d6525f0cf",
       "line": 255,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "positiveCorrelation",
       "source": 5,
-      "target": 24
+      "target": 24,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Introduction": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -341,16 +389,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Excess production of reactive oxygen species (ROS) has been implicated in progression of chronic heart failure as well as in other cardiovascular disorders including ischemia-reperfusion injury and cardiovascular complications of hemolytic diseases [2-7].",
-      "key": "5e5dfc1cb39a5ca129a8a95b11eb9e4a",
+      "key": "73fb19bf30b4658f8f88e9b3190f51e3",
       "line": 93,
       "relation": "positiveCorrelation",
       "source": 27,
@@ -358,11 +407,15 @@
     },
     {
       "annotations": {
-        "TextLocation": {
-          "Introduction": true
-        }
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -381,16 +434,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Excess production of reactive oxygen species (ROS) has been implicated in progression of chronic heart failure as well as in other cardiovascular disorders including ischemia-reperfusion injury and cardiovascular complications of hemolytic diseases [2-7].",
-      "key": "86542172cbeedd26f72aa713a2c89220",
+      "key": "ff32dd78d75a66d896bcb7fa238a9dc3",
       "line": 94,
       "relation": "positiveCorrelation",
       "source": 28,
@@ -398,14 +452,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "endothelial cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -424,16 +485,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Heme promotes endothelial dysfunction by inducing the expression of adhesion molecules and reducing nitric oxide (NO) availability, which causes vasoconstriction [9-14].",
-      "key": "0d3b0091490e8f5ddcdbe94ee3ad8625",
+      "key": "d4d1efe150abb3033f905e4a2cfda1b1",
       "line": 102,
       "relation": "increases",
       "source": 3,
@@ -441,14 +503,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "endothelial cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -467,31 +536,39 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Heme promotes endothelial dysfunction by inducing the expression of adhesion molecules and reducing nitric oxide (NO) availability, which causes vasoconstriction [9-14].",
-      "key": "d8fd898f53a2f6f1f58bc723ded0543e",
+      "key": "6953d387fd54f60a85e538bc5ee7dfd1",
       "line": 103,
       "relation": "decreases",
       "source": 3,
-      "target": 1
+      "target": 0
     },
     {
       "annotations": {
-        "Cell": {
-          "endothelial cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -510,16 +587,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, heme-derived ROS induce the proliferation of smooth muscle cells, that participate in vasculopathy associated with atherosclerosis and hypertension [15].",
-      "key": "0a85ae33a20ef51f7918d2c8bab3eefa",
+      "key": "f63468dc871d539e1302c0702666b79d",
       "line": 110,
       "relation": "increases",
       "source": 3,
@@ -527,14 +605,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -553,16 +638,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, the mRNA levels of Glutathione reductase (Gsr), -Glutamylcysteine synthetase (-Gcs) and thioredoxin reductase (Thiored red), anti-oxidant systems important in resistance of cardiac cell to oxidative damage [40, 41], were increased to a higher extent in CMs treated with either albumin heme or heme alone, compared to cells treated with Hx-heme (Figure 1F and see Figure 3 in [37]).",
-      "key": "92557a1002a435efb6c6cdd310324c7c",
+      "key": "5c5160886682355900ce2ee438ac929d",
       "line": 163,
       "relation": "increases",
       "source": 3,
@@ -570,14 +656,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -596,16 +689,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, the mRNA levels of Glutathione reductase (Gsr), -Glutamylcysteine synthetase (-Gcs) and thioredoxin reductase (Thiored red), anti-oxidant systems important in resistance of cardiac cell to oxidative damage [40, 41], were increased to a higher extent in CMs treated with either albumin heme or heme alone, compared to cells treated with Hx-heme (Figure 1F and see Figure 3 in [37]).",
-      "key": "3394585d95deaff43acfbbaa2a2628cf",
+      "key": "dc6ecc9f1d90a286951173865fe838e4",
       "line": 164,
       "relation": "increases",
       "source": 3,
@@ -613,14 +707,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -639,16 +740,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, the mRNA levels of Glutathione reductase (Gsr), -Glutamylcysteine synthetase (-Gcs) and thioredoxin reductase (Thiored red), anti-oxidant systems important in resistance of cardiac cell to oxidative damage [40, 41], were increased to a higher extent in CMs treated with either albumin heme or heme alone, compared to cells treated with Hx-heme (Figure 1F and see Figure 3 in [37]).",
-      "key": "6914eabdfb14dd0c7ddf1c64c7739c66",
+      "key": "03647210ae6474b310ab38982d015481",
       "line": 165,
       "relation": "increases",
       "source": 3,
@@ -656,14 +758,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -682,16 +791,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "These data collectively indicate that heart free heme accumulating when Hx is lost is responsible for systolic dysfunction.",
-      "key": "66e389ae95d732995fda81bb87bd6117",
+      "key": "ae8aead9839ecf78f97e1959f01864bc",
       "line": 213,
       "relation": "positiveCorrelation",
       "source": 3,
@@ -699,14 +809,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -725,16 +842,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "In agreement with data on pro-oxidant effects of heme in neonatal mouse CMs (Figure 1D-F), oxidative stress was significantly increased in adult rat CMs exposed to free heme (see Figure 1 in [37]).",
-      "key": "7f870fbfdbd04cc1df167483ffcda550",
+      "key": "f83b32bc8cb1fb5475bbca9eb4e0fa8c",
       "line": 219,
       "relation": "increases",
       "source": 3,
@@ -742,14 +860,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -768,16 +893,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, we measured increased lipid peroxidation in both cells and tissues exposed to free heme, which can be rescued by α-tocopherol, an agent able to react with lipid radicals and interrupt the oxidation reaction.",
-      "key": "07f4553ba8ffc6c5c0e649829b7ad326",
+      "key": "ff91bc5fcf23d5928cc9fe1841b2d301",
       "line": 247,
       "relation": "increases",
       "source": 3,
@@ -785,14 +911,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "endothelial cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -811,31 +944,39 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Heme promotes endothelial dysfunction by inducing the expression of adhesion molecules and reducing nitric oxide (NO) availability, which causes vasoconstriction [9-14].",
-      "key": "10bac8144fa829529b15021f584a6322",
+      "key": "026cad157a1b6ef311fd738ae3454837",
       "line": 104,
       "relation": "negativeCorrelation",
-      "source": 1,
+      "source": 0,
       "target": 7
     },
     {
       "annotations": {
-        "Cell": {
-          "endothelial cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -854,31 +995,39 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Heme promotes endothelial dysfunction by inducing the expression of adhesion molecules and reducing nitric oxide (NO) availability, which causes vasoconstriction [9-14].",
-      "key": "44370e319205cf48de11a6534db95832",
+      "key": "6a27265ec81b9820748f147880716c9c",
       "line": 104,
       "relation": "negativeCorrelation",
       "source": 7,
-      "target": 1
+      "target": 0
     },
     {
       "annotations": {
-        "Cell": {
-          "smooth muscle cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "smooth muscle cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -897,16 +1046,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, heme-derived ROS induce the proliferation of smooth muscle cells, that participate in vasculopathy associated with atherosclerosis and hypertension [15].",
-      "key": "01b0628d1ce50b2ee23270b758b2c163",
+      "key": "30506d7d30b28ae36d35dec60f480f4f",
       "line": 113,
       "relation": "positiveCorrelation",
       "source": 29,
@@ -914,14 +1064,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "smooth muscle cell": true
-        },
-        "TextLocation": {
-          "Introduction": true
-        }
+        "Cell": [
+          {
+            "identifier": "smooth muscle cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -940,16 +1097,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, heme-derived ROS induce the proliferation of smooth muscle cells, that participate in vasculopathy associated with atherosclerosis and hypertension [15].",
-      "key": "e439fe51f0a27d1c9ddbc29fad0a7613",
+      "key": "944469aed25bf3310a56eedb73b16829",
       "line": 114,
       "relation": "positiveCorrelation",
       "source": 30,
@@ -957,14 +1115,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -983,16 +1148,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Hx-heme-treated CMs were protected from heme accumulation, compared to cells treated with albumin-heme or heme alone (Figure 1A), indicating that Hx prevents heme entry in cardiac cells.",
-      "key": "b982ad5706a15f897c92ebd53eec2c25",
+      "key": "d321eda2982e7943342766850a7497de",
       "line": 123,
       "relation": "decreases",
       "source": 16,
@@ -1000,14 +1166,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1026,16 +1199,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, in CMs the heme-mediated induction of the iron exporter Ferroportin (Fpn) was abrogated by Hx treatment while the down-regulation of the iron importer Transferrin receptor 1 (TfR1) was significantly reduced by Hx (see Figure 3 in [37]) further indicating that Hx limits heme-iron accumulation within the cell.",
-      "key": "0a000d9ccfb9dd790faaef51879bb12e",
+      "key": "f2e8faf97e3c545dd81f177f8747349a",
       "line": 132,
       "relation": "decreases",
       "source": 16,
@@ -1043,14 +1217,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1069,16 +1250,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, in CMs the heme-mediated induction of the iron exporter Ferroportin (Fpn) was abrogated by Hx treatment while the down-regulation of the iron importer Transferrin receptor 1 (TfR1) was significantly reduced by Hx (see Figure 3 in [37]) further indicating that Hx limits heme-iron accumulation within the cell.",
-      "key": "ed04676f078bc86a2fd96212a065912d",
+      "key": "e7ff5190f2600d4ed1242c465faecd5f",
       "line": 133,
       "relation": "increases",
       "source": 16,
@@ -1086,14 +1268,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1112,16 +1301,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, the mRNA levels of Fpn and Flvcr1a were increased in Hx-/- mice, whereas those of the iron importers Divalent Metal Transporter 1 (Dmt1) and Tfr1 were decreased (see Figure 4 in [37]).",
-      "key": "92f3d07c76aa22af6923fd5437a9a227",
+      "key": "1c27ce9a1323f7934a54a52bdb025e37",
       "line": 189,
       "relation": "increases",
       "source": 16,
@@ -1129,14 +1319,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1155,16 +1352,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, Hx treatment blunted heme-mediated induction of the heme exporter Feline Leukemia Virus subgroup C Receptor 1(Flvcr1) [31, 38, 39] in H9c2 cells (see Figure 3 in [37]).",
-      "key": "09ed886200620d4ffb73b609789d264c",
+      "key": "b91c8da560556a639db52d9c378e57cd",
       "line": 139,
       "relation": "negativeCorrelation",
       "source": 16,
@@ -1172,14 +1370,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1198,16 +1403,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Being heme a well-known pro-oxidant agent [17], we then evaluated ROS levels in CMs exposed to heme alone or bound to either Hx or albumin. In the presence of Hx-heme complexes, CMs were protected from ROS formation, if compared to CMs treated with either albumin-heme complexes or heme alone (Figure 1D).",
-      "key": "c4eea6773075df018a91aa17888ee627",
+      "key": "be9a0acfe70663eccf8629e91842230b",
       "line": 147,
       "relation": "decreases",
       "source": 16,
@@ -1215,14 +1421,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1241,16 +1454,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Staining of CMs with a fluorescent probe for specific detection of mitochondrial superoxide (Mito-sox) confirmed lower oxidative stress in cells exposed to Hx-heme than in those exposed to albumin-heme or heme alone (Figure 1E).",
-      "key": "06a481d453845302f1b04a725b66a3f5",
+      "key": "356a53b7d32ef283ede8d04c3a16985a",
       "line": 153,
       "relation": "decreases",
       "source": 16,
@@ -1258,14 +1472,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1284,16 +1505,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Both ROS and lipid peroxidation were increased in the heart of Hx-/- mice compared to that of wild-type animals (Figure 2C, D).",
-      "key": "ae2162db4c5b0f2df7f3e87fec74f131",
+      "key": "db15d653e4e35874369737729a7e9a2d",
       "line": 195,
       "relation": "decreases",
       "source": 16,
@@ -1301,14 +1523,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1327,16 +1556,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, the mRNA levels of Glutathione reductase (Gsr), -Glutamylcysteine synthetase (-Gcs) and thioredoxin reductase (Thiored red), anti-oxidant systems important in resistance of cardiac cell to oxidative damage [40, 41], were increased to a higher extent in CMs treated with either albumin heme or heme alone, compared to cells treated with Hx-heme (Figure 1F and see Figure 3 in [37]).",
-      "key": "7d477be5b48a866c7b9481839baf97ac",
+      "key": "c647106fb6e477802c00409f826421db",
       "line": 166,
       "relation": "decreases",
       "source": 16,
@@ -1344,14 +1574,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1370,16 +1607,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, the mRNA levels of Glutathione reductase (Gsr), -Glutamylcysteine synthetase (-Gcs) and thioredoxin reductase (Thiored red), anti-oxidant systems important in resistance of cardiac cell to oxidative damage [40, 41], were increased to a higher extent in CMs treated with either albumin heme or heme alone, compared to cells treated with Hx-heme (Figure 1F and see Figure 3 in [37]).",
-      "key": "15d58ec54579596677deab8cf2801a1a",
+      "key": "3caa8005472c9f99858b84460b74c34c",
       "line": 167,
       "relation": "decreases",
       "source": 16,
@@ -1387,14 +1625,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1413,16 +1658,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, the mRNA levels of Glutathione reductase (Gsr), -Glutamylcysteine synthetase (-Gcs) and thioredoxin reductase (Thiored red), anti-oxidant systems important in resistance of cardiac cell to oxidative damage [40, 41], were increased to a higher extent in CMs treated with either albumin heme or heme alone, compared to cells treated with Hx-heme (Figure 1F and see Figure 3 in [37]).",
-      "key": "3590b93d233c79a954db27da8eb9cd3a",
+      "key": "33935e25f8dbcedeff072c9811a3b499",
       "line": 168,
       "relation": "decreases",
       "source": 16,
@@ -1430,14 +1676,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1456,16 +1709,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "The data were reproduced in H9c2 cells in which we were also able to demonstrate that Hx limits protein nitrosylation, another hallmark of cellular oxidative damage (see Figure 2 in [37]).",
-      "key": "083f2646be53fa2282497143bd2023d0",
+      "key": "3c67fc3b72d76b5ef98d88a8530ff0ee",
       "line": 173,
       "relation": "decreases",
       "source": 16,
@@ -1473,14 +1727,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1499,16 +1760,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, HO-1 mRNA and protein levels were higher in hearts from Hx-/- mice than in controls (Figure 2B). Immunohistochemistry for HO-1 on heart sections indicated higher HO-1 expression in cardiomyocytes from Hx-/- mice than in wild-type animals (Figure 2B).",
-      "key": "039a6a6c686b40b10c2fa99b6387cbf7",
+      "key": "c72ac30c4c466fc756a17df9e81ab359",
       "line": 180,
       "relation": "decreases",
       "source": 16,
@@ -1516,14 +1778,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1542,16 +1811,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, HO-1 mRNA and protein levels were higher in hearts from Hx-/- mice than in controls (Figure 2B). Immunohistochemistry for HO-1 on heart sections indicated higher HO-1 expression in cardiomyocytes from Hx-/- mice than in wild-type animals (Figure 2B).",
-      "key": "25f91dd64b29652ed491b1ef0d83e672",
+      "key": "368b9a7ad3e5d9e5c1812b0bdf253494",
       "line": 181,
       "relation": "decreases",
       "source": 16,
@@ -1559,14 +1829,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1585,16 +1862,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, the mRNA levels of Fpn and Flvcr1a were increased in Hx-/- mice, whereas those of the iron importers Divalent Metal Transporter 1 (Dmt1) and Tfr1 were decreased (see Figure 4 in [37]).",
-      "key": "f85cf0119508ade4c49f789878774d20",
+      "key": "6ecb19b024be29aecd80bbe837e2fa38",
       "line": 187,
       "relation": "decreases",
       "source": 16,
@@ -1602,14 +1880,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1628,16 +1913,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, the mRNA levels of Fpn and Flvcr1a were increased in Hx-/- mice, whereas those of the iron importers Divalent Metal Transporter 1 (Dmt1) and Tfr1 were decreased (see Figure 4 in [37]).",
-      "key": "61185c317fc7e4cb57922107123d4930",
+      "key": "c654842b946096180132489577280580",
       "line": 188,
       "relation": "decreases",
       "source": 16,
@@ -1645,14 +1931,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1671,16 +1964,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Moreover, the mRNA levels of Fpn and Flvcr1a were increased in Hx-/- mice, whereas those of the iron importers Divalent Metal Transporter 1 (Dmt1) and Tfr1 were decreased (see Figure 4 in [37]).",
-      "key": "c37037c437212fcaef090f9332bb8ed2",
+      "key": "5881b582d77ac3d1a8ccc56f28ed605b",
       "line": 190,
       "relation": "increases",
       "source": 16,
@@ -1688,14 +1982,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1714,16 +2015,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Both ROS and lipid peroxidation were increased in the heart of Hx-/- mice compared to that of wild-type animals (Figure 2C, D).",
-      "key": "fb6b2dba98cb2a542f35591d711e39d0",
+      "key": "ea7b589f0aacf7af011be816eb1751d8",
       "line": 196,
       "relation": "decreases",
       "source": 16,
@@ -1731,14 +2033,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1757,16 +2066,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, the oxidative stress responsive gene Gsr was up-regulated in the heart of Hx-/- mice compared to wild-type animals (Figure 2E).",
-      "key": "bdef8c1ba08d263ea95fb8d31a29064c",
+      "key": "df85652e2f92df35c7f1efdf980585bd",
       "line": 202,
       "relation": "decreases",
       "source": 16,
@@ -1774,14 +2084,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1800,16 +2117,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Cardiac contractility was severely impaired in 3 month-old Hx-/- mice compared to wild-type controls, as evidenced by significantly lower fractional shortening (FS) and ejection fraction (EF) (Figure 3A-C).",
-      "key": "40c40b617d7ffc48febc57da37255ce4",
+      "key": "3af8234ca2a37e7311728a96f541199e",
       "line": 208,
       "relation": "negativeCorrelation",
       "source": 16,
@@ -1817,14 +2135,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1843,16 +2168,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "As well as NAC, Hx co-treatment significantly improved systolic Ca2+ transients and accelerated Ca2+ transient decay kinetics, which resulted in a significant improvement of cardiomyocyte contractility (Figure 4A-E).",
-      "key": "2c92116b9ec105bc09824f60347567ac",
+      "key": "f90493ac2d843e48147c23a2629c0198",
       "line": 226,
       "relation": "negativeCorrelation",
       "source": 16,
@@ -1860,14 +2186,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1886,16 +2219,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, CaMKII-dependent phosphorylation of RyR2 (Ser-2814) and Phospholamban (PLB) (Thr-17) were significantly higher in Hx-/- hearts than in wild-type controls (Figure 5C, D).",
-      "key": "e27c72c02365122089e60f8d99b5b49e",
+      "key": "7ecdcb38beef7993dcfc869dde29d714",
       "line": 232,
       "relation": "decreases",
       "source": 16,
@@ -1903,14 +2237,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1929,16 +2270,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, CaMKII-dependent phosphorylation of RyR2 (Ser-2814) and Phospholamban (PLB) (Thr-17) were significantly higher in Hx-/- hearts than in wild-type controls (Figure 5C, D).",
-      "key": "0e8ebca0d55bc1e049e9ed87faaa6517",
+      "key": "5ba317a73fa7a529b2019488c4fc2d06",
       "line": 233,
       "relation": "decreases",
       "source": 16,
@@ -1946,14 +2288,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -1972,49 +2321,57 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, Hx treatment blunted heme-mediated induction of the heme exporter Feline Leukemia Virus subgroup C Receptor 1(Flvcr1) [31, 38, 39] in H9c2 cells (see Figure 3 in [37]).",
-      "key": "4f676171c599fbb4ccddcd457cf16562",
+      "key": "3e72e5f59275c8dbe79c1650e5ec1f6e",
       "line": 139,
       "relation": "negativeCorrelation",
       "source": 14,
       "target": 16
     },
     {
-      "key": "7ba53955740a0ac24b147bf9681c4aaa",
+      "key": "0056a0a8815c859bf36390e7ee939d11",
       "relation": "partOf",
       "source": 36,
       "target": 12
     },
     {
-      "key": "e6bcfd8c0513be7869e0317613017ce0",
+      "key": "52a214cf3c77bd539711bb79579a9f52",
       "relation": "partOf",
       "source": 37,
       "target": 12
     },
     {
-      "key": "43588ed3845ec213d414dcb7c6255279",
+      "key": "bea989c5e300a4917a47bd90f654307f",
       "relation": "partOf",
       "source": 38,
       "target": 12
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -2033,16 +2390,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Cardiac contractility was severely impaired in 3 month-old Hx-/- mice compared to wild-type controls, as evidenced by significantly lower fractional shortening (FS) and ejection fraction (EF) (Figure 3A-C).",
-      "key": "d4fe66ba809a88f7a9578634e51f0605",
+      "key": "ad90d13bf53d951aac5fc75dd8652f4a",
       "line": 208,
       "relation": "negativeCorrelation",
       "source": 25,
@@ -2050,14 +2408,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -2076,16 +2441,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "As well as NAC, Hx co-treatment significantly improved systolic Ca2+ transients and accelerated Ca2+ transient decay kinetics, which resulted in a significant improvement of cardiomyocyte contractility (Figure 4A-E).",
-      "key": "f60b509b453e05f8ce351b95c2387392",
+      "key": "125662c354bb0e896394963ff8df11f4",
       "line": 226,
       "relation": "negativeCorrelation",
       "source": 25,
@@ -2093,14 +2459,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -2119,31 +2492,39 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "As well as NAC, Hx co-treatment significantly improved systolic Ca2+ transients and accelerated Ca2+ transient decay kinetics, which resulted in a significant improvement of cardiomyocyte contractility (Figure 4A-E).",
-      "key": "53532912d58d62a54a77f3383ec25ca2",
+      "key": "6428c51800cdbdb39ef4a4cab1c86c27",
       "line": 225,
       "relation": "negativeCorrelation",
       "source": 25,
-      "target": 2
+      "target": 1
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -2162,16 +2543,17 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "These data collectively indicate that heart free heme accumulating when Hx is lost is responsible for systolic dysfunction.",
-      "key": "ca3a793981edc51750152c423b73a1d8",
+      "key": "2f0c6ab97d4e10ae04e679f7afa3fc47",
       "line": 213,
       "relation": "positiveCorrelation",
       "source": 26,
@@ -2179,14 +2561,21 @@
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -2205,43 +2594,51 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "As well as NAC, Hx co-treatment significantly improved systolic Ca2+ transients and accelerated Ca2+ transient decay kinetics, which resulted in a significant improvement of cardiomyocyte contractility (Figure 4A-E).",
-      "key": "969b548c9d7bea101ef061c2f36f02ea",
+      "key": "117a5e85b8f7920dd1941fe8674d48f8",
       "line": 225,
       "relation": "negativeCorrelation",
-      "source": 2,
+      "source": 1,
       "target": 25
     },
     {
-      "key": "f67b7a5469be77ab623dcb2fa307c8b9",
+      "key": "c4c082e0dff150dde93b1c6e7b3ac828",
       "relation": "hasVariant",
       "source": 19,
       "target": 20
     },
     {
-      "key": "e898bf7322c8b011e82f338582757e17",
+      "key": "2171a30d146198ce7babb329a067d211",
       "relation": "hasVariant",
       "source": 17,
       "target": 18
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Results": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -2260,31 +2657,39 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "As expected, α-tocopherol treatment prevented ROS accumulation and the induction of anti-oxidant genes in the heart (Figure 6A, B and see Figure 8 in [37]).",
-      "key": "9d77e92572cf25865203eef99b1534fe",
+      "key": "10ef17e324cf4a7fd38c7b907f0b6911",
       "line": 239,
       "relation": "decreases",
-      "source": 0,
+      "source": 2,
       "target": 5
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -2303,31 +2708,39 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Consistently, we measured increased lipid peroxidation in both cells and tissues exposed to free heme, which can be rescued by α-tocopherol, an agent able to react with lipid radicals and interrupt the oxidation reaction.",
-      "key": "df9e21ecca2ebedeb7db222d485d78d9",
+      "key": "027c9c4346ecd6a22051e113a8ac7bd2",
       "line": 248,
       "relation": "decreases",
-      "source": 0,
+      "source": 2,
       "target": 10
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -2346,34 +2759,42 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Mechanistically, heme-derived ROS may directly modify Ca2+ handling proteins (such as the RyR2 or SERCA2a) [35, 57], and may also activate intracellular stress kinases, such as CaMKII [58], which in turn phosphorylate the same Ca2+ effectors and ultimately exacerbate Ca2+ mishandling.",
-      "key": "12dd23d8c5bfcfa1eff959f9183391c7",
+      "key": "a24ab8bb8f819fa26206dd33ebbae6d2",
       "line": 255,
       "relation": "positiveCorrelation",
       "source": 24,
-      "subject": {
+      "source_modifier": {
         "modifier": "Activity"
       },
       "target": 5
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -2392,34 +2813,42 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Mechanistically, heme-derived ROS may directly modify Ca2+ handling proteins (such as the RyR2 or SERCA2a) [35, 57], and may also activate intracellular stress kinases, such as CaMKII [58], which in turn phosphorylate the same Ca2+ effectors and ultimately exacerbate Ca2+ mishandling.",
-      "key": "134c4cc4830f5ee56c6ff23886e46e64",
+      "key": "5756e32f2a15fca654fdbd1bc54a0b83",
       "line": 256,
       "relation": "negativeCorrelation",
       "source": 24,
-      "subject": {
+      "source_modifier": {
         "modifier": "Activity"
       },
       "target": 8
     },
     {
       "annotations": {
-        "Cell": {
-          "regular cardiac myocyte": true
-        },
-        "TextLocation": {
-          "Discussion": true
-        }
+        "Cell": [
+          {
+            "identifier": "regular cardiac myocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
       },
       "citation": {
+        "article_type": "Journal Article",
         "authors": [
           "Altruda F",
           "Cimino J",
@@ -2438,36 +2867,28 @@
           "Wagner S"
         ],
         "date": "2017-07-01",
-        "db": "PubMed",
-        "db_id": "28400318",
-        "db_name": "Free radical biology &amp; medicine",
         "first": "Ingoglia G",
+        "identifier": "28400318",
+        "journal": "Free radical biology & medicine",
         "last": "Tolosano E",
+        "name": "Hemopexin counteracts systolic dysfunction induced by heme-driven oxidative stress.",
+        "namespace": "pubmed",
         "pages": "452-464",
         "volume": "108"
       },
       "evidence": "Mechanistically, heme-derived ROS may directly modify Ca2+ handling proteins (such as the RyR2 or SERCA2a) [35, 57], and may also activate intracellular stress kinases, such as CaMKII [58], which in turn phosphorylate the same Ca2+ effectors and ultimately exacerbate Ca2+ mishandling.",
-      "key": "787cce4817aa5c5cd20699d8492976ab",
+      "key": "62d8e23c8d28cd972113a88b3896a566",
       "line": 256,
-      "object": {
-        "modifier": "Activity"
-      },
       "relation": "negativeCorrelation",
       "source": 8,
-      "target": 24
+      "target": 24,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
     }
   ],
   "multigraph": true,
   "nodes": [
-    {
-      "bel": "a(CHEBI:\"alpha-tocopherol\")",
-      "concept": {
-        "name": "alpha-tocopherol",
-        "namespace": "CHEBI"
-      },
-      "function": "Abundance",
-      "id": "3b97d036ad2ec8eb617db903971d5fee"
-    },
     {
       "bel": "a(CHEBI:\"nitric oxide\")",
       "concept": {
@@ -2485,6 +2906,15 @@
       },
       "function": "Abundance",
       "id": "29fcc762deff60bd6b81859f93cc9056"
+    },
+    {
+      "bel": "a(CHEBI:alpha-tocopherol)",
+      "concept": {
+        "name": "alpha-tocopherol",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "eb89b332a0144068de0d64359fb069ba"
     },
     {
       "bel": "a(CHEBI:heme)",
@@ -2647,19 +3077,20 @@
       "id": "d41bc9e65974b04255f353240da82d63"
     },
     {
-      "bel": "p(MGI:Pln, pmod(Ph, Thr, 17))",
+      "bel": "p(MGI:Pln, pmod(go:0006468 ! \"protein phosphorylation\", Thr, 17))",
       "concept": {
         "name": "Pln",
         "namespace": "MGI"
       },
       "function": "Protein",
-      "id": "0777764ab86687bb20180dc398aa3feb",
+      "id": "8b28dc819c69f9d020bf9c058d097179",
       "variants": [
         {
           "code": "Thr",
           "concept": {
-            "name": "Ph",
-            "namespace": "bel"
+            "identifier": "0006468",
+            "name": "protein phosphorylation",
+            "namespace": "go"
           },
           "kind": "pmod",
           "pos": 17
@@ -2676,19 +3107,20 @@
       "id": "01f0574852a441c0f0539f98e141e953"
     },
     {
-      "bel": "p(MGI:Ryr2, pmod(Ph, Ser, 2814))",
+      "bel": "p(MGI:Ryr2, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 2814))",
       "concept": {
         "name": "Ryr2",
         "namespace": "MGI"
       },
       "function": "Protein",
-      "id": "b224a9141d0fecc85858e58a91ac15a2",
+      "id": "55c543d6976f5e99ba6d95717486137c",
       "variants": [
         {
           "code": "Ser",
           "concept": {
-            "name": "Ph",
-            "namespace": "bel"
+            "identifier": "0006468",
+            "name": "protein phosphorylation",
+            "namespace": "go"
           },
           "kind": "pmod",
           "pos": 2814
