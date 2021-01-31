@@ -13,8 +13,15 @@ If you find HemeKG useful in your work, please consider citing:
 
 Installation
 ------------
-To install the ``hemekg`` python package for programmatic access to
-the BEL files in this repository, use the following code in your shell:
+The ``hemekg`` python package can be installed from `PyPI <https://pypi.org/project/hemekg>`_
+with the following code in your shell:
+
+.. code-block:: sh
+
+    $ pip install hemekg
+
+The development version can be installed from `GitHub <https://github.com/hemekg/hemekg>`_
+with:
 
 .. code-block:: sh
 
